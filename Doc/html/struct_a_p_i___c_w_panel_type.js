@@ -1,0 +1,26 @@
+var struct_a_p_i___c_w_panel_type =
+[
+    [ "buildingMaterial", "struct_a_p_i___c_w_panel_type.html#ad1c12819f6f1e99dc989a767d4254dbd", null ],
+    [ "centroid", "struct_a_p_i___c_w_panel_type.html#a67a5f45a0fcec94732f29b2fe5efc1a2", null ],
+    [ "classID", "struct_a_p_i___c_w_panel_type.html#a2265062e05e66aa7d410b662dac167d5", null ],
+    [ "className", "struct_a_p_i___c_w_panel_type.html#af05939de797d0cf81f038c321150c694", null ],
+    [ "cutLinePen", "struct_a_p_i___c_w_panel_type.html#a29c50b5b365b977b69efbb1b646cc759", null ],
+    [ "cutLineType", "struct_a_p_i___c_w_panel_type.html#ade93fa0fd154f22d06b545f5068977d6", null ],
+    [ "cutSurfaceMaterial", "struct_a_p_i___c_w_panel_type.html#a2ac1ee96c42fad8908569d151b0e0966", null ],
+    [ "defaultSubElem", "struct_a_p_i___c_w_panel_type.html#a4d7a6ac0ad02869aab73b0fb905cc1da", null ],
+    [ "deleteFlag", "struct_a_p_i___c_w_panel_type.html#a07a0ce8e73f53272433f8bf9e8aa4411", null ],
+    [ "edgesNum", "struct_a_p_i___c_w_panel_type.html#a69d2b96a5f06e8eeb99bf0ac06bd138f", null ],
+    [ "gridPolyIDsNum", "struct_a_p_i___c_w_panel_type.html#a04520830c38d5beea2c059febfb7ade1", null ],
+    [ "hasSymbol", "struct_a_p_i___c_w_panel_type.html#abb632348c64c495abefcf768eaac77df", null ],
+    [ "head", "struct_a_p_i___c_w_panel_type.html#acc39aaae81fd2f056473b17cc7587a49", null ],
+    [ "hidden", "struct_a_p_i___c_w_panel_type.html#a2fd111355cd055f8a56efccc5bfd5295", null ],
+    [ "innerSurfaceMaterial", "struct_a_p_i___c_w_panel_type.html#a97616f3e6634d9896bb3a1553a4dcb30", null ],
+    [ "libInd", "struct_a_p_i___c_w_panel_type.html#aedb35f86c5047b69f2eea89faf39363d", null ],
+    [ "objectType", "struct_a_p_i___c_w_panel_type.html#a78f629bdc53c0a257c3073d3acb6b748", null ],
+    [ "outerSurfaceMaterial", "struct_a_p_i___c_w_panel_type.html#a5ff6556bf498ac83246934d752b72dba", null ],
+    [ "owner", "struct_a_p_i___c_w_panel_type.html#af25937b0825a8cb1f3ace7cadd33f4cc", null ],
+    [ "pen", "struct_a_p_i___c_w_panel_type.html#aa8d51487f88216e80e51b53c8e37adaf", null ],
+    [ "segmentID", "struct_a_p_i___c_w_panel_type.html#a65b4e04e8a6c85af9da5ab2a33a0ac60", null ],
+    [ "symbolID", "struct_a_p_i___c_w_panel_type.html#a1471f2e13880dac503d71abf2cee9bd4", null ],
+    [ "thickness", "struct_a_p_i___c_w_panel_type.html#ababa7999c6a0732d8a4a3fde86411ba2", null ]
+];

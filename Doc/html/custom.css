@@ -1,0 +1,24 @@
+html {
+    --side-nav-fixed-width: 335px;
+    --top-height: 100px;
+    --font-family: Proxima Nova,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    --content-maxwidth: 1200px;
+    --note-color: #F4F8FF;
+    --note-color-dark: #5383d6;
+    --note-color-darker: #2e4153;
+    --side-nav-arrow-opacity: 0.7;
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not(.light-mode) {
+        --note-color: #1F232B;
+        --note-color-dark: #3486C5;
+        --note-color-darker: #D2DBDE;
+    }
+}
+
+html.dark-mode {
+    --note-color: #1F232B;
+    --note-color-dark: #3486C5;
+    --note-color-darker: #D2DBDE;
+}
