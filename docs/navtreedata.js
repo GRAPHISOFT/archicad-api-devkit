@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Archicad C++ API", "index.html", [
+  [ "Archicad 27 C++ API", "index.html", [
     [ "Introductory material", "usergroup0.html", [
       [ "General API Development Kit 27", "md__common_doxygen_files_2_articles_2_a_p_i_dev_kit.html#DevKit", null ],
       [ "API White Paper", "md__common_doxygen_files_2_articles_2_a_p_i_01_white_01_paper.html#apiwhitepaper", null ],

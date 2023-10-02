@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad C++ API: Required Functions</title>
+<title>Archicad 27 C++ API: Required Functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -55,7 +55,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad C++ API
+   <div id="projectname">Archicad 27 C++ API
    </div>
   </td>
  </tr>
@@ -129,7 +129,7 @@ Required Functions</h1>
 <li>It owns the main initialization and termination points of your DLL/shared library. <br  />
  Sets up the communication channels between Archicad and the add-on. <br  />
 </li>
-<li>API functions listed in the <a class="el" href="_a_c_a_pinc_8h_source.html">ACAPinc.h</a> header file. You call these to work on the Archicad database.</li>
+<li>API functions listed in the ACAPinc.h header file. You call these to work on the Archicad database.</li>
 </ul>
 <p>There are four functions which must be coded in order to be able to link your add-on to the library.</p>
 <ul>
@@ -138,7 +138,7 @@ Required Functions</h1>
 <li><a class="el" href="group___add_on_lifetime.html#ga585642df3fff4d7ef06576cd3efeea13">Initialize</a></li>
 <li><a class="el" href="group___add_on_lifetime.html#ga71f16335b6369115546b8b63ef2e5d67">FreeData</a></li>
 </ul>
-<p>The prototypes of these functions are also listed in the <a class="el" href="_a_c_a_pinc_8h_source.html">ACAPinc.h</a> header file.</p>
+<p>The prototypes of these functions are also listed in the ACAPinc.h header file.</p>
 <p>Most of these functions (except <code>CheckEnvironment</code>) return an error code based on the type definition <code>GSErrCode</code>. The value <code>NoError</code> means that no error occurred, any non-zero value indicates some kind of error.</p>
 <p>It is very important to understand how the above listed 4 functions are called by the server application.</p>
 <p>An add-on is a DLL or shared library which is not loaded into the memory by default. When the user invokes one of the commands of an add-on Archicad loads it into the memory to execute the command. When the add-on has finished its operation Archicad unloads the add-on again (unless certain conditions are met).</p>

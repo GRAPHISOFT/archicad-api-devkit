@@ -1841,7 +1841,7 @@ var searchData=
   ['arcanglemode_1838',['arcAngleMode',['../struct_a_p_i___railing_rail_end_type.html#a0d282632292ccfe13f9fd091898458d6',1,'API_RailingRailEndType']]],
   ['arcbase_1839',['arcBase',['../struct_a_p_i___dimension_type.html#ae27fc7aa0e991907660cdb043d535a37',1,'API_DimensionType']]],
   ['arcdiff_1840',['arcDiff',['../struct_a_p_i___magic_wand_info.html#a50d7c227d145a54c6ad4357ae846f450',1,'API_MagicWandInfo']]],
-  ['archicad_20c_2b_2b_20api_1841',['Archicad C++ API',['../index.html',1,'']]],
+  ['archicad_2027_20c_2b_2b_20api_1841',['Archicad 27 C++ API',['../index.html',1,'']]],
   ['architect_1842',['architect',['../struct_a_p_i___project_note_info.html#a5966fd6f261e88bcd627edef2b7eefdd',1,'API_ProjectNoteInfo']]],
   ['archived_1843',['archived',['../struct_a_p_i___r_v_m_change.html#af5b7341eec16373c45bd75adf2538184',1,'API_RVMChange']]],
   ['archivelib_1844',['archiveLib',['../struct_a_p_i___file_open_pars.html#a974e7a706fd18487ee04f88bf4d6c71b',1,'API_FileOpenPars']]],
