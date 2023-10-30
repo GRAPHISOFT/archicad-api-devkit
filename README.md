@@ -1,6 +1,6 @@
 # Archicad API Development Kit
 
-This repository contains the documentation of the [Archicad API](https://graphisoft.github.io/archicad-api-devkit/).
+This repository contains the [Development Kit](https://archicadapi.graphisoft.com/downloads), and the documentation of the [Archicad API](https://graphisoft.github.io/archicad-api-devkit/).
 
 ## License
 
