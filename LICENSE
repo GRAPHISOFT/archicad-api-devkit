@@ -1,21 +1,94 @@
-MIT License
+Version 2 effective as of November 3, 2023, replacing the version dated November 28, 2005
 
-Copyright (c) 2023 Graphisoft
+**IMPORTANT**
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+PLEASE READ THIS AGREEMENT CAREFULLY. BY USING THE GENERAL API DEVELOPMENT KIT WHICH INCLUDES COMPUTER SOFTWARE AND MAY INCLUDE ASSOCIATED MEDIA, PRINTED MATERIALS, AND “ONLINE” OR ELECTRONIC DOCUMENTATION (CALLED THE “SOFTWARE PRODUCT”), YOU INDICATE YOUR ACCEPTANCE OF THE Graphisoft LICENSE AGREEMENT INCLUDING THE LIMITED WARRANTY AND DISCLAIMERS BY INSTALLING, COPYING, DOWNLOADING, ACCESSING, OR OTHERWISE USING THE SOFTWARE PRODUCT, YOU AGREE TO BE BOUND BY THE TERMS OF THIS SOFTWARE LICENSE AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS SOFTWARE LICENSE AGREEMENT, DO NOT INSTALL, COPY, OR USE THE SOFTWARE PRODUCT.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+**GRAPHISOFT SOFTWARE LICENSE AGREEMENT**
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+This Agreement constitutes a non-exclusive license for you, the End-user, to use the Software Product. The Software Product is licensed, not sold, to you for your own use under the terms and conditions of this Agreement. The Software Product is an original work and protected by copyright laws protecting the author’s rights and intellectual property. All title and intellectual property rights in and to the content which may be accessed through the use of the Software Product is the property of Graphisoft and/or the respective content owner and may be protected by applicable copyright or other intellectual property laws and treaties. This Agreement grants you no rights to use such content.
+
+**THE LICENSE**
+
+- You may use the Software Product on an unlimited number of computers provided that you are the only individual using the Software Product. You are expressly prohibited from diffusing or commercializing the Software Product either alone or as part of another product.
+- You may install copies of the Software Product on an unlimited number of computers provided that you are the only individual using the Software Product. You may make and use an unlimited number of copies of the documentation, provided that such copies shall be used only for personal purposes and are not to be republished or distributed (either in hard copy or electronic form).
+- You may store or install a copy of the SOFTWARE PRODUCT on a storage device, such as a network server, used only to install or run the SOFTWARE PRODUCT on computers used by a licensed user in accordance with the provisions set forth herein. A single license for the SOFTWARE PRODUCT may not be shared or used concurrently by other end users.
+
+You may transfer the Software Product and all rights associated to it under this license to another party together with a copy of this Agreement, provided that the other party reads and accepts the terms and conditions of this Agreement, that you do not keep any copies of the Software in whole or in part and the transferee agrees to be bound by the terms of this Agreement.
+
+RESTRICTIONS
+
+- You may not sell, distribute, cede, sublicense, rent, lease or assign the right to use the Software Product (except as allowed above) nor transfer it by network for commercial use, either in whole or in part.
+- You are expressly prohibited from decompiling, disassembling, reverse engineering, or reducing the Software Product for any purposes whatsoever.
+
+TERMINATION
+
+- This Agreement remains in effect for indefinite time period until it is terminated. You or Graphisoft may terminate the Agreement at any time with 30(thirty) days notice without cause. Graphisoft may terminate the Agreement without notice following breach of any part of the Agreement. Upon termination, you must destroy the Software Product and all copies of it.
+  
+
+LIMITED WARRANTY
+
+- Although Graphisoft has tested the Software Product, the Software Product is sold “AS IS,” without any warranty; expressed or implied, as to its conformity to or fitness for any particular purpose, or that the Software Product will perform uninterrupted and without errors. Graphisoft disclaims all other warranties, expressed or implied, including warranties of merchantability, fitness for a particular purpose, quality, completeness, or precision of the Software Product’s functions.
+- No advice or information given by Graphisoft employees, its distributors, resellers, agents, or consultants shall constitute a warranty by Graphisoft or extend the warranty in this Agreement.
+- In no event shall Graphisoft be liable for any damages whatsoever, including but not limited to any special, incidental, indirect, or consequential damages whatsoever (including but not limited to lost income, business interruption, loss of business information, or other pecuniary loss) arising from the use or misuse of the Software Product, even if Graphisoft or its employees, resellers, or agents have been advised of the possibility of such damages.
+
+PRIVACY 
+
+**Privacy**. You expressly acknowledge that You and Your authorized users' personal data processed under this Agreement will be processed, either manually or with the help of electronic or automated means, in such a way as to minimize, by means of suitable security measures, the risk of unauthorized access or disclosure of Your data. Your personal data will be processed during the term of this Agreement in relation to its purposes, also in order to prevent unlicensed use of the Software. For the above purposes Your personal data can be disclosed to third parties (service providers, consultants, collaborators, a list of which is available from within the Privacy Policy), either to other EEA or third countries, pursuant to the scope of this Agreement and any applicable law. In the event of any data transfers to third countries, Graphisoft always uses suitable safeguards (such as the standard contractual clauses adopted by the European Commission, the EU-US Privacy Shield and similar instruments) to ensure the adequate protection of personal data. Graphisoft reserves the right to disclose Your personal data to the competent legal authority if required to do so to enforce or defend its rights or legitimate interests before civil and criminal courts, regulatory bodies, or to execute an order of the competent judicial or regulatory authority. As End User of the Product, You have the right to access the personal data processed by Graphisoft, to obtain the updating or rectification of such data. You also have the right to obtain the erasure of any personal data if, for instance, such data have either been processed unlawfully or are no longer necessary for the purposes for which they were collected or otherwise processed. In certain cases, such as when the processing is unlawful and you oppose the erasure of your data, you have the right to obtain from Graphisoft the restriction of processing. You also have the right to receive the personal data concerning you, which you provided to Graphisoft, in a structured, commonly used and machine-readable format and have the right to transmit those data to another controller. If you consider that the processing of your personal data by Graphisoft infringed the GDPR, please contact us first at privacy@graphisoft.com; Graphisoft SE Business Compliance Manager; Záhony utca 7. Budapest, H-1031 Hungary so we can remedy the issue. Of course, in such cases you also have the right to lodge a complaint with the Hungarian Data Protection and Freedom of Information Authority (http://naih.hu/general-information.html) or another data protection supervisory authority, in particular in the Member State of your habitual residence, place of work or place of the alleged infringement.
+If applicable, You ensure and warrant to us that Your authorized users' has been duly informed of the collection, processing, transfer and usage of his/her personal information by Graphisoft as per the above, and shall indemnify and hold Graphisoft harmless from and against any related third party claims.
+The detailed rules regarding the various rights and obligations related to Graphisoft's data collection, use, transfer, handling, processing, including your subject access rights and rights to legal redress, are set forth in the Privacy Policy constituting an inseparable part of this Agreement available at https://www.graphisoft.com/info/legal/privacy_policy/privacy_int.html.
+
+GENERAL AND CLOSING PROVISIONS
+
+**1. Intellectual Property, Branding.** The Software Product is the proprietary of Graphisoft and its licensors. For the detailed rules on INTELLECTUAL PROPERTY, BRANDING, please read Graphisoft's Intellectual Property Notice available at https://graphisoft.com/legal.
+
+**2. Legal documents.** This Agreement is to be construed and applied together with other Graphisoft legal documents such as, in particular but not limited to, Graphisoft's Privacy Policy, constituting inseparable part of this Agreement, which are available at https://graphisoft.com/legal. Any terms and conditions of this Agreement and the Service and Benefits List and all other applicable legal documents may be modified unilaterally by Graphisoft without prior notice to End User without any legal or financial consequences for Graphisoft. End User is responsible for regularly reviewing these terms and conditions. Continued use of the Software Product following any such changes shall constitute End User's acceptance of such changes. Any amendments made by Graphisoft cannot be unreasonable or significantly detrimental for End User.
+
+**3. Acceptance.** By entering this Agreement, the End User expressly declares and confirms that the person accepting this Agreement on behalf of the End User has the full power and capacity to represent the End User entity on behalf of which the person is acting. Should this declaration prove to be false, the person accepting this Agreement shall be responsible and liable in person for all obligations under this Agreement. End User hereby authorizes the Selling Entity and Graphisoft to create, on behalf of End User, the Company Graphisoft ID required under Section 2.1. PART B. above.
+
+**4. Anti-Bribery.** Both Graphisoft and the End User represent and covenant that they have not, and will not offer, give, solicit, or accept any bribe from any person, organization, or company with the intent to coerce or induce the other party or an employee or agent of the other party to act improperly in the course of their duties. If either party is found guilty of failing to prevent an act of bribery, or makes, offers, or solicits a bribe from the other party, then that party's rights under this Agreement will be terminated immediately. Such termination will not affect Graphisoft's rights and remedies surviving termination of this Agreement. End User will use reasonable efforts to promptly notify Graphisoft if End User becomes aware of any circumstances that are contrary to this acknowledgment.
+
+**5. Trade and Sanctions.** In the context of this Agreement:
+
+5.1. each Party shall comply with all economic, trade and financial sanctions laws, regulations, embargoes and/or restrictive measures administered ("Sanctions"), as well as all export and import control laws and regulations ("Trade Controls") enacted or enforced by the governments of Hungary, the European Union, and any other relevant country;
+
+5.2. End User represents and covenants on a continuing basis that neither it nor its subsidiaries, affiliates, parties which directly or indirectly own or control it, directors, employees nor End User's Users are or will be designated on any applicable Sanctions and/or Trade Controls restricted parties list;
+
+5.3. Graphisoft represents and covenants on a continuing basis that neither it nor its subsidiaries, affiliates, employees, nor the parties which directly or indirectly own or control it are or will be designated on any applicable Sanctions and/or Trade Controls restricted parties list;
+
+5.4.  The Software Product is made available on conditions that the services shall not be sold, transferred, released, exported, provided or used by End User (i) for any purpose or any activity which is prohibited or restricted by Sanctions and/or Trade Controls and (ii) to any country or territory subject to jurisdiction wide Sanctions including without limitation at the date of this Agreement North Korea, Iran, Syria, Sudan, Cuba, Crimea & Sevastopol. End User is solely liable for any Content in compliance with applicable Sanctions and/or Trade Controls;
+
+5.5. each Party undertakes to immediately notify the other Party in writing if it receives any notice of, or becomes aware of, any violation of this Section 10.4.;
+
+5.6. notwithstanding anything to the contrary, either Party shall have the right to (i) terminate this Agreement immediately if any of the provisions of this Section 10.4. are breached and (ii) seek indemnities from the Party which has breached the relevant provisions for any direct losses incurred.
+
+**6. Audit.** You hereby agree that - in addition to any other license compliance checking set forth in this Agreement or elsewhere - Graphisoft has the right to visit You at the premises where You use the Software upon 7 (seven) days prior written notice in order to check Your records, systems, facilities to verify that Your use of the Software is fully in line with the provisions of this Agreement and with the applicable rules of law. Graphisoft may also appoint a third party to exercise its audit rights. You hereby agree to fully cooperate with Graphisoft in order to successfully perform this verification among others by providing Graphisoft with all requested information and documents.
+
+**7.** This Agreement DOES NOT give you the right to any technical support for, or upgrades to, the Software Product which Graphisoft may offer from time to time. Graphisoft may, at its option and as part of its sales policy, make such technical support and upgrades available to registered users of the Software Product under terms to be determined from time to time by Graphisoft.
+
+**8. Modifications.** You accept that Graphisoft may unilaterally modify any term of this Agreement with or without notice to You. You agree that Graphisoft shall not be liable to you or anyone else for any negative effect deriving from such modifications.
+
+**9. Entire Agreement.** This Agreement, together with any applicable appendices (including any other terms referenced in any of those documents), constitutes the full, complete agreement between End User and Graphisoft concerning the Software, the Services and Benefits and supersedes all prior agreements and understandings, either written or oral. Unless otherwise communicated to End User by Graphisoft in writing, the conditions of this Agreement shall apply to the installation and use of additional functions of the Software and to the repair of the Software's installation.
+
+**10. Invalidity**. If any part or provision of this Agreement is found to be contrary to law by a competent jurisdiction, that part or provision shall be enforced to the maximum extent allowed, and the remaining Agreement shall remain in full force and effect.
+
+**11. Governing Law**. This Agreement and any dispute or claim (whether contractual or non-contractual) arising out of or in connection with it, its subject matter or formation shall be governed by the laws of Hungary without regard to the conflicts of law provisions of any jurisdiction.
+
+**12. Dispute resolution.** In the event of any dispute arising from or in connection with the present contract, so especially with its breach, termination, validity or interpretation, the parties exclude the state court procedure and agree to submit the matter to the exclusive and final decision of the Permanent Arbitration Court attached to the Hungarian Chamber of Commerce and Industry (Commercial Arbitration Court Budapest). The Arbitration Court proceeds in accordance with its own Rules of Proceedings (supplemented with the provisions of the Sub-Rules of Expedited Proceedings). The number of arbitrators shall be 3 (three) and the language to be used in the arbitral proceedings shall be English. The parties exclude the possibility of the retrial of the proceedings as regulated in Section IX of Act no. LX of 2017 on Arbitration.
+
+**13. Independent Contractors.** The Parties are independent contracting parties. Neither Party has, or will hold itself out as having, any right or authority to incur any obligation on behalf of the other Party. The Parties' relationship in connection with this Agreement will not be construed as a joint venture, partnership, franchise, employment, or agency relationship, or as imposing any liability upon either Party that otherwise might result from such a relationship.
+
+**14. Language and Notices**. The English version of this Agreement will be the governing version used when interpreting or construing this Agreement. Any translations thereof shall exclusively be provided for information purposes without any binding force and in no event shall Graphisoft be liable for any direct, indirect, incidental, special or consequential damages or damages whatsoever resulting from any incorrect, incomplete translations. With respect to all notices, Parties communicate with each other in English language through their contact persons via email to the e-mail addresses indicated at Company Graphisoft ID for You and via archicadapi@graphisoft.com for Graphisoft.
+
+<div align="center">* * *</div>
+
+INQUIRIES
+
+All inquiries regarding this Agreement should be directed to
+
+GRAPHISOFT SE\
+H-1031 Budapest, Záhony utca 7. (Graphisoft Park 1.),\
+Hungary
+
+E-mail: archicadapi@graphisoft.com
+
