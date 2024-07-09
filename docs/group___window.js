@@ -19,16 +19,16 @@ var group___window =
       [ "wFile", "struct_a_p_i___new_window_pars.html#a51c63f383087d25cc0d391116b28a97a", null ],
       [ "wTitle", "struct_a_p_i___new_window_pars.html#a877e2aee67a8fed3d03ae6832e86ba35", null ]
     ] ],
-    [ "APICustomWindowHandlerProc", "group___window.html#gaa335be9a8c110f83d4cbfa2e0897acbc", null ],
+    [ "APICustomWindowHandlerProc", "group___window.html#ga2c0a47aaaf95e9f9b18330df14ce0d69", null ],
     [ "API_WindowTypeID", "group___window.html#ga22bf85c5f2e58820825ad9960c66a484", null ],
-    [ "ACAPI_Window_ChangeGridSettings", "group___window.html#ga5ca70f5cb96d2362d57cca1126537fc1", null ],
-    [ "ACAPI_Window_ChangeWindow", "group___window.html#ga054e8e2bb97641aa6741016a2860adb6", null ],
-    [ "ACAPI_Window_Check", "group___window.html#ga48475a17370e4144d5912ae2dc324fb6", null ],
-    [ "ACAPI_Window_CloseWindow", "group___window.html#ga1e13570f8b5890830ce2d1ea101d13cf", null ],
-    [ "ACAPI_Window_GetCurrentWindow", "group___window.html#ga45ea0ea9ca793434dae2950aecf552f2", null ],
-    [ "ACAPI_Window_GetGridSettings", "group___window.html#ga0fab92cd090678de25e5eec483a964fd", null ],
-    [ "ACAPI_Window_GetOwnWindows", "group___window.html#ga0c34c05da09cedaa4b6892e9f3fef683", null ],
-    [ "ACAPI_Window_NewWindow", "group___window.html#gaec6dc15916eca77b4fc408826a08fd2e", null ],
-    [ "ACAPI_Window_ResetCurrentWindow", "group___window.html#gaf07f7d3510ddde721f3724ed5491c331", null ],
-    [ "ACAPI_Window_SetWindowId", "group___window.html#ga138de961daa6bae71cc339ae8a898597", null ]
+    [ "ACAPI_Window_ChangeGridSettings", "group___window.html#ga222dd68fe0eee00dc6e96567028e216e", null ],
+    [ "ACAPI_Window_ChangeWindow", "group___window.html#ga065cae8bccda86611ff2d9d3c8a8f35c", null ],
+    [ "ACAPI_Window_Check", "group___window.html#gaa5a30877a9da53be0b6b792f49b160ed", null ],
+    [ "ACAPI_Window_CloseWindow", "group___window.html#gaf37f71c33c7e3609dacbfa53be7dc798", null ],
+    [ "ACAPI_Window_GetCurrentWindow", "group___window.html#gabdcb6c195f6a97da8871b068c4dc8bec", null ],
+    [ "ACAPI_Window_GetGridSettings", "group___window.html#gaaa5ae2873d2c4f719c9dc922e106ad20", null ],
+    [ "ACAPI_Window_GetOwnWindows", "group___window.html#ga103373ef5c7263908e868e7c13134a05", null ],
+    [ "ACAPI_Window_NewWindow", "group___window.html#gaa5312195057875d701f549e6dd30a8ee", null ],
+    [ "ACAPI_Window_ResetCurrentWindow", "group___window.html#gab10425c89e3744fbe521b40193d41f9b", null ],
+    [ "ACAPI_Window_SetWindowId", "group___window.html#gaa8d4a0d60712261ae51c8389c4ff3053", null ]
 ];

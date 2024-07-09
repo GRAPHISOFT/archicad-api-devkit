@@ -22,7 +22,8 @@ var group___old_listing =
     ] ],
     [ "API_UnitType", "struct_a_p_i___unit_type.html", [
       [ "code", "struct_a_p_i___unit_type.html#a2592a82c1e3f59eabf7db8e78ad50c3f", null ],
-      [ "head", "struct_a_p_i___unit_type.html#a1ae45ff59e0f8c4e017698434ecdc34c", null ]
+      [ "head", "struct_a_p_i___unit_type.html#a1ae45ff59e0f8c4e017698434ecdc34c", null ],
+      [ "name", "struct_a_p_i___unit_type.html#affe46b92898c98f7077cf1b2d0388f01", null ]
     ] ],
     [ "API_Obsolete_ComponentType", "struct_a_p_i___obsolete___component_type.html", [
       [ "code", "struct_a_p_i___obsolete___component_type.html#a4dcefe7aff7163ee62d8d66fb50b19e1", null ],
@@ -49,10 +50,10 @@ var group___old_listing =
       [ "unit", "union_a_p_i___list_data.html#a38cac8cf30ab0b37e9a4186533d3272c", null ]
     ] ],
     [ "API_ListDataID", "group___old_listing.html#gad54fa78ba87e7fbf43ef1e2c65a8f546", null ],
-    [ "ACAPI_OldListing_Get", "group___old_listing.html#gaedb252b09bda91e379a328a9542dfe99", null ],
-    [ "ACAPI_OldListing_GetLocal", "group___old_listing.html#ga073de237eafdfc381291f851b7b010a5", null ],
-    [ "ACAPI_OldListing_GetNum", "group___old_listing.html#ga12cd374a74d38fb821b25672c52fcc77", null ],
-    [ "ACAPI_OldListing_GetSet", "group___old_listing.html#ga46a3ecbc743457cb37fffe45ea309b3a", null ],
-    [ "ACAPI_OldListing_GetSetNum", "group___old_listing.html#gaff53f3db501715fe54595ea6f629040d", null ],
-    [ "ACAPI_OldListing_Search", "group___old_listing.html#ga1b7ca3a5577f749cddcff720c56a6373", null ]
+    [ "ACAPI_OldListing_Get", "group___old_listing.html#ga4ddba6888c22341e41a29fa7136c8316", null ],
+    [ "ACAPI_OldListing_GetLocal", "group___old_listing.html#ga6491d52b89966da95052718317da5d97", null ],
+    [ "ACAPI_OldListing_GetNum", "group___old_listing.html#gaa65eb2d76332103065ab651a873888e5", null ],
+    [ "ACAPI_OldListing_GetSet", "group___old_listing.html#ga74a408a3dc0abc9faa36e31d808470bc", null ],
+    [ "ACAPI_OldListing_GetSetNum", "group___old_listing.html#ga5d1c5edab8089d7a72a551a3a6b625e9", null ],
+    [ "ACAPI_OldListing_Search", "group___old_listing.html#ga02470017e678a9980ab08b6fc3b3ceb8", null ]
 ];

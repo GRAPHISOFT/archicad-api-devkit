@@ -1,11 +1,19 @@
 var group___user_input =
 [
+    [ "ACAPI::v1::InputHandler", "class_a_c_a_p_i_1_1v1_1_1_input_handler.html", [
+      [ "ApplyInputPosition", "class_a_c_a_p_i_1_1v1_1_1_input_handler.html#a1ee5ab913fe4c0e64a6d007bc0fb3493", null ],
+      [ "GetInputPosition", "class_a_c_a_p_i_1_1v1_1_1_input_handler.html#a2aeee75a32528694a198bb651dbd7fd3", null ],
+      [ "SetInputPosition", "class_a_c_a_p_i_1_1v1_1_1_input_handler.html#ae9e79c8d9c7122e56a985323d375a309", null ],
+      [ "CreateInputHandler", "class_a_c_a_p_i_1_1v1_1_1_input_handler.html#a67e3d309ffb53af67c8b97515b072ac1", null ]
+    ] ],
     [ "API_PolyArc", "struct_a_p_i___poly_arc.html", [
       [ "arcAngle", "struct_a_p_i___poly_arc.html#a3de4772de642f63847fdd8ec7d21a049", null ],
       [ "begIndex", "struct_a_p_i___poly_arc.html#a210e0bffbbb10511f9b0867f406ff166", null ],
       [ "endIndex", "struct_a_p_i___poly_arc.html#a7d72e58b80bb5842f11a01fab21f99fb", null ]
     ] ],
     [ "API_Neig", "struct_a_p_i___neig.html", [
+      [ "API_Neig", "struct_a_p_i___neig.html#a5aad5dd85c8bbbeaf49567ff37c04159", null ],
+      [ "API_Neig", "struct_a_p_i___neig.html#a2cce4853f2a6e4bc90d170b1ba7f8ff8", null ],
       [ "elemPartIndex", "struct_a_p_i___neig.html#aaae55168dc8cd1fdcfe72ee36a4ee454", null ],
       [ "elemPartType", "struct_a_p_i___neig.html#aeb58fbc50c71c5a61d4d16f4fbbb2005", null ],
       [ "flags", "struct_a_p_i___neig.html#a7395b8413b802c966aad996f788826cb", null ],
@@ -42,10 +50,12 @@ var group___user_input =
     [ "API_RubberLineType", "struct_a_p_i___rubber_line_type.html", [
       [ "c1", "struct_a_p_i___rubber_line_type.html#a14cc3037e94e96ddda36d2557dd06264", null ],
       [ "c2", "struct_a_p_i___rubber_line_type.html#a7975e827447de7ec3d61a13bfbb045d2", null ],
+      [ "filler", "struct_a_p_i___rubber_line_type.html#a81f7f5481659b7defc544f8b5e0c5c3f", null ],
       [ "lineThick", "struct_a_p_i___rubber_line_type.html#abb1feec7d786cb69704e5c2cc3e48855", null ]
     ] ],
     [ "API_RubberArcType", "struct_a_p_i___rubber_arc_type.html", [
       [ "arcType", "struct_a_p_i___rubber_arc_type.html#a59c3a62ccd3a9213c49db45d2d464c60", null ],
+      [ "filler", "struct_a_p_i___rubber_arc_type.html#ab6bf906fa49f0ee612da0bd0edc4a2e7", null ],
       [ "lineThick", "struct_a_p_i___rubber_arc_type.html#a1b87bf0d07e9acedbd0f3ef8ac52f28d", null ],
       [ "origC", "struct_a_p_i___rubber_arc_type.html#a241135af894b6d1ab8f18cea6cac71f0", null ],
       [ "radii", "struct_a_p_i___rubber_arc_type.html#a5a886e63cc2f0790c6ee720ce03376a7", null ]
@@ -134,25 +144,26 @@ var group___user_input =
       [ "constValue", "struct_a_p_i___constraint_pars.html#a6a2473b7ab23da17c33cd947ffbc2092", null ],
       [ "useLocOrigo", "struct_a_p_i___constraint_pars.html#add936a4e122bd00a4cb137ad16eeaa7a", null ]
     ] ],
-    [ "API_NeigFilter", "group___user_input.html#ga48a27e91781dbb06e81f28defaa32968", null ],
-    [ "Get3DComponentProc", "group___user_input.html#ga718bd0c4d2dc76f5175c02ddd6e12846", null ],
-    [ "RubberLineInfoProc", "group___user_input.html#ga9963b97b4eef29b7e9194e4cc7f9b70f", null ],
+    [ "API_NeigFilter", "group___user_input.html#ga6f44a1810cab11fcab172837805a9344", null ],
+    [ "Get3DComponentProc", "group___user_input.html#ga2d30b63bcfc55eaeb113fdaa7afd9b3b", null ],
+    [ "RubberLineInfoProc", "group___user_input.html#ga66f4984d1aa211f4dc6d5fd8de78e394", null ],
     [ "API_ConstraintType", "group___user_input.html#gaeff01fc2fe7c9610cfd7191df17ea8e1", null ],
     [ "API_CursorFormID", "group___user_input.html#ga9d0418d3baeec8ff31071849d62bb6d8", null ],
     [ "API_InitNeigFilterID", "group___user_input.html#ga2b09cbb30c8d8f80bf681b7c8aa3214c", null ],
-    [ "ACAPI_UserInput_CancelUserInput", "group___user_input.html#ga707c14da37f1206f10b939d651411727", null ],
-    [ "ACAPI_UserInput_ClearNeigFilter", "group___user_input.html#gac8767999ec92c536220a2aafa9e04be8", null ],
-    [ "ACAPI_UserInput_CompleteUserInput", "group___user_input.html#ga9192d1232d7a28267b20e8e205cfef1e", null ],
-    [ "ACAPI_UserInput_DrawRubberArc", "group___user_input.html#ga3daffda7c4a52ba4b9678ac4ae748118", null ],
-    [ "ACAPI_UserInput_DrawRubberLine", "group___user_input.html#gad3c0bd7bac140410b0a925ab028b4f57", null ],
-    [ "ACAPI_UserInput_GetArc", "group___user_input.html#gadea80f906d1f373a57fa62d499e2f268", null ],
-    [ "ACAPI_UserInput_GetLine", "group___user_input.html#gabb563bd117200270f757d5b7c4fb22b7", null ],
-    [ "ACAPI_UserInput_GetMagicWandSets", "group___user_input.html#ga68d3de207466c2a00f90805eaf110e95", null ],
-    [ "ACAPI_UserInput_GetPoint", "group___user_input.html#gaf575c4a4e685c82940f01fdf438c8088", null ],
-    [ "ACAPI_UserInput_GetPoly", "group___user_input.html#ga6e9bbfa123632ebe22bb5f3af1edf834", null ],
-    [ "ACAPI_UserInput_InitNeigFilter", "group___user_input.html#gaba99f5f30bc830da7b36cb6a38e8a0df", null ],
-    [ "ACAPI_UserInput_ResetConstraint", "group___user_input.html#gab8f0ff907f55a8f58bceec1a9559c939", null ],
-    [ "ACAPI_UserInput_SetConstraint", "group___user_input.html#gac32296c4f41c4ad054b7d9755d5a694d", null ],
-    [ "ACAPI_UserInput_SetElementHighlight", "group___user_input.html#gac1128c18694cc716be042ec246692d24", null ],
-    [ "ACAPI_UserInput_SetNeigFilter", "group___user_input.html#ga82ea62523def00c485ecbda3d55bd945", null ]
+    [ "ACAPI_UserInput_CancelUserInput", "group___user_input.html#ga40ec1ca113698269044e40e8b6b84e2c", null ],
+    [ "ACAPI_UserInput_ClearNeigFilter", "group___user_input.html#ga999ac7ae126bbbafea5b8547fc41590a", null ],
+    [ "ACAPI_UserInput_CompleteUserInput", "group___user_input.html#ga20369edef19f162fdd85d070744e4968", null ],
+    [ "ACAPI_UserInput_DrawRubberArc", "group___user_input.html#gaabc2abc9c8d43ac2a2a34c5fa1edd99f", null ],
+    [ "ACAPI_UserInput_DrawRubberLine", "group___user_input.html#ga3443b0065bb81f354b4c92d9a9f36be4", null ],
+    [ "ACAPI_UserInput_GetArc", "group___user_input.html#ga5e36ce7a162f52c6afc9617e46882595", null ],
+    [ "ACAPI_UserInput_GetLine", "group___user_input.html#ga1b135d39fd6d45813cb2ee0df0898d90", null ],
+    [ "ACAPI_UserInput_GetMagicWandSets", "group___user_input.html#ga96e7d903130db577efaddaddc4dec001", null ],
+    [ "ACAPI_UserInput_GetPoint", "group___user_input.html#gadc305bd667e3dfca73bd72ad0367970b", null ],
+    [ "ACAPI_UserInput_GetPoly", "group___user_input.html#ga9709ba60095aef4a1fa0eabb9dbd696e", null ],
+    [ "ACAPI_UserInput_InitNeigFilter", "group___user_input.html#gaab728c57046642d0cdb61bb503704b91", null ],
+    [ "ACAPI_UserInput_ResetConstraint", "group___user_input.html#gaebcf44077ba0af19e5a1ba6b3a999951", null ],
+    [ "ACAPI_UserInput_SetConstraint", "group___user_input.html#ga0e8af0714a2ce62167bad41e29ea4fbe", null ],
+    [ "ACAPI_UserInput_SetElementHighlight", "group___user_input.html#ga3f2250a12be40a1e8133e1cc5e39b20e", null ],
+    [ "ACAPI_UserInput_SetNeigFilter", "group___user_input.html#gad0dfacb13a63d04b3b83a08b76c12926", null ],
+    [ "ACAPI::v1::CreateInputHandler", "group___user_input.html#gae52a456b31b9f3b573a476c3ea925479", null ]
 ];

@@ -12,6 +12,7 @@ var struct_a_p_i___document_from3_d_type =
     [ "effects3D", "struct_a_p_i___document_from3_d_type.html#ac116c25bba2dd30630880daa5833c9e4", null ],
     [ "filterAndCutSettings", "struct_a_p_i___document_from3_d_type.html#a06276e6f1c47374afb0979304b0a1100", null ],
     [ "floorPlanRotationOrigo", "struct_a_p_i___document_from3_d_type.html#affd63eeccac6dde15d0fc3ae61d624bc", null ],
+    [ "hiddenLineLen", "struct_a_p_i___document_from3_d_type.html#ae7604a7f8ee05d6bb38b8ed4931d2910", null ],
     [ "hiddenLineType", "struct_a_p_i___document_from3_d_type.html#acccd19df08fee33e0d6b0449b36b8da8", null ],
     [ "intPlanConn", "struct_a_p_i___document_from3_d_type.html#a7afe9a9ede5f3cae73b94e3273009290", null ],
     [ "materialFrom3D", "struct_a_p_i___document_from3_d_type.html#a238c3244f6842420b75d33ae83f07dbb", null ],

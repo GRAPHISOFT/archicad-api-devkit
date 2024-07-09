@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "ACAPI::Impl::v1::AbstractFactory", "class_a_c_a_p_i_1_1_impl_1_1v1_1_1_abstract_factory.html", null ],
     [ "API_3D_Head", "struct_a_p_i__3_d___head.html", null ],
     [ "API_3DCutPlanesInfo", "struct_a_p_i__3_d_cut_planes_info.html", null ],
     [ "API_3DCutShapeType", "struct_a_p_i__3_d_cut_shape_type.html", null ],
@@ -124,6 +125,7 @@ var hierarchy =
     [ "API_CurtainWallQuantity", "struct_a_p_i___curtain_wall_quantity.html", null ],
     [ "API_CurtainWallType", "struct_a_p_i___curtain_wall_type.html", null ],
     [ "API_CutPlaneType", "struct_a_p_i___cut_plane_type.html", null ],
+    [ "ACAPI::Cutaway::v1::API_CutPolygonInfo", "struct_a_c_a_p_i_1_1_cutaway_1_1v1_1_1_a_p_i___cut_polygon_info.html", null ],
     [ "API_CWAccessoryQuantity", "struct_a_p_i___c_w_accessory_quantity.html", null ],
     [ "API_CWAccessoryType", "struct_a_p_i___c_w_accessory_type.html", null ],
     [ "API_CWallComponent", "struct_a_p_i___c_wall_component.html", null ],
@@ -230,6 +232,8 @@ var hierarchy =
       [ "API_IEnableAllInfoDialogEventHandler", "class_a_p_i___i_enable_all_info_dialog_event_handler.html", null ]
     ] ],
     [ "API_IEventHandler", "class_a_p_i___i_event_handler.html", [
+      [ "ACAPI::API_IKeynoteFolderEventHandler", "class_a_c_a_p_i_1_1_a_p_i___i_keynote_folder_event_handler.html", null ],
+      [ "ACAPI::API_IKeynoteItemEventHandler", "class_a_c_a_p_i_1_1_a_p_i___i_keynote_item_event_handler.html", null ],
       [ "API_IAttributeEventHandler", "class_a_p_i___i_attribute_event_handler.html", null ],
       [ "API_IAttributeFolderEventHandler", "class_a_p_i___i_attribute_folder_event_handler.html", null ],
       [ "API_IClassificationItemEventHandler", "class_a_p_i___i_classification_item_event_handler.html", null ],
@@ -238,15 +242,16 @@ var hierarchy =
       [ "API_IGraphisoftIDEventHandler", "class_a_p_i___i_graphisoft_i_d_event_handler.html", null ],
       [ "API_IMarqueeEventHandler", "class_a_p_i___i_marquee_event_handler.html", null ],
       [ "API_IPropertyDefinitionEventHandler", "class_a_p_i___i_property_definition_event_handler.html", null ],
-      [ "API_IPropertyGroupEventHandler", "class_a_p_i___i_property_group_event_handler.html", null ]
+      [ "API_IPropertyGroupEventHandler", "class_a_p_i___i_property_group_event_handler.html", null ],
+      [ "API_IWindowEventHandler", "class_a_p_i___i_window_event_handler.html", null ]
     ] ],
-    [ "API_IEventNotifier", "class_a_p_i___i_event_notifier.html", null ],
+    [ "API_IEventNotifier", "class_a_p_i___i_event_notifier.html", [
+      [ "ACAPI::API_IKeynoteEventNotifier", "class_a_c_a_p_i_1_1_a_p_i___i_keynote_event_notifier.html", null ],
+      [ "API_IACEventNotifier", "class_a_p_i___i_a_c_event_notifier.html", null ]
+    ] ],
     [ "API_IFCAttribute", "struct_a_p_i___i_f_c_attribute.html", null ],
     [ "API_IFCClassification", "struct_a_p_i___i_f_c_classification.html", null ],
     [ "API_IFCClassificationReference", "struct_a_p_i___i_f_c_classification_reference.html", null ],
-    [ "API_IFCDifference", "struct_a_p_i___i_f_c_difference.html", null ],
-    [ "API_IFCDifferenceGeneratorState", "struct_a_p_i___i_f_c_difference_generator_state.html", null ],
-    [ "API_IFCEntityDescriptor", "struct_a_p_i___i_f_c_entity_descriptor.html", null ],
     [ "API_IFCProperty", "struct_a_p_i___i_f_c_property.html", null ],
     [ "API_IFCPropertyAnyValue", "struct_a_p_i___i_f_c_property_any_value.html", null ],
     [ "API_IFCPropertyBoundedValue", "struct_a_p_i___i_f_c_property_bounded_value.html", null ],
@@ -264,6 +269,8 @@ var hierarchy =
     [ "API_InternalAnalyticalMemberPartId", "class_a_p_i___internal_analytical_member_part_id.html", null ],
     [ "API_Interval", "struct_a_p_i___interval.html", null ],
     [ "API_IObjectEventHandler", "class_a_p_i___i_object_event_handler.html", [
+      [ "ACAPI::API_IKeynoteFolderEventHandler", "class_a_c_a_p_i_1_1_a_p_i___i_keynote_folder_event_handler.html", null ],
+      [ "ACAPI::API_IKeynoteItemEventHandler", "class_a_c_a_p_i_1_1_a_p_i___i_keynote_item_event_handler.html", null ],
       [ "API_IAttributeEventHandler", "class_a_p_i___i_attribute_event_handler.html", null ],
       [ "API_IAttributeFolderEventHandler", "class_a_p_i___i_attribute_folder_event_handler.html", null ],
       [ "API_IClassificationItemEventHandler", "class_a_p_i___i_classification_item_event_handler.html", null ],
@@ -385,6 +392,7 @@ var hierarchy =
     [ "API_Point", "struct_a_p_i___point.html", null ],
     [ "API_PolyArc", "struct_a_p_i___poly_arc.html", null ],
     [ "API_Polygon", "struct_a_p_i___polygon.html", null ],
+    [ "API_PolygonExt", "struct_a_p_i___polygon_ext.html", null ],
     [ "API_PolyLineType", "struct_a_p_i___poly_line_type.html", null ],
     [ "API_PolyRoofData", "struct_a_p_i___poly_roof_data.html", null ],
     [ "API_Prim_Head", "struct_a_p_i___prim___head.html", null ],
@@ -550,6 +558,7 @@ var hierarchy =
     [ "API_TabType", "struct_a_p_i___tab_type.html", null ],
     [ "API_TestSplineFit", "struct_a_p_i___test_spline_fit.html", null ],
     [ "API_TexCoordPars", "struct_a_p_i___tex_coord_pars.html", null ],
+    [ "API_TextFrameType", "struct_a_p_i___text_frame_type.html", null ],
     [ "API_TextLinePars", "struct_a_p_i___text_line_pars.html", null ],
     [ "API_TextType", "struct_a_p_i___text_type.html", null ],
     [ "API_Texture", "struct_a_p_i___texture.html", null ],
@@ -598,38 +607,27 @@ var hierarchy =
     [ "GS::AppExportInterfaceBase", null, [
       [ "INavigatorCallbackInterface", "class_i_navigator_callback_interface.html", null ]
     ] ],
-    [ "ACAPI::v1::DesignOptionCombinationViewSettings::Custom", "struct_a_c_a_p_i_1_1v1_1_1_design_option_combination_view_settings_1_1_custom.html", null ],
-    [ "ACAPI::MEP::ElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_base.html", [
-      [ "ACAPI::MEP::v1::Bend", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend.html", null ],
-      [ "ACAPI::MEP::v1::Element", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element.html", null ],
-      [ "ACAPI::MEP::v1::ModifiableElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_modifiable_element_base.html", [
-        [ "ACAPI::MEP::v1::Accessory", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_accessory.html", null ],
-        [ "ACAPI::MEP::v1::Branch", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch.html", null ],
-        [ "ACAPI::MEP::v1::Equipment", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_equipment.html", null ],
-        [ "ACAPI::MEP::v1::Fitting", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_fitting.html", null ],
-        [ "ACAPI::MEP::v1::FlexibleSegment", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment.html", null ],
-        [ "ACAPI::MEP::v1::ModifiableElement", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_modifiable_element.html", null ],
-        [ "ACAPI::MEP::v1::Terminal", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_terminal.html", null ]
-      ] ],
-      [ "ACAPI::MEP::v1::RigidSegment", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment.html", null ],
-      [ "ACAPI::MEP::v1::Transition", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::ElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_base.html", [
-      [ "ACAPI::MEP::v1::Bend", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend.html", null ],
-      [ "ACAPI::MEP::v1::Element", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element.html", null ],
-      [ "ACAPI::MEP::v1::ModifiableElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_modifiable_element_base.html", null ],
-      [ "ACAPI::MEP::v1::RigidSegment", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment.html", null ],
-      [ "ACAPI::MEP::v1::Transition", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html", null ]
-    ] ],
+    [ "ACAPI::DesignOptions::v1::DesignOptionCombinationViewSettings::Custom", "struct_a_c_a_p_i_1_1_design_options_1_1v1_1_1_design_option_combination_view_settings_1_1_custom.html", null ],
     [ "ACAPI::Error", "struct_a_c_a_p_i_1_1_error.html", null ],
+    [ "ACAPI::Impl::v1::FactoryRegistry", "class_a_c_a_p_i_1_1_impl_1_1v1_1_1_factory_registry.html", null ],
+    [ "ACAPI::MEP::FlexibleSegmentPolylineLinePart", "struct_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_polyline_line_part.html", null ],
+    [ "ACAPI::MEP::FlexibleSegmentPolylineSplinePart", "struct_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_polyline_spline_part.html", null ],
     [ "Geometry::GJKResult< VectorType >", "class_geometry_1_1_g_j_k_result.html", null ],
+    [ "ACAPI::Library::v1::GSMSectionData", "struct_a_c_a_p_i_1_1_library_1_1v1_1_1_g_s_m_section_data.html", null ],
     [ "std::hash< API_ElemType >", "structstd_1_1hash_3_01_a_p_i___elem_type_01_4.html", null ],
-    [ "ACAPI::v1::DesignOptionCombinationViewSettings::MainModelOnly", "struct_a_c_a_p_i_1_1v1_1_1_design_option_combination_view_settings_1_1_main_model_only.html", null ],
-    [ "ACAPI::v1::DesignOptionCombinationViewSettings::Missing", "struct_a_c_a_p_i_1_1v1_1_1_design_option_combination_view_settings_1_1_missing.html", null ],
-    [ "Modifier", null, [
-      [ "ACAPI::MEP::v1::Bend", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend.html", null ],
-      [ "ACAPI::MEP::v1::Transition", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html", null ]
+    [ "Tracking::Tracker::HintGuard", "class_tracking_1_1_tracker_1_1_hint_guard.html", null ],
+    [ "ACAPI::MEP::v1::ICalculationResultColumn", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_i_calculation_result_column.html", [
+      [ "ACAPI::MEP::v1::TypedCalculationResultColumn< T >", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_typed_calculation_result_column.html", null ]
     ] ],
+    [ "DG::ItemObserver", null, [
+      [ "Tracking::Tracker", "class_tracking_1_1_tracker.html", null ]
+    ] ],
+    [ "DG::LowLevelKeyboardHandler", null, [
+      [ "Tracking::Tracker::InEditKeyboardHandler", "class_tracking_1_1_tracker_1_1_in_edit_keyboard_handler.html", null ],
+      [ "Tracking::Tracker::RunningModeKeyboardHandler", "class_tracking_1_1_tracker_1_1_running_mode_keyboard_handler.html", null ]
+    ] ],
+    [ "ACAPI::DesignOptions::v1::DesignOptionCombinationViewSettings::MainModelOnly", "struct_a_c_a_p_i_1_1_design_options_1_1v1_1_1_design_option_combination_view_settings_1_1_main_model_only.html", null ],
+    [ "ACAPI::DesignOptions::v1::DesignOptionCombinationViewSettings::Missing", "struct_a_c_a_p_i_1_1_design_options_1_1v1_1_1_design_option_combination_view_settings_1_1_missing.html", null ],
     [ "Modifier final public PortBase::Modifier", null, [
       [ "ACAPI::MEP::v1::PipingPort", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port.html", null ],
       [ "ACAPI::MEP::v1::VentilationPort", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port.html", null ]
@@ -644,10 +642,29 @@ var hierarchy =
       [ "ACAPI::MEP::v1::Equipment", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_equipment.html", null ],
       [ "ACAPI::MEP::v1::Fitting", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_fitting.html", null ],
       [ "ACAPI::MEP::v1::FlexibleSegment", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment.html", null ],
+      [ "ACAPI::MEP::v1::TakeOff", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_take_off.html", null ],
       [ "ACAPI::MEP::v1::Terminal", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_terminal.html", null ]
     ] ],
+    [ "Modifier public PortDefaultBase::Modifier", null, [
+      [ "ACAPI::MEP::v1::CableCarrierPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_port_default.html", null ],
+      [ "ACAPI::MEP::v1::PipingPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port_default.html", null ],
+      [ "ACAPI::MEP::v1::VentilationPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port_default.html", null ]
+    ] ],
+    [ "Modifier public ModifierBase", null, [
+      [ "ACAPI::v1::ZoneBoundaryQuery", "class_a_c_a_p_i_1_1v1_1_1_zone_boundary_query.html", null ]
+    ] ],
     [ "ACAPI::ModifierBase", "class_a_c_a_p_i_1_1_modifier_base.html", null ],
+    [ "Modifier final public ACAPI::ModifierBase", null, [
+      [ "ACAPI::Library::v1::GSMObject", "class_a_c_a_p_i_1_1_library_1_1v1_1_1_g_s_m_object.html", null ],
+      [ "ACAPI::Library::v1::LibraryManager", "class_a_c_a_p_i_1_1_library_1_1v1_1_1_library_manager.html", null ]
+    ] ],
     [ "Modifier public ACAPI::ModifierBase", null, [
+      [ "ACAPI::DesignOptions::v1::DesignOptionCombinationViewSettings", "class_a_c_a_p_i_1_1_design_options_1_1v1_1_1_design_option_combination_view_settings.html", null ],
+      [ "ACAPI::MEP::v1::CableCarrierSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table.html", null ],
+      [ "ACAPI::MEP::v1::DuctBranchPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html", null ],
+      [ "ACAPI::MEP::v1::DuctCircularSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html", null ],
+      [ "ACAPI::MEP::v1::DuctElbowPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html", null ],
+      [ "ACAPI::MEP::v1::DuctRectangularSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html", null ],
       [ "ACAPI::MEP::v1::ElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html", [
         [ "ACAPI::MEP::v1::AccessoryDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_accessory_default.html", null ],
         [ "ACAPI::MEP::v1::BendDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_default.html", null ],
@@ -656,21 +673,46 @@ var hierarchy =
         [ "ACAPI::MEP::v1::FittingDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_fitting_default.html", null ],
         [ "ACAPI::MEP::v1::FlexibleSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment_default.html", null ],
         [ "ACAPI::MEP::v1::RigidSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment_default.html", null ],
+        [ "ACAPI::MEP::v1::TakeOffDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_take_off_default.html", null ],
         [ "ACAPI::MEP::v1::TerminalDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_terminal_default.html", null ],
         [ "ACAPI::MEP::v1::TransitionDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition_default.html", null ]
       ] ],
-      [ "ACAPI::MEP::v1::ModifiableElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_modifiable_element_base.html", null ],
+      [ "ACAPI::MEP::v1::ModifiableElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_modifiable_element_base.html", [
+        [ "ACAPI::MEP::v1::Accessory", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_accessory.html", null ],
+        [ "ACAPI::MEP::v1::Branch", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch.html", null ],
+        [ "ACAPI::MEP::v1::Equipment", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_equipment.html", null ],
+        [ "ACAPI::MEP::v1::Fitting", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_fitting.html", null ],
+        [ "ACAPI::MEP::v1::FlexibleSegment", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment.html", null ],
+        [ "ACAPI::MEP::v1::ModifiableElement", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_modifiable_element.html", null ],
+        [ "ACAPI::MEP::v1::TakeOff", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_take_off.html", null ],
+        [ "ACAPI::MEP::v1::Terminal", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_terminal.html", null ]
+      ] ],
+      [ "ACAPI::MEP::v1::PipeBranchPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html", null ],
+      [ "ACAPI::MEP::v1::PipeElbowPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html", null ],
+      [ "ACAPI::MEP::v1::PipeSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html", null ],
       [ "ACAPI::MEP::v1::PortBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html", [
         [ "ACAPI::MEP::v1::CableCarrierPort", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_port.html", null ],
         [ "ACAPI::MEP::v1::PipingPort", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port.html", null ],
         [ "ACAPI::MEP::v1::Port", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port.html", null ],
         [ "ACAPI::MEP::v1::VentilationPort", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port.html", null ]
       ] ],
-      [ "ACAPI::MEP::v1::PreferenceTableBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_preference_table_base.html", null ],
+      [ "ACAPI::MEP::v1::PortDefaultBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_default_base.html", [
+        [ "ACAPI::MEP::v1::CableCarrierPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_port_default.html", null ],
+        [ "ACAPI::MEP::v1::PipingPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port_default.html", null ],
+        [ "ACAPI::MEP::v1::VentilationPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port_default.html", null ]
+      ] ],
       [ "ACAPI::MEP::v1::PreferenceTableContainerBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_preference_table_container_base.html", [
-        [ "ACAPI::MEP::v1::CableCarrierPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_preference_table_container.html", null ],
-        [ "ACAPI::MEP::v1::DuctPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_preference_table_container.html", null ],
-        [ "ACAPI::MEP::v1::PipePreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_preference_table_container.html", null ]
+        [ "ACAPI::MEP::v1::CableCarrierSegmentPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table_container.html", null ],
+        [ "ACAPI::MEP::v1::DuctBranchPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table_container.html", null ],
+        [ "ACAPI::MEP::v1::DuctElbowPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table_container.html", null ],
+        [ "ACAPI::MEP::v1::DuctSegmentPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_segment_preference_table_container.html", null ],
+        [ "ACAPI::MEP::v1::PipeBranchPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table_container.html", null ],
+        [ "ACAPI::MEP::v1::PipeElbowPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table_container.html", null ],
+        [ "ACAPI::MEP::v1::PipeSegmentPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table_container.html", null ]
+      ] ],
+      [ "ACAPI::MEP::v1::ReferenceSetBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_reference_set_base.html", [
+        [ "ACAPI::MEP::v1::DuctReferenceSet", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_reference_set.html", null ],
+        [ "ACAPI::MEP::v1::PipeReferenceSet", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_reference_set.html", null ]
       ] ],
       [ "ACAPI::MEP::v1::RoutingElement", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html", null ],
       [ "ACAPI::MEP::v1::RoutingElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_default.html", null ],
@@ -678,39 +720,117 @@ var hierarchy =
       [ "ACAPI::MEP::v1::RoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_default.html", null ],
       [ "ACAPI::MEP::v1::RoutingSegment", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html", null ],
       [ "ACAPI::MEP::v1::RoutingSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html", null ],
-      [ "ACAPI::v1::DesignOptionCombinationViewSettings", "class_a_c_a_p_i_1_1v1_1_1_design_option_combination_view_settings.html", null ]
+      [ "ACAPI::v1::ZoneLabelingSettings", "class_a_c_a_p_i_1_1v1_1_1_zone_labeling_settings.html", null ]
     ] ],
     [ "NullValueType", "struct_null_value_type.html", null ],
-    [ "ACAPI::Object", "class_a_c_a_p_i_1_1v1_1_1_object.html", [
-      [ "ACAPI::v1::DesignOptionCombination", "class_a_c_a_p_i_1_1v1_1_1_design_option_combination.html", null ],
-      [ "ACAPI::v1::DesignOptionCombinationViewSettings", "class_a_c_a_p_i_1_1v1_1_1_design_option_combination_view_settings.html", null ],
-      [ "ACAPI::v1::DesignOptionManager", "class_a_c_a_p_i_1_1v1_1_1_design_option_manager.html", null ],
-      [ "ACAPI::v1::ElementBase", "class_a_c_a_p_i_1_1v1_1_1_element_base.html", null ],
-      [ "ACAPI::v1::ElementDefault", "class_a_c_a_p_i_1_1v1_1_1_element_default.html", null ],
-      [ "ACAPI::v1::View", "class_a_c_a_p_i_1_1v1_1_1_view.html", null ]
-    ] ],
     [ "ACAPI::v1::Object", "class_a_c_a_p_i_1_1v1_1_1_object.html", [
-      [ "ACAPI::v1::DesignOptionCombination", "class_a_c_a_p_i_1_1v1_1_1_design_option_combination.html", null ],
-      [ "ACAPI::v1::DesignOptionCombinationViewSettings", "class_a_c_a_p_i_1_1v1_1_1_design_option_combination_view_settings.html", null ],
-      [ "ACAPI::v1::DesignOptionManager", "class_a_c_a_p_i_1_1v1_1_1_design_option_manager.html", null ],
-      [ "ACAPI::v1::ElementBase", "class_a_c_a_p_i_1_1v1_1_1_element_base.html", null ],
-      [ "ACAPI::v1::ElementDefault", "class_a_c_a_p_i_1_1v1_1_1_element_default.html", null ],
-      [ "ACAPI::v1::View", "class_a_c_a_p_i_1_1v1_1_1_view.html", null ]
-    ] ],
-    [ "Object", null, [
+      [ "ACAPI::Cutaway::v1::CuttingPlane", "class_a_c_a_p_i_1_1_cutaway_1_1v1_1_1_cutting_plane.html", null ],
+      [ "ACAPI::DesignOptions::v1::DesignOptionCombination", "class_a_c_a_p_i_1_1_design_options_1_1v1_1_1_design_option_combination.html", null ],
+      [ "ACAPI::DesignOptions::v1::DesignOptionCombinationViewSettings", "class_a_c_a_p_i_1_1_design_options_1_1v1_1_1_design_option_combination_view_settings.html", null ],
+      [ "ACAPI::DesignOptions::v1::DesignOptionManager", "class_a_c_a_p_i_1_1_design_options_1_1v1_1_1_design_option_manager.html", null ],
+      [ "ACAPI::Keynote::v1::KeynoteFolder", "class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html", null ],
+      [ "ACAPI::Keynote::v1::KeynoteItem", "class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html", null ],
+      [ "ACAPI::Keynote::v1::KeynoteManager", "class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_manager.html", null ],
+      [ "ACAPI::Library::v1::GSMObject", "class_a_c_a_p_i_1_1_library_1_1v1_1_1_g_s_m_object.html", null ],
+      [ "ACAPI::Library::v1::LibPart", "class_a_c_a_p_i_1_1_library_1_1v1_1_1_lib_part.html", null ],
+      [ "ACAPI::Library::v1::Library", "class_a_c_a_p_i_1_1_library_1_1v1_1_1_library.html", null ],
+      [ "ACAPI::Library::v1::LibraryManager", "class_a_c_a_p_i_1_1_library_1_1v1_1_1_library_manager.html", null ],
+      [ "ACAPI::Library::v1::LibraryTreePath", "class_a_c_a_p_i_1_1_library_1_1v1_1_1_library_tree_path.html", null ],
+      [ "ACAPI::LicenseInfo::v1::LicenseInfoManager", "class_a_c_a_p_i_1_1_license_info_1_1v1_1_1_license_info_manager.html", null ],
+      [ "ACAPI::LicenseInfo::v1::ProductVersionInfo", "class_a_c_a_p_i_1_1_license_info_1_1v1_1_1_product_version_info.html", null ],
+      [ "ACAPI::MEP::v1::AccessoryUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_accessory_u_i_manager.html", null ],
+      [ "ACAPI::MEP::v1::BendUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_u_i_manager.html", null ],
+      [ "ACAPI::MEP::v1::BranchUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch_u_i_manager.html", null ],
+      [ "ACAPI::MEP::v1::CableCarrierSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table.html", null ],
+      [ "ACAPI::MEP::v1::DistributionSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_system.html", null ],
+      [ "ACAPI::MEP::v1::DistributionSystemsGraph", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_systems_graph.html", null ],
+      [ "ACAPI::MEP::v1::DistributionSystemsGraphTreeNode", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_systems_graph_tree_node.html", null ],
+      [ "ACAPI::MEP::v1::DuctBranchPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html", null ],
+      [ "ACAPI::MEP::v1::DuctCircularSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html", null ],
+      [ "ACAPI::MEP::v1::DuctElbowPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html", null ],
+      [ "ACAPI::MEP::v1::DuctRectangularSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html", null ],
+      [ "ACAPI::MEP::v1::ElementUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_u_i_manager.html", null ],
+      [ "ACAPI::MEP::v1::EquipmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_equipment_u_i_manager.html", null ],
+      [ "ACAPI::MEP::v1::FittingUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_fitting_u_i_manager.html", null ],
+      [ "ACAPI::MEP::v1::FlexibleSegmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment_u_i_manager.html", null ],
+      [ "ACAPI::MEP::v1::GraphCalculationInterface", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_graph_calculation_interface.html", null ],
+      [ "ACAPI::MEP::v1::PipeBranchPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html", null ],
+      [ "ACAPI::MEP::v1::PipeElbowPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html", null ],
+      [ "ACAPI::MEP::v1::PipeSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html", null ],
       [ "ACAPI::MEP::v1::PortBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html", null ],
-      [ "ACAPI::MEP::v1::PreferenceTableBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_preference_table_base.html", null ],
-      [ "ACAPI::MEP::v1::PreferenceTableContainerBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_preference_table_container_base.html", null ]
+      [ "ACAPI::MEP::v1::PortDefaultBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_default_base.html", null ],
+      [ "ACAPI::MEP::v1::PreferenceTableContainerBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_preference_table_container_base.html", null ],
+      [ "ACAPI::MEP::v1::ReferenceSetBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_reference_set_base.html", null ],
+      [ "ACAPI::MEP::v1::RigidSegmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment_u_i_manager.html", null ],
+      [ "ACAPI::MEP::v1::RoutingElementUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_u_i_manager.html", null ],
+      [ "ACAPI::MEP::v1::RoutingNodeUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_u_i_manager.html", null ],
+      [ "ACAPI::MEP::v1::RoutingSegmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_u_i_manager.html", null ],
+      [ "ACAPI::MEP::v1::TakeOffUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_take_off_u_i_manager.html", null ],
+      [ "ACAPI::MEP::v1::TerminalUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_terminal_u_i_manager.html", null ],
+      [ "ACAPI::MEP::v1::TransitionUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition_u_i_manager.html", null ],
+      [ "ACAPI::ModelViews::v1::View", "class_a_c_a_p_i_1_1_model_views_1_1v1_1_1_view.html", null ],
+      [ "ACAPI::Tracking::v1::TrackerManager", "class_a_c_a_p_i_1_1_tracking_1_1v1_1_1_tracker_manager.html", null ],
+      [ "ACAPI::v1::ElementBase", "class_a_c_a_p_i_1_1v1_1_1_element_base.html", [
+        [ "ACAPI::MEP::v1::ElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_base.html", [
+          [ "ACAPI::MEP::v1::Bend", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend.html", null ],
+          [ "ACAPI::MEP::v1::Element", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element.html", null ],
+          [ "ACAPI::MEP::v1::ModifiableElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_modifiable_element_base.html", null ],
+          [ "ACAPI::MEP::v1::RigidSegment", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment.html", null ],
+          [ "ACAPI::MEP::v1::Transition", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html", null ]
+        ] ],
+        [ "ACAPI::MEP::v1::RoutingElement", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html", null ],
+        [ "ACAPI::MEP::v1::RoutingNode", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html", null ],
+        [ "ACAPI::MEP::v1::RoutingSegment", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html", null ]
+      ] ],
+      [ "ACAPI::v1::ElementDefault", "class_a_c_a_p_i_1_1v1_1_1_element_default.html", [
+        [ "ACAPI::MEP::v1::ElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html", null ],
+        [ "ACAPI::MEP::v1::RoutingElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_default.html", null ],
+        [ "ACAPI::MEP::v1::RoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_default.html", null ],
+        [ "ACAPI::MEP::v1::RoutingSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html", null ]
+      ] ],
+      [ "ACAPI::v1::GSID", "class_a_c_a_p_i_1_1v1_1_1_g_s_i_d.html", null ],
+      [ "ACAPI::v1::InputHandler", "class_a_c_a_p_i_1_1v1_1_1_input_handler.html", null ],
+      [ "ACAPI::v1::ZoneBoundary", "class_a_c_a_p_i_1_1v1_1_1_zone_boundary.html", null ],
+      [ "ACAPI::v1::ZoneBoundaryQuery", "class_a_c_a_p_i_1_1v1_1_1_zone_boundary_query.html", null ],
+      [ "ACAPI::v1::ZoneLabelingSettings", "class_a_c_a_p_i_1_1v1_1_1_zone_labeling_settings.html", null ],
+      [ "IFCAPI::v1::Assignments", "class_i_f_c_a_p_i_1_1v1_1_1_assignments.html", null ],
+      [ "IFCAPI::v1::Attribute", "class_i_f_c_a_p_i_1_1v1_1_1_attribute.html", null ],
+      [ "IFCAPI::v1::Classification", "class_i_f_c_a_p_i_1_1v1_1_1_classification.html", null ],
+      [ "IFCAPI::v1::ClassificationReference", "class_i_f_c_a_p_i_1_1v1_1_1_classification_reference.html", null ],
+      [ "IFCAPI::v1::HookAssignments", "class_i_f_c_a_p_i_1_1v1_1_1_hook_assignments.html", null ],
+      [ "IFCAPI::v1::HookManager", "class_i_f_c_a_p_i_1_1v1_1_1_hook_manager.html", null ],
+      [ "IFCAPI::v1::ObjectAccessor", "class_i_f_c_a_p_i_1_1v1_1_1_object_accessor.html", null ],
+      [ "IFCAPI::v1::ObjectID", "class_i_f_c_a_p_i_1_1v1_1_1_object_i_d.html", null ],
+      [ "IFCAPI::v1::Property", "class_i_f_c_a_p_i_1_1v1_1_1_property.html", null ],
+      [ "IFCAPI::v1::PropertyAccessor", "class_i_f_c_a_p_i_1_1v1_1_1_property_accessor.html", null ],
+      [ "IFCAPI::v1::PropertyBoundedValue", "class_i_f_c_a_p_i_1_1v1_1_1_property_bounded_value.html", null ],
+      [ "IFCAPI::v1::PropertyBuilder", "class_i_f_c_a_p_i_1_1v1_1_1_property_builder.html", null ],
+      [ "IFCAPI::v1::PropertyEnumeratedValue", "class_i_f_c_a_p_i_1_1v1_1_1_property_enumerated_value.html", null ],
+      [ "IFCAPI::v1::PropertyListValue", "class_i_f_c_a_p_i_1_1v1_1_1_property_list_value.html", null ],
+      [ "IFCAPI::v1::PropertySingleValue", "class_i_f_c_a_p_i_1_1v1_1_1_property_single_value.html", null ],
+      [ "IFCAPI::v1::PropertyTableValue", "class_i_f_c_a_p_i_1_1v1_1_1_property_table_value.html", null ],
+      [ "IFCAPI::v1::Value", "class_i_f_c_a_p_i_1_1v1_1_1_value.html", null ]
+    ] ],
+    [ "ACAPI::Impl::ObjectImpl", "class_a_c_a_p_i_1_1_impl_1_1_object_impl.html", [
+      [ "ACAPI::LicenseInfo::Impl::ProductVersionInfoImplBase", "class_a_c_a_p_i_1_1_license_info_1_1_impl_1_1_product_version_info_impl_base.html", null ]
     ] ],
     [ "ACAPI::MEP::Orientation", "struct_a_c_a_p_i_1_1_m_e_p_1_1_orientation.html", null ],
+    [ "DG::PanelObserver", null, [
+      [ "Tracking::Tracker", "class_tracking_1_1_tracker.html", null ]
+    ] ],
     [ "ResultBase", null, [
       [ "ACAPI::Result< T, E >", "class_a_c_a_p_i_1_1_result.html", null ]
     ] ],
-    [ "ACAPI::MEP::RoutingSegmentCrossSectionData", "struct_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_cross_section_data.html", null ],
-    [ "ACAPI::v1::DesignOptionCombinationViewSettings::Standard", "struct_a_c_a_p_i_1_1v1_1_1_design_option_combination_view_settings_1_1_standard.html", null ],
-    [ "ACAPI::MEP::UniqueID", "class_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d.html", [
-      [ "ACAPI::MEP::Adapter::UniqueID", "class_a_c_a_p_i_1_1_m_e_p_1_1_adapter_1_1_unique_i_d.html", null ]
+    [ "ACAPI::MEP::RouteConnectionResult", "struct_a_c_a_p_i_1_1_m_e_p_1_1_route_connection_result.html", null ],
+    [ "ACAPI::MEP::RoutingSegmentCircularCrossSectionData", "struct_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_circular_cross_section_data.html", null ],
+    [ "ACAPI::MEP::RoutingSegmentRectangularCrossSectionData", "struct_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_rectangular_cross_section_data.html", null ],
+    [ "ACAPI::DesignOptions::v1::DesignOptionCombinationViewSettings::Standard", "struct_a_c_a_p_i_1_1_design_options_1_1v1_1_1_design_option_combination_view_settings_1_1_standard.html", null ],
+    [ "TransparentWindow", null, [
+      [ "Tracking::Tracker", "class_tracking_1_1_tracker.html", null ]
     ] ],
-    [ "ACAPI::UniqueID", "class_a_c_a_p_i_1_1v1_1_1_unique_i_d.html", null ],
-    [ "ACAPI::v1::UniqueID", "class_a_c_a_p_i_1_1v1_1_1_unique_i_d.html", null ]
+    [ "ACAPI::v1::UniqueID", "class_a_c_a_p_i_1_1v1_1_1_unique_i_d.html", [
+      [ "ACAPI::MEP::UniqueID", "class_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d.html", [
+        [ "ACAPI::MEP::Adapter::UniqueID", "class_a_c_a_p_i_1_1_m_e_p_1_1_adapter_1_1_unique_i_d.html", null ]
+      ] ]
+    ] ]
 ];

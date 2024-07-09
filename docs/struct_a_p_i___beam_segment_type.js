@@ -3,6 +3,7 @@ var struct_a_p_i___beam_segment_type =
     [ "assemblySegmentData", "struct_a_p_i___beam_segment_type.html#ac1d357992884c3f8a45c3c1acf7d72df", null ],
     [ "bottomMaterial", "struct_a_p_i___beam_segment_type.html#ae68199b8b5d0fbd7e9f568e6c7c3a84f", null ],
     [ "endsMaterial", "struct_a_p_i___beam_segment_type.html#a72bcbf12713e4d48ea8c256490c82be6", null ],
+    [ "extrusionMaterial", "struct_a_p_i___beam_segment_type.html#ad46aa6d8246a0df85883d5ddf8abf79e", null ],
     [ "head", "struct_a_p_i___beam_segment_type.html#a077b212a3e09add004a000dbd9459e3c", null ],
     [ "leftMaterial", "struct_a_p_i___beam_segment_type.html#a2b764b5f70032aada68bdd8c407df748", null ],
     [ "materialsChained", "struct_a_p_i___beam_segment_type.html#ab3baecb2502c0792adfd9c521d6323ae", null ],

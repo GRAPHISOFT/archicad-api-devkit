@@ -1,6 +1,19 @@
 var searchData=
 [
-  ['getcablecarrierpreferencetablecontainer_0',['GetCableCarrierPreferenceTableContainer',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_preference_table_container.html#ad4406a85e79c2daececf1bba9323abe0',1,'ACAPI::MEP::v1::CableCarrierPreferenceTableContainer']]],
-  ['getductpreferencetablecontainer_1',['GetDuctPreferenceTableContainer',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_preference_table_container.html#aa9c40785c841fc71e6cd4a7dc87a0ae1',1,'ACAPI::MEP::v1::DuctPreferenceTableContainer']]],
-  ['getpipepreferencetablecontainer_2',['GetPipePreferenceTableContainer',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_preference_table_container.html#aa738b93023bd3421f561c1d8ede05b6d',1,'ACAPI::MEP::v1::PipePreferenceTableContainer']]]
+  ['getcablecarriersegmentpreferencetablecontainer_0',['GetCableCarrierSegmentPreferenceTableContainer',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table_container.html#a7b081ce6b8928cf72d8f248622d798be',1,'ACAPI::MEP::v1::CableCarrierSegmentPreferenceTableContainer']]],
+  ['getcuttingplane_1',['GetCuttingPlane',['../class_a_c_a_p_i_1_1_cutaway_1_1v1_1_1_cutting_plane.html#a3eb52bbfde68c0ff2ae7e1280386cf3b',1,'ACAPI::Cutaway::v1::CuttingPlane']]],
+  ['getductbranchpreferencetablecontainer_2',['GetDuctBranchPreferenceTableContainer',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table_container.html#a96ca169525ec8d2b32e66dc1d63daab6',1,'ACAPI::MEP::v1::DuctBranchPreferenceTableContainer']]],
+  ['getductelbowpreferencetablecontainer_3',['GetDuctElbowPreferenceTableContainer',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table_container.html#a115033da7cd9aeacc38dc0bc3c83c9af',1,'ACAPI::MEP::v1::DuctElbowPreferenceTableContainer']]],
+  ['getductreferenceset_4',['GetDuctReferenceSet',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_reference_set.html#adb8fc5dad573bc00a8327c9e500d3138',1,'ACAPI::MEP::v1::DuctReferenceSet']]],
+  ['getductsegmentpreferencetablecontainer_5',['GetDuctSegmentPreferenceTableContainer',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_segment_preference_table_container.html#a9f04afb30985e0d8cb1d742f19da456c',1,'ACAPI::MEP::v1::DuctSegmentPreferenceTableContainer']]],
+  ['gethookmanager_6',['GetHookManager',['../class_i_f_c_a_p_i_1_1v1_1_1_hook_manager.html#afc0465873d186ee58b64d5e01f58b5d5',1,'IFCAPI::v1::HookManager']]],
+  ['getlibrarymanager_7',['GetLibraryManager',['../class_a_c_a_p_i_1_1_library_1_1v1_1_1_library_manager.html#a25cacad0e0a1931c0b394e9debc7b22e',1,'ACAPI::Library::v1::LibraryManager']]],
+  ['getlicenseinfomanager_8',['GetLicenseInfoManager',['../class_a_c_a_p_i_1_1_license_info_1_1v1_1_1_license_info_manager.html#a30ffb8a534512a6dfa642b9837168b30',1,'ACAPI::LicenseInfo::v1::LicenseInfoManager']]],
+  ['getobjectaccessor_9',['GetObjectAccessor',['../class_i_f_c_a_p_i_1_1v1_1_1_object_accessor.html#a91d1ab5cbe5f771a21b85582f2701459',1,'IFCAPI::v1::ObjectAccessor']]],
+  ['getpipebranchpreferencetablecontainer_10',['GetPipeBranchPreferenceTableContainer',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table_container.html#a8ed6697f5dafda2e33136dafc591e528',1,'ACAPI::MEP::v1::PipeBranchPreferenceTableContainer']]],
+  ['getpipeelbowpreferencetablecontainer_11',['GetPipeElbowPreferenceTableContainer',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table_container.html#aa89181f2f1487528582439aca51bd7b6',1,'ACAPI::MEP::v1::PipeElbowPreferenceTableContainer']]],
+  ['getpipereferenceset_12',['GetPipeReferenceSet',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_reference_set.html#acdeeb66d0d350897720d18c525db8e78',1,'ACAPI::MEP::v1::PipeReferenceSet']]],
+  ['getpipesegmentpreferencetablecontainer_13',['GetPipeSegmentPreferenceTableContainer',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table_container.html#a167ebbd5dfc47978d3b0fc19a93f5372',1,'ACAPI::MEP::v1::PipeSegmentPreferenceTableContainer']]],
+  ['getpropertybuilder_14',['GetPropertyBuilder',['../class_i_f_c_a_p_i_1_1v1_1_1_property_builder.html#a6a9ba6dd291df269ed231b6decbae6f5',1,'IFCAPI::v1::PropertyBuilder']]],
+  ['gettrackermanager_15',['GetTrackerManager',['../class_a_c_a_p_i_1_1_tracking_1_1v1_1_1_tracker_manager.html#a41c763cea40663851a9b7dfabb5f8453',1,'ACAPI::Tracking::v1::TrackerManager']]]
 ];

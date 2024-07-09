@@ -76,8 +76,8 @@ var group___drawing_primitive =
       [ "text", "union_a_p_i___prim_element.html#adb7d1ceeb0cc13796380d345b0347cbc", null ],
       [ "tri", "union_a_p_i___prim_element.html#aa230b167ebfe5b4dffc45171aa819107", null ]
     ] ],
-    [ "ShapePrimsProc", "group___drawing_primitive.html#gab729e68503ea36eb8ee779e96cd88bdc", null ],
-    [ "ACAPI_DrawingPrimitive_DrawStoryControl", "group___drawing_primitive.html#ga8eb22dcbcad880df383a3163f8e36871", null ],
-    [ "ACAPI_DrawingPrimitive_ShapePrims", "group___drawing_primitive.html#ga20081858d1d13aaceb5faa1ef53a6906", null ],
-    [ "ACAPI_DrawingPrimitive_ShapePrimsExt", "group___drawing_primitive.html#ga6bee2382107a0a20430f4d33c62e2c8f", null ]
+    [ "ShapePrimsProc", "group___drawing_primitive.html#ga1a5653415090468c3f5a646304ca5c8a", null ],
+    [ "ACAPI_DrawingPrimitive_DrawStoryControl", "group___drawing_primitive.html#gac591be69de7914979491bbdbb92504ee", null ],
+    [ "ACAPI_DrawingPrimitive_ShapePrims", "group___drawing_primitive.html#ga4c54d352ecf2d4abec4bf2d8f762d4b5", null ],
+    [ "ACAPI_DrawingPrimitive_ShapePrimsExt", "group___drawing_primitive.html#ga3bc2eb71b68e08a372bcd757cd893a5c", null ]
 ];

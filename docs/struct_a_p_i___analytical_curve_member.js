@@ -11,5 +11,6 @@ var struct_a_p_i___analytical_curve_member =
     [ "FEMType", "struct_a_p_i___analytical_curve_member.html#a25091185256d7303e8b13b4f6e24d013", null ],
     [ "internalNodes", "struct_a_p_i___analytical_curve_member.html#a87f0a7e552165111af0f8799c7ad44d3", null ],
     [ "layerAttrIndex", "struct_a_p_i___analytical_curve_member.html#aad0ffd1f38b54a61d4fdd63af6ebd662", null ],
+    [ "rotationAngle", "struct_a_p_i___analytical_curve_member.html#a619cdb69c7d7b1baf0087a7e3331e82e", null ],
     [ "varyingSegmentList", "struct_a_p_i___analytical_curve_member.html#af969a58b6049eed656a87d4b627027d0", null ]
 ];

@@ -1,5 +1,6 @@
 var struct_a_p_i___mark_up_type =
 [
+    [ "API_MarkUpType", "struct_a_p_i___mark_up_type.html#ada6dfe60bde8b8907f750f902a595a24", null ],
     [ "creaTime", "struct_a_p_i___mark_up_type.html#ac17a9cee2bb36a2f3b0bc9cdcf28193b", null ],
     [ "guid", "struct_a_p_i___mark_up_type.html#a0ae3f8cbe33155d795ad9ba4ed2c2ea5", null ],
     [ "isTagTextElemVisible", "struct_a_p_i___mark_up_type.html#a239f6ea16f50a7c282dc234edd7713d5", null ],

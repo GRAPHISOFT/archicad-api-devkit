@@ -1,5 +1,6 @@
 var struct_a_p_i___analytical_cross_section =
 [
+    [ "alignment", "struct_a_p_i___analytical_cross_section.html#aacc3768c7e6124ed539bb49f5e8f93ad", null ],
     [ "crossSectionType", "struct_a_p_i___analytical_cross_section.html#ada82789f39b3b6192c828e4a9f07aa10", null ],
     [ "height", "struct_a_p_i___analytical_cross_section.html#a15de87e1cd1cb9f0fe82aee153a4b158", null ],
     [ "materialAttrIndices", "struct_a_p_i___analytical_cross_section.html#a12a5f73bee7a4ae51886c50556e814f8", null ],

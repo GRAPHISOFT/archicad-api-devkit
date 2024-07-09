@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['old_20listing_0',['Old Listing',['../group___old_listing.html',1,'']]]
+  ['notifications_20manager_0',['Notifications Manager',['../group___notification.html',1,'']]]
 ];

@@ -1,6 +1,7 @@
 var struct_a_p_i___stair_structure_type =
 [
     [ "bottomType", "struct_a_p_i___stair_structure_type.html#a7911a390d56bd1d8c1944399bef7b63d", null ],
+    [ "data", "struct_a_p_i___stair_structure_type.html#a2f5e995e47422fb3e05d6ab51bd6f5d9", null ],
     [ "head", "struct_a_p_i___stair_structure_type.html#a086a7f87e28d300d3df3f2af83c1e6b5", null ],
     [ "horizontalThickness", "struct_a_p_i___stair_structure_type.html#ad8af74ea1197144f12046391dba992ca", null ],
     [ "isLanding", "struct_a_p_i___stair_structure_type.html#ae3041fc45c8337e7825c39bd5ccf8a8f", null ],

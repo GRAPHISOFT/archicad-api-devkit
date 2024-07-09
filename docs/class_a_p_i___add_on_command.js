@@ -7,5 +7,6 @@ var class_a_p_i___add_on_command =
     [ "GetNamespace", "class_a_p_i___add_on_command.html#a68cc0d51c00f0175a92780f9c9c8d52c", null ],
     [ "GetResponseSchema", "class_a_p_i___add_on_command.html#aa960031f806786e0dc1699aeb1861f37", null ],
     [ "GetSchemaDefinitions", "class_a_p_i___add_on_command.html#ad962ece5fc34d952471b7a1583cab735", null ],
-    [ "IsProcessWindowVisible", "class_a_p_i___add_on_command.html#a3fb67dd8a9e1ba7205be99c58c7f9203", null ]
+    [ "IsProcessWindowVisible", "class_a_p_i___add_on_command.html#a3fb67dd8a9e1ba7205be99c58c7f9203", null ],
+    [ "OnResponseValidationFailed", "class_a_p_i___add_on_command.html#aae63c704e49b911a9d10a45c9b86210d", null ]
 ];

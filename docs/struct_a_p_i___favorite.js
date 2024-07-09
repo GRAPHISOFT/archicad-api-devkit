@@ -1,5 +1,6 @@
 var struct_a_p_i___favorite =
 [
+    [ "API_Favorite", "struct_a_p_i___favorite.html#a601d4c31e9a53e6ea886059679798765", null ],
     [ "classifications", "struct_a_p_i___favorite.html#a39b2e963ee1f60f3ceb9d9d284e44b35", null ],
     [ "elemCategoryValues", "struct_a_p_i___favorite.html#a5e82f391f488ea8e75c98865488f9914", null ],
     [ "element", "struct_a_p_i___favorite.html#a45d4564ac009bfcc3b19e0737be1d49a", null ],

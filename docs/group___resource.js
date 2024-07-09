@@ -1,7 +1,7 @@
 var group___resource =
 [
-    [ "ACAPI_GetOwnResModule", "group___resource.html#ga7ee3155556f63383ec9f9167d7589696", null ],
-    [ "ACAPI_Resource_GetFixStr", "group___resource.html#ga203944b68735a03fbaf6ecd86fd5e855", null ],
-    [ "ACAPI_Resource_GetLocStr", "group___resource.html#gad7bf4248b5c756d5b8e2d0be6f8f2e03", null ],
-    [ "ACAPI_Resource_GetLocUStr", "group___resource.html#gacd313f2d6bc3da68d526ee6df0b95ce1", null ]
+    [ "ACAPI_GetOwnResModule", "group___resource.html#gaf1228260879fd5622cb1e9a5284e0c50", null ],
+    [ "ACAPI_Resource_GetFixStr", "group___resource.html#ga8b68c0774d8b323d4c83e96d1ac9fe06", null ],
+    [ "ACAPI_Resource_GetLocStr", "group___resource.html#ga44eab2972d8f5ac898713f432253d485", null ],
+    [ "ACAPI_Resource_GetLocUStr", "group___resource.html#ga2e2f83e3a8bac87e8456890012adcaa3", null ]
 ];

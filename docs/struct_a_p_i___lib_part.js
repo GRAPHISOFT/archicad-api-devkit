@@ -10,7 +10,6 @@ var struct_a_p_i___lib_part =
     [ "ownerID", "struct_a_p_i___lib_part.html#a15c101e947884d6f6a52eeeedeab2d43", null ],
     [ "ownUnID", "struct_a_p_i___lib_part.html#a64a9c3dfc59eea5d8b3df5010277585f", null ],
     [ "parentUnID", "struct_a_p_i___lib_part.html#a770b1a7c380ffc57603469eea2fa3160", null ],
-    [ "platformSign", "struct_a_p_i___lib_part.html#a012426c95e58a4f5cc9402f8bbb475b8", null ],
     [ "typeID", "struct_a_p_i___lib_part.html#a3caf0ed7e21735416da6fdcb20dbf812", null ],
     [ "version", "struct_a_p_i___lib_part.html#a3c67aadeac1936f67d38f48c90c94f07", null ]
 ];

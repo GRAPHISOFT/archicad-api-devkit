@@ -20,9 +20,9 @@ var group___conversion =
       [ "outputHdl", "struct_a_p_i___mime_picture.html#a563bed9794d27b92bd552f938e342f63", null ]
     ] ],
     [ "API_UnitConversionPrefID", "group___conversion.html#gaa5b7c03c2f6f20f9f178cec6d42c01d7", null ],
-    [ "ACAPI_Conversion_ConvertMimePicture", "group___conversion.html#ga304c7994c1930934663169f7bb5e4695", null ],
-    [ "ACAPI_Conversion_ConvertPicture", "group___conversion.html#ga5a09dad2112a23a9e50d6ed2ac0ceb74", null ],
-    [ "ACAPI_Conversion_GetConvertedUnitValue", "group___conversion.html#ga73758cecaa4a76f43b8b56724e8d9bdb", null ],
+    [ "ACAPI_Conversion_ConvertMimePicture", "group___conversion.html#ga8a5809884495a1000a4b06210bd942bc", null ],
+    [ "ACAPI_Conversion_ConvertPicture", "group___conversion.html#ga9481d361336df0409bd62dae75bdaeed", null ],
+    [ "ACAPI_Conversion_GetConvertedUnitValue", "group___conversion.html#gae640fcb627e559c25886d118760ae05d", null ],
     [ "APIGuid2GSGuid", "group___conversion.html#gabf9a49fba20593a4f2bc1df3b3890aa6", null ],
     [ "APIGuid2GSGuid", "group___conversion.html#ga39aa2a83694ccb2794658c5e1b7b01b4", null ],
     [ "APIGuidFromString", "group___conversion.html#gabd650c2d7bd69ac90e1fc88e100ff3ea", null ],

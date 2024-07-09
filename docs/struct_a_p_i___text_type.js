@@ -2,7 +2,6 @@ var struct_a_p_i___text_type =
 [
     [ "anchor", "struct_a_p_i___text_type.html#abcad837839fa991ae9856d7aeebe1b19", null ],
     [ "angle", "struct_a_p_i___text_type.html#a64d45668c5bb6b7e319c86ada498b4d0", null ],
-    [ "charCode", "struct_a_p_i___text_type.html#ae090bfe2ae842f2e093ccbca6d7e954e", null ],
     [ "charSpaceFactor", "struct_a_p_i___text_type.html#a809e4838377edf8b4160e1bda1b4649c", null ],
     [ "contourOffset", "struct_a_p_i___text_type.html#a8d3e601210ade0a843ce1122041a7d57", null ],
     [ "contourPen", "struct_a_p_i___text_type.html#a58c335865427e9f8bb8cb49e6c0a5fbd", null ],
@@ -24,6 +23,7 @@ var struct_a_p_i___text_type =
     [ "pen", "struct_a_p_i___text_type.html#af8ffd5fa3ed17912cc7487be22bc2dcd", null ],
     [ "size", "struct_a_p_i___text_type.html#ade83c4a8c9f01c42dd0b0d32c9d6742f", null ],
     [ "spacing", "struct_a_p_i___text_type.html#a7ee6619b116b4e2f09c5725e43c481c3", null ],
+    [ "textFrame", "struct_a_p_i___text_type.html#a097bb66c1a09ef05f9573f1cd9695aa1", null ],
     [ "usedContour", "struct_a_p_i___text_type.html#ac0774953bbb0f26267a2bbf9f2ad0831", null ],
     [ "usedFill", "struct_a_p_i___text_type.html#a32943cb12d7c42da756791d01d25a98b", null ],
     [ "useEolPos", "struct_a_p_i___text_type.html#a28d3a6a91cc9858a08254f2dd50141b7", null ],

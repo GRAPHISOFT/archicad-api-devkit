@@ -1,6 +1,7 @@
 var struct_a_p_i___sun_angle_settings =
 [
     [ "day", "struct_a_p_i___sun_angle_settings.html#add86f3844bccedecc36c05c3e260779b", null ],
+    [ "filler", "struct_a_p_i___sun_angle_settings.html#a508d23a615f720fa535b5e4c10cdb32a", null ],
     [ "hour", "struct_a_p_i___sun_angle_settings.html#a43d36a63eab1560fd49d3a962da497d3", null ],
     [ "minute", "struct_a_p_i___sun_angle_settings.html#abdb06a602b4d16754f55da10d48f3b25", null ],
     [ "month", "struct_a_p_i___sun_angle_settings.html#a73140ed6a0005d70892c45b2adf3d7bd", null ],

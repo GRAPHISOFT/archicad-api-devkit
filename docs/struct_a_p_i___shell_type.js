@@ -7,5 +7,6 @@ var struct_a_p_i___shell_type =
     [ "isFlipped", "struct_a_p_i___shell_type.html#a2af48e73378a330b48ccef5595bfe7ba", null ],
     [ "numHoles", "struct_a_p_i___shell_type.html#a3095bf0544a60bd69e93adb8e4353a84", null ],
     [ "shellBase", "struct_a_p_i___shell_type.html#afa2730eda1c11d9a8b8b2ef49a12db74", null ],
-    [ "shellClass", "struct_a_p_i___shell_type.html#a628e8557d3f9bf936d0b09edf0d09531", null ]
+    [ "shellClass", "struct_a_p_i___shell_type.html#a628e8557d3f9bf936d0b09edf0d09531", null ],
+    [ "u", "struct_a_p_i___shell_type.html#a79010b6fe8ccc878ff3e1c103d5517cb", null ]
 ];

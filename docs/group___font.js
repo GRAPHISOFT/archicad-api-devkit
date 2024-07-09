@@ -15,7 +15,7 @@ var group___font =
       [ "substituteInd", "struct_a_p_i___font_type.html#aff8adec579522878e3c0cfd72a4cb745", null ],
       [ "widMax", "struct_a_p_i___font_type.html#ae7d02a4e0f4dc23fae70163f596a3850", null ]
     ] ],
-    [ "ACAPI_Font_GetFont", "group___font.html#gae086e4927d55d3a3f7a8cf3a0a011f3b", null ],
-    [ "ACAPI_Font_GetFontNum", "group___font.html#gae67ca1287a4ad4501984588992f8ff76", null ],
-    [ "ACAPI_Font_SearchFont", "group___font.html#ga95fb737e5e18a47e4ca8f58d26f11109", null ]
+    [ "ACAPI_Font_GetFont", "group___font.html#gacb2bed92c06b262cb7ff74c897787971", null ],
+    [ "ACAPI_Font_GetFontNum", "group___font.html#gabf18f2f47131e86d086fd9b21adb5850", null ],
+    [ "ACAPI_Font_SearchFont", "group___font.html#ga2d65497a11705a3efa6831c71c22a189", null ]
 ];

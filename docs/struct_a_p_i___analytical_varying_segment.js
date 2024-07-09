@@ -1,5 +1,6 @@
 var struct_a_p_i___analytical_varying_segment =
 [
     [ "begProfile", "struct_a_p_i___analytical_varying_segment.html#a38586317918c80a5fd8377c9decb8ebb", null ],
-    [ "endProfile", "struct_a_p_i___analytical_varying_segment.html#ad1fdea9c060740848cc6ff7138b131a8", null ]
+    [ "endProfile", "struct_a_p_i___analytical_varying_segment.html#ad1fdea9c060740848cc6ff7138b131a8", null ],
+    [ "span", "struct_a_p_i___analytical_varying_segment.html#a1fcb997b6f0b4d4888578361bca30152", null ]
 ];

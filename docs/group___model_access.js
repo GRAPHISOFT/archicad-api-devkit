@@ -145,9 +145,12 @@ var group___model_access =
     [ "API_3DTypeID", "group___model_access.html#gab57a668e63c5452d92887a7021b3ec40", null ],
     [ "API_LghtSouID", "group___model_access.html#gaa3c414a53a631d2fbe5a5a95464ff888", null ],
     [ "API_MaterTypeID", "group___model_access.html#ga8ca5f765869a7cd806e420ef451c8495", null ],
-    [ "ACAPI_ModelAccess_DecomposePgon", "group___model_access.html#ga67d968b7ccaa304ab00b5187c65a36ea", null ],
-    [ "ACAPI_ModelAccess_Get3DInfo", "group___model_access.html#gaff533e6fa856f275399b3b364efc2683", null ],
-    [ "ACAPI_ModelAccess_GetComponent", "group___model_access.html#ga252deb10ff0e3c124940c911075f37a6", null ],
-    [ "ACAPI_ModelAccess_GetNum", "group___model_access.html#gac47d11d53a05037f89a4e32949b30dfd", null ],
-    [ "ACAPI_ModelAccess_GetTextureCoord", "group___model_access.html#gad48c217b94817dc21db45713eb6aa95e", null ]
+    [ "ACAPI_ModelAccess_DecomposePgon", "group___model_access.html#gaae02cd071d254d25dda18ceb5f1ea8cd", null ],
+    [ "ACAPI_ModelAccess_GenerateModelWithSeparateComponents", "group___model_access.html#ga5517ee8cb037f7413ad2adedfea2167b", null ],
+    [ "ACAPI_ModelAccess_Get3DInfo", "group___model_access.html#ga13a675645d32be619486251c94630087", null ],
+    [ "ACAPI_ModelAccess_GetBuildingMaterial", "group___model_access.html#ga4ecdcc87ead45b7beee7dd09d3e98735", null ],
+    [ "ACAPI_ModelAccess_GetComponent", "group___model_access.html#gab13567a056753ac91fb88df1ce160e59", null ],
+    [ "ACAPI_ModelAccess_GetConnectionTable", "group___model_access.html#ga3fa2e456b70096d2aa119ab461fb615b", null ],
+    [ "ACAPI_ModelAccess_GetNum", "group___model_access.html#ga62651464f05d8aae236f3ae58cc70949", null ],
+    [ "ACAPI_ModelAccess_GetTextureCoord", "group___model_access.html#gad6f6077914b8ecf3252372240021b6e4", null ]
 ];

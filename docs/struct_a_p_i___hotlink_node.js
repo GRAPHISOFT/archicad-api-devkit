@@ -10,6 +10,7 @@ var struct_a_p_i___hotlink_node =
     [ "serverSourceLocation", "struct_a_p_i___hotlink_node.html#a564ce632e6a2aa129753914bedb66807", null ],
     [ "sourceLocation", "struct_a_p_i___hotlink_node.html#ae74d36d82802dd1b27224c4897549400", null ],
     [ "sourceType", "struct_a_p_i___hotlink_node.html#aa90e40ac262d9ab6d714dade8544fca3", null ],
+    [ "storyInfo", "struct_a_p_i___hotlink_node.html#a803180ec8c871b9b2dda9ebd044d13cb", null ],
     [ "storyRangeType", "struct_a_p_i___hotlink_node.html#aaa7129a7d653c5f920ffff036f3da52e", null ],
     [ "type", "struct_a_p_i___hotlink_node.html#ad10ad6f55308f0bdb2757ed7fb89fe6b", null ],
     [ "updateTime", "struct_a_p_i___hotlink_node.html#a8702e21bcd50dd5ade6c24a374a4456d", null ],

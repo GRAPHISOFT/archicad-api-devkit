@@ -27,9 +27,9 @@ var group___rendering =
       [ "vSize", "struct_a_p_i___rend_image.html#a8e950ed300797276abae4ca47e4a536c", null ]
     ] ],
     [ "API_RendSetTypeID", "group___rendering.html#gad4f68e67737cf4c873cf249c2649e73c", null ],
-    [ "ACAPI_Rendering_ChangeRenderingSets", "group___rendering.html#ga6519bf3f6a15876174f87d363ee80524", null ],
-    [ "ACAPI_Rendering_GetRenderingSceneNames", "group___rendering.html#gae92584ad57caca1b2ff3949cc5dcf182", null ],
-    [ "ACAPI_Rendering_GetRenderingSets", "group___rendering.html#ga06c085541e75f9c30552fddd66c40061", null ],
-    [ "ACAPI_Rendering_PhotoRender", "group___rendering.html#ga8600b132d5124c95f33ce3efcc5711a6", null ],
-    [ "ACAPI_Rendering_SetCurrentRenderingScene", "group___rendering.html#ga024158cc2e4ec1415d1fc922a8fe22be", null ]
+    [ "ACAPI_Rendering_ChangeRenderingSets", "group___rendering.html#ga2352e2e2daa922d5d2723602070a37fe", null ],
+    [ "ACAPI_Rendering_GetRenderingSceneNames", "group___rendering.html#gab5a7a0810c9dd9099a123a3ae3918e15", null ],
+    [ "ACAPI_Rendering_GetRenderingSets", "group___rendering.html#gaa9c720b4cff8d212fb4fe71f69e920cd", null ],
+    [ "ACAPI_Rendering_PhotoRender", "group___rendering.html#gac1c613c7dc4c86eb159de2a80095be88", null ],
+    [ "ACAPI_Rendering_SetCurrentRenderingScene", "group___rendering.html#gaef74fa427be4e69251e766a9dba23ff0", null ]
 ];

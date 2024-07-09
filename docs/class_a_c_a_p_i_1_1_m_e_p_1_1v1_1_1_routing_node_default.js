@@ -1,5 +1,6 @@
 var class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_default =
 [
+    [ "RoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_default.html#aa8205c17679e69df5dc20f5dabdf433f", null ],
     [ "GetBendDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_default.html#af2bf268afc11fc578120e9bbbffd6a1e", null ],
     [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_default.html#a9d1eed09e929af1285abbf085078673f", null ],
     [ "GetPreferredTransitionPlacement", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_default.html#ae3dce58bd573942bef8c99bec6f0d00a", null ],

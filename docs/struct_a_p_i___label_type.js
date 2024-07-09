@@ -25,5 +25,6 @@ var struct_a_p_i___label_type =
     [ "squareRootAngle", "struct_a_p_i___label_type.html#ad7e3bf809bb48c7ba2706eb7c028a109", null ],
     [ "textSize", "struct_a_p_i___label_type.html#ad5d525f8f1edc3fd431fe73c80fa8b53", null ],
     [ "textWay", "struct_a_p_i___label_type.html#a7c16f7226e5380f944ec875605022d97", null ],
+    [ "u", "struct_a_p_i___label_type.html#a5d336ad7bca437fd54b23feb175898d6", null ],
     [ "useBgFill", "struct_a_p_i___label_type.html#a33fc26968dcc094ea6e09a2bc6c1b379", null ]
 ];

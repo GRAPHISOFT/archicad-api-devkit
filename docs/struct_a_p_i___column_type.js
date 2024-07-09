@@ -3,6 +3,7 @@ var struct_a_p_i___column_type =
     [ "aboveViewLinePen", "struct_a_p_i___column_type.html#a428504d63394b14b7c0b351f46b501ba", null ],
     [ "aboveViewLineType", "struct_a_p_i___column_type.html#a442922f203193e1d7dac54d23cbcd775", null ],
     [ "axisRotationAngle", "struct_a_p_i___column_type.html#a832b6c3f3dcb375c32f08aa75e02a825", null ],
+    [ "belowViewLinePen", "struct_a_p_i___column_type.html#a13d0d11d00fc439fb53da835a171b29e", null ],
     [ "belowViewLineType", "struct_a_p_i___column_type.html#a36c9c110ca9fb031a9e531292b8c39fe", null ],
     [ "bottomOffset", "struct_a_p_i___column_type.html#aeddcd2d933bcb17e1f95de0beca2e205", null ],
     [ "contLtype", "struct_a_p_i___column_type.html#a3fc35fb05de1de3f8bf835ff109a2876", null ],
@@ -23,6 +24,7 @@ var struct_a_p_i___column_type =
     [ "displayOption", "struct_a_p_i___column_type.html#a7114f30ab2a1fe228c3c800beb542256", null ],
     [ "head", "struct_a_p_i___column_type.html#abde3877bc7e5fd3ed0d6f005597f4027", null ],
     [ "height", "struct_a_p_i___column_type.html#a1cc4d47c2707dc8c6eb42daefaaa5c2e", null ],
+    [ "hiddenLinePen", "struct_a_p_i___column_type.html#a852db965ba36e3e4b650e791f9a41d2c", null ],
     [ "hiddenLineType", "struct_a_p_i___column_type.html#a54581d1188a0ab050f253838e1d488f6", null ],
     [ "isAutoOnStoryVisibility", "struct_a_p_i___column_type.html#a5095267486e86a1944d20decadd06f90", null ],
     [ "isFlipped", "struct_a_p_i___column_type.html#a88585f79be3c145e0f115e47f21a921f", null ],
@@ -43,5 +45,6 @@ var struct_a_p_i___column_type =
     [ "venLineType", "struct_a_p_i___column_type.html#a8851e9033ac5f4c528273af431159db4", null ],
     [ "viewDepthLimitation", "struct_a_p_i___column_type.html#a48f31f4c3c5e646b5c1e47ab4bff7819", null ],
     [ "visibility", "struct_a_p_i___column_type.html#a228b0fa2d46287c120bbf6e5d2a1fd55", null ],
+    [ "wrapping", "struct_a_p_i___column_type.html#a6090c570f2936c072e9e35f9659172cc", null ],
     [ "zoneRel", "struct_a_p_i___column_type.html#a3c9a0cdc3e23e04e03b48c685671bc49", null ]
 ];

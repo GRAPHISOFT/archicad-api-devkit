@@ -1,6 +1,20 @@
 var group___dialog =
 [
+    [ "API_PolygonExt", "struct_a_p_i___polygon_ext.html", [
+      [ "plane", "struct_a_p_i___polygon_ext.html#a86034843eb2e66ab80c534721c94b071", null ],
+      [ "polygon", "struct_a_p_i___polygon_ext.html#ade1fb23e7166601ae71efbf8b41c6cf1", null ],
+      [ "polygonData", "struct_a_p_i___polygon_ext.html#a272dbe06fbff7b2df71ae6703c652d30", null ]
+    ] ],
     [ "API_AttributeIndex", "class_a_p_i___attribute_index.html", [
+      [ "GenerateHashValue", "class_a_p_i___attribute_index.html#a0635e2f25741860e4bfd2042958a19df", null ],
+      [ "IsNegative", "class_a_p_i___attribute_index.html#a13c4a80cfaf49f16b7e4728ed18977a4", null ],
+      [ "IsPositive", "class_a_p_i___attribute_index.html#a75458276b651d7d00a486dc73a167be9", null ],
+      [ "operator!=", "class_a_p_i___attribute_index.html#ae19322e48964a481547365b06efa579f", null ],
+      [ "operator==", "class_a_p_i___attribute_index.html#a42a72baae8bf1e20cd964b1561d1a1c4", null ],
+      [ "ReadAsInt32", "class_a_p_i___attribute_index.html#aab061498ce9188bf92a9d21fb7908e2d", null ],
+      [ "ToInt32_Deprecated", "class_a_p_i___attribute_index.html#a4a85e1ebbd9c2cd99c3bd48d746ff496", null ],
+      [ "ToUniString", "class_a_p_i___attribute_index.html#ae6b5ff3cb8bc866e38ed9ab5fa5449f3", null ],
+      [ "WriteAsInt32", "class_a_p_i___attribute_index.html#a054d60e25343084f279f00aca75247d6", null ],
       [ "ACAPI_CreateAttributeIndex", "class_a_p_i___attribute_index.html#a6096e41ad85dfa2821764b7b7c722c0c", null ]
     ] ],
     [ "API_RGBColor", "struct_a_p_i___r_g_b_color.html", [
@@ -21,6 +35,7 @@ var group___dialog =
     ] ],
     [ "API_SunAngleSettings", "struct_a_p_i___sun_angle_settings.html", [
       [ "day", "struct_a_p_i___sun_angle_settings.html#add86f3844bccedecc36c05c3e260779b", null ],
+      [ "filler", "struct_a_p_i___sun_angle_settings.html#a508d23a615f720fa535b5e4c10cdb32a", null ],
       [ "hour", "struct_a_p_i___sun_angle_settings.html#a43d36a63eab1560fd49d3a962da497d3", null ],
       [ "minute", "struct_a_p_i___sun_angle_settings.html#abdb06a602b4d16754f55da10d48f3b25", null ],
       [ "month", "struct_a_p_i___sun_angle_settings.html#a73140ed6a0005d70892c45b2adf3d7bd", null ],
@@ -111,6 +126,14 @@ var group___dialog =
       [ "subtypeID", "struct_a_p_i___object_settings_pars.html#afd9e0b133bf5ae2b863cf5e4a63a1735", null ]
     ] ],
     [ "API_AttributePickerParams", "struct_a_p_i___attribute_picker_params.html", [
+      [ "EmptySelectionBehaviour", "struct_a_p_i___attribute_picker_params.html#a709b39ef334bcd32704d87fd0dc0362d", [
+        [ "SelectFirst", "struct_a_p_i___attribute_picker_params.html#a709b39ef334bcd32704d87fd0dc0362da0d74eb6222e31928e993312c50c1e23b", null ],
+        [ "SelectNothing", "struct_a_p_i___attribute_picker_params.html#a709b39ef334bcd32704d87fd0dc0362dad058746a7dfea041aaae4a64394aa857", null ]
+      ] ],
+      [ "LockedLayersStatus", "struct_a_p_i___attribute_picker_params.html#a4712c5ed956f5f0df95ab1c8ae329442", [
+        [ "Disabled", "struct_a_p_i___attribute_picker_params.html#a4712c5ed956f5f0df95ab1c8ae329442ab9f5c797ebbf55adccdd8539a65a0241", null ],
+        [ "Enabled", "struct_a_p_i___attribute_picker_params.html#a4712c5ed956f5f0df95ab1c8ae329442a00d23a76e43b46dae9ec7aa9dcbebb32", null ]
+      ] ],
       [ "PushCheckAppearance", "struct_a_p_i___attribute_picker_params.html#a9dcb04f04acf5b6e3ab1ffe474e2320e", [
         [ "ArrowIconAndText", "struct_a_p_i___attribute_picker_params.html#a9dcb04f04acf5b6e3ab1ffe474e2320ea80edf0521c55b2cb37a5f6cf27f5aaf4", null ],
         [ "ArrowOnly", "struct_a_p_i___attribute_picker_params.html#a9dcb04f04acf5b6e3ab1ffe474e2320eaac5a8a574eeb7113c261fa93591da623", null ]
@@ -130,6 +153,10 @@ var group___dialog =
       [ "SetSelectedAttributeIndex", "class_a_p_i___attribute_picker.html#ad5d2914f0468fdb0cc36bd7b528e134a", null ]
     ] ],
     [ "API_AttributeFolderPickerParams", "struct_a_p_i___attribute_folder_picker_params.html", [
+      [ "PushCheckAppearance", "struct_a_p_i___attribute_folder_picker_params.html#a3bc428db0c14f308ec2176844a339623", [
+        [ "ArrowIconAndText", "struct_a_p_i___attribute_folder_picker_params.html#a3bc428db0c14f308ec2176844a339623a80edf0521c55b2cb37a5f6cf27f5aaf4", null ],
+        [ "ArrowOnly", "struct_a_p_i___attribute_folder_picker_params.html#a3bc428db0c14f308ec2176844a339623aac5a8a574eeb7113c261fa93591da623", null ]
+      ] ],
       [ "dialogID", "struct_a_p_i___attribute_folder_picker_params.html#a39d46d73d175d5fd99e1b9e2d4aaf4db", null ],
       [ "itemID", "struct_a_p_i___attribute_folder_picker_params.html#ad71e546f63208f4e5776faa64b046547", null ],
       [ "pushCheckAppearance", "struct_a_p_i___attribute_folder_picker_params.html#a80bf65922516069807bf03bd159109cb", null ],
@@ -143,32 +170,36 @@ var group___dialog =
       [ "index", "struct_a_p_i___add_par_type.html#a700244ea91667870104361d8f36c2894", null ],
       [ "name", "struct_a_p_i___add_par_type.html#ae47d00231d4eebd271fa62b324b59b10", null ],
       [ "typeID", "struct_a_p_i___add_par_type.html#ac0cd888027fd0a70e17c68167c3cda82", null ],
-      [ "typeMod", "struct_a_p_i___add_par_type.html#a219af8cd3485ac917508d0ee19efd25e", null ]
+      [ "typeMod", "struct_a_p_i___add_par_type.html#a219af8cd3485ac917508d0ee19efd25e", null ],
+      [ "uDescname", "struct_a_p_i___add_par_type.html#aae3cf77dbc74ece7dc338e77120a8b5d", null ],
+      [ "value", "struct_a_p_i___add_par_type.html#aab6454a6894b3bb0a7b28fe016f2beae", null ],
+      [ "valueDescription", "struct_a_p_i___add_par_type.html#a85bed8afb7d3c152b7f12df9ce75afcc", null ]
     ] ],
-    [ "APIPetPaletteCallBackProc", "group___dialog.html#gaf6cf0a67c613499e67fa29bb73805fc6", null ],
-    [ "API_AddParID", "group___dialog.html#ga5189cd2ed800a59183359a2d4c05dfae", null ],
+    [ "APIPetPaletteCallBackProc", "group___dialog.html#gacf7beb25699b1520e58e0c0e52e09a42", null ],
+    [ "API_AddParID", "group___dialog.html#ga06dffb8774ffc6a426f5304eaf0bb720", null ],
     [ "API_BoundaryDisplay", "group___dialog.html#gae6eb2847d6c53c177f1936484b67ddbd", null ],
     [ "API_ColorDepthID", "group___dialog.html#ga908dbd4bef0b6da2878e89f6fb9491b1", null ],
     [ "API_CutPlanePlanConn", "group___dialog.html#ga5c51314884aeb497255d2b3e70a7e80c", null ],
     [ "API_RenovationStatusType", "group___dialog.html#gae9a40093f4616e2565d7a7595b77c29e", null ],
     [ "API_SunAngleSettings_SunPositionOption", "group___dialog.html#gac8a55b706390d5b986d0269d93825830", null ],
     [ "API_UserControlType", "group___dialog.html#ga8d178dbd01e32dd4bc0f408159997a74", null ],
-    [ "ACAPI_Dialog_ActivateSessionReport", "group___dialog.html#ga05423477b7e31bbead87abd22730010c", null ],
-    [ "ACAPI_Dialog_CreateAttributePicker", "group___dialog.html#ga1a8693a1af3d49acb127ecde22472c38", null ],
-    [ "ACAPI_Dialog_ObjectSettings", "group___dialog.html#gac9084ce20f1d7a18d782922e23cd14d8", null ],
-    [ "ACAPI_Dialog_OpenLibPartFileDialog", "group___dialog.html#gac75f5cb44a5bcbdc1818b5f674d56cf1", null ],
-    [ "ACAPI_Dialog_OpenOtherObjectDialog", "group___dialog.html#gab583b94b04f128928524f5d3e366ea14", null ],
-    [ "ACAPI_Dialog_OpenPictureDialog", "group___dialog.html#gaf1776826b00092b6314b41380d483cad", null ],
-    [ "ACAPI_Dialog_PetPalette", "group___dialog.html#ga8c2ce55d6cbdfab036472f83d466e764", null ],
-    [ "ACAPI_Dialog_SaveLibPartFileDialog", "group___dialog.html#ga2820ee533789fbf1bee90c48c83aec6c", null ],
-    [ "ACAPI_Dialog_SettingsDialog", "group___dialog.html#ga0c16b2024ffef31007278e27d641ad4f", null ],
-    [ "ACAPI_Dialog_SetUserControlCallback", "group___dialog.html#ga3aa1043ed9f8081cf7c26e1b1a599e62", null ],
-    [ "ACAPI_LibraryManagement_OpenLibraryPart", "group___library_management.html#gaefffe4ba24210227c01c9672ed7adc7e", null ],
-    [ "ACAPI_LibraryManagement_ResetLibraries", "group___dialog.html#ga81a947aa97cd79e0e7f1c66041a1a780", null ],
-    [ "ACAPI_RefreshTeamworkReserveInterface", "group___teamwork.html#gad016f31d8fc62b19ed1d4f603f478d50", null ],
-    [ "ACAPI_RegisterTeamworkReserveInterface", "group___teamwork.html#ga9aba2b6a7604b43596cfea23c3e5d51a", null ],
-    [ "ACAPI_Teamwork_SendReleaseCommentMail", "group___teamwork.html#gad9c4209cbaa750be1a13a96dada499e5", null ],
-    [ "ACAPI_UnregisterModelessWindow", "group___dialog.html#ga74f71b516d291fd90ddc98d3791d2135", null ],
-    [ "ACAPI_UnregisterTeamworkReserveInterface", "group___teamwork.html#ga28861bc2872ed9d2d9d2904e33ad4160", null ],
-    [ "ACAPI_WriteReport", "group___dialog.html#ga81bfb6abb734d503d09c3b51dc5fac1a", null ]
+    [ "ACAPI_Dialog_ActivateSessionReport", "group___dialog.html#ga8c03abbb72eccccbbddbd17ebd551c1c", null ],
+    [ "ACAPI_Dialog_CreateAttributePicker", "group___dialog.html#gaf4c19309a4ad840d45143ae89658ba47", null ],
+    [ "ACAPI_Dialog_ObjectSettings", "group___dialog.html#ga82d5e029268e3cccebb85db4beb9cde5", null ],
+    [ "ACAPI_Dialog_OpenLibPartFileDialog", "group___dialog.html#ga31c066b0c3a50094e14f1532520ca792", null ],
+    [ "ACAPI_Dialog_OpenOtherObjectDialog", "group___dialog.html#gaec2819aaa5cc59b6f14a53c6c349ba02", null ],
+    [ "ACAPI_Dialog_OpenPictureDialog", "group___dialog.html#ga4ff1159a30784c63094a53ca70aa0256", null ],
+    [ "ACAPI_Dialog_PetPalette", "group___dialog.html#gac71a5a85bd3a51de11c6caa4a69b3f61", null ],
+    [ "ACAPI_Dialog_SaveLibPartFileDialog", "group___dialog.html#gab9e731a9e94c934f735bc2532dc6343a", null ],
+    [ "ACAPI_Dialog_SettingsDialog", "group___dialog.html#ga0af8b5a9e2449954a3c32450531e845d", null ],
+    [ "ACAPI_Dialog_SettingsDialog", "group___dialog.html#gaa4b1a521136a3086bc80c8693217ae13", null ],
+    [ "ACAPI_Dialog_SetUserControlCallback", "group___dialog.html#gafeef2ab288937ece075ce5559473bf89", null ],
+    [ "ACAPI_LibraryManagement_OpenLibraryPart", "group___library_management.html#gabba21ae31e3a680deb18e3506912bc26", null ],
+    [ "ACAPI_LibraryManagement_ResetLibraries", "group___dialog.html#ga05e5cfe254491de63f53f3e1976ad5a3", null ],
+    [ "ACAPI_RefreshTeamworkReserveInterface", "group___teamwork.html#gae81e81ddcb9a3d5c1d1f77c5d7c0a388", null ],
+    [ "ACAPI_RegisterTeamworkReserveInterface", "group___teamwork.html#gaa4ab6c998943a09ea623668c7bd59945", null ],
+    [ "ACAPI_Teamwork_SendReleaseCommentMail", "group___teamwork.html#ga9c980a6419b820f4bafbcf5e6b78625c", null ],
+    [ "ACAPI_UnregisterModelessWindow", "group___dialog.html#gaaec9ea16cf46fef1c0f1a76027ddb3ea", null ],
+    [ "ACAPI_UnregisterTeamworkReserveInterface", "group___teamwork.html#ga14adcab3249594f7fe7751813bbf6deb", null ],
+    [ "ACAPI_WriteReport", "group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38", null ]
 ];

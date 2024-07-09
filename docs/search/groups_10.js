@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['teamwork_0',['Teamwork',['../group___teamwork.html',1,'']]],
-  ['toolbox_1',['Toolbox',['../group___toolbox.html',1,'']]]
+  ['selection_20handling_0',['Selection handling',['../group___selection.html',1,'']]],
+  ['sights_1',['Sights',['../group___sight.html',1,'']]],
+  ['survey_20points_2',['Survey Points',['../group___survey_point.html',1,'']]]
 ];

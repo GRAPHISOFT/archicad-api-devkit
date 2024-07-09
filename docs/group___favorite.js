@@ -1,6 +1,7 @@
 var group___favorite =
 [
     [ "API_Favorite", "struct_a_p_i___favorite.html", [
+      [ "API_Favorite", "struct_a_p_i___favorite.html#a601d4c31e9a53e6ea886059679798765", null ],
       [ "classifications", "struct_a_p_i___favorite.html#a39b2e963ee1f60f3ceb9d9d284e44b35", null ],
       [ "elemCategoryValues", "struct_a_p_i___favorite.html#a5e82f391f488ea8e75c98865488f9914", null ],
       [ "element", "struct_a_p_i___favorite.html#a45d4564ac009bfcc3b19e0737be1d49a", null ],
@@ -12,14 +13,14 @@ var group___favorite =
       [ "properties", "struct_a_p_i___favorite.html#aa4907ec6e4783dfbac2cf4ea46073371", null ],
       [ "subElements", "struct_a_p_i___favorite.html#aa7b078093b1f99ba637fdf5456ef78ee", null ]
     ] ],
-    [ "ACAPI_Favorite_Change", "group___favorite.html#gaa911fae093e886bd9aa3fdf39d11c25c", null ],
-    [ "ACAPI_Favorite_Create", "group___favorite.html#ga91fb4ede550e77f34e98b5e3d80c7ef5", null ],
-    [ "ACAPI_Favorite_Delete", "group___favorite.html#ga77fd329d8564ff76381ac29ba207663a", null ],
-    [ "ACAPI_Favorite_Export", "group___favorite.html#gae8fe2bae54c91e47f19ab03ed3334d44", null ],
-    [ "ACAPI_Favorite_Get", "group___favorite.html#ga74330880e02b9c043b5da50d86ae89ac", null ],
-    [ "ACAPI_Favorite_GetNum", "group___favorite.html#gadea11c472e152cb5eec3ab281892d4d8", null ],
-    [ "ACAPI_Favorite_GetPreviewImage", "group___favorite.html#ga8faea3e5672741210e75f2cb61ae1f80", null ],
-    [ "ACAPI_Favorite_Import", "group___favorite.html#ga61e7f7070bfa69688f0cb58a38950192", null ],
-    [ "ACAPI_Favorite_Read", "group___favorite.html#ga76dcb4aa88f742bebdc809971c768595", null ],
-    [ "ACAPI_Favorite_Rename", "group___favorite.html#gaab89497e5260ac6e01ff83fa1fb4eee7", null ]
+    [ "ACAPI_Favorite_Change", "group___favorite.html#ga63d065b89e93e4458462ec91de75a466", null ],
+    [ "ACAPI_Favorite_Create", "group___favorite.html#ga543e41291dda3af09c9aca4081267638", null ],
+    [ "ACAPI_Favorite_Delete", "group___favorite.html#gabd689444e4116201bee0dffbda865f8b", null ],
+    [ "ACAPI_Favorite_Export", "group___favorite.html#ga761b14618906e08167fd9934bb37d1f4", null ],
+    [ "ACAPI_Favorite_Get", "group___favorite.html#ga596acd9b3ee36c791bdb8c9d3f4f55cd", null ],
+    [ "ACAPI_Favorite_GetNum", "group___favorite.html#ga614304860fdca9ae3a2df803a036d075", null ],
+    [ "ACAPI_Favorite_GetPreviewImage", "group___favorite.html#gab2f03072c4cc3e44994c135be57c1759", null ],
+    [ "ACAPI_Favorite_Import", "group___favorite.html#ga7c3b3bed00d03045742ceebd065d44fd", null ],
+    [ "ACAPI_Favorite_Read", "group___favorite.html#ga103c8253498ad0385394e7a5941bd725", null ],
+    [ "ACAPI_Favorite_Rename", "group___favorite.html#gaa92f16ae57f78ffda5c6a0e77befd086", null ]
 ];

@@ -55,11 +55,11 @@ var group___geo_location =
     [ "API_AltitudeUnitID", "group___geo_location.html#ga796cf9d60cd28041ff91c7b53f9bfe70", null ],
     [ "API_LongLatUnitID", "group___geo_location.html#ga5ebe841edd8e3f5407110f3acc14ce71", null ],
     [ "API_NorthUnitID", "group___geo_location.html#ga8eba2f88c72e8a2947832029b01e1a15", null ],
-    [ "ACAPI_GeoLocation_CalcSunOnPlace", "group___geo_location.html#ga97baaac558daaff0452ab43cfac14052", null ],
-    [ "ACAPI_GeoLocation_CanChangePlaceSets", "group___geo_location.html#gabe2f29cce62dd5d56b53c03f996ca87c", null ],
-    [ "ACAPI_GeoLocation_ChangePlaceSets", "group___geo_location.html#ga2b96f1742fea9539925a51e917ce0dee", null ],
-    [ "ACAPI_GeoLocation_GetGeoLocation", "group___geo_location.html#ga2e0e152776c5eaadb003fcc6f415a712", null ],
-    [ "ACAPI_GeoLocation_GetPlaceSets", "group___geo_location.html#gaf3f8b057d1e9542e3e68b260c101b1f1", null ],
-    [ "ACAPI_GeoLocation_GetSunSets", "group___geo_location.html#ga06ea34769f9c7f8f3630ff522bcb317b", null ],
-    [ "ACAPI_GeoLocation_SetGeoLocation", "group___geo_location.html#ga47c5e0784e8b77fc052afa6353b3581c", null ]
+    [ "ACAPI_GeoLocation_CalcSunOnPlace", "group___geo_location.html#ga3bddfc82bdbfe5a609b44eff58aac8c8", null ],
+    [ "ACAPI_GeoLocation_CanChangePlaceSets", "group___geo_location.html#ga8acb541c13d5a320cc2ceb037e59a1a9", null ],
+    [ "ACAPI_GeoLocation_ChangePlaceSets", "group___geo_location.html#gac07dde190dcb063d5790dbb61bede069", null ],
+    [ "ACAPI_GeoLocation_GetGeoLocation", "group___geo_location.html#ga6f66d2eeeea9ca1dd09329f4b1049123", null ],
+    [ "ACAPI_GeoLocation_GetPlaceSets", "group___geo_location.html#gaa6c0cfad060cdaf6e2e2f56cc93f05e4", null ],
+    [ "ACAPI_GeoLocation_GetSunSets", "group___geo_location.html#ga9f5065b3717cb82abbf2a6fa27c5c6f8", null ],
+    [ "ACAPI_GeoLocation_SetGeoLocation", "group___geo_location.html#ga2937aa00156dc58474f5ec1752356d02", null ]
 ];

@@ -24,13 +24,13 @@
 */
 var NAVTREE =
 [
-  [ "Archicad 27 C++ API", "index.html", [
+  [ "Archicad 28 C++ API", "index.html", [
     [ "Introductory material", "usergroup0.html", [
-      [ "General API Development Kit 27", "md__common_doxygen_files_2_articles_2_a_p_i_dev_kit.html#DevKit", null ],
+      [ "General API Development Kit 28", "md__common_doxygen_files_2_articles_2_a_p_i_dev_kit.html#DevKit", null ],
       [ "API White Paper", "md__common_doxygen_files_2_articles_2_a_p_i_01_white_01_paper.html#apiwhitepaper", null ],
       [ "API Compatibility", "md__common_doxygen_files_2_articles_2_compatibility.html#apicompatibility", null ],
       [ "License Agreement", "md__common_doxygen_files_2_articles_2_license_agreement.html#LicenseAgreement", null ],
-      [ "New API features in Archicad 27", "md__common_doxygen_files_2_articles_2_new_01_a_p_i_01features_01in_01_archicad.html#newfeatures", null ],
+      [ "New API features in Archicad 28", "md__common_doxygen_files_2_articles_2_new_01_a_p_i_01features_01in_01_archicad.html#newfeatures", null ],
       [ "Registration", "md__common_doxygen_files_2_articles_2_registration.html#Registration", null ]
     ] ],
     [ "Technical introduction", "usergroup1.html", [
@@ -55,6 +55,7 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
+        [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Related Symbols", "functions_rela.html", null ]
       ] ]
@@ -65,34 +66,39 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#af93585b9584a43c4e9a3629a00c5d970",
-"group___add_on_integration.html#ga811def78e1656cb77e8f614878271e0c",
-"group___conversion.html#ga1bcc79df1215ada034e802fab7d01df4",
-"group___element.html#ga727a18af7fc34f6a5cc38c295845f1d3",
-"group___hierarchical_editing.html#ga0ad2e07cc146a01d50ef6bd30fd5c5ef",
-"group___notification.html#ga243e8cce166409a11eba6616045cef57",
-"group___user_input.html#ga2b09cbb30c8d8f80bf681b7c8aa3214c",
-"struct_a_p_i___analytical_curve_member.html#ade2ac716f203bf98590c9695169b31e1",
-"struct_a_p_i___assembly_segment_profile_data.html#a3d368b2fa2369e400adc2514d7984e7c",
-"struct_a_p_i___building_material_type.html#a3cc23661697ac552bb8707c498baf9b2",
-"struct_a_p_i___clip_tran.html",
-"struct_a_p_i___curtain_wall_type.html#ad5f585715a23734e92992a88c725aa6b",
-"struct_a_p_i___edit_pars.html#a35afafa23d86e71d97a78d6c932b7817",
-"struct_a_p_i___favorite.html#a5e82f391f488ea8e75c98865488f9914",
-"struct_a_p_i___grid_type.html#a6ad7016da0fceafbcb31ea7746ba6fc9",
-"struct_a_p_i___layer_comb_type.html#a45809e8c619c78f2748044aae2494087",
-"struct_a_p_i___marker_link_data_type.html#a7dd35ac8238a0cf0c0c0fc2c54e0a704",
-"struct_a_p_i___navigator_view.html#ace142141616a9a7fbc5df5ea7d266c51",
-"struct_a_p_i___operation_profile_type.html#afdc44537f75b67cf9f924de7df99bac8",
-"struct_a_p_i___prim_arc.html#a7bc745fa69b84f6a5fe76b23835440e8",
-"struct_a_p_i___r_g_b_color.html#aab67dbf774f0787b6ed9335bd0f611cf",
-"struct_a_p_i___railing_segment_type.html#aeadbb6fd890e002964ae97cb9a9e163b",
-"struct_a_p_i___section_segment.html",
-"struct_a_p_i___slab_quantity.html#ab316cb76a0f92f8ff111d88ec422410b",
-"struct_a_p_i___stair_structure_quantity.html#aff76481169ee7d33af322cb63bed5a47",
-"struct_a_p_i___u_i_structure_display.html#ad322ba06b4bdd224c0dea579e1f35dd1",
-"struct_a_p_i___window_type.html#a8f341768d4962f695ca0bec14d928ab0",
-"union_a_p_i___element_quantity.html#ae25d0c595be83e753d9e97f3d36a0cbe"
+"class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#aa0d5b1fb00151abeb90b461687cb2248",
+"class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a1e441af08547f6bee4051027e0443c0e",
+"class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition_default.html#a19a5f7714bcb82b1f0a4b4f05ad9bbb4",
+"class_i_f_c_a_p_i_1_1v1_1_1_classification.html",
+"group___add_on_lifetime.html#ga04d82e269703a9b433002bbe20f1d3b2",
+"group___database.html#ga38bea73a6617d9591c2035d9a37c2c34",
+"group___element.html#ga8511384e4c9d178d999125b9b4f5e546",
+"group___hotlink.html#gaf3352d8bbb4f1fbafbc80cdafce50e38",
+"group___library_management.html#gaefb9d908a97607cb7faeb65489658d37",
+"group___notification.html#ga0645e91ecfccf0cb2849825a3bc1ab54",
+"group___teamwork.html#gac71823d998147b68cfb6920ff186923a",
+"struct_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_rectangular_cross_section_data.html#acb55698cf9f3eae80b1b0463a859836b",
+"struct_a_p_i___analytical_point_load___settings.html#afddf7623c788850484a80eaa43a5f548",
+"struct_a_p_i___base.html",
+"struct_a_p_i___c_w_frame_type.html#acd20d3e0b8f8fa6218d380671e4d817e",
+"struct_a_p_i___column_segment_type.html#a7e922aa79fe4cc8d3e3fbd21d748dfeb",
+"struct_a_p_i___dim_base.html#af090a8dea0cea870f54408711eee8006",
+"struct_a_p_i___elem_part_quantity.html#afd4d0dc3bc33e9470cf99b7b882fcd1e",
+"struct_a_p_i___font___head.html#a92148121e6e9f02cccae83ffcbb0f8a3",
+"struct_a_p_i___hotlink_node.html#a363efbc1e15bd5f6d57f6527a6342228",
+"struct_a_p_i___length_dim_format.html#ad935cc001ddf00e8eb25206084f0e0a9",
+"struct_a_p_i___mesh_type.html#a190641ed87e84e3601ee5c894b2ea917",
+"struct_a_p_i___note_type.html#a2ffcda50987fbfd8e1f4ee6bb160f06e",
+"struct_a_p_i___override_style.html#a7baaafa7bfd68d38f1a0fb2a3bb55e62",
+"struct_a_p_i___prim_hotspot.html#a63e964abb1bb167a0b96a2eabebf8bc9",
+"struct_a_p_i___r_v_m_layout_info.html",
+"struct_a_p_i___railing_type.html#aeacb18084e060e59df38639a96096703",
+"struct_a_p_i___section_segment.html#a47068aa610964cf7ce234fb20435fbe4",
+"struct_a_p_i___slab_type.html#a72b066c2da6044f62e04ec76559f123f",
+"struct_a_p_i___stair_structure_symbol_data.html#a2e62d1377349274e2f36c244914ac5d3",
+"struct_a_p_i___u_c_callback_type.html",
+"struct_a_p_i___window_type.html",
+"union_a_p_i___element_quantity.html#a307eb14de334c68594b123294cc8525a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

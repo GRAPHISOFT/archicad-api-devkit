@@ -18,13 +18,13 @@ var group___add_on_lifetime =
       [ "addOnInfo", "struct_a_p_i___envir_params.html#a8b40f7bf107aa37c938f3cdab4dcaea9", null ],
       [ "serverInfo", "struct_a_p_i___envir_params.html#a96b9008e8ea74fd71f5dd371753c6ad0", null ]
     ] ],
-    [ "APIDllTermHookProc", "group___add_on_lifetime.html#ga53fe9035f480ffb946d18dc2e1b56de1", null ],
+    [ "APIDllTermHookProc", "group___add_on_lifetime.html#gae6562f082fadced1355c658f7229f932", null ],
     [ "API_AddonType", "group___add_on_lifetime.html#ga7323a17897372b0fc97fcfe0874213f3", null ],
     [ "API_ApplicationTypeID", "group___add_on_lifetime.html#gaf815f79406420e514a0569ab3b8e8f0b", null ],
-    [ "ACAPI_KeepInMemory", "group___add_on_lifetime.html#ga5d158f85a2e2940dd689c4cd1c622199", null ],
-    [ "ACAPI_SetDllTermHookProc", "group___add_on_lifetime.html#ga57d5f422a1744b055cb47ebb9dc73517", null ],
-    [ "CheckEnvironment", "group___add_on_lifetime.html#gaffb752189e9cee51407d67a642e893d6", null ],
-    [ "FreeData", "group___add_on_lifetime.html#ga71f16335b6369115546b8b63ef2e5d67", null ],
-    [ "Initialize", "group___add_on_lifetime.html#ga585642df3fff4d7ef06576cd3efeea13", null ],
-    [ "RegisterInterface", "group___add_on_lifetime.html#gab757c521739c9953ea4836b8f2076d1e", null ]
+    [ "ACAPI_KeepInMemory", "group___add_on_lifetime.html#ga94e03de5747d369df034c790ea8c2513", null ],
+    [ "ACAPI_SetDllTermHookProc", "group___add_on_lifetime.html#ga4a414fcd12c93f0a947585ed03f3a7ab", null ],
+    [ "CheckEnvironment", "group___add_on_lifetime.html#gaf36d63d09853e5344932b63ee23d2bb9", null ],
+    [ "FreeData", "group___add_on_lifetime.html#ga04d82e269703a9b433002bbe20f1d3b2", null ],
+    [ "Initialize", "group___add_on_lifetime.html#gaa8f1f7d553305c1afe5de7e4dcb66e99", null ],
+    [ "RegisterInterface", "group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e", null ]
 ];

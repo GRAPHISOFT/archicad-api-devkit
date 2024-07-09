@@ -7,9 +7,9 @@ var group___curtain_wall =
       [ "polygon", "struct_a_p_i___c_w_contour_data.html#a9aaf4aec3f34247613b39e6884679bc3", null ],
       [ "vertexIDs", "struct_a_p_i___c_w_contour_data.html#a88adde6f95692d4a246238032f99f817", null ]
     ] ],
-    [ "ACAPI_CurtainWall_GetCWAbsoluteBottom", "group___curtain_wall.html#ga07f5730a554c4bd38dc5f691cf9824d7", null ],
-    [ "ACAPI_CurtainWall_GetCWHeight", "group___curtain_wall.html#ga69ddb17233a067853495b4a7ef82e617", null ],
-    [ "ACAPI_CurtainWall_GetCWSubElemParams", "group___curtain_wall.html#ga52b8c1f2cfb797d7bf6ab00d3e1fc9cf", null ],
-    [ "ACAPI_CurtainWall_IsCWPanelDegenerate", "group___curtain_wall.html#ga796ca98fdd5977a6d4e82916776f1114", null ],
-    [ "ACAPI_FreeCWContourPtr", "group___curtain_wall.html#ga97f8b4d334310343aff7812f11dc8eeb", null ]
+    [ "ACAPI_CurtainWall_GetCWAbsoluteBottom", "group___curtain_wall.html#ga13ca2dc07d730ae3ab2f3a0479eedb37", null ],
+    [ "ACAPI_CurtainWall_GetCWHeight", "group___curtain_wall.html#ga832fae0ed9a5d75e19e0c1cb6fe3d843", null ],
+    [ "ACAPI_CurtainWall_GetCWSubElemParams", "group___curtain_wall.html#ga02f7778ae5ef2557538e0fc1ed0c931f", null ],
+    [ "ACAPI_CurtainWall_IsCWPanelDegenerate", "group___curtain_wall.html#ga6b49416760be5cd3aeae5fee8de39529", null ],
+    [ "ACAPI_FreeCWContourPtr", "group___curtain_wall.html#gaa61c7d11a12f4fd3f9ad2a4579c0d906", null ]
 ];

@@ -1,6 +1,12 @@
 var group___analytical =
 [
-    [ "API_InternalAnalyticalMemberPartId", "class_a_p_i___internal_analytical_member_part_id.html", null ],
+    [ "API_InternalAnalyticalMemberPartId", "class_a_p_i___internal_analytical_member_part_id.html", [
+      [ "GenerateHashValue", "class_a_p_i___internal_analytical_member_part_id.html#a3ceb8bbb5eb220fbff4a5cd657dabab6", null ],
+      [ "operator==", "class_a_p_i___internal_analytical_member_part_id.html#a3ca87f736ce47b17345b373541ac31ec", null ],
+      [ "contourIdx", "class_a_p_i___internal_analytical_member_part_id.html#a9ec5f3b564221a141a2b816744204fd9", null ],
+      [ "edgeFragmentIndex", "class_a_p_i___internal_analytical_member_part_id.html#ad383bc5fa9c19f1f6843b230998237de", null ],
+      [ "edgeOrVertexIdx", "class_a_p_i___internal_analytical_member_part_id.html#ae020354f37647f2c9a1dd1055bd9516c", null ]
+    ] ],
     [ "API_AMPartRefCustomVertexData", "struct_a_p_i___a_m_part_ref_custom_vertex_data.html", [
       [ "customVertexCoord", "struct_a_p_i___a_m_part_ref_custom_vertex_data.html#ab5f68cdae33f747aa8d374cc6957650e", null ]
     ] ],
@@ -105,7 +111,10 @@ var group___analytical =
       [ "yValue", "struct_a_p_i___analytical_point_load___settings.html#ab94f86f265741a88d64a0920dca1e1c7", null ],
       [ "zValue", "struct_a_p_i___analytical_point_load___settings.html#aeb49e2967ba8673ab29c881b793e316d", null ]
     ] ],
-    [ "API_AnalyticalPointLoadType", "struct_a_p_i___analytical_point_load_type.html", null ],
+    [ "API_AnalyticalPointLoadType", "struct_a_p_i___analytical_point_load_type.html", [
+      [ "analyticalPointLoadSettings", "struct_a_p_i___analytical_point_load_type.html#a3274eee6552e36ee12a469add2e31734", null ],
+      [ "loadedMemberPartRef", "struct_a_p_i___analytical_point_load_type.html#a1887ac3abec94f21752b2567b9e61ce7", null ]
+    ] ],
     [ "API_AnalyticalPointLoadGeometry", "struct_a_p_i___analytical_point_load_geometry.html", [
       [ "coordinate", "struct_a_p_i___analytical_point_load_geometry.html#a1992eb2da1b12e7177312a1317c034fd", null ]
     ] ],
@@ -118,6 +127,7 @@ var group___analytical =
       [ "startValue", "struct_a_p_i___analytical_edge_load___settings.html#ad6ecae4fea1d164ad70de8599646c909", null ]
     ] ],
     [ "API_AnalyticalEdgeLoadType", "struct_a_p_i___analytical_edge_load_type.html", [
+      [ "analyticalEdgeLoadSettings", "struct_a_p_i___analytical_edge_load_type.html#a1d1a36e5183d50a040834e16bb9c421f", null ],
       [ "loadedMemberPartRef", "struct_a_p_i___analytical_edge_load_type.html#a8f481976a3390b6812bdda4fe1f26876", null ]
     ] ],
     [ "API_AnalyticalSurfaceLoad_Settings", "struct_a_p_i___analytical_surface_load___settings.html", [
@@ -128,6 +138,7 @@ var group___analytical =
       [ "zValue", "struct_a_p_i___analytical_surface_load___settings.html#adb4d70f1e0968b0c8d7eaccbcd3b2fa5", null ]
     ] ],
     [ "API_AnalyticalSurfaceLoadType", "struct_a_p_i___analytical_surface_load_type.html", [
+      [ "analyticalSurfaceLoadSettings", "struct_a_p_i___analytical_surface_load_type.html#a22aa3281c7814c137519b7730fbc9203", null ],
       [ "loadedMemberPartRef", "struct_a_p_i___analytical_surface_load_type.html#ac02d386c59e3254c8a85db0b2499a6ef", null ]
     ] ],
     [ "API_EdgeLoadCustomData", "struct_a_p_i___edge_load_custom_data.html", [
@@ -137,6 +148,7 @@ var group___analytical =
       [ "amVariationGuid", "struct_a_p_i___analytical_model_variation.html#a460fa65f09fcbbee318b7c11674ed4d9", null ]
     ] ],
     [ "API_AnalyticalCrossSection", "struct_a_p_i___analytical_cross_section.html", [
+      [ "alignment", "struct_a_p_i___analytical_cross_section.html#aacc3768c7e6124ed539bb49f5e8f93ad", null ],
       [ "crossSectionType", "struct_a_p_i___analytical_cross_section.html#ada82789f39b3b6192c828e4a9f07aa10", null ],
       [ "height", "struct_a_p_i___analytical_cross_section.html#a15de87e1cd1cb9f0fe82aee153a4b158", null ],
       [ "materialAttrIndices", "struct_a_p_i___analytical_cross_section.html#a12a5f73bee7a4ae51886c50556e814f8", null ],
@@ -148,7 +160,8 @@ var group___analytical =
     ] ],
     [ "API_AnalyticalVaryingSegment", "struct_a_p_i___analytical_varying_segment.html", [
       [ "begProfile", "struct_a_p_i___analytical_varying_segment.html#a38586317918c80a5fd8377c9decb8ebb", null ],
-      [ "endProfile", "struct_a_p_i___analytical_varying_segment.html#ad1fdea9c060740848cc6ff7138b131a8", null ]
+      [ "endProfile", "struct_a_p_i___analytical_varying_segment.html#ad1fdea9c060740848cc6ff7138b131a8", null ],
+      [ "span", "struct_a_p_i___analytical_varying_segment.html#a1fcb997b6f0b4d4888578361bca30152", null ]
     ] ],
     [ "API_AnalyticalCurveMember", "struct_a_p_i___analytical_curve_member.html", [
       [ "analyticalMemberType", "struct_a_p_i___analytical_curve_member.html#a16ebb728cb6329cd32273eb1db668c67", null ],
@@ -162,6 +175,7 @@ var group___analytical =
       [ "FEMType", "struct_a_p_i___analytical_curve_member.html#a25091185256d7303e8b13b4f6e24d013", null ],
       [ "internalNodes", "struct_a_p_i___analytical_curve_member.html#a87f0a7e552165111af0f8799c7ad44d3", null ],
       [ "layerAttrIndex", "struct_a_p_i___analytical_curve_member.html#aad0ffd1f38b54a61d4fdd63af6ebd662", null ],
+      [ "rotationAngle", "struct_a_p_i___analytical_curve_member.html#a619cdb69c7d7b1baf0087a7e3331e82e", null ],
       [ "varyingSegmentList", "struct_a_p_i___analytical_curve_member.html#af969a58b6049eed656a87d4b627027d0", null ]
     ] ],
     [ "API_AnalyticalPlaneSurface", "struct_a_p_i___analytical_plane_surface.html", [
@@ -198,7 +212,13 @@ var group___analytical =
       [ "xVector", "struct_a_p_i___coordinate_system.html#a58361385442eca842fa5dcd4eba8b2f7", null ],
       [ "yVector", "struct_a_p_i___coordinate_system.html#a1ceb1e81edb17f0775d513a6c20fb544", null ]
     ] ],
-    [ "API_AnalyticalElemPartId", "class_a_p_i___analytical_elem_part_id.html", null ],
+    [ "API_AnalyticalElemPartId", "class_a_p_i___analytical_elem_part_id.html", [
+      [ "GenerateHashValue", "class_a_p_i___analytical_elem_part_id.html#a38fe78812ed440a9bc4cad05068805b1", null ],
+      [ "operator==", "class_a_p_i___analytical_elem_part_id.html#a76f2bff51d4636a5ec143fe36244477e", null ],
+      [ "contourIndex", "class_a_p_i___analytical_elem_part_id.html#a663b006861629d2c6b15d812ece3cd8f", null ],
+      [ "edgeOrVertexIndex", "class_a_p_i___analytical_elem_part_id.html#a74803c22082004cffc8ed4d8d6c88af7", null ],
+      [ "memberGuid", "class_a_p_i___analytical_elem_part_id.html#af58772e2054dc3f5051404e84a796496", null ]
+    ] ],
     [ "API_ExportIdMappingType", "struct_a_p_i___export_id_mapping_type.html", [
       [ "edges", "struct_a_p_i___export_id_mapping_type.html#a1db04775b24bccc3aa9b91a586733a2f", null ],
       [ "vertices", "struct_a_p_i___export_id_mapping_type.html#abeacca74560a5c68a88408bf0ae5a493", null ]
@@ -253,10 +273,20 @@ var group___analytical =
       [ "guid", "struct_a_p_i___analytical_load_combination.html#a8e2905942be2e152cc317049980fccc3", null ],
       [ "loadFactors", "struct_a_p_i___analytical_load_combination.html#adca172fcb0cd940c7cc399555cf889ae", null ],
       [ "name", "struct_a_p_i___analytical_load_combination.html#a4ea13903e3da562c660bcdd91df5379c", null ],
-      [ "nationalStandard", "struct_a_p_i___analytical_load_combination.html#ae7f76d5ff1f0ca045014c63c636e0d1e", null ]
+      [ "nationalStandard", "struct_a_p_i___analytical_load_combination.html#ae7f76d5ff1f0ca045014c63c636e0d1e", null ],
+      [ "type", "struct_a_p_i___analytical_load_combination.html#a3c827634e9d4d9c14225306af5c817c8", null ]
     ] ],
     [ "API_AM_VisibilitySettings", "struct_a_p_i___a_m___visibility_settings.html", [
-      [ "loadVisibilityMode", "struct_a_p_i___a_m___visibility_settings.html#a0e53e4e51e6580db4ff6d1ea2b365544", null ]
+      [ "areCoordinationProfilesVisible", "struct_a_p_i___a_m___visibility_settings.html#ad91df56ac523891e156a941c5a619001", null ],
+      [ "areCrossSectionsVisible", "struct_a_p_i___a_m___visibility_settings.html#ad6cfc4de91d5d236356c166ff555e19c", null ],
+      [ "areLocalCoordSystemsVisible", "struct_a_p_i___a_m___visibility_settings.html#aa7b996de6b3100a9c9d4edad7f5c9085", null ],
+      [ "areMembersTransparent", "struct_a_p_i___a_m___visibility_settings.html#a93afeaf4b419a63a473641321e406936", null ],
+      [ "areNodesVisible", "struct_a_p_i___a_m___visibility_settings.html#aea368e5bf28f6be5aefa47d47b45d061", null ],
+      [ "areReleasesVisible", "struct_a_p_i___a_m___visibility_settings.html#acc358efeeeaef73207ea59efc7feb88c", null ],
+      [ "areSymbolsTransparent", "struct_a_p_i___a_m___visibility_settings.html#af0fac01a94c36aaaed6e40e359a9e82b", null ],
+      [ "isAnalyticalModelVisible", "struct_a_p_i___a_m___visibility_settings.html#a5869a8fb9506e42cd9e38161feec1dee", null ],
+      [ "loadVisibilityMode", "struct_a_p_i___a_m___visibility_settings.html#a0e53e4e51e6580db4ff6d1ea2b365544", null ],
+      [ "visibilityMode", "struct_a_p_i___a_m___visibility_settings.html#a1bd6fcccf2cae98817a12bb91b2dca0d", null ]
     ] ],
     [ "API_AM_VisibilityMode", "group___analytical.html#gacbc51db97094de9ff2f7fbcde79fcc1a", null ],
     [ "API_AnalyticalAlignmentType", "group___analytical.html#ga6cc0a2d61a7dee290c7bd40a9b0dedd0", null ],
@@ -277,61 +307,61 @@ var group___analytical =
     [ "API_AnalyticalSupport_SupportType", "group___analytical.html#ga85196d4dd403e258b5d2c8411df96450", null ],
     [ "API_AnalyticalSurfaceType", "group___analytical.html#gaefced146c860067c0fac0f0a6cd3eabd", null ],
     [ "API_LoadVisibilityMode", "group___analytical.html#ga562ff8094cc940c296b1f163f604ed80", null ],
-    [ "ACAPI_Analytical_AddLoadCaseToLoadCombination", "group___analytical.html#gad200119906185dfafbbc97d6f3d224b9", null ],
-    [ "ACAPI_Analytical_ConvertAnalyticalLinkToNonShortest", "group___analytical.html#ga70c9fd74179c87a7c5a219933b0cce7b", null ],
-    [ "ACAPI_Analytical_CreateAnalyticalLoadCase", "group___analytical.html#ga4c647b2ae1b20949fdce09a437c25263", null ],
-    [ "ACAPI_Analytical_CreateAnalyticalLoadCombination", "group___analytical.html#gaa8d9ba71c71b6005e59d25d4a73cbacf", null ],
-    [ "ACAPI_Analytical_CreateAnalyticalLoadGroup", "group___analytical.html#gaad54c7b5e891070d222f55eba7ddc806", null ],
-    [ "ACAPI_Analytical_CreateElementFromCurveMember", "group___analytical.html#gaeb33862e94bb92d766d4b2d93ecf34ec", null ],
-    [ "ACAPI_Analytical_CreateElementFromSegmentedSurfaceMember", "group___analytical.html#ga7c7e9b4cc75d50f774e840054a36079d", null ],
-    [ "ACAPI_Analytical_CreateElementFromSurfaceMember", "group___analytical.html#ga7222449bbf86318e855bc889351066fe", null ],
-    [ "ACAPI_Analytical_DeleteAnalyticalLoadCase", "group___analytical.html#gaadceeb0b7b779003788469be184e412e", null ],
-    [ "ACAPI_Analytical_DeleteAnalyticalLoadCombination", "group___analytical.html#ga3346e8ba8a737c3621851bd74fb700c1", null ],
-    [ "ACAPI_Analytical_DeleteAnalyticalLoadGroup", "group___analytical.html#ga60d09c9dae12be8609aa91a85e49bd8b", null ],
-    [ "ACAPI_Analytical_GetAllAnalyticalLoadCases", "group___analytical.html#ga94d473f52f912bde5097a7a92713c7ee", null ],
-    [ "ACAPI_Analytical_GetAnalyticalLinkGeometry", "group___analytical.html#ga8b26d21fd8bb6e2186d417ad9590957c", null ],
-    [ "ACAPI_Analytical_GetAnalyticalLoadCase", "group___analytical.html#ga0bf3dc18636e57c6f488a803dddc4e1d", null ],
-    [ "ACAPI_Analytical_GetAnalyticalLoadCases", "group___analytical.html#ga87f4bfe96a80cf721b69d1476a4c119f", null ],
-    [ "ACAPI_Analytical_GetAnalyticalLoadCombination", "group___analytical.html#gaa7ba7a632c41d334133a0a4aa6e6516c", null ],
-    [ "ACAPI_Analytical_GetAnalyticalLoadCombinations", "group___analytical.html#gad1830b5557a8514afd093d1f6ae856e3", null ],
-    [ "ACAPI_Analytical_GetAnalyticalLoadGroup", "group___analytical.html#ga034a8d83322b74dfca91dee5c660414d", null ],
-    [ "ACAPI_Analytical_GetAnalyticalLoadGroups", "group___analytical.html#gaa8e9c7284ab85c7921d92ed2c8047f30", null ],
-    [ "ACAPI_Analytical_GetAnalyticalMemberConnections", "group___analytical.html#gaf8158b7d4bf62f2dc01e1368abeb1d2d", null ],
-    [ "ACAPI_Analytical_GetAnalyticalMemberPartRefCoord", "group___analytical.html#gae688302cffd876fd896b9cd45baf2de9", null ],
-    [ "ACAPI_Analytical_GetAnalyticalMemberPartRefCurve", "group___analytical.html#ga7edb6b16d67e91c2d4a7297e101fb5f5", null ],
-    [ "ACAPI_Analytical_GetAnalyticalModel", "group___analytical.html#gab68f62da919c16890b86cf8c06983e1d", null ],
-    [ "ACAPI_Analytical_GetAnalyticalModelVariation", "group___analytical.html#ga948c4678d76b49262aab02e94938e3d8", null ],
-    [ "ACAPI_Analytical_GetAnalyticalPointLoadGeometry", "group___analytical.html#gae1ace6e85b0eb0e5afda92403a45ff7b", null ],
-    [ "ACAPI_Analytical_GetAnalyticalRelease", "group___analytical.html#ga9752aaf573f3bf7374412330e64fd1a9", null ],
-    [ "ACAPI_Analytical_GetAnalyticalSupportGeometry", "group___analytical.html#gac55889654c0aebfbf6eeefabe11c222a", null ],
-    [ "ACAPI_Analytical_GetComplementaryProjectMemberType", "group___analytical.html#gad2b8927f8802d06efc5f2a790c9fa5b5", null ],
-    [ "ACAPI_Analytical_GetCurrentAnalyticalModel", "group___analytical.html#ga13074c9f33a69656389eba03b39dc726", null ],
-    [ "ACAPI_Analytical_GetCurveElements", "group___analytical.html#gaa728023695a013e51d5656ff90971e69", null ],
-    [ "ACAPI_Analytical_GetCurveMember", "group___analytical.html#gadd8211f51a8c87abed45b979f46f59b4", null ],
-    [ "ACAPI_Analytical_GetEdgeLoadFromElement", "group___analytical.html#ga97ec345e7cb0921b66a1dce9d09a7371", null ],
-    [ "ACAPI_Analytical_GetEdgeLoadGeometry", "group___analytical.html#gaf9333cd47578fbf4e84a47be17e58912", null ],
-    [ "ACAPI_Analytical_GetLCSOfAnalyticalMember", "group___analytical.html#ga41352e17cf8b63493d7e4112ea5cd6d6", null ],
-    [ "ACAPI_Analytical_GetLCSOfAnalyticalMemberInIntersection", "group___analytical.html#ga5ca58a249eb06af9a7425edb07181fed", null ],
-    [ "ACAPI_Analytical_GetLinkFromElement", "group___analytical.html#ga76147d2d13ef055847c5ef167c550047", null ],
-    [ "ACAPI_Analytical_GetPointLoadFromElement", "group___analytical.html#ga6b63ec73c262164d0534f3b8aafc626d", null ],
-    [ "ACAPI_Analytical_GetSegmentedSurfaceMember", "group___analytical.html#ga73cf21de213f54515ff04f4feb07e868", null ],
-    [ "ACAPI_Analytical_GetSupportFromElement", "group___analytical.html#ga16f3f2200bb84c5e2d25126508f4b45c", null ],
-    [ "ACAPI_Analytical_GetSurfaceElements", "group___analytical.html#gadfa778abaab39160030aa9f813d893ef", null ],
-    [ "ACAPI_Analytical_GetSurfaceLoadFromElement", "group___analytical.html#ga1ffa3417dd06288f737be3f91454290f", null ],
-    [ "ACAPI_Analytical_GetSurfaceLoadGeometry", "group___analytical.html#ga34f26f5118a98fb2c6bbe98c21af7d7c", null ],
-    [ "ACAPI_Analytical_GetSurfaceMember", "group___analytical.html#ga6557f9931a551e6974d9647635081064", null ],
-    [ "ACAPI_Analytical_GetVisibilitySettings", "group___analytical.html#gaa41c231fb6c8b06b54d9ea8289919797", null ],
-    [ "ACAPI_Analytical_SetAnalyticalRelease", "group___analytical.html#ga3a5ac4ac7b791a693722fdf356acea6d", null ],
-    [ "ACAPI_Analytical_SetEdgeLoadCustomDataFromMemo", "group___analytical.html#gae2e518c8079612ed93705fc3df96bcbf", null ],
-    [ "ACAPI_Analytical_SetElementFromEdgeLoad", "group___analytical.html#ga7b7a3904890cd53de18caf7542d6e86c", null ],
-    [ "ACAPI_Analytical_SetElementFromLink", "group___analytical.html#gabab111880d214710634d02b015fcd3e4", null ],
-    [ "ACAPI_Analytical_SetElementFromPointLoad", "group___analytical.html#gafde13aaac7ba46a7a82350e7cd9a395a", null ],
-    [ "ACAPI_Analytical_SetElementFromSupport", "group___analytical.html#ga86556da6c929f7e5a63edcde99ed146d", null ],
-    [ "ACAPI_Analytical_SetElementFromSurfaceLoad", "group___analytical.html#gaa8850788aac933c64dbf26344f1b986a", null ],
-    [ "ACAPI_Analytical_SetGenerationSettingsToNoRule", "group___analytical.html#ga30579a6fecfb31ca7ec4b7f2ac96f825", null ],
-    [ "ACAPI_Analytical_SetMemoFromEdgeLoadCustomData", "group___analytical.html#ga3944f13f814f81834936463c4a2133fc", null ],
-    [ "ACAPI_Analytical_SetMemoFromSurfaceLoadCustomData", "group___analytical.html#gaa745575c898e05ce6ecd8c489bafacd8", null ],
-    [ "ACAPI_Analytical_SetSurfaceLoadCustomDataFromMemo", "group___analytical.html#gaf5bd1c1dd8fddc3da4e0b68ae5caba1b", null ],
-    [ "ACAPI_Analytical_SetVisibilitySettings", "group___analytical.html#ga469214a3b8e61f3cb9361f097e62cfeb", null ],
-    [ "ACAPI_Analytical_UpdateAnalyticalModel", "group___analytical.html#ga1b63355312c1fa9939615f6c35115cc5", null ]
+    [ "ACAPI_Analytical_AddLoadCaseToLoadCombination", "group___analytical.html#gadd6196e0612432f8052d9c5c0f4ce3b9", null ],
+    [ "ACAPI_Analytical_ConvertAnalyticalLinkToNonShortest", "group___analytical.html#gaa3d54dbd6bc8445ca9661b2d1a94d12d", null ],
+    [ "ACAPI_Analytical_CreateAnalyticalLoadCase", "group___analytical.html#ga88c1a1c1805d84401fe0c376b5f6c976", null ],
+    [ "ACAPI_Analytical_CreateAnalyticalLoadCombination", "group___analytical.html#gaa6ff2a929b130026b804a2ad004bc347", null ],
+    [ "ACAPI_Analytical_CreateAnalyticalLoadGroup", "group___analytical.html#ga0a13b8f14490f4820cf78873504cd1d4", null ],
+    [ "ACAPI_Analytical_CreateElementFromCurveMember", "group___analytical.html#ga67390638897455959852a9cd5c35310e", null ],
+    [ "ACAPI_Analytical_CreateElementFromSegmentedSurfaceMember", "group___analytical.html#ga170f8d237f24cd2960e06fdeb71500f6", null ],
+    [ "ACAPI_Analytical_CreateElementFromSurfaceMember", "group___analytical.html#ga315fb2104eb3e7002b9fbd141c41f477", null ],
+    [ "ACAPI_Analytical_DeleteAnalyticalLoadCase", "group___analytical.html#ga0184f53598636b74f75c89d81c881dd8", null ],
+    [ "ACAPI_Analytical_DeleteAnalyticalLoadCombination", "group___analytical.html#ga235599397293df0310a814d1b3d4aada", null ],
+    [ "ACAPI_Analytical_DeleteAnalyticalLoadGroup", "group___analytical.html#gaeb0fe6ddfa77c3c4861cb5cba9da0e25", null ],
+    [ "ACAPI_Analytical_GetAllAnalyticalLoadCases", "group___analytical.html#gafd66093a61b1e3808ce06b671e3c99e7", null ],
+    [ "ACAPI_Analytical_GetAnalyticalLinkGeometry", "group___analytical.html#ga0fb8c1967556112bd59d7437e17c466a", null ],
+    [ "ACAPI_Analytical_GetAnalyticalLoadCase", "group___analytical.html#ga58aa69f42baf7787a4fd71e540e30bf7", null ],
+    [ "ACAPI_Analytical_GetAnalyticalLoadCases", "group___analytical.html#gab8e6663b56a84bed90b0417c136bd7e3", null ],
+    [ "ACAPI_Analytical_GetAnalyticalLoadCombination", "group___analytical.html#ga1c696ef16f691f249d9911f18b0259dd", null ],
+    [ "ACAPI_Analytical_GetAnalyticalLoadCombinations", "group___analytical.html#ga3c846cd08a8f7ac150d5531d06dd7849", null ],
+    [ "ACAPI_Analytical_GetAnalyticalLoadGroup", "group___analytical.html#ga04dcc287a8d12bcac38dd0ff09ed5771", null ],
+    [ "ACAPI_Analytical_GetAnalyticalLoadGroups", "group___analytical.html#ga4c692ac520dc66c48fb863a5ad90823b", null ],
+    [ "ACAPI_Analytical_GetAnalyticalMemberConnections", "group___analytical.html#ga0e638cef0c18f033d46b529a3a5ebe2e", null ],
+    [ "ACAPI_Analytical_GetAnalyticalMemberPartRefCoord", "group___analytical.html#ga42178c3f98ac617f9162ecb88391ed1c", null ],
+    [ "ACAPI_Analytical_GetAnalyticalMemberPartRefCurve", "group___analytical.html#gaf055378193a12bae8a8a611e20a590ce", null ],
+    [ "ACAPI_Analytical_GetAnalyticalModel", "group___analytical.html#ga62a451254fffa669e1c17570b06e88af", null ],
+    [ "ACAPI_Analytical_GetAnalyticalModelVariation", "group___analytical.html#ga59060754e4ccf31f2f2cc300c8c2a3ef", null ],
+    [ "ACAPI_Analytical_GetAnalyticalPointLoadGeometry", "group___analytical.html#ga73fa527a18a5d46dc196d9651946c499", null ],
+    [ "ACAPI_Analytical_GetAnalyticalRelease", "group___analytical.html#ga6f1a1844327c4916bcbb2bfd318b0bbd", null ],
+    [ "ACAPI_Analytical_GetAnalyticalSupportGeometry", "group___analytical.html#ga7754327bdf03b387973b1a388c94427b", null ],
+    [ "ACAPI_Analytical_GetComplementaryProjectMemberType", "group___analytical.html#gae679ef3a0687a4a8ffaf186dce2444f4", null ],
+    [ "ACAPI_Analytical_GetCurrentAnalyticalModel", "group___analytical.html#ga82cbb59de57fc6277852130c526a0a26", null ],
+    [ "ACAPI_Analytical_GetCurveElements", "group___analytical.html#ga3648ba29bbe7b1efe225d0034227a60f", null ],
+    [ "ACAPI_Analytical_GetCurveMember", "group___analytical.html#gaa99409a989f2933f17237127001fcd9d", null ],
+    [ "ACAPI_Analytical_GetEdgeLoadFromElement", "group___analytical.html#ga3187a379b86458298c51e551b53d951d", null ],
+    [ "ACAPI_Analytical_GetEdgeLoadGeometry", "group___analytical.html#ga63e69f4112db0b296a7098a43654e4e6", null ],
+    [ "ACAPI_Analytical_GetLCSOfAnalyticalMember", "group___analytical.html#gac453da57e77057a23c0ecea3af927f05", null ],
+    [ "ACAPI_Analytical_GetLCSOfAnalyticalMemberInIntersection", "group___analytical.html#gab5c9f797965415335f6a133f32f43d89", null ],
+    [ "ACAPI_Analytical_GetLinkFromElement", "group___analytical.html#ga54f09dcd646b66f77da49d7b98b20218", null ],
+    [ "ACAPI_Analytical_GetPointLoadFromElement", "group___analytical.html#gad77215faabd24b8ee8185f95878549cf", null ],
+    [ "ACAPI_Analytical_GetSegmentedSurfaceMember", "group___analytical.html#ga8ea6173c4f7df8a5e6d3d82ffae15689", null ],
+    [ "ACAPI_Analytical_GetSupportFromElement", "group___analytical.html#ga770a8c5f22a4188834ed09aa433c42ae", null ],
+    [ "ACAPI_Analytical_GetSurfaceElements", "group___analytical.html#ga3007ff1926dd01d9b38bc7d217034054", null ],
+    [ "ACAPI_Analytical_GetSurfaceLoadFromElement", "group___analytical.html#gabdc71a421f233a5f9999930c8273d573", null ],
+    [ "ACAPI_Analytical_GetSurfaceLoadGeometry", "group___analytical.html#gab102d170560ab7746af179b3ee4e3595", null ],
+    [ "ACAPI_Analytical_GetSurfaceMember", "group___analytical.html#ga682ba49e4ca4c9505c6db89e63ec7e30", null ],
+    [ "ACAPI_Analytical_GetVisibilitySettings", "group___analytical.html#ga52119327f2d6651dfd2b8c60da6df6f0", null ],
+    [ "ACAPI_Analytical_SetAnalyticalRelease", "group___analytical.html#gae200d9b60bcdbf529964042a50ffb099", null ],
+    [ "ACAPI_Analytical_SetEdgeLoadCustomDataFromMemo", "group___analytical.html#ga5caf29556b4fc9ddbf702691edadf7de", null ],
+    [ "ACAPI_Analytical_SetElementFromEdgeLoad", "group___analytical.html#gaf8ed7f80a43e388102191d0146d39e54", null ],
+    [ "ACAPI_Analytical_SetElementFromLink", "group___analytical.html#ga570dc4f943593922f0f12e978f1433c6", null ],
+    [ "ACAPI_Analytical_SetElementFromPointLoad", "group___analytical.html#ga3effd7533fa58a82f60d06d71b865a3d", null ],
+    [ "ACAPI_Analytical_SetElementFromSupport", "group___analytical.html#ga24c3a771d64f5c8a278643ee86445446", null ],
+    [ "ACAPI_Analytical_SetElementFromSurfaceLoad", "group___analytical.html#ga57a412ae7e566f21fb88473d7a660178", null ],
+    [ "ACAPI_Analytical_SetGenerationSettingsToNoRule", "group___analytical.html#ga1f6c84ccab797749f53357c6fbdd990a", null ],
+    [ "ACAPI_Analytical_SetMemoFromEdgeLoadCustomData", "group___analytical.html#ga8c9574e71b9e03a96e81b3d74eb2a00f", null ],
+    [ "ACAPI_Analytical_SetMemoFromSurfaceLoadCustomData", "group___analytical.html#gab5538b74333a7f9538d1e5f830ae72e9", null ],
+    [ "ACAPI_Analytical_SetSurfaceLoadCustomDataFromMemo", "group___analytical.html#gae934af4452d570e8bc02bd51ca54bf4b", null ],
+    [ "ACAPI_Analytical_SetVisibilitySettings", "group___analytical.html#ga7a73fee6e240dffdf3ed30f301f7ad65", null ],
+    [ "ACAPI_Analytical_UpdateAnalyticalModel", "group___analytical.html#ga796febbebebbbfe14841e4d94fce2e65", null ]
 ];

@@ -1,5 +1,6 @@
 var struct_a_p_i___wall_part =
 [
+    [ "filler", "struct_a_p_i___wall_part.html#a8e86d79941c249c46cdd747470bc7150", null ],
     [ "guid", "struct_a_p_i___wall_part.html#ada7bc7028121565605dc5e1fa3227d13", null ],
     [ "roomEdge", "struct_a_p_i___wall_part.html#a923804ea37dd7f2792ad9e2955c00ca8", null ],
     [ "tBeg", "struct_a_p_i___wall_part.html#aec1b9b237c829dbeb1e65c9e771e9879", null ],

@@ -8,6 +8,8 @@ var struct_a_p_i___zone_prefs =
     [ "nichSizeFlag", "struct_a_p_i___zone_prefs.html#a685dcaca9b922574b281f3871791a8e5", null ],
     [ "nichWindFlag", "struct_a_p_i___zone_prefs.html#a5b755dd2fd6ed1a81e6fc009cc720aff", null ],
     [ "nLowAreas", "struct_a_p_i___zone_prefs.html#a7e8fa94b451038c16604b6d74cde1650", null ],
+    [ "roomHeightLimits", "struct_a_p_i___zone_prefs.html#adc44f06aca8fc49bbce39c3a9493e87c", null ],
+    [ "roomRedPercents", "struct_a_p_i___zone_prefs.html#abe305d5a350c6a2571f42ca96751127e", null ],
     [ "subtrColuFlag", "struct_a_p_i___zone_prefs.html#a7f300a5e352a39554279dadfb75ef742", null ],
     [ "subtrColuPercent", "struct_a_p_i___zone_prefs.html#a7a07b9fd0679d0aee74e3f0a301a30a7", null ],
     [ "subtrColuSize", "struct_a_p_i___zone_prefs.html#a3b4f0597ee77c8f621ff0b2bf8450740", null ],

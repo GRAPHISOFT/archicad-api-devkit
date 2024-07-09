@@ -4,6 +4,8 @@ var struct_a_p_i___override_rule_style =
     [ "fillForegroundPenOverride", "struct_a_p_i___override_rule_style.html#a067c5bddf0fbb09625cca5fd2cd55ea9", null ],
     [ "fillOverride", "struct_a_p_i___override_rule_style.html#a4348e3e38121ce9b762ef00f7a7bfa35", null ],
     [ "fillType", "struct_a_p_i___override_rule_style.html#ade8e25826a5c9b3e37aef3524c161acc", null ],
+    [ "fillTypeBackgroundPen", "struct_a_p_i___override_rule_style.html#aaa2bfe80e4401c87ecae67d97dd63e66", null ],
+    [ "fillTypeForegroundPen", "struct_a_p_i___override_rule_style.html#a7ffefff070309ab5d184ca225ffc7bf2", null ],
     [ "hiddenContours", "struct_a_p_i___override_rule_style.html#ab872da07a8d8efbe0b42d87c0303bf86", null ],
     [ "lineMarkerTextPen", "struct_a_p_i___override_rule_style.html#add9d88950885b6e9ddabf375ec8fbf34", null ],
     [ "lineType", "struct_a_p_i___override_rule_style.html#a38fee5c629b326a029b4f8e121ae1952", null ],

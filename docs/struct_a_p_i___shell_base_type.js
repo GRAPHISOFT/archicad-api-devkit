@@ -24,6 +24,7 @@ var struct_a_p_i___shell_base_type =
     [ "pen", "struct_a_p_i___shell_base_type.html#a0329f4d277092b39be4c22aa4d03efbd", null ],
     [ "sectContLtype", "struct_a_p_i___shell_base_type.html#a3e2cac87f44fcb60861b38ec6cf91f06", null ],
     [ "sectContPen", "struct_a_p_i___shell_base_type.html#aa40358296d1dda752e55abc598cbeb39", null ],
+    [ "sidMat", "struct_a_p_i___shell_base_type.html#a95ec87b51a52de1ade92033ec58902cb", null ],
     [ "thickness", "struct_a_p_i___shell_base_type.html#a3ab5615a115384b72aa800e20f0fa371", null ],
     [ "topMat", "struct_a_p_i___shell_base_type.html#a8dc6f5e29de714f5825ec4355078330f", null ],
     [ "use3DHatching", "struct_a_p_i___shell_base_type.html#ab2ff02676e7844d00a8cd0ba00249fce", null ],

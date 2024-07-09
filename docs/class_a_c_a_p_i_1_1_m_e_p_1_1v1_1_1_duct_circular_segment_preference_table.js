@@ -1,0 +1,27 @@
+var class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table =
+[
+    [ "EmptyRow", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a45c8c2db90b1a682f6182bc07f989c9f", null ],
+    [ "EmptyRowByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a5b7e7783c623cb763df67238e5d7f5b5", null ],
+    [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a3839693fb744cf17b4bcc5aff1b90cc2", null ],
+    [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a0886b76ba0ca0b3ad1e86070f92e1aec", null ],
+    [ "GetDescriptionByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a1d08094f1647fc58f3d43e1b05c6a911", null ],
+    [ "GetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a2668966dc104f6b5fe69b04cd9170a4c", null ],
+    [ "GetDiameterByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#ac6642de27362c3b8c3e9495ffd9748db", null ],
+    [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#ac4e4331bb497f6d30c01328bcb9d410b", null ],
+    [ "GetReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a74dbcdd56599b25d70b1e0420973a491", null ],
+    [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a7a82a5c4fbcc00b72a4e46b8c5e1e4d6", null ],
+    [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a1ecc183b64f7368e4d06b96f084f8e09", null ],
+    [ "GetWallThicknessByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a7424bfe5beb2c7237b8749ccd73d0d1a", null ],
+    [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a040e654ba2ab3ab371be2cadab10aa6e", null ],
+    [ "IsRowValid", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a6680d3cf6b2fe36775c06efb1adbaf09", null ],
+    [ "IsRowValidByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a4d299f9475cc3c826ffa42dee7bbac93", null ],
+    [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#ac265208c45126a9831c21683ffeca7f0", null ],
+    [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#ac65712c1e58f978ed497c66c95b97226", null ],
+    [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#af67f9e2361218a109839c383e4f1317b", null ],
+    [ "SetDescriptionByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#aff56d5b42a4a88622c811bdcdd9d20ce", null ],
+    [ "SetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a1ab98e66eeb3dee1fa7cf241e39ec6fb", null ],
+    [ "SetDiameterByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a4a6e4f4ecea89aa23ada4516c1da72b1", null ],
+    [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a1ea9f944ff33188aa66cba0061910c51", null ],
+    [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a719b8bda7c940ad53b830f7a5d385dac", null ],
+    [ "SetWallThicknessByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a3302f7971cb3315f5d3983c93e783eef", null ]
+];

@@ -1,6 +1,7 @@
 var struct_a_p_i___navigator_set =
 [
     [ "dirName", "struct_a_p_i___navigator_set.html#a3af85a7189ee98803e8b755f1dd254ba", null ],
+    [ "filler", "struct_a_p_i___navigator_set.html#a9ac309964c12cdb37f8fa854117b86ec", null ],
     [ "guid", "struct_a_p_i___navigator_set.html#aab304dd853ed624a21dc11d0ae4e5ec6", null ],
     [ "host", "struct_a_p_i___navigator_set.html#ad86a6d4f0e1a5cae2110199b35a24de2", null ],
     [ "mapId", "struct_a_p_i___navigator_set.html#ac65d9f48175fba1a896a73fa68fb51fa", null ],

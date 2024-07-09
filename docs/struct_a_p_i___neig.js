@@ -1,5 +1,7 @@
 var struct_a_p_i___neig =
 [
+    [ "API_Neig", "struct_a_p_i___neig.html#a5aad5dd85c8bbbeaf49567ff37c04159", null ],
+    [ "API_Neig", "struct_a_p_i___neig.html#a2cce4853f2a6e4bc90d170b1ba7f8ff8", null ],
     [ "elemPartIndex", "struct_a_p_i___neig.html#aaae55168dc8cd1fdcfe72ee36a4ee454", null ],
     [ "elemPartType", "struct_a_p_i___neig.html#aeb58fbc50c71c5a61d4d16f4fbbb2005", null ],
     [ "flags", "struct_a_p_i___neig.html#a7395b8413b802c966aad996f788826cb", null ],

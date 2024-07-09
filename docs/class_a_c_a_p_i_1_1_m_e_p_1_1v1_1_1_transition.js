@@ -9,7 +9,5 @@ var class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition =
     [ "GetOffsetZ", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html#a977d484034bb7552f69144c10996da71", null ],
     [ "GetRoutingNodeId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html#a4df4b336997336bc86d63127f3dc420f", null ],
     [ "GetWiderPortID", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html#ac99a1411f2eb98bfe928fec3a9c739eb", null ],
-    [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html#ae43902784bc1731b6b4efc38f8ce62aa", null ],
-    [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html#a686058a6296ce7a800d9d1b777d49d5e", null ],
-    [ "SetAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html#a7a61d43d7bd9d294dcc208ed2cb0f181", null ]
+    [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html#a686058a6296ce7a800d9d1b777d49d5e", null ]
 ];
