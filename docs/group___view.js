@@ -265,7 +265,7 @@ var group___view =
     [ "ACAPI_View_PointToCoord", "group___view.html#gabe5a6a64d784b0aad34471ba3e72eccb", null ],
     [ "ACAPI_View_Rebuild", "group___view.html#ga44732454ce646d6aa50a2d0e8e6f42aa", null ],
     [ "ACAPI_View_Redraw", "group___view.html#ga22851803adcfaebbd2e42461ed990826", null ],
-    [ "ACAPI_View_ReSetZoom", "group___view.html#ga26b785d9eff29b93902b4438708206fd", null ],
+    [ "ACAPI_View_ResetZoom", "group___view.html#gafd676cb6ba219ced788d06b085666e80", null ],
     [ "ACAPI_View_SetCurrent3DStyle", "group___view.html#gab46582fd79bde93275c2fdaeeb8af6bc", null ],
     [ "ACAPI_View_SetZoom", "group___view.html#gae7b61321d04acf6780e1de07ba549f80", null ],
     [ "ACAPI_View_ShowAllIn3D", "group___view.html#ga3d9c163d571b60a0b67c13be6419488e", null ],

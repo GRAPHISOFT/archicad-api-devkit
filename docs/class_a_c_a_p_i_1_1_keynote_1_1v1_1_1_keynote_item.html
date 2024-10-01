@@ -335,10 +335,18 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <dl class="section return"><dt>Returns</dt><dd>The result of the modification <div class="fragment"><div class="line"> </div>
 <div class="line">    <a class="code hl_class" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html">ACAPI::Keynote::KeynoteItem</a> firstItem = items.Unwrap ()[0];</div>
 <div class="line">    <a class="code hl_function" href="group___command.html#gab7bf9e1351986b4bb6c69dab76766f1a">ACAPI_CallUndoableCommand</a> (<span class="stringliteral">&quot;Modify first keynote item&quot;</span>, [&amp;firstItem]() -&gt; GSErrCode {</div>
-<div class="line">        firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#a47ffedb4b50ab985ad3ebe487415f1f1">SetKey</a> (<span class="stringliteral">&quot;K-API&quot;</span>);</div>
-<div class="line">        firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ac5dd21eec3115ce9bfac1261b3f5726a">SetTitle</a> (<span class="stringliteral">&quot;Title set for Item by API&quot;</span>);</div>
-<div class="line">        firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ab2075f60c28aecebc4b1e94403074988">SetDescription</a> (<span class="stringliteral">&quot;Keynote item modified by the test addon&quot;</span>);</div>
-<div class="line">        firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ab28c5a555100f141452be38b681e7d32">SetReference</a> (<span class="stringliteral">&quot;Keynote item modified by the test addon&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">if</span> (firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#a47ffedb4b50ab985ad3ebe487415f1f1">SetKey</a> (<span class="stringliteral">&quot;K-API&quot;</span>).IsErr ()) {</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
+<div class="line">        if (firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ac5dd21eec3115ce9bfac1261b3f5726a">SetTitle</a> (<span class="stringliteral">&quot;Title set for Item by API&quot;</span>).IsErr ()) {</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
+<div class="line">        if (firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ab2075f60c28aecebc4b1e94403074988">SetDescription</a> (<span class="stringliteral">&quot;Keynote item modified by the test addon&quot;</span>).IsErr ()){</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
+<div class="line">        if (firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ab28c5a555100f141452be38b681e7d32">SetReference</a> (<span class="stringliteral">&quot;Keynote item modified by the test addon&quot;</span>).IsErr ()) {</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
 <div class="line">        <span class="keywordflow">return</span> NoError;</div>
 <div class="line">    });</div>
 <div class="line"> </div>
@@ -378,10 +386,18 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <dl class="section return"><dt>Returns</dt><dd>The result of the modification <div class="fragment"><div class="line"> </div>
 <div class="line">    <a class="code hl_class" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html">ACAPI::Keynote::KeynoteItem</a> firstItem = items.Unwrap ()[0];</div>
 <div class="line">    <a class="code hl_function" href="group___command.html#gab7bf9e1351986b4bb6c69dab76766f1a">ACAPI_CallUndoableCommand</a> (<span class="stringliteral">&quot;Modify first keynote item&quot;</span>, [&amp;firstItem]() -&gt; GSErrCode {</div>
-<div class="line">        firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#a47ffedb4b50ab985ad3ebe487415f1f1">SetKey</a> (<span class="stringliteral">&quot;K-API&quot;</span>);</div>
-<div class="line">        firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ac5dd21eec3115ce9bfac1261b3f5726a">SetTitle</a> (<span class="stringliteral">&quot;Title set for Item by API&quot;</span>);</div>
-<div class="line">        firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ab2075f60c28aecebc4b1e94403074988">SetDescription</a> (<span class="stringliteral">&quot;Keynote item modified by the test addon&quot;</span>);</div>
-<div class="line">        firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ab28c5a555100f141452be38b681e7d32">SetReference</a> (<span class="stringliteral">&quot;Keynote item modified by the test addon&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">if</span> (firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#a47ffedb4b50ab985ad3ebe487415f1f1">SetKey</a> (<span class="stringliteral">&quot;K-API&quot;</span>).IsErr ()) {</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
+<div class="line">        if (firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ac5dd21eec3115ce9bfac1261b3f5726a">SetTitle</a> (<span class="stringliteral">&quot;Title set for Item by API&quot;</span>).IsErr ()) {</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
+<div class="line">        if (firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ab2075f60c28aecebc4b1e94403074988">SetDescription</a> (<span class="stringliteral">&quot;Keynote item modified by the test addon&quot;</span>).IsErr ()){</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
+<div class="line">        if (firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ab28c5a555100f141452be38b681e7d32">SetReference</a> (<span class="stringliteral">&quot;Keynote item modified by the test addon&quot;</span>).IsErr ()) {</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
 <div class="line">        <span class="keywordflow">return</span> NoError;</div>
 <div class="line">    });</div>
 <div class="line"> </div>
@@ -415,10 +431,18 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <dl class="section return"><dt>Returns</dt><dd>The result of the modification <div class="fragment"><div class="line"> </div>
 <div class="line">    <a class="code hl_class" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html">ACAPI::Keynote::KeynoteItem</a> firstItem = items.Unwrap ()[0];</div>
 <div class="line">    <a class="code hl_function" href="group___command.html#gab7bf9e1351986b4bb6c69dab76766f1a">ACAPI_CallUndoableCommand</a> (<span class="stringliteral">&quot;Modify first keynote item&quot;</span>, [&amp;firstItem]() -&gt; GSErrCode {</div>
-<div class="line">        firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#a47ffedb4b50ab985ad3ebe487415f1f1">SetKey</a> (<span class="stringliteral">&quot;K-API&quot;</span>);</div>
-<div class="line">        firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ac5dd21eec3115ce9bfac1261b3f5726a">SetTitle</a> (<span class="stringliteral">&quot;Title set for Item by API&quot;</span>);</div>
-<div class="line">        firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ab2075f60c28aecebc4b1e94403074988">SetDescription</a> (<span class="stringliteral">&quot;Keynote item modified by the test addon&quot;</span>);</div>
-<div class="line">        firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ab28c5a555100f141452be38b681e7d32">SetReference</a> (<span class="stringliteral">&quot;Keynote item modified by the test addon&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">if</span> (firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#a47ffedb4b50ab985ad3ebe487415f1f1">SetKey</a> (<span class="stringliteral">&quot;K-API&quot;</span>).IsErr ()) {</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
+<div class="line">        if (firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ac5dd21eec3115ce9bfac1261b3f5726a">SetTitle</a> (<span class="stringliteral">&quot;Title set for Item by API&quot;</span>).IsErr ()) {</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
+<div class="line">        if (firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ab2075f60c28aecebc4b1e94403074988">SetDescription</a> (<span class="stringliteral">&quot;Keynote item modified by the test addon&quot;</span>).IsErr ()){</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
+<div class="line">        if (firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ab28c5a555100f141452be38b681e7d32">SetReference</a> (<span class="stringliteral">&quot;Keynote item modified by the test addon&quot;</span>).IsErr ()) {</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
 <div class="line">        <span class="keywordflow">return</span> NoError;</div>
 <div class="line">    });</div>
 <div class="line"> </div>
@@ -452,10 +476,18 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <dl class="section return"><dt>Returns</dt><dd>The result of the modification <div class="fragment"><div class="line"> </div>
 <div class="line">    <a class="code hl_class" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html">ACAPI::Keynote::KeynoteItem</a> firstItem = items.Unwrap ()[0];</div>
 <div class="line">    <a class="code hl_function" href="group___command.html#gab7bf9e1351986b4bb6c69dab76766f1a">ACAPI_CallUndoableCommand</a> (<span class="stringliteral">&quot;Modify first keynote item&quot;</span>, [&amp;firstItem]() -&gt; GSErrCode {</div>
-<div class="line">        firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#a47ffedb4b50ab985ad3ebe487415f1f1">SetKey</a> (<span class="stringliteral">&quot;K-API&quot;</span>);</div>
-<div class="line">        firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ac5dd21eec3115ce9bfac1261b3f5726a">SetTitle</a> (<span class="stringliteral">&quot;Title set for Item by API&quot;</span>);</div>
-<div class="line">        firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ab2075f60c28aecebc4b1e94403074988">SetDescription</a> (<span class="stringliteral">&quot;Keynote item modified by the test addon&quot;</span>);</div>
-<div class="line">        firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ab28c5a555100f141452be38b681e7d32">SetReference</a> (<span class="stringliteral">&quot;Keynote item modified by the test addon&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">if</span> (firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#a47ffedb4b50ab985ad3ebe487415f1f1">SetKey</a> (<span class="stringliteral">&quot;K-API&quot;</span>).IsErr ()) {</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
+<div class="line">        if (firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ac5dd21eec3115ce9bfac1261b3f5726a">SetTitle</a> (<span class="stringliteral">&quot;Title set for Item by API&quot;</span>).IsErr ()) {</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
+<div class="line">        if (firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ab2075f60c28aecebc4b1e94403074988">SetDescription</a> (<span class="stringliteral">&quot;Keynote item modified by the test addon&quot;</span>).IsErr ()){</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
+<div class="line">        if (firstItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_item.html#ab28c5a555100f141452be38b681e7d32">SetReference</a> (<span class="stringliteral">&quot;Keynote item modified by the test addon&quot;</span>).IsErr ()) {</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
 <div class="line">        <span class="keywordflow">return</span> NoError;</div>
 <div class="line">    });</div>
 <div class="line"> </div>

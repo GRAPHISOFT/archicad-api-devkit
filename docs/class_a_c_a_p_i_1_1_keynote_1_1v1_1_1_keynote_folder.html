@@ -246,16 +246,17 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <div class="line">                newItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a3ab9cb4a2ae3f4c0c18fb54344c012f5">Unwrap</a> ().SetTitle (<span class="stringliteral">&quot;New item Title&quot;</span>);</div>
 <div class="line">                newItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a3ab9cb4a2ae3f4c0c18fb54344c012f5">Unwrap</a> ().SetDescription (<span class="stringliteral">&quot;New item Description&quot;</span>);</div>
 <div class="line">                newItem.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a3ab9cb4a2ae3f4c0c18fb54344c012f5">Unwrap</a> ().SetReference (<span class="stringliteral">&quot;New item Reference&quot;</span>);</div>
-<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line">                <span class="keywordflow">return</span> NoError;</div>
 <div class="line">            }</div>
 <div class="line">        }</div>
-<div class="line">        <span class="keywordflow">return</span> NoError;</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_a_c_a_p_i_1_1_error.html">Error</a>;</div>
 <div class="line">    });</div>
 <div class="line"> </div>
 <div class="ttc" id="aclass_a_c_a_p_i_1_1_result_html"><div class="ttname"><a href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result</a></div><div class="ttdoc">Result is the standard return type of API functions.</div><div class="ttdef"><b>Definition:</b> Result.hpp:845</div></div>
 <div class="ttc" id="aclass_a_c_a_p_i_1_1_result_html_a3ab9cb4a2ae3f4c0c18fb54344c012f5"><div class="ttname"><a href="class_a_c_a_p_i_1_1_result.html#a3ab9cb4a2ae3f4c0c18fb54344c012f5">ACAPI::Result::Unwrap</a></div><div class="ttdeci">std::enable_if_t&lt;!std::is_same_v&lt; U, void &gt;, U &gt; &amp;&amp; Unwrap() &amp;&amp;</div><div class="ttdoc">Unwraps the value contained in the Result. Trying to Unwrap the value while it contains an error will...</div><div class="ttdef"><b>Definition:</b> Result.hpp:1087</div></div>
 <div class="ttc" id="aclass_a_c_a_p_i_1_1_result_html_a939e2710979b665065e7fc91a1d3c8b0"><div class="ttname"><a href="class_a_c_a_p_i_1_1_result.html#a939e2710979b665065e7fc91a1d3c8b0">ACAPI::Result::IsOk</a></div><div class="ttdeci">bool IsOk() const</div><div class="ttdef"><b>Definition:</b> Result.hpp:940</div></div>
 <div class="ttc" id="agroup___command_html_gab7bf9e1351986b4bb6c69dab76766f1a"><div class="ttname"><a href="group___command.html#gab7bf9e1351986b4bb6c69dab76766f1a">ACAPI_CallUndoableCommand</a></div><div class="ttdeci">GSErrCode ACAPI_CallUndoableCommand(const GS::UniString &amp;undoString, const std::function&lt; GSErrCode()&gt; &amp;command)</div><div class="ttdoc">Performs an undoable operation.</div></div>
+<div class="ttc" id="astruct_a_c_a_p_i_1_1_error_html"><div class="ttname"><a href="struct_a_c_a_p_i_1_1_error.html">ACAPI::Error</a></div><div class="ttdoc">Error type for ACAPI::Result containing an error message and an error code.</div><div class="ttdef"><b>Definition:</b> Result.hpp:47</div></div>
 </div><!-- fragment --> </dd></dl>
 
 </div>
@@ -302,10 +303,10 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <div class="line">            <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;ACAPI::Keynote::KeynoteFolder&gt;</a> newFolder = rootFolder.AddSubFolder (key, title);</div>
 <div class="line">            <span class="keywordflow">if</span> (newFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a939e2710979b665065e7fc91a1d3c8b0">IsOk</a> ()) {</div>
 <div class="line">                newFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a3ab9cb4a2ae3f4c0c18fb54344c012f5">Unwrap</a> ().SetReference (<span class="stringliteral">&quot;New folder Reference&quot;</span>);</div>
-<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line">                <span class="keywordflow">return</span> NoError;</div>
 <div class="line">            }</div>
 <div class="line">        }</div>
-<div class="line">        <span class="keywordflow">return</span> NoError;</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_a_c_a_p_i_1_1_error.html">Error</a>;</div>
 <div class="line">    });</div>
 <div class="line"> </div>
 </div><!-- fragment --> </dd></dl>
@@ -485,10 +486,10 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <div class="line">            <span class="keyword">const</span> ACAPI::Keynote::ItemKey key (<span class="stringliteral">&quot;K-&quot;</span> + GS::ValueToUniString (i));</div>
 <div class="line">            <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;void&gt;</a> removeResult = rootFolder.RemoveItem (key);</div>
 <div class="line">            <span class="keywordflow">if</span> (removeResult.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a939e2710979b665065e7fc91a1d3c8b0">IsOk</a> ()) {</div>
-<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line">                <span class="keywordflow">return</span> NoError;</div>
 <div class="line">            }</div>
 <div class="line">        }</div>
-<div class="line">        <span class="keywordflow">return</span> NoError;</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_a_c_a_p_i_1_1_error.html">Error</a>;</div>
 <div class="line">    });</div>
 <div class="line"> </div>
 </div><!-- fragment --> </dd></dl>
@@ -536,10 +537,10 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <div class="line">            <span class="keyword">const</span> ACAPI::Keynote::Title title (<span class="stringliteral">&quot;Title&quot;</span>);</div>
 <div class="line">            <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;void&gt;</a> removeResult = rootFolder.RemoveSubFolder (key, title);</div>
 <div class="line">            <span class="keywordflow">if</span> (removeResult.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a939e2710979b665065e7fc91a1d3c8b0">IsOk</a> ()) {</div>
-<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line">                <span class="keywordflow">return</span> NoError;</div>
 <div class="line">            }</div>
 <div class="line">        }</div>
-<div class="line">        <span class="keywordflow">return</span> NoError;</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_a_c_a_p_i_1_1_error.html">Error</a>;</div>
 <div class="line">    });</div>
 <div class="line"> </div>
 </div><!-- fragment --> </dd></dl>
@@ -572,9 +573,15 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <dl class="section return"><dt>Returns</dt><dd>The result of the modification <div class="fragment"><div class="line"> </div>
 <div class="line">    <a class="code hl_class" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html">ACAPI::Keynote::KeynoteFolder</a> firstFolder = subFolders.Unwrap ()[0];</div>
 <div class="line">    <a class="code hl_function" href="group___command.html#gab7bf9e1351986b4bb6c69dab76766f1a">ACAPI_CallUndoableCommand</a> (<span class="stringliteral">&quot;Modify first keynote folder&quot;</span>, [&amp;firstFolder]() -&gt; GSErrCode {</div>
-<div class="line">        firstFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html#af5fa874150c5ef76e57b6a2f5dc459c1">SetKey</a> (<span class="stringliteral">&quot;KF-API&quot;</span>);</div>
-<div class="line">        firstFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html#acd7416f6e56ec1ce4f7c03413dc0d4be">SetTitle</a> (<span class="stringliteral">&quot;Title set for Folder by API&quot;</span>);</div>
-<div class="line">        firstFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html#ae23964c3d41818344da23c0a331b3fcd">SetReference</a> (<span class="stringliteral">&quot;Keynote folder modified by the test addon&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">if</span> (firstFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html#af5fa874150c5ef76e57b6a2f5dc459c1">SetKey</a> (<span class="stringliteral">&quot;KF-API&quot;</span>).IsErr ()){</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
+<div class="line">        if (firstFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html#acd7416f6e56ec1ce4f7c03413dc0d4be">SetTitle</a> (<span class="stringliteral">&quot;Title set for Folder by API&quot;</span>).IsErr ()){</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
+<div class="line">        if (firstFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html#ae23964c3d41818344da23c0a331b3fcd">SetReference</a> (<span class="stringliteral">&quot;Keynote folder modified by the test addon&quot;</span>).IsErr ()) {</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
 <div class="line">        <span class="keywordflow">return</span> NoError;</div>
 <div class="line">    });</div>
 <div class="line"> </div>
@@ -612,9 +619,15 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <dl class="section return"><dt>Returns</dt><dd>The result of the modification <div class="fragment"><div class="line"> </div>
 <div class="line">    <a class="code hl_class" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html">ACAPI::Keynote::KeynoteFolder</a> firstFolder = subFolders.Unwrap ()[0];</div>
 <div class="line">    <a class="code hl_function" href="group___command.html#gab7bf9e1351986b4bb6c69dab76766f1a">ACAPI_CallUndoableCommand</a> (<span class="stringliteral">&quot;Modify first keynote folder&quot;</span>, [&amp;firstFolder]() -&gt; GSErrCode {</div>
-<div class="line">        firstFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html#af5fa874150c5ef76e57b6a2f5dc459c1">SetKey</a> (<span class="stringliteral">&quot;KF-API&quot;</span>);</div>
-<div class="line">        firstFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html#acd7416f6e56ec1ce4f7c03413dc0d4be">SetTitle</a> (<span class="stringliteral">&quot;Title set for Folder by API&quot;</span>);</div>
-<div class="line">        firstFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html#ae23964c3d41818344da23c0a331b3fcd">SetReference</a> (<span class="stringliteral">&quot;Keynote folder modified by the test addon&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">if</span> (firstFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html#af5fa874150c5ef76e57b6a2f5dc459c1">SetKey</a> (<span class="stringliteral">&quot;KF-API&quot;</span>).IsErr ()){</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
+<div class="line">        if (firstFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html#acd7416f6e56ec1ce4f7c03413dc0d4be">SetTitle</a> (<span class="stringliteral">&quot;Title set for Folder by API&quot;</span>).IsErr ()){</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
+<div class="line">        if (firstFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html#ae23964c3d41818344da23c0a331b3fcd">SetReference</a> (<span class="stringliteral">&quot;Keynote folder modified by the test addon&quot;</span>).IsErr ()) {</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
 <div class="line">        <span class="keywordflow">return</span> NoError;</div>
 <div class="line">    });</div>
 <div class="line"> </div>
@@ -648,9 +661,15 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <dl class="section return"><dt>Returns</dt><dd>The result of the modification <div class="fragment"><div class="line"> </div>
 <div class="line">    <a class="code hl_class" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html">ACAPI::Keynote::KeynoteFolder</a> firstFolder = subFolders.Unwrap ()[0];</div>
 <div class="line">    <a class="code hl_function" href="group___command.html#gab7bf9e1351986b4bb6c69dab76766f1a">ACAPI_CallUndoableCommand</a> (<span class="stringliteral">&quot;Modify first keynote folder&quot;</span>, [&amp;firstFolder]() -&gt; GSErrCode {</div>
-<div class="line">        firstFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html#af5fa874150c5ef76e57b6a2f5dc459c1">SetKey</a> (<span class="stringliteral">&quot;KF-API&quot;</span>);</div>
-<div class="line">        firstFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html#acd7416f6e56ec1ce4f7c03413dc0d4be">SetTitle</a> (<span class="stringliteral">&quot;Title set for Folder by API&quot;</span>);</div>
-<div class="line">        firstFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html#ae23964c3d41818344da23c0a331b3fcd">SetReference</a> (<span class="stringliteral">&quot;Keynote folder modified by the test addon&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">if</span> (firstFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html#af5fa874150c5ef76e57b6a2f5dc459c1">SetKey</a> (<span class="stringliteral">&quot;KF-API&quot;</span>).IsErr ()){</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
+<div class="line">        if (firstFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html#acd7416f6e56ec1ce4f7c03413dc0d4be">SetTitle</a> (<span class="stringliteral">&quot;Title set for Folder by API&quot;</span>).IsErr ()){</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
+<div class="line">        if (firstFolder.<a class="code hl_function" href="class_a_c_a_p_i_1_1_keynote_1_1v1_1_1_keynote_folder.html#ae23964c3d41818344da23c0a331b3fcd">SetReference</a> (<span class="stringliteral">&quot;Keynote folder modified by the test addon&quot;</span>).IsErr ()) {</div>
+<div class="line">            return Error;</div>
+<div class="line">        }</div>
 <div class="line">        <span class="keywordflow">return</span> NoError;</div>
 <div class="line">    });</div>
 <div class="line"> </div>

@@ -345,9 +345,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gae1d956298de6ce0e822ddd11dd28540f"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___view.html#gae1d956298de6ce0e822ddd11dd28540f">ACAPI_View_GetZoom</a> (<a class="el" href="struct_a_p_i___box.html">API_Box</a> *zoomBox=nullptr, <a class="el" href="struct_a_p_i___tranmat.html">API_Tranmat</a> *tranmat=nullptr)</td></tr>
 <tr class="memdesc:gae1d956298de6ce0e822ddd11dd28540f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the actual zoom parameters of the current database.  <br /></td></tr>
 <tr class="separator:gae1d956298de6ce0e822ddd11dd28540f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga26b785d9eff29b93902b4438708206fd"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___view.html#ga26b785d9eff29b93902b4438708206fd">ACAPI_View_ReSetZoom</a> (short *numOfStepsBack)</td></tr>
-<tr class="memdesc:ga26b785d9eff29b93902b4438708206fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores the zoom parameters of the current database by a given number of steps.  <br /></td></tr>
-<tr class="separator:ga26b785d9eff29b93902b4438708206fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd676cb6ba219ced788d06b085666e80"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___view.html#gafd676cb6ba219ced788d06b085666e80">ACAPI_View_ResetZoom</a> (short *numOfStepsBack)</td></tr>
+<tr class="memdesc:gafd676cb6ba219ced788d06b085666e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores the zoom parameters of the current database by a given number of steps.  <br /></td></tr>
+<tr class="separator:gafd676cb6ba219ced788d06b085666e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6f8fcfa3e1cef969f11a8fc286ba6621"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___view.html#ga6f8fcfa3e1cef969f11a8fc286ba6621">ACAPI_View_StoreViewSettings</a> (bool store)</td></tr>
 <tr class="memdesc:ga6f8fcfa3e1cef969f11a8fc286ba6621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores/restores the actual view settings.  <br /></td></tr>
 <tr class="separator:ga6f8fcfa3e1cef969f11a8fc286ba6621"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1761,7 +1761,7 @@ Functions</h2></td></tr>
 <li>APIERR_BADPARS - zoomBox is nullptr </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to retrieve the zoom box of the window of the current database if it is 2D drawing type window. To change the actual zoom box refer to the <a class="el" href="group___view.html#gae7b61321d04acf6780e1de07ba549f80">ACAPI_View_SetZoom</a> function. To restore one of the previous zooms use the <a class="el" href="group___view.html#ga26b785d9eff29b93902b4438708206fd">ACAPI_View_ReSetZoom</a> function. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to retrieve the zoom box of the window of the current database if it is 2D drawing type window. To change the actual zoom box refer to the <a class="el" href="group___view.html#gae7b61321d04acf6780e1de07ba549f80">ACAPI_View_SetZoom</a> function. To restore one of the previous zooms use the <a class="el" href="group___view.html#gafd676cb6ba219ced788d06b085666e80">ACAPI_View_ResetZoom</a> function. </dd></dl>
 
 </div>
 </div>
@@ -2040,14 +2040,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga26b785d9eff29b93902b4438708206fd" name="ga26b785d9eff29b93902b4438708206fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga26b785d9eff29b93902b4438708206fd">&#9670;&#160;</a></span>ACAPI_View_ReSetZoom()</h2>
+<a id="gafd676cb6ba219ced788d06b085666e80" name="gafd676cb6ba219ced788d06b085666e80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafd676cb6ba219ced788d06b085666e80">&#9670;&#160;</a></span>ACAPI_View_ResetZoom()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">GSErrCode ACAPI_View_ReSetZoom </td>
+          <td class="memname">GSErrCode ACAPI_View_ResetZoom </td>
           <td>(</td>
           <td class="paramtype">short *&#160;</td>
           <td class="paramname"><em>numOfStepsBack</em></td><td>)</td>
@@ -2200,7 +2200,7 @@ Functions</h2></td></tr>
 <li>APIERR_BADPARS - The passed zoomBox is incorrect (empty box) </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to set the zoom box of the current 2D drawing type database. The database will not be rebuilt unless the transformation matrix is set. To get the actual zoom box refer to the <a class="el" href="group___view.html#gae1d956298de6ce0e822ddd11dd28540f">ACAPI_View_GetZoom</a> function. To restore one of the previous zooms use the <a class="el" href="group___view.html#ga26b785d9eff29b93902b4438708206fd">ACAPI_View_ReSetZoom</a> function. You can modify the zoom of the 3D model window with the <a class="el" href="group___view.html#ga4246ffc14c033582dbdc27805a88a0c2">ACAPI_View_Change3DWindowSets</a> environment function. In order to set the zoom of the top window, use the <a class="el" href="group___view.html#ga2554d6a801eceba6df45f1863265a19b">ACAPI_View_Zoom</a> automation function instead. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to set the zoom box of the current 2D drawing type database. The database will not be rebuilt unless the transformation matrix is set. To get the actual zoom box refer to the <a class="el" href="group___view.html#gae1d956298de6ce0e822ddd11dd28540f">ACAPI_View_GetZoom</a> function. To restore one of the previous zooms use the <a class="el" href="group___view.html#gafd676cb6ba219ced788d06b085666e80">ACAPI_View_ResetZoom</a> function. You can modify the zoom of the 3D model window with the <a class="el" href="group___view.html#ga4246ffc14c033582dbdc27805a88a0c2">ACAPI_View_Change3DWindowSets</a> environment function. In order to set the zoom of the top window, use the <a class="el" href="group___view.html#ga2554d6a801eceba6df45f1863265a19b">ACAPI_View_Zoom</a> automation function instead. </dd></dl>
 
 </div>
 </div>
