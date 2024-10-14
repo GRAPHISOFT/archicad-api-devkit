@@ -165,11 +165,11 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions for creating, handling and deleting custom (Add-On specific) Modul Data. Differs from User Data in not being attached to specific elements or element groups. This is a legacy technology, please use Add-On Objects instead. </p>
-<h1><a class="anchor" id="autotoc_md142"></a>
+<h1><a class="anchor" id="autotoc_md144"></a>
 ModulData Manager</h1>
 <p>It allows each add-on to own custom data sections in Archicad project files. No limitation is imposed on the structure or content, not even on the amount of saved bytes. Archicad knows nothing about its internal format, it just preserves a number of bytes in the project file and returns them upon requests.</p>
 <p>Data sections are identified uniquely by the add-on's modul ID (<a class="el" href="md__common_doxygen_files_2_articles_2_required___resources.html#RequiredResources">'MDID'</a>) and an optional modul name string. This means the one data per add-on limitation of previous versions has been dissolved.</p>
-<h2><a class="anchor" id="autotoc_md143"></a>
+<h2><a class="anchor" id="autotoc_md145"></a>
 Functions</h2>
 <p>All of the ModulData Manager functions begin with the <b>ACAPI_ModulData_</b> prefix. They are as follows:</p>
 <ul>
@@ -184,7 +184,7 @@ Functions</h2>
 <li><a class="el" href="group___modul_data.html#gab9ccb5abde6c12e7646626bb1ed87592">ACAPI_ModulData_Delete</a></li>
 </ul>
 <p>Refer to the <b>ModulData Manager</b> example project to see detailed examples on using these functions.</p>
-<h2><a class="anchor" id="autotoc_md144"></a>
+<h2><a class="anchor" id="autotoc_md146"></a>
 Merging custom data sections</h2>
 <p>In certain situations modules of the same add-on can conflict with each other. When merging another plan into the project, it might be necessary to keep both the original and the incoming modul data, and to combine them together. Since the host application does not know the content of the modules, the owner add-on is requested to resolve the conflict.</p>
 <p>For this purpose the add-on needs to implement an APIModulDataMergeHandlerProc callback handler function, and pass the function pointer to Archicad with the <a class="el" href="group___add_on_integration.html#gac45d970d2cf214a87a4cebab0ecfdd87">ACAPI_AddOnIntegration_InstallModulDataMergeHandler</a> in the Initialize routine. It is also necessary to inform Archicad that the add-on is prepared for merging module data: this can be done with the <a class="el" href="group___add_on_integration.html#ga4a452fd8f0d8a64bff225c6ee72984de">ACAPI_AddOnIntegration_RegisterModulDataHandler</a> function called from RegisterInterface.</p>
@@ -200,11 +200,11 @@ Merging custom data sections</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code>APIMDSetMerge_Merge</code>   </td><td class="markdownTableBodyNone">The data section should be merged from a file which was merged into the main project, or from a paste or Drag&amp;Drop operation.   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md145"></a>
+<h2><a class="anchor" id="autotoc_md147"></a>
 Moduldata versions</h2>
 <p>The <code><a class="el" href="struct_a_p_i___modul_data.html" title="Control information of a custom data section saved into the project file.">API_ModulData</a></code> structure contains a version number. If your data structure has to be changed, increase the version number. Upon retrieving the data section, check the version information and provide backward compatibility if possible.</p>
 <p>Refer to the <a class="el" href="struct_a_p_i___modul_data.html">API_ModulData</a> structure for more details.</p>
-<h2><a class="anchor" id="autotoc_md146"></a>
+<h2><a class="anchor" id="autotoc_md148"></a>
 Moduldata platforms</h2>
 <p>Since Archicad is a multi-platform application, all data written into the project file should be readable on the opposite platform too. As byte ordering is different on the Windows and on the Macintosh, for the correct interpretation the add-on needs to know on which platform the data was created. If the platform code differs from the actual platform, perform the necessary byte swapping operations using the <a class="el" href="md__common_doxygen_files_2_articles_2_g_s_root___s_t_l___comparison.html#gsroot">GSRoot</a> module, or use Memory Channel to read and write the custom data.</p>
 <p>Refer to the <a class="el" href="struct_a_p_i___modul_data.html">API_ModulData</a> structure for more details.</p>
@@ -212,10 +212,10 @@ Moduldata platforms</h2>
 <p>If the structure of the custom data has changed since the previous version, you need to implement an APIModulDataSaveOldFormatHandlerProc callback function to be able to convert your modules when saving into an older format project. In order to be called this handler, the function pointer must be passed with <a class="el" href="group___add_on_integration.html#ga041102e50bca18c84149123a09ca6c70">ACAPI_AddOnIntegration_InstallModulDataSaveOldFormatHandler</a>, and the modul data handling feature must be registered with <a class="el" href="group___add_on_integration.html#ga4a452fd8f0d8a64bff225c6ee72984de">ACAPI_AddOnIntegration_RegisterModulDataHandler</a>.</p>
 <p>When Archicad calls this function, the add-on should create the converted data according to the given plan file format, and pass it back to the application. The old format data should not be stored with <a class="el" href="group___modul_data.html#gae0241ac90c7c4b15c80016f6ec9923ce">ACAPI_ModulData_Store</a>, nor the current data needs to be deleted or modified during the project save operation.</p>
 <p>If the add-on does not install this converter callback routine, the available current format module data is saved into the old version project as well.</p>
-<h2><a class="anchor" id="autotoc_md147"></a>
+<h2><a class="anchor" id="autotoc_md149"></a>
 Other comments</h2>
 <p>Notice that it is not recommended to store unique ID-type references to Archicad elements in the module data; for this purpose try to use the <a class="el" href="group___element_set.html">Element Set Manager</a> service instead.</p>
-<h2><a class="anchor" id="autotoc_md148"></a>
+<h2><a class="anchor" id="autotoc_md150"></a>
 The Modul Data - Saving Custom Data as a Section of the Archicad Project File</h2>
 <p>Every add-on can save custom data into an Archicad single project, teamwork project, or hotlink module. This lets the add-on programmers have a custom - unlimited length - data section in the project. The benefit of this feature is that it spares the Archicad users from having to care about many separate files that belong to a project and are needed by add-ons, when the project file changes its location (by copy, paste, email, ftp, etc).</p>
 <p>The custom section of the project file can be anything the add-on programmer desires to save for his/her add-on, but special attention is needed for the issues of maintaining this data when the add-on is active, and also, the correct byte order, if the add-on was developed for multiplatform usage.</p>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"struct_a_p_i___railing_type.html#abe375845442a38ebcc72ef41140198f2":[2,27,158,1],
 "struct_a_p_i___railing_type.html#aeacb18084e060e59df38639a96096703":[2,27,158,6],
 "struct_a_p_i___railing_type.html#afe241dbb9443add84a92c4ed4ac832fd":[2,27,158,10],
 "struct_a_p_i___railing_vertical_pos_data.html":[2,27,141],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "struct_a_p_i___section_segment.html#a3762a735f95e70dfba689e22efb5a584":[2,27,106,78],
 "struct_a_p_i___section_segment.html#a3d2f2ce79db0c0fc9f1a01e283b8a6d0":[2,27,106,77],
 "struct_a_p_i___section_segment.html#a3f7da9c3a445ffe6adcc9adceb5f8a42":[2,27,106,71],
-"struct_a_p_i___section_segment.html#a452ffc849ee5e64c4ca4d816010e47ca":[2,27,106,59],
-"struct_a_p_i___section_segment.html#a4693957ede0b25d7a0235e61f18e139f":[2,27,106,36]
+"struct_a_p_i___section_segment.html#a452ffc849ee5e64c4ca4d816010e47ca":[2,27,106,59]
 };

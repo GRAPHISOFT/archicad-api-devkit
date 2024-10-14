@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"struct_a_p_i___stair_structure_symbol_data.html":[2,27,132],
 "struct_a_p_i___stair_structure_symbol_data.html#a2e62d1377349274e2f36c244914ac5d3":[2,27,132,3],
 "struct_a_p_i___stair_structure_symbol_data.html#a5ec8c238a176d498fc37eff2514b056f":[2,27,132,7],
 "struct_a_p_i___stair_structure_symbol_data.html#a69994e13ed438c61fd15c0331b65142c":[2,27,132,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "struct_a_p_i___tool_box_item.html#ad5fc005b0cb932a9a7ad6e7aa901b50a":[2,27,235,0],
 "struct_a_p_i___tranmat.html":[2,70,4],
 "struct_a_p_i___translator_name_config.html":[2,3,5],
-"struct_a_p_i___translator_name_config.html#a3d8198bd54fb73624dd77441531355d6":[2,3,5,1],
-"struct_a_p_i___translator_name_config.html#a8aea5bd175f48413338e089be7eb022c":[2,3,5,0]
+"struct_a_p_i___translator_name_config.html#a3d8198bd54fb73624dd77441531355d6":[2,3,5,1]
 };

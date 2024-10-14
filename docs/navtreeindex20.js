@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"struct_a_p_i___hotlink_node.html":[2,36,1],
 "struct_a_p_i___hotlink_node.html#a363efbc1e15bd5f6d57f6527a6342228":[2,36,1,14],
 "struct_a_p_i___hotlink_node.html#a41defe5b7de97a75750ff78d01a3a6e2":[2,36,1,4],
 "struct_a_p_i___hotlink_node.html#a44626776f8fadf272f1179048f390057":[2,36,1,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "struct_a_p_i___length_dim_format.html#a23ffe7a8504899892acb1c566b07eae9":[2,51,4,3],
 "struct_a_p_i___length_dim_format.html#a792baf894f0c9c77d27cb3d87c992d3c":[2,51,4,6],
 "struct_a_p_i___length_dim_format.html#a821353894eb6304e5011ac893bf557d3":[2,51,4,5],
-"struct_a_p_i___length_dim_format.html#aaa456992a89ceb65a2d7de136b807237":[2,51,4,2],
-"struct_a_p_i___length_dim_format.html#ad2384e27f631d152b0944f6605c8092d":[2,51,4,4]
+"struct_a_p_i___length_dim_format.html#aaa456992a89ceb65a2d7de136b807237":[2,51,4,2]
 };

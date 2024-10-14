@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 28 C++ API: Library Part Subtypes</title>
+<title>Archicad 28 C++ API: New memory allocator in Archicad 28</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,7 +93,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('md__common_doxygen_files_2_library_2_subtypes.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('md__common_doxygen_files_2_articles_2_new___memory___allocator.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -119,41 +119,32 @@ $(document).ready(function(){initNavTree('md__common_doxygen_files_2_library_2_s
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Library Part Subtypes </div></div>
+  <div class="headertitle"><div class="title">New memory allocator in Archicad 28 </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="Subtypes"></a> </p>
-<h1><a class="anchor" id="autotoc_md172"></a>
-Library Part Subtypes</h1>
-<p>This section gives an overview of the library part subtype idea introduced in Archicad 8.</p>
-<h1><a class="anchor" id="autotoc_md173"></a>
-Library Part Global Unique IDs</h1>
-<p>From Archicad 8 every library part has unique identification, that is when one saves a library part, an ID is generated and stored into the library part file. This unique ID consists of two parts: a main and a revision GUID. Each one is a standard 128-bit unique identification string. The revision GUID can change when you modify and re-save the library part, while the main GUID remains the same for the whole life-cycle of the library part.</p>
-<p>By this identification a certain library part can be referred everywhere in the world, no matter what its actual name is.</p>
-<h1><a class="anchor" id="autotoc_md174"></a>
-Subtype Hierarchy</h1>
-<p>When creating a new library part you have to select a parent subtype specifying what properties the new library part would inherit. This action also determines the position of the library part in the subtype hierarchy tree. The whole ancestry information up to the Root Object is saved into a special section of the library part, that makes possible to reconstruct the hierarchy later.</p>
-<p>You can find the subtype hierarchy tree, if you open the GDL editor and at the Details page you choose the Select Subtype button. The subtype nodes can be identified by their library part GUID. Whenever you need to refer to a library part, you can get its GUID string by copying from the Select Subtype dialog box.</p>
-<p>For example you can see below where the door is located in the hierarchy tree.</p>
-<div class="image">
-<img src="LP_Subtype_Hierarchy.png" alt=""/>
-</div>
-<p>You can find some unique ID definitions of the internal subtype templates listed below. Be careful, always check the ID-s in the Select Subtype dialog, because these ID-s may change.</p>
-<blockquote class="doxtable">
-<p>&zwj; <br  />
- RootID "{F938E33A-329D-4A36-BE3E-85E126820996}-{00000000-0000-0000-0000-000000000000}"</p>
-<p>AttributeDefinitionID "{12974DCB-3EC8-4A56-8738-E5495F5213A4}-{00000000-0000-0000-0000-000000000000}" DocumentationElemID "{B176ABF1-5813-478F-926B-28EE7C5DC1F7}-{00000000-0000-0000-0000-000000000000}" LibraryMasterID "{66B148A3-EF82-455A-80D9-AB9AFB5B6B9C}-{00000000-0000-0000-0000-000000000000}" ModelElemID "{103E8D2C-8230-42E1-9597-46F84CCE28C0}-{00000000-0000-0000-0000-000000000000}" PropertiesID "{8F157ABA-E5C9-48B6-9DCE-68F0F02A808E}-{00000000-0000-0000-0000-000000000000}"</p>
-<p>OpeningID "{6ACDA889-69B2-4EC5-936C-CB1DA7032A92}-{00000000-0000-0000-0000-000000000000}" WallOpeningID "{F6AE9687-2BC7-4D47-88C9-8F793E1DE2D6}-{00000000-0000-0000-0000-000000000000}" WallDoorID "{11E85B84-8DD1-491B-A2FE-337454A91545}-{00000000-0000-0000-0000-000000000000}" WallDoorOpeningID "{2EC5287F-2262-4CAB-BE0A-0C3307066128}-{00000000-0000-0000-0000-000000000000}"</p>
-<p></p>
-</blockquote>
-<p>You also have a bunch of goodie functions that help you manipulating with library part GUIDs, such as: <a class="el" href="group___library_part.html#ga5a94b36164aa40df9ddd75c75a590643">ACAPI_LibraryPart_GetBuiltInLibpartUnId</a>, <a class="el" href="group___library_part.html#gac8c8c9133dd880a4023578535101e809">ACAPI_LibraryPart_CheckLibPartSubtypeOf</a>, <a class="el" href="group___library_part.html#ga9a454feb3a85e2ba747c91d3839b9d42">ACAPI_LibraryPart_CompareLibPartUnIds</a>, <a class="el" href="group___element.html#ga3266276c9a81e2324657d535513eccc1">ACAPI_Element_GetElemCreatorToolUnId</a>, <a class="el" href="group___element.html#gae3501182229d830158bf9d4b35cd8489">ACAPI_Element_SetEmptyHoleUnId</a>, and <a class="el" href="group___library_part.html#gaf2a7c7f5b33f5af5b7e9c271ed8a76f4">ACAPI_LibraryPart_GetElemLibPartUnId</a>.</p>
-<h1><a class="anchor" id="autotoc_md175"></a>
-Registering Subtypes into the Toolbox</h1>
-<p>You may also add new object types to the Archicad toolbox. When you register a subtype with the <a class="el" href="group___toolbox.html#ga79eb93ab5adb076e9a27261db8294c9d">ACAPI_LibraryPart_RegisterSubtype</a> function, you extend the element database with a new element type, which has its own element defaults, settings dialog, and even a toolbox item. This functionality enables your add-on to distinguish easier its own special objects from other ones.</p>
-<h1><a class="anchor" id="autotoc_md176"></a>
-See Also</h1>
-<p><a class="el" href="group___library_part.html">Library Part Overview</a></p>
-<p>Modified on Febr 01, 2017 </p>
+<div class="textblock"><p><a class="anchor" id="TBB"></a> Since version 28, Archicad uses a custom memory allocator (TBB) on Windows instead of the system default. This change can cause new memory-related bugs if allocators are used inconsistently, such as freeing memory allocated by the system allocator with TBB or the other way around, leading to crashes.</p>
+<h2><a class="anchor" id="autotoc_md63"></a>
+Symptoms of inconsistent memory handling</h2>
+<ul>
+<li>Crashes in tbbmalloc.dll or ucrtbase.dll when freeing or reallocating memory. The memory address passed to the crashing operation is usually the memory that was handled inconsistently.</li>
+<li>The crash might not be deterministic as the inconsistently used free operation is not guaranteed to crash. Often, it only results in a memory leak instead of a fatal error.</li>
+<li>Turn on ProtectedAlloc to reliably detect inconsistent allocator use and other memory-related problems. Set "Computer\HKEY_CURRENT_USER\SOFTWARE\GRAPHISOFT\Debug\GSRoot\MemoryManager\useProtectedAlloc" REG_DWORD type registry value from the default 0 to 1. (Using protected alloc significantly slows down Archicad and increases memory use.) *</li>
+<li>Crashes occur only on Windows.</li>
+<li>Crashes disappear when using the system allocator. Change "Computer\HKEY_CURRENT_USER\SOFTWARE\GRAPHISOFT\Debug\GSRoot\MemoryManager\memoryManagerType" REG_SZ type registry value from the default 0 to 2 (System) to force using the system allocator. This way, the inconsistent allocator use can’t happen. If the crash disappears with this setting, it was likely caused by inconsistent allocator use. *</li>
+</ul>
+<p>*Don't forget to restore debug registry values to their default values before final testing.</p>
+<h2><a class="anchor" id="autotoc_md64"></a>
+Fixing the problem</h2>
+<ul>
+<li>Include "Support/Modules/GSRoot/GSMalloc.hpp" and "Support/Modules/GSRoot/GSNew.hpp" in all your Add-On module translation units (e.g., via force include or precompiled headers) to use Archicad’s custom allocator. This will override all memory operations (new/delete, malloc/free, etc.) in the module to use Archicad’s custom allocator.</li>
+<li>The above headers are already added to the Add-On module precompiled header if you use the latest version of the Archicad Add-On CMake template (<a href="https://github.com/GRAPHISOFT/archicad-addon-cmake">https://github.com/GRAPHISOFT/archicad-addon-cmake</a>)</li>
+<li>If your Add-On consists of multiple modules, all other modules should also use the above-precompiled header settings and link to GSRootImp.lib.</li>
+<li>3rd party binary libraries you can’t rebuild with the above settings might also cause allocation inconsistency problems if they expose memory allocations, i.e., if the library interface is designed in a way that the caller needs to free library-allocated memory or the library frees caller-allocated memory. Possible workarounds are:<ul>
+<li>Many libraries allow the caller to customize their memory allocation and deallocation operations. To guarantee consistent allocator use, redirect memory allocation and deallocation to the GSRoot-provided malloc and free.</li>
+<li>Wrap the 3rd party library in a wrapper module. The module should provide an interface that doesn’t expose the library’s or its memory allocations to the rest of your Add-On. Please don’t use any Archicad DevKit headers from this wrapper module, and don’t link it to DevKit modules. This way, both the wrapper and the wrapped module will use the system-provided allocator on Windows. </li>
+</ul>
+</li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

@@ -2447,7 +2447,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>To have an overview what the elements are, and how they fit into the entire database please refer to the Element Overview chapter. In these papers only the handler functions are explained in full details. </p>
-<h1><a class="anchor" id="autotoc_md112"></a>
+<h1><a class="anchor" id="autotoc_md114"></a>
 Element Overview</h1>
 <p>Applicable types of elements are enumerated in the <a class="el" href="group___element.html#ga2502601bf26ffc7abc608f6988da4d91">API_ElemTypeID</a> structure. The definition of an element is described in the <a class="el" href="union_a_p_i___element.html">API_Element</a> structure, which is a union of all element types. All of the definitions begin with a common header structure named <a class="el" href="struct_a_p_i___elem___head.html">API_Elem_Head</a>.</p>
 <ul>
@@ -2469,7 +2469,7 @@ Element Overview</h1>
 </ul>
 <p>Many element related functions use the <a class="el" href="union_a_p_i___element.html">API_Element</a> structure on the parameter list. As a general rule, you have to fill the required fields in the union. Archicad parses the request based on the values, and passes the return parameters in the same structure. This is why most of the functions do not have the <code>const</code> directive in their prototypes.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md113"></a>
+<h1><a class="anchor" id="autotoc_md115"></a>
 Retrieving an element from the database</h1>
 <p>Please note that from API 11 we start to move away from the <code>typeID/index</code> identification towards a GUID-based identification. In API 12 the GUID way has precedence. From API 18 the GUID way is only available, <code>typeID/index</code> identification was removed.</p>
 <p>Let's look at a simple example. Assume you are interested in getting the data of a given element of the database. In this case you should use a variable of type <a class="el" href="union_a_p_i___element.html">API_Element</a>.</p>
@@ -2521,7 +2521,7 @@ Retrieving an element from the database</h1>
 </div><!-- fragment --><p>You now see that the <code>APIERR_DELETED</code> return code is not checked, since all elements are filtered which do not meet your needs as well as the deleted ones.</p>
 <p>You can also enumerate elements by drawing order and creation order with the [<a class="el" href="group___draw_order.html#gaeed18befd2313202e42c0dc399553d9d">ACAPI_DrawOrder_DrawOrderGetNext</a> and [A<a class="el" href="group___draw_order.html#gaffde1a7ef313f027aabebddb4a7be795">ACAPI_DrawOrder_CreationOrderGetNext</a> database functions respectively.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md114"></a>
+<h1><a class="anchor" id="autotoc_md116"></a>
 Creating an element</h1>
 <p>The element creation procedure is also fairly simple. All you have to do is to fill the appropriate part of the <a class="el" href="union_a_p_i___element.html">API_Element</a> and optionally, the <a class="el" href="struct_a_p_i___element_memo.html">API_ElementMemo</a> structure. The [ACAPI<a class="el" href="group___element.html#gad4ba2707aac702e651c6b1ec9e212baf">ACAPI_Element_Create</a> function does the following:</p>
 <ul>
@@ -2570,7 +2570,7 @@ Creating an element</h1>
 <div class="ttc" id="aunion_a_p_i___element_html_ab455ba9d3bc08ea8d4daab4730a5c384"><div class="ttname"><a href="union_a_p_i___element.html#ab455ba9d3bc08ea8d4daab4730a5c384">API_Element::label</a></div><div class="ttdeci">API_LabelType label</div><div class="ttdoc">Represents a label.</div><div class="ttdef"><b>Definition:</b> APIdefs_Elements.h:17225</div></div>
 <div class="ttc" id="aunion_a_p_i___element_html_ac1361bb2c93ab717ef2d5048e32c5827"><div class="ttname"><a href="union_a_p_i___element.html#ac1361bb2c93ab717ef2d5048e32c5827">API_Element::window</a></div><div class="ttdeci">API_WindowType window</div><div class="ttdoc">Represents a window.</div><div class="ttdef"><b>Definition:</b> APIdefs_Elements.h:17151</div></div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md115"></a>
+<h1><a class="anchor" id="autotoc_md117"></a>
 Controlling the selection</h1>
 <p>You can control the active selection also.</p>
 <p>There are two basic type of selection methods in Archicad:</p>
@@ -2582,7 +2582,7 @@ Controlling the selection</h1>
 <p>In case of individually selected elements, Archicad returns all the elements which are selected. In the case of marquee based selection, only those elements will be returned which have an intersection with, or are within the marquee area.</p>
 <p>The element selection procedure is very easy. You just have to call the <a class="el" href="group___selection.html#gaf2d070e49c004d61909e239828b3b8f7">ACAPI_Selection_Select</a> function to select an individual element, or a group of elements. You have the possibility either to open a new selection, or append one more element to the actual selection.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md116"></a>
+<h1><a class="anchor" id="autotoc_md118"></a>
 Internal parts of an element: the API_Neig structure</h1>
 <p>Both the <a class="el" href="group___selection.html#gaf2d070e49c004d61909e239828b3b8f7">ACAPI_Selection_Select</a> and <a class="el" href="group___selection.html#ga0ce5d8d061124d9e10bc9d51a7939d90">ACAPI_Selection_Get</a> functions use the <a class="el" href="struct_a_p_i___neig.html">API_Neig</a> structure. This data structure makes possible to distinguish the internal parts of the elements.</p>
 <p>You can see how smart the cursor is, when you touch one of the element's nodes or edges while moving it through the shape of a given element. All of these points or edges can be described by an <a class="el" href="struct_a_p_i___neig.html">API_Neig</a> structure.</p>
@@ -2607,7 +2607,7 @@ Internal parts of an element: the API_Neig structure</h1>
 <p>If you search the <a class="el" href="struct_a_p_i___neig.html">API_Neig</a> structure in the APIdefs_Elements.h file, you will see that it is used in many places.</p>
 <p>It is used to give you information on which point was clicked in the input functions; see the [A<a class="el" href="group___user_input.html#gadc305bd667e3dfca73bd72ad0367970b">ACAPI_UserInput_GetPoint</a> function.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md117"></a>
+<h1><a class="anchor" id="autotoc_md119"></a>
 The 3D model</h1>
 <dl class="section warning"><dt>Warning</dt><dd>Obsolete. The recommended way of accessing the 3D Model is now illustrated in the ModelAccess example.</dd></dl>
 <p>The 3D representation of the actual database can be accessed through the <a class="el" href="union_a_p_i___component3_d.html">API_Component3D</a> structure.</p>
@@ -2622,7 +2622,7 @@ The 3D model</h1>
 <p>The 3D representation also owns a common pool of the surface materials. The polygon instances of the geometry description refer to these materials by indices. One surface definition is described by the <a class="el" href="struct_a_p_i___umat_type.html">API_UmatType</a> structure. Surface materials may come from two sources. The list of materials contains all the global material attributes which are referenced by any polygon of the 3D geometry. Materials may be defined in GDL scripts also.</p>
 <p>Elements placed with the light tool on the floor plan may contain light emissions, defined via GDL scripts. All of the light sources present in the 3D geometry are described with the <a class="el" href="struct_a_p_i___lght_type.html">API_LghtType</a> structure.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md118"></a>
+<h1><a class="anchor" id="autotoc_md120"></a>
 Getting the whole 3D model</h1>
 <dl class="section warning"><dt>Warning</dt><dd>Obsolete. The recommended way of accessing the 3D Model is now illustrated in the ModelAccess example.</dd></dl>
 <p>If you are interested in the whole 3D model that actually exists, you should use the following template:</p>
@@ -2655,7 +2655,7 @@ Getting the whole 3D model</h1>
 <p>The light and material components can be obtained in their own loops, because they are global (not body relative) components of the 3D model.</p>
 <p><b>It is very important</b>, that you get the data of the 3D model of Archicad that actually exists. This data is often not consistent with the floor plan elements. The update mechanism of the 3D window depends on many things, such as the switches in the preferences dialogs. As a general rule, you get the model which can be seen in the 3D window, if you use the above template.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md119"></a>
+<h1><a class="anchor" id="autotoc_md121"></a>
 Getting the 3D representation of a particular element</h1>
 <p>You also have the possibility to get the 3D representation of any particular floor plan element you are interested for. The basic mechanism is the same as in the previous example. The only difference is that you need the information which bodies belong to the given element.</p>
 <p>Bodies assigned to a specific floor plan element can be obtained with the function <a class="el" href="group___model_access.html#ga13a675645d32be619486251c94630087">ACAPI_ModelAccess_Get3DInfo</a>. This function fills an <a class="el" href="struct_a_p_i___elem_info3_d.html">API_ElemInfo3D</a> structure to pass the index range of the main 3D data containers.</p>

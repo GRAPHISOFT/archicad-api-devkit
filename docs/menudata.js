@@ -42,7 +42,8 @@ var menudata={children:[
 {text:"Required functions",url:"md__common_doxygen_files_2_articles_2_required___functions.html#RequiredFunctions"},
 {text:"Required resources",url:"md__common_doxygen_files_2_articles_2_required___resources.html#RequiredResources"},
 {text:"Add-On Management",url:"md__common_doxygen_files_2_articles_2_tools___add_on_management.html#Tools_AddOnManagement"},
-{text:"Library Part Subtypes",url:"md__common_doxygen_files_2_library_2_subtypes.html#Subtypes"}]},
+{text:"Library Part Subtypes",url:"md__common_doxygen_files_2_library_2_subtypes.html#Subtypes"},
+{text:"New memory allocator in Archicad 28",url:"md__common_doxygen_files_2_articles_2_new___memory___allocator.html#TBB"}]},
 {text:"Modules",url:"modules.html"},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},

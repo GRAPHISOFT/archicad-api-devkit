@@ -211,10 +211,10 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions exposing the Teamwork functionality of Archicad, including Teamwork project and connection management, rights and permissions management and release/reserve functionalities. </p>
-<h1><a class="anchor" id="autotoc_md161"></a>
+<h1><a class="anchor" id="autotoc_md163"></a>
 Teamwork Control</h1>
 <p>This bunch of functions lets your add-on operate in the new Teamwork environment introduced in Archicad 13.</p>
-<h1><a class="anchor" id="autotoc_md162"></a>
+<h1><a class="anchor" id="autotoc_md164"></a>
 Functions</h1>
 <p>for checking the project status and the online-offline mode:</p>
 <ul>
@@ -265,13 +265,13 @@ Functions</h1>
 <li><a class="el" href="group___teamwork.html#ga5ad5e48fa5eb80e33ede9c4aef02b869">ACAPI_Teamwork_SendChanges</a></li>
 <li><a class="el" href="group___teamwork.html#gabe38af717fa911cc6964a46afafc3f11">ACAPI_Teamwork_ReceiveChanges</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md163"></a>
+<h1><a class="anchor" id="autotoc_md165"></a>
 Lockable Object Sets</h1>
 <p>Lockable object sets are groups of objects (or may consist of a single object) which can be modified separately from the other part of the Teamwork project. Typically attribute containers are lockable object sets. These sets have a special reservation panel on their settings dialog in Teamwork mode to control the exclusive lock on that particular part of the project.</p>
 <p>On the API interface lockable object sets are referenced by their object guid. These guids can be obtained with the <a class="el" href="group___teamwork.html#ga4083bc8dc976a2a03b2036b80f94d721">ACAPI_Teamwork_FindLockableObjectSet</a> function using pre-defined identifiers.</p>
 <p>In some cases two or more lockable object sets need to be handled simultaneously, for example they can be locked only in the same user interface at the same time, like the Layers and Layer Combinations in the Layer Settings dialog. These sets are grouped under a special lockable object set, which is called compound lockable object set. Compounds are referenced by a pre-defined name, and their guid can also be retrieved by the <a class="el" href="group___teamwork.html#ga4083bc8dc976a2a03b2036b80f94d721">ACAPI_Teamwork_FindLockableObjectSet</a> function.</p>
 <p>The pre-defined identifier strings of lockable object sets are listed in the Remarks section of <a class="el" href="group___teamwork.html#ga4083bc8dc976a2a03b2036b80f94d721">ACAPI_Teamwork_FindLockableObjectSet</a>.</p>
-<h1><a class="anchor" id="autotoc_md164"></a>
+<h1><a class="anchor" id="autotoc_md166"></a>
 Example</h1>
 <p>The <b>Teamwork_Control</b> example project of the APIDevKit shows samples how to use these functions. </p>
 <h2 class="groupheader">Function Documentation</h2>
