@@ -196,6 +196,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gabe38af717fa911cc6964a46afafc3f11"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___teamwork.html#gabe38af717fa911cc6964a46afafc3f11">ACAPI_Teamwork_ReceiveChanges</a> ()</td></tr>
 <tr class="memdesc:gabe38af717fa911cc6964a46afafc3f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives changes from the BIMcloud server.  <br /></td></tr>
 <tr class="separator:gabe38af717fa911cc6964a46afafc3f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad136fd3bf202557fdd754dbd65a5f513"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___teamwork.html#gad136fd3bf202557fdd754dbd65a5f513">ACAPI_Teamwork_UploadLibraries</a> (const GS::Array&lt; IO::Location &gt; &amp;libraryLocations, const GS::UniString &amp;twServerURL, const GS::UniString &amp;parentPath, GS::Array&lt; GSErrCode &gt; &amp;errorCodesByLocations)</td></tr>
+<tr class="memdesc:gad136fd3bf202557fdd754dbd65a5f513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uploads the given libraries to the BIMcloud server.  <br /></td></tr>
+<tr class="separator:gad136fd3bf202557fdd754dbd65a5f513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga247aec80f15a2bbd9c140818a3b5ca90"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___teamwork.html#ga247aec80f15a2bbd9c140818a3b5ca90">ACAPI_Teamwork_RemoveLibraries</a> (const GS::Array&lt; GS::UniString &gt; &amp;libraryNames, const GS::UniString &amp;twServerURL, const GS::UniString &amp;parentPath, GS::Array&lt; GSErrCode &gt; &amp;errorCodesByLibraries)</td></tr>
+<tr class="memdesc:ga247aec80f15a2bbd9c140818a3b5ca90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove libraries from the BIMcloud server.  <br /></td></tr>
+<tr class="separator:ga247aec80f15a2bbd9c140818a3b5ca90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa4ab6c998943a09ea623668c7bd59945"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___teamwork.html#gaa4ab6c998943a09ea623668c7bd59945">ACAPI_RegisterTeamworkReserveInterface</a> (const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;objectId, short dialogId, short tabId, short tabResId, GSResModule resModule, GSResModule dialogIconResModule, APIReservationTeamWorkPanelParentUIRefreshNeededProc *teamworkPanelParentUIRefreshNeeded, APIReservationTeamWorkPanelParentDataSaveNeededProc *teamworkPanelParentDataSaveNeeded, const GS::UniString &amp;requestMessage, API_TWAccessRights createRight=APINoPermission, API_TWAccessRights deleteModifyRight=APINoPermission)</td></tr>
 <tr class="memdesc:gaa4ab6c998943a09ea623668c7bd59945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an interface supporting reserve/release in teamwork operations.  <br /></td></tr>
 <tr class="separator:gaa4ab6c998943a09ea623668c7bd59945"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,10 +217,10 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions exposing the Teamwork functionality of Archicad, including Teamwork project and connection management, rights and permissions management and release/reserve functionalities. </p>
-<h1><a class="anchor" id="autotoc_md163"></a>
+<h1><a class="anchor" id="autotoc_md161"></a>
 Teamwork Control</h1>
 <p>This bunch of functions lets your add-on operate in the new Teamwork environment introduced in Archicad 13.</p>
-<h1><a class="anchor" id="autotoc_md164"></a>
+<h1><a class="anchor" id="autotoc_md162"></a>
 Functions</h1>
 <p>for checking the project status and the online-offline mode:</p>
 <ul>
@@ -265,13 +271,13 @@ Functions</h1>
 <li><a class="el" href="group___teamwork.html#ga5ad5e48fa5eb80e33ede9c4aef02b869">ACAPI_Teamwork_SendChanges</a></li>
 <li><a class="el" href="group___teamwork.html#gabe38af717fa911cc6964a46afafc3f11">ACAPI_Teamwork_ReceiveChanges</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md165"></a>
+<h1><a class="anchor" id="autotoc_md163"></a>
 Lockable Object Sets</h1>
 <p>Lockable object sets are groups of objects (or may consist of a single object) which can be modified separately from the other part of the Teamwork project. Typically attribute containers are lockable object sets. These sets have a special reservation panel on their settings dialog in Teamwork mode to control the exclusive lock on that particular part of the project.</p>
 <p>On the API interface lockable object sets are referenced by their object guid. These guids can be obtained with the <a class="el" href="group___teamwork.html#ga4083bc8dc976a2a03b2036b80f94d721">ACAPI_Teamwork_FindLockableObjectSet</a> function using pre-defined identifiers.</p>
 <p>In some cases two or more lockable object sets need to be handled simultaneously, for example they can be locked only in the same user interface at the same time, like the Layers and Layer Combinations in the Layer Settings dialog. These sets are grouped under a special lockable object set, which is called compound lockable object set. Compounds are referenced by a pre-defined name, and their guid can also be retrieved by the <a class="el" href="group___teamwork.html#ga4083bc8dc976a2a03b2036b80f94d721">ACAPI_Teamwork_FindLockableObjectSet</a> function.</p>
 <p>The pre-defined identifier strings of lockable object sets are listed in the Remarks section of <a class="el" href="group___teamwork.html#ga4083bc8dc976a2a03b2036b80f94d721">ACAPI_Teamwork_FindLockableObjectSet</a>.</p>
-<h1><a class="anchor" id="autotoc_md166"></a>
+<h1><a class="anchor" id="autotoc_md164"></a>
 Example</h1>
 <p>The <b>Teamwork_Control</b> example project of the APIDevKit shows samples how to use these functions. </p>
 <h2 class="groupheader">Function Documentation</h2>
@@ -1273,6 +1279,65 @@ For more information on lockable object sets see the Teamwork Control page. </li
 
 </div>
 </div>
+<a id="ga247aec80f15a2bbd9c140818a3b5ca90" name="ga247aec80f15a2bbd9c140818a3b5ca90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga247aec80f15a2bbd9c140818a3b5ca90">&#9670;&#160;</a></span>ACAPI_Teamwork_RemoveLibraries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GSErrCode ACAPI_Teamwork_RemoveLibraries </td>
+          <td>(</td>
+          <td class="paramtype">const GS::Array&lt; GS::UniString &gt; &amp;&#160;</td>
+          <td class="paramname"><em>libraryNames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GS::UniString &amp;&#160;</td>
+          <td class="paramname"><em>twServerURL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GS::UniString &amp;&#160;</td>
+          <td class="paramname"><em>parentPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GS::Array&lt; GSErrCode &gt; &amp;&#160;</td>
+          <td class="paramname"><em>errorCodesByLibraries</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove libraries from the BIMcloud server. </p>
+<dl class="section since"><dt>Since</dt><dd>Archicad 28.1 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">libraryNames</td><td>[in] The names of the libraries to remove from the given path. If empty, all libraries will be removed from the given path recursively. </td></tr>
+    <tr><td class="paramname">twServerURL</td><td>[in] The URL of the BIMcloud server. </td></tr>
+    <tr><td class="paramname">parentPath</td><td>[in] The path on the server where the libraries should be removed from. If empty, the libraries will be removed from the root of the server. </td></tr>
+    <tr><td class="paramname">errorCodesByLibraries</td><td>[out] The error codes for each library remove. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NoError - The function has completed with success.</li>
+<li>APIERR_NOACCESSRIGHT - The current user does not have the right to remove libraries from the given BIMcloud server.</li>
+<li>APIERR_BADNAME - The given parentPath is invalid.</li>
+<li>APIERR_GENERAL - Some of the libraries could not be removed. Check the errorCodesByLibraries array for more information. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
 <a id="gac71823d998147b68cfb6920ff186923a" name="gac71823d998147b68cfb6920ff186923a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac71823d998147b68cfb6920ff186923a">&#9670;&#160;</a></span>ACAPI_Teamwork_ReserveElements()</h2>
 
@@ -1519,6 +1584,65 @@ For more information on lockable object sets see the Teamwork Control page. </li
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>NoError - The function completed with success. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="gad136fd3bf202557fdd754dbd65a5f513" name="gad136fd3bf202557fdd754dbd65a5f513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad136fd3bf202557fdd754dbd65a5f513">&#9670;&#160;</a></span>ACAPI_Teamwork_UploadLibraries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GSErrCode ACAPI_Teamwork_UploadLibraries </td>
+          <td>(</td>
+          <td class="paramtype">const GS::Array&lt; IO::Location &gt; &amp;&#160;</td>
+          <td class="paramname"><em>libraryLocations</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GS::UniString &amp;&#160;</td>
+          <td class="paramname"><em>twServerURL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GS::UniString &amp;&#160;</td>
+          <td class="paramname"><em>parentPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GS::Array&lt; GSErrCode &gt; &amp;&#160;</td>
+          <td class="paramname"><em>errorCodesByLocations</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uploads the given libraries to the BIMcloud server. </p>
+<dl class="section since"><dt>Since</dt><dd>Archicad 28.1 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">libraryLocations</td><td>[in] The locations of the libraries to upload. </td></tr>
+    <tr><td class="paramname">twServerURL</td><td>[in] The URL of the BIMcloud server. </td></tr>
+    <tr><td class="paramname">parentPath</td><td>[in] The path on the server where the libraries should be uploaded. If empty, the libraries will be uploaded to the default library path of the server. </td></tr>
+    <tr><td class="paramname">errorCodesByLocations</td><td>[out] The error codes for each library location upload. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NoError - The function has completed with success.</li>
+<li>APIERR_NOACCESSRIGHT - The current user does not have the right to upload libraries to the given BIMcloud server.</li>
+<li>APIERR_BADNAME - The given parentPath is invalid.</li>
+<li>APIERR_GENERAL - Some of the libraries could not be uploaded. Check the errorCodesByLocations array for more information. </li>
 </ul>
 </dd></dl>
 

@@ -240,7 +240,38 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html" title="The PipeSegmentPreferenceTable contains cross section related information for Pipe routing segments.">PipeSegmentPreferenceTable</a> contains cross section related information for Pipe routing segments. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 28</dd></dl>
-<p>The table uses the keys defined by the <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_reference_set.html">PipeReferenceSet</a>. To consider a table row usable and valid, it should have all its fields filled, beside its description, which is optional. </p><dl class="section user"><dt>Example code snippet from Test / New MEP</dt><dd>Take a look at <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_preference_table_container_base.html">PreferenceTableContainerBase</a> </dd></dl>
+<p>The table uses the keys defined by the <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_reference_set.html">PipeReferenceSet</a>. To consider a table row usable and valid, it should have all its fields filled, beside its description, which is optional. </p><dl class="section user"><dt>Example code snippet from Test / New MEP</dt><dd>Getters <div class="fragment"><div class="line">        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_class" href="class_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d.html">UniqueID</a>&amp; pipeSegmentTableId : pipeSegmentTableIds) {</div>
+<div class="line">            <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;PipeSegmentPreferenceTable&gt;</a> pipeSegmentTable = <a class="code hl_function" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#ab686b94090454fb7013b8512175c7a45">PipeSegmentPreferenceTable::Get</a> (pipeSegmentTableId);</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordflow">if</span> (pipeSegmentTable.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a890dc4c1dff9e73a993a2410750d8d52">IsErr</a> ())</div>
+<div class="line">                <span class="keywordflow">continue</span>;</div>
+<div class="line"> </div>
+<div class="line">            preferenceReporter.SetTabCount (2);</div>
+<div class="line">            preferenceReporter.Add (<span class="stringliteral">&quot;Preference name&quot;</span>, pipeSegmentTable-&gt;GetName ());</div>
+<div class="line">            preferenceReporter.Add (<span class="stringliteral">&quot;Circular table:&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; pipeSegmentTable-&gt;GetSize (); ++i) {</div>
+<div class="line">                preferenceReporter.SetTabCount (3);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;ReferenceId&quot;</span>, *pipeSegmentTable-&gt;GetReferenceId (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.SetTabCount (0);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Diameter&quot;</span>, *pipeSegmentTable-&gt;GetDiameter (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;WallThickness&quot;</span>, *pipeSegmentTable-&gt;GetWallThickness (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                GS::UniString description = *pipeSegmentTable-&gt;GetDescription (i);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Description&quot;</span>, description == GS::EmptyUniString ? <span class="stringliteral">&quot;Empty&quot;</span> : description, false);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (*pipeSegmentTable-&gt;IsRowValid (i) ? <span class="stringliteral">&quot;Row is valid&quot;</span> : <span class="stringliteral">&quot;Row is not valid&quot;</span>);</div>
+<div class="line">            }</div>
+<div class="line"> </div>
+<div class="line">            preferenceReporter.AddNewLine ();</div>
+<div class="line">        }</div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d_html"><div class="ttname"><a href="class_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d.html">ACAPI::MEP::UniqueID</a></div><div class="ttdoc">The MEP unique identifier.</div><div class="ttdef"><b>Definition:</b> MEPUniqueID.hpp:30</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table_html_ab686b94090454fb7013b8512175c7a45"><div class="ttname"><a href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#ab686b94090454fb7013b8512175c7a45">ACAPI::MEP::v1::PipeSegmentPreferenceTable::Get</a></div><div class="ttdeci">static Result&lt; PipeSegmentPreferenceTable &gt; Get(const UniqueID &amp;uniqueId)</div><div class="ttdoc">Returns a PipeSegmentPreferenceTable.</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_result_html"><div class="ttname"><a href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result</a></div><div class="ttdoc">Result is the standard return type of API functions.</div><div class="ttdef"><b>Definition:</b> Result.hpp:845</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_result_html_a890dc4c1dff9e73a993a2410750d8d52"><div class="ttname"><a href="class_a_c_a_p_i_1_1_result.html#a890dc4c1dff9e73a993a2410750d8d52">ACAPI::Result::IsErr</a></div><div class="ttdeci">bool IsErr() const</div><div class="ttdef"><b>Definition:</b> Result.hpp:945</div></div>
+</div><!-- fragment --> Modification: take a look at <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html">DuctRectangularSegmentPreferenceTable</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="acd08a8e8b92937df9a264efa132653a6" name="acd08a8e8b92937df9a264efa132653a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd08a8e8b92937df9a264efa132653a6">&#9670;&#160;</a></span>EmptyRow()</h2>

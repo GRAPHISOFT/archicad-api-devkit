@@ -76,6 +76,8 @@ var annotated_dup =
           [ "DuctRectangularSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table" ],
           [ "DuctReferenceSet", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_reference_set.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_reference_set" ],
           [ "DuctSegmentPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_segment_preference_table_container.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_segment_preference_table_container" ],
+          [ "DuctTransitionPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table" ],
+          [ "DuctTransitionPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table_container.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table_container" ],
           [ "Element", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element.html", null ],
           [ "ElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_base.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_base" ],
           [ "ElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default" ],
@@ -100,6 +102,8 @@ var annotated_dup =
           [ "PipeReferenceSet", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_reference_set.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_reference_set" ],
           [ "PipeSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table" ],
           [ "PipeSegmentPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table_container.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table_container" ],
+          [ "PipeTransitionPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table" ],
+          [ "PipeTransitionPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table_container.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table_container" ],
           [ "PipingPort", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port" ],
           [ "PipingPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port_default.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port_default" ],
           [ "Port", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port.html", null ],
@@ -131,6 +135,14 @@ var annotated_dup =
           [ "TypedCalculationResultColumn", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_typed_calculation_result_column.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_typed_calculation_result_column" ],
           [ "VentilationPort", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port" ],
           [ "VentilationPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port_default.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port_default" ]
+        ] ],
+        [ "v2", null, [
+          [ "RoutingElement", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element" ],
+          [ "RoutingElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element_default.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element_default" ],
+          [ "RoutingNode", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node" ],
+          [ "RoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node_default.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node_default" ],
+          [ "Transition", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition" ],
+          [ "TransitionDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition_default.html", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition_default" ]
         ] ],
         [ "FlexibleSegmentPolylineLinePart", "struct_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_polyline_line_part.html", "struct_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_polyline_line_part" ],
         [ "FlexibleSegmentPolylineSplinePart", "struct_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_polyline_spline_part.html", "struct_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_polyline_spline_part" ],

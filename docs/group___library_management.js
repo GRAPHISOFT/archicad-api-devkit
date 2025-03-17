@@ -94,6 +94,8 @@ var group___library_management =
       [ "GetType", "group___library_management.html#gab3d49565b0b7764eab5ec79f3bb92b83", null ]
     ] ],
     [ "ACAPI::Library::v1::Library", "class_a_c_a_p_i_1_1_library_1_1v1_1_1_library.html", [
+      [ "GetDisplayName", "group___library_management.html#gaef5ac7640bbf109558d755e9d00d580d", null ],
+      [ "GetLocalizedName", "group___library_management.html#ga0d34a2ce9d690d2bbeecf9537fe52cfb", null ],
       [ "GetLocation", "group___library_management.html#ga0b7159ebf6487c0f8ba8d7c4e50d743d", null ],
       [ "GetName", "group___library_management.html#gad6b80823abbc00b5a77a61fad662da55", null ],
       [ "GetPackageDependencies", "group___library_management.html#ga97e899b02c961411a8dd3cd9174cf576", null ],
@@ -200,6 +202,7 @@ var group___library_management =
     [ "ACAPI::Library::v1::GSMObject::GetBackwardMigrationScript", "group___library_management.html#gabe776cfcb5991a50e18d9befd881d5c0", null ],
     [ "ACAPI::Library::v1::GSMObject::GetCustomSection", "group___library_management.html#ga988786bf0f364c3ad3d4f2a6e231dd2f", null ],
     [ "ACAPI::Library::v1::GSMObject::GetDescription", "group___library_management.html#ga7ade1510566557d8c3ee34ba46e04bff", null ],
+    [ "ACAPI::Library::v1::Library::GetDisplayName", "group___library_management.html#gaef5ac7640bbf109558d755e9d00d580d", null ],
     [ "ACAPI::Library::v1::LibraryManager::GetEmbeddedLibrary", "group___library_management.html#ga304d23591321f569b30d742503291875", null ],
     [ "ACAPI::Library::v1::GSMObject::GetForwardMigrationScript", "group___library_management.html#ga8e1495cb63a5cdd6e949a12d583f5163", null ],
     [ "ACAPI::Library::v1::GSMObject::GetGDLPictures", "group___library_management.html#ga80f0f9a635cb5e0b8e6d3c959b961843", null ],
@@ -217,6 +220,7 @@ var group___library_management =
     [ "ACAPI::Library::v1::LibraryManager::GetLibraryTreePathOfLibPart", "group___library_management.html#ga0a84956c52ea2a36ab8c9a5aca79701b", null ],
     [ "ACAPI::Library::v1::GSMObject::GetLicense", "group___library_management.html#gab00cb21b669c5cbf640e274e17aaab5c", null ],
     [ "ACAPI::Library::v1::GSMObject::GetLicenseVersion", "group___library_management.html#gabf7a39ccae4de3ab5a7147ec567ec548", null ],
+    [ "ACAPI::Library::v1::Library::GetLocalizedName", "group___library_management.html#ga0d34a2ce9d690d2bbeecf9537fe52cfb", null ],
     [ "ACAPI::Library::v1::LibPart::GetLocation", "group___library_management.html#gab4106f900cde1f734ff5a850dd7a14d1", null ],
     [ "ACAPI::Library::v1::Library::GetLocation", "group___library_management.html#ga0b7159ebf6487c0f8ba8d7c4e50d743d", null ],
     [ "ACAPI::Library::v1::GSMObject::GetMasterScript", "group___library_management.html#gac8ef417a1b87e12acc99998217f3c341", null ],

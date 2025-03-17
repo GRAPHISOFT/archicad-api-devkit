@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('md__common_doxygen_files_2_articles_2_
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="RequiredFunctions"></a> </p>
-<h1><a class="anchor" id="autotoc_md67"></a>
+<h1><a class="anchor" id="autotoc_md65"></a>
 Required Functions</h1>
 <p>When you develop your own add-on, you have to link the appropriate API library to your object files. This library basically contains two function sets.</p>
 <ul>
@@ -143,7 +143,7 @@ Required Functions</h1>
 <p>Most of these functions (except <code>CheckEnvironment</code>) return an error code based on the type definition <code>GSErrCode</code>. The value <code>NoError</code> means that no error occurred, any non-zero value indicates some kind of error.</p>
 <p>It is very important to understand how the above listed 4 functions are called by the server application.</p>
 <p>An add-on is a DLL or shared library which is not loaded into the memory by default. When the user invokes one of the commands of an add-on Archicad loads it into the memory to execute the command. When the add-on has finished its operation Archicad unloads the add-on again (unless certain conditions are met).</p>
-<h2><a class="anchor" id="autotoc_md68"></a>
+<h2><a class="anchor" id="autotoc_md66"></a>
 The CheckEnvironment function</h2>
 <p>The <a class="el" href="group___add_on_lifetime.html#gaf36d63d09853e5344932b63ee23d2bb9">CheckEnvironment</a> function is called when the Add-On Manager enumerates the add-ons. The add-on can check the running environment and define its own behavior, for example it can disable itself in the demo version. The add-on is loaded and unloaded during this step, but the <a class="el" href="group___add_on_lifetime.html#gaa8f1f7d553305c1afe5de7e4dcb66e99">Initialize</a> and <a class="el" href="group___add_on_lifetime.html#ga04d82e269703a9b433002bbe20f1d3b2">FreeData</a> functions are not called.</p>
 <p><em>Notes:</em> the following two points may have a serious effect on the startup time of the server application.</p>
@@ -151,19 +151,19 @@ The CheckEnvironment function</h2>
 <li>all your global and (non-function) static variables are initialized during this step.</li>
 <li>return the appropriate error code (<code>APIAddon_DontRegister</code>) if you are not running under the desired server application. This informs the AddOnManager to skip the further steps for your add-on.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md69"></a>
+<h2><a class="anchor" id="autotoc_md67"></a>
 The RegisterInterface function</h2>
 <p>The <a class="el" href="group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e">RegisterInterface</a> function is called after the enumeration and the dependency check. As such, only those add-ons are called which pass the first step. The add-on should register its menu items and file types, or add toolbox items here. The add-on is loaded and unloaded during this step, but the <a class="el" href="group___add_on_lifetime.html#gaa8f1f7d553305c1afe5de7e4dcb66e99">Initialize</a> and <a class="el" href="group___add_on_lifetime.html#ga04d82e269703a9b433002bbe20f1d3b2">FreeData</a> functions are not called.</p>
 <p><em>Note:</em> all your global and (non-function) static variables are initialized during this step.</p>
-<h2><a class="anchor" id="autotoc_md70"></a>
+<h2><a class="anchor" id="autotoc_md68"></a>
 The Initialize function</h2>
 <p>The <a class="el" href="group___add_on_lifetime.html#gaa8f1f7d553305c1afe5de7e4dcb66e99">Initialize</a> function is called right after the add-on is loaded into the memory after the previous steps. This is the point where the add-on should initialize itself, and install the callback functions which will be called by the server application.</p>
-<h2><a class="anchor" id="autotoc_md71"></a>
+<h2><a class="anchor" id="autotoc_md69"></a>
 The FreeData function</h2>
 <p>The <a class="el" href="group___add_on_lifetime.html#ga04d82e269703a9b433002bbe20f1d3b2">FreeData</a> function is called right before the add-on is going to be unloaded. This is the point where the add-on should dispose the objects allocated in the <a class="el" href="group___add_on_lifetime.html#gaa8f1f7d553305c1afe5de7e4dcb66e99">Initialize</a> function. The <a class="el" href="group___add_on_lifetime.html#ga04d82e269703a9b433002bbe20f1d3b2">FreeData</a> function is called in every case, no matter whether the <a class="el" href="group___add_on_lifetime.html#gaa8f1f7d553305c1afe5de7e4dcb66e99">Initialize</a> or any of the callback functions has failed or not.</p>
 <p>Keep your global variables in known state, if it is done you will have no problem to dispose them. Basic initialization and allocation should be done in the <a class="el" href="group___add_on_lifetime.html#gaa8f1f7d553305c1afe5de7e4dcb66e99">Initialize</a> function, and you can done the inverse in the <a class="el" href="group___add_on_lifetime.html#ga04d82e269703a9b433002bbe20f1d3b2">FreeData</a> function.</p>
 <p>Please refer to the document <a class="el" href="md__common_doxygen_files_2_articles_2_control__the___load___unload___m.html#LoadUnload">Control the Load/Unload Mechanism</a> to get further details on these functions.</p>
-<h2><a class="anchor" id="autotoc_md72"></a>
+<h2><a class="anchor" id="autotoc_md70"></a>
 Skeleton of an add-on</h2>
 <p>The minimal source code you have to implement should looks like this:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#define ACExtension</span></div>

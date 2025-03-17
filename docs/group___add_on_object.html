@@ -233,13 +233,13 @@ Functions</h2></td></tr>
 <p>It allows each add-on to store custom data in Archicad project database. No limitation is imposed on the structure or content, not even on the amount of saved bytes. Archicad knows nothing about its internal format, it just preserves a number of bytes in the project database and returns them upon requests.</p>
 <p>The container of the stored data is an object called AddOnObject. This data structure has a GUID and a name. The name is optional.</p>
 <p>AddOnobjects are identified uniquely by the GUID of the object.</p>
-<h1><a class="anchor" id="autotoc_md89"></a>
+<h1><a class="anchor" id="autotoc_md87"></a>
 Unique AddOnObjects</h1>
 <p>Unique AddOnObjects were introduced to support more restricted but safer TeamWork behaviour. Because multiple general (non-unique) AddOnObjects can exist with the same name, in TeamWork it could happen that two users created "the same" AddOnObject simultaneously, but at the end they ended up with two different AddOnObjects (with the same name). This led to a lot of confusion.</p>
 <p>With Unique AddOnObjects - like general AddOnObjects - you can store custom data in the project database. However - unlike general AddOnObjects - their names must be and will be unique among each other. Please note that names of a Unique AddOnObject and general AddOnObjects may still be equal.</p>
 <p>In a TeamWork project creating Unique AddOnObjects will result in a Full Send to ensure project consistency. Due to this inconvenience, it is possible to create more Unique AddOnObjects at once with the <a class="el" href="group___add_on_object.html#ga0fa4df76c4d00c90e69fbb6f2fc91dc3">ACAPI_AddOnObject_CreateUniqueObjectMore</a> function.</p>
 <p>All functions that work for general AddOnObjects work for Unique AddOnObjects, too, except <a class="el" href="group___add_on_object.html#gadb461934bcd1b65fdae2eefe93bfa599">ACAPI_AddOnObject_GetObjectGuidFromName</a> : to get the GUID of a Unique AddOnObject from its name use <a class="el" href="group___add_on_object.html#gaa4976dfba6d525ed2a1f76888e0409f6">ACAPI_AddOnObject_GetUniqueObjectGuidFromName</a> instead.</p>
-<h1><a class="anchor" id="autotoc_md90"></a>
+<h1><a class="anchor" id="autotoc_md88"></a>
 Functions</h1>
 <p>All of the ModulData Manager functions begin with the <b>ACAPI_AddOnObject_</b> prefix. They are as follows:</p>
 <ul>
@@ -263,17 +263,17 @@ Functions</h1>
 <li><a class="el" href="group___add_on_object.html#ga02caa4564303ee142721d174f130aa37">ACAPI_AddOnObject_SetUIProperties</a></li>
 </ul>
 <p>Refer to the <b>AddOnObject Manager</b> example project to see detailed examples on using these functions.</p>
-<h1><a class="anchor" id="autotoc_md91"></a>
+<h1><a class="anchor" id="autotoc_md89"></a>
 Merging AddOnObjects</h1>
 <p>When merging another plan into the project, it might be necessary to keep both the original and the incoming objects, and to combine them together. Since the host application does not know the content of the objects, the owner add-on is requested to resolve the conflict.</p>
 <p>For this purpose the add-on needs to implement an <code>APIAddOnObjectMergeHandlerProc</code> callback handler function, and pass the function pointer to Archicad with the For this purpose the add-on needs to implement an <code>APIAddOnObjectMergeHandlerProc</code> callback handler function, and pass the function pointer to Archicad with the <a class="el" href="group___add_on_object.html#ga6e4d7f8d3345a62a773624af71425334">ACAPI_AddOnObject_InstallAddOnObjectMergeHandler</a> in the <a class="el" href="group___add_on_lifetime.html#gaa8f1f7d553305c1afe5de7e4dcb66e99">Initialize</a> routine. It is also necessary to inform Archicad that the add-on is prepared for merging custom data: this can be done with the <a class="el" href="group___add_on_object.html#ga97e24e67ec25955d5e214e2b2f9b6c3a">ACAPI_AddOnObject_RegisterAddOnObjectHandler</a> function called from <a class="el" href="group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e">RegisterInterface</a>. <a class="el" href="group___add_on_object.html#ga6e4d7f8d3345a62a773624af71425334">ACAPI_AddOnObject_InstallAddOnObjectMergeHandler</a> in the <a class="el" href="group___add_on_lifetime.html#gaa8f1f7d553305c1afe5de7e4dcb66e99">Initialize</a> routine. It is also necessary to inform Archicad that the add-on is prepared for merging custom data: this can be done with the <a class="el" href="group___add_on_object.html#ga97e24e67ec25955d5e214e2b2f9b6c3a">ACAPI_AddOnObject_RegisterAddOnObjectHandler</a> function called from <a class="el" href="group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e">RegisterInterface</a>.</p>
 <p>In Teamwork mode the AddOnObject can only be modified by the owner of the object. The add-on can reserve or release one or more AddOnObject using <a class="el" href="group___add_on_object.html#ga04e07012bf57649cef42b82237ab2bc3">ACAPI_AddOnObject_ReserveObjects</a> and <a class="el" href="group___add_on_object.html#ga685ae0a4af791e1240c5c317bb2b71ec">ACAPI_AddOnObject_ReleaseObjects</a>. Only one user can modifiy an object at one time, so no conflict resolution is needed.</p>
-<h1><a class="anchor" id="autotoc_md92"></a>
+<h1><a class="anchor" id="autotoc_md90"></a>
 Saving data into old format project</h1>
 <p>If the structure of the custom data has changed since the previous version, you need to implement an <a class="el" href="group___add_on_object.html#gae44aed8071f2f6001ba603a8abdb1cc6">APIAddonObjectSaveOldFormatHandlerProc</a> callback function to be able to convert your data when saving into an older format project. In order to be called this handler, the function pointer must be passed with <a class="el" href="group___add_on_object.html#gaf98ed8a5d6ea2eb54ab51d23af1bb097">ACAPI_AddOnObject_InstallAddOnObjectSaveOldFormatHandler</a>, and the data handling feature must be registered with <a class="el" href="group___add_on_object.html#ga97e24e67ec25955d5e214e2b2f9b6c3a">ACAPI_AddOnObject_RegisterAddOnObjectHandler</a>.</p>
 <p>When Archicad calls this function, the add-on should create the converted data according to the given plan file format, and pass it back to the application.</p>
 <p>If the add-on does not install this converter callback routine, the available current format data is saved into the old version project as well.</p>
-<h1><a class="anchor" id="autotoc_md93"></a>
+<h1><a class="anchor" id="autotoc_md91"></a>
 Converting data when reading an old format project</h1>
 <p>If the structure of the custom data has changed since the older versions, you need to implement an <code>APIAddonObjectConvertNewFormatHandlerProc</code> callback function to be able to convert your data when opening an older format project. In order to be called this handler, the function pointer must be passed with <a class="el" href="group___add_on_object.html#gae9aacf50e6bec4ec19f1f21929033493">ACAPI_AddOnObject_InstallAddOnObjectConvertNewFormatHandler</a>, and registration with <a class="el" href="group___add_on_object.html#ga97e24e67ec25955d5e214e2b2f9b6c3a">ACAPI_AddOnObject_RegisterAddOnObjectHandler</a> is also needed.</p>
 <p>When Archicad calls this function, the add-on should create the current version data, and pass it back to the application.</p>

@@ -1,5 +1,7 @@
 var class_a_c_a_p_i_1_1_library_1_1v1_1_1_library =
 [
+    [ "GetDisplayName", "group___library_management.html#gaef5ac7640bbf109558d755e9d00d580d", null ],
+    [ "GetLocalizedName", "group___library_management.html#ga0d34a2ce9d690d2bbeecf9537fe52cfb", null ],
     [ "GetLocation", "group___library_management.html#ga0b7159ebf6487c0f8ba8d7c4e50d743d", null ],
     [ "GetName", "group___library_management.html#gad6b80823abbc00b5a77a61fad662da55", null ],
     [ "GetPackageDependencies", "group___library_management.html#ga97e899b02c961411a8dd3cd9174cf576", null ],

@@ -160,7 +160,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a96acd98d8b52930ef7baa1c70f265eff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the factor of the radius of the <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_default.html" title="The BendDefault contains the necessary non-geometric data for modifying a Bend.">BendDefault</a> in the case of Duct and Cable Carrier.  <br /></td></tr>
 <tr class="separator:a96acd98d8b52930ef7baa1c70f265eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c529fd178b3cd0a6cacb3d78a3e6371"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_c_a_p_i_1_1_result.html">Result</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_default.html#a8c529fd178b3cd0a6cacb3d78a3e6371">SetPreferenceTable</a> (const <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d.html">UniqueID</a> &amp;tableId)</td></tr>
-<tr class="memdesc:a8c529fd178b3cd0a6cacb3d78a3e6371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the PreferenceTable of the <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_default.html" title="The BendDefault contains the necessary non-geometric data for modifying a Bend.">BendDefault</a> in the case of Pipe. This PreferenceTable will be transferred into the Bends when a route is placed or modified.  <br /></td></tr>
+<tr class="memdesc:a8c529fd178b3cd0a6cacb3d78a3e6371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the PreferenceTable of the <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_default.html" title="The BendDefault contains the necessary non-geometric data for modifying a Bend.">BendDefault</a> in the case of Duct and Pipe. This PreferenceTable will be transferred into the Bends when a route is placed or modified.  <br /></td></tr>
 <tr class="separator:a8c529fd178b3cd0a6cacb3d78a3e6371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html">ACAPI::MEP::v1::ElementDefault</a></td></tr>
 <tr class="memitem:a6f51d3acc23c5b9cb1ee118570bb03e1 inherit pub_methods_class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default"><td class="memItemLeft" align="right" valign="top">std::optional&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html#a6f51d3acc23c5b9cb1ee118570bb03e1">GetInsulationThickness</a> () const</td></tr>
@@ -370,7 +370,7 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Returns the <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d.html" title="The MEP unique identifier.">UniqueID</a> of the PreferenceTable of a PipeBendDefault or a circular DuctBendDefault, in case of rectangular DuctBendDefault and CableCarrierBendDefault returns <a class="el" href="struct_a_c_a_p_i_1_1_error.html" title="Error type for ACAPI::Result containing an error message and an error code.">Error</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d.html" title="The MEP unique identifier.">UniqueID</a> of the PreferenceTable of a PipeBendDefault or a DuctBendDefault, in case of CableCarrierBendDefault returns <a class="el" href="struct_a_c_a_p_i_1_1_error.html" title="Error type for ACAPI::Result containing an error message and an error code.">Error</a>. </dd></dl>
 
 </div>
 </div>
@@ -446,14 +446,14 @@ template&lt;class ModifierFunc &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the PreferenceTable of the <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_default.html" title="The BendDefault contains the necessary non-geometric data for modifying a Bend.">BendDefault</a> in the case of Pipe. This PreferenceTable will be transferred into the Bends when a route is placed or modified. </p>
+<p>Sets the PreferenceTable of the <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_default.html" title="The BendDefault contains the necessary non-geometric data for modifying a Bend.">BendDefault</a> in the case of Duct and Pipe. This PreferenceTable will be transferred into the Bends when a route is placed or modified. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tableId</td><td>The <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d.html" title="The MEP unique identifier.">UniqueID</a> referring to the PreferenceTable to be set. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns an error in the case of rectangular Duct <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend.html" title="The Bend can connect two straight RoutingSegments with the same dimensions but different directions.">Bend</a> and Cable Carrier <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend.html" title="The Bend can connect two straight RoutingSegments with the same dimensions but different directions.">Bend</a> or if the referred ElbowTable can not be found, otherwise nothing. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns an error in the case of Cable Carrier <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend.html" title="The Bend can connect two straight RoutingSegments with the same dimensions but different directions.">Bend</a> or if the referred ElbowTable can not be found, otherwise nothing. </dd></dl>
 
 </div>
 </div>
