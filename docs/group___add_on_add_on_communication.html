@@ -192,7 +192,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>These functions provide a way for Add-Ons to communicate (pass data, call exposed commands) with one another. </p>
-<h1><a class="anchor" id="autotoc_md79"></a>
+<h1><a class="anchor" id="autotoc_md77"></a>
 Communication Manager</h1>
 <p>The Communication Manager is a very powerful new service introduced in API v3.1.</p>
 <p>In the previous versions of the API add-ons could be called by Archicad only. There were two ways to do that. The add-on could be called because of a direct user interaction, or there was a need to post a notification to it. It was not possible to call one add-on from another.</p>
@@ -204,11 +204,11 @@ Communication Manager</h1>
 <blockquote class="doxtable">
 <p>&zwj;<a class="el" href="group___add_on_add_on_communication.html#ga862b6e8e2fb88b33f5976eff24f723a0">ACAPI_AddOnAddOnCommunication_InitMDCLParameterList</a> <a class="el" href="group___add_on_add_on_communication.html#gafd8fcf1a45586e3427e3214314d126ef">ACAPI_AddOnAddOnCommunication_GetMDCLParameterNum</a> <a class="el" href="group___add_on_add_on_communication.html#gacd86da0607eddde7e11d08bbd96ac4d1">ACAPI_AddOnAddOnCommunication_GetMDCLParameter</a> <a class="el" href="group___add_on_add_on_communication.html#ga5287685b215202bc4c4c3b04c5f07334">ACAPI_AddOnAddOnCommunication_AddMDCLParameter</a> <a class="el" href="group___add_on_add_on_communication.html#ga57e90015162cc16710939e4e3b16d43c">ACAPI_AddOnAddOnCommunication_ChangeMDCLParameter</a> <a class="el" href="group___add_on_add_on_communication.html#ga919b9198e33b4011a82cdfd63cb0e04c">ACAPI_AddOnAddOnCommunication_FreeMDCLParameterList</a> </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md80"></a>
+<h1><a class="anchor" id="autotoc_md78"></a>
 Entry points</h1>
 <p>What is an entry point of an add-on? It is a function or service which can be called from another add-on with the support of the Communication Manager.</p>
 <p>The entry points are interface independent. It means that there isn't any relationship between the commands put into the Archicad menu structure and the entry points. The first set is controlled by the <a class="el" href="group___menu_item.html#gaec79ce2178f5bb5482da171a49ba88ef">ACAPI_MenuItem_RegisterMenu</a> or <a class="el" href="group___add_on_integration.html#ga98bb66d70f3f8ba9ec38e3119795828c">ACAPI_AddOnIntegration_RegisterFileType</a> and the like, the second type entry points are given by <a class="el" href="group___add_on_add_on_communication.html#ga79ba0da441937d6cbbbf85e37ec81191">ACAPI_AddOnAddOnCommunication_RegisterSupportedService</a>.</p>
-<h1><a class="anchor" id="autotoc_md81"></a>
+<h1><a class="anchor" id="autotoc_md79"></a>
 Registration</h1>
 <p>An add-on can have as many entry points as it wants, and each of them has to be registered in the <a class="el" href="group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e">RegisterInterface</a> function of your add-on with <a class="el" href="group___add_on_add_on_communication.html#ga79ba0da441937d6cbbbf85e37ec81191">ACAPI_AddOnAddOnCommunication_RegisterSupportedService</a>. This function tells Archicad that the add-on can be called by another. The parameters of this function are the following:</p>
 <ul>
@@ -217,7 +217,7 @@ Registration</h1>
 </ul>
 <p>Refer to the function description for more details.</p>
 <p>Later in the Initialize function the add-on has to register callback function to handle the different supported commands. The <a class="el" href="group___add_on_integration.html#gaabb8b8b44c161fe3cb5572486060cf69">ACAPI_AddOnIntegration_InstallModulCommandHandler</a> function's parameters identify the command (with its ID and version number), and the last parameter supplies the module command handler callback function. This callback function then receives the parameters, may optionally pass back its results in a separate pointer, and is also informed whether it should run in silent mode.</p>
-<h1><a class="anchor" id="autotoc_md82"></a>
+<h1><a class="anchor" id="autotoc_md80"></a>
 Entry point identification</h1>
 <p>An entry point is identified by the following two components:</p>
 <ul>
@@ -227,7 +227,7 @@ Entry point identification</h1>
 </ul>
 <p>This means that entry point IDs must be unique in the world of an add-on. Different add-ons may have the same entry point IDs, but locally an add-on is not allowed to specify the same ID more than once.</p>
 <p>On the caller add-ons side, it may check for the existence of the necessary entry points of the target add-on in its own <a class="el" href="group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e">RegisterInterface</a> function, with <a class="el" href="group___add_on_integration.html#ga1d9af21aff689ca178ff46367ce2d62c">ACAPI_AddOnIntegration_RegisterRequiredService</a>.</p>
-<h1><a class="anchor" id="autotoc_md83"></a>
+<h1><a class="anchor" id="autotoc_md81"></a>
 Version control</h1>
 <p>The last issue is version control. The caller add-on must specify the required version of the entry point also. The API assumes backward compatibility. When an add-on tests for an entry point's availability, the following cases may occur (assuming the identification was successful):</p>
 <ul>
@@ -245,7 +245,7 @@ Version control</h1>
 <li>there are changes in the algorithm (the output will differ on the same parameters passed)</li>
 </ul>
 <p>In either cases keep the compatibility, if possible. Upon a call of an entry point, the Communication Manager first identifies the command. Ifit is available, it checks the entry point version. If there isn't any version problem, it calls the entry point by passing the required version number. Use this data to ensure the same environment and behavior.</p>
-<h1><a class="anchor" id="autotoc_md84"></a>
+<h1><a class="anchor" id="autotoc_md82"></a>
 Control of execution</h1>
 <p>It is very important to understand what happens in the background when the API calls an add-on.</p>
 <p>In general the API allocates a unique environment to each executed add-on. Normally only one add-on is executed by the API, only one add-on is in one of its callback functions. However there are cases when there are more add-ons in the call stack.</p>
@@ -278,7 +278,7 @@ Control of execution</h1>
 <p>What is <b>very important to know is</b>, that in this architecture client <b>B</b> is running under the API environment of client <b>A</b>. He can call any of the API services, but the API handles client <b>A</b> as the active one. The API will process these request in a way, as they would be called by client <b>A</b>. This critical session is shown by a zigzag type line on the picture.</p>
 <p>Please note that from Archicad 10 it is a possible to make an add-on command execute in an external Archicad instance to perform operation on a different project file. For more details refer to the <a class="el" href="group___add_on_add_on_communication.html#ga998c8c5e28f24f17970401f95fb8350f">ACAPI_AddOnAddOnCommunication_ExternalCall</a> function.</p>
 <p>Please note that from Archicad 19 you can execute add-on command forced from main event loop using <a class="el" href="group___add_on_add_on_communication.html#ga5ff39bd21de9f2e2a905495494a02304">ACAPI_AddOnAddOnCommunication_CallFromEventLoop</a> function.</p>
-<h1><a class="anchor" id="autotoc_md85"></a>
+<h1><a class="anchor" id="autotoc_md83"></a>
 Parameter passing</h1>
 <p>Parameters should be passed in the <code>params</code> argument to the <a class="el" href="group___add_on_add_on_communication.html#gac797d2bc036dba642c16c6c21848565a">ACAPI_AddOnAddOnCommunication_Call</a> function. This handle -whose internal format is not public- is owned by the API. The content is not checkedby the API, it just simply passed to the called entry point.</p>
 <p>The parameters should be listed in the public header file of the add-on. Each parameter is identified by its name. Each parameter has a value type, which can be either a string, integer or float type. The API does not check the passed parameters, it merely passes those onto the called add-on. Consistency must be validated by the called add-on's entry function.</p>
@@ -294,16 +294,16 @@ Parameter passing</h1>
 <p><b>The above rules ensure that the execution of the entry points will not be context sensitive.</b> No matter what the current defaults are (saved into the preferences), parameters are interpreted based on the factory defaults. It doesn't matter that some parameters are not passed to the client, as they have defaults.</p>
 <p>Let's take an example.</p>
 <p>The DXF/DWG add-on exports an entry point the open an AutoCAD drawing. Its options dialog also has a Default button to set and use the factory default parameters. The add-on emulates the behavior of this dialog while interpreting the passed parameters.</p>
-<h1><a class="anchor" id="autotoc_md86"></a>
+<h1><a class="anchor" id="autotoc_md84"></a>
 Interface control</h1>
 <p>The caller add-on can disable all interface elements of the called add-on with the <code>silentMode</code> parameter.</p>
 <p>If this parameter is set to <code>true</code>, the called add-on is not allowed to open its dialogs and alerts. In the case it is <code>false</code> the option dialog must appear; of course after processing the passed parameters. The user is allowed to modify any parameter. In the case the modifications may have an effect on the passed parameters, use the ACAPI_AddOnAddOnCommunication_ChangeMDCLParameter function to allow the caller add-on to track the changes.</p>
-<h1><a class="anchor" id="autotoc_md87"></a>
+<h1><a class="anchor" id="autotoc_md85"></a>
 Return values</h1>
 <p>There are two ways to return parameters to the caller.</p>
 <p>The default option is to use the return value of the <a class="el" href="group___add_on_add_on_communication.html#gac797d2bc036dba642c16c6c21848565a">ACAPI_AddOnAddOnCommunication_Call</a> call. The value returned by this function is the value returned by the client's module command handler function.</p>
 <p>The other way is to use the <code>resultData</code> parameter. This is a simple pointer, which can be used for any purpose. The specification must be given by the called add-on.</p>
-<h1><a class="anchor" id="autotoc_md88"></a>
+<h1><a class="anchor" id="autotoc_md86"></a>
 Documentation</h1>
 <p>It is absolutely necessary to provide developer documentation for each add-on which publishes its interface. This document should give details what the functionality of the entry point is, what parameters can be passed, how they are interpreted and what return vales are provided.</p>
 <p>By default put this document into the same folder where your add-on is installed. </p>

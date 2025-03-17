@@ -275,7 +275,47 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html" title="The DuctBranchPreferenceTable contains cross section and geometry related information for Duct branch...">DuctBranchPreferenceTable</a> contains cross section and geometry related information for Duct branches. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 28</dd></dl>
-<p>The table uses the keys defined by the <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_reference_set.html">DuctReferenceSet</a>. To consider a table row usable and valid, it should have all its fields filled, beside its description, which is optional. </p><dl class="section user"><dt>Example code snippet from Test / New MEP</dt><dd>Take a look at <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_preference_table_container_base.html">PreferenceTableContainerBase</a> </dd></dl>
+<p>The table uses the keys defined by the <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_reference_set.html">DuctReferenceSet</a>. To consider a table row usable and valid, it should have all its fields filled, beside its description, which is optional. </p><dl class="section user"><dt>Example code snippet from Test / New MEP</dt><dd>Getters <div class="fragment"><div class="line">        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_class" href="class_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d.html">UniqueID</a>&amp; ductBranchTableId : ductBranchTableIds) {</div>
+<div class="line">            <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;DuctBranchPreferenceTable&gt;</a> ductBranchTable = <a class="code hl_function" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#abd57c191d1c0d80639df7559630880c5">DuctBranchPreferenceTable::Get</a> (ductBranchTableId);</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordflow">if</span> (ductBranchTable.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a890dc4c1dff9e73a993a2410750d8d52">IsErr</a> ())</div>
+<div class="line">                <span class="keywordflow">continue</span>;</div>
+<div class="line"> </div>
+<div class="line">            preferenceReporter.SetTabCount (2);</div>
+<div class="line">            preferenceReporter.Add (<span class="stringliteral">&quot;Preference name&quot;</span>, ductBranchTable-&gt;GetName ());</div>
+<div class="line">            preferenceReporter.Add (<span class="stringliteral">&quot;Circular table:&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; ductBranchTable-&gt;GetSize (); ++i) {</div>
+<div class="line">                preferenceReporter.SetTabCount (3);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Main Axis ReferenceId&quot;</span>, *ductBranchTable-&gt;GetMainAxisReferenceId (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.SetTabCount (0);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Branch Axis ReferenceId&quot;</span>, *ductBranchTable-&gt;GetBranchAxisReferenceId (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Main Axis Diameter&quot;</span>, *ductBranchTable-&gt;GetMainAxisDiameter (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Branch Axis Diameter&quot;</span>, *ductBranchTable-&gt;GetBranchAxisDiameter (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Length&quot;</span>, *ductBranchTable-&gt;GetLength (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Branch Offset&quot;</span>, *ductBranchTable-&gt;GetBranchOffset (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Connection Length&quot;</span>, *ductBranchTable-&gt;GetConnectionLength (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                GS::UniString description = *ductBranchTable-&gt;GetDescription (i);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Description&quot;</span>, description == GS::EmptyUniString ? <span class="stringliteral">&quot;Empty&quot;</span> : description, false);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (*ductBranchTable-&gt;IsRowValid (i) ? <span class="stringliteral">&quot;Row is valid&quot;</span> : <span class="stringliteral">&quot;Row is not valid&quot;</span>);</div>
+<div class="line">            }</div>
+<div class="line"> </div>
+<div class="line">            preferenceReporter.AddNewLine ();</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d_html"><div class="ttname"><a href="class_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d.html">ACAPI::MEP::UniqueID</a></div><div class="ttdoc">The MEP unique identifier.</div><div class="ttdef"><b>Definition:</b> MEPUniqueID.hpp:30</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table_html_abd57c191d1c0d80639df7559630880c5"><div class="ttname"><a href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#abd57c191d1c0d80639df7559630880c5">ACAPI::MEP::v1::DuctBranchPreferenceTable::Get</a></div><div class="ttdeci">static Result&lt; DuctBranchPreferenceTable &gt; Get(const UniqueID &amp;uniqueId)</div><div class="ttdoc">Returns a DuctBranchPreferenceTable.</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_result_html"><div class="ttname"><a href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result</a></div><div class="ttdoc">Result is the standard return type of API functions.</div><div class="ttdef"><b>Definition:</b> Result.hpp:845</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_result_html_a890dc4c1dff9e73a993a2410750d8d52"><div class="ttname"><a href="class_a_c_a_p_i_1_1_result.html#a890dc4c1dff9e73a993a2410750d8d52">ACAPI::Result::IsErr</a></div><div class="ttdeci">bool IsErr() const</div><div class="ttdef"><b>Definition:</b> Result.hpp:945</div></div>
+</div><!-- fragment --> Modification: take a look at <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html">PipeBranchPreferenceTable</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a57e81c3965c5b0419bc8a4ac14e8ef4b" name="a57e81c3965c5b0419bc8a4ac14e8ef4b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57e81c3965c5b0419bc8a4ac14e8ef4b">&#9670;&#160;</a></span>AddNewRow()</h2>

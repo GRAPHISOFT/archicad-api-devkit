@@ -435,7 +435,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions related to accessing and manipulating Attribute and the Attribute-related data of elements. </p>
-<h1><a class="anchor" id="autotoc_md99"></a>
+<h1><a class="anchor" id="autotoc_md97"></a>
 Attribute Overview</h1>
 <p>Available types of attributes are enumerated in the <a class="el" href="group___navigator.html#ga1ced849eced2cac8366a288bccabb874">API_AttrTypeID</a> structure. The definition of an attribute is described in the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure, which is in fact a union of all types of attributes. All of the attribute structures begin with a common header structure, named [API<a class="el" href="struct_a_p_i___attr___head.html">API_Attr_Head</a></p>
 <ul>
@@ -448,7 +448,7 @@ Attribute Overview</h1>
 </ul>
 <p>Many attribute related functions use the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure on the parameter list. As a general rule, you have to fill the required fields in the union, then Archicad parses the request based on the values and passes the return parameters in the same parameter. This is why most of the functions do not have the <code>const</code> directive in the prototypes.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md100"></a>
+<h1><a class="anchor" id="autotoc_md98"></a>
 Retrieving an attribute</h1>
 <p>Let's see a simple example. Assume you are interested in the definition of the second line type of the data structure. In this case you should use a variable with the type <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure.</p>
 <div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___attribute.html">API_Attribute</a>    attrib = {};</div>
@@ -492,7 +492,7 @@ Retrieving an attribute</h1>
 <div class="ttc" id="agroup___attribute_html_gab12445cc5271eef70854523302dfd893"><div class="ttname"><a href="group___attribute.html#gab12445cc5271eef70854523302dfd893">ACAPI_Attribute_GetNum</a></div><div class="ttdeci">GSErrCode ACAPI_Attribute_GetNum(API_AttrTypeID typeID, UInt32 &amp;count)</div><div class="ttdoc">Returns the number of instances of a given type of attribute.</div></div>
 </div><!-- fragment --><p>First you need to get the number of line types in the database. You can do that with the <a class="el" href="group___attribute.html#gab12445cc5271eef70854523302dfd893">ACAPI_Attribute_GetNum</a> function, but be careful. This function returns the largest index used in the database, not the number of installed attributes, because instances may be deleted. Deleted attributes are not purged from the database immediately, which means that the valid index range is not (always) continuous. This is why the APIERR_DELETED return code has to be handled.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md101"></a>
+<h1><a class="anchor" id="autotoc_md99"></a>
 Creating an attribute</h1>
 <p>The attribute creation process is also fairly simple. All you have to do is to fill the appropriate part of the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a>, and optionally the <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure. The <a class="el" href="group___attribute.html#gaefcc1320aa6d7c1aafc0db4557a7eebe">ACAPI_Attribute_CreateExt</a> function does the following:</p>
 <ul>
@@ -519,7 +519,7 @@ Creating an attribute</h1>
 <div class="line"><a class="code hl_function" href="group___attribute.html#gaa5117e2e738a849e9f1baf2508754af4">ACAPI_DisposeAttrDefsHdlsExt</a> (&amp;defs);</div>
 <div class="ttc" id="agroup___attribute_html_gaa5117e2e738a849e9f1baf2508754af4"><div class="ttname"><a href="group___attribute.html#gaa5117e2e738a849e9f1baf2508754af4">ACAPI_DisposeAttrDefsHdlsExt</a></div><div class="ttdeci">GSErrCode ACAPI_DisposeAttrDefsHdlsExt(API_AttributeDefExt *defs)</div><div class="ttdoc">Frees the memory occupied by all of the attribute definition handles.</div></div>
 <div class="ttc" id="agroup___attribute_html_gaefcc1320aa6d7c1aafc0db4557a7eebe"><div class="ttname"><a href="group___attribute.html#gaefcc1320aa6d7c1aafc0db4557a7eebe">ACAPI_Attribute_CreateExt</a></div><div class="ttdeci">GSErrCode ACAPI_Attribute_CreateExt(API_Attribute *attribute, API_AttributeDefExt *defs)</div><div class="ttdoc">Creates an attribute.</div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md102"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md100"></a>
 Handler Functions</h1>
 <p>All of the attribute handler functions begins with the <b>ACAPI_Attribute_</b> prefix. This function family gives support to query the attribute database, to modify the existing items, and also to create new instances. Refer to the functions below to have details on these topics.</p>
 <ul>
@@ -572,7 +572,7 @@ Handler Functions</h1>
 <li><a class="el" href="group___dialog.html#gaf4c19309a4ad840d45143ae89658ba47">ACAPI_Dialog_CreateAttributePicker</a></li>
 <li><a class="el" href="group___attribute.html#gad215ed2646a6981faff2b50612efbdf3">ACAPI_Attribute_CreateAttributeFolderPicker</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md103"></a>
+<h1><a class="anchor" id="autotoc_md101"></a>
 General Error Codes</h1>
 <p><code>APIERR_BADID</code></p>
 <p>invalid reference; <br  />
@@ -586,7 +586,7 @@ General Error Codes</h1>
 <p><code>APIERR_NOTMINE</code></p>
 <p>permission denied; <br  />
  the attribute is out of the users workspace</p>
-<h1><a class="anchor" id="autotoc_md104"></a>
+<h1><a class="anchor" id="autotoc_md102"></a>
 Notes</h1>
 <p>There are certain rules which effect the attribute operations; i.e. they may be refused for some reason. The most important rules are:</p>
 <ul>

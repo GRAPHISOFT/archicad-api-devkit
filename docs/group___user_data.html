@@ -154,7 +154,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions for creating, handling and deleting custom (Add-On specific) User Data attached to specific elements or element groups. </p>
-<h1><a class="anchor" id="autotoc_md168"></a>
+<h1><a class="anchor" id="autotoc_md166"></a>
 Save data into the Element records</h1>
 <p>This paper give hints on:</p>
 <ul>
@@ -162,10 +162,10 @@ Save data into the Element records</h1>
 <li>with other words how you can save own data into</li>
 </ul>
 <p>any elements placed onto the floor plan.</p>
-<h1><a class="anchor" id="autotoc_md169"></a>
+<h1><a class="anchor" id="autotoc_md167"></a>
 Limitations</h1>
 <p>All Archicad elements can hold extra information (the previous 128-byte limit has been removed in Archicad 8). The registration table is global for the whole project; add-ons are identified by their module ID. It means that one add-on can save the same number of bytes to any kind of element.</p>
-<h1><a class="anchor" id="autotoc_md170"></a>
+<h1><a class="anchor" id="autotoc_md168"></a>
 Requirements</h1>
 <p>The structure of the user data is unified for Archicad 8, and it contains the following required fields:</p>
 <ul>
@@ -173,7 +173,7 @@ Requirements</h1>
 <li>The platform where the data was stored.</li>
 <li>And, of course, the data itself, which can contain an arbitrary number of bytes.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md171"></a>
+<h1><a class="anchor" id="autotoc_md169"></a>
 Data Structure</h1>
 <p>The registration table is saved into the project file. Archicad never deletes any registration data. This ensures that your custom data will be preserved, even if your add-on is not installed. It can happen if the user moves a project onto another Archicad installation. If you pass a nullptr handle in the appropriate part of the user data, the custom data will be erased.</p>
 <p>The registration itself does not ensure that the data structure of every database element will be extended automatically by the requested number of bytes. These extra bytes are allocated on your request only.</p>

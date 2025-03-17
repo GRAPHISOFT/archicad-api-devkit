@@ -216,7 +216,110 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html" title="The DuctRectangularSegmentPreferenceTable represents a named entity, that contains rows that consists...">DuctRectangularSegmentPreferenceTable</a> represents a named entity, that contains rows that consists of a size and a description. The rows have to be unique by value and are always in ascending order. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 28</dd></dl>
-<dl class="section user"><dt>Example code snippet from Test / New MEP</dt><dd>Take a look at <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_preference_table_container_base.html">PreferenceTableContainerBase</a> </dd></dl>
+<dl class="section user"><dt>Example code snippet from Test / New MEP</dt><dd>Getters <div class="fragment"><div class="line"> </div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_class" href="class_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d.html">UniqueID</a>&amp; ductSegmentTableId : ductSegmentTableIds) {</div>
+<div class="line">            <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;DuctRectangularSegmentPreferenceTable&gt;</a> ductRectangularSegmentTable = <a class="code hl_function" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a1d2746d2fd6970ce4629ad50c289b600">DuctRectangularSegmentPreferenceTable::Get</a> (ductSegmentTableId);</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordflow">if</span> (ductRectangularSegmentTable.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a890dc4c1dff9e73a993a2410750d8d52">IsErr</a> ())</div>
+<div class="line">                <span class="keywordflow">continue</span>;</div>
+<div class="line">            </div>
+<div class="line">            preferenceReporter.SetTabCount (2);</div>
+<div class="line">            preferenceReporter.Add (<span class="stringliteral">&quot;Preference name&quot;</span>, ductRectangularSegmentTable-&gt;GetName ());</div>
+<div class="line">            preferenceReporter.Add (<span class="stringliteral">&quot;Rectangular table:&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; ductRectangularSegmentTable-&gt;GetSize (); ++i) {</div>
+<div class="line">                preferenceReporter.SetTabCount (3);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Value&quot;</span>, *ductRectangularSegmentTable-&gt;GetValue (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.SetTabCount (0);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                GS::UniString description = *ductRectangularSegmentTable-&gt;GetDescription (i);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Description&quot;</span>, description == GS::EmptyUniString ? <span class="stringliteral">&quot;Empty&quot;</span> : description);</div>
+<div class="line"> </div>
+<div class="line">            }</div>
+<div class="line">            preferenceReporter.AddNewLine ();</div>
+<div class="line"> </div>
+<div class="line">            <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;DuctCircularSegmentPreferenceTable&gt;</a> ductCircularSegmentTable = <a class="code hl_function" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#ad0c95d59ab0d0b238b9b36a515092fdc">DuctCircularSegmentPreferenceTable::Get</a> (ductSegmentTableId);</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordflow">if</span> (ductCircularSegmentTable.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a890dc4c1dff9e73a993a2410750d8d52">IsErr</a> ())</div>
+<div class="line">                <span class="keywordflow">continue</span>;</div>
+<div class="line"> </div>
+<div class="line">            preferenceReporter.SetTabCount (2);</div>
+<div class="line">            preferenceReporter.Add (<span class="stringliteral">&quot;Circular table:&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; ductCircularSegmentTable-&gt;GetSize (); ++i) {</div>
+<div class="line">                preferenceReporter.SetTabCount (3);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;ReferenceId&quot;</span>, *ductCircularSegmentTable-&gt;GetReferenceId (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.SetTabCount (0);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Diameter&quot;</span>, *ductCircularSegmentTable-&gt;GetDiameter (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Wall Thickness&quot;</span>, *ductCircularSegmentTable-&gt;GetWallThickness (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                GS::UniString description = *ductCircularSegmentTable-&gt;GetDescription (i);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Description&quot;</span>, description == GS::EmptyUniString ? <span class="stringliteral">&quot;Empty&quot;</span> : description, false);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (*ductCircularSegmentTable-&gt;IsRowValid (i) ? <span class="stringliteral">&quot;Row is valid&quot;</span> : <span class="stringliteral">&quot;Row is not valid&quot;</span>);</div>
+<div class="line">            }</div>
+<div class="line"> </div>
+<div class="line">            preferenceReporter.AddNewLine ();</div>
+<div class="line">        }</div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d_html"><div class="ttname"><a href="class_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d.html">ACAPI::MEP::UniqueID</a></div><div class="ttdoc">The MEP unique identifier.</div><div class="ttdef"><b>Definition:</b> MEPUniqueID.hpp:30</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table_html_ad0c95d59ab0d0b238b9b36a515092fdc"><div class="ttname"><a href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#ad0c95d59ab0d0b238b9b36a515092fdc">ACAPI::MEP::v1::DuctCircularSegmentPreferenceTable::Get</a></div><div class="ttdeci">static Result&lt; DuctCircularSegmentPreferenceTable &gt; Get(const UniqueID &amp;uniqueId)</div><div class="ttdoc">Returns a DuctCircularSegmentPreferenceTable.</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table_html_a1d2746d2fd6970ce4629ad50c289b600"><div class="ttname"><a href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a1d2746d2fd6970ce4629ad50c289b600">ACAPI::MEP::v1::DuctRectangularSegmentPreferenceTable::Get</a></div><div class="ttdeci">static Result&lt; DuctRectangularSegmentPreferenceTable &gt; Get(const UniqueID &amp;uniqueId)</div><div class="ttdoc">Returns a DuctRectangularSegmentPreferenceTable.</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_result_html"><div class="ttname"><a href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result</a></div><div class="ttdoc">Result is the standard return type of API functions.</div><div class="ttdef"><b>Definition:</b> Result.hpp:845</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_result_html_a890dc4c1dff9e73a993a2410750d8d52"><div class="ttname"><a href="class_a_c_a_p_i_1_1_result.html#a890dc4c1dff9e73a993a2410750d8d52">ACAPI::Result::IsErr</a></div><div class="ttdeci">bool IsErr() const</div><div class="ttdef"><b>Definition:</b> Result.hpp:945</div></div>
+</div><!-- fragment --> Modification <div class="fragment"><div class="line"> </div>
+<div class="line">    std::vector&lt;UniqueID&gt; tableIds = container-&gt;GetPreferenceTables ();</div>
+<div class="line"> </div>
+<div class="line">    preferenceReporter.Add (<span class="stringliteral">&quot;Deleting the first row of every shape of every duct table.&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_class" href="class_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d.html">UniqueID</a>&amp; uniqueId : tableIds) {</div>
+<div class="line">        <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;DuctRectangularSegmentPreferenceTable&gt;</a> rectangularTable = <a class="code hl_function" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a1d2746d2fd6970ce4629ad50c289b600">DuctRectangularSegmentPreferenceTable::Get</a> (uniqueId);</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span> (rectangularTable.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a890dc4c1dff9e73a993a2410750d8d52">IsErr</a> ())</div>
+<div class="line">            <span class="keywordflow">continue</span>;</div>
+<div class="line"> </div>
+<div class="line">        preferenceReporter.Add (<span class="stringliteral">&quot;Trying to delete from&quot;</span>, rectangularTable-&gt;GetName ());</div>
+<div class="line">        rectangularTable-&gt;Modify ([&amp;](<a class="code hl_function" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a70db9715a7cae4b01acf2592c8f670e8">DuctRectangularSegmentPreferenceTable::Modifier</a>&amp; modifier) {</div>
+<div class="line">            preferenceReporter.SetTabCount (1);</div>
+<div class="line">            <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;void&gt;</a> rDeleteResult = modifier.Delete (0);</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordflow">if</span> (rDeleteResult.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a939e2710979b665065e7fc91a1d3c8b0">IsOk</a> ())</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Deletion of the first element from rectangular sizes was successful.&quot;</span>);</div>
+<div class="line">            <span class="keywordflow">else</span></div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Deletion unsuccessful&quot;</span>, GS::UniString (rDeleteResult.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a750f5fba77e0d18fc6b194a11c98244c">UnwrapErr</a> ().text));</div>
+<div class="line">        }, <span class="stringliteral">&quot;Delete from rectangular preference table.&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">        <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;DuctCircularSegmentPreferenceTable&gt;</a> circularTable = <a class="code hl_function" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#ad0c95d59ab0d0b238b9b36a515092fdc">DuctCircularSegmentPreferenceTable::Get</a> (uniqueId);</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span> (circularTable.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a890dc4c1dff9e73a993a2410750d8d52">IsErr</a> ())</div>
+<div class="line">            <span class="keywordflow">continue</span>;</div>
+<div class="line"> </div>
+<div class="line">        uint32_t firstValidRowIndex = 0;</div>
+<div class="line">        <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; circularTable-&gt;GetSize (); ++i) {</div>
+<div class="line">            <span class="keywordflow">if</span> (*circularTable-&gt;IsRowValid (i)) {</div>
+<div class="line">                firstValidRowIndex = i;</div>
+<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        preferenceReporter.Add (<span class="stringliteral">&quot;Trying to empty the first valid row of&quot;</span>, circularTable-&gt;GetName ());</div>
+<div class="line">        circularTable-&gt;Modify ([&amp;](<a class="code hl_function" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#ac265208c45126a9831c21683ffeca7f0">DuctCircularSegmentPreferenceTable::Modifier</a>&amp; modifier) {</div>
+<div class="line">            preferenceReporter.SetTabCount (1);</div>
+<div class="line">            <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;void&gt;</a> cDeleteResult = modifier.EmptyRow (firstValidRowIndex);</div>
+<div class="line">            </div>
+<div class="line">            <span class="keywordflow">if</span> (cDeleteResult.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a939e2710979b665065e7fc91a1d3c8b0">IsOk</a> ())</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Deletion of the first element from circular sizes was successful.&quot;</span>);</div>
+<div class="line">            <span class="keywordflow">else</span></div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Deletion unsuccessful&quot;</span>, GS::UniString (cDeleteResult.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a750f5fba77e0d18fc6b194a11c98244c">UnwrapErr</a> ().text));</div>
+<div class="line">        }, <span class="stringliteral">&quot;Delete from circular preference table.&quot;</span>);</div>
+<div class="line">        preferenceReporter.SetTabCount (0);</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table_html_ac265208c45126a9831c21683ffeca7f0"><div class="ttname"><a href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#ac265208c45126a9831c21683ffeca7f0">ACAPI::MEP::v1::DuctCircularSegmentPreferenceTable::Modifier</a></div><div class="ttdeci">Modifier(DuctCircularSegmentPreferenceTable &amp;parent)</div><div class="ttdoc">Constructs a Modifier with the given DuctCircularSegmentPreferenceTable.</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table_html_a70db9715a7cae4b01acf2592c8f670e8"><div class="ttname"><a href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a70db9715a7cae4b01acf2592c8f670e8">ACAPI::MEP::v1::DuctRectangularSegmentPreferenceTable::Modifier</a></div><div class="ttdeci">Modifier(DuctRectangularSegmentPreferenceTable &amp;parent)</div><div class="ttdoc">Constructs a Modifier with the given DuctRectangularSegmentPreferenceTable.</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_result_html_a750f5fba77e0d18fc6b194a11c98244c"><div class="ttname"><a href="class_a_c_a_p_i_1_1_result.html#a750f5fba77e0d18fc6b194a11c98244c">ACAPI::Result::UnwrapErr</a></div><div class="ttdeci">E UnwrapErr() const</div><div class="ttdoc">Unwraps the error value contained in the Result. Trying to UnwrapErr the value while it contains an O...</div><div class="ttdef"><b>Definition:</b> Result.hpp:1140</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_result_html_a939e2710979b665065e7fc91a1d3c8b0"><div class="ttname"><a href="class_a_c_a_p_i_1_1_result.html#a939e2710979b665065e7fc91a1d3c8b0">ACAPI::Result::IsOk</a></div><div class="ttdeci">bool IsOk() const</div><div class="ttdef"><b>Definition:</b> Result.hpp:940</div></div>
+</div><!-- fragment --> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a720bfbbbf9e9767d3ce1c262347010e9" name="a720bfbbbf9e9767d3ce1c262347010e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a720bfbbbf9e9767d3ce1c262347010e9">&#9670;&#160;</a></span>AddNewPreference()</h2>

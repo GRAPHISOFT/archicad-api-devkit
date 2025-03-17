@@ -439,6 +439,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gad6b80823abbc00b5a77a61fad662da55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result</a>&lt; GS::UniString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___library_management.html#gad6b80823abbc00b5a77a61fad662da55">ACAPI::Library::v1::Library::GetName</a> () const</td></tr>
 <tr class="memdesc:gad6b80823abbc00b5a77a61fad662da55"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the library.  <br /></td></tr>
 <tr class="separator:gad6b80823abbc00b5a77a61fad662da55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d34a2ce9d690d2bbeecf9537fe52cfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result</a>&lt; GS::Optional&lt; GS::UniString &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___library_management.html#ga0d34a2ce9d690d2bbeecf9537fe52cfb">ACAPI::Library::v1::Library::GetLocalizedName</a> () const</td></tr>
+<tr class="memdesc:ga0d34a2ce9d690d2bbeecf9537fe52cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The localized name of the library.  <br /></td></tr>
+<tr class="separator:ga0d34a2ce9d690d2bbeecf9537fe52cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef5ac7640bbf109558d755e9d00d580d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result</a>&lt; GS::UniString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___library_management.html#gaef5ac7640bbf109558d755e9d00d580d">ACAPI::Library::v1::Library::GetDisplayName</a> () const</td></tr>
+<tr class="memdesc:gaef5ac7640bbf109558d755e9d00d580d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The display name of the library.  <br /></td></tr>
+<tr class="separator:gaef5ac7640bbf109558d755e9d00d580d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0b7159ebf6487c0f8ba8d7c4e50d743d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result</a>&lt; IO::Location &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___library_management.html#ga0b7159ebf6487c0f8ba8d7c4e50d743d">ACAPI::Library::v1::Library::GetLocation</a> () const</td></tr>
 <tr class="memdesc:ga0b7159ebf6487c0f8ba8d7c4e50d743d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location of the <a class="el" href="class_a_c_a_p_i_1_1_library_1_1v1_1_1_library.html" title="Library is the representation of an item in the library list of an ArchiCAD project.">Library</a>. If the library is a teamwork library, the location is the local cache location.  <br /></td></tr>
 <tr class="separator:ga0b7159ebf6487c0f8ba8d7c4e50d743d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -651,12 +657,12 @@ std::vector&lt; std::byte &gt;&#160;</td><td class="memItemRight" valign="bottom
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions to load, iterate and manipulate libraries and library parts. </p>
-<h1><a class="anchor" id="autotoc_md133"></a>
+<h1><a class="anchor" id="autotoc_md131"></a>
 Library Management Overview</h1>
 <p>Classes and functions related to library management allow add-ons to access and modify loaded libraries and library parts in the planfile, similar to how users interact with the UI. The basic concepts are similar to those known from UI: <a class="el" href="class_a_c_a_p_i_1_1_library_1_1v1_1_1_library_manager.html">ACAPI::Library::v1::LibraryManager</a>, <a class="el" href="class_a_c_a_p_i_1_1_library_1_1v1_1_1_library.html">ACAPI::Library::v1::Library</a>, <a class="el" href="class_a_c_a_p_i_1_1_library_1_1v1_1_1_lib_part.html">ACAPI::Library::v1::LibPart</a>, <a class="el" href="class_a_c_a_p_i_1_1_library_1_1v1_1_1_g_s_m_object.html">ACAPI::Library::v1::GSMObject</a>. Starting with Archicad 28, GSM file-specific operations have been separated from general library part management to more logically align with how Archicad operates. <a class="el" href="class_a_c_a_p_i_1_1_library_1_1v1_1_1_library_tree_path.html">ACAPI::Library::v1::LibraryTreePath</a> is an additional concept that helps map the library structure and provides access to Teamwork functions.</p>
 <p>All classes and functions can be found in the <code>ACAPI/Library/*.hpp</code> header files and in the <code>ACAPI::Library</code> namespace.</p>
 <p>For working examples, check the <code>LibraryManagement_Test_ExampleFunctions.cpp</code> file from the API DevKit.</p>
-<h1><a class="anchor" id="autotoc_md134"></a>
+<h1><a class="anchor" id="autotoc_md132"></a>
 The LibraryManager</h1>
 <p>The <a class="el" href="class_a_c_a_p_i_1_1_library_1_1v1_1_1_library_manager.html">ACAPI::Library::v1::LibraryManager</a> class is the main entry point for library-related functionalities. This class is <b>not</b> a one-to-one equivalent of the familiar UI dialogue, but it provides the same functionalities.</p>
 <p>While it doesn't store data itself, it provides access to the data in the plan file. It can be instantiated anywhere the plan file already exists, and this instantiation is a low-cost operation. However, instance creation can fail, as we can't guarantee that a plan file is loaded in every context. That is why the creation is packaged in a factory:</p>
@@ -673,7 +679,7 @@ The LibraryManager</h1>
 <div class="ttc" id="agroup___library_management_html_ga622115b23e3cf60063b1dfc13b590deb"><div class="ttname"><a href="group___library_management.html#ga622115b23e3cf60063b1dfc13b590deb">ACAPI::Library::v1::GetLibraryManager</a></div><div class="ttdeci">Result&lt; LibraryManager &gt; GetLibraryManager()</div><div class="ttdoc">Creates a LibraryManager instance.</div><div class="ttdef"><b>Definition:</b> LibraryManager.hpp:195</div></div>
 </div><!-- fragment --><p>In a safe context, where the plan file definitely exists, you can instantiate it in a more compact way:</p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> libraryManager = *<a class="code hl_function" href="group___library_management.html#ga622115b23e3cf60063b1dfc13b590deb">ACAPI::Library::GetLibraryManager</a> ();</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md135"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md133"></a>
 Query Libraries and Library Parts</h2>
 <p>Library and Library Part can be searched and queried using the methods of the created LibraryManager instance. You can search and filter with unary predicates, similar to the <code>find_if</code> function from the C++ standard library. We provide reusable predicates for the most common searches.</p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> libraryManager = *<a class="code hl_function" href="group___library_management.html#ga622115b23e3cf60063b1dfc13b590deb">ACAPI::Library::GetLibraryManager</a> ();</div>
@@ -729,7 +735,7 @@ Query Libraries and Library Parts</h2>
 <div class="ttc" id="agroup___library_management_html_gad6b80823abbc00b5a77a61fad662da55"><div class="ttname"><a href="group___library_management.html#gad6b80823abbc00b5a77a61fad662da55">ACAPI::Library::v1::Library::GetName</a></div><div class="ttdeci">ACAPI::Result&lt; GS::UniString &gt; GetName() const</div><div class="ttdoc">The name of the library.</div></div>
 <div class="ttc" id="agroup___library_management_html_gad8c8eb685acc190040f47b2eb15f67f6"><div class="ttname"><a href="group___library_management.html#gad8c8eb685acc190040f47b2eb15f67f6">ACAPI::Library::v1::LibraryManager::FindLibrary</a></div><div class="ttdeci">Result&lt; Library &gt; FindLibrary(const std::function&lt; bool(const Library &amp;)&gt; &amp;selector) const</div><div class="ttdoc">Find Library using a custom selector function.</div></div>
 <div class="ttc" id="agroup___library_management_html_gaddfe24ed6a71c9539766b71b0ab04851"><div class="ttname"><a href="group___library_management.html#gaddfe24ed6a71c9539766b71b0ab04851">ACAPI::Library::v1::LibPart::GetName</a></div><div class="ttdeci">ACAPI::Result&lt; GS::UniString &gt; GetName() const</div><div class="ttdoc">The name of the library part.</div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md136"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md134"></a>
 Modifying the library list</h2>
 <p>The modifications can be accessed within a <em>modification scope</em>. This allows multiple modifications to be executed at once, in one step, just like the operation of the Library Manager dialog box. Opening the scope also checks the modification rights, and returns an error if the given user does not reserve the library list in Teamwork.</p>
 <div class="fragment"><div class="line">GSErrCode AddLocalLibraryList (<span class="keyword">const</span> GS::Array&lt;IO::Location&gt;&amp; libraryLocations)</div>
@@ -754,7 +760,7 @@ Modifying the library list</h2>
 <div class="line">}</div>
 <div class="ttc" id="agroup___library_management_html_gaefb9d908a97607cb7faeb65489658d37"><div class="ttname"><a href="group___library_management.html#gaefb9d908a97607cb7faeb65489658d37">ACAPI::Library::v1::LibraryManager::ModifyLibraryList</a></div><div class="ttdeci">Result&lt; void &gt; ModifyLibraryList(const std::function&lt; GSErrCode(Modifier &amp;)&gt; &amp;modifierFunc)</div><div class="ttdoc">Executed the passed modifier scope in a NotUndoable command.</div></div>
 </div><!-- fragment --><p>See more examples in <code>LibraryManagement_Test_ExampleFunctions.cpp</code>.</p>
-<h1><a class="anchor" id="autotoc_md137"></a>
+<h1><a class="anchor" id="autotoc_md135"></a>
 Library Parts and GSM Objects</h1>
 <p>Similar to the Archicad UI concept, the API also separates the functionalities of the Library Parts from those that are specific to GSM files. A Library Part is anything that is part of a loaded library. However, a GSM can also be a local file that is not a loaded Library Part, but was read from outside.</p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> libraryManager = *<a class="code hl_function" href="group___library_management.html#ga622115b23e3cf60063b1dfc13b590deb">ACAPI::Library::GetLibraryManager</a> ();</div>
@@ -768,7 +774,7 @@ Library Parts and GSM Objects</h1>
 <div class="ttc" id="agroup___library_management_html_ga3605ab64b34907603bc18266dc75a648"><div class="ttname"><a href="group___library_management.html#ga3605ab64b34907603bc18266dc75a648">ACAPI::Library::v1::LibraryManager::GetGSMObjectOfLibPart</a></div><div class="ttdeci">Result&lt; GSMObject &gt; GetGSMObjectOfLibPart(const LibPart &amp;libPart) const</div><div class="ttdoc">Returns the .gsm object representation of the Library Part.</div></div>
 <div class="ttc" id="agroup___library_management_html_gaf85515cb2e6a7b08c3acd2facef706d9"><div class="ttname"><a href="group___library_management.html#gaf85515cb2e6a7b08c3acd2facef706d9">ACAPI::Library::v1::LibraryManager::LoadGSMObjectFromFile</a></div><div class="ttdeci">Result&lt; GSMObject &gt; LoadGSMObjectFromFile(const IO::Location &amp;location) const</div><div class="ttdoc">Loads a .gsm object from a file.</div></div>
 </div><!-- fragment --><p>Be aware that loading the same object from a file and from a libpart can result different behaviors. If you are interested in the state that also appears in the plan file, always create a GSMObject from a LibPart. You should load GSM from a file only when you would access its raw content. If the object comes from a .libpack library, it means, it is not translated.</p>
-<h2><a class="anchor" id="autotoc_md138"></a>
+<h2><a class="anchor" id="autotoc_md136"></a>
 Creating and modifying a GSM file</h2>
 <p>You cannot directly create or modify a GSM file in a loaded library. You need an object loaded from an external file, which can optionally be copied into the library after editing.</p>
 <p>The modification methods are available from a modification scope. This ensures that modification methods are available for objects loaded from file, and all of the modification calls will perform in an atomic step.</p>
@@ -791,7 +797,7 @@ Creating and modifying a GSM file</h2>
 <div class="ttc" id="aclass_a_c_a_p_i_1_1_library_1_1v1_1_1_g_s_m_object_html"><div class="ttname"><a href="class_a_c_a_p_i_1_1_library_1_1v1_1_1_g_s_m_object.html">ACAPI::Library::v1::GSMObject</a></div><div class="ttdoc">GSMObject is the representation of a loaded .gsm file.</div><div class="ttdef"><b>Definition:</b> GSMObject.hpp:74</div></div>
 <div class="ttc" id="agroup___library_management_html_ga2b3650d67372fd6eb7f64aec52e65669"><div class="ttname"><a href="group___library_management.html#ga2b3650d67372fd6eb7f64aec52e65669">ACAPI::Library::v1::GSMObject::Modify</a></div><div class="ttdeci">ACAPI::Result&lt; void &gt; Modify(const std::function&lt; GSErrCode(Modifier &amp;)&gt; &amp;modifierFunc, GS::UniString password=GS::EmptyUniString)</div><div class="ttdoc">Opens a modification scope if the object is editable. See 'IsEditable'.</div></div>
 </div><!-- fragment --><p>See more detailed examples in <code>LibraryManagement_Test_ExampleFunctions.cpp</code>.</p>
-<h2><a class="anchor" id="autotoc_md139"></a>
+<h2><a class="anchor" id="autotoc_md137"></a>
 Copy a GSM file to a library</h2>
 <p>Copying an external file back into an editable loaded library works in the old, traditional way. Of course, copying multiple files here also happens in one step.</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="class_a_c_a_p_i_1_1_library_1_1v1_1_1_library_manager.html">ACAPI::Library::LibraryManager</a> libraryManager = *<a class="code hl_function" href="group___library_management.html#ga622115b23e3cf60063b1dfc13b590deb">ACAPI::Library::GetLibraryManager</a> ();</div>
@@ -804,7 +810,7 @@ Copy a GSM file to a library</h2>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="group___library_management.html#ga16390b46cb31ef15f4dbd35664fdfe76">ACAPI_LibraryManagement_CopyFilesIntoLibrary</a> (&amp;embeddedLocation, &amp;newFileLocations, &amp;overwrite);</div>
 <div class="ttc" id="agroup___library_management_html_ga16390b46cb31ef15f4dbd35664fdfe76"><div class="ttname"><a href="group___library_management.html#ga16390b46cb31ef15f4dbd35664fdfe76">ACAPI_LibraryManagement_CopyFilesIntoLibrary</a></div><div class="ttdeci">GSErrCode ACAPI_LibraryManagement_CopyFilesIntoLibrary(const IO::Location *targetFolderLocationInLibrary, const GS::Array&lt; IO::Location &gt; *filesToCopy, const bool *overwriteIfExists)</div><div class="ttdoc">Copies files into a folder inside a loaded library.</div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md140"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md138"></a>
 Teamwork functionalities</h1>
 <p>A reservable component can be reserved, released or its status can be queried using with <code>ACAPI_Teamwork_*</code> functions. Full documentation can be found here: <a class="el" href="group___teamwork.html">Teamwork</a></p>
 <p>The <code>ACAPI::Library::LibraryManager</code> can represent a point in the library tree with the <code>ACAPI::Library::LibraryTreePath</code> type. With this, we can get the reservable object identifier, which can be used to call the <code>ACAPI_Teamwork_*</code> functions.</p>
@@ -2734,6 +2740,26 @@ Teamwork functionalities</h1>
 
 </div>
 </div>
+<a id="gaef5ac7640bbf109558d755e9d00d580d" name="gaef5ac7640bbf109558d755e9d00d580d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaef5ac7640bbf109558d755e9d00d580d">&#9670;&#160;</a></span>GetDisplayName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result</a>&lt; GS::UniString &gt; ACAPI::Library::v1::Library::GetDisplayName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The display name of the library. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns the display name of the <a class="el" href="class_a_c_a_p_i_1_1_library_1_1v1_1_1_library.html" title="Library is the representation of an item in the library list of an ArchiCAD project.">Library</a> if the <a class="el" href="class_a_c_a_p_i_1_1_library_1_1v1_1_1_library.html" title="Library is the representation of an item in the library list of an ArchiCAD project.">Library</a> is valid, otherwise error. </dd></dl>
+
+</div>
+</div>
 <a id="ga304d23591321f569b30d742503291875" name="ga304d23591321f569b30d742503291875"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga304d23591321f569b30d742503291875">&#9670;&#160;</a></span>GetEmbeddedLibrary()</h2>
 
@@ -3154,6 +3180,26 @@ Teamwork functionalities</h1>
 
 <p>License version of the object. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns the license version of the object. If the object's reference is not valid, it will return an error. </dd></dl>
+
+</div>
+</div>
+<a id="ga0d34a2ce9d690d2bbeecf9537fe52cfb" name="ga0d34a2ce9d690d2bbeecf9537fe52cfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0d34a2ce9d690d2bbeecf9537fe52cfb">&#9670;&#160;</a></span>GetLocalizedName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result</a>&lt; GS::Optional&lt; GS::UniString &gt; &gt; ACAPI::Library::v1::Library::GetLocalizedName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The localized name of the library. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns an optional value containing the localized name of the <a class="el" href="class_a_c_a_p_i_1_1_library_1_1v1_1_1_library.html" title="Library is the representation of an item in the library list of an ArchiCAD project.">Library</a> if the <a class="el" href="class_a_c_a_p_i_1_1_library_1_1v1_1_1_library.html" title="Library is the representation of an item in the library list of an ArchiCAD project.">Library</a> is valid, otherwise error. </dd></dl>
 
 </div>
 </div>

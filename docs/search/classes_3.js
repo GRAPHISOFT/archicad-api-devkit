@@ -13,5 +13,7 @@ var searchData=
   ['ductelbowpreferencetablecontainer_10',['DuctElbowPreferenceTableContainer',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table_container.html',1,'ACAPI::MEP::v1']]],
   ['ductrectangularsegmentpreferencetable_11',['DuctRectangularSegmentPreferenceTable',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html',1,'ACAPI::MEP::v1']]],
   ['ductreferenceset_12',['DuctReferenceSet',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_reference_set.html',1,'ACAPI::MEP::v1']]],
-  ['ductsegmentpreferencetablecontainer_13',['DuctSegmentPreferenceTableContainer',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_segment_preference_table_container.html',1,'ACAPI::MEP::v1']]]
+  ['ductsegmentpreferencetablecontainer_13',['DuctSegmentPreferenceTableContainer',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_segment_preference_table_container.html',1,'ACAPI::MEP::v1']]],
+  ['ducttransitionpreferencetable_14',['DuctTransitionPreferenceTable',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html',1,'ACAPI::MEP::v1']]],
+  ['ducttransitionpreferencetablecontainer_15',['DuctTransitionPreferenceTableContainer',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table_container.html',1,'ACAPI::MEP::v1']]]
 ];

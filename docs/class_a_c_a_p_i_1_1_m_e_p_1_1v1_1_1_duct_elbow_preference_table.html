@@ -240,7 +240,38 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html" title="The DuctElbowPreferenceTable contains cross section related information for Duct elbows.">DuctElbowPreferenceTable</a> contains cross section related information for Duct elbows. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 28</dd></dl>
-<p>The table uses the keys defined by the <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_reference_set.html">DuctReferenceSet</a>. To consider a table row usable and valid, it should have all its fields filled, beside its description, which is optional. </p><dl class="section user"><dt>Example code snippet from Test / New MEP</dt><dd>Take a look at <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_preference_table_container_base.html">PreferenceTableContainerBase</a> </dd></dl>
+<p>The table uses the keys defined by the <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_reference_set.html">DuctReferenceSet</a>. To consider a table row usable and valid, it should have all its fields filled, beside its description, which is optional. </p><dl class="section user"><dt>Example code snippet from Test / New MEP</dt><dd>Getters <div class="fragment"><div class="line">        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_class" href="class_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d.html">UniqueID</a>&amp; ductElbowTableId : ductElbowTableIds) {</div>
+<div class="line">            <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;DuctElbowPreferenceTable&gt;</a> ductElbowTable = <a class="code hl_function" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#a2881275a29be76dd5e31be1b73b5d022">DuctElbowPreferenceTable::Get</a> (ductElbowTableId);</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordflow">if</span> (ductElbowTable.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a890dc4c1dff9e73a993a2410750d8d52">IsErr</a> ())</div>
+<div class="line">                <span class="keywordflow">continue</span>;</div>
+<div class="line"> </div>
+<div class="line">            preferenceReporter.SetTabCount (2);</div>
+<div class="line">            preferenceReporter.Add (<span class="stringliteral">&quot;Preference name&quot;</span>, ductElbowTable-&gt;GetName ());</div>
+<div class="line">            preferenceReporter.Add (<span class="stringliteral">&quot;Circular table:&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; ductElbowTable-&gt;GetSize (); ++i) {</div>
+<div class="line">                preferenceReporter.SetTabCount (3);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;ReferenceId&quot;</span>, *ductElbowTable-&gt;GetReferenceId (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.SetTabCount (0);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Diameter&quot;</span>, *ductElbowTable-&gt;GetDiameter (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Radius&quot;</span>, *ductElbowTable-&gt;GetRadius (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                GS::UniString description = *ductElbowTable-&gt;GetDescription (i);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Description&quot;</span>, description == GS::EmptyUniString ? <span class="stringliteral">&quot;Empty&quot;</span> : description, false);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (*ductElbowTable-&gt;IsRowValid (i) ? <span class="stringliteral">&quot;Row is valid&quot;</span> : <span class="stringliteral">&quot;Row is not valid&quot;</span>);</div>
+<div class="line">            }</div>
+<div class="line"> </div>
+<div class="line">            preferenceReporter.AddNewLine ();</div>
+<div class="line">        }</div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d_html"><div class="ttname"><a href="class_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d.html">ACAPI::MEP::UniqueID</a></div><div class="ttdoc">The MEP unique identifier.</div><div class="ttdef"><b>Definition:</b> MEPUniqueID.hpp:30</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table_html_a2881275a29be76dd5e31be1b73b5d022"><div class="ttname"><a href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#a2881275a29be76dd5e31be1b73b5d022">ACAPI::MEP::v1::DuctElbowPreferenceTable::Get</a></div><div class="ttdeci">static Result&lt; DuctElbowPreferenceTable &gt; Get(const UniqueID &amp;uniqueId)</div><div class="ttdoc">Returns a DuctElbowPreferenceTable.</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_result_html"><div class="ttname"><a href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result</a></div><div class="ttdoc">Result is the standard return type of API functions.</div><div class="ttdef"><b>Definition:</b> Result.hpp:845</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_result_html_a890dc4c1dff9e73a993a2410750d8d52"><div class="ttname"><a href="class_a_c_a_p_i_1_1_result.html#a890dc4c1dff9e73a993a2410750d8d52">ACAPI::Result::IsErr</a></div><div class="ttdeci">bool IsErr() const</div><div class="ttdef"><b>Definition:</b> Result.hpp:945</div></div>
+</div><!-- fragment --> Modification: take a look at <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html">PipeElbowPreferenceTable</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae8bfeece117ba59f5d701226acdf96a4" name="ae8bfeece117ba59f5d701226acdf96a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae8bfeece117ba59f5d701226acdf96a4">&#9670;&#160;</a></span>EmptyRow()</h2>

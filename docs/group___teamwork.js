@@ -20,10 +20,12 @@ var group___teamwork =
     [ "ACAPI_Teamwork_ReleaseElements", "group___teamwork.html#ga068f6a5f5ada5d8b85705bfb57e26f13", null ],
     [ "ACAPI_Teamwork_ReleaseHotlinkCacheManagement", "group___teamwork.html#gaea7842672b8ca118bdc1b63fb0586c1f", null ],
     [ "ACAPI_Teamwork_ReleaseLockable", "group___teamwork.html#ga7dbdcea74d053d1d27992c40a915c2c6", null ],
+    [ "ACAPI_Teamwork_RemoveLibraries", "group___teamwork.html#ga247aec80f15a2bbd9c140818a3b5ca90", null ],
     [ "ACAPI_Teamwork_ReserveElements", "group___teamwork.html#gac71823d998147b68cfb6920ff186923a", null ],
     [ "ACAPI_Teamwork_ReserveHotlinkCacheManagement", "group___teamwork.html#ga1a385edc5ac0db7bb040f3c3e84a629c", null ],
     [ "ACAPI_Teamwork_ReserveLockable", "group___teamwork.html#ga9398b6e24d97acd7aa95727efba64417", null ],
     [ "ACAPI_Teamwork_SendChanges", "group___teamwork.html#ga5ad5e48fa5eb80e33ede9c4aef02b869", null ],
     [ "ACAPI_Teamwork_SendReleaseCommentMail", "group___teamwork.html#ga9c980a6419b820f4bafbcf5e6b78625c", null ],
+    [ "ACAPI_Teamwork_UploadLibraries", "group___teamwork.html#gad136fd3bf202557fdd754dbd65a5f513", null ],
     [ "ACAPI_UnregisterTeamworkReserveInterface", "group___teamwork.html#ga14adcab3249594f7fe7751813bbf6deb", null ]
 ];

@@ -373,16 +373,16 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions related to the use of various notifications of Archicad. They can be used to automatically execute different tasks when a given trigger is executed in Archicad. </p>
-<h1><a class="anchor" id="autotoc_md151"></a>
+<h1><a class="anchor" id="autotoc_md149"></a>
 Notification Manager</h1>
 <p>The Notification Manager lets your add-on be integrated more into the Archicad environment.</p>
 <p>It is very important to understand the underlying ideas and technologies in order to be able to use the services in the right way. <br  />
  It is very easy to block Archicad using the Notification Manager in a wrong way; so be very careful!</p>
 <p>The key point that you have to keep in mind is that notifications are coming in the background, without any user interaction. Plan your system concentrating on this issue; <b>do not perform time consuming operations</b>, and also <b>do not make changes that have global effects</b>, although the Notification Manager tries to detect and refuse such operations, of course.</p>
-<h2><a class="anchor" id="autotoc_md152"></a>
+<h2><a class="anchor" id="autotoc_md150"></a>
 What kind of events can an add-on receive notification of?</h2>
 <p>An add-on can catch events occured to the actual project such as opening, saving, closing the plan file; can be notified of teamwork events, and several changes in the program environment. Furthermore the add-ons can get notification of events happened to the elements of the project database such as creation, modification and deletion. Also there can be notified of undoing and redoing element database changes.</p>
-<h3><a class="anchor" id="autotoc_md153"></a>
+<h3><a class="anchor" id="autotoc_md151"></a>
 Functions</h3>
 <p>All of the notification manager functions begin with the <b>ACAPI_Notify_</b> prefix. This function family gives support to register your add-on to receive notifications when the requested event(s) occured. Once a notification is posted you get the control and you are allowed to call almost all of the API functions to handle the event.</p>
 <p>In order to be notified of certain events you have to make a registration with the following functions:</p>
@@ -412,13 +412,13 @@ Functions</h3>
 </li>
 <li><a class="el" href="group___notification.html#gaedec9d6bd4dc73f5eac4aa1ef1b0ea03">ACAPI_Notification_GetTranParams</a></li>
 </ul>
-<h2><a class="anchor" id="autotoc_md154"></a>
+<h2><a class="anchor" id="autotoc_md152"></a>
 Element related notifications</h2>
-<h3><a class="anchor" id="autotoc_md155"></a>
+<h3><a class="anchor" id="autotoc_md153"></a>
 Monitoring elements</h3>
 <p>In order to be notified of events that happen to a specified element in the database you have to attach an observer to the element with the <a class="el" href="group___element.html#ga4e7696dc5135c83ca77fc0c076222adf">ACAPI_Element_AttachObserver</a> function. This information then will be saved into the project file, so next time you use that plan the notification system will notify your add-on about changes of elements you have marked for monitoring before.</p>
 <p>You can catch element creation events if your add-on installs an <a class="el" href="group___element.html#ga9e9c70a4b6e772cfab4b910175429033">APIElementEventHandlerProc</a> element event handler function with <a class="el" href="group___element.html#gaa640b4d073a2e78c2eb83fe351def4ae">ACAPI_Element_CatchNewElement</a>. You may specify a certain type of elements if you are interested in these new elements only. You can use the same callback function for more element types at the same time. If you want to follow up the modifications of the newly created element, you can attach an observer to it at once right from the new element callback.</p>
-<h3><a class="anchor" id="autotoc_md156"></a>
+<h3><a class="anchor" id="autotoc_md154"></a>
 How does it work?</h3>
 <p>The element related notification system is based on the undo list of Archicad, that is it processes the undo entries created by the last operation.</p>
 <p>Assume that there are three add-ons monitoring some set of elements in the current project. Add-on "A" has linked objects to walls, and watches if something happens to those walls to keep the objects aligned to the walls. Add-on "B" has a sort of autotext functionality, it is to be notified of word element creation. Finally Add-on "C" controls the length of walls, it may delete some walls and replace them with a note.</p>

@@ -270,30 +270,30 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions related to the Database Manager, creating, manupulating and switching between different databases. </p>
-<h1><a class="anchor" id="autotoc_md106"></a>
+<h1><a class="anchor" id="autotoc_md104"></a>
 Database Overview</h1>
 <p>The API enables you to work on the Archicad database. Various functions are present to create, get, modify and also delete elements, attributes and library parts. It is also possible to control the selection of elements, and some settings of the overall environment; for example stories, grid settings, etc.</p>
 <p>To read the rules of data structure modifications, please read <a class="el" href="group___element.html">Command Overview</a> paper.</p>
 <p>In this section, some information is provided about how the Virtual Building database is built up, and what the links are among the different components.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md107"></a>
+<h2><a class="anchor" id="autotoc_md105"></a>
 Elements</h2>
 <p>Database items named <b>elements</b> directly appear in one of the project windows. Their parameters can be set in the Settings Dialogs or in the Info Box. Most of them refer to many attributes, some of them to library parts.</p>
 <p>API functions operating on elements begin with the <b>ACAPI_Element_</b> prefix. Refer to the <a class="el" href="group___element.html">Element Manager</a> to see the whole collection of functions that support element manipulations.</p>
 <p>API structures referenced by the handler functions are explained in details in the <a class="el" href="group___element.html">Element Database</a> document. Refer to this document to get specific information about the data structures related to all element types.</p>
 <p>To read general information about elements refer to the <a class="el" href="group___element.html">Element Overview</a> paper.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md108"></a>
+<h2><a class="anchor" id="autotoc_md106"></a>
 Properties</h2>
 <p>Properties allows one to store user-defined name-value pairs for Model elements.</p>
 <p>To read general information about properties refer to the <a class="el" href="group___property.html">Properties</a> paper.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md109"></a>
+<h2><a class="anchor" id="autotoc_md107"></a>
 Classifications</h2>
 <p>Classifications allows one to classify elements and create custom classifications.</p>
 <p>To read general information about classifications refer to the <a class="el" href="group___classification.html">Classification</a> paper.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md110"></a>
+<h2><a class="anchor" id="autotoc_md108"></a>
 Attributes</h2>
 <p>Database items named <b>attributes</b> are global collections of layers, pen colors, surface materials, fill patterns, etc. that are available to all eligible tools. These attribute sets are editable, and the lists and palettes in the Tool Settings dialog boxes display their current settings.</p>
 <p>API functions operating on attributes begin with the <b>ACAPI_Attribute_</b> prefix. Refer to the <a class="el" href="group___attribute.html">Attribute Manager</a> to see the whole collection of functions that support attribute manipulations.</p>
@@ -301,18 +301,18 @@ Attributes</h2>
 <p>To read general information about attributes refer to the <a class="el" href="group___attribute.html">Attribute Overview</a> paper.</p>
 <p>The API also provides a platform-independent way to use those custom controls in Archicad which provide the user a list of certain attributes he can choose from. You can read more on this in the <a class="el" href="md__common_doxygen_files_2_articles_2_f_a_q.html#FAQ">FAQ</a>.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md111"></a>
+<h2><a class="anchor" id="autotoc_md109"></a>
 Library Parts</h2>
 <p>Database items named <b>Library Parts</b> are prefabricated elements which may have instances in the project with different parameters like scaling, rotation, etc. Many elements have a reference to a specific Library Part, like windows, objects, rooms, etc. Library Parts can be created and edited through the Library Part editor dialog. The active library folders can be controlled through the Library Manager... dialog of Archicad. From v4.1, you may receive notification when the loaded libraries change.</p>
 <p>API functions operating on a Library Part file begin with the <b>ACAPI_LibraryPart_</b> prefix. Refer to the <a class="el" href="group___library_part.html">Library Part Manager</a> to see the available collection of functions to manage a Library Part file.</p>
 <p>API structures referenced by the handler functions are explained in details in the <a class="el" href="md__common_doxygen_files_2_articles_2_compatibility.html#Library">Library</a> document. Refer to these papers to get specific information about the data structures related to a Library Part file.</p>
 <p>To read general information about library parts refer to the <a class="el" href="group___library_part.html">LibPart Overview</a> paper.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md112"></a>
+<h2><a class="anchor" id="autotoc_md110"></a>
 Structural Analytical Model</h2>
 <p>To read general information about the Structural Analytical Model refer to the <a class="el" href="group___analytical.html">Analytical Model Overview</a> paper.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md113"></a>
+<h2><a class="anchor" id="autotoc_md111"></a>
 Environment</h2>
 <p>There are database items which do not fit into any categories listed above, but have influence on the project's appearance and to the behavior of elements; such as the preferences like parameters, the drawing scale, the 3D projection parameters and so on. </p>
 <h2 class="groupheader">Typedef Documentation</h2>

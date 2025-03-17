@@ -2,8 +2,8 @@ var searchData=
 [
   ['eastings_0',['eastings',['../struct_a_p_i___geo_reference_data.html#a28befc8713f14dfdbe6371d81c168409',1,'API_GeoReferenceData']]],
   ['eaveslength_1',['eavesLength',['../struct_a_p_i___roof_quantity.html#a3e8a6a9c66dcf7392b5dcece5acefdb6',1,'API_RoofQuantity::eavesLength'],['../struct_a_p_i___shell_quantity.html#a62e3effe539b5b3ebe789fe0390a7db0',1,'API_ShellQuantity::eavesLength']]],
-  ['eavesoverhang_2',['eavesOverHang',['../struct_a_p_i___poly_roof_data.html#a636347e815f5bfe8f05cb140f4735fee',1,'API_PolyRoofData']]],
-  ['eavesoverhang_3',['eavesOverhang',['../struct_a_p_i___roof_segment_data.html#afe83ec8288e0604183ab1531d88a79db',1,'API_RoofSegmentData']]],
+  ['eavesoverhang_2',['eavesOverhang',['../struct_a_p_i___roof_segment_data.html#afe83ec8288e0604183ab1531d88a79db',1,'API_RoofSegmentData']]],
+  ['eavesoverhang_3',['eavesOverHang',['../struct_a_p_i___poly_roof_data.html#a636347e815f5bfe8f05cb140f4735fee',1,'API_PolyRoofData']]],
   ['ed_5farrowang_4',['ed_arrowAng',['../struct_a_p_i___dimension_type.html#a285b43c2c0ab560ed9410985c728eaa5',1,'API_DimensionType']]],
   ['ed_5farrowfill_5',['ed_arrowFill',['../struct_a_p_i___dimension_type.html#a59ad77f740c413837948761e7b8a6588',1,'API_DimensionType']]],
   ['ed_5farrowup_6',['ed_arrowUp',['../struct_a_p_i___dimension_type.html#a18d9c45abbc7f1bec7f74cf9510face3',1,'API_DimensionType']]],

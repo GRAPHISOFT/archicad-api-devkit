@@ -240,7 +240,89 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html" title="The PipeElbowPreferenceTable contains cross section related information for Pipe elbows.">PipeElbowPreferenceTable</a> contains cross section related information for Pipe elbows. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 28</dd></dl>
-<p>The table uses the keys defined by the <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_reference_set.html">PipeReferenceSet</a>. To consider a table row usable and valid, it should have all its fields filled, beside its description, which is optional. </p><dl class="section user"><dt>Example code snippet from Test / New MEP</dt><dd>Take a look at <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_preference_table_container_base.html">PreferenceTableContainerBase</a> </dd></dl>
+<p>The table uses the keys defined by the <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_reference_set.html">PipeReferenceSet</a>. To consider a table row usable and valid, it should have all its fields filled, beside its description, which is optional. </p><dl class="section user"><dt>Example code snippet from Test / New MEP</dt><dd>Getters <div class="fragment"><div class="line">        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_class" href="class_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d.html">UniqueID</a>&amp; pipeElbowTableId : pipeElbowTableIds) {</div>
+<div class="line">            <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;PipeElbowPreferenceTable&gt;</a> pipeElbowTable = <a class="code hl_function" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#ad8df5ba67ac6e73b343735e841ffc87b">PipeElbowPreferenceTable::Get</a> (pipeElbowTableId);</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordflow">if</span> (pipeElbowTable.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a890dc4c1dff9e73a993a2410750d8d52">IsErr</a> ())</div>
+<div class="line">                <span class="keywordflow">continue</span>;</div>
+<div class="line"> </div>
+<div class="line">            preferenceReporter.SetTabCount (2);</div>
+<div class="line">            preferenceReporter.Add (<span class="stringliteral">&quot;Preference name&quot;</span>, pipeElbowTable-&gt;GetName ());</div>
+<div class="line">            preferenceReporter.Add (<span class="stringliteral">&quot;Circular table:&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; pipeElbowTable-&gt;GetSize (); ++i) {</div>
+<div class="line">                preferenceReporter.SetTabCount (3);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;ReferenceId&quot;</span>, *pipeElbowTable-&gt;GetReferenceId (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.SetTabCount (0);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Diameter&quot;</span>, *pipeElbowTable-&gt;GetDiameter (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Radius&quot;</span>, *pipeElbowTable-&gt;GetRadius (i), <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                GS::UniString description = *pipeElbowTable-&gt;GetDescription (i);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;Description&quot;</span>, description == GS::EmptyUniString ? <span class="stringliteral">&quot;Empty&quot;</span> : description, false);</div>
+<div class="line">                preferenceReporter.Add (<span class="stringliteral">&quot;, &quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line">                preferenceReporter.Add (*pipeElbowTable-&gt;IsRowValid (i) ? <span class="stringliteral">&quot;Row is valid&quot;</span> : <span class="stringliteral">&quot;Row is not valid&quot;</span>);</div>
+<div class="line">            }</div>
+<div class="line"> </div>
+<div class="line">            preferenceReporter.AddNewLine ();</div>
+<div class="line">        }</div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d_html"><div class="ttname"><a href="class_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d.html">ACAPI::MEP::UniqueID</a></div><div class="ttdoc">The MEP unique identifier.</div><div class="ttdef"><b>Definition:</b> MEPUniqueID.hpp:30</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table_html_ad8df5ba67ac6e73b343735e841ffc87b"><div class="ttname"><a href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#ad8df5ba67ac6e73b343735e841ffc87b">ACAPI::MEP::v1::PipeElbowPreferenceTable::Get</a></div><div class="ttdeci">static Result&lt; PipeElbowPreferenceTable &gt; Get(const UniqueID &amp;uniqueId)</div><div class="ttdoc">Returns a PipeElbowPreferenceTable.</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_result_html"><div class="ttname"><a href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result</a></div><div class="ttdoc">Result is the standard return type of API functions.</div><div class="ttdef"><b>Definition:</b> Result.hpp:845</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_result_html_a890dc4c1dff9e73a993a2410750d8d52"><div class="ttname"><a href="class_a_c_a_p_i_1_1_result.html#a890dc4c1dff9e73a993a2410750d8d52">ACAPI::Result::IsErr</a></div><div class="ttdeci">bool IsErr() const</div><div class="ttdef"><b>Definition:</b> Result.hpp:945</div></div>
+</div><!-- fragment --> Modification <div class="fragment"><div class="line"> </div>
+<div class="line">    <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;PipeElbowPreferenceTable&gt;</a> newTable = <a class="code hl_function" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#ad8df5ba67ac6e73b343735e841ffc87b">PipeElbowPreferenceTable::Get</a> (*newTableId);</div>
+<div class="line">    <span class="keywordflow">if</span> (newTable.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a890dc4c1dff9e73a993a2410750d8d52">IsErr</a> ())</div>
+<div class="line">        <span class="keywordflow">return</span> newTable.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a750f5fba77e0d18fc6b194a11c98244c">UnwrapErr</a> ().kind;</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;PipeReferenceSet&gt;</a> referenceSet = <a class="code hl_function" href="group___m_e_p.html#ga9c9635988fa1b7fb49a2623f5506f510">GetPipeReferenceSet</a> ();</div>
+<div class="line">    <span class="keywordflow">if</span> (referenceSet.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a890dc4c1dff9e73a993a2410750d8d52">IsErr</a> ())</div>
+<div class="line">        <span class="keywordflow">return</span> referenceSet.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a750f5fba77e0d18fc6b194a11c98244c">UnwrapErr</a> ().kind;</div>
+<div class="line"> </div>
+<div class="line">    newTable-&gt;Modify ([&amp;] (<a class="code hl_function" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#aa243ed4bad18b71a4e273a4156a0a9c1">PipeElbowPreferenceTable::Modifier</a>&amp; modifier) -&gt; GSErrCode {</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; referenceSet-&gt;GetSize (); ++i) {</div>
+<div class="line">            <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;uint32_t&gt;</a> referenceId = referenceSet-&gt;GetReferenceId (i);</div>
+<div class="line"> </div>
+<div class="line">            <span class="keywordtype">double</span> value = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span> (*referenceId / 1000.0);</div>
+<div class="line">            modifier.SetDiameterByReferenceId (*referenceId, value);</div>
+<div class="line">            modifier.SetRadiusByReferenceId (*referenceId, value);</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">return</span> NoError;</div>
+<div class="line"> </div>
+<div class="line">    }, <span class="stringliteral">&quot;Fill the new table with values&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    preferenceReporter.Add (<span class="stringliteral">&quot;Empty the first row of the new pipe elbow table.&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    newTable-&gt;Modify ([&amp;] (<a class="code hl_function" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#aa243ed4bad18b71a4e273a4156a0a9c1">PipeElbowPreferenceTable::Modifier</a>&amp; modifier) {</div>
+<div class="line">        <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;void&gt;</a> emptyRowResult = modifier.EmptyRow (0);</div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">if</span> (emptyRowResult.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a939e2710979b665065e7fc91a1d3c8b0">IsOk</a> ())</div>
+<div class="line">            preferenceReporter.Add (<span class="stringliteral">&quot;Empty row was successful.&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">else</span></div>
+<div class="line">            preferenceReporter.Add (<span class="stringliteral">&quot;Empty row unsuccessful&quot;</span>, GS::UniString (emptyRowResult.<a class="code hl_function" href="class_a_c_a_p_i_1_1_result.html#a750f5fba77e0d18fc6b194a11c98244c">UnwrapErr</a> ().text));</div>
+<div class="line"> </div>
+<div class="line">    }, <span class="stringliteral">&quot;Empty Row from preference table.&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    preferenceReporter.Add (<span class="stringliteral">&quot;Set diameter for row identified by ReferenceId.&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    newTable-&gt;Modify ([&amp;] (<a class="code hl_function" href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#aa243ed4bad18b71a4e273a4156a0a9c1">PipeElbowPreferenceTable::Modifier</a>&amp; modifier) {</div>
+<div class="line">        <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;uint32_t&gt;</a> referenceId = newTable-&gt;GetReferenceId (1);</div>
+<div class="line">        <a class="code hl_class" href="class_a_c_a_p_i_1_1_result.html">ACAPI::Result&lt;double&gt;</a> currentDiameter = newTable-&gt;GetDiameter (1);</div>
+<div class="line"> </div>
+<div class="line">        modifier.SetDiameterByReferenceId (*referenceId, *currentDiameter * 2.0);</div>
+<div class="line"> </div>
+<div class="line">    }, <span class="stringliteral">&quot;Set diameter for row identified by ReferenceId.&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line">    preferenceReporter.Write ();</div>
+<div class="line"> </div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table_html_aa243ed4bad18b71a4e273a4156a0a9c1"><div class="ttname"><a href="class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#aa243ed4bad18b71a4e273a4156a0a9c1">ACAPI::MEP::v1::PipeElbowPreferenceTable::Modifier</a></div><div class="ttdeci">Modifier(PipeElbowPreferenceTable &amp;parent)</div><div class="ttdoc">Constructs a Modifier with the given PipeElbowPreferenceTable.</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_result_html_a750f5fba77e0d18fc6b194a11c98244c"><div class="ttname"><a href="class_a_c_a_p_i_1_1_result.html#a750f5fba77e0d18fc6b194a11c98244c">ACAPI::Result::UnwrapErr</a></div><div class="ttdeci">E UnwrapErr() const</div><div class="ttdoc">Unwraps the error value contained in the Result. Trying to UnwrapErr the value while it contains an O...</div><div class="ttdef"><b>Definition:</b> Result.hpp:1140</div></div>
+<div class="ttc" id="aclass_a_c_a_p_i_1_1_result_html_a939e2710979b665065e7fc91a1d3c8b0"><div class="ttname"><a href="class_a_c_a_p_i_1_1_result.html#a939e2710979b665065e7fc91a1d3c8b0">ACAPI::Result::IsOk</a></div><div class="ttdeci">bool IsOk() const</div><div class="ttdef"><b>Definition:</b> Result.hpp:940</div></div>
+<div class="ttc" id="agroup___m_e_p_html_ga9c9635988fa1b7fb49a2623f5506f510"><div class="ttname"><a href="group___m_e_p.html#ga9c9635988fa1b7fb49a2623f5506f510">ACAPI::MEP::v1::GetPipeReferenceSet</a></div><div class="ttdeci">Result&lt; PipeReferenceSet &gt; GetPipeReferenceSet()</div><div class="ttdef"><b>Definition:</b> MEPPipeReferenceSet.hpp:34</div></div>
+</div><!-- fragment --> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad600d4fec1bef1b5f6060f7a8ec2b928" name="ad600d4fec1bef1b5f6060f7a8ec2b928"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad600d4fec1bef1b5f6060f7a8ec2b928">&#9670;&#160;</a></span>EmptyRow()</h2>
