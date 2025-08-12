@@ -1,28 +1,42 @@
 var group___a_p_i_infrastructure =
 [
-    [ "ACAPI::Impl::v1::AbstractFactory", "class_a_c_a_p_i_1_1_impl_1_1v1_1_1_abstract_factory.html", [
-      [ "CreateLicenseInfoProductVersionInfoImpl", "group___a_p_i_infrastructure.html#ga486b21679b8bccbb3ed4f7bd9f9f7fa6", null ]
+    [ "ACAPI::Impl::AbstractFactory", "class_a_c_a_p_i_1_1_impl_1_1_abstract_factory.html", [
+      [ "CreateLicenseInfoProductVersionInfoImpl", "group___a_p_i_infrastructure.html#ga358b755404d0abe4f61696674779fba4", null ]
     ] ],
-    [ "ACAPI::Impl::v1::FactoryRegistry", "class_a_c_a_p_i_1_1_impl_1_1v1_1_1_factory_registry.html", [
-      [ "GetFactory", "group___a_p_i_infrastructure.html#gac84b07a1d6c70e1149d976c8d51a282d", null ],
-      [ "IsFactoryRegistered", "group___a_p_i_infrastructure.html#ga95e7fb0e8d5029c9991f9d2a376a0b3c", null ],
-      [ "RegisterFactory", "group___a_p_i_infrastructure.html#ga9870d428fe0094b20836dabc452488c0", null ],
-      [ "UnregisterFactory", "group___a_p_i_infrastructure.html#ga42fdbf77e7ae9d052c693b8ffc8717fe", null ]
+    [ "ACAPI::Impl::FactoryRegistry", "class_a_c_a_p_i_1_1_impl_1_1_factory_registry.html", [
+      [ "GetFactory", "group___a_p_i_infrastructure.html#ga2158376ca11fd47380624af521b4bb09", null ],
+      [ "IsFactoryRegistered", "group___a_p_i_infrastructure.html#gad29cc0f4c929ba5b98a2728c471326d1", null ],
+      [ "RegisterFactory", "group___a_p_i_infrastructure.html#ga2fda60fb54acc707b2ffeafce3a35050", null ],
+      [ "UnregisterFactory", "group___a_p_i_infrastructure.html#ga671f44a179de25c4c97b5f9ea8cc2621", null ]
+    ] ],
+    [ "ACAPI::AddonNotificationInterface", "class_a_c_a_p_i_1_1_addon_notification_interface.html", [
+      [ "AddonNotificationInterface", "class_a_c_a_p_i_1_1_addon_notification_interface.html#ac4ec5c4bb422e33688531458edb87b73", null ],
+      [ "notificationIdentifier", "class_a_c_a_p_i_1_1_addon_notification_interface.html#a3eeef6897d35607c8cd16c7e822a26fc", null ]
+    ] ],
+    [ "ACAPI::AddonServiceInterface", "class_a_c_a_p_i_1_1_addon_service_interface.html", [
+      [ "AddonServiceInterface", "class_a_c_a_p_i_1_1_addon_service_interface.html#a288aa621e641e42c714ea885c6ec76cd", null ],
+      [ "GetStatus", "class_a_c_a_p_i_1_1_addon_service_interface.html#a33e5fec9f64da7b81f30566a6e7638f2", null ],
+      [ "Initialize", "class_a_c_a_p_i_1_1_addon_service_interface.html#aeb6b6b62efcd7a6950358a88f7e81bf9", null ],
+      [ "RegisterInterface", "class_a_c_a_p_i_1_1_addon_service_interface.html#afd5bbe2a90eeb1c20692261437c2c715", null ],
+      [ "serviceIdentifier", "class_a_c_a_p_i_1_1_addon_service_interface.html#a42beff513bd2e340094adf52caffdee2", null ],
+      [ "status", "class_a_c_a_p_i_1_1_addon_service_interface.html#aa2580eaf808fd7271f082ee1a6f984f3", null ]
     ] ],
     [ "ACAPI::LicenseInfo::Impl::ProductVersionInfoImplBase", "class_a_c_a_p_i_1_1_license_info_1_1_impl_1_1_product_version_info_impl_base.html", [
       [ "ProductVersionInfoImplBase", "group___a_p_i_infrastructure.html#gac37fcad93e540d1ee554fb9b60ba06e3", null ],
+      [ "GetAppVersionString", "group___a_p_i_infrastructure.html#ga5debd7035fa3e6520df4038245f4a1f8", null ],
       [ "GetBuildNum", "group___a_p_i_infrastructure.html#ga9e40e85b39bd465e3d2d75bb8f921020", null ],
       [ "GetGSLanguageCode", "group___a_p_i_infrastructure.html#gabf13ae03eeadd4a61811854d379d6325", null ],
+      [ "GetGSProductType", "group___a_p_i_infrastructure.html#gaf3206ce0dc71977730434286e15bcdd0", null ],
+      [ "GetHotfixVersionString", "group___a_p_i_infrastructure.html#gaf92a00fe9d1a74365db13d9c7795170d", null ],
+      [ "GetMainVersionString", "group___a_p_i_infrastructure.html#gae903a5200be61c2c6a12b8f769d6de49", null ],
       [ "GetProductFamilyId", "group___a_p_i_infrastructure.html#gac7ed31a40a4739a4c8a7551b69995bce", null ],
-      [ "GetVersionNum1", "group___a_p_i_infrastructure.html#ga2a7b84eaa22af3d370c4962bd06f4ae0", null ],
-      [ "GetVersionNum2", "group___a_p_i_infrastructure.html#gac2b24f688fb19f70e6761688b74f4e8d", null ],
-      [ "GetVersionNum3", "group___a_p_i_infrastructure.html#ga84a39af49df465a0ffe91058e363091f", null ],
-      [ "GetVersionString", "group___a_p_i_infrastructure.html#gaed33627c72f822e5bdd9e26a48c3f25e", null ]
+      [ "GetProductName", "group___a_p_i_infrastructure.html#ga309a915bb3b22109f4e8b90e20e3d117", null ],
+      [ "GetUpdateVersionString", "group___a_p_i_infrastructure.html#gaed823b84805d7715711afd705e851bee", null ]
     ] ],
     [ "ACAPI::Impl::ObjectImpl", "class_a_c_a_p_i_1_1_impl_1_1_object_impl.html", [
       [ "ObjectImpl", "group___a_p_i_infrastructure.html#ga14a8f819883f58917977ce292ee57f75", null ],
       [ "GetToken", "group___a_p_i_infrastructure.html#gac7c53ea3f1bb26b125c20e846704ac4a", null ],
-      [ "token", "class_a_c_a_p_i_1_1_impl_1_1_object_impl.html#af7d5faa9d021bef2cbbcc03b28deee97", null ]
+      [ "token", "class_a_c_a_p_i_1_1_impl_1_1_object_impl.html#a41a9259a949f4b7fb95f70b643046547", null ]
     ] ],
     [ "ACAPI::Error", "struct_a_c_a_p_i_1_1_error.html", [
       [ "Error", "struct_a_c_a_p_i_1_1_error.html#ab38ba46df4abd22bff76aa723e68824f", null ],
@@ -60,19 +74,30 @@ var group___a_p_i_infrastructure =
       [ "UnwrapErr", "class_a_c_a_p_i_1_1_result.html#a750f5fba77e0d18fc6b194a11c98244c", null ],
       [ "UnwrapOr", "class_a_c_a_p_i_1_1_result.html#a082c78a2b300b049201d4de5373dcbd6", null ]
     ] ],
-    [ "ACAPI::v1::Object", "class_a_c_a_p_i_1_1v1_1_1_object.html", [
-      [ "~Object", "class_a_c_a_p_i_1_1v1_1_1_object.html#a0e4f3d37841d60e05c955f5970dd7b64", null ],
-      [ "Object", "class_a_c_a_p_i_1_1v1_1_1_object.html#a11168401774f109bfa3ad738e70ceeab", null ],
-      [ "GetToken", "class_a_c_a_p_i_1_1v1_1_1_object.html#a7bac5266fe11a517c979f8d3cf3c56b1", null ],
-      [ "mImpl", "class_a_c_a_p_i_1_1v1_1_1_object.html#ac976b4f44239f5dbb66bf14ab478e18d", null ]
+    [ "ACAPI::v1::APIProperty", "class_a_c_a_p_i_1_1v1_1_1_a_p_i_property.html", null ],
+    [ "ACAPI::v1::APIPropertyGroup", "class_a_c_a_p_i_1_1v1_1_1_a_p_i_property_group.html", null ],
+    [ "ACAPI::v1::PropertyOperationManager", "class_a_c_a_p_i_1_1v1_1_1_property_operation_manager.html", [
+      [ "AddPropertyGroup", "group___a_p_i_infrastructure.html#ga9e6d834d8249d558312c5e5101e6a075", null ],
+      [ "CreateAndAddAPIProperty", "group___a_p_i_infrastructure.html#gab50eb874a5b5070cf5f2af0e67865ff3", null ],
+      [ "CreateAPIPropertyGroup", "group___a_p_i_infrastructure.html#gac42bf64de8f1239286fd3c74cf0a7225", null ],
+      [ "RegisterAllProperties", "group___a_p_i_infrastructure.html#ga6aa9c636dd7aa9109de65ecff994ff6b", null ],
+      [ "UnregisterAllProperties", "group___a_p_i_infrastructure.html#ga2979a6ae7882d225aa83aeafb54dcd48", null ],
+      [ "CreatePropertyOperationManager", "class_a_c_a_p_i_1_1v1_1_1_property_operation_manager.html#a0a82c5a1c6cae2a73b89e1f76435cfd0", null ]
     ] ],
-    [ "ACAPI::v1::UniqueID", "class_a_c_a_p_i_1_1v1_1_1_unique_i_d.html", [
-      [ "UniqueID", "class_a_c_a_p_i_1_1v1_1_1_unique_i_d.html#a5217671ba994b42eb74710cf78ccccef", null ],
-      [ "GetGuid", "class_a_c_a_p_i_1_1v1_1_1_unique_i_d.html#a731f2437fd039e79f66c89af0bebb6cc", null ],
-      [ "GetToken", "class_a_c_a_p_i_1_1v1_1_1_unique_i_d.html#abf8c54948a9c8142ce8a48136b11a6ef", null ],
-      [ "operator!=", "class_a_c_a_p_i_1_1v1_1_1_unique_i_d.html#a143e6fbaf745d6a6ab7ff79768dd2972", null ],
-      [ "operator<", "class_a_c_a_p_i_1_1v1_1_1_unique_i_d.html#a94ad48b5c669622ef136725b124cc115", null ],
-      [ "operator==", "class_a_c_a_p_i_1_1v1_1_1_unique_i_d.html#a6dd3dc6f35b777e1272c3c1a051f4276", null ]
+    [ "ACAPI::Object", "class_a_c_a_p_i_1_1_object.html", [
+      [ "~Object", "class_a_c_a_p_i_1_1_object.html#a85a1ee94bda793174b4a4a537c4a903d", null ],
+      [ "Object", "class_a_c_a_p_i_1_1_object.html#add31352248e81c9ff1affa06f5f6de6c", null ],
+      [ "GetToken", "class_a_c_a_p_i_1_1_object.html#af63f500b07f169f86d13574a6aa9d1cd", null ],
+      [ "mImpl", "class_a_c_a_p_i_1_1_object.html#a2a3667f58511daf210066ca2b44dd1e3", null ]
+    ] ],
+    [ "ACAPI::UniqueID", "class_a_c_a_p_i_1_1_unique_i_d.html", [
+      [ "UniqueID", "class_a_c_a_p_i_1_1_unique_i_d.html#add4b799648924f8a695f5516d2ab7fb8", null ],
+      [ "UniqueID", "class_a_c_a_p_i_1_1_unique_i_d.html#a694921069dd944965f34c39f481f2441", null ],
+      [ "GetGuid", "class_a_c_a_p_i_1_1_unique_i_d.html#a4406a1a1fcf1ed3a1b32e401a69b950d", null ],
+      [ "GetToken", "class_a_c_a_p_i_1_1_unique_i_d.html#afdb3de3399692ff098ddaa97df6654b1", null ],
+      [ "operator!=", "class_a_c_a_p_i_1_1_unique_i_d.html#a30be477b03502459bad96cfccfa4609d", null ],
+      [ "operator<", "class_a_c_a_p_i_1_1_unique_i_d.html#a11682e88784d861486df63685154cf4a", null ],
+      [ "operator==", "class_a_c_a_p_i_1_1_unique_i_d.html#aed8dfa5f699c8d606a096f0a073d8379", null ]
     ] ],
     [ "API_Guid", "struct_a_p_i___guid.html", [
       [ "GenerateHashValue", "struct_a_p_i___guid.html#a9b93ba45da019713c003510b9fc7ed9d", null ]
@@ -83,32 +108,124 @@ var group___a_p_i_infrastructure =
       [ "IsType", "struct_a_p_i_variant.html#a0da374a37cb8e03f13431f12f8c497dd", null ],
       [ "operator=", "struct_a_p_i_variant.html#aee2259a3160b5ad54310db0f2c531917", null ],
       [ "Put", "struct_a_p_i_variant.html#a62cd6457b837a6795c3dfb4f95dbf61a", null ],
-      [ "buffer", "struct_a_p_i_variant.html#a24e40743843eed46335d995b06164278", null ],
-      [ "typeIndex", "struct_a_p_i_variant.html#a0193569a450bf0cb66c04ef61470d073", null ]
+      [ "buffer", "struct_a_p_i_variant.html#a29621ea218aa4b50050e86483b33f89b", null ],
+      [ "typeIndex", "struct_a_p_i_variant.html#a08c6b45f20f6dcd11844c2fab991a6a6", null ]
     ] ],
     [ "APIOptional< T >", "struct_a_p_i_optional.html", [
       [ "operator=", "struct_a_p_i_optional.html#a6e587a4d20b6e05bf830abf1ac0e9bde", null ],
       [ "operator=", "struct_a_p_i_optional.html#a11d01f6b44f6189f6db1ab849c654073", null ],
-      [ "hasValue", "struct_a_p_i_optional.html#a84ca2b2e1a057ae9395d9510ea89aebd", null ],
-      [ "value", "struct_a_p_i_optional.html#a9c97c30e1ba6545fe28f474d8ec1fc0e", null ]
+      [ "hasValue", "struct_a_p_i_optional.html#a5088442ba785bbebeffaa7a188923cb3", null ],
+      [ "value", "struct_a_p_i_optional.html#a949af858551a593719b642202d1ee3f0", null ]
     ] ],
-    [ "ACAPI::Impl::v1::AbstractFactory::CreateLicenseInfoProductVersionInfoImpl", "group___a_p_i_infrastructure.html#ga486b21679b8bccbb3ed4f7bd9f9f7fa6", null ],
+    [ "APIErrCodes", "group___a_p_i_infrastructure.html#ga75cc225b8e9434d91621dd230c3013a2", [
+      [ "APIERR_GENERAL", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2ab1eb22c857b581ec7efdb74abcc93006", null ],
+      [ "APIERR_MEMFULL", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a937a7bb80e351259609de34be045d776", null ],
+      [ "APIERR_CANCEL", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a725edca5c5880053b0b783fcd0cdb8a3", null ],
+      [ "APIERR_BADID", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a53ce20ea126a4065688e1c8dfd311d2d", null ],
+      [ "APIERR_BADINDEX", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a35f268d718718cb960ebf9b6d715424e", null ],
+      [ "APIERR_BADNAME", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a08ac12be81b425f6d3139c2711c9294d", null ],
+      [ "APIERR_BADPARS", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2aa80187ab8c7f0d6fc76dafb582ba46c0", null ],
+      [ "APIERR_BADPOLY", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a4f3cca2b0fc592bc6874adc0af5f8ec9", null ],
+      [ "APIERR_BADDATABASE", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2aa4b50e11e27c77ba308f5edbf29cf471", null ],
+      [ "APIERR_BADWINDOW", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2acac98ca77ffb1276a4881e9aa1254520", null ],
+      [ "APIERR_BADKEYCODE", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a9e2f49a5504e5647ddbb7adedbc3416d", null ],
+      [ "APIERR_BADPLATFORMSIGN", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a276c9f00a4187a631cd30eed677e01d4", null ],
+      [ "APIERR_BADPLANE", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2af59124b3ab2d5871a1b98f15f0257d5d", null ],
+      [ "APIERR_BADUSERID", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a2228d8b46d6cd5cd69e469b0628b56af", null ],
+      [ "APIERR_BADVALUE", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a5b9a504387c071afa5cf3251ff57c24f", null ],
+      [ "APIERR_BADELEMENTTYPE", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a8386547bdbdcd7d31534b015ec7b72c1", null ],
+      [ "APIERR_IRREGULARPOLY", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a027fa2407ca16316a1a8fb2c6156d77d", null ],
+      [ "APIERR_BADEXPRESSION", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a5041e2105fd57359b7329cd781d1848f", null ],
+      [ "APIERR_BADGUID", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2ae6f524d30e129e2251002401d6f85706", null ],
+      [ "APIERR_BADTOKEN", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a172a72b16114a2cd615768fe0eb6bc79", null ],
+      [ "APIERR_NO3D", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a5283f6cf0374b51a94ca8897ef5265c1", null ],
+      [ "APIERR_NOMORE", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a1021bd23cf2b4d01264bf4c6bac1cf4c", null ],
+      [ "APIERR_NOPLAN", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a8626324bf68f0c7b79a4881e069fbd1f", null ],
+      [ "APIERR_NOLIB", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a526d40bf737d232ae92582ec6d6dc0bb", null ],
+      [ "APIERR_NOLIBSECT", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a0b25251c6c569a96817c393dadf99664", null ],
+      [ "APIERR_NOSEL", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2abccdb2aad6d1cd75984b7a6a8935f824", null ],
+      [ "APIERR_NOTEDITABLE", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a96b01646ecad352b1439e0ca8428948e", null ],
+      [ "APIERR_NOTSUBTYPEOF", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a4ff7707f5c7f49a90998cdf26b1f590f", null ],
+      [ "APIERR_NOTEQUALMAIN", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a37a7a70f7b28af1c9bd10b001e8042e2", null ],
+      [ "APIERR_NOTEQUALREVISION", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2ad3814796fcdfc9a4d7ce51e7faa90e94", null ],
+      [ "APIERR_NOTEAMWORKPROJECT", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a77e9793b147bff8f851a2240ae097d78", null ],
+      [ "APIERR_NOUSERDATA", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a8a2faa2ad2a04236f5a9f6c770848979", null ],
+      [ "APIERR_MOREUSER", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a56e7aec40d60c38a0d7e6268a33952cb", null ],
+      [ "APIERR_LINKEXIST", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a4f05aa1e350a05f80929b90716d16dd3", null ],
+      [ "APIERR_LINKNOTEXIST", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2aebcf8f683d31dda93a9a2ac207c8a7bc", null ],
+      [ "APIERR_WINDEXIST", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2ad73cdafcecafc71209945a4950398970", null ],
+      [ "APIERR_WINDNOTEXIST", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a25794e1f884a31fff94f3130df59cea9", null ],
+      [ "APIERR_UNDOEMPTY", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a5dc51eeac081e3abb5e730af66a84ee9", null ],
+      [ "APIERR_REFERENCEEXIST", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2abe79d2175f4d11666e145cc86ca867ed", null ],
+      [ "APIERR_NAMEALREADYUSED", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a6a2db68d808e7253540c9ed718cdd443", null ],
+      [ "APIERR_ATTREXIST", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2ac2e52c270711a5ed787f4e9efaa150ff", null ],
+      [ "APIERR_DELETED", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2af7356cf647514e0c342b7d07d1264caa", null ],
+      [ "APIERR_LOCKEDLAY", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2ab2205e646c7bcb6f2fb05c041635a635", null ],
+      [ "APIERR_HIDDENLAY", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a3763635006c840210beb5a1d49ceaff8", null ],
+      [ "APIERR_INVALFLOOR", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2afe49d326e09dc19d908a4c1d7c58b504", null ],
+      [ "APIERR_NOTMINE", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a0711132d7304298da2bdb174d931230f", null ],
+      [ "APIERR_NOACCESSRIGHT", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2ac64f7c2b07e4c36c636b59e9d0688b0a", null ],
+      [ "APIERR_BADPROPERTY", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2ae07ce37ca9232d94dfb14764b018b1e0", null ],
+      [ "APIERR_BADCLASSIFICATION", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a918b03b55e78133c0b23638259af07b7", null ],
+      [ "APIERR_NOTEXISTINGLAYER", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a6c87099012bd81c46aa6c7033c235a21", null ],
+      [ "APIERR_NOCURRATTRSET", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a8e2d7a68c192f8e892a6f4dadaaa4c4a", null ],
+      [ "APIERR_MODULNOTINSTALLED", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2ab4b2dc28fb54888b1e38d245cace3d81", null ],
+      [ "APIERR_MODULCMDMINE", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2af55300610a40dd14046a9abf28bf13af", null ],
+      [ "APIERR_MODULCMDNOTSUPPORTED", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2af080e474fd4327e3893de2bd84c0189e", null ],
+      [ "APIERR_MODULCMDVERSNOTSUPPORTED", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a75de5eabe654decb122527f3cb1950b2", null ],
+      [ "APIERR_NOMODULEDATA", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a68539c6a5b6d2607954da8fdd2324d8f", null ],
+      [ "APIERR_DEPRECATEDCALL", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2aba5305fa43a2e621d31fafb3c7e25438", null ],
+      [ "APIERR_PAROVERLAP", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a51c81ed41e4f16b04b3ee17bb603a5e8", null ],
+      [ "APIERR_PARMISSING", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a73496e975e5688cfa0badab41a6176ed", null ],
+      [ "APIERR_PAROVERFLOW", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2ad10af2647f7b1c383fa40cf29312ffa7", null ],
+      [ "APIERR_PARIMPLICIT", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a920f87f9c33fea6402917d3ae6f2a52a", null ],
+      [ "APIERR_RUNOVERLAP", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a4b5339e66370b051db7cf604ca70d2b7", null ],
+      [ "APIERR_RUNMISSING", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a4b28ab04b707d223962756df5502bec4", null ],
+      [ "APIERR_RUNOVERFLOW", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2ac9da72cebe6b5bdca3160159b817e2f4", null ],
+      [ "APIERR_RUNIMPLICIT", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2ae9b6fd851c6cfd51122124f637ce5cca", null ],
+      [ "APIERR_RUNPROTECTED", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2afb1954196caea062ce679cc80f7ba8e1", null ],
+      [ "APIERR_EOLOVERLAP", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a8911d23c757ed8baf46963b275f8ce36", null ],
+      [ "APIERR_TABOVERLAP", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a311b209d2bdbb353b98da61df5ea8ae0", null ],
+      [ "APIERR_NOTINIT", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a1ed57dcc6bee5b03ce6bfd9d59976c73", null ],
+      [ "APIERR_NESTING", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a03bb83a00ae064e151d25d3d2134dce4", null ],
+      [ "APIERR_NOTSUPPORTED", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2ae70ba8d8b6dfd10115cc09615551041c", null ],
+      [ "APIERR_REFUSEDCMD", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a51b2febde5b291f54637025bb184ea11", null ],
+      [ "APIERR_REFUSEDPAR", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2abcadbb95a508add1343754562f244715", null ],
+      [ "APIERR_READONLY", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a8304b4e09a79cfb30bfe325a997102bb", null ],
+      [ "APIERR_SERVICEFAILED", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a92627b6a8c2b31c900cf6a1a1e78e5ac", null ],
+      [ "APIERR_COMMANDFAILED", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a279e4e96bf09f4801d6363eecde5f6f9", null ],
+      [ "APIERR_NEEDSUNDOSCOPE", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2aafa4ff5bcfe3538e1d9ad1ecc9f3794a", null ],
+      [ "APIERR_UNDOSCOPEMISUSE", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a95f2f106595887ce96ef0d30120b3fbb", null ],
+      [ "APIERR_MISSINGCODE", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a4ac3ecca14071d40de54ea1c6320c320", null ],
+      [ "APIERR_MISSINGDEF", "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a3cfca06f6481c55bdda9302efb80bb1e", null ]
+    ] ],
+    [ "ACAPI::v1::PropertyOperationManager::AddPropertyGroup", "group___a_p_i_infrastructure.html#ga9e6d834d8249d558312c5e5101e6a075", null ],
+    [ "ACAPI::v1::PropertyOperationManager::CreateAndAddAPIProperty", "group___a_p_i_infrastructure.html#gab50eb874a5b5070cf5f2af0e67865ff3", null ],
+    [ "ACAPI::v1::PropertyOperationManager::CreateAPIPropertyGroup", "group___a_p_i_infrastructure.html#gac42bf64de8f1239286fd3c74cf0a7225", null ],
+    [ "ACAPI::Impl::AbstractFactory::CreateLicenseInfoProductVersionInfoImpl", "group___a_p_i_infrastructure.html#ga358b755404d0abe4f61696674779fba4", null ],
+    [ "ACAPI::v1::CreatePropertyOperationManager", "group___a_p_i_infrastructure.html#gacc347d3d992679f8f9042676b13d349e", null ],
     [ "GenerateAPIGuid", "group___a_p_i_infrastructure.html#gabda26142410fc44949e54fe6433fa61f", null ],
+    [ "ACAPI::LicenseInfo::Impl::ProductVersionInfoImplBase::GetAppVersionString", "group___a_p_i_infrastructure.html#ga5debd7035fa3e6520df4038245f4a1f8", null ],
     [ "ACAPI::LicenseInfo::Impl::ProductVersionInfoImplBase::GetBuildNum", "group___a_p_i_infrastructure.html#ga9e40e85b39bd465e3d2d75bb8f921020", null ],
-    [ "ACAPI::Impl::v1::FactoryRegistry::GetFactory", "group___a_p_i_infrastructure.html#gac84b07a1d6c70e1149d976c8d51a282d", null ],
+    [ "ACAPI::GetCEIPProjectID", "group___a_p_i_infrastructure.html#ga97329f2003f1b39d3a2a0a10ef0d3b14", null ],
+    [ "ACAPI::Impl::FactoryRegistry::GetFactory", "group___a_p_i_infrastructure.html#ga2158376ca11fd47380624af521b4bb09", null ],
     [ "ACAPI::LicenseInfo::Impl::ProductVersionInfoImplBase::GetGSLanguageCode", "group___a_p_i_infrastructure.html#gabf13ae03eeadd4a61811854d379d6325", null ],
-    [ "ACAPI::Impl::v1::FactoryRegistry::GetInstance", "group___a_p_i_infrastructure.html#ga148632887304a64d14ceb3617b4f06ea", null ],
+    [ "ACAPI::LicenseInfo::Impl::ProductVersionInfoImplBase::GetGSProductType", "group___a_p_i_infrastructure.html#gaf3206ce0dc71977730434286e15bcdd0", null ],
+    [ "ACAPI::LicenseInfo::Impl::ProductVersionInfoImplBase::GetHotfixVersionString", "group___a_p_i_infrastructure.html#gaf92a00fe9d1a74365db13d9c7795170d", null ],
+    [ "ACAPI::Impl::FactoryRegistry::GetInstance", "group___a_p_i_infrastructure.html#ga17fb140fb67576b8401b0d802e685fa2", null ],
+    [ "ACAPI::LicenseInfo::Impl::ProductVersionInfoImplBase::GetMainVersionString", "group___a_p_i_infrastructure.html#gae903a5200be61c2c6a12b8f769d6de49", null ],
     [ "ACAPI::LicenseInfo::Impl::ProductVersionInfoImplBase::GetProductFamilyId", "group___a_p_i_infrastructure.html#gac7ed31a40a4739a4c8a7551b69995bce", null ],
+    [ "ACAPI::LicenseInfo::Impl::ProductVersionInfoImplBase::GetProductName", "group___a_p_i_infrastructure.html#ga309a915bb3b22109f4e8b90e20e3d117", null ],
     [ "ACAPI::Impl::ObjectImpl::GetToken", "group___a_p_i_infrastructure.html#gac7c53ea3f1bb26b125c20e846704ac4a", null ],
-    [ "ACAPI::LicenseInfo::Impl::ProductVersionInfoImplBase::GetVersionNum1", "group___a_p_i_infrastructure.html#ga2a7b84eaa22af3d370c4962bd06f4ae0", null ],
-    [ "ACAPI::LicenseInfo::Impl::ProductVersionInfoImplBase::GetVersionNum2", "group___a_p_i_infrastructure.html#gac2b24f688fb19f70e6761688b74f4e8d", null ],
-    [ "ACAPI::LicenseInfo::Impl::ProductVersionInfoImplBase::GetVersionNum3", "group___a_p_i_infrastructure.html#ga84a39af49df465a0ffe91058e363091f", null ],
-    [ "ACAPI::LicenseInfo::Impl::ProductVersionInfoImplBase::GetVersionString", "group___a_p_i_infrastructure.html#gaed33627c72f822e5bdd9e26a48c3f25e", null ],
-    [ "ACAPI::Impl::v1::FactoryRegistry::IsFactoryRegistered", "group___a_p_i_infrastructure.html#ga95e7fb0e8d5029c9991f9d2a376a0b3c", null ],
+    [ "ACAPI::LicenseInfo::Impl::ProductVersionInfoImplBase::GetUpdateVersionString", "group___a_p_i_infrastructure.html#gaed823b84805d7715711afd705e851bee", null ],
+    [ "ACAPI::IsDomainAvailable", "group___a_p_i_infrastructure.html#ga76a7915df6ec2bb273b1eda0e300e6cf", null ],
+    [ "ACAPI::Impl::FactoryRegistry::IsFactoryRegistered", "group___a_p_i_infrastructure.html#gad29cc0f4c929ba5b98a2728c471326d1", null ],
     [ "ACAPI::Impl::ObjectImpl::ObjectImpl", "group___a_p_i_infrastructure.html#ga14a8f819883f58917977ce292ee57f75", null ],
     [ "operator==", "group___a_p_i_infrastructure.html#gafcab1d7aa26c4f36254852f9a1a48bba", null ],
     [ "ACAPI::LicenseInfo::Impl::ProductVersionInfoImplBase::ProductVersionInfoImplBase", "group___a_p_i_infrastructure.html#gac37fcad93e540d1ee554fb9b60ba06e3", null ],
-    [ "ACAPI::Impl::v1::FactoryRegistry::RegisterFactory", "group___a_p_i_infrastructure.html#ga9870d428fe0094b20836dabc452488c0", null ],
-    [ "ACAPI::Impl::v1::FactoryRegistry::UnregisterFactory", "group___a_p_i_infrastructure.html#ga42fdbf77e7ae9d052c693b8ffc8717fe", null ],
-    [ "APINULLGuid", "group___a_p_i_infrastructure.html#ga4dc3038c589dba5b873b7902fd0733b0", null ]
+    [ "ACAPI::v1::PropertyOperationManager::RegisterAllProperties", "group___a_p_i_infrastructure.html#ga6aa9c636dd7aa9109de65ecff994ff6b", null ],
+    [ "ACAPI::Impl::FactoryRegistry::RegisterFactory", "group___a_p_i_infrastructure.html#ga2fda60fb54acc707b2ffeafce3a35050", null ],
+    [ "ACAPI::v1::PropertyOperationManager::UnregisterAllProperties", "group___a_p_i_infrastructure.html#ga2979a6ae7882d225aa83aeafb54dcd48", null ],
+    [ "ACAPI::Impl::FactoryRegistry::UnregisterFactory", "group___a_p_i_infrastructure.html#ga671f44a179de25c4c97b5f9ea8cc2621", null ],
+    [ "APINULLGuid", "group___a_p_i_infrastructure.html#ga29716e37ee11f9f3bbd3cbd2fda5adc3", null ]
 ];

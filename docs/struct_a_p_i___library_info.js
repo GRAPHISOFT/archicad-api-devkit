@@ -1,11 +1,11 @@
 var struct_a_p_i___library_info =
 [
-    [ "available", "struct_a_p_i___library_info.html#ab2bfa27dbd4edf52873afa1e680ec5e1", null ],
-    [ "filler", "struct_a_p_i___library_info.html#aed59dd8ec4b498c8e26f91bf8dd34daa", null ],
-    [ "libraryType", "struct_a_p_i___library_info.html#a5445a3b9d070a0b03191d54d5570e552", null ],
-    [ "location", "struct_a_p_i___library_info.html#aeae7df459d12520fd79c9bfd693827c0", null ],
-    [ "name", "struct_a_p_i___library_info.html#ac9f99f8562e5868958109f0823389929", null ],
-    [ "readOnly", "struct_a_p_i___library_info.html#aaf53f5f41dde83392bf5ccdc273f6946", null ],
-    [ "twServerUrl", "struct_a_p_i___library_info.html#a4245ca51025a56f3142418a15e96987e", null ],
-    [ "urlWebLibrary", "struct_a_p_i___library_info.html#aeab5e8dd89232473da3204c963b5f71e", null ]
+    [ "available", "struct_a_p_i___library_info.html#a70edd7c899f07548572642f5ae5dfcde", null ],
+    [ "filler", "struct_a_p_i___library_info.html#aa6d51d076cbaf514faa53cb549ab0700", null ],
+    [ "libraryType", "struct_a_p_i___library_info.html#acecd7b35749a6d663115e3be254c282b", null ],
+    [ "location", "struct_a_p_i___library_info.html#a9ddf874b9caa3d024725172cc04b9801", null ],
+    [ "name", "struct_a_p_i___library_info.html#ad561c8d6813a576b9d048c28bcbf68ca", null ],
+    [ "readOnly", "struct_a_p_i___library_info.html#a81338a34321c882e417ed2fa44c2ab16", null ],
+    [ "twServerUrl", "struct_a_p_i___library_info.html#a374bf84f1cab1312a639159620980ca8", null ],
+    [ "urlWebLibrary", "struct_a_p_i___library_info.html#a8f01034e727f9a8f4deccb6e5bb931c5", null ]
 ];

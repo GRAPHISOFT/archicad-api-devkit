@@ -1,6 +1,6 @@
 var struct_a_p_i___contour_edge_data =
 [
-    [ "edgeTrim", "struct_a_p_i___contour_edge_data.html#a9142d6c4790bd8bddf6792d3d973bbfb", null ],
-    [ "edgeType", "struct_a_p_i___contour_edge_data.html#af04cc9b0f4b5fa88e797e321b1f9506c", null ],
-    [ "sideMaterial", "struct_a_p_i___contour_edge_data.html#a0e24c79b50ecb7a7fa484f6ddf44b360", null ]
+    [ "edgeTrim", "struct_a_p_i___contour_edge_data.html#a6e4e85d5c7639ac247047e73ffe6f305", null ],
+    [ "edgeType", "struct_a_p_i___contour_edge_data.html#add1de9a1e99005c6ba46f7126a7e4678", null ],
+    [ "sideMaterial", "struct_a_p_i___contour_edge_data.html#ac770448418532cfe151caffe27385c05", null ]
 ];

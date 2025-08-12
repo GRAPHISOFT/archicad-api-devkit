@@ -13,7 +13,7 @@ var struct_a_p_i___elem_type =
     [ "operator==", "struct_a_p_i___elem_type.html#a7dd0d4e245f59203d1e29409e41de966", null ],
     [ "operator==", "struct_a_p_i___elem_type.html#aaed4f133ffee47f9d283e167b8f7eb39", null ],
     [ "operator==", "struct_a_p_i___elem_type.html#a4e66b7137b9c0e12f18ffe61b26a92d6", null ],
-    [ "classID", "struct_a_p_i___elem_type.html#a750a7927b027674593ee6fdb2d139213", null ],
-    [ "typeID", "struct_a_p_i___elem_type.html#a9f30f373ae0f50a8ae87eb6cf5a384d2", null ],
-    [ "variationID", "struct_a_p_i___elem_type.html#a387c2a8ef40369182827a38050b1b21f", null ]
+    [ "classID", "struct_a_p_i___elem_type.html#ac5a42287f98c907c1802cfb055c95e36", null ],
+    [ "typeID", "struct_a_p_i___elem_type.html#a7f5c563f02fce9eed861b2c0dc9d7daa", null ],
+    [ "variationID", "struct_a_p_i___elem_type.html#aec41091f6923efe66052dc8f111770bd", null ]
 ];

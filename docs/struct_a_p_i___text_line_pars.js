@@ -1,12 +1,12 @@
 var struct_a_p_i___text_line_pars =
 [
-    [ "drvScaleCorr", "struct_a_p_i___text_line_pars.html#a1f631abcfde4a088d9be2f677833108c", null ],
-    [ "index", "struct_a_p_i___text_line_pars.html#a0a3b642bd1ac7215806ba092d9c3ada8", null ],
-    [ "lineStr", "struct_a_p_i___text_line_pars.html#ab89796bf3509838ce401a6df4843b5b3", null ],
-    [ "lineUniStr", "struct_a_p_i___text_line_pars.html#a6a11fcceb9d7498736d74dd33ae648bf", null ],
-    [ "wantsLongestIndex", "struct_a_p_i___text_line_pars.html#ad3dfd77465c8a914bd69df62f253852b", null ],
-    [ "wFace", "struct_a_p_i___text_line_pars.html#a2a6862e79033690a023e0252ba37609e", null ],
-    [ "wFont", "struct_a_p_i___text_line_pars.html#a75f86b3b5d9e2e37e276bca4b13702d4", null ],
-    [ "wSize", "struct_a_p_i___text_line_pars.html#aaaf977ef0a2dfd1afb04f3eaefafbde6", null ],
-    [ "wSlant", "struct_a_p_i___text_line_pars.html#ac5a5aedb479e9e3851daabbf194bbdf4", null ]
+    [ "drvScaleCorr", "struct_a_p_i___text_line_pars.html#a9301eeacbe696745327d544d43a1fded", null ],
+    [ "index", "struct_a_p_i___text_line_pars.html#a052d5bbce74c0514b6c85c07d6f2957a", null ],
+    [ "lineStr", "struct_a_p_i___text_line_pars.html#a8cb911f449cdb2b8a49c0600fa812d44", null ],
+    [ "lineUniStr", "struct_a_p_i___text_line_pars.html#a6ed6e74d9f53a7f745763d32d4e73fe1", null ],
+    [ "wantsLongestIndex", "struct_a_p_i___text_line_pars.html#adb01e89aa8d6615ddb9d91348a5a7edc", null ],
+    [ "wFace", "struct_a_p_i___text_line_pars.html#ab26d9d0df63a953591adc28bc05dfc99", null ],
+    [ "wFont", "struct_a_p_i___text_line_pars.html#aca55c6cb7921aef854f8602e19360a4b", null ],
+    [ "wSize", "struct_a_p_i___text_line_pars.html#a141b155af8e5dd452c09c970e3c00883", null ],
+    [ "wSlant", "struct_a_p_i___text_line_pars.html#abdab278749e5be32d6ca3f5dab7a21ed", null ]
 ];

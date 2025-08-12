@@ -1,14 +1,14 @@
 var struct_a_p_i___favorite =
 [
     [ "API_Favorite", "struct_a_p_i___favorite.html#a601d4c31e9a53e6ea886059679798765", null ],
-    [ "classifications", "struct_a_p_i___favorite.html#a39b2e963ee1f60f3ceb9d9d284e44b35", null ],
-    [ "elemCategoryValues", "struct_a_p_i___favorite.html#a5e82f391f488ea8e75c98865488f9914", null ],
-    [ "element", "struct_a_p_i___favorite.html#a45d4564ac009bfcc3b19e0737be1d49a", null ],
-    [ "elementMarker", "struct_a_p_i___favorite.html#a1db913959b35c4fe48e54637a6281930", null ],
-    [ "folder", "struct_a_p_i___favorite.html#a8d4c52e941e03a5e2a92373114dbc5c2", null ],
-    [ "memo", "struct_a_p_i___favorite.html#ad8f8280bc9371b9c45e8d11ac85473e0", null ],
-    [ "memoMarker", "struct_a_p_i___favorite.html#ae40d6e8750849205dabcfa93ac4f539b", null ],
-    [ "name", "struct_a_p_i___favorite.html#ad7144ff3214a931b406f93fb44aaa352", null ],
-    [ "properties", "struct_a_p_i___favorite.html#aa4907ec6e4783dfbac2cf4ea46073371", null ],
-    [ "subElements", "struct_a_p_i___favorite.html#aa7b078093b1f99ba637fdf5456ef78ee", null ]
+    [ "classifications", "struct_a_p_i___favorite.html#acaa5a1b6ff49aca54ea611b5a1635bdb", null ],
+    [ "elemCategoryValues", "struct_a_p_i___favorite.html#a911177f2fc3a0fd754bebdd2bcbc2f72", null ],
+    [ "element", "struct_a_p_i___favorite.html#aea67a912eb2a7ca99729df9d7f2e32bb", null ],
+    [ "elementMarker", "struct_a_p_i___favorite.html#aa2d44b2af281014d38f7b3e475fba6cf", null ],
+    [ "folder", "struct_a_p_i___favorite.html#ab85f7754cb93a609683cf53108eda28a", null ],
+    [ "memo", "struct_a_p_i___favorite.html#a01532f9976314efd0595f21f7bdde318", null ],
+    [ "memoMarker", "struct_a_p_i___favorite.html#ada3268707601f2019f4d5b4b45d8cc72", null ],
+    [ "name", "struct_a_p_i___favorite.html#aa79654d88ca5f2199c9c7144927bb9bd", null ],
+    [ "properties", "struct_a_p_i___favorite.html#a4bde91fbbd1da7871ca7f1261a45b757", null ],
+    [ "subElements", "struct_a_p_i___favorite.html#a818aab5201a00af0dcacc3d8f916682d", null ]
 ];

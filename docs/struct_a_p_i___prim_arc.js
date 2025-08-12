@@ -1,16 +1,16 @@
 var struct_a_p_i___prim_arc =
 [
-    [ "angle", "struct_a_p_i___prim_arc.html#a2a2ad2a3bb3d7fdf9d2862e29f578aa1", null ],
-    [ "begAng", "struct_a_p_i___prim_arc.html#a05e9f5d7696481ef6726321ac1d44d04", null ],
-    [ "determination", "struct_a_p_i___prim_arc.html#a9d6a855ce8df51a25a28785e27bd5ce1", null ],
-    [ "endAng", "struct_a_p_i___prim_arc.html#abcf515486f377558ef2e4ee6dbc11173", null ],
-    [ "head", "struct_a_p_i___prim_arc.html#a7bc745fa69b84f6a5fe76b23835440e8", null ],
-    [ "ltypeInd", "struct_a_p_i___prim_arc.html#ad3432af10054e957f44a2fb6b22592cc", null ],
-    [ "orig", "struct_a_p_i___prim_arc.html#a1b090369858790413fd41f8602aeb6bc", null ],
-    [ "penWeight", "struct_a_p_i___prim_arc.html#aade3af91ff32a4f29c7b662964b1a24a", null ],
-    [ "r", "struct_a_p_i___prim_arc.html#a7d55291a10026a5ee39711f2ae5a3769", null ],
-    [ "ratio", "struct_a_p_i___prim_arc.html#a6f3a89c015e8c6bb995372f235ec185d", null ],
-    [ "reflected", "struct_a_p_i___prim_arc.html#a78df75b84d5940f24223b71442e49ebb", null ],
-    [ "solid", "struct_a_p_i___prim_arc.html#a59b55d133bd6bfef8f4872d9b0f46624", null ],
-    [ "whole", "struct_a_p_i___prim_arc.html#a072716203e668867ca98ba05e07f9998", null ]
+    [ "angle", "struct_a_p_i___prim_arc.html#a96c0b13094aa855593b87d1e7ace3e9f", null ],
+    [ "begAng", "struct_a_p_i___prim_arc.html#aa060b255344c0ff3728c812142d8d163", null ],
+    [ "determination", "struct_a_p_i___prim_arc.html#a68ea31bed61e5fd790362dfdbd6c00c3", null ],
+    [ "endAng", "struct_a_p_i___prim_arc.html#a6960ade3964f3e95ff191fec0ff1578d", null ],
+    [ "head", "struct_a_p_i___prim_arc.html#a9882d44a3b5d8743931e5e4f17c1af5a", null ],
+    [ "ltypeInd", "struct_a_p_i___prim_arc.html#a934a59e6f6d0d8bfccff54416e26668f", null ],
+    [ "orig", "struct_a_p_i___prim_arc.html#a88c7bffc5e8e7576e6ffb1b6426ae46f", null ],
+    [ "penWeight", "struct_a_p_i___prim_arc.html#a3c770d09b10f6dee972641b0842f36ae", null ],
+    [ "r", "struct_a_p_i___prim_arc.html#a5a18bb29563fa34ddec04060f14dab16", null ],
+    [ "ratio", "struct_a_p_i___prim_arc.html#ac4a8582449f99490e5d208ec1a355eca", null ],
+    [ "reflected", "struct_a_p_i___prim_arc.html#a09f0690e190a072e636a3fa2e07d87a2", null ],
+    [ "solid", "struct_a_p_i___prim_arc.html#a81ffb943c14efd6bf2dfc6c28165b37f", null ],
+    [ "whole", "struct_a_p_i___prim_arc.html#a9600c9dd995a47fb182ec7524757d719", null ]
 ];

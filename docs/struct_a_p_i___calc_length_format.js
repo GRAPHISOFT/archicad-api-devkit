@@ -1,7 +1,7 @@
 var struct_a_p_i___calc_length_format =
 [
-    [ "accuracy", "struct_a_p_i___calc_length_format.html#a3d3f1b0611caeeb9ef48ef8d8b8960b2", null ],
-    [ "decimals", "struct_a_p_i___calc_length_format.html#ac0bccbcfdd906c1ed0a37064ad7cee07", null ],
-    [ "roundInch", "struct_a_p_i___calc_length_format.html#aebcc12c4b1518657304a7c9981f0086e", null ],
-    [ "unit", "struct_a_p_i___calc_length_format.html#a9a312d3b6ce54ee0bfaf3d24402bfcc9", null ]
+    [ "accuracy", "struct_a_p_i___calc_length_format.html#af352e03698fee178e5ad312744e35949", null ],
+    [ "decimals", "struct_a_p_i___calc_length_format.html#a63587a6fad9661872ec3a5f7af804aba", null ],
+    [ "roundInch", "struct_a_p_i___calc_length_format.html#ab0eb47dc452f1b7140f5a6e22da3a72e", null ],
+    [ "unit", "struct_a_p_i___calc_length_format.html#a0faf52304ec6aa83e97c480ffb360b1b", null ]
 ];

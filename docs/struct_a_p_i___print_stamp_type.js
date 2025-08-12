@@ -1,17 +1,17 @@
 var struct_a_p_i___print_stamp_type =
 [
-    [ "addCustomText", "struct_a_p_i___print_stamp_type.html#a71b75019980062099c146b9715edd879", null ],
-    [ "addDateTime", "struct_a_p_i___print_stamp_type.html#ad476588ce62b61eec2c641ddde2cd12f", null ],
-    [ "addDispOptComb", "struct_a_p_i___print_stamp_type.html#abfacd039f26451666fa9b4624e986b0f", null ],
-    [ "addLayerComb", "struct_a_p_i___print_stamp_type.html#ad09e8a08f832f92bf9ed8a26db0a1707", null ],
-    [ "addLoginName", "struct_a_p_i___print_stamp_type.html#aa4e5831f2539b19ad1f2c83b38cb5b3a", null ],
-    [ "addPageNumber", "struct_a_p_i___print_stamp_type.html#a6bf3f03600ad3d4a481eec2706a8204c", null ],
-    [ "addPrintingScale", "struct_a_p_i___print_stamp_type.html#a8a98a51cf30dfca1913b997681bd1811", null ],
-    [ "addProjectName", "struct_a_p_i___print_stamp_type.html#a85075aae2e6c1365f511507a5673a4dc", null ],
-    [ "addProjectPath", "struct_a_p_i___print_stamp_type.html#a3da2328b4cc99e88e7e0f66d59feb0d3", null ],
-    [ "addViewName", "struct_a_p_i___print_stamp_type.html#a3a932d8666f8fa8b84643f27d06bbc16", null ],
-    [ "customText", "struct_a_p_i___print_stamp_type.html#ae40c72f198bbae6c7dfe230da3991a4d", null ],
-    [ "fontHeight", "struct_a_p_i___print_stamp_type.html#aba96eb42038e4f67f2fa6bcfdc228d93", null ],
-    [ "fontID", "struct_a_p_i___print_stamp_type.html#aa2940d962e91a2115ec3be5b09bfdf20", null ],
-    [ "position", "struct_a_p_i___print_stamp_type.html#afa0500eedd61bfe18c27246242239abf", null ]
+    [ "addCustomText", "struct_a_p_i___print_stamp_type.html#ab2f2c4ab7532cb0ca668d6a2664af299", null ],
+    [ "addDateTime", "struct_a_p_i___print_stamp_type.html#a9c6bc6cce03b58fbb304ec68b042ab95", null ],
+    [ "addDispOptComb", "struct_a_p_i___print_stamp_type.html#ada13fc91fae19f790060623c33927bc3", null ],
+    [ "addLayerComb", "struct_a_p_i___print_stamp_type.html#a4514196c46d18da04b65fa0d943254f2", null ],
+    [ "addLoginName", "struct_a_p_i___print_stamp_type.html#a420761ae8648801ca02529f4dfc7dea2", null ],
+    [ "addPageNumber", "struct_a_p_i___print_stamp_type.html#ab9d4b16e726e0c4b3273fa9fefcbef08", null ],
+    [ "addPrintingScale", "struct_a_p_i___print_stamp_type.html#aac9cd4de0c685a0c3b96e04d871da9f8", null ],
+    [ "addProjectName", "struct_a_p_i___print_stamp_type.html#adb4dc0a4eedc2e736ebbc9103326aacf", null ],
+    [ "addProjectPath", "struct_a_p_i___print_stamp_type.html#a6b16a0ee8183318ad56bf29becbb2d32", null ],
+    [ "addViewName", "struct_a_p_i___print_stamp_type.html#aa1d8283ed4997ad872f42fdc3fc9974c", null ],
+    [ "customText", "struct_a_p_i___print_stamp_type.html#a2f5935b00edfca0ac2db62265f4b42fb", null ],
+    [ "fontHeight", "struct_a_p_i___print_stamp_type.html#a94e57a533f6fa78f7258c1fc5376b637", null ],
+    [ "fontID", "struct_a_p_i___print_stamp_type.html#ac096fa72e5d48cf84218468a41e9fc97", null ],
+    [ "position", "struct_a_p_i___print_stamp_type.html#aee7b78597dfbdc686d08c331458afbb9", null ]
 ];

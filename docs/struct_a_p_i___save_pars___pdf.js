@@ -1,9 +1,9 @@
 var struct_a_p_i___save_pars___pdf =
 [
-    [ "bottomMargin", "struct_a_p_i___save_pars___pdf.html#a71b1c03e1c482273327744baed6355c2", null ],
-    [ "leftMargin", "struct_a_p_i___save_pars___pdf.html#ab73cd6c0562a503969e33c18113fca29", null ],
-    [ "rightMargin", "struct_a_p_i___save_pars___pdf.html#a41b564f13fee1dde02e95078730b258e", null ],
-    [ "sizeX", "struct_a_p_i___save_pars___pdf.html#a6551433992bd4f8fce1116991e43c748", null ],
-    [ "sizeY", "struct_a_p_i___save_pars___pdf.html#a7c7e0963ba613387f13ab5d51acdfa86", null ],
-    [ "topMargin", "struct_a_p_i___save_pars___pdf.html#a6a4e667ff3f455ac77594e36d2441e58", null ]
+    [ "bottomMargin", "struct_a_p_i___save_pars___pdf.html#a970308be57394c2d236b2d4385c8ffd3", null ],
+    [ "leftMargin", "struct_a_p_i___save_pars___pdf.html#a7c1b234932566362a8cf19287f353cb2", null ],
+    [ "rightMargin", "struct_a_p_i___save_pars___pdf.html#a17c0cda3fd4cc37f341fc973ea9809c8", null ],
+    [ "sizeX", "struct_a_p_i___save_pars___pdf.html#a5ef57f96fb37fff33b226ad4488f0cf5", null ],
+    [ "sizeY", "struct_a_p_i___save_pars___pdf.html#a7c8d108eec136817a845afe350728356", null ],
+    [ "topMargin", "struct_a_p_i___save_pars___pdf.html#abc8abd0017ade9bf3392c2fc900dfd90", null ]
 ];

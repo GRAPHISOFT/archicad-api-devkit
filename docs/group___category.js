@@ -1,18 +1,25 @@
 var group___category =
 [
     [ "API_ElemCategory", "struct_a_p_i___elem_category.html", [
-      [ "categoryID", "struct_a_p_i___elem_category.html#a3c0f3fd24116ff143ed2fb65f9d2f849", null ],
-      [ "guid", "struct_a_p_i___elem_category.html#acfc854a8885413f231c65643ab12c89f", null ],
-      [ "name", "struct_a_p_i___elem_category.html#aad9a2978039de93cd8509c58f64daa15", null ]
+      [ "categoryID", "struct_a_p_i___elem_category.html#ab9d43c5ce1a1f8b50df2a45fa48809f9", null ],
+      [ "guid", "struct_a_p_i___elem_category.html#a589ecc3e9ce4c2a72974950076f668a8", null ],
+      [ "name", "struct_a_p_i___elem_category.html#ad6482070f100b0c3de825f09f32255ad", null ]
     ] ],
     [ "API_ElemCategoryValue", "struct_a_p_i___elem_category_value.html", [
-      [ "category", "struct_a_p_i___elem_category_value.html#ae47a400804d85025d6db588659453a38", null ],
-      [ "guid", "struct_a_p_i___elem_category_value.html#a8cfb585dcde245c5195eb8d830b8d79a", null ],
-      [ "isVisibleOnUI", "struct_a_p_i___elem_category_value.html#ac9694f9c06c772838c83cdaf170382ca", null ],
-      [ "name", "struct_a_p_i___elem_category_value.html#ac0168b80920dd7b92b910b111e5cc80b", null ],
-      [ "usableAsCriteria", "struct_a_p_i___elem_category_value.html#ad45c6a1a67989a046ede443f8d549f5d", null ]
+      [ "category", "struct_a_p_i___elem_category_value.html#acfba9b4cae55cc22b720454ed2186c9e", null ],
+      [ "guid", "struct_a_p_i___elem_category_value.html#acf341545bf858ca777c2293e2a336ba4", null ],
+      [ "isVisibleOnUI", "struct_a_p_i___elem_category_value.html#a32f04e7391f8d48f1f904aec245405f8", null ],
+      [ "name", "struct_a_p_i___elem_category_value.html#a247c4ddba11a3838f7d965aa1c1ccc9c", null ],
+      [ "usableAsCriteria", "struct_a_p_i___elem_category_value.html#a84376d7df1a68633f3ed32b49969f5c9", null ]
     ] ],
-    [ "API_ElemCategoryID", "group___category.html#gae3bea6736d9d527a66e3f7a4050e1446", null ],
+    [ "API_ElemCategoryID", "group___category.html#gae3bea6736d9d527a66e3f7a4050e1446", [
+      [ "API_ElemCategory_Undefined", "group___category.html#ggae3bea6736d9d527a66e3f7a4050e1446a456dfc30f047afd63e1b1635e69f2311", null ],
+      [ "API_ElemCategory_StructuralFunction", "group___category.html#ggae3bea6736d9d527a66e3f7a4050e1446a5bec39ca69d9798fd546986de67dcd6b", null ],
+      [ "API_ElemCategory_Position", "group___category.html#ggae3bea6736d9d527a66e3f7a4050e1446aa2567ad69196673138cfe176048b77d3", null ],
+      [ "API_ElemCategory_RenovationStatus", "group___category.html#ggae3bea6736d9d527a66e3f7a4050e1446abe92be3690bb21d982fee11cb25f5c7c", null ],
+      [ "API_ElemCategory_RenovationFilter", "group___category.html#ggae3bea6736d9d527a66e3f7a4050e1446a4e19343c64f34da9b7fd6d59eba0597a", null ],
+      [ "API_ElemCategory_BRI", "group___category.html#ggae3bea6736d9d527a66e3f7a4050e1446a050141e3d288ebd026089530f345dbe8", null ]
+    ] ],
     [ "ACAPI_Category_GetCategoryValue", "group___category.html#ga7cbe90df24f900e52373c75d34540c3b", null ],
     [ "ACAPI_Category_GetCategoryValueDefault", "group___category.html#ga7c9a3d4e76697dcce955f815668ca8ea", null ],
     [ "ACAPI_Category_GetElementCategories", "group___category.html#ga0daa138c80f16933db0ee10e8fc2a39b", null ],

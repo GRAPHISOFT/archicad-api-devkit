@@ -1,953 +1,1061 @@
 var group___m_e_p =
 [
-    [ "ACAPI::MEP::v1::Accessory", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_accessory.html", [
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_accessory.html#ae004fa5ee6548f770b502fd1494fa6d7", null ],
-      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_accessory.html#a39b734d444bbf17865b00084e8050c8c", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_accessory.html#aa2d0ca8e3e76a5eaf5a07620a435f38c", null ],
-      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_accessory.html#ab4e7a1fafb5db68d865898ecad5381f1", null ]
+    [ "ACAPI::MEP::Accessory", "class_a_c_a_p_i_1_1_m_e_p_1_1_accessory.html", [
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_accessory.html#a6fc68080d8d0bce8c2cd4d958980d28c", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_accessory.html#a5032b68760e88a01e263ec9c263836e0", null ],
+      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_accessory.html#aa23b4887b54a3de6b76a0ddfd38bedaa", null ]
     ] ],
-    [ "ACAPI::MEP::v1::AccessoryDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_accessory_default.html", [
-      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_accessory_default.html#aae309287111a3bafe3ff30090f252425", null ],
-      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_accessory_default.html#aeb3812d0280923058b367730fc7a095d", null ],
-      [ "CreateAccessoryDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_accessory_default.html#add55c36a90dc99d9c71fe8468c8fc826", null ]
+    [ "ACAPI::MEP::Accessory::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_accessory_1_1_modifier.html", [
+      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1_accessory_1_1_modifier.html#ad95cf469868457008fb15575f5293c0f", null ]
     ] ],
-    [ "ACAPI::MEP::v1::AccessoryUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_accessory_u_i_manager.html", [
-      [ "ApplyAccessoryDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_accessory_u_i_manager.html#a10c67e2adc69778873bfe73d5d8ddc85", null ],
-      [ "CreateAccessoryDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_accessory_u_i_manager.html#a8256d9d4c9ab8c7ddf819191360fa5c5", null ],
-      [ "CreateAccessoryUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_accessory_u_i_manager.html#abb8e16da09e46172a26aeaed8d594a17", null ]
+    [ "ACAPI::MEP::AccessoryDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_accessory_default.html", [
+      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1_accessory_default.html#a2d4263f6317edba5b0be1df312f6816a", null ],
+      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1_accessory_default.html#a35f2482d85c104db7810372004def392", null ],
+      [ "CreateAccessoryDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_accessory_default.html#aa3c6eaa9b601864a2dcbe563dbf471f0", null ],
+      [ "CreateAccessoryDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_accessory_default.html#a7b67aa2e21bc91dca79dbbaf994af082", null ]
+    ] ],
+    [ "ACAPI::MEP::AccessoryUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_accessory_u_i_manager.html", [
+      [ "ApplyAccessoryDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_accessory_u_i_manager.html#a8b67c10f05370c2980a6882be23c7421", null ],
+      [ "CreateAccessoryDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_accessory_u_i_manager.html#a4e0ed3b0cd04d78ea93101a05d7b99fd", null ],
+      [ "CreateAccessoryUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_accessory_u_i_manager.html#abb8e16da09e46172a26aeaed8d594a17", null ]
     ] ],
     [ "ACAPI::MEP::Adapter::UniqueID", "class_a_c_a_p_i_1_1_m_e_p_1_1_adapter_1_1_unique_i_d.html", [
       [ "UniqueID", "group___m_e_p.html#ga03f95527feae84d8197fbc28ebb7a19c", null ],
       [ "UniqueID", "group___m_e_p.html#ga6517a6774a88a806a41044227edd83cd", null ]
     ] ],
-    [ "ACAPI::MEP::v1::Bend", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend.html", [
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend.html#a22cc02753474c7aca2de36c7999aa8d0", null ],
-      [ "GetFactorRadius", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend.html#a98e6517510995e598766a64637d9c901", null ],
-      [ "GetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend.html#a65db4357dc61fafc2d1c1e1565bb756e", null ],
-      [ "GetInsulationThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend.html#abc922d720c8c4bbff2bff40530f2d4e1", null ],
-      [ "GetPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend.html#a622ed3c9ab2ba8cf0dd20da60029f9a7", null ],
-      [ "GetRadius", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend.html#a790514799fa911e68590fdbfb3ba3d4e", null ],
-      [ "GetRoutingNodeId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend.html#a495e8ec653de13974bd3d37ab1d877b3", null ],
-      [ "GetShape", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend.html#a7510b12cc655c126179de44850d6917b", null ],
-      [ "GetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend.html#acdb4b04d354a69def1113d7a4e3f7dc5", null ],
-      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend.html#adbd4a5d88cbe734e7386bfd389e5cd8c", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::BendDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_default.html", [
-      [ "BendDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_default.html#a8b1675464a63d79015093a4513819792", null ],
-      [ "GetFactorRadius", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_default.html#a7b6d0d8027f45f9a8b7731b58fdf594b", null ],
-      [ "GetPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_default.html#ac15ddc6885857740efcfb64dfb7f1a6e", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_default.html#a599c64316a978277e6ce698c9d341987", null ],
-      [ "SetFactorRadius", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_default.html#a96acd98d8b52930ef7baa1c70f265eff", null ],
-      [ "SetPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_default.html#a8c529fd178b3cd0a6cacb3d78a3e6371", null ],
-      [ "CreateBendDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_default.html#a91802c9b3b4df8a1144b673d58c8a7a7", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::BendUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_u_i_manager.html", [
-      [ "ApplyBendDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_u_i_manager.html#a09fde38c030755eb1dba28849d0b7a52", null ],
-      [ "CreateBendDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_u_i_manager.html#a20bc6a34a1131f06dfcaf17d35df8612", null ],
-      [ "CreateBendUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_bend_u_i_manager.html#a77a0d396bbdd0d5182488e6df60756fb", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::Branch", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch.html", [
-      [ "GetBranchAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch.html#a3adfb81b0de3db1de5db9decc5b9e21d", null ],
-      [ "GetBranchLength", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch.html#ad62f8fc42be6ca7519d6bbe4e6542d2f", null ],
-      [ "GetBranchOffset", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch.html#aecd7ff97abd1033a1e55ae0cd947bf5f", null ],
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch.html#a68a1634d37d40006c4e866f21e53c364", null ],
-      [ "GetInsulationThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch.html#a935a887e5ff12bf3446383a37c4aa204", null ],
-      [ "GetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch.html#ab1da79a587657eb4e45594eff085f5ec", null ],
-      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch.html#a7d9824fe9bd9d425ea27b8be43076721", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch.html#a74e5a0db8ba909538dd9f905c18ca60c", null ],
-      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch.html#a8203aff7fcbdc68f5f640e21b25d8ff2", null ],
-      [ "RemoveInsulation", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch.html#a3888ff993045818f9d13f50c213f5ec4", null ],
-      [ "SetInsulationThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch.html#a276911f0d6986dbb40efb4982e618329", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::BranchDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch_default.html", [
-      [ "CreateBranchDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch_default.html#a3f6762e457183814a1a3b6e57b883281", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::BranchUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch_u_i_manager.html", [
-      [ "ApplyBranchDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch_u_i_manager.html#a5b94027fe953609958a189a48c03daa4", null ],
-      [ "CreateBranchDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch_u_i_manager.html#a0f7f8cc3411dadd66359552029c6d67e", null ],
-      [ "CreateBranchUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_branch_u_i_manager.html#ad75e233c48028aef53faae205a3bfce5", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::CableCarrierPort", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_port.html", null ],
-    [ "ACAPI::MEP::v1::CableCarrierPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_port_default.html", [
-      [ "GetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_port_default.html#ae47e56997f41ee33794ffee4bf7227cf", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_port_default.html#a8b51b3b7076b5d69fe4b63fc24ab7b77", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_port_default.html#aad55e1d6a3dbee63980244f5d5f0f4c9", null ],
-      [ "SetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_port_default.html#a5c4a50b9dca5f627470c4b8dab10eea0", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::CableCarrierSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table.html", [
-      [ "AddNewPreference", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table.html#a31ca55f2bf7d5449c7b9264610944738", null ],
-      [ "Delete", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table.html#ac96f3b2666ea156cb7e2751da6924205", null ],
-      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table.html#a30a43e7a2150f05c214e912c0fcf11af", null ],
-      [ "FinalizeModification", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table.html#ab177d51ba30aafefb4614eb856ebf4cf", null ],
-      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table.html#a12e074362366b53fc34398a91b984a7a", null ],
-      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table.html#a53aaf0b7400c3246fab305549452e233", null ],
-      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table.html#ab5e88484d63a469b224c494337ce1805", null ],
-      [ "GetValue", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table.html#a418ad493d066c9ad36386d78f94064a1", null ],
-      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table.html#a9dcdd70db03516fb683ba9745cc75f4e", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table.html#ac0700b1eb662384fa3376dc07858e5e0", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table.html#ae43b0e85a7e973c5ed88847fed284f62", null ],
-      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table.html#a572d87507fe31882217c661693d9b009", null ],
-      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table.html#a89b33240de32831972e317a1088df5f1", null ],
-      [ "SetValue", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table.html#ae1a4f083eff081f04162281bc7d4931b", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::CableCarrierSegmentPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table_container.html", [
-      [ "GetCableCarrierSegmentPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_cable_carrier_segment_preference_table_container.html#a7b081ce6b8928cf72d8f248622d798be", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::DistributionSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_system.html", [
-      [ "GetElements", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_system.html#a208d4c54cdeb6e6b5d8881057229fd15", null ],
-      [ "GetMEPDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_system.html#a6f82c8b58db073bb4c974b870e935df2", null ],
-      [ "GetSystemCategory", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_system.html#ad3aa3ffc29ee690b25685a8758b60f40", null ],
-      [ "TraverseTree", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_system.html#a2210814b1953fc55637a680225e20899", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::DistributionSystemsGraph", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_systems_graph.html", [
-      [ "GetElements", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_systems_graph.html#a8aae23c8f0aeedef335d00794a2bf739", null ],
-      [ "GetPorts", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_systems_graph.html#a2b1eafcced895dcf02d192b53c98f7ac", null ],
-      [ "GetSystems", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_systems_graph.html#ac7357a419a07da7c59653c766f1b86c6", null ],
-      [ "TraverseTree", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_systems_graph.html#ae8860b669ca9bc65a845cc7e194122c1", null ],
-      [ "CreateDistributionSystemsGraph", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_systems_graph.html#a9034770a7916d3340a75cf7de12000cb", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::DistributionSystemsGraphTreeNode", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_systems_graph_tree_node.html", [
-      [ "GetConnectedPortFromPreviousElement", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_systems_graph_tree_node.html#a9b1d425eb5c29ecef4422ddba82771ae", null ],
-      [ "GetConnectedPortFromThisElement", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_systems_graph_tree_node.html#a6903a9dbcb5daaec80bc7b88bd25300d", null ],
-      [ "GetDepthFromRootNode", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_systems_graph_tree_node.html#a53fd24820b3cb93cd7b1b89d5f94451d", null ],
-      [ "GetElement", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_systems_graph_tree_node.html#a71d10d3494ea0a7de2aa9260a86cb9fb", null ],
-      [ "GetNextElements", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_systems_graph_tree_node.html#aa5d6903f8b185a96d98f882cc540b3f4", null ],
-      [ "GetPreviousElement", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_systems_graph_tree_node.html#a0e797852b9ff7517fe67d61d8f9d17c6", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::DuctBranchPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html", [
-      [ "AddNewRow", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a57e81c3965c5b0419bc8a4ac14e8ef4b", null ],
-      [ "DeleteRow", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a60ec4f0e28f6c41582ec8826afdd45fa", null ],
-      [ "DeleteRowByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a47cbb2f3a218149cc19e5729a218ced0", null ],
-      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a43220a412b233a83886952410b1fd43b", null ],
-      [ "GetBranchAxisDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#ab4d94866221bcdcaa6f1bac543f7622c", null ],
-      [ "GetBranchAxisDiameterByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a19f6386e06d915f4a55611536aa312e3", null ],
-      [ "GetBranchAxisReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#add82fc5938773c8344f5fe32bf318a21", null ],
-      [ "GetBranchOffset", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#af32b674d77210b8349c14332266912e0", null ],
-      [ "GetBranchOffsetByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a36a18fcc9b2027c5f90cdd17984a38dd", null ],
-      [ "GetConnectionLength", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a9686a7c978557118c0657330b9c36fe2", null ],
-      [ "GetConnectionLengthByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a5f6d28746ee22700153172e12168a516", null ],
-      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a2f41c3e47aebb53bf98214c08eb34837", null ],
-      [ "GetDescriptionByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a76005d35c9b685c499a44c6a6ab321df", null ],
-      [ "GetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a2b07d8a57a5dc97d59a794979f232c77", null ],
-      [ "GetLengthByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a1984e2f79f3a0641db92923873f7118f", null ],
-      [ "GetMainAxisDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a7198d6275ba4cd9e4b86cd271ed51b7a", null ],
-      [ "GetMainAxisDiameterByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a19865ef5623d4195908a24aa3a70ab2b", null ],
-      [ "GetMainAxisReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#aa6eeb3700ed74f22f8475dc3737748e7", null ],
-      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#aadf7c87e10863e5f920d92ef40ce212b", null ],
-      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#adcb8169730bc5425a1fc0545159f8d2c", null ],
-      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a7dce544c944f8440827e73bcd2ce8e6a", null ],
-      [ "IsRowValid", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a227edebfb92b45a20ba85cdfeac60edf", null ],
-      [ "IsRowValidByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a37db93676f5bd36b84d7b651af047edc", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#ab00c48d4efdb0875f419d110b1bdc896", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#ae1fca968ef75b1541fd42f1098a8daef", null ],
-      [ "SetBranchAxisDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#ac71df2bf3353ded952d2413e433e45b8", null ],
-      [ "SetBranchAxisDiameterByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#afff3617c849171093276b9d02c288202", null ],
-      [ "SetBranchOffset", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a761dfcf093b8f4a65746c61ac4e9bad6", null ],
-      [ "SetBranchOffsetByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a969bf4492dcc28b0ffdd20f2e5571f3b", null ],
-      [ "SetConnectionLength", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a2950c01fe5a6fc9ccf1d35a8ab703ca2", null ],
-      [ "SetConnectionLengthByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a7fadacf549ba1bc9db6effa30013d107", null ],
-      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a9ae47322a25e660117bde2367c5ce15e", null ],
-      [ "SetDescriptionByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#aae15e5b0a7b58af1c6783a435a14ec8e", null ],
-      [ "SetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a501c2dc5fb5f9ec8f2a81372a596f1b7", null ],
-      [ "SetLengthByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a52f39a61b06938af5a80e80745fe21f1", null ],
-      [ "SetMainAxisDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#ad6d5477de6e026471d21b08f0ceb6f1d", null ],
-      [ "SetMainAxisDiameterByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a36333b77920adb9b5202d2bfb9b0ca25", null ],
-      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table.html#a0c1a323dcc0dff5b66bc359252de84f0", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::DuctBranchPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table_container.html", [
-      [ "GetDuctBranchPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_branch_preference_table_container.html#a96ca169525ec8d2b32e66dc1d63daab6", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::DuctCircularSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html", [
-      [ "EmptyRow", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a45c8c2db90b1a682f6182bc07f989c9f", null ],
-      [ "EmptyRowByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a5b7e7783c623cb763df67238e5d7f5b5", null ],
-      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a3839693fb744cf17b4bcc5aff1b90cc2", null ],
-      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a0886b76ba0ca0b3ad1e86070f92e1aec", null ],
-      [ "GetDescriptionByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a1d08094f1647fc58f3d43e1b05c6a911", null ],
-      [ "GetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a2668966dc104f6b5fe69b04cd9170a4c", null ],
-      [ "GetDiameterByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#ac6642de27362c3b8c3e9495ffd9748db", null ],
-      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#ac4e4331bb497f6d30c01328bcb9d410b", null ],
-      [ "GetReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a74dbcdd56599b25d70b1e0420973a491", null ],
-      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a7a82a5c4fbcc00b72a4e46b8c5e1e4d6", null ],
-      [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a1ecc183b64f7368e4d06b96f084f8e09", null ],
-      [ "GetWallThicknessByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a7424bfe5beb2c7237b8749ccd73d0d1a", null ],
-      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a040e654ba2ab3ab371be2cadab10aa6e", null ],
-      [ "IsRowValid", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a6680d3cf6b2fe36775c06efb1adbaf09", null ],
-      [ "IsRowValidByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a4d299f9475cc3c826ffa42dee7bbac93", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#ac265208c45126a9831c21683ffeca7f0", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#ac65712c1e58f978ed497c66c95b97226", null ],
-      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#af67f9e2361218a109839c383e4f1317b", null ],
-      [ "SetDescriptionByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#aff56d5b42a4a88622c811bdcdd9d20ce", null ],
-      [ "SetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a1ab98e66eeb3dee1fa7cf241e39ec6fb", null ],
-      [ "SetDiameterByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a4a6e4f4ecea89aa23ada4516c1da72b1", null ],
-      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a1ea9f944ff33188aa66cba0061910c51", null ],
-      [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a719b8bda7c940ad53b830f7a5d385dac", null ],
-      [ "SetWallThicknessByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_circular_segment_preference_table.html#a3302f7971cb3315f5d3983c93e783eef", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::DuctElbowPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html", [
-      [ "EmptyRow", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#ae8bfeece117ba59f5d701226acdf96a4", null ],
-      [ "EmptyRowByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#aa00ca086ee03b9a700e77afb3594f824", null ],
-      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#a87da0078214a3a0090eb8e0009995fd9", null ],
-      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#a5480008b6f99b6212be4f471ab55e185", null ],
-      [ "GetDescriptionByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#ae5063c8f394f616ef38b6879efcdaaef", null ],
-      [ "GetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#adea473ec19766cf4c0db7a9dd0cef06b", null ],
-      [ "GetDiameterByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#a9888269c894b83db8ca1b37923d5ec4f", null ],
-      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#adce8bf065a790804f1cea5e4ba2e5d3f", null ],
-      [ "GetRadius", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#ac72684f53eec13d285fb285775b6364d", null ],
-      [ "GetRadiusByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#a06d5727b73f7a49fad2fc5ce36870b94", null ],
-      [ "GetReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#a0bbccd0e0e7f4949ef9de4b7f4d5251e", null ],
-      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#aab5ccac83e85e685165225572209db2d", null ],
-      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#a3915fa39225f93acfe4a2bcc2a178ebc", null ],
-      [ "IsRowValid", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#a3cb7f3a7746466d26638bb80153d39cf", null ],
-      [ "IsRowValidByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#a0d52a815f0af7c58c50ad3958553fcfc", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#ae30776518d3739c04230bc7cd5e92ec1", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#a61a3a27507f88892ed747a3eb531e524", null ],
-      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#aa63e28bbf8b1cb4d1ba16580fa885c0c", null ],
-      [ "SetDescriptionByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#abe611abe9927f011029e82e7308a2b4e", null ],
-      [ "SetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#a1bd70057134b6e4d2b372c1ea3c1b3e8", null ],
-      [ "SetDiameterByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#ae9e531599c9396e65bd32b9cf12ae02b", null ],
-      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#aa0d5b1fb00151abeb90b461687cb2248", null ],
-      [ "SetRadius", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#a254fd5240482469863020957e0558114", null ],
-      [ "SetRadiusByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table.html#a1ddb8af18feb61ce1f2f79f7493f6f06", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::DuctElbowPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table_container.html", [
-      [ "GetDuctElbowPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_elbow_preference_table_container.html#a115033da7cd9aeacc38dc0bc3c83c9af", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::DuctRectangularSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html", [
-      [ "AddNewPreference", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a720bfbbbf9e9767d3ce1c262347010e9", null ],
-      [ "Delete", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a0666b5d55ede40dda454079af5d23042", null ],
-      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a8ed6a3ccbdaa34efe1ee1df7877bd5be", null ],
-      [ "FinalizeModification", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a3e45898728f0d3e7dde58ebee2d765a1", null ],
-      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a3213ded3853dfb058afdacf8329c2b81", null ],
-      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a98ab82f8a9b07745b65752ec02f9e445", null ],
-      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a5ecde60d0cdf1cfe5d6ee53cf8569150", null ],
-      [ "GetValue", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a97523b98eb88260d59ac9baa362a7e1b", null ],
-      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a1530c70a3a73a5f2fac829c28d836a8a", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a70db9715a7cae4b01acf2592c8f670e8", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a12814f0fff99b7e621382816a1461f71", null ],
-      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a22a01c5a64e06e9039c01fd6fdf636c5", null ],
-      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a228772731d324188c30a22cdba481667", null ],
-      [ "SetValue", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_rectangular_segment_preference_table.html#a173a4c492be68fd277e0b33cb1747199", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::DuctReferenceSet", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_reference_set.html", [
-      [ "GetDuctReferenceSet", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_reference_set.html#adb8fc5dad573bc00a8327c9e500d3138", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::DuctSegmentPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_segment_preference_table_container.html", [
-      [ "GetDuctSegmentPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_segment_preference_table_container.html#a9f04afb30985e0d8cb1d742f19da456c", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::DuctTransitionPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html", [
-      [ "AddNewRow", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a3bd096cdeeeeec57c80b1269c5c2fc22", null ],
-      [ "DeleteRow", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a459c5f2497d890026ac1cf03eb35ce88", null ],
-      [ "DeleteRowByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#acf36b429e60c20541b20d2524640c2f6", null ],
-      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a223908f7f75014c701eddb07c8927b6a", null ],
-      [ "GetAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a3069865ffbe85af33dd48a2eb6989178", null ],
-      [ "GetAngleByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a7478bea5ceeda6a6cab2dbf92a04573f", null ],
-      [ "GetBeginDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#ae3da9e034cabc16cd822cc9b75e36f34", null ],
-      [ "GetBeginDiameterByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a93d925e5d934adada096b72c2820aa31", null ],
-      [ "GetBeginReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#aa74a3d913c13f0388988b10421a0c8b3", null ],
-      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a366db7cf5d49e26af5b230334c394965", null ],
-      [ "GetDescriptionByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a6fdd49921cedee7e142a445c49900598", null ],
-      [ "GetEndDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a5fc239ea9d6c3186476d0cb5041ca77e", null ],
-      [ "GetEndDiameterByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a845969d6f89a3659fe2212be5fc6f31b", null ],
-      [ "GetEndReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a3884dafcf5d389e6af0ac37c92fc262e", null ],
-      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a2515a13cbed2f4aa44099503245b7d4d", null ],
-      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a50245d0a114cb4898c90d88762a24e59", null ],
-      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#ac182534765bc45f4fb873106c26f2c40", null ],
-      [ "IsRowValid", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a6238d6c65bfbc48165143deacafaf74c", null ],
-      [ "IsRowValidByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a01d9cecf2c85f9449a000efff9e53c4a", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a02cf36d4338a68fef35f5407ae8e8050", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#aa410fa7208dfad4e638704b27c1f951f", null ],
-      [ "SetAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a0b90414110d22350885ee0e1dbb36b97", null ],
-      [ "SetAngleByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a982adb89b5977833ef525863d46f9592", null ],
-      [ "SetBeginDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a28425088a513bbf5cf44d97a5372f055", null ],
-      [ "SetBeginDiameterByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#ade912fc787080fbb2795116a20071ff2", null ],
-      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#aa70e3bcb0b51e0813c469fb51b36c0e3", null ],
-      [ "SetDescriptionByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a6b34daf19187034201bdbbde39f4cb10", null ],
-      [ "SetEndDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a50249ede9be5b7e3178a31ed5719ad88", null ],
-      [ "SetEndDiameterByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#ae7cf3427604dbc855762b8a478cf91dd", null ],
-      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table.html#a633201912592626a70dd54068b187e74", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::DuctTransitionPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table_container.html", [
-      [ "GetDuctTransitionPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_duct_transition_preference_table_container.html#a32e822df4d0a39ceac769a49b5fd4379", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::Element", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element.html", null ],
-    [ "ACAPI::MEP::v1::ElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_base.html", [
-      [ "ElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_base.html#aaaf61ec9689c9dfa06b0ab96623770a8", null ],
-      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_base.html#abadbe2219650b9d74ce14c55ffbca27f", null ],
-      [ "GetAnchorPoint", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_base.html#ace64f012cff8ed6d854d5943fb8015ac", null ],
-      [ "GetDirectConnectedMEPElementIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_base.html#adb11d981acbddbcad31ee08d86acd5d3", null ],
-      [ "GetObjectId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_base.html#a54dbb6012ea22b6cf9a8cbd26591172e", null ],
-      [ "GetOrientation", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_base.html#a0cd5eb8fcddb6e173a1b8e19dc822081", null ],
-      [ "GetPortIDs", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_base.html#a0020e98d151176e7c2927e5cfdd495f9", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::ElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html", [
-      [ "ElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html#af25c49d69781ba7e33b5791715653040", null ],
-      [ "GetCableCarrierPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html#ae5d94960acd2337bdb44fa5179d20e1a", null ],
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html#a47d730479c585dc01d0a5f729ca8ec54", null ],
-      [ "GetDomainOfPort", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html#accf6d7ee0fd451fd892469fde4ec235e", null ],
-      [ "GetInsulationThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html#a6f51d3acc23c5b9cb1ee118570bb03e1", null ],
-      [ "GetObjectId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html#a2d3ae1c0b3a01dd1ac6760e9a26e1d7b", null ],
-      [ "GetPipingPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html#a795a534fae283e3fa6d49d855c455e5d", null ],
-      [ "GetPortCount", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html#a28a6ae5b653c327cd3874e248b5cb5b0", null ],
-      [ "GetVentilationPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html#a3a4ff3e5f262ae068297b433e0420aaf", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html#aec3130628c776d21e850a4dab5223921", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html#ab8aefd58386780d9f2bf1988e4b5d9a0", null ],
-      [ "RemoveInsulation", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html#a237c506884a6896103618192d818cdd4", null ],
-      [ "SetInsulationThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html#a0b8f814eafbb9ff57b872abce1c4de4e", null ],
-      [ "SetObjectId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_default.html#a59a1158c151600017fd8278aec2b4ce0", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::ElementUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_u_i_manager.html", [
-      [ "ApplyElementDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_u_i_manager.html#a674ef0d53d442f71d709a880dc9d5808", null ],
-      [ "CreateElementDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_u_i_manager.html#a3919e7a899f30c0d8bf1c8c156919402", null ],
-      [ "CreateElementUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_element_u_i_manager.html#a466cc0c0d1c02558c48a91e560b578eb", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::Equipment", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_equipment.html", [
-      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_equipment.html#a0ec9b4844b58ed5af87214eefbc29097", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_equipment.html#ab357e7f1fa12eba94f56791c4fed3909", null ],
-      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_equipment.html#a2a0259ddfe6d234ee735d44adef63781", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::EquipmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_equipment_default.html", [
-      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_equipment_default.html#a85ee00ca11278f7fdf1efc1b2ee7b96b", null ],
-      [ "CreateEquipmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_equipment_default.html#a90bf3a3a3291e4f07abb07a2a939fd35", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::EquipmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_equipment_u_i_manager.html", [
-      [ "ApplyEquipmentDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_equipment_u_i_manager.html#a7fa9cb7f0997f6b1bc5d5b85bed41af1", null ],
-      [ "CreateEquipmentDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_equipment_u_i_manager.html#ac6748aa2db6ad5fa1a64378e6052dd5c", null ],
-      [ "CreateEquipmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_equipment_u_i_manager.html#aaea3015ff0fd036c5a96b0fcb1d2ecef", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::Fitting", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_fitting.html", [
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_fitting.html#ad146819a12aa3af10c838c11bc91d84e", null ],
-      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_fitting.html#a1097b3d842ae4f71fee2d44aa297d68b", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_fitting.html#a7dd2cf5c45f2e1cd915ee034195326f1", null ],
-      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_fitting.html#abcc2e340d7752ee09772e856e4f53e4e", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::FittingDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_fitting_default.html", [
-      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_fitting_default.html#a830a549279c189cb6f7ae16db87af54a", null ],
-      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_fitting_default.html#a5c6ce41e9fb369b8cd86e2505ca23517", null ],
-      [ "CreateFittingDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_fitting_default.html#a69d519d6a621ade77509e9f0a67ce23a", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::FittingUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_fitting_u_i_manager.html", [
-      [ "ApplyFittingDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_fitting_u_i_manager.html#af0b6807b8ed86a1a37ec46c82c5e3df9", null ],
-      [ "CreateFittingDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_fitting_u_i_manager.html#a6a8df810b94b62984414ebe50da3f149", null ],
-      [ "CreateFittingUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_fitting_u_i_manager.html#a80698a95e6bb9ee9baaebcb25e8adf79", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::FlexibleSegment", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment.html", [
-      [ "GetControlPoints", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment.html#ae9a0c7a1fdad8f596c7cfcf2def9d014", null ],
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment.html#a5fd912fe0ebf35fe3a34a151c55b5220", null ],
-      [ "GetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment.html#ab6fde3682db730026522a193ca6405cd", null ],
-      [ "GetPolyline", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment.html#aa23a3b452063b40c2e2a92ceacaa76c6", null ],
-      [ "GetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment.html#ad8931c86aaa46e19224507f8a49973b9", null ],
-      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment.html#afd6d712a9ca06f3ee52155df2aeb478a", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment.html#ac605ed023a18966af736fb92c3d8e29c", null ],
-      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment.html#ac5e69552211fa2c82420573f98b522a1", null ],
-      [ "SetControlPoints", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment.html#ae59a214af6a8bdef841dbb0e4a9cc99c", null ],
-      [ "SetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment.html#ae908892f32bfb9ef349a6acaa809211e", null ],
-      [ "SetPolyline", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment.html#aa6ced0f99f45ee49563db7ee414bede5", null ],
-      [ "SetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment.html#a9f5802faa648e94f176e266bfcf2b3ae", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::FlexibleSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment_default.html", [
-      [ "GetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment_default.html#a8d0c425528fdc8e2b29caa921c593ac1", null ],
-      [ "GetShape", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment_default.html#a74e8068f2c34dd983ab23c5f34ab8b84", null ],
-      [ "GetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment_default.html#aab829aff5436844c49539882f6affd47", null ],
-      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment_default.html#aabb0be5a38779219f683cc1cbbfb414c", null ],
-      [ "PlacePolyline", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment_default.html#aad9ec6c65ca7ede28c411d2a53bd71e7", null ],
-      [ "CreateFlexibleSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment_default.html#a3b2724350da64e6c53d923a091ec9f1e", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::FlexibleSegmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment_u_i_manager.html", [
-      [ "ApplyFlexibleSegmentDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment_u_i_manager.html#aa2669322d9052428b81c27ab39bfe7d6", null ],
-      [ "CreateFlexibleSegmentDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment_u_i_manager.html#a065ec1465b5c46b3d89583203349fce9", null ],
-      [ "CreateFlexibleSegmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_flexible_segment_u_i_manager.html#a4d6063199ad4f0d185cdcef80781415f", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::ICalculationResultColumn", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_i_calculation_result_column.html", [
-      [ "~ICalculationResultColumn", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_i_calculation_result_column.html#a62fa510c4c14220a3b9edbfc363ac955", null ],
-      [ "FormatValueToDisplayText", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_i_calculation_result_column.html#a008f0f9b563337cf6a103265da4198ae", null ],
-      [ "GetDefaultWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_i_calculation_result_column.html#a0e9a31b6a8798ffdcfd0001481d24246", null ],
-      [ "GetId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_i_calculation_result_column.html#a9e1777760124cb9f2e89858987522b72", null ],
-      [ "GetTitle", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_i_calculation_result_column.html#a5b86f774014428ce7643b04dae1dea9f", null ],
-      [ "GetUnitToDisplay", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_i_calculation_result_column.html#a405f24ad834c687c7aae7fcb351b94aa", null ],
-      [ "IsEqual", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_i_calculation_result_column.html#af48f039b93337ac145111458691b2f38", null ],
-      [ "IsLess", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_i_calculation_result_column.html#a96ca0f58148ff7ecdfa9f0d02731f8f8", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::TypedCalculationResultColumn< T >", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_typed_calculation_result_column.html", [
-      [ "FormatValueToDisplayText", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_typed_calculation_result_column.html#a412ff7d8c51c7f3d643aaf238f7fe6f3", null ],
-      [ "IsEqual", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_typed_calculation_result_column.html#a621a3bfec587f5e6b90d94e9ae4cde34", null ],
-      [ "IsLess", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_typed_calculation_result_column.html#a8753142c2d330d4b13b169d429f0bf56", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::GraphCalculationInterface", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_graph_calculation_interface.html", [
-      [ "CalculationResultData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_graph_calculation_interface.html#a61f7e9e8adbcf67f169511e437d4aa54", null ],
-      [ "DoCalculationCallback", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_graph_calculation_interface.html#ab82588f336b258375aa0d880698e62f2", null ],
-      [ "InvokeCalculationResults", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_graph_calculation_interface.html#afa6285f9b09fb60bda806695e1514898", null ],
-      [ "RegisterDoCalculationCallback", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_graph_calculation_interface.html#a98af7187e1a782d8c65315f05a837621", null ],
-      [ "CreateCalculationInterface", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_graph_calculation_interface.html#aa87127ff57baf674a501d1d85913ed7c", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::ModifiableElement", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_modifiable_element.html", null ],
-    [ "ACAPI::MEP::v1::ModifiableElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_modifiable_element_base.html", [
-      [ "ModifiableElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_modifiable_element_base.html#ae08bc0a080682a8988637c9ace9a5d19", null ],
-      [ "FinalizeModification", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_modifiable_element_base.html#a8accfc43f01a5cae881ce10d2f69970a", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_modifiable_element_base.html#a414fa6806497340f22c78afb9b1058ab", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_modifiable_element_base.html#a5a1391b2b30b7538004342680dd7dcd8", null ],
-      [ "SetAnchorPoint", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_modifiable_element_base.html#adce0a90cdad2f2128f4274ae5742bf51", null ],
-      [ "SetObjectId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_modifiable_element_base.html#a595e89f3181cf0f58823d061d5486327", null ],
-      [ "SetOrientation", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_modifiable_element_base.html#a2f833b29f0e5f2ed21cf03299fdfa0fe", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::PipeBranchPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html", [
-      [ "AddNewRow", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a9031ded632ccab2eec397b9bd697fc4d", null ],
-      [ "DeleteRow", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a4602cf1711a9121a5e326611efcd770e", null ],
-      [ "DeleteRowByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#af5a2ff8cc316f207d1c9ba33174583a4", null ],
-      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a49a48ad2eaef51d7bd99a6c513eb6a99", null ],
-      [ "GetBranchAxisDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#aad097a5736084332add80ab3dab03301", null ],
-      [ "GetBranchAxisDiameterByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#aab29074576429c9eabd08282b8c1cc13", null ],
-      [ "GetBranchAxisReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a403611420b8972bfc768c7e545f6a055", null ],
-      [ "GetBranchOffset", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a364c35df310dca0d6fbb17810312d1f8", null ],
-      [ "GetBranchOffsetByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#aee66239830b100f005e8e5e9de4a86df", null ],
-      [ "GetConnectionLength", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#abd6bd728721f70192d80572e95c65e50", null ],
-      [ "GetConnectionLengthByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a4c5c7472ef48b30a38e47cfa893a5852", null ],
-      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#ac4b24d6ee53799982d1356b396854c48", null ],
-      [ "GetDescriptionByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#aa4525a04684236b468f4a8ca1898c08f", null ],
-      [ "GetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a2b682f16dfb8a5234354657dfcbabafa", null ],
-      [ "GetLengthByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a697d866cd04ef0567b15fe1a331d5f3e", null ],
-      [ "GetMainAxisDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a01f3dfae375a30be5e08589c6582d676", null ],
-      [ "GetMainAxisDiameterByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#abb44a36ce8d235968f3826e8ac4b958a", null ],
-      [ "GetMainAxisReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#aec523a7a96791a0f06a17fd9220b8309", null ],
-      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a9303a8ac28dbb45182be1ee441cf7f92", null ],
-      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a37984a13c2d07393e56d48965ebada16", null ],
-      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a7f7de61ac0ac0a4dbc1a85f767b0388c", null ],
-      [ "IsRowValid", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a3c148c2b0eebb7159ebe9a0ac5a7e2eb", null ],
-      [ "IsRowValidByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#af64b990e1323838e30e1306d59f865b4", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a389f129e13c57fdab135f9764be431f5", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#acf9d963534fb0a34690627b5b7a2ab0d", null ],
-      [ "SetBranchAxisDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a78ac40ee690632072d0ba5782207cf89", null ],
-      [ "SetBranchAxisDiameterByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a3795eed6c7b3403a1c184469b4118662", null ],
-      [ "SetBranchOffset", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a37446b7678c3f361b0bfe5dfdb0dc44c", null ],
-      [ "SetBranchOffsetByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a2bfa735e63549cad41a3b3fdd48f7e7c", null ],
-      [ "SetConnectionLength", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#aa561eee8225f46100120d380bc65b0aa", null ],
-      [ "SetConnectionLengthByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a97e58e591844ddf0af92d3af477f0989", null ],
-      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a419b1c8ddcb0da34add948dceac6bc8c", null ],
-      [ "SetDescriptionByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a40db38d8aab0916fab28faa2485d2ed2", null ],
-      [ "SetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#ab8584d47890fb82aefde6d58dfe8c660", null ],
-      [ "SetLengthByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a7314f2614ec27d3c80dd16d4e743bf09", null ],
-      [ "SetMainAxisDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a7c2529e5f80248fb03e276b921b92163", null ],
-      [ "SetMainAxisDiameterByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a79aa97f1c9eb180ee85f4eb145ec6dff", null ],
-      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table.html#a5435583f5915b3a718ff664e952dfa65", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::PipeBranchPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table_container.html", [
-      [ "GetPipeBranchPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_branch_preference_table_container.html#a8ed6697f5dafda2e33136dafc591e528", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::PipeElbowPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html", [
-      [ "EmptyRow", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#ad600d4fec1bef1b5f6060f7a8ec2b928", null ],
-      [ "EmptyRowByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#a1203284d12a9535aa648ce3d67366b96", null ],
-      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#a33296a1d2ffcadc5b92861a2edb5e878", null ],
-      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#a389f13c38f0ac23cb6089a5626f1f8e1", null ],
-      [ "GetDescriptionByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#a0d78d5ff927709c12314a1214da70820", null ],
-      [ "GetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#a94bb903f7f3d7d8c081ab40c054ecd05", null ],
-      [ "GetDiameterByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#a0e70d62a562c037ee85a8408c8d378d9", null ],
-      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#ab5559615854e9eae2f8d983659541cd1", null ],
-      [ "GetRadius", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#af6b1b443bb951dcbf5d99512f4c9a9fc", null ],
-      [ "GetRadiusByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#a0cbb2722a33f0b0e3d455b538fa4d4d2", null ],
-      [ "GetReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#af507ca993c34be0a2ddc81229a34600d", null ],
-      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#a52f46ff1cbd25ace6718339eb0bb11ac", null ],
-      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#aba42add6cc79f47d27de5969e7b87a75", null ],
-      [ "IsRowValid", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#abb30e5109c7e7c2266338011d372c711", null ],
-      [ "IsRowValidByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#af2cb57842a3698c912e2acaa65d65769", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#aa243ed4bad18b71a4e273a4156a0a9c1", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#a14a6f7076a4407219c1fc12b29c2801c", null ],
-      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#ab134ce6a0f309bfa6f8685d262991624", null ],
-      [ "SetDescriptionByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#a5e559e152c0d5a169531ea01ee902714", null ],
-      [ "SetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#ab435dfc23bb3f9eec1d5a67d213247bb", null ],
-      [ "SetDiameterByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#a5e2974290cde5f7c9fc959e30c9c6053", null ],
-      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#adca5520f6fb0fae2785b8e64b10b7cd6", null ],
-      [ "SetRadius", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#a18939c74a8495dfb78d4954f4949cdab", null ],
-      [ "SetRadiusByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table.html#ad54a3dd1a2e86e94b9670a96c2e7147f", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::PipeElbowPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table_container.html", [
-      [ "GetPipeElbowPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_elbow_preference_table_container.html#aa89181f2f1487528582439aca51bd7b6", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::PipeReferenceSet", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_reference_set.html", [
-      [ "GetPipeReferenceSet", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_reference_set.html#acdeeb66d0d350897720d18c525db8e78", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::PipeSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html", [
-      [ "EmptyRow", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#acd08a8e8b92937df9a264efa132653a6", null ],
-      [ "EmptyRowByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#a62387ffb71fc5fc04a5661a0347303f2", null ],
-      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#aaa9b7f203bc0e0fcc9f7cfca1df1905f", null ],
-      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#a853d7bc6b60f5dcdee160db5cc65471c", null ],
-      [ "GetDescriptionByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#a02a78a8fc93c382cee685e5e88337db9", null ],
-      [ "GetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#a406063a0349bbc238eb09f493fc2af9b", null ],
-      [ "GetDiameterByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#a347cc3c742e1dc865b924d4db6b0874f", null ],
-      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#aad40bfa32b0023662da254cc5b4306a2", null ],
-      [ "GetReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#a0764707fc61e98ea06e7dac0f8b523d4", null ],
-      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#afb353bd548a38120fcd1e0041ac2dd30", null ],
-      [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#a7f9e3eec048b64358f75427586d61c7e", null ],
-      [ "GetWallThicknessByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#a1b4ee3acd9e06f4dfa09a9ff588b39be", null ],
-      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#af32da7900e9b754efef64c3865d15707", null ],
-      [ "IsRowValid", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#accdd65feeaeb718fd5cf07a8a31e3441", null ],
-      [ "IsRowValidByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#a6f0786789d97fd320533ca00d889d12f", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#af71e4539c492d874b3bdd63129ebe378", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#aa95afa8b34a1ef9f85c91c81162f7da5", null ],
-      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#a97f04e446ba60aa8f8290127eedf6d2a", null ],
-      [ "SetDescriptionByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#a2c3402a439cc66ccaa999ec73c8484bc", null ],
-      [ "SetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#a3968683026f26a5a28d651af56f46608", null ],
-      [ "SetDiameterByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#a37848df0e2195738e6347c2ba06f09d2", null ],
-      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#a97ba6e6f918cf0339ba74183b188f22e", null ],
-      [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#a7795883579631ea0f808ef9e2b79bb2a", null ],
-      [ "SetWallThicknessByReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table.html#a7cf96cba783e4de94840815395d7644b", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::PipeSegmentPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table_container.html", [
-      [ "GetPipeSegmentPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_segment_preference_table_container.html#a167ebbd5dfc47978d3b0fc19a93f5372", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::PipeTransitionPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html", [
-      [ "AddNewRow", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a487971d68ed888e2d6b709cc670f0f0f", null ],
-      [ "DeleteRow", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#aa83561e0704fb46742cf146cdc5d01af", null ],
-      [ "DeleteRowByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#af40bc50bd23ad443e7be9ae77648103d", null ],
-      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a712091f1bd2eb138c1c29da8526855de", null ],
-      [ "GetBeginDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a570b69c097f6d3d2e53f8e740b90c626", null ],
-      [ "GetBeginDiameterByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#ae1cc69bd064c2f68cd83c3249cee9a3f", null ],
-      [ "GetBeginReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a5980ffa5b37b57ca759244313e2a001e", null ],
-      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#af17fd8bd9a8f9a5c733d3ecb0054d369", null ],
-      [ "GetDescriptionByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a8dc855bddca15290c337b97363ab35fb", null ],
-      [ "GetEndDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#ad85da1d3db005aa758c7bf3219b5db39", null ],
-      [ "GetEndDiameterByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a80571965ec634cc29f061914dec60dcc", null ],
-      [ "GetEndReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a035ea29d0819f848683d7bd8e42ac0dc", null ],
-      [ "GetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a10b7634251ede7065a18a1fda37bece3", null ],
-      [ "GetLengthByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#ac1587774f9f4bf4a868335ceb17aef3a", null ],
-      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a435b61ed2f2b4bac8a0606960c2ea135", null ],
-      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a2ac6b7e27b0f975517d8823091480dd0", null ],
-      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a137f7e91f036c9ec0e3eb8aa10dc7135", null ],
-      [ "IsRowValid", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a3a56c08592479d7846bbf3f0cc142d18", null ],
-      [ "IsRowValidByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a1ab7fa685feefd990fcee7907b8e1e32", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#ab9bffbac188a9063d3dcd82364b38c46", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a9b907062512b220b5f55aba7ee182934", null ],
-      [ "SetBeginDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a0d30aa98c9c753e04d4866234b4e8af0", null ],
-      [ "SetBeginDiameterByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a041e05cbf88e480509d7ba4dfd062601", null ],
-      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#ab01d90ab074ca313b2edabe7f557f27c", null ],
-      [ "SetDescriptionByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a61c5305dc3fa7ef233a39cf76cf12970", null ],
-      [ "SetEndDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#aeafad7cd4392d8a7bae9d2d5bf948612", null ],
-      [ "SetEndDiameterByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a4ed3d07802bc9baf852e25e0d87a300f", null ],
-      [ "SetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#ab5fce9dec438ece04b5bb169b9f53dff", null ],
-      [ "SetLengthByReferenceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#aed56fa6ef9cd25a727e2009d7eaecaa1", null ],
-      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table.html#a1d27f091771c5bc640039e9618ff7ddf", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::PipeTransitionPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table_container.html", [
-      [ "GetPipeTransitionPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_pipe_transition_preference_table_container.html#a558c4df778fff87a2666ccbd4e4ad421", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::PipingPort", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port.html", [
-      [ "GetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port.html#add4bdbb7fc12401b3005fd92dccfcf23", null ],
-      [ "GetOuterDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port.html#a1b549e4dc9c21f42b239b200e09145ad", null ],
-      [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port.html#a83cef2995168abe741f5ff43beb94b7d", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port.html#a00c90d1da37f4e7734195411047a3f3c", null ],
-      [ "SetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port.html#a640a7d7d0a6f0dd0baf862c47a44663f", null ],
-      [ "SetOuterDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port.html#a8b5dfed7a6fa1aa2b49a7bf1719baa40", null ],
-      [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port.html#a357b3052e22f7af11336c02e3b27e6d4", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::PipingPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port_default.html", [
-      [ "GetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port_default.html#aa8a856a3f16107a4a6ce00dd2e03c98e", null ],
-      [ "GetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port_default.html#ad803271a84dec635b78fb4ba4e596462", null ],
-      [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port_default.html#ad60adcc93561e3f6769736fbeebfefaf", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port_default.html#a00bc50ec74c5570d3bd296a5b49558be", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port_default.html#a7b7a3c010cca77b30133af95153789d9", null ],
-      [ "SetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port_default.html#a36ef2545faf2c7073553f2c434390d64", null ],
-      [ "SetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port_default.html#a6ba58c2226474c6c039d3026b0129e8e", null ],
-      [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_piping_port_default.html#aee07882e6a17a88e690823637961d53c", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::Port", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port.html", null ],
-    [ "ACAPI::MEP::v1::PortBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html", [
-      [ "PortBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a2275967e0b2e6392144507e9c125f58d", null ],
-      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a99c4d3d6e8d7b3b816ddb067caf48405", null ],
-      [ "FinalizeModification", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a92750f0eaac381de8935d4624424333d", null ],
-      [ "GetConnectedMEPElementId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a6834295f1d7852a87131889a5cfe2dc1", null ],
-      [ "GetConnectedPortId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a3bd6c91e8a9e85c2252a544cf75c2657", null ],
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a01e3935550428490c97816f01130838c", null ],
-      [ "GetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a8786597dfd4450392ee70e513572e66a", null ],
-      [ "GetMEPElementId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#ac94008cea342ca0c3b43e75c37c10394", null ],
-      [ "GetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#ace92db3c18d822e617569f07fd36995d", null ],
-      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a49ff9c68975ef25568b86aabcd418cc9", null ],
-      [ "GetOrientation", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a93b3361e8b5eb4d9a24086b798c99cc5", null ],
-      [ "GetPosition", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a8b8270eb825d13320f96252b1093dfa0", null ],
-      [ "GetShape", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a44a46e22f59672cae21a1e69be3e647f", null ],
-      [ "GetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#ae4c6242b4c68ed39a508de34e655f4b6", null ],
-      [ "IsPhysicallyConnectable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a36b8f804bbea44d4078fa04026546f12", null ],
-      [ "IsPhysicallyConnected", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a278713e11e687e06182bf830ab60dd79", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a2c578ff25ed3f5fe69224357cc91c75d", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a1e441af08547f6bee4051027e0443c0e", null ],
-      [ "SetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a77b892c048f4bcf894130ad2e11d3768", null ],
-      [ "SetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a0a403385b0ac5e5b5837bd10fe182bca", null ],
-      [ "SetShape", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a77b489e18bccd4a1847e6199205c331e", null ],
-      [ "SetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_base.html#a4fadb77417312e916b039d25ada69b8d", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::PortDefaultBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_default_base.html", [
-      [ "PortDefaultBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_default_base.html#a9bef97fed0efafe7df7df3faa07ef06d", null ],
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_default_base.html#a6c6ab597e53020b4a8ce388eb734f01e", null ],
-      [ "GetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_default_base.html#aae7c7d3e47d5a48f81b78410bb379f6c", null ],
-      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_default_base.html#af9904105d77654f42201ae94fe6028e7", null ],
-      [ "GetShape", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_default_base.html#ac4bfb9a5b4e11bc7441f08e7513993d5", null ],
-      [ "GetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_default_base.html#a5efa673cc29e5094fae2c213f3270040", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_default_base.html#a0e3ea4f6500e586690dead475fdd67fd", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_default_base.html#a41bef7e72d54054b11fb2bc04a22b66f", null ],
-      [ "SetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_default_base.html#a44d89c89af0db50afed5c48979fe8511", null ],
-      [ "SetShape", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_default_base.html#a6d98259d0328e801cdd8a7274fd20b8a", null ],
-      [ "SetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_port_default_base.html#ac4c56ed50d8bcdac5a3ac973e2b2672a", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::PreferenceTableContainerBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_preference_table_container_base.html", [
-      [ "PreferenceTableContainerBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_preference_table_container_base.html#aed257a680565bbadae8c2e893e760825", null ],
-      [ "AddNewTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_preference_table_container_base.html#a10f167f12b57fda922add90fd0ff55fb", null ],
-      [ "Delete", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_preference_table_container_base.html#a7033f953e1856893f0bf9d5dfc8d4e54", null ],
-      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_preference_table_container_base.html#ab6af810ff3e82703aa7066541d232ed8", null ],
-      [ "GetPreferenceTables", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_preference_table_container_base.html#a59fe4b485bbf1f7b21f429d4f0a970fe", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_preference_table_container_base.html#a7712256edcdf505f24818f6e3eaeaa4f", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_preference_table_container_base.html#adf839be854b48652a089d15645133ea8", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::ReferenceSetBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_reference_set_base.html", [
-      [ "ReferenceSetBase", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_reference_set_base.html#a473192eb6612b878d1533072b4c131a5", null ],
-      [ "Add", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_reference_set_base.html#ac2f839965d0683a8c5c861ad798b6714", null ],
-      [ "Delete", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_reference_set_base.html#acf265879876c2168b714f17aebbd5bfb", null ],
-      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_reference_set_base.html#ada2d2bf640f80bfff9cd3c1b7ff2d6e6", null ],
-      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_reference_set_base.html#afb9a851938900e5cbc30e4ad77078e00", null ],
-      [ "GetReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_reference_set_base.html#a3add3f968b2f7dbf3375b63c49c3db5f", null ],
-      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_reference_set_base.html#a9159ec2f256b75eacf46e063989f64f2", null ],
-      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_reference_set_base.html#a1e0426b314ab9f3644840236a4680a8e", null ],
-      [ "IsReferenceIdDefined", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_reference_set_base.html#acf3c521670ee342a904a5700e0fe76ed", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_reference_set_base.html#a6edb655f5c40f45be18d3b11609ff022", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_reference_set_base.html#abd6d814e157d3545ec26cd5d52b2459e", null ],
-      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_reference_set_base.html#a1f6438aed2c5c57b3e7c3094085de464", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::RigidSegment", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment.html", [
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment.html#ae6f8186f4a1f241a7f5f20bc333afe7c", null ],
-      [ "GetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment.html#a2a785acfe1acdd977442dbfc9449739e", null ],
-      [ "GetInsulationThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment.html#af13bc610462ee14d4bc9feb5f6c6ec0d", null ],
-      [ "GetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment.html#a11e65dadb4709030cf963d1e040faf08", null ],
-      [ "GetRoutingSegmentId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment.html#a79868c113742644e2805a52bc27ed27a", null ],
-      [ "GetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment.html#a11d918a0d29774eb67a5ee6f3b67a4cf", null ],
-      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment.html#aca6eff7912449188d78bdbb09f571f26", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::RigidSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment_default.html", [
-      [ "GetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment_default.html#adee458f963cc11a7880df9e43990835e", null ],
-      [ "GetShape", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment_default.html#af03879e064e5ecb605987df73b087d40", null ],
-      [ "GetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment_default.html#a9498d098238f01ab2e9856d777e10c98", null ],
-      [ "CreateRigidSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment_default.html#ac025870125574c28f2badf933ea2e6e7", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::RigidSegmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment_u_i_manager.html", [
-      [ "ApplyRigidSegmentDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment_u_i_manager.html#a94082e94c8e99b2b14b59b5cdddbe883", null ],
-      [ "CreateRigidSegmentDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment_u_i_manager.html#a26c06470d7cc647bbe15d13b908a4b21", null ],
-      [ "CreateRigidSegmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_rigid_segment_u_i_manager.html#ace18d25271ba94a5dbe0b4e3c1dd4d1c", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::RoutingElement", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html", [
-      [ "ConnectLogically", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#acf72bb3061bebb7a35d3a27a0dfb3a21", null ],
-      [ "FinalizeModification", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#a46be800217fbe765feebee5b9b0e1e2a", null ],
-      [ "GetBranchPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#af3b21079f3cd1089aa2aa56204e3f076", null ],
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#a928dcd955a0a961c138118855a731a39", null ],
-      [ "GetLogicallyConnectedPortIdAtRouteBegin", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#aedc6e5782a15beb9c4e191efec2122af", null ],
-      [ "GetLogicallyConnectedPortIdAtRouteEnd", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#a0763f96f0fb594f2e6db46192dd763e2", null ],
-      [ "GetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#a36cefe33148c00448dd95c69b8de73d1", null ],
-      [ "GetOffsetFromHomeStory", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#a9556e51ae8adbe5aa2c3a45518dccaff", null ],
-      [ "GetPolyLine", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#a4cfb300cdde164ce82263048e3bc6c14", null ],
-      [ "GetRoutingNodeDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#a36fbbe5c2671e4f4e88283b9c489bdf5", null ],
-      [ "GetRoutingNodeIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#ac09abfbf981409cc68a1b4e3f21ba308", null ],
-      [ "GetRoutingSegmentDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#a691d933807ae5de6af9fde964cfa83d0", null ],
-      [ "GetRoutingSegmentIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#a092ffa41bb96d7559385956ce66923d9", null ],
-      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#ac769630b4c5ba9370a83388297960dd7", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#a45d6c88810f9b47c9f8c3be99e774210", null ],
-      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#af9b6e05db09448a86c503a741a0d28bf", null ],
-      [ "SetBranchPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#a62befcf90a15ebde5958c14870333c86", null ],
-      [ "SetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#a7f1e8edb1d7da9005809e9a117a6520d", null ],
-      [ "SetRoutingNodeDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#ad5514dbdc5a61502c5b0a1628dee0325", null ],
-      [ "SetRoutingSegmentDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element.html#a45360e5bed5da274fb347341015ba336", null ]
-    ] ],
-    [ "ACAPI::MEP::v2::RoutingElement", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html", [
-      [ "ConnectLogically", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#af8e22c9a47f46450e3aaf9705fd9e960", null ],
-      [ "FinalizeModification", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#ad810d335f65c52f0db4d91d719b6e802", null ],
-      [ "GetBranchPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#a217ab06938b33dbfde7d2bf56a23422f", null ],
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#abe4c52a9d9df473f9754ce665627eeeb", null ],
-      [ "GetLogicallyConnectedPortIdAtRouteBegin", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#a07a3dbacaa082dc70b36fb392cd5d704", null ],
-      [ "GetLogicallyConnectedPortIdAtRouteEnd", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#a6e10146c5986d816d7f0527eb5f0f9e0", null ],
-      [ "GetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#adbce897dc9e99f430a3a38c1cc53ee7b", null ],
-      [ "GetOffsetFromHomeStory", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#a78042602e90641990d30219e3dac59f1", null ],
-      [ "GetPolyLine", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#a61c37b08cfa332a1372b01d961486bd4", null ],
-      [ "GetRoutingNodeDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#a7cb47a8411a772c28b431d96d2aa1714", null ],
-      [ "GetRoutingNodeIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#a3c72d79d527a6d7982ddad0e6701cac9", null ],
-      [ "GetRoutingSegmentDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#a497d9cf59e72b3edf9fa603ba48612e8", null ],
-      [ "GetRoutingSegmentIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#a001428aef4a4aa84301edc473c15bee1", null ],
-      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#a266c7d03254a940baedc4845ef6d664d", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#ab762c0e5162d68300f390f33e593c777", null ],
-      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#a0ef10e4498a8f8f677015018a73b96e4", null ],
-      [ "SetBranchPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#afa56811a17b08dc16581af903b7ca068", null ],
-      [ "SetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#a2725c96147bce1e06914bd4e39170539", null ],
-      [ "SetRoutingNodeDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#a11f6e9ef0dff5b555bb1b82660fa0955", null ],
-      [ "SetRoutingSegmentDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element.html#a63843c9b4795066edbf9458f4e170557", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::RoutingElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_default.html", [
-      [ "RoutingElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_default.html#a6582440f12861ae68661f5915749bce3", null ],
-      [ "GetBranchPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_default.html#a09669c17aae3b086ff2f3fa78ffa2f57", null ],
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_default.html#aa8d6b62e480d778752cf45d9bf53cfc6", null ],
-      [ "GetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_default.html#acdf17c137c3d0f54c3a43d703ed5a653", null ],
-      [ "GetRoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_default.html#a07a9e487de0b0fa31371d451f4691a2a", null ],
-      [ "GetRoutingSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_default.html#a17bd040102c223e66ccc78db61f37e7f", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_default.html#abbbbf22c6c6bc1924ce17545453962c3", null ],
-      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_default.html#ab58985fcf8e40fe246bb88abaefd6768", null ],
-      [ "SetBranchPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_default.html#ac9feb13d24d14c99b3f32bdc55d604d4", null ],
-      [ "SetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_default.html#ad37ace5611748c88ab13b3eb5dde4258", null ],
-      [ "SetRoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_default.html#a7ef9db3a82bd452001df66917e5cbfda", null ],
-      [ "SetRoutingSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_default.html#a658773effb1350a5e6e3a2d102dfa907", null ],
-      [ "CreateRoutingElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_default.html#a230a77242b09f15d326f39707c7ad665", null ]
-    ] ],
-    [ "ACAPI::MEP::v2::RoutingElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element_default.html", [
-      [ "RoutingElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element_default.html#ab857b0ea6438c6e0b9fb24e649044e12", null ],
-      [ "GetBranchPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element_default.html#ae9708fecc223bab771d1876834151ac2", null ],
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element_default.html#a90f4db000a64bfe6483f8ea7d6be9f6c", null ],
-      [ "GetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element_default.html#a1e3247373cbe858182a2a56aeb4cf302", null ],
-      [ "GetRoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element_default.html#af489f00d8fc273464d1a3a4e07617460", null ],
-      [ "GetRoutingSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element_default.html#a624e2e227a96bb254c32e7c90afe88a0", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element_default.html#ad76e30b7e419456e08f046c6f59b10e8", null ],
-      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element_default.html#a0bb52ed2b43af2edc70114eac2401258", null ],
-      [ "SetBranchPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element_default.html#ac54fdfcf941d47ab0ecaca78cb31a095", null ],
-      [ "SetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element_default.html#ad7b0b7303452bbbb292a0f7d6cf904a3", null ],
-      [ "SetRoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element_default.html#afcf8c0d9dc518ff12d463515979de7be", null ],
-      [ "SetRoutingSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element_default.html#ab1170a3aaa1eeb31833911bd0fd001a6", null ],
-      [ "CreateRoutingElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_element_default.html#a230a77242b09f15d326f39707c7ad665", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::RoutingElementUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_u_i_manager.html", [
-      [ "ApplyRoutingElementDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_u_i_manager.html#a655f7f78214313d40efce6fdac90d7b7", null ],
-      [ "CreateRoutingElementDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_u_i_manager.html#a2f6cb1c61ed51df014d6d78570e26465", null ],
-      [ "CreateRoutingElementUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_element_u_i_manager.html#a52c0c4eb9da03791b413676e3b45ea71", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::RoutingNode", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html", [
-      [ "FinalizeModification", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html#a6f218043c7fea6888b3655e514a439cc", null ],
-      [ "GetBendDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html#abb599fe1fdafb23e2184900fce9db320", null ],
-      [ "GetBendIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html#ad9218490939b9d1873455c3b644fab8d", null ],
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html#af2c688768825921777ad5f1a70cfb381", null ],
-      [ "GetIncomingSegmentId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html#ac045265ac246cb5e82cf8a12ab6251a5", null ],
-      [ "GetOutgoingSegmentId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html#a32e4588c01196057097e4faf5042faa6", null ],
-      [ "GetPosition", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html#a7f105d02052f2b35ad0b8f0166229897", null ],
-      [ "GetPreferredTransitionPlacement", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html#a4b5cdfe5e4bab2103a2f5f2443fa3cc4", null ],
-      [ "GetRoutingElementId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html#a5801eac0bbecf11a50d15c2428c9ee76", null ],
-      [ "GetTransitionDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html#a13f1c4164d2749e474c01d9a5f35fdb5", null ],
-      [ "GetTransitionIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html#ae49f02e335b12a271b6d1e5a8b2e499e", null ],
-      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html#a13e8f0bffd4c0a4d5b6e72873c29ad52", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html#a904b13b4727682b6183e4384344f53dd", null ],
-      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html#a101b6e26923a00aa7dfb850e77981c68", null ],
-      [ "SetBendDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html#a9c8f54a8b5b5b20a5ff6f06c7cfefa16", null ],
-      [ "SetPosition", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html#aaf7da12475c1a90a70991c9de45af5cd", null ],
-      [ "SetPreferredTransitionPlacement", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html#a93a208f602274c079184db5342255b33", null ],
-      [ "SetTransitionDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node.html#a72ed799f1951faa7e7adec6b8b73a1f6", null ]
-    ] ],
-    [ "ACAPI::MEP::v2::RoutingNode", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html", [
-      [ "FinalizeModification", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html#a9e562a4f3c5355c695d4b9ae7bfd5747", null ],
-      [ "GetBendDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html#abb179838efa5871c0f8c94efcde04fc7", null ],
-      [ "GetBendIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html#a447cef3493b104194f401cde5b1508a5", null ],
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html#a312795da7ef32302cf3c591c96939541", null ],
-      [ "GetIncomingSegmentId", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html#a17f6724ce84c9bb5fbf274ef9814cddd", null ],
-      [ "GetOutgoingSegmentId", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html#a263f9bc4567e686f05f777a6f2e1e0ce", null ],
-      [ "GetPosition", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html#ab31ae2fb1d415162d0548c4e5d6bdb5f", null ],
-      [ "GetPreferredTransitionPlacement", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html#ac40227f540a899b256f312000e93450a", null ],
-      [ "GetRoutingElementId", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html#abadbb7ea7dae645072232a5efb3198ef", null ],
-      [ "GetTransitionDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html#a5f6477a4578094f01e1611652b778996", null ],
-      [ "GetTransitionIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html#a9490f351afd1ed906328370a2abe6c3b", null ],
-      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html#a6101cc1d4c7999505b88cdbf897bbb2c", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html#a8bb4cb3bc66a2176ff790c36abbe189d", null ],
-      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html#aac4a18e241267b1ae81d90f63c01afa6", null ],
-      [ "SetBendDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html#ab8347545b99c6276b9f270f35392cd85", null ],
-      [ "SetPosition", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html#a0f5de86014e12fa5fc5fc9ed3d3135e9", null ],
-      [ "SetPreferredTransitionPlacement", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html#aae4c18186d50a521cb440984f3aff3ec", null ],
-      [ "SetTransitionDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node.html#afcab911c580bb7fb9aaa27031a25ff1f", null ]
-    ] ],
-    [ "ACAPI::MEP::v2::RoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node_default.html", [
-      [ "RoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node_default.html#a7fcee793ba234505ec3f0128f071bfb0", null ],
-      [ "GetBendDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node_default.html#ac6dc2ab5ebecff4c1e1c1f52b2c604e0", null ],
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node_default.html#af4491683a0e975836ec597f2ba2549f6", null ],
-      [ "GetPreferredTransitionPlacement", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node_default.html#a8e0528a45a1a7d19298b2fa9ea5adb05", null ],
-      [ "GetTransitionDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node_default.html#ae7e69aeff3bb00c6251bbfaff3af4aec", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node_default.html#a4ab603a632436155b9ccfd902d763bb1", null ],
-      [ "SetBendDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node_default.html#a0d65201d907c0064fdfe21b98203b643", null ],
-      [ "SetPreferredTransitionPlacement", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node_default.html#a8b64303226a0aca017c32eee0de4f295", null ],
-      [ "SetTransitionDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node_default.html#a781b4f28d592643f6d8b32d8d455a45e", null ],
-      [ "CreateRoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_routing_node_default.html#a5becd2975917c6588dd62e7d2793fe01", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::RoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_default.html", [
-      [ "RoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_default.html#aa8205c17679e69df5dc20f5dabdf433f", null ],
-      [ "GetBendDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_default.html#af2bf268afc11fc578120e9bbbffd6a1e", null ],
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_default.html#a9d1eed09e929af1285abbf085078673f", null ],
-      [ "GetPreferredTransitionPlacement", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_default.html#ae3dce58bd573942bef8c99bec6f0d00a", null ],
-      [ "GetTransitionDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_default.html#af674074c79295443b079bd79c7d40727", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_default.html#ac3d0492eba6218b8e44ed10c364ac2be", null ],
-      [ "SetBendDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_default.html#aaf8dcd7b1b9a84af5ebd49f3870dfbd3", null ],
-      [ "SetPreferredTransitionPlacement", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_default.html#ab040b790a6b0d8d9182280d4b5ad143c", null ],
-      [ "SetTransitionDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_default.html#a693b9b2e881e30f345b5fe0b410a1939", null ],
-      [ "CreateRoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_default.html#a5becd2975917c6588dd62e7d2793fe01", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::RoutingNodeUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_u_i_manager.html", [
-      [ "ApplyRoutingNodeDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_u_i_manager.html#a7e24964c73ca2606d4f8f9e27257d362", null ],
-      [ "CreateRoutingNodeDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_u_i_manager.html#ab4f63b27322b75eb4140efe166d0e937", null ],
-      [ "CreateRoutingNodeUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_node_u_i_manager.html#ae298e3f3493ac8270eb69f21d45d0c1d", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::RoutingSegment", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html", [
-      [ "GetAnchor", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#ae7dc0deb3fcbf4c9ecd9620b396134f6", null ],
-      [ "GetBeginNodeId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#abf829093338d087bf25383cd7ab05ab6", null ],
-      [ "GetConnectionStyle", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#ab9dd16747468cefe2b5e5c011cb28e19", null ],
-      [ "GetCrossSectionHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#a133337dd66afe8bcc1f7801f084f9ef6", null ],
-      [ "GetCrossSectionReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#ae8f688ed3510f833d7570d614d42f65b", null ],
-      [ "GetCrossSectionShape", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#ad189d2a04b9104c1d779405e56981b17", null ],
-      [ "GetCrossSectionWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#af1e4b5d852e4a5736caee2dde58dcf0a", null ],
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#a1da870e03fb5c5b4ad07139f14f75951", null ],
-      [ "GetEndNodeId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#a208a54affa5cb91cc18c1e0e0ccf89a0", null ],
-      [ "GetFlangeSize", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#a02caa7e772913bec674333a824800a54", null ],
-      [ "GetPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#a90d70c11aa5fef54f6c1d5e3d65a5ae9", null ],
-      [ "GetReferenceLineOffsetX", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#ab7c58a495dc4bd6794028b225c550984", null ],
-      [ "GetReferenceLineOffsetY", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#a37d7f98dfa3a37c4689e6ffe7b4713e3", null ],
-      [ "GetRigidSegmentDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#a9796299743fe969fecf09bc7ff8dd13b", null ],
-      [ "GetRigidSegmentIds", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#a8488b3576f9b2b044eafa097d282262a", null ],
-      [ "GetRoutingElementId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#afa7a2c538e474765c5abfaddbcc4ba5f", null ],
-      [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#aff8bcb5580404546c8a3416d91dd1aa2", null ],
-      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#ad9cdaea60b40d34e89cd6e43ce01ad55", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#ad6f4a3d1cd2bf53d80127a6580d744f0", null ],
-      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#af56818033b322f877ae5dd0dd9e09778", null ],
-      [ "SetAnchor", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#a8479033d04837855a54f310a0415fd8c", null ],
-      [ "SetConnectionStyle", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#ae2b00ad2552d74a5e037ddcc04d74702", null ],
-      [ "SetCrossSectionHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#a37e32f82027f797d543f03b03c95a691", null ],
-      [ "SetCrossSectionReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#ade393050d98926c1f83b4f3e653eeeee", null ],
-      [ "SetCrossSectionShape", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#aed222acdf9dbe5e770e703cb79025e26", null ],
-      [ "SetCrossSectionWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#aff6687008b19601391444a785abd343d", null ],
-      [ "SetFlangeSize", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#a55e74e40311b1bceba548ab51a250b83", null ],
-      [ "SetPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#af85da58df45777a2dcaef0f425e2a10a", null ],
-      [ "SetReferenceLineOffsetX", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#a288c464ce924bc35f31bbdc76ac22a2f", null ],
-      [ "SetReferenceLineOffsetY", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#a622caaee61543b23ce661f83f22a7468", null ],
-      [ "SetRigidSegmentDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#a919d660f7086e7425d54e555b0c93751", null ],
-      [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment.html#a846d6e2437c83d0918b843dcf22ef747", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::RoutingSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html", [
-      [ "RoutingSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#a9720887e63d1fab17a89375d24d503b1", null ],
-      [ "GetAnchor", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#a9ea8ea9b1e5bd6bcd70abb1f2f3f77a7", null ],
-      [ "GetConnectionStyle", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#a71869f6f2cca147857aef28c03569929", null ],
-      [ "GetCrossSectionHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#a6434abf9c4ed7347e653438e1d5e7624", null ],
-      [ "GetCrossSectionReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#a1c647dc168de6b7b98c1782fb9f67b50", null ],
-      [ "GetCrossSectionShape", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#ad09c541d981fe456b714258e7a5c8ef5", null ],
-      [ "GetCrossSectionWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#a9e9bf5fa30a081f4f159e1ded2e071c9", null ],
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#a52f6a9a484930a0c820317718306479a", null ],
-      [ "GetFlangeSize", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#ac5e7607745a5c1ca980cddddfa5bd499", null ],
-      [ "GetPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#ab7fa65d3a15aab2e88517d47fa95c51e", null ],
-      [ "GetReferenceLineOffsetX", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#ac2f1aeddf69488fc8d8f90f5310871f7", null ],
-      [ "GetReferenceLineOffsetY", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#aab086eb9d7a3e4f77bba8e8ef0632a66", null ],
-      [ "GetRigidSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#a5f0e92cd971644e0c2bd75b6660cc8df", null ],
-      [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#a600d2388c56942ec36f6df229efa55e9", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#aa1bdfd0ab61a36c4346bc6f776ac7e88", null ],
-      [ "SetAnchor", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#a7ac1102b82d2e496ae6938b0133198ce", null ],
-      [ "SetConnectionStyle", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#aa13d71ad0d478817af7e4283d4216585", null ],
-      [ "SetCrossSectionHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#a312bb728b68aa2a90a0ee4aaa8bc1369", null ],
-      [ "SetCrossSectionReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#a8e769bfe94dce01e6d84a9419ab1e904", null ],
-      [ "SetCrossSectionShape", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#a1f3637e360d094dc05b433209c5b2498", null ],
-      [ "SetCrossSectionWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#aab31cff71a3b86306a885eab80896023", null ],
-      [ "SetFlangeSize", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#ac44d994102717d99194a15f43c350fd5", null ],
-      [ "SetPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#a82e40ec3f2cc0657e8fdfec21c5251bc", null ],
-      [ "SetReferenceLineOffsetX", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#aeda9830d0097c9259cd11853ffcf2540", null ],
-      [ "SetReferenceLineOffsetY", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#a2b912a12eb29d69b80ee99710da5b468", null ],
-      [ "SetRigidSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#ab86442de9d17077dfdd3f59025317522", null ],
-      [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#a3c6c918626bccbec45448d594fd2c3b8", null ],
-      [ "CreateRoutingSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_default.html#af93585b9584a43c4e9a3629a00c5d970", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::RoutingSegmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_u_i_manager.html", [
-      [ "ApplyRoutingSegmentDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_u_i_manager.html#a1f09f484d05c0445a54b55dd5ec1e825", null ],
-      [ "CreateRoutingSegmentDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_u_i_manager.html#a5e3dfa3989ec2ff134e9f47a28b423a7", null ],
-      [ "CreateRoutingSegmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_routing_segment_u_i_manager.html#a5ccae9021638867faa3f5f4c0e34ec7d", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::TakeOff", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_take_off.html", [
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_take_off.html#a4b83efabab96ffd55089734c0b8e8392", null ],
-      [ "GetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_take_off.html#acddac1f46e4107755842de56fb5ec0c3", null ],
-      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_take_off.html#a97468d8294cd4c819215b73555f42d6e", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_take_off.html#a7c825650618b276cb41d91bc4f974244", null ],
-      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_take_off.html#ad70225bb8386dacccff617f7254ed4b7", null ],
-      [ "SetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_take_off.html#aaab8efb3d869a12aa4eff3e1485e4fea", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::TakeOffDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_take_off_default.html", [
-      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_take_off_default.html#a0045db787c90a5fd6797feb527d6e633", null ],
-      [ "CreateTakeOffDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_take_off_default.html#a3d48f69e0d0a96a32dbefcc5b69efbd7", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::TakeOffUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_take_off_u_i_manager.html", [
-      [ "ApplyTakeOffDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_take_off_u_i_manager.html#a39e0d173d106cfda33b8485dfd552478", null ],
-      [ "CreateTakeOffDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_take_off_u_i_manager.html#a2d3cf3c2351df7705a5fa0e4416c0d8c", null ],
-      [ "CreateTakeOffUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_take_off_u_i_manager.html#a222eea59a3f97086bf68803d669660f9", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::Terminal", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_terminal.html", [
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_terminal.html#a7bb4a7d49daa72990018f7c726005333", null ],
-      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_terminal.html#ad507626971c877e217967cae2461388e", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_terminal.html#accba8d80edb2038feaf5d82de9517e03", null ],
-      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_terminal.html#abb0ccca9a75164bbcb76e7df38cd59a2", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::TerminalDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_terminal_default.html", [
-      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_terminal_default.html#a6b839825a00b14fc1e2cef4ea22f2f3c", null ],
-      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_terminal_default.html#a31c08c9c7c24676a45f792f3de7f1486", null ],
-      [ "CreateTerminalDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_terminal_default.html#ae2f8a72cbe9c7b2ed97dc5690049bc4a", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::TerminalUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_terminal_u_i_manager.html", [
-      [ "ApplyTerminalDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_terminal_u_i_manager.html#a3eb14a16a4cbfce78d1f2de1f1edbd34", null ],
-      [ "CreateTerminalDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_terminal_u_i_manager.html#a70f495bc88e04a014e9f9fc8e2357059", null ],
-      [ "CreateTerminalUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_terminal_u_i_manager.html#ada377e5598a8c1aa0f92e9ade32592dd", null ]
-    ] ],
-    [ "ACAPI::MEP::v2::Transition", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition.html", [
-      [ "GetAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition.html#adae3f95a4b184314af5c8746ecdc8320", null ],
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition.html#ad0435f56256ad8d108189543014fc92c", null ],
-      [ "GetInsulationThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition.html#ae05c57cf39e4b1910736f3931b55f7dd", null ],
-      [ "GetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition.html#a871be3f7f43bc3dfd0a2e713fcddfd7c", null ],
-      [ "GetNarrowerPortID", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition.html#a85c33b4bc891812272cd53055563df4f", null ],
-      [ "GetOffsetY", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition.html#aba3fea1640b09fd56f33f0e45619b377", null ],
-      [ "GetOffsetZ", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition.html#a2abf170fbcdb2aa1b449f17c42d894cf", null ],
-      [ "GetPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition.html#a9f338d1635a5e9cdced1d32cf2a92283", null ],
-      [ "GetRoutingNodeId", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition.html#a1f3d83e6d2d19807f48d947343485b32", null ],
-      [ "GetWiderPortID", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition.html#a6d9c59046147bc685491f277a0cec65b", null ],
-      [ "IsControlledByPreference", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition.html#a67d52e465e448c956e3babd9e2625ea1", null ],
-      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition.html#a0c1dc43983c1570f6f646fef3be92749", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::Transition", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html", [
-      [ "GetAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html#af3b7c7c457b54864988ed256ffc3f2d9", null ],
-      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html#afdb6921c039d6e3767fd24068a8a9038", null ],
-      [ "GetInsulationThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html#ac00f86a74d1bfb45545723dd7cd892d4", null ],
-      [ "GetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html#ac4665e3c7175393d05d3899919a14eff", null ],
-      [ "GetNarrowerPortID", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html#a7ffe8178f41190ffef1bbf1b098b9207", null ],
-      [ "GetOffsetY", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html#a3c218e795fc0166ee73150ffa9f025fd", null ],
-      [ "GetOffsetZ", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html#a977d484034bb7552f69144c10996da71", null ],
-      [ "GetRoutingNodeId", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html#a4df4b336997336bc86d63127f3dc420f", null ],
-      [ "GetWiderPortID", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html#ac99a1411f2eb98bfe928fec3a9c739eb", null ],
-      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition.html#a686058a6296ce7a800d9d1b777d49d5e", null ]
-    ] ],
-    [ "ACAPI::MEP::v2::TransitionDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition_default.html", [
-      [ "TransitionDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition_default.html#a095e3232180f1412704fad661e176477", null ],
-      [ "GetAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition_default.html#afcede510ced5648b5f73a085261fc21e", null ],
-      [ "GetOffsetY", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition_default.html#a8774ebe3dee019c86ed28526a256b47d", null ],
-      [ "GetOffsetZ", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition_default.html#ac3b894cba885019521e16963e4ae8fd8", null ],
-      [ "GetPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition_default.html#a6baafb0420033a9cdae3ac4fe71d8b62", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition_default.html#a4df2765d459e92724096d662c6e50879", null ],
-      [ "SetAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition_default.html#a4ed8e0bd9834b0154c7a00f58c701a4d", null ],
-      [ "SetPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition_default.html#a17860f8236a211d871d62fbab4a362a7", null ],
-      [ "CreateTransitionDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition_default.html#a5b23560e79a5203931a5ca3e107444e2", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::TransitionDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition_default.html", [
-      [ "TransitionDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition_default.html#a9512c5befaeac75ff4e3bf04f4da6169", null ],
-      [ "GetAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition_default.html#a19a5f7714bcb82b1f0a4b4f05ad9bbb4", null ],
-      [ "GetOffsetY", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition_default.html#a151303fd53e17159faff6f0cee3bb102", null ],
-      [ "GetOffsetZ", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition_default.html#a12ed9eabbd10b26431ccd145dee57aec", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition_default.html#ab3f03ba8318e8d8cac6b7f13fc542656", null ],
-      [ "SetAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition_default.html#a91f3e0257e7b82b802535158089341a4", null ],
-      [ "CreateTransitionDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition_default.html#a5b23560e79a5203931a5ca3e107444e2", null ]
-    ] ],
-    [ "ACAPI::MEP::v1::TransitionUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition_u_i_manager.html", [
-      [ "ApplyTransitionDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition_u_i_manager.html#ae85bcb5658fa930729a10aae74e0ce1e", null ],
-      [ "CreateTransitionDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition_u_i_manager.html#adc5990dd25fbd040fc62eb41f852bfe2", null ],
-      [ "CreateTransitionUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition_u_i_manager.html#a8f024ea76dfa390b900a38d22297c77a", null ]
+    [ "ACAPI::MEP::AngleSetBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_angle_set_base.html", [
+      [ "AngleSetBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_angle_set_base.html#a0942f0c6a27f306b15dbb25ab08aed8c", null ],
+      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1_angle_set_base.html#a21d7b4b8dbe8bb991af0f33887ea3437", null ],
+      [ "GetAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1_angle_set_base.html#a9ba226d26f26575fdb24bf5759edcd5d", null ],
+      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_angle_set_base.html#af71cd9fb1f9a49bfd7197a942ec7d629", null ],
+      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_angle_set_base.html#af234b13c95368995712ce878ede0db70", null ],
+      [ "IsAngleDefined", "class_a_c_a_p_i_1_1_m_e_p_1_1_angle_set_base.html#a3073e40b9ec9340f3047d0a3cc881479", null ],
+      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1_angle_set_base.html#acc6c668b1d6b7e053dcf41715e8a56e0", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_angle_set_base.html#ab99fe771ac3dbf870f5bb75b66fb22fb", null ]
+    ] ],
+    [ "ACAPI::MEP::AngleSetBase::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_angle_set_base_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_angle_set_base_1_1_modifier.html#a0b900cffe615dd118d79e241da773b08", null ],
+      [ "Add", "class_a_c_a_p_i_1_1_m_e_p_1_1_angle_set_base_1_1_modifier.html#ae9eb1a9529c87abbfe85a9d7eda69e3c", null ],
+      [ "Delete", "class_a_c_a_p_i_1_1_m_e_p_1_1_angle_set_base_1_1_modifier.html#a4ee19d311cb2717131bfa8b152b0fa66", null ],
+      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_angle_set_base_1_1_modifier.html#a4cd725ff6c90ebe535b81c25dc9cc35a", null ]
+    ] ],
+    [ "ACAPI::MEP::Branch", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch.html", [
+      [ "GetBranchAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch.html#ab48bf107e08b29a8e8ef7c67b427f038", null ],
+      [ "GetBranchLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch.html#a9977708fed580e405fab3adde8a968e7", null ],
+      [ "GetBranchOffset", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch.html#a28e1e58c49d02cf81fd471fbba30b289", null ],
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch.html#a9e210fe67693841c8d4e2233b7d20375", null ],
+      [ "GetInsulationThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch.html#ae0e37f770752f00eb9b2b3ebcadb3b1c", null ],
+      [ "GetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch.html#ad795c1f08478210a489f3a533a1986e7", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch.html#af17b90322c1ea32d6d6022741cfde99c", null ],
+      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch.html#ab6c03e05ad4a1ac94cf27e837e434344", null ]
+    ] ],
+    [ "ACAPI::MEP::Branch::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch_1_1_modifier.html", [
+      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch_1_1_modifier.html#a13bd229054e0947d5f911b7d347b7195", null ]
+    ] ],
+    [ "ACAPI::MEP::BranchDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch_default.html", [
+      [ "CreateBranchDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch_default.html#a820586701909cf3889347eefdcd8be25", null ]
+    ] ],
+    [ "ACAPI::MEP::BranchUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch_u_i_manager.html", [
+      [ "ApplyBranchDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch_u_i_manager.html#a62f0e1ac56bcb8366decd26e878e2999", null ],
+      [ "CreateBranchDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch_u_i_manager.html#aa8a43cdb89dd79120aabc915cc2c85d6", null ],
+      [ "CreateBranchUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch_u_i_manager.html#ad75e233c48028aef53faae205a3bfce5", null ]
+    ] ],
+    [ "ACAPI::MEP::CableCarrierPort", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_port.html", null ],
+    [ "ACAPI::MEP::CableCarrierPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_port_default.html", [
+      [ "GetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_port_default.html#ac8f9e8bf06a1a1347bfed979984b4ced", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_port_default.html#a9b23928de9ced214e8b35cee661be636", null ]
+    ] ],
+    [ "ACAPI::MEP::CableCarrierPortDefault::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_port_default_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_port_default_1_1_modifier.html#aee1f1b5bc8eca34c85c5d99b54c3d1cf", null ],
+      [ "SetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_port_default_1_1_modifier.html#a0baad0a7766a73348a68b641514055b4", null ]
+    ] ],
+    [ "ACAPI::MEP::CableCarrierSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table.html", [
+      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table.html#a8a1a1cd975a45fb67907a08fa2d9a638", null ],
+      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table.html#a74c7dd6d23c91cb28680045ebdb5aa16", null ],
+      [ "GetMaximumSegmentationLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table.html#a9d08d89906d1208f34570fd5393cbdda", null ],
+      [ "GetMinimumSegmentationLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table.html#a892861f94b4a9d16ef26955fdbff88f6", null ],
+      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table.html#a72a314e3d39437f62b60d7c4764c67ce", null ],
+      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table.html#af6a57ab41fb9aee068af4706898c0991", null ],
+      [ "GetUseIndividualSegmentLengths", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table.html#ad22e89139495d0bc5f0133086cfb04ba", null ],
+      [ "GetValue", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table.html#a3186ae4d873a9357fa11c37da435c456", null ],
+      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table.html#aba82481b4f6876e5ac4e050ab73d29f7", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table.html#a81e6b87d2545a2203a99a1ad68640c85", null ]
+    ] ],
+    [ "ACAPI::MEP::CableCarrierSegmentPreferenceTable::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table_1_1_modifier.html#a92774a257b74717cba490075207ebe3e", null ],
+      [ "AddNewPreference", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table_1_1_modifier.html#acf353162067bea27646adb1ea9fdcdda", null ],
+      [ "Delete", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table_1_1_modifier.html#a328b2ecb7e916e566e88c9387516e3d2", null ],
+      [ "FinalizeModification", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table_1_1_modifier.html#a5a1debb640092ede0284d24b98849c57", null ],
+      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table_1_1_modifier.html#ab5e63fa29c256fdab75db3decaa0d7ea", null ],
+      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table_1_1_modifier.html#a6c30b1b25a4677b7d67835b4d73866fb", null ],
+      [ "SetSegmentationLengths", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table_1_1_modifier.html#a006c5049db917dd3bccc8fe6222f8947", null ],
+      [ "SetUseIndividualSegmentLengths", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table_1_1_modifier.html#a70b375b0de975982352a1c71759b04e6", null ],
+      [ "SetValue", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table_1_1_modifier.html#a46b581f5bf212d4746077c90662ea822", null ]
+    ] ],
+    [ "ACAPI::MEP::CableCarrierSegmentPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table_container.html", [
+      [ "GetCableCarrierSegmentPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_cable_carrier_segment_preference_table_container.html#a7b081ce6b8928cf72d8f248622d798be", null ]
+    ] ],
+    [ "ACAPI::MEP::DistributionSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_system.html", [
+      [ "GetElements", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_system.html#a82459dd0a19ae2d15804fa1abdb316f6", null ],
+      [ "GetMEPDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_system.html#a06af1662cea0bb2f5d77f387201d4f37", null ],
+      [ "GetPhysicalSystemIDs", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_system.html#a6fe09464249d34ff56dabb598e1223a4", null ],
+      [ "GetSystemCategory", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_system.html#a9fd1cff12410658594a473754a784297", null ],
+      [ "TraverseTree", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_system.html#a3b218775cb85f94902d7f3dab02648b4", null ],
+      [ "TraverseTree", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_system.html#a97222379bf21b42c4b87ac2ea871d244", null ]
+    ] ],
+    [ "ACAPI::MEP::DistributionSystemsGraph", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_systems_graph.html", [
+      [ "GetElements", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_systems_graph.html#ae921691a1265fde9f52bd1a7b451ce8e", null ],
+      [ "GetPorts", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_systems_graph.html#ad044249f59b183660fb4495defe5caad", null ],
+      [ "GetSystems", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_systems_graph.html#ade77fbad53c013d09f62d157d8f9547b", null ],
+      [ "TraverseTree", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_systems_graph.html#a65701affb89d06751dd8ffe24fd38912", null ],
+      [ "CreateDistributionSystemsGraph", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_systems_graph.html#a9034770a7916d3340a75cf7de12000cb", null ]
+    ] ],
+    [ "ACAPI::MEP::DistributionSystemsGraphTreeNode", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_systems_graph_tree_node.html", [
+      [ "GetConnectedPortFromPreviousElement", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_systems_graph_tree_node.html#a4796f6dfdee8640b8bf28f1a1a777694", null ],
+      [ "GetConnectedPortFromThisElement", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_systems_graph_tree_node.html#aeaf9367da9672cb608f0e16a1d3cc22e", null ],
+      [ "GetDepthFromRootNode", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_systems_graph_tree_node.html#a7ea3075e5cb49a38ba252def6e20adce", null ],
+      [ "GetElement", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_systems_graph_tree_node.html#a8645089fdc15af7d9b8daa8d30f41329", null ],
+      [ "GetNextElements", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_systems_graph_tree_node.html#aa93eb8168c2b4a3ba022df8644f43320", null ],
+      [ "GetPreviousElement", "class_a_c_a_p_i_1_1_m_e_p_1_1_distribution_systems_graph_tree_node.html#a1f0a70868e4c85d924f09187be1eaa0f", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctAngleSet", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_angle_set.html", [
+      [ "GetDuctAngleSet", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_angle_set.html#a4f1d59e901c4743da5e4e81c0043db29", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctBranchPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html", [
+      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#accd04e36dc69888ff8f8357a7f09cdb1", null ],
+      [ "GetBranchAxisAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#aee6814519ce29966c2b26ada97bd219f", null ],
+      [ "GetBranchAxisDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a13fb39602dd5c4238247d8d1293a8e95", null ],
+      [ "GetBranchAxisDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#aa6fa00fd590e99f0702cb15861dcb229", null ],
+      [ "GetBranchAxisReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a5d3dfd96861c259f480b6270b7c25c24", null ],
+      [ "GetBranchOffset", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a274ba700133f0e92e13ab271cae49d06", null ],
+      [ "GetBranchOffsetByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a7084a1aac414a9b47d8eb6ae7c0758b8", null ],
+      [ "GetConnectionLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a7dcb2c4b1cf2d566b25943ebfec1902b", null ],
+      [ "GetConnectionLengthByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#aedb23f6c37b40994ca01078f174e7889", null ],
+      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#af1891f82983e59949c277e6a0ab2918c", null ],
+      [ "GetDescriptionByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a51a06bc9757bf81ad118bf5bc5368b8f", null ],
+      [ "GetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a6086f847ff0e3ae9878752b4d680212f", null ],
+      [ "GetLengthByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#af31285472380b552f7c9466e408b251a", null ],
+      [ "GetMainAxisDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#abab73423aa93a619037d6badb278e295", null ],
+      [ "GetMainAxisDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#ae04959f4df804dc8afd053ba9023e43d", null ],
+      [ "GetMainAxisReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a5c5c10138fcf0d97db39aa64d3371a52", null ],
+      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a75bccc6475e54d599bc67eb15fda6099", null ],
+      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a3e4f32416978072b352f7ccec0b492bb", null ],
+      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#ae983db008a121a41985c733818817c3d", null ],
+      [ "IsRowValid", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a9d9194b0a6fdb7855e50fc0e170e1b30", null ],
+      [ "IsRowValidByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#ac3214a374100435de340cbe956d48510", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a54eab56e0858c246544170616a8524e8", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctBranchPreferenceTable::Key", "struct_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_key.html", [
+      [ "branchAxisAngle", "struct_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_key.html#a079d72390510cef5f238b0839c15b85a", null ],
+      [ "branchAxisReferenceId", "struct_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_key.html#a38f297d76f58a972cdf0a56e9bf34bc0", null ],
+      [ "mainAxisReferenceId", "struct_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_key.html#ad08e500fa164fa9bafc92ee5d4611e3e", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctBranchPreferenceTable::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_modifier.html#a940c701dd7b4929465de2b27404764e5", null ],
+      [ "AddNewRow", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_modifier.html#a5b911f9b9a1aed27343f28066bd56d1a", null ],
+      [ "DeleteRow", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_modifier.html#a01033214da85220ce94a46e165ee6e40", null ],
+      [ "DeleteRowByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_modifier.html#a31b4c28eb9a05fbce12e8c82c78591cf", null ],
+      [ "SetBranchAxisDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_modifier.html#aac805f782eee9597a0c772f1daba9e77", null ],
+      [ "SetBranchAxisDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_modifier.html#ae1d5342bceb9c8045c0785ce42149e7d", null ],
+      [ "SetBranchOffset", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_modifier.html#a34421e54b6cfd465d701489918d39640", null ],
+      [ "SetBranchOffsetByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_modifier.html#a6847ce682fda5535bbbede8a62f89cd4", null ],
+      [ "SetConnectionLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_modifier.html#ad81ae8d809313c2b696e9c89d696f294", null ],
+      [ "SetConnectionLengthByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_modifier.html#a04baa6871070342f6af3b22efe400dec", null ],
+      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_modifier.html#ac805f2790adc533b1df414be0cfb8b9d", null ],
+      [ "SetDescriptionByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_modifier.html#affaeae4f21410357163adc8fee81f66f", null ],
+      [ "SetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_modifier.html#a64f6ab08f920579cf963946771a385df", null ],
+      [ "SetLengthByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_modifier.html#a28c5346e4bcb88a841faea0211d7403c", null ],
+      [ "SetMainAxisDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_modifier.html#a87a82cb42fa748b48c6a1e2272abbeff", null ],
+      [ "SetMainAxisDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_modifier.html#ada2e3b20b823538f7c7c534e7d42bd74", null ],
+      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_1_1_modifier.html#a64099bfcd37ad16225b06c075014bc21", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctBranchPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_container.html", [
+      [ "GetDuctBranchPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table_container.html#a96ca169525ec8d2b32e66dc1d63daab6", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctCircularSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table.html", [
+      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table.html#a83ffe675f76bdc8edb5e3a9194d883a5", null ],
+      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table.html#a95ea665eb030af581c0997b7c95522b4", null ],
+      [ "GetDescriptionByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table.html#a69033e714a29990c2762384c5d73105e", null ],
+      [ "GetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table.html#adefa45803ddd0de7613fa856d27e7c23", null ],
+      [ "GetDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table.html#a43bd00db254ed52dfbc9de2862b2cabc", null ],
+      [ "GetMaximumSegmentationLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table.html#af254a5a0dd158b77a72b46771b4faba1", null ],
+      [ "GetMinimumSegmentationLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table.html#ae868df904ebb4d40188669d811b63208", null ],
+      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table.html#a9c216f4bdd7d0234b9c0019b738d0ac3", null ],
+      [ "GetReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table.html#ae6d5edb515e944e70361b60ec1c29488", null ],
+      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table.html#a6da8922ac34cc0c4d2cd3afa774607de", null ],
+      [ "GetUseIndividualSegmentLengths", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table.html#adc2caa87b77147c11b8119207da3bc51", null ],
+      [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table.html#a9cfc773eb49a1162e9ab0481e19e51a8", null ],
+      [ "GetWallThicknessByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table.html#aaff5685963c2355a65d136c6a248c79d", null ],
+      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table.html#a21a40b5c813615eeef2b49d8cfb96ae3", null ],
+      [ "IsRowValid", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table.html#ac483c6217c01c0d33bd6fa624dba9d4e", null ],
+      [ "IsRowValidByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table.html#a93fde45fa1dd90525a27c750fa61371b", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table.html#a17e77862979f0aca9d4b0a0630b24035", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctCircularSegmentPreferenceTable::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table_1_1_modifier.html#af9f88a2a34fbebef1fddb2753083a966", null ],
+      [ "EmptyRow", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table_1_1_modifier.html#ab4bb0a5fa611f1714c04c498b8ec62e5", null ],
+      [ "EmptyRowByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table_1_1_modifier.html#a712e31e7436d8a941e6cdbe196bd908d", null ],
+      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table_1_1_modifier.html#a893a6e3c4a3738ef61df0226910af06b", null ],
+      [ "SetDescriptionByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table_1_1_modifier.html#ad67caf6ac6c50f0c33f7eafc2d1d3b1c", null ],
+      [ "SetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table_1_1_modifier.html#aece6ac9e5905f5d056c7b1a457f490c2", null ],
+      [ "SetDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table_1_1_modifier.html#a3af979efdd1e0bd50b234675dcede8aa", null ],
+      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table_1_1_modifier.html#aae109d4b0e8b44d91d17aa12012aa961", null ],
+      [ "SetSegmentationLengths", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table_1_1_modifier.html#a08c5a57fa871c69bb9dd56a9640c5f51", null ],
+      [ "SetUseIndividualSegmentLengths", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table_1_1_modifier.html#aae11c8019e9edb1593aac8a1a0ee26c7", null ],
+      [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table_1_1_modifier.html#a5e47ae0736678569d8c3f7ec37dcac36", null ],
+      [ "SetWallThicknessByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_circular_segment_preference_table_1_1_modifier.html#ad1d297439d664e13794156e7b7cfc7b6", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctElbowPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table.html", [
+      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table.html#a5b9794951e51a1d3e92bcdeb398ff46b", null ],
+      [ "GetAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table.html#a71a25a68c3b6cbfe8daab27c19af23d8", null ],
+      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table.html#a71d3d8a2c744595db6f823a6b1c64981", null ],
+      [ "GetDescriptionByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table.html#add28861b53c46ec2de10502d5e3d5728", null ],
+      [ "GetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table.html#a4cb242e8772a346dbac1e93bd3115006", null ],
+      [ "GetDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table.html#a1a4ba385624bc41cf289c97eb02fbd65", null ],
+      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table.html#ac410bb66b660e9be78d0f2fa641a6eba", null ],
+      [ "GetRadius", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table.html#afbb276b428e94baef7dfdfaf670dc1e3", null ],
+      [ "GetRadiusByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table.html#a9ed6cd078ee00b192c5686c7061ead77", null ],
+      [ "GetReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table.html#a74d5fa3652c9530bcb6fb3d49c1e53e0", null ],
+      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table.html#a7b6c889e285ed5d53ab43116a987109f", null ],
+      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table.html#ad9a2aa09b8a542310106d1b34f1c9c78", null ],
+      [ "IsRowValid", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table.html#a302868e490383ca9dbdbbcaeae0071c9", null ],
+      [ "IsRowValidByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table.html#add4971275e1ab14bfeea092e6096e619", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table.html#a47dbd4b612ca9b3d133622f6367e2043", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctElbowPreferenceTable::Key", "struct_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table_1_1_key.html", [
+      [ "angle", "struct_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table_1_1_key.html#a0b913d127401bb56418c6295c814315e", null ],
+      [ "referenceId", "struct_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table_1_1_key.html#a894e232ce745f29868a9dc74fc3530e8", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctElbowPreferenceTable::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table_1_1_modifier.html#acc948e78aa4c9ba2f376855293b72482", null ],
+      [ "AddNewRow", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table_1_1_modifier.html#a7a71bc9843091db6035be51904e6f7ba", null ],
+      [ "DeleteRow", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table_1_1_modifier.html#adef715b546330173059fc2660740568a", null ],
+      [ "DeleteRowByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table_1_1_modifier.html#a116a1d8fac33bbc0111c53d3da8616be", null ],
+      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table_1_1_modifier.html#ac20a42d63b4f81823817c164b6a275ba", null ],
+      [ "SetDescriptionByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table_1_1_modifier.html#aef13d771c81a1f0b43bc0eb21b17e87b", null ],
+      [ "SetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table_1_1_modifier.html#a35e4d4c387d90959353b450aab7985df", null ],
+      [ "SetDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table_1_1_modifier.html#a0a58e17457d323963a3d1e40e0eb11c5", null ],
+      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table_1_1_modifier.html#a6e368cd4850f7c2df42ecb8158678b65", null ],
+      [ "SetRadius", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table_1_1_modifier.html#abc70128db966fd8f2cb951c1fd7735a6", null ],
+      [ "SetRadiusByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table_1_1_modifier.html#ad982a27b9e93431ef1a5e97181e057a7", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctElbowPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table_container.html", [
+      [ "GetDuctElbowPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table_container.html#a115033da7cd9aeacc38dc0bc3c83c9af", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctRectangularSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table.html", [
+      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table.html#a608ea575ca251bbcaea531983ab0edd6", null ],
+      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table.html#ac7cbc349bb66f63217a8350c264016c4", null ],
+      [ "GetMaximumSegmentationLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table.html#a016ea9301a9515717a5bbb078d92b954", null ],
+      [ "GetMinimumSegmentationLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table.html#aec2e1687a44b2da99da658fe3298fbe0", null ],
+      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table.html#a16902726b0ed7a5fbacc55e08e7f66a7", null ],
+      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table.html#aa4aa023aa543d5d89a7893c79159946a", null ],
+      [ "GetUseIndividualSegmentLengths", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table.html#a51a014983b7c984ab922d1c3e867abd6", null ],
+      [ "GetValue", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table.html#a20f6662c5604acfcc4181dbdebfc0fd8", null ],
+      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table.html#aca70b07fb3d0dbafbb7100c1364a38e9", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table.html#aa344e0b7d50339c41f2c6711afe10001", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctRectangularSegmentPreferenceTable::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table_1_1_modifier.html#ad10492c58d7f696e0d32ff347a94a134", null ],
+      [ "AddNewPreference", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table_1_1_modifier.html#a1ad9b0d42122347a5782ab452f500a91", null ],
+      [ "Delete", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table_1_1_modifier.html#ad67e7d5fbb147db3a7e45c673b3c1e53", null ],
+      [ "FinalizeModification", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table_1_1_modifier.html#a76c5e7c19a6225070e4574214b0c8329", null ],
+      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table_1_1_modifier.html#aff3ee93935aa093cebf97b8bd0058988", null ],
+      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table_1_1_modifier.html#a19b0661d8ea16079c5ddd9497d660bd8", null ],
+      [ "SetSegmentationLengths", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table_1_1_modifier.html#aa62c0821906ad66a6fce9db6a9b430d4", null ],
+      [ "SetUseIndividualSegmentLengths", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table_1_1_modifier.html#aeb20ebab1e71de2661afc500e60e5a25", null ],
+      [ "SetValue", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table_1_1_modifier.html#abc29376e5b7bf9a9a8ece6efe64a600a", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctReferenceSet", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_reference_set.html", [
+      [ "GetDuctReferenceSet", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_reference_set.html#adb8fc5dad573bc00a8327c9e500d3138", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctSegmentPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_segment_preference_table_container.html", [
+      [ "GetDuctSegmentPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_segment_preference_table_container.html#a9f04afb30985e0d8cb1d742f19da456c", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctTransitionPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html", [
+      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html#a389d2e8da1569f4d183eea2cb759ea0e", null ],
+      [ "GetAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html#a9bb9a35ab1db7949ecbd4b8f3e1926e9", null ],
+      [ "GetAngleByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html#a32563f11e03a6b369a0802a9dc13bd38", null ],
+      [ "GetBeginDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html#a8895576976f91e24274f07925a646414", null ],
+      [ "GetBeginDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html#a0fdcfa2c96ce2c20c8fa252e8b312c82", null ],
+      [ "GetBeginReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html#a60e83e634d0afa2f57744eea2705c8bd", null ],
+      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html#af1ac4468cc570900c88e1ce7ba992383", null ],
+      [ "GetDescriptionByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html#a514fb2d2fc258fb928a906d35e964df9", null ],
+      [ "GetEndDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html#ae82fcfd68a4d9224c272399c579408d4", null ],
+      [ "GetEndDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html#a526941c85b49e8e08e5b47c69baa71d9", null ],
+      [ "GetEndReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html#a9d4b0ff19fe87ca200735ea7b431bc09", null ],
+      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html#a3bf32c6bf8f14350d00a51c3fb5e542c", null ],
+      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html#a2080dc1aa28b3d473dc00ba5473407df", null ],
+      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html#a1183aac4c3d547ecfb831dad99219f4f", null ],
+      [ "IsRowValid", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html#a0e2822726a2332730886fcefeb9ce619", null ],
+      [ "IsRowValidByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html#a03f1bfb9e643909aa9a36ffff005c4e5", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html#ac775f9a2c00164f5d0c5babffecd4f11", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctTransitionPreferenceTable::Key", "struct_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_1_1_key.html", [
+      [ "beginReferenceId", "struct_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_1_1_key.html#a57311e00ee1c7d1d57a1c4bf3507db70", null ],
+      [ "endReferenceId", "struct_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_1_1_key.html#ab4eb6096613206c4f6033a99f413b67d", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctTransitionPreferenceTable::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_1_1_modifier.html#a7bb69d4f5fcf0a187e37d48596866b5d", null ],
+      [ "AddNewRow", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_1_1_modifier.html#ae6b77c541d2be52ac9b945c8ff076431", null ],
+      [ "DeleteRow", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_1_1_modifier.html#a400f68f28d27689b00c1c34e696b8a88", null ],
+      [ "DeleteRowByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_1_1_modifier.html#addff1fdd1a0262bce2f8ea7539ade579", null ],
+      [ "SetAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_1_1_modifier.html#ab264bd1a005f9a07f3b52ddd67708db9", null ],
+      [ "SetAngleByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_1_1_modifier.html#a74baa32472b41bbe19efcef1825b7cf9", null ],
+      [ "SetBeginDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_1_1_modifier.html#a555639779a3d4407ef7538a7c768478f", null ],
+      [ "SetBeginDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_1_1_modifier.html#a12e9ccf140a8acf0c9f63ec98bd143a5", null ],
+      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_1_1_modifier.html#aba62e76b391da759db4157e6e4e9b835", null ],
+      [ "SetDescriptionByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_1_1_modifier.html#aac91ee42d4034ea4c967e6ea913f0796", null ],
+      [ "SetEndDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_1_1_modifier.html#aa327afe1b93cf2eae65beff956a3f056", null ],
+      [ "SetEndDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_1_1_modifier.html#afeab4929d44b3f1448164a0b8323c556", null ],
+      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_1_1_modifier.html#ad83ba597ca126610adaf2d51361aaa34", null ]
+    ] ],
+    [ "ACAPI::MEP::DuctTransitionPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_container.html", [
+      [ "GetDuctTransitionPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_container.html#a32e822df4d0a39ceac769a49b5fd4379", null ]
+    ] ],
+    [ "ACAPI::MEP::Elbow", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow.html", [
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow.html#a56e30774f9ad3fd7d6c7c11b07e264a1", null ],
+      [ "GetFactorRadius", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow.html#ada7d7b7127f632b345dbf7dc45bed09d", null ],
+      [ "GetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow.html#a95e34093ee7e153b0a6766a45408e47d", null ],
+      [ "GetInsulationThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow.html#ab5bad9b74fd3fb6d5ab92d78e9af2f92", null ],
+      [ "GetPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow.html#a6901da8ecb0d76eb345cb97e8a5f9ef9", null ],
+      [ "GetRadius", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow.html#ae015bd61481a22e2915f80485a86ea5c", null ],
+      [ "GetRoutingNodeId", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow.html#aed042bded5ec82d04de860f37147234f", null ],
+      [ "GetShape", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow.html#a17166d1a9efa8ad5f9a82135bdbc4bdd", null ],
+      [ "GetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow.html#aac7766b86691a6f55993b825f6c3206f", null ],
+      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow.html#afd88a408baf91543a18038f48f9e7bb1", null ]
+    ] ],
+    [ "ACAPI::MEP::ElbowDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_default.html", [
+      [ "ElbowDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_default.html#a8039cc933218b2c006bd506dc7f599ef", null ],
+      [ "GetFactorRadius", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_default.html#a47398758055f5db5f96923fa34afafc6", null ],
+      [ "GetPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_default.html#a4f0b925ed04188e72ba8f02aa2635a00", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_default.html#a5c32ca67e1e8357ad5872ab97da619dd", null ],
+      [ "CreateElbowDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_default.html#a7095f345beebfdeab78b8a0c40539776", null ]
+    ] ],
+    [ "ACAPI::MEP::ElbowDefault::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_default_1_1_modifier.html", [
+      [ "SetFactorRadius", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_default_1_1_modifier.html#ab5060ea9082a30c11ecc1331a544f2d2", null ],
+      [ "SetPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_default_1_1_modifier.html#a764e5bc82e4b65c8e7d3f0573a5c1103", null ]
+    ] ],
+    [ "ACAPI::MEP::ElbowUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_u_i_manager.html", [
+      [ "ApplyElbowDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_u_i_manager.html#a34f41d47029d7cbb641e0d052f870784", null ],
+      [ "CreateElbowDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_u_i_manager.html#a99e40dc60c53b3ad88b91db2facc617a", null ],
+      [ "CreateElbowUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_u_i_manager.html#a34a4e22a2e0a6efe091e5115cc3379b8", null ]
+    ] ],
+    [ "ACAPI::MEP::Element", "class_a_c_a_p_i_1_1_m_e_p_1_1_element.html", null ],
+    [ "ACAPI::MEP::ElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html", [
+      [ "ElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#af3be77f8ac769a25f2ed05023a3b3fd8", null ],
+      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#a998ec74330d12bd134ebf52979e3701b", null ],
+      [ "GetAnchorPoint", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#ac6d5819d046e549385737d21252ca64f", null ],
+      [ "GetDirectConnectedMEPElementIds", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#ad0f66361436a55a55359dd666f2c32ed", null ],
+      [ "GetObjectId", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#a8f40e43ba22788c09b34a747701083c4", null ],
+      [ "GetOrientation", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#a3314d300b7fd16a4e19f04fe51996980", null ],
+      [ "GetPortIDs", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#a64e8bf1aded472f79dcf48c30c058446", null ]
+    ] ],
+    [ "ACAPI::MEP::ElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html", [
+      [ "ElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#aec9410cce501a29db958922ffdb0fb59", null ],
+      [ "GetCableCarrierPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a5d5fdbe2a167216e673aec7953004c12", null ],
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a42262e75ff079e322c655f2b233f043d", null ],
+      [ "GetDomainOfPort", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#ad238d58473dd041a7d9f4bc84ad43750", null ],
+      [ "GetInsulationThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a3fa0ed2a37310550e97fbb2cd688847f", null ],
+      [ "GetObjectId", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a5de729ddd6365c9d7c32fe07ccd252d1", null ],
+      [ "GetPipingPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#ab9d504ec872774560d646deb8c1c14c2", null ],
+      [ "GetPortCount", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#ade303bee9615712c663dcc46ec18c713", null ],
+      [ "GetVentilationPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a69681a27484a4750f09041702006042d", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a556baec75bf1fa4c47136d8229e2929b", null ]
+    ] ],
+    [ "ACAPI::MEP::ElementDefault::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default_1_1_modifier.html#a97461f533479ab836fccab9688f13511", null ],
+      [ "RemoveInsulation", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default_1_1_modifier.html#a84c93f925bf57c8659b730dd7bb82a57", null ],
+      [ "SetInsulationThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default_1_1_modifier.html#af9a0baac1ca1c85506a1041687db6f21", null ],
+      [ "SetObjectId", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default_1_1_modifier.html#a7a7e7d45e14aec592444f54ebdf8b70b", null ]
+    ] ],
+    [ "ACAPI::MEP::ElementUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_u_i_manager.html", [
+      [ "ApplyElementDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_u_i_manager.html#af2a09295286ad02a9409362581fe349c", null ],
+      [ "CreateElementDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_u_i_manager.html#a888657003e58cac70a91b5506b11e2c6", null ],
+      [ "CreateElementUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_u_i_manager.html#a466cc0c0d1c02558c48a91e560b578eb", null ]
+    ] ],
+    [ "ACAPI::MEP::Equipment", "class_a_c_a_p_i_1_1_m_e_p_1_1_equipment.html", [
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_equipment.html#ad8b234e223882238668a8cb287dfa789", null ],
+      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_equipment.html#a2757c47da71452b6b6e5ca6ca3b158f3", null ]
+    ] ],
+    [ "ACAPI::MEP::Equipment::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_equipment_1_1_modifier.html", [
+      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1_equipment_1_1_modifier.html#a678bebeb7f102f6446fcb4e48d422579", null ]
+    ] ],
+    [ "ACAPI::MEP::EquipmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_equipment_default.html", [
+      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1_equipment_default.html#a0c7f20e4d93677a17ec936d6c3151009", null ],
+      [ "CreateEquipmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_equipment_default.html#a90bf3a3a3291e4f07abb07a2a939fd35", null ],
+      [ "CreateEquipmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_equipment_default.html#a513889fc862decd57f9e5adb0a8108f9", null ]
+    ] ],
+    [ "ACAPI::MEP::EquipmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_equipment_u_i_manager.html", [
+      [ "ApplyEquipmentDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_equipment_u_i_manager.html#a9af5570b3bd4e167aa35ebe43f895728", null ],
+      [ "CreateEquipmentDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_equipment_u_i_manager.html#ac34d3b4854ce180bd1616e56d7a7cac2", null ],
+      [ "CreateEquipmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_equipment_u_i_manager.html#aaea3015ff0fd036c5a96b0fcb1d2ecef", null ]
+    ] ],
+    [ "ACAPI::MEP::Fitting", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting.html", [
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting.html#a97fb5b621bcee1651448e130d57d3581", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting.html#a949def5c0c7710466a2a4d84f44ba41f", null ],
+      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting.html#ab27fede653a073cde3570d61ba21dee1", null ]
+    ] ],
+    [ "ACAPI::MEP::Fitting::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting_1_1_modifier.html", [
+      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting_1_1_modifier.html#a1e8d376c7960363b858845e070b57458", null ]
+    ] ],
+    [ "ACAPI::MEP::FittingDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting_default.html", [
+      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting_default.html#ad8fed8e4b4c1c166680979c77bd4b0ff", null ],
+      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting_default.html#a0bda3c9f0c1e905e92162ca26283a853", null ],
+      [ "CreateFittingDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting_default.html#a6e9e541b8bd65cb4205211b9aea2b4fe", null ],
+      [ "CreateFittingDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting_default.html#a2d3559df3cbbadd204330053f5efa0db", null ]
+    ] ],
+    [ "ACAPI::MEP::FittingUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting_u_i_manager.html", [
+      [ "ApplyFittingDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting_u_i_manager.html#a03ae86ddee065d3e5a05f807e10bdc65", null ],
+      [ "CreateFittingDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting_u_i_manager.html#a67f1e43eb917ff2451e8bbf981a8df58", null ],
+      [ "CreateFittingUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting_u_i_manager.html#a80698a95e6bb9ee9baaebcb25e8adf79", null ]
+    ] ],
+    [ "ACAPI::MEP::FlexibleSegment", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment.html", [
+      [ "GetControlPoints", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment.html#aafd06504e70cacca5ac6355a15151a3a", null ],
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment.html#a3ce34b1b8e1efe2e8ff38a7eb3592703", null ],
+      [ "GetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment.html#ad652f43a28a69daf4a376deec84f8c46", null ],
+      [ "GetPolyline", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment.html#a324971dec416c57a7c09d79fa52927f3", null ],
+      [ "GetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment.html#ab9d4358b351157002f0f91b8ad7982d2", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment.html#af90f7aa9bf85fb8d6c929aa7d92c10b5", null ],
+      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment.html#ad9ab4a51f0e8ea900707b3597830bb69", null ]
+    ] ],
+    [ "ACAPI::MEP::FlexibleSegment::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_1_1_modifier.html", [
+      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_1_1_modifier.html#a54dcf6f244af3c8812cab7811dc8c1ec", null ],
+      [ "SetControlPoints", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_1_1_modifier.html#aa617a289c330145710d0a0ac04620696", null ],
+      [ "SetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_1_1_modifier.html#a5cab9e44127a1c03697820dd26511287", null ],
+      [ "SetPolyline", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_1_1_modifier.html#a53218b9334e86fb83c83705003510b8e", null ],
+      [ "SetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_1_1_modifier.html#aa2fddd3b1f95d1ba81348c0be7e1abcd", null ]
+    ] ],
+    [ "ACAPI::MEP::FlexibleSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_default.html", [
+      [ "GetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_default.html#aa54575268f9a3119efcf5a0533e6e4a5", null ],
+      [ "GetShape", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_default.html#afbb45c0446d21330b9696194dd898389", null ],
+      [ "GetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_default.html#ad0a1486f9210c4a6332f6c88d138d986", null ],
+      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_default.html#aa95a33acc7b441bc3c32d79a9e3d624e", null ],
+      [ "PlacePolyline", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_default.html#ad27273d6c6b2c134dc115d7d3c6d62c0", null ],
+      [ "CreateFlexibleSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_default.html#a646c1198d4c758e37e2f5d3475ff7f3b", null ],
+      [ "CreateFlexibleSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_default.html#a3b2724350da64e6c53d923a091ec9f1e", null ]
+    ] ],
+    [ "ACAPI::MEP::FlexibleSegmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_u_i_manager.html", [
+      [ "ApplyFlexibleSegmentDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_u_i_manager.html#a045fa7d5e605759d1b462dc51fca7056", null ],
+      [ "CreateFlexibleSegmentDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_u_i_manager.html#a1f8468fe287d645c26e29869712a4d31", null ],
+      [ "CreateFlexibleSegmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_u_i_manager.html#a4d6063199ad4f0d185cdcef80781415f", null ]
+    ] ],
+    [ "ACAPI::MEP::ModifiableElement", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element.html", null ],
+    [ "ACAPI::MEP::ModifiableElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base.html", [
+      [ "ModifiableElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base.html#a8faa4534633d22e472ed242265adae9a", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base.html#a291d6cade53501d143a1bdeb5cd77ac0", null ]
+    ] ],
+    [ "ACAPI::MEP::ModifiableElementBase::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html#a0cee11ad6b7214c28eda962b382146cb", null ],
+      [ "FinalizeModification", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html#a790a61247d148cae2edcb873771c82e5", null ],
+      [ "SetAnchorPoint", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html#a93e8675a771253fc4ff115dad7e8cf99", null ],
+      [ "SetObjectId", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html#adfd2c38251de6cc1eb84d150c5795a5c", null ],
+      [ "SetOrientation", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html#a2f4134778365a680a5ba94e9c52bc4ce", null ]
+    ] ],
+    [ "ACAPI::MEP::PhysicalSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1_physical_system.html", [
+      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_physical_system.html#a5bd0f6f0b8bd2ebd7cf1d271a1f7e227", null ],
+      [ "GetRootElementId", "class_a_c_a_p_i_1_1_m_e_p_1_1_physical_system.html#af79697c8158634c7219007d3c402a8f0", null ],
+      [ "GetSystemCategory", "class_a_c_a_p_i_1_1_m_e_p_1_1_physical_system.html#a10e8f151426f9983871e94d8626b27ca", null ],
+      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1_physical_system.html#ac7129a66ead11f6241fa59e93e86e8d9", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_physical_system.html#ab4de4692194dd9fc30f5999624eb2a0d", null ]
+    ] ],
+    [ "ACAPI::MEP::PhysicalSystem::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_physical_system_1_1_modifier.html", [
+      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_physical_system_1_1_modifier.html#a397d862917a2764115881f68720b7fa7", null ],
+      [ "SetRootElement", "class_a_c_a_p_i_1_1_m_e_p_1_1_physical_system_1_1_modifier.html#a75c873797beee91b89307a078d7dd695", null ],
+      [ "SetSystemCategory", "class_a_c_a_p_i_1_1_m_e_p_1_1_physical_system_1_1_modifier.html#a3957a49de22a6f0a30f1cbc78a0dc124", null ]
+    ] ],
+    [ "ACAPI::MEP::PipeAngleSet", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_angle_set.html", [
+      [ "GetPipeAngleSet", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_angle_set.html#a00fb50056f2b656dca5d3a9b540ba189", null ]
+    ] ],
+    [ "ACAPI::MEP::PipeBranchPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html", [
+      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#a8c4f2ee593260415283fd472915626b3", null ],
+      [ "GetBranchAxisAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#acb63182121fe5a0d1dc7b8517fd0852e", null ],
+      [ "GetBranchAxisDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#a2f0376f454109592b891164ac6fb2196", null ],
+      [ "GetBranchAxisDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#ad367fbabc3ab2e40f814d1b834214827", null ],
+      [ "GetBranchAxisReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#a62e1827ac8d56518ef464d7b198fc09f", null ],
+      [ "GetBranchOffset", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#a020a040721750980e9f915f5795589d2", null ],
+      [ "GetBranchOffsetByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#ab7077dd5bd47349bf50fd2a3f4c7a57a", null ],
+      [ "GetConnectionLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#ac6fd0df2107ffb9e9fb53539686a8693", null ],
+      [ "GetConnectionLengthByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#af1b6fb808b426c9e3665ec48c88397e4", null ],
+      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#a89b2afefa16d92330b47f48611e807e3", null ],
+      [ "GetDescriptionByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#a581a281a9a0bdc2984a1eb7c0efba660", null ],
+      [ "GetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#aa1cf810a440a76a46c887afdc974ab6d", null ],
+      [ "GetLengthByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#a5ac823f49fb9648e10cfe5b93a93e294", null ],
+      [ "GetMainAxisDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#a66f7e3afdf0a167c41a5ada7360a3cfa", null ],
+      [ "GetMainAxisDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#a5c830482054f5c09552b5736be220389", null ],
+      [ "GetMainAxisReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#afb10c6f8269e5febe72ea806ac0646d2", null ],
+      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#a66078efa31e0b5c4ed5de71878901c3f", null ],
+      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#a2efbcfee78c1de747de4e25fd14d9cd8", null ],
+      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#a41b0ef2632b3313a12b2b6057fa7e3d3", null ],
+      [ "IsRowValid", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#a5ea7c4cdc6aea6eb3ccae994580c1124", null ],
+      [ "IsRowValidByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#a5577231ed9563a860646ae3d8f477d5c", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table.html#ad2c73670127209a461414b8a52ea3297", null ]
+    ] ],
+    [ "ACAPI::MEP::PipeBranchPreferenceTable::Key", "struct_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_key.html", [
+      [ "branchAxisAngle", "struct_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_key.html#a6349e59d43d17813774f287b22a16059", null ],
+      [ "branchAxisReferenceId", "struct_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_key.html#afa7362ab33bce44dc3cf452b3f113c9f", null ],
+      [ "mainAxisReferenceId", "struct_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_key.html#a72d7fe8f66f86be481d076229707ce15", null ]
+    ] ],
+    [ "ACAPI::MEP::PipeBranchPreferenceTable::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_modifier.html#a714b94c194e932d4adcb2c14d1206612", null ],
+      [ "AddNewRow", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_modifier.html#a2ecf0274c6a60172b96ddafece60a6c3", null ],
+      [ "DeleteRow", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_modifier.html#a07f99d311cafd89c89c8edeb5c177e47", null ],
+      [ "DeleteRowByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_modifier.html#aaa4ad34548010aa3a5f48c928b48405b", null ],
+      [ "SetBranchAxisDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_modifier.html#a2e28716d20a7658f68e1fb41ab85ca71", null ],
+      [ "SetBranchAxisDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_modifier.html#a2494be737859c8ef15c66f33e47735d7", null ],
+      [ "SetBranchOffset", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_modifier.html#a2dfe7176f12904a833a7249a397f05b5", null ],
+      [ "SetBranchOffsetByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_modifier.html#a643a680445dfd1020e16f03ccb9e6629", null ],
+      [ "SetConnectionLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_modifier.html#a406fb6c25ceabf9a6f147bc03b1ac045", null ],
+      [ "SetConnectionLengthByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_modifier.html#ac15441a03e1c25055fdbca7091a485e9", null ],
+      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_modifier.html#a0f1d171ff5145b5321b16c991953a3c9", null ],
+      [ "SetDescriptionByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_modifier.html#a9dca579b03d42c94ed14b25fddc1d42c", null ],
+      [ "SetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_modifier.html#acf5ae729fd72ffc39d87dcc603fceb01", null ],
+      [ "SetLengthByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_modifier.html#a70a2631b0ddd86a119852d33ecdcb316", null ],
+      [ "SetMainAxisDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_modifier.html#ae4b6afce793b97117d95d42cd1a01bc5", null ],
+      [ "SetMainAxisDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_modifier.html#a9b5907a9cc36208ca84863ba932984b6", null ],
+      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_1_1_modifier.html#af1a0bd957a698bc4be657f0120b91730", null ]
+    ] ],
+    [ "ACAPI::MEP::PipeBranchPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_container.html", [
+      [ "GetPipeBranchPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_branch_preference_table_container.html#a8ed6697f5dafda2e33136dafc591e528", null ]
+    ] ],
+    [ "ACAPI::MEP::PipeElbowPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table.html", [
+      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table.html#a47527dda42655f84b69c4c5e81fb4487", null ],
+      [ "GetAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table.html#ac2f76c263ae19c5ae4e32052d8d60f8f", null ],
+      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table.html#ad9a0a211ba651ab371bb019d21ce387c", null ],
+      [ "GetDescriptionByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table.html#a2c63deac1382f6f6978b88f2ad79d8aa", null ],
+      [ "GetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table.html#a3f97b2f311771609233e7af8dbda6c72", null ],
+      [ "GetDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table.html#ac1b852eb71424af6b0837ce0023fffc2", null ],
+      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table.html#a09ac50bc899dfd051bea5393b528d632", null ],
+      [ "GetRadius", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table.html#ac59b8c953514c19668950ae0977d2d50", null ],
+      [ "GetRadiusByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table.html#a88f4eb801c46185e92e51b467b65b4a6", null ],
+      [ "GetReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table.html#a8910283e85b59cffc6b1b30de2a1944a", null ],
+      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table.html#afe8810e1f6c8fc2069a9aef6596f9fff", null ],
+      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table.html#adbd3baabecab92977900d36eaf147ffb", null ],
+      [ "IsRowValid", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table.html#a6086593e19d0095a983f21825a9e0754", null ],
+      [ "IsRowValidByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table.html#abf3baa92b8fc580d91a4dcd6bf2873d6", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table.html#ab8b851c181c42ac1d23608ea2aae418e", null ]
+    ] ],
+    [ "ACAPI::MEP::PipeElbowPreferenceTable::Key", "struct_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table_1_1_key.html", [
+      [ "angle", "struct_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table_1_1_key.html#a30310914eedd1ab19e909631b7598521", null ],
+      [ "referenceId", "struct_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table_1_1_key.html#a7cc1d347684f9379011413ae094b8a6a", null ]
+    ] ],
+    [ "ACAPI::MEP::PipeElbowPreferenceTable::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table_1_1_modifier.html#a25435af4276c9b5d88bd9d211b78590a", null ],
+      [ "AddNewRow", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table_1_1_modifier.html#a63de85df8505759e8e4976245cb0a09e", null ],
+      [ "DeleteRow", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table_1_1_modifier.html#aea710ed670892595c30476b1c23aa258", null ],
+      [ "DeleteRowByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table_1_1_modifier.html#a7bd41ec77aaea60110e80d8570ed814f", null ],
+      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table_1_1_modifier.html#a02a6ca940934ecc44e4ae77dd0dd3284", null ],
+      [ "SetDescriptionByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table_1_1_modifier.html#aa28b7c60c2c513ad5faecb4c7ae01871", null ],
+      [ "SetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table_1_1_modifier.html#a05cafdaa9aaf92c1939c1bad35e68298", null ],
+      [ "SetDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table_1_1_modifier.html#aa70b38299825816724eaf3587320b44c", null ],
+      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table_1_1_modifier.html#a5533a37cef0954f499107599cd3e7bdc", null ],
+      [ "SetRadius", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table_1_1_modifier.html#a46f4b525863cc73e064d8092b31946aa", null ],
+      [ "SetRadiusByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table_1_1_modifier.html#a391b9289c9e50ee5e4191c87a69f5a1a", null ]
+    ] ],
+    [ "ACAPI::MEP::PipeElbowPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table_container.html", [
+      [ "GetPipeElbowPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_elbow_preference_table_container.html#aa89181f2f1487528582439aca51bd7b6", null ]
+    ] ],
+    [ "ACAPI::MEP::PipeReferenceSet", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_reference_set.html", [
+      [ "GetPipeReferenceSet", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_reference_set.html#acdeeb66d0d350897720d18c525db8e78", null ]
+    ] ],
+    [ "ACAPI::MEP::PipeSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table.html", [
+      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table.html#a90e3d68a0ee46920d106eca5e516868d", null ],
+      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table.html#a8daf398b8bf75721c13cbc479c235685", null ],
+      [ "GetDescriptionByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table.html#aa87f44dd536fbd7ebba695073f4dc2c1", null ],
+      [ "GetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table.html#ad241e44477ea82f9217408d1a0be4591", null ],
+      [ "GetDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table.html#a4c705b8665601a5304338d72af2acbae", null ],
+      [ "GetMaximumSegmentationLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table.html#a7614ee230745d9e5c101b4835bf226c3", null ],
+      [ "GetMinimumSegmentationLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table.html#a0605e86f2295b5bf9ed23f9eec4eddaa", null ],
+      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table.html#adf4b5d83ad4235609944d802a13f7ff5", null ],
+      [ "GetReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table.html#a287005551aa2d9dd640c87587584ba3f", null ],
+      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table.html#ae7750ad160373ffada74202a5bc5c982", null ],
+      [ "GetUseIndividualSegmentLengths", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table.html#ab634f0452144f1b9ad492e0d18185b5f", null ],
+      [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table.html#a1a8253be66e2f0f308da384870e01e06", null ],
+      [ "GetWallThicknessByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table.html#aa0963932b6752a4a568c99c79e1dac32", null ],
+      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table.html#a6c4197525a951b6d4f5fa4adf9655745", null ],
+      [ "IsRowValid", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table.html#a87f6f5effe40525bc96f4f8bc65785a8", null ],
+      [ "IsRowValidByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table.html#a808f80e0397036457e8d3cddf5ba5691", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table.html#ad4ed179b0da4f7b17b3732af8c9b89d4", null ]
+    ] ],
+    [ "ACAPI::MEP::PipeSegmentPreferenceTable::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table_1_1_modifier.html#a1203cb2895e934e4a8ac588e1b1ff0e3", null ],
+      [ "EmptyRow", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table_1_1_modifier.html#add518e3c3853673c032437920c4961da", null ],
+      [ "EmptyRowByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table_1_1_modifier.html#aad7cde23eadd001d38ee867745cb3749", null ],
+      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table_1_1_modifier.html#acaf3141e5fbbf7f4e9c0565b0a4f0cba", null ],
+      [ "SetDescriptionByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table_1_1_modifier.html#a6cfbc04c1fec95c28662a3c29d6eedf9", null ],
+      [ "SetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table_1_1_modifier.html#a35a3e24182ebf76f0b0cf5e4665d189e", null ],
+      [ "SetDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table_1_1_modifier.html#ae487791ec6beb08dde9b95f0238be06f", null ],
+      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table_1_1_modifier.html#a8e05fa3b454da2294fe98daf056e93bf", null ],
+      [ "SetSegmentationLengths", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table_1_1_modifier.html#a46f45cd43a1afb8fcd4de829d0f5160f", null ],
+      [ "SetUseIndividualSegmentLengths", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table_1_1_modifier.html#a2df3ce9e060a6df8378b46f60d6b8558", null ],
+      [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table_1_1_modifier.html#a0f17d6ddafb8b84e6fb9974f5f010fa4", null ],
+      [ "SetWallThicknessByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table_1_1_modifier.html#ae558b3b666e18d3f7bcde43daddb3afb", null ]
+    ] ],
+    [ "ACAPI::MEP::PipeSegmentPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table_container.html", [
+      [ "GetPipeSegmentPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_segment_preference_table_container.html#a167ebbd5dfc47978d3b0fc19a93f5372", null ]
+    ] ],
+    [ "ACAPI::MEP::PipeTransitionPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table.html", [
+      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table.html#a5593e39c4a978dc5e37f2c80b97b4a75", null ],
+      [ "GetBeginDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table.html#a9ea18ee8642f2365cce8e043ac3173a9", null ],
+      [ "GetBeginDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table.html#a6eb2fef97763929cbf8b4aaf0f2347bf", null ],
+      [ "GetBeginReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table.html#a762bd87fc8d91980d459000b39254c25", null ],
+      [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table.html#a48203ad66976fc23541b40cf46074d7a", null ],
+      [ "GetDescriptionByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table.html#a3fa6c2a97565f1ad28c52ce2c9eebbd2", null ],
+      [ "GetEndDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table.html#a64816ff31fcad9d8758b537c7a8bd700", null ],
+      [ "GetEndDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table.html#a5bcab7f5b1bbb231a31ab0f889541f09", null ],
+      [ "GetEndReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table.html#a2d42959d27529298cb32c346d7f2a51d", null ],
+      [ "GetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table.html#a7deb605a83a843285a350e85c30efc27", null ],
+      [ "GetLengthByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table.html#a1c47a6ce9b0ff81a54eb481d495ec5c4", null ],
+      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table.html#af3616f94eda9b1f16e7aedb08c75069c", null ],
+      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table.html#ac07b6d26c66673616f1ccc545f82350a", null ],
+      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table.html#a423653135e1dfbbf8ef9b294d4b16ad2", null ],
+      [ "IsRowValid", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table.html#a65ffad5ef8efdf968d1b52424c830a58", null ],
+      [ "IsRowValidByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table.html#a8afbdfe7194deed8b1ca7c44443e3974", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table.html#a291a3d8984ee695b9b6f0343d5b62d74", null ]
+    ] ],
+    [ "ACAPI::MEP::PipeTransitionPreferenceTable::Key", "struct_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_1_1_key.html", [
+      [ "beginReferenceId", "struct_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_1_1_key.html#a65181447862bb6ad639a4d91cf609b42", null ],
+      [ "endReferenceId", "struct_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_1_1_key.html#a8b3c2db1f4c2937e8e64dab466dafc43", null ]
+    ] ],
+    [ "ACAPI::MEP::PipeTransitionPreferenceTable::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_1_1_modifier.html#a86b3c35aaebdea2954bd356d3d98f245", null ],
+      [ "AddNewRow", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_1_1_modifier.html#ad92dfc2122bf2119f71e9a8fbedac999", null ],
+      [ "DeleteRow", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_1_1_modifier.html#a75d50cf790c3c858a07aeaf9b4a0dc8d", null ],
+      [ "DeleteRowByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_1_1_modifier.html#afdbe1e264795660a2094992521b1c17a", null ],
+      [ "SetBeginDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_1_1_modifier.html#a255b4c77489beffe1c5c9908f88d6c78", null ],
+      [ "SetBeginDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_1_1_modifier.html#a2f0ac8be1f998b561aed132b9515cb8e", null ],
+      [ "SetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_1_1_modifier.html#a2cb0317b3c32cc96e4a1ecd281874300", null ],
+      [ "SetDescriptionByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_1_1_modifier.html#ae826dfad8cfbd0237ec9775cdccd320f", null ],
+      [ "SetEndDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_1_1_modifier.html#a9acc05ef8ac44d8cd5997fe43cd6f9f6", null ],
+      [ "SetEndDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_1_1_modifier.html#aeba547950e92c099c106f6b2e38e8ab9", null ],
+      [ "SetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_1_1_modifier.html#a6978543dd01e30fb844c7b1a9a10a482", null ],
+      [ "SetLengthByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_1_1_modifier.html#aae07a65d54b91a372c014e4225bb0e9f", null ],
+      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_1_1_modifier.html#ae02de6375f07567e5a1599d5e921f3b4", null ]
+    ] ],
+    [ "ACAPI::MEP::PipeTransitionPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_container.html", [
+      [ "GetPipeTransitionPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_container.html#a558c4df778fff87a2666ccbd4e4ad421", null ]
+    ] ],
+    [ "ACAPI::MEP::PipingPort", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port.html", [
+      [ "GetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port.html#aa101c1e14956a5b7a05753ce3266c326", null ],
+      [ "GetOuterDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port.html#ac881277cabf6ea7cd34b54a954551084", null ],
+      [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port.html#a805cc200d326e9885d0dd238c0288258", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port.html#a73bafd95d2fc0adddd625d6b57861c1b", null ]
+    ] ],
+    [ "ACAPI::MEP::PipingPort::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_1_1_modifier.html", [
+      [ "SetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_1_1_modifier.html#a288e1740dfc061da22aad1f25fc9389c", null ],
+      [ "SetOuterDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_1_1_modifier.html#a23b8040dc09ec6c07b1e82fa336a6776", null ],
+      [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_1_1_modifier.html#abf99374a6dd2b682e10e36ba974f686a", null ]
+    ] ],
+    [ "ACAPI::MEP::PipingPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default.html", [
+      [ "GetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default.html#accc4b82054485aa86e02468739267deb", null ],
+      [ "GetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default.html#ab28911bae01de72ad2f7591fa388ff23", null ],
+      [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default.html#a1149f90cf06a077fa866d4824f9cc334", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default.html#a91033948edcab550268a06e531c05d2a", null ]
+    ] ],
+    [ "ACAPI::MEP::PipingPortDefault::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default_1_1_modifier.html#a0b0e07ebb7df7fe496e57e0b2aa34b81", null ],
+      [ "SetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default_1_1_modifier.html#a0101b99f72f95e88df89c9f277e82fd4", null ],
+      [ "SetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default_1_1_modifier.html#a0b4789bec372d7c900ecb755a97d2346", null ],
+      [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default_1_1_modifier.html#a0e505a4c769d2fc44fb184a6ea2f6431", null ]
+    ] ],
+    [ "ACAPI::MEP::Port", "class_a_c_a_p_i_1_1_m_e_p_1_1_port.html", null ],
+    [ "ACAPI::MEP::PortBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html", [
+      [ "PortBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#ab0b625333f3ea140b0d3b955a8cef661", null ],
+      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#af6ac4a50754928b1a7765959deedcda4", null ],
+      [ "GetConnectedMEPElementId", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#a58e71e55c871e68ec02e03f23f58d9cb", null ],
+      [ "GetConnectedPortId", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#a42cb9e8b05ac6c93ae9b8a2f1cbadb30", null ],
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#af8fc95a17a5d8893af20502e9444ee08", null ],
+      [ "GetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#a7e08c7ba860422c3afdedcbc7933f439", null ],
+      [ "GetMEPElementId", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#ac1a21f7691b8c45eafd7636d1675f05f", null ],
+      [ "GetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#a768ecba98835d9f12db8134d3836d7a3", null ],
+      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#aeda095dbc5f8b1857455c55abc395fe9", null ],
+      [ "GetOrientation", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#ad4259620d21fd81ddb94db4a22bdcc0d", null ],
+      [ "GetPosition", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#ae8617af1452df460607ce16c75ea8b4f", null ],
+      [ "GetShape", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#a8624b71b83517b7af5a379ef2945b899", null ],
+      [ "GetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#a9430ef2462e579f8ad8408d140eef33e", null ],
+      [ "IsPhysicallyConnectable", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#a4a8e53740ec46445b4db856168b098b1", null ],
+      [ "IsPhysicallyConnected", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#a95d99ad14cfbbfa961cd75fcff45d3a7", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#a42cf6307a10136bc32bd79c01f6ad333", null ]
+    ] ],
+    [ "ACAPI::MEP::PortBase::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base_1_1_modifier.html#ad4b423c427fc4bb84e16d7e17af961b9", null ],
+      [ "FinalizeModification", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base_1_1_modifier.html#aae3ed080a4bea3c00823c8144deb2bda", null ],
+      [ "SetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base_1_1_modifier.html#ad1c90870df8ab28c8ca13067e933a66b", null ],
+      [ "SetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base_1_1_modifier.html#ae5df7a6e974d9a491061ca4027225742", null ],
+      [ "SetShape", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base_1_1_modifier.html#ab08190c3761960f9cb48248c0d4a1460", null ],
+      [ "SetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base_1_1_modifier.html#ab15a8c8fc2b7d9b37b72ae1139668eb1", null ]
+    ] ],
+    [ "ACAPI::MEP::PortDefaultBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html", [
+      [ "PortDefaultBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html#aa3fa3b649023533954337e0eaaf130fa", null ],
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html#ae3b904c39047bc290b2c21d9c67793d2", null ],
+      [ "GetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html#a61ff15e931882cc343aa147af2974cad", null ],
+      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html#aef5110372a07ece341e490b7f446de5d", null ],
+      [ "GetShape", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html#a5554972050cf3c6d63ed9997c6ae948f", null ],
+      [ "GetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html#a4255caa1d9e5d92e7339fa2c4cb815d4", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html#a845e3d5556450909510b40acbf459851", null ]
+    ] ],
+    [ "ACAPI::MEP::PortDefaultBase::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base_1_1_modifier.html#aada7e98c401ab0e08ed3a336bccd3a05", null ],
+      [ "SetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base_1_1_modifier.html#a9150c4e20850f7ed52df1299a83b16be", null ],
+      [ "SetShape", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base_1_1_modifier.html#ae389f848690378c231f73546ffc0f9f5", null ],
+      [ "SetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base_1_1_modifier.html#afd8831aff3c21f611b6f9ac4b67daea1", null ]
+    ] ],
+    [ "ACAPI::MEP::PreferenceTableContainerBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_preference_table_container_base.html", [
+      [ "PreferenceTableContainerBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_preference_table_container_base.html#a51637d4ea7325bbd280af18a816d96d3", null ],
+      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1_preference_table_container_base.html#a21848d44fbf1a8dd176234f7752c2937", null ],
+      [ "GetPreferenceTables", "class_a_c_a_p_i_1_1_m_e_p_1_1_preference_table_container_base.html#a32a44721d2b1c6146bcc5750475f5775", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_preference_table_container_base.html#acc735b66037085983b7e1180d2455148", null ]
+    ] ],
+    [ "ACAPI::MEP::PreferenceTableContainerBase::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_preference_table_container_base_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_preference_table_container_base_1_1_modifier.html#a71a86b0f8a2b3d8fff868f81be440321", null ],
+      [ "AddNewTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_preference_table_container_base_1_1_modifier.html#a71462f38222657371edb9c65086ed056", null ],
+      [ "Delete", "class_a_c_a_p_i_1_1_m_e_p_1_1_preference_table_container_base_1_1_modifier.html#ac75f462630311da9e99939c1dbab76ce", null ]
+    ] ],
+    [ "ACAPI::MEP::ReferenceSetBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_reference_set_base.html", [
+      [ "ReferenceSetBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_reference_set_base.html#a650a8205215cae9a8f10b930a24c58d4", null ],
+      [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1_reference_set_base.html#a110f9bf2c182eefd7bf5f07143a62ce0", null ],
+      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_reference_set_base.html#a0f2f8de6b4fbcac930070f5ea2bbcec4", null ],
+      [ "GetReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_reference_set_base.html#a0b931fcdae92e48faf4972abcb55ae92", null ],
+      [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_reference_set_base.html#a658fb274aba6a37dc049ddbef138992f", null ],
+      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1_reference_set_base.html#a3addc331814b8452a383cbdf236228fb", null ],
+      [ "IsReferenceIdDefined", "class_a_c_a_p_i_1_1_m_e_p_1_1_reference_set_base.html#a488df75e6be8ad7ea9862be26a3f178a", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_reference_set_base.html#a9a12374f812ec89048de37eedbd99d97", null ]
+    ] ],
+    [ "ACAPI::MEP::ReferenceSetBase::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_reference_set_base_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_reference_set_base_1_1_modifier.html#a429ef9357d33861d68e28ae5751c6636", null ],
+      [ "Add", "class_a_c_a_p_i_1_1_m_e_p_1_1_reference_set_base_1_1_modifier.html#ab5aae1900f71a15a2f207d14034a885b", null ],
+      [ "Delete", "class_a_c_a_p_i_1_1_m_e_p_1_1_reference_set_base_1_1_modifier.html#a419a0d1e652e3cfbf60d1a98b950c9e8", null ],
+      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_reference_set_base_1_1_modifier.html#a3f0894f7fec9c6e1f0fc409bf36c4063", null ]
+    ] ],
+    [ "ACAPI::MEP::RigidSegment", "class_a_c_a_p_i_1_1_m_e_p_1_1_rigid_segment.html", [
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_rigid_segment.html#a7ef17d6fcb6bb67e40287f340a756f54", null ],
+      [ "GetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_rigid_segment.html#a89886423b011400d6b091b66c8df5809", null ],
+      [ "GetInsulationThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_rigid_segment.html#aabbaea9e1a509d6699ad68be14ef18ec", null ],
+      [ "GetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_rigid_segment.html#adb3801c03a2581a28b27bad6dde28984", null ],
+      [ "GetRoutingSegmentId", "class_a_c_a_p_i_1_1_m_e_p_1_1_rigid_segment.html#a64393bfcf93554ab050af6b89761dd2f", null ],
+      [ "GetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1_rigid_segment.html#a50eb149b2d90dca999ab0a14beecc8f3", null ],
+      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_rigid_segment.html#a12c0f7016795e4ff07eb40a62a6bba2e", null ]
+    ] ],
+    [ "ACAPI::MEP::RigidSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_rigid_segment_default.html", [
+      [ "CreateRigidSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_rigid_segment_default.html#a64aad8fdaf84accc004f4fda0c5601da", null ]
+    ] ],
+    [ "ACAPI::MEP::RigidSegmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_rigid_segment_u_i_manager.html", [
+      [ "ApplyRigidSegmentDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_rigid_segment_u_i_manager.html#a70a9f91e4411870be8828d9be052c502", null ],
+      [ "CreateRigidSegmentDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_rigid_segment_u_i_manager.html#aa7c62310db32531f642c4d9242488434", null ],
+      [ "CreateRigidSegmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_rigid_segment_u_i_manager.html#ace18d25271ba94a5dbe0b4e3c1dd4d1c", null ]
+    ] ],
+    [ "ACAPI::MEP::RoutingElement", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html", [
+      [ "GetBranchPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html#a9f2d15276472c7bc1e32e8aa1b7497d1", null ],
+      [ "GetCutPlanePosition", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html#a375961603a0444116004e7dbd2cbc39a", null ],
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html#a7963610b91d8c0b39e32291023537786", null ],
+      [ "GetFloorPlanDisplayOption", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html#a25b3ed5fdde1e3c10a3216fed10e76fb", null ],
+      [ "GetLogicallyConnectedPortIdAtRouteBegin", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html#a98f88f371449e2de441527552cc12b98", null ],
+      [ "GetLogicallyConnectedPortIdAtRouteEnd", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html#a48bc928a1af17791b61794e0287d13b4", null ],
+      [ "GetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html#a140eb9b0a4d90deedae86390fbcf9738", null ],
+      [ "GetOffsetFromHomeStory", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html#a8e157dc7d57c2269768d852f50456353", null ],
+      [ "GetOnStoryVisibility", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html#a1e1874dadebba7f7e6013a9de946f90a", null ],
+      [ "GetPolyLine", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html#a43c0524f7bddadcbbcff6227d84555b4", null ],
+      [ "GetRoutingNodeDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html#aa3e7b698d12f6c2bd3257cbe28de515b", null ],
+      [ "GetRoutingNodeIds", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html#a0b664643917c6c0b35218bb266fe97f7", null ],
+      [ "GetRoutingSegmentDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html#a0fb5f1d5338edf62adede0a9778e5b40", null ],
+      [ "GetRoutingSegmentIds", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html#ad3a00c116c47a52ea2dc71fc1f3e0758", null ],
+      [ "GetShowProjection", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html#a7c53a5db8cc9ea6210cdcd2c957c751f", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html#a078c40fcce8cc5c32a69aca038e0020a", null ],
+      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html#ac5689ddb38c823a6bcb432b15ada71e1", null ]
+    ] ],
+    [ "ACAPI::MEP::RoutingElement::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_1_1_modifier.html", [
+      [ "ConnectLogically", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_1_1_modifier.html#aab704789bd7aa3ced53fb74b9e8f7d8f", null ],
+      [ "FinalizeModification", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_1_1_modifier.html#aa804108461905402f47221cb2539f5b6", null ],
+      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_1_1_modifier.html#a7821be89d9b1988df6c6cfde409068c3", null ],
+      [ "SetBranchPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_1_1_modifier.html#a0522ce339c0e76000d776ea942072546", null ],
+      [ "SetCutPlanePosition", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_1_1_modifier.html#a33ad7caf35214ff17533f119af93916e", null ],
+      [ "SetFloorPlanDisplayOption", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_1_1_modifier.html#a6ac971ebd7991d62aabef76517ff835d", null ],
+      [ "SetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_1_1_modifier.html#a980ea2886b4df26be89c4c6c5e2a8fbc", null ],
+      [ "SetOnStoryVisibility", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_1_1_modifier.html#a9bf197534ef00a9257856fc9e4f9ec0b", null ],
+      [ "SetRoutingNodeDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_1_1_modifier.html#af23f5c72c993cb60c8f8f14d8f884b86", null ],
+      [ "SetRoutingSegmentDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_1_1_modifier.html#a1fa7754333ac1995d4b02da49f38b46a", null ],
+      [ "SetShowProjection", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_1_1_modifier.html#aa2e2037e139f7a87044dcd73d43021ae", null ]
+    ] ],
+    [ "ACAPI::MEP::RoutingElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default.html", [
+      [ "RoutingElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default.html#a3fde268e87cf95bfb70dd03d2f81c1ca", null ],
+      [ "GetBranchPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default.html#a6fdac21776e9b3361cbc695fc97005cf", null ],
+      [ "GetCutPlanePosition", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default.html#aa2274af3d3e30b64cf38f13ecf0497ba", null ],
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default.html#a89672392347de969d8ee993dbb36a66a", null ],
+      [ "GetFloorPlanDisplayOption", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default.html#a763937b625884159880a664373370f42", null ],
+      [ "GetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default.html#abc8121de2a8cf5643ab4c846893d5877", null ],
+      [ "GetOnStoryVisibility", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default.html#aea080cdbadf113d04dc37aa9170f1f67", null ],
+      [ "GetRoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default.html#a6a306f7daf201f07fbe363b69e4c6692", null ],
+      [ "GetRoutingSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default.html#a6d9525a9dd300f7f7648d72865b0dc00", null ],
+      [ "GetShowProjection", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default.html#acac8a3526ce6435e9516466e5888bd09", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default.html#ac310362cc671986bc2aa8f7623a79682", null ],
+      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default.html#ab505a8adcf0bb5d5cd8caf4ad12a3ca8", null ],
+      [ "CreateRoutingElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default.html#acc24b80c91eb1cf8bf15e42eb6fc9110", null ],
+      [ "CreateRoutingElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default.html#acb7c7eb347126de977f0fa8bd286af59", null ]
+    ] ],
+    [ "ACAPI::MEP::RoutingElementDefault::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default_1_1_modifier.html", [
+      [ "SetBranchPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default_1_1_modifier.html#a9dbc20ecc67fa77097259539c2a86009", null ],
+      [ "SetCutPlanePosition", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default_1_1_modifier.html#a38d4e3be85a177653adcaa5c0d86b7ff", null ],
+      [ "SetFloorPlanDisplayOption", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default_1_1_modifier.html#a4f225b49c0164ce6b2f3e27ec67eee83", null ],
+      [ "SetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default_1_1_modifier.html#ac05b9f5bf72053afcceea224620bfc28", null ],
+      [ "SetOnStoryVisibility", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default_1_1_modifier.html#aa73b0d350c198ea85550420662e57e76", null ],
+      [ "SetRoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default_1_1_modifier.html#a01aaa7f28b846956b420beaf820e1fa9", null ],
+      [ "SetRoutingSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default_1_1_modifier.html#aba280579af00ad1602fd81cb603f27ee", null ],
+      [ "SetShowProjection", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default_1_1_modifier.html#ad9d7173ac8e904325de56bc3a84c0754", null ]
+    ] ],
+    [ "ACAPI::MEP::RoutingElementUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_u_i_manager.html", [
+      [ "ApplyRoutingElementDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_u_i_manager.html#af8d70617c23601abc6de24e5edbb1a26", null ],
+      [ "CreateRoutingElementDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_u_i_manager.html#acd1acf4a8a854b45f0348d0c58b153a5", null ],
+      [ "CreateRoutingElementUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_u_i_manager.html#a52c0c4eb9da03791b413676e3b45ea71", null ]
+    ] ],
+    [ "ACAPI::MEP::RoutingNode", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node.html", [
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node.html#a209734387ca6ce63ab1c8ebd14c086b9", null ],
+      [ "GetElbowDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node.html#aa351fe6aeb471ee57d14653bea21aa6c", null ],
+      [ "GetElbowIds", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node.html#a83b1512cfc39600fb8c8a94d03621716", null ],
+      [ "GetIncomingSegmentId", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node.html#a9c6684f4c5c3a85b03ddc2bc298005f0", null ],
+      [ "GetOutgoingSegmentId", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node.html#a7196c7fca146fed40590786ac6427cf6", null ],
+      [ "GetPosition", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node.html#a8687aa8f600a63886855428078667ff2", null ],
+      [ "GetPreferredTransitionPlacement", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node.html#a53239434fea95411c92749c03e5b4c56", null ],
+      [ "GetRoutingElementId", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node.html#a1910a4825c6dbdace6c213cb3abef801", null ],
+      [ "GetTransitionDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node.html#a21b100ed543c3f045b78b610e2e770ae", null ],
+      [ "GetTransitionIds", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node.html#a5290818f34a606df8b11ee5d8bf9f57e", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node.html#aa5f46214e9ad510354e925df53514bfe", null ],
+      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node.html#a4748fd5535b528d5e1817b6307c051fb", null ]
+    ] ],
+    [ "ACAPI::MEP::RoutingNode::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_1_1_modifier.html", [
+      [ "FinalizeModification", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_1_1_modifier.html#a9a0c56201a1e09a33de0f615b21cd5c4", null ],
+      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_1_1_modifier.html#a78cb7a037aba1103dcb3cb5195576386", null ],
+      [ "SetElbowDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_1_1_modifier.html#a025839f5f6c24c430f7d54ff92f9310b", null ],
+      [ "SetPosition", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_1_1_modifier.html#a8772f41fe7797b40cba9ae928ad3832c", null ],
+      [ "SetPreferredTransitionPlacement", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_1_1_modifier.html#a65bc4312cb8d12bca987fdc16969e553", null ],
+      [ "SetTransitionDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_1_1_modifier.html#a1abdf1acbb5db3cd871a37c858d4d482", null ]
+    ] ],
+    [ "ACAPI::MEP::RoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_default.html", [
+      [ "RoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_default.html#a990124e5862c9b88d901590ee62f99d6", null ],
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_default.html#af9612e6db15bc32cda6c7f91960cbad7", null ],
+      [ "GetElbowDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_default.html#a90eb58ab5c49c823b7797872fea18d68", null ],
+      [ "GetPreferredTransitionPlacement", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_default.html#a99b6fe7cc1c3833d14a59683f3f337a8", null ],
+      [ "GetTransitionDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_default.html#a552fed463ee1371561c4fd0bf56e77ea", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_default.html#a307efac3a0eec887863943e2f3e400de", null ],
+      [ "CreateRoutingNodeDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_default.html#aa9d74ce6c9968b9f3f9fa6ef0df588ba", null ]
+    ] ],
+    [ "ACAPI::MEP::RoutingNodeDefault::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_default_1_1_modifier.html", [
+      [ "SetElbowDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_default_1_1_modifier.html#aca7b79867d731b12c1d8985c19a3db22", null ],
+      [ "SetPreferredTransitionPlacement", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_default_1_1_modifier.html#a83221f8d9813ad2be48aa288b7a043d2", null ],
+      [ "SetTransitionDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_default_1_1_modifier.html#a956e78e63e4516e1d187c2388b61962e", null ]
+    ] ],
+    [ "ACAPI::MEP::RoutingNodeUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_u_i_manager.html", [
+      [ "ApplyRoutingNodeDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_u_i_manager.html#a0483cb0f3878682eb5fcbad1a030a4ed", null ],
+      [ "CreateRoutingNodeDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_u_i_manager.html#a4325fcf0c4c9da5f10db71d77cae649f", null ],
+      [ "CreateRoutingNodeUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_node_u_i_manager.html#ae298e3f3493ac8270eb69f21d45d0c1d", null ]
+    ] ],
+    [ "ACAPI::MEP::RoutingSegment", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html", [
+      [ "GetAnchor", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#af0cd591e368dfe36cb3b749fe6505bc9", null ],
+      [ "GetBeginNodeId", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#ae7d8216fcfc8a29dc683067b704cc945", null ],
+      [ "GetConnectionStyle", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#a26fc871398da446bd983e816413baf38", null ],
+      [ "GetCrossSectionHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#a0c2e0bf3b8b4b7c11349c9f1d5558560", null ],
+      [ "GetCrossSectionReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#ac0125ef484f5d2ce36b01830663f496c", null ],
+      [ "GetCrossSectionShape", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#ab601134bab19c3d19cec09fc408fd21d", null ],
+      [ "GetCrossSectionWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#abcfe4b692af2215b3bc3ce80726a4c3c", null ],
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#ae26412720892177abef271fd87d47943", null ],
+      [ "GetEndNodeId", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#adc44403a273ec62e60f8d4399e94bdc7", null ],
+      [ "GetFlangeSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#a46c7b803d460492790466b665f8c7771", null ],
+      [ "GetPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#a5f11964a02dd0aa435063e7fa6435497", null ],
+      [ "GetReferenceLineOffsetX", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#ad49c0a9bdb7446d2568922989a5b02a6", null ],
+      [ "GetReferenceLineOffsetY", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#ad4809ca9ac235af1ec3aa3c702fbf864", null ],
+      [ "GetRigidSegmentDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#adb010fa6d07106e817a62c942652c7a2", null ],
+      [ "GetRigidSegmentIds", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#a724c19e430b02a4a8e0166f4fe82580d", null ],
+      [ "GetRoutingElementId", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#ae0c4cb432b9c93869029eb0d26c640ac", null ],
+      [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#a547a4fc3ef702aa3dc43494c14cc3514", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#a114c6dc55ee1d9a61a5801d57c1c95ea", null ],
+      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment.html#ae48cc89f32515febe25fb1346c5cc17e", null ]
+    ] ],
+    [ "ACAPI::MEP::RoutingSegment::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_1_1_modifier.html", [
+      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_1_1_modifier.html#a31085d70320e961e6ea3e16484bd6355", null ],
+      [ "SetAnchor", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_1_1_modifier.html#a0c58ff0a90a137791100e13da578f7b6", null ],
+      [ "SetConnectionStyle", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_1_1_modifier.html#a5bed87394cb74d77b868bd6cbd3d7ecb", null ],
+      [ "SetCrossSectionHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_1_1_modifier.html#a8e32cd316c8fe58926fd78f7ed797c62", null ],
+      [ "SetCrossSectionReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_1_1_modifier.html#ab4587de822bdb7b0f6963708a460a17f", null ],
+      [ "SetCrossSectionShape", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_1_1_modifier.html#a1bac18b8bdb9bdb289a8d5ad26d8b891", null ],
+      [ "SetCrossSectionWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_1_1_modifier.html#a4d4232a31f412496f2a400dd39265d8d", null ],
+      [ "SetFlangeSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_1_1_modifier.html#a75e1c6180fba14ea240bcbad59d1da7e", null ],
+      [ "SetPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_1_1_modifier.html#a4666e7cfeec315b619896481539edf44", null ],
+      [ "SetReferenceLineOffsetX", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_1_1_modifier.html#a947a71a33ee35332bbbada89627e0ed9", null ],
+      [ "SetReferenceLineOffsetY", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_1_1_modifier.html#aea870a1df8a4b95b94d32cbe7f1c53a9", null ],
+      [ "SetRigidSegmentDefaultParameters", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_1_1_modifier.html#a2bbadb3cff7022710d5ba07170982f0c", null ],
+      [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_1_1_modifier.html#a0d3fe5191abc896a1f5aa0882d4f80e0", null ]
+    ] ],
+    [ "ACAPI::MEP::RoutingSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default.html", [
+      [ "RoutingSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default.html#a96f32e1e144e8a44a8035c941a6f5d86", null ],
+      [ "GetAnchor", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default.html#af20bff96c59d0ed7ec0b2b6e18c06329", null ],
+      [ "GetConnectionStyle", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default.html#a891d6408d20ca4bd5f047a34b6871cbd", null ],
+      [ "GetCrossSectionHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default.html#a5ece49f2f9fe6387c06c2b59c155b91e", null ],
+      [ "GetCrossSectionReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default.html#a215993776cd4eca9f59944af5a5f18d0", null ],
+      [ "GetCrossSectionShape", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default.html#ab6ef246680bce842d4ae28f6e6bd9c33", null ],
+      [ "GetCrossSectionWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default.html#adbfa3d6783bb9be9c5eeb9b684519600", null ],
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default.html#ac35ebf3fdf8606b834efaa9a1cd583cc", null ],
+      [ "GetFlangeSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default.html#a921782aef40ccc5f86f4f827efd25420", null ],
+      [ "GetPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default.html#a9f962007d6885e9e67b1256e2a24a1f9", null ],
+      [ "GetReferenceLineOffsetX", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default.html#a03c2e9f32b053320132269e19a8d249a", null ],
+      [ "GetReferenceLineOffsetY", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default.html#a9bb48c5bec09cd74c270a8defc6b9ede", null ],
+      [ "GetRigidSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default.html#a67add920576566d50705e6dd1573eb9e", null ],
+      [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default.html#a9e43004b272ce0062dd0c1f3df2dfb6e", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default.html#a2ae9866c9c9b73de4f39140b2e666c50", null ],
+      [ "CreateRoutingSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default.html#a44798260d2a19f1151e3c30c87e94dee", null ]
+    ] ],
+    [ "ACAPI::MEP::RoutingSegmentDefault::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default_1_1_modifier.html", [
+      [ "SetAnchor", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default_1_1_modifier.html#a85a4a1d398f8fd55b580878aac34c486", null ],
+      [ "SetConnectionStyle", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default_1_1_modifier.html#afd4b798ef60251c96ddc70377fb18f5e", null ],
+      [ "SetCrossSectionHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default_1_1_modifier.html#a359a1390334403c79a772c78300a6da8", null ],
+      [ "SetCrossSectionReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default_1_1_modifier.html#a3c85c641dcc02db80912b7cd7704acf7", null ],
+      [ "SetCrossSectionShape", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default_1_1_modifier.html#aa8bd9c118250850c34b62d5892d589a5", null ],
+      [ "SetCrossSectionWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default_1_1_modifier.html#af2d1d414fa3485f88680a6c2733d7757", null ],
+      [ "SetFlangeSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default_1_1_modifier.html#a34738d5b967f995534bfb865a11d3cf9", null ],
+      [ "SetPreferenceTableId", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default_1_1_modifier.html#abfb218ae42fef56287877d5fa60f97ca", null ],
+      [ "SetReferenceLineOffsetX", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default_1_1_modifier.html#a6743e40c628cf4363913b0c4bc4c16be", null ],
+      [ "SetReferenceLineOffsetY", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default_1_1_modifier.html#a9bf27396bb92c561a20147fab2485378", null ],
+      [ "SetRigidSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default_1_1_modifier.html#a1f7ce0ca8a634e4f4eabfe8b05cca3f6", null ],
+      [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_default_1_1_modifier.html#a50a7e52f99783116dba1d40c43d05516", null ]
+    ] ],
+    [ "ACAPI::MEP::RoutingSegmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_u_i_manager.html", [
+      [ "ApplyRoutingSegmentDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_u_i_manager.html#adde47c15e7ad59588c9d61b4e896a501", null ],
+      [ "CreateRoutingSegmentDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_u_i_manager.html#aefe3469ed56f9020648d86874fbf3451", null ],
+      [ "CreateRoutingSegmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_routing_segment_u_i_manager.html#a5ccae9021638867faa3f5f4c0e34ec7d", null ]
+    ] ],
+    [ "ACAPI::MEP::ICalculationResultColumn", "class_a_c_a_p_i_1_1_m_e_p_1_1_i_calculation_result_column.html", [
+      [ "~ICalculationResultColumn", "class_a_c_a_p_i_1_1_m_e_p_1_1_i_calculation_result_column.html#ae6e66b0f55691da76404aa79c129751e", null ],
+      [ "FormatValueToDisplayText", "class_a_c_a_p_i_1_1_m_e_p_1_1_i_calculation_result_column.html#a8c11601e2fad418668a2c5e04914902a", null ],
+      [ "GetDefaultWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1_i_calculation_result_column.html#ade2ac5e8dae847a82dce8d82fa2e7638", null ],
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_i_calculation_result_column.html#a8ab753d6331b6380d68615ac88a0b772", null ],
+      [ "GetId", "class_a_c_a_p_i_1_1_m_e_p_1_1_i_calculation_result_column.html#a28d02115cc122513897e95588d2a62ad", null ],
+      [ "GetTitle", "class_a_c_a_p_i_1_1_m_e_p_1_1_i_calculation_result_column.html#a63a51c6688bbd4921a88c356e2c965ad", null ],
+      [ "GetUnitToDisplay", "class_a_c_a_p_i_1_1_m_e_p_1_1_i_calculation_result_column.html#af0c4c198737fdc83455c152af0181fe7", null ],
+      [ "IsEqual", "class_a_c_a_p_i_1_1_m_e_p_1_1_i_calculation_result_column.html#ae00008698174b669ff77f7ab9651f563", null ],
+      [ "IsLess", "class_a_c_a_p_i_1_1_m_e_p_1_1_i_calculation_result_column.html#abc0965ded3990f0db962fc62c31d280f", null ]
+    ] ],
+    [ "ACAPI::MEP::TypedCalculationResultColumn< T >", "class_a_c_a_p_i_1_1_m_e_p_1_1_typed_calculation_result_column.html", [
+      [ "FormatValueToDisplayText", "class_a_c_a_p_i_1_1_m_e_p_1_1_typed_calculation_result_column.html#a3490b16ed8bcb9ef375ec5bbeb609e89", null ],
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_typed_calculation_result_column.html#a3df64ca4b9480e5940be1a64cd1f98be", null ],
+      [ "IsEqual", "class_a_c_a_p_i_1_1_m_e_p_1_1_typed_calculation_result_column.html#a1a46b365e5dad9f8aa66022ab89d9d08", null ],
+      [ "IsLess", "class_a_c_a_p_i_1_1_m_e_p_1_1_typed_calculation_result_column.html#a2ab69348f4295f99ad28f2f93c298f4d", null ]
+    ] ],
+    [ "ACAPI::MEP::SystemBrowserCalculationCallbackInterface", "class_a_c_a_p_i_1_1_m_e_p_1_1_system_browser_calculation_callback_interface.html", [
+      [ "CalculationResultData", "class_a_c_a_p_i_1_1_m_e_p_1_1_system_browser_calculation_callback_interface.html#ae8c1574c00d82b834d35b47a4c81f773", null ],
+      [ "CalculationsRequested", "class_a_c_a_p_i_1_1_m_e_p_1_1_system_browser_calculation_callback_interface.html#a28f639500819766fd50118651de4adc5", null ],
+      [ "RegisterCalculatedColumns", "class_a_c_a_p_i_1_1_m_e_p_1_1_system_browser_calculation_callback_interface.html#a30782f9fc2f564e651246237f80a5a38", null ],
+      [ "SubmitCalculations", "class_a_c_a_p_i_1_1_m_e_p_1_1_system_browser_calculation_callback_interface.html#a8adc99cc1acaab1d5a49929d45240965", null ],
+      [ "RegisterCalculationCallback", "class_a_c_a_p_i_1_1_m_e_p_1_1_system_browser_calculation_callback_interface.html#a9ff6dec6fdb19ba9adbbe21a64a4495a", null ]
+    ] ],
+    [ "ACAPI::MEP::SystemBrowserCalculationCallbackInterface::ColumnRowEntry", "struct_a_c_a_p_i_1_1_m_e_p_1_1_system_browser_calculation_callback_interface_1_1_column_row_entry.html", [
+      [ "columnId", "struct_a_c_a_p_i_1_1_m_e_p_1_1_system_browser_calculation_callback_interface_1_1_column_row_entry.html#ad2244b324abaf067cdb38b16df12cded", null ],
+      [ "elemId", "struct_a_c_a_p_i_1_1_m_e_p_1_1_system_browser_calculation_callback_interface_1_1_column_row_entry.html#ae857c984bde46b02ca5cfa1facf93c69", null ],
+      [ "value", "struct_a_c_a_p_i_1_1_m_e_p_1_1_system_browser_calculation_callback_interface_1_1_column_row_entry.html#ab0207254b6e707dda535ce52da9bb32a", null ]
+    ] ],
+    [ "ACAPI::MEP::SystemGroup", "class_a_c_a_p_i_1_1_m_e_p_1_1_system_group.html", [
+      [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_system_group.html#af3af1812dfa183c8cc75969b64479ab9", null ],
+      [ "GetSystemIDs", "class_a_c_a_p_i_1_1_m_e_p_1_1_system_group.html#af5ad16bf11d9946d9126c888cac96a46", null ],
+      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1_system_group.html#ac54e5bc2fe5f66a49854eb9307184c32", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_system_group.html#a767442ce1a2c9b375b2a69386597a862", null ],
+      [ "CreateSystemGroup", "class_a_c_a_p_i_1_1_m_e_p_1_1_system_group.html#a4fd6962c970e0422f938b4e3c89c52fa", null ],
+      [ "GetSystemGroupIDs", "class_a_c_a_p_i_1_1_m_e_p_1_1_system_group.html#a9b5fb55ebc0884346743092c5adb2397", null ]
+    ] ],
+    [ "ACAPI::MEP::SystemGroup::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_system_group_1_1_modifier.html", [
+      [ "Add", "class_a_c_a_p_i_1_1_m_e_p_1_1_system_group_1_1_modifier.html#ab8074a067e1863a1d549ab438df5fb7d", null ],
+      [ "Remove", "class_a_c_a_p_i_1_1_m_e_p_1_1_system_group_1_1_modifier.html#a4c921ebbc060757b3fab7923f7fadb4f", null ],
+      [ "SetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_system_group_1_1_modifier.html#a6218548f226eb2515e4c77b78100b41f", null ]
+    ] ],
+    [ "ACAPI::MEP::TakeOff", "class_a_c_a_p_i_1_1_m_e_p_1_1_take_off.html", [
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_take_off.html#a3a67e135c35b07c8343c7a366ad83775", null ],
+      [ "GetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_take_off.html#a42f4bd1fa7b62c43a34df536d184dfea", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_take_off.html#acf0c3452b13512ba2e6ea2af538d4e8e", null ],
+      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_take_off.html#a952489b1b0ea0686443adcde338702ca", null ]
+    ] ],
+    [ "ACAPI::MEP::TakeOff::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_take_off_1_1_modifier.html", [
+      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1_take_off_1_1_modifier.html#a2dd3b2406a7c31f69565467408c8a8dc", null ],
+      [ "SetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_take_off_1_1_modifier.html#a4ad3058eb7a51cb061d0e2643ed7cc5d", null ]
+    ] ],
+    [ "ACAPI::MEP::TakeOffDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_take_off_default.html", [
+      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1_take_off_default.html#adf9ffd21923baf15b93b98636ab1afc9", null ],
+      [ "CreateTakeOffDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_take_off_default.html#a5fc677217cd4abf2797cb637252daef7", null ],
+      [ "CreateTakeOffDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_take_off_default.html#aa4bf201230ed1c20a9edd19204dc6a27", null ]
+    ] ],
+    [ "ACAPI::MEP::TakeOffUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_take_off_u_i_manager.html", [
+      [ "ApplyTakeOffDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_take_off_u_i_manager.html#a87e8fe7a795c55b7ba9579871c464408", null ],
+      [ "CreateTakeOffDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_take_off_u_i_manager.html#a28baa1d9dc57fd9fcd6482fd92604afb", null ],
+      [ "CreateTakeOffUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_take_off_u_i_manager.html#a222eea59a3f97086bf68803d669660f9", null ]
+    ] ],
+    [ "ACAPI::MEP::Terminal", "class_a_c_a_p_i_1_1_m_e_p_1_1_terminal.html", [
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_terminal.html#ab2ba211b4b057f28e5583fe180ac46d6", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_terminal.html#a189ecc0c329e863401cad914ce2fb8ec", null ],
+      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_terminal.html#abf2df3be3f1683c46628b42c10247995", null ]
+    ] ],
+    [ "ACAPI::MEP::Terminal::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_terminal_1_1_modifier.html", [
+      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1_terminal_1_1_modifier.html#adbed5b9d3748767e887fe76509546140", null ]
+    ] ],
+    [ "ACAPI::MEP::TerminalDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_terminal_default.html", [
+      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1_terminal_default.html#a28c372da21dbcd111d4b8d234caa77bf", null ],
+      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1_terminal_default.html#ac0d6d257c0b0b79514dc544004e5379d", null ],
+      [ "CreateTerminalDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_terminal_default.html#aa3103ebdc88c8919aa62455cae330bba", null ],
+      [ "CreateTerminalDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_terminal_default.html#ac392d7abb33057c0ae7f52b9807db676", null ]
+    ] ],
+    [ "ACAPI::MEP::TerminalUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_terminal_u_i_manager.html", [
+      [ "ApplyTerminalDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_terminal_u_i_manager.html#a8c1f49543deda645d91043bcedbafee0", null ],
+      [ "CreateTerminalDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_terminal_u_i_manager.html#abf9658d3780013c9ac04337b796da692", null ],
+      [ "CreateTerminalUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_terminal_u_i_manager.html#ada377e5598a8c1aa0f92e9ade32592dd", null ]
+    ] ],
+    [ "ACAPI::MEP::Transition", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition.html", [
+      [ "GetAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition.html#a86dfaa716ceeafd716423360cad4ad21", null ],
+      [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition.html#ad9ff222a38ad8876628adb11a65340f6", null ],
+      [ "GetInsulationThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition.html#ac159fe399c05c4fa314283d0fe08349c", null ],
+      [ "GetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition.html#a8f12d138698495ae39ce5f5a6c645423", null ],
+      [ "GetNarrowerPortID", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition.html#a4448cc7a63215dc652954e4969b1de63", null ],
+      [ "GetOffsetY", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition.html#ae5d176825553b0f672f1eedea52b363e", null ],
+      [ "GetOffsetZ", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition.html#a123259e77a8e5bf6719087fff6fcfb98", null ],
+      [ "GetPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition.html#a6e6f4c07ea2cc08a213379f24b0d7121", null ],
+      [ "GetRoutingNodeId", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition.html#ae7d4e4b84767fb7736ce2ffc77af3c89", null ],
+      [ "GetWiderPortID", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition.html#a33d50492428028e3e9fa3fb1b6bd8dcf", null ],
+      [ "IsControlledByPreference", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition.html#aad82461ceb0fee6494e6a163fd1fbbd5", null ],
+      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition.html#a3ad9fcdc94c76cb011e01ed8c5b6619d", null ]
+    ] ],
+    [ "ACAPI::MEP::TransitionDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition_default.html", [
+      [ "TransitionDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition_default.html#a5f2de6a16682d883b1be744d9c9c0208", null ],
+      [ "GetAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition_default.html#a1ff146ecca33c352206c4dee01662d3c", null ],
+      [ "GetOffsetY", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition_default.html#a115a49ef87aa63f45378424545e607e9", null ],
+      [ "GetOffsetZ", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition_default.html#aefa9d90033ac8bab54eb5f75ac0722c4", null ],
+      [ "GetPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition_default.html#a9d47820b88a99040f0f304871f0cfce6", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition_default.html#a04fc0c0f51f381ee786649c871305693", null ],
+      [ "CreateTransitionDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition_default.html#a0e70abbf0a4826990b0830ec054e12bb", null ]
+    ] ],
+    [ "ACAPI::MEP::TransitionDefault::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition_default_1_1_modifier.html", [
+      [ "SetAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition_default_1_1_modifier.html#a6568b3f9aa29e58851926bbeb598bbd7", null ],
+      [ "SetPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition_default_1_1_modifier.html#a170365e91ce620cf3f0986b4808948cb", null ]
+    ] ],
+    [ "ACAPI::MEP::TransitionUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition_u_i_manager.html", [
+      [ "ApplyTransitionDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition_u_i_manager.html#ac68987b87a241a0336412412a3e3c616", null ],
+      [ "CreateTransitionDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition_u_i_manager.html#a6cf1585ec4517cf08645b3e6cce0c816", null ],
+      [ "CreateTransitionUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition_u_i_manager.html#a8f024ea76dfa390b900a38d22297c77a", null ]
     ] ],
     [ "ACAPI::MEP::UniqueID", "class_a_c_a_p_i_1_1_m_e_p_1_1_unique_i_d.html", [
       [ "UniqueID", "group___m_e_p.html#ga9ee57b54f3906f4cbdaa66f33f312fbd", null ]
     ] ],
-    [ "ACAPI::MEP::v1::VentilationPort", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port.html", [
-      [ "GetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port.html#a8acf305fa984d6f5237f1cd22797015d", null ],
-      [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port.html#a255320ad6ed2216788361f463e2f1433", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port.html#a28261407d4f8e485d425f43cded9e4fb", null ],
-      [ "SetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port.html#adeffe6be5933dc1de33bee580a6814c5", null ],
-      [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port.html#a34c5ccc513a9232b201c067e4b7e7704", null ]
+    [ "ACAPI::MEP::VentilationPort", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port.html", [
+      [ "GetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port.html#a0e3afb5caf1eab6ccf2b1120db7c92b3", null ],
+      [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port.html#a576629890c106185a98e44c9f733c4bb", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port.html#aedb9c88358186d3fa7f253a11dfab11b", null ]
     ] ],
-    [ "ACAPI::MEP::v1::VentilationPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port_default.html", [
-      [ "GetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port_default.html#a8f474e91253b5ff2ce4eafecc04ad306", null ],
-      [ "GetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port_default.html#aa822cb457b0da544923df8d8aa54069a", null ],
-      [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port_default.html#a41782f6ef0b25a1aee11ede68ad5634b", null ],
-      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port_default.html#ab3de3618067e6da73350627877f25b1c", null ],
-      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port_default.html#add0800b63f57970f1d2e28514d036dca", null ],
-      [ "SetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port_default.html#abdaa36d70d28c0b0bda1b6c049c64060", null ],
-      [ "SetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port_default.html#a827ea4551c68c1d1811da324bb0596d7", null ],
-      [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_ventilation_port_default.html#a6dca662266a640508fb0dc9c03e602b1", null ]
+    [ "ACAPI::MEP::VentilationPort::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_1_1_modifier.html", [
+      [ "SetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_1_1_modifier.html#a2c326f8b4f8e8b5e068a13024a120ade", null ],
+      [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_1_1_modifier.html#a0c61bacb7aa137ca22a503a89b9eaaa8", null ]
+    ] ],
+    [ "ACAPI::MEP::VentilationPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default.html", [
+      [ "GetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default.html#a63742618f361c14f635dbbdc1934287c", null ],
+      [ "GetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default.html#aa484ef2b3ef1c7cb02540231b7848757", null ],
+      [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default.html#a68e5769090749f5eb095b2cc87c8c4d0", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default.html#a47926ece8883d907a642b153689075b3", null ]
+    ] ],
+    [ "ACAPI::MEP::VentilationPortDefault::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default_1_1_modifier.html", [
+      [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default_1_1_modifier.html#a12f3b4cd8f57f61374a3da368b6c6620", null ],
+      [ "SetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default_1_1_modifier.html#ad7d4eb4df2e5dd35e63ecf676d77e114", null ],
+      [ "SetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default_1_1_modifier.html#a15c6c03ed5c9ee51361434c452889e2c", null ],
+      [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default_1_1_modifier.html#a413d623e0e1397b807d7a4489d47661b", null ]
     ] ],
     [ "ACAPI::MEP::Orientation", "struct_a_c_a_p_i_1_1_m_e_p_1_1_orientation.html", [
       [ "direction", "struct_a_c_a_p_i_1_1_m_e_p_1_1_orientation.html#a761987551a0442bedd01b25755f4e775", null ],
@@ -974,64 +1082,98 @@ var group___m_e_p =
     [ "ACAPI::MEP::FlexibleSegmentPolylineSplinePart", "struct_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_polyline_spline_part.html", [
       [ "controlPoints", "struct_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_polyline_spline_part.html#ae203b2c008bef78a32508e5759df16c4", null ]
     ] ],
-    [ "MEPAPI_VERSION", "group___m_e_p.html#gad33ef2772585c7b0903bef62e99f0b1b", null ],
-    [ "ACAPI::MEP::FlexibleSegmentPolyline", "group___m_e_p.html#ga6464fda34b087cc8f5c48d8c85a07978", null ],
-    [ "ACAPI::MEP::ConnectionSex", "group___m_e_p.html#gac9a71e07f8a542c74520fa929350c69a", null ],
-    [ "ACAPI::MEP::ConnectionStyle", "group___m_e_p.html#ga644d09d21b565c798869f523fc353684", null ],
-    [ "ACAPI::MEP::ConnectorShape", "group___m_e_p.html#ga8b1cef02da36527ba0a4abb088026343", null ],
-    [ "ACAPI::MEP::Domain", "group___m_e_p.html#ga8b367795ab8e21b93cdbee27f2f59362", null ],
-    [ "ACAPI::MEP::FlowDirection", "group___m_e_p.html#ga0c61d88088b488f7e2559f64c42c7139", null ],
-    [ "ACAPI::MEP::v1::MeasurementSystem", "group___m_e_p.html#ga55414010e9c090e684c8aec7cdcef333", null ],
-    [ "ACAPI::MEP::PreferredTransitionPlacement", "group___m_e_p.html#ga55c5b6bf6ebdb63498c453899c0e0643", null ],
+    [ "ACAPI::MEP::FlexibleSegmentPolyline", "group___m_e_p.html#ga25da723943aff77dbe0dc7ec7b5a1c87", null ],
+    [ "ACAPI::MEP::ConnectionSex", "group___m_e_p.html#gac9a71e07f8a542c74520fa929350c69a", [
+      [ "ACAPI::MEP::ConnectionSex::Unisex", "group___m_e_p.html#ggac9a71e07f8a542c74520fa929350c69aa6282fe81507e5e466d3349b48a70786d", null ],
+      [ "ACAPI::MEP::ConnectionSex::Male", "group___m_e_p.html#ggac9a71e07f8a542c74520fa929350c69aa63889cfb9d3cbe05d1bd2be5cc9953fd", null ],
+      [ "ACAPI::MEP::ConnectionSex::Female", "group___m_e_p.html#ggac9a71e07f8a542c74520fa929350c69aab719ce180ec7bd9641fece2f920f4817", null ]
+    ] ],
+    [ "ACAPI::MEP::ConnectionStyle", "group___m_e_p.html#ga644d09d21b565c798869f523fc353684", [
+      [ "ACAPI::MEP::ConnectionStyle::SimpleBody", "group___m_e_p.html#gga644d09d21b565c798869f523fc353684a1090c803cbedf3d7635bb08af0dcd274", null ],
+      [ "ACAPI::MEP::ConnectionStyle::Flanged", "group___m_e_p.html#gga644d09d21b565c798869f523fc353684a5387447c2ae61936a28c419a22f32d16", null ],
+      [ "ACAPI::MEP::ConnectionStyle::Welded", "group___m_e_p.html#gga644d09d21b565c798869f523fc353684a25cde5325befa9538b771717514351fb", null ]
+    ] ],
+    [ "ACAPI::MEP::ConnectorShape", "group___m_e_p.html#ga8b1cef02da36527ba0a4abb088026343", [
+      [ "ACAPI::MEP::ConnectorShape::Rectangular", "group___m_e_p.html#gga8b1cef02da36527ba0a4abb088026343a7545c5d3ad246a683a197a2903a4d5e6", null ],
+      [ "ACAPI::MEP::ConnectorShape::Circular", "group___m_e_p.html#gga8b1cef02da36527ba0a4abb088026343aae2fd93db7a96c6c8eb65aa02dc03217", null ],
+      [ "ACAPI::MEP::ConnectorShape::Oval", "group___m_e_p.html#gga8b1cef02da36527ba0a4abb088026343a01733ae48f19ae284165e55dd2934b61", null ],
+      [ "ACAPI::MEP::ConnectorShape::UShape", "group___m_e_p.html#gga8b1cef02da36527ba0a4abb088026343a5fa0e4915391a8f1c41b98228dbb766b", null ]
+    ] ],
+    [ "ACAPI::MEP::CutPlanePosition", "group___m_e_p.html#ga780e562fc79244a1bfbec89028e936e8", null ],
+    [ "ACAPI::MEP::Domain", "group___m_e_p.html#ga8b367795ab8e21b93cdbee27f2f59362", [
+      [ "ACAPI::MEP::Domain::Ventilation", "group___m_e_p.html#gga8b367795ab8e21b93cdbee27f2f59362a649697ef6d328d85290d6bb7959a06b4", null ],
+      [ "ACAPI::MEP::Domain::Piping", "group___m_e_p.html#gga8b367795ab8e21b93cdbee27f2f59362a96d312760756ae17426f3ff9f9731dd1", null ],
+      [ "ACAPI::MEP::Domain::CableCarrier", "group___m_e_p.html#gga8b367795ab8e21b93cdbee27f2f59362a9c58365cd78758deb0b8abc1b300085a", null ]
+    ] ],
+    [ "ACAPI::MEP::FloorPlanDisplayOption", "group___m_e_p.html#ga3668fba1ef0b5be054d8c82ca59a2ad9", null ],
+    [ "ACAPI::MEP::FlowDirection", "group___m_e_p.html#ga0c61d88088b488f7e2559f64c42c7139", [
+      [ "ACAPI::MEP::FlowDirection::FlowNotDefined", "group___m_e_p.html#gga0c61d88088b488f7e2559f64c42c7139a0fd5a4228bb7e6a90b3e20c8ebad3b65", null ],
+      [ "ACAPI::MEP::FlowDirection::FlowIn", "group___m_e_p.html#gga0c61d88088b488f7e2559f64c42c7139aa41eaeb2238a3b7ae9d2b4fbe0355ab9", null ],
+      [ "ACAPI::MEP::FlowDirection::FlowOut", "group___m_e_p.html#gga0c61d88088b488f7e2559f64c42c7139af3760f6c0e6834204805b00d3c55a171", null ]
+    ] ],
+    [ "ACAPI::MEP::OnStoryVisibility", "group___m_e_p.html#ga477c6bbe41d950a3c8b3f9e116581dda", null ],
+    [ "ACAPI::MEP::PreferredTransitionPlacement", "group___m_e_p.html#ga55c5b6bf6ebdb63498c453899c0e0643", [
+      [ "ACAPI::MEP::PreferredTransitionPlacement::SmallToLarge", "group___m_e_p.html#gga55c5b6bf6ebdb63498c453899c0e0643a1fb52f7ade6030e6c7e6e2b037a092f9", null ],
+      [ "ACAPI::MEP::PreferredTransitionPlacement::LargeToSmall", "group___m_e_p.html#gga55c5b6bf6ebdb63498c453899c0e0643ad52db6ba828dcfd565525cb8edbfeb97", null ]
+    ] ],
+    [ "ACAPI::MEP::ShowProjection", "group___m_e_p.html#ga11ad2bb3fe0b8e37c498cc1c28c29d00", null ],
     [ "ACAPI::MEP::CollectAllMEPElements", "group___m_e_p.html#ga07f63c6acce5f8ef0567013d6592dc8e", null ],
-    [ "ACAPI::MEP::v1::CreateAccessoryDefault", "group___m_e_p.html#ga230feff12164b562bc4b05f70e3d9c45", null ],
-    [ "ACAPI::MEP::v1::CreateAccessoryUIManager", "group___m_e_p.html#ga8da3289fd4718edabe6c5378e6c3353b", null ],
-    [ "ACAPI::MEP::v1::CreateBendDefault", "group___m_e_p.html#ga38a0071b067b07f75b3e3c88ed5f3042", null ],
-    [ "ACAPI::MEP::v1::CreateBendUIManager", "group___m_e_p.html#gab8d4585b8d1491a917c927c4bb8713d1", null ],
-    [ "ACAPI::MEP::v1::CreateBranchDefault", "group___m_e_p.html#ga58ec07d69fd768f059d10b1daa437531", null ],
-    [ "ACAPI::MEP::v1::CreateBranchUIManager", "group___m_e_p.html#ga02eea64adf45b257797e5e975b1653f5", null ],
-    [ "ACAPI::MEP::v1::CreateCalculationInterface", "group___m_e_p.html#ga13719e0e330aed2bf6f192850d0249d7", null ],
-    [ "ACAPI::MEP::v1::CreateDistributionSystemsGraph", "group___m_e_p.html#ga86b49e3a43abd9774e5a1fa759462eb4", null ],
-    [ "ACAPI::MEP::v1::CreateElementUIManager", "group___m_e_p.html#ga3483804b5638ae5b26dfd7e248d1571c", null ],
-    [ "ACAPI::MEP::v1::CreateEquipmentDefault", "group___m_e_p.html#gac69287928992bcbc1b39f32191ac8ef4", null ],
-    [ "ACAPI::MEP::v1::CreateEquipmentUIManager", "group___m_e_p.html#gae79f737e9de2f50a09211eca7783cb63", null ],
-    [ "ACAPI::MEP::v1::CreateFittingDefault", "group___m_e_p.html#ga4fb7d1483ac3a397e69f23d9be603ea1", null ],
-    [ "ACAPI::MEP::v1::CreateFittingUIManager", "group___m_e_p.html#gac80bb0b88753598861a0b3281f691216", null ],
-    [ "ACAPI::MEP::v1::CreateFlexibleSegmentDefault", "group___m_e_p.html#gaebe5ef5ca74af72f3b3e380d5b04992a", null ],
-    [ "ACAPI::MEP::v1::CreateFlexibleSegmentUIManager", "group___m_e_p.html#gaf18d6cbd23840926196c7367072a5605", null ],
-    [ "ACAPI::MEP::v1::CreateRigidSegmentDefault", "group___m_e_p.html#gae84a87d5ff8fa78bea6fba99ce186285", null ],
-    [ "ACAPI::MEP::v1::CreateRigidSegmentUIManager", "group___m_e_p.html#ga2af31d2d78f94b1889f238364ac1ab1f", null ],
-    [ "ACAPI::MEP::v1::CreateRoutingElementDefault", "group___m_e_p.html#gab435b7423e9077b38f6589bea747558b", null ],
-    [ "ACAPI::MEP::v2::CreateRoutingElementDefault", "group___m_e_p.html#ga806b854a5fc9f59328949166f6637709", null ],
-    [ "ACAPI::MEP::v1::CreateRoutingElementUIManager", "group___m_e_p.html#gaf2ce3d65c0b3e695bc35caf8adb00575", null ],
-    [ "ACAPI::MEP::v2::CreateRoutingNodeDefault", "group___m_e_p.html#ga55c85c4720fb57b73388159cc6352b13", null ],
-    [ "ACAPI::MEP::v1::CreateRoutingNodeDefault", "group___m_e_p.html#ga5a26d513eefd2dd19232f1b4f7e99cb9", null ],
-    [ "ACAPI::MEP::v1::CreateRoutingNodeUIManager", "group___m_e_p.html#gad3a803c81eb2fad1c9ef3e79a84ccbda", null ],
-    [ "ACAPI::MEP::v1::CreateRoutingSegmentDefault", "group___m_e_p.html#gacd777c5e0c96cbac1fdd76447fa6bb27", null ],
-    [ "ACAPI::MEP::v1::CreateRoutingSegmentUIManager", "group___m_e_p.html#ga88728f19b288636428b9554c95991aa1", null ],
-    [ "ACAPI::MEP::v1::CreateTakeOffDefault", "group___m_e_p.html#gac0ddaa97f0197b164e169b9f6df0a25c", null ],
-    [ "ACAPI::MEP::v1::CreateTakeOffUIManager", "group___m_e_p.html#ga80d1142500b0a195602992a0eb69ad5b", null ],
-    [ "ACAPI::MEP::v1::CreateTerminalDefault", "group___m_e_p.html#ga914711e869405fe1b1f4b9d817c1d635", null ],
-    [ "ACAPI::MEP::v1::CreateTerminalUIManager", "group___m_e_p.html#ga3ab0605efdd32a4c7d578937909a12c4", null ],
-    [ "ACAPI::MEP::v2::CreateTransitionDefault", "group___m_e_p.html#ga4d11df5f2f534862b113ee01ea224e73", null ],
-    [ "ACAPI::MEP::v1::CreateTransitionDefault", "group___m_e_p.html#gadeb3bb95980c9f22e2c4a27e9ab51692", null ],
-    [ "ACAPI::MEP::v1::CreateTransitionUIManager", "group___m_e_p.html#ga2dd22983587148f21cd89fcd2f717dce", null ],
-    [ "ACAPI::MEP::v1::GetCableCarrierSegmentPreferenceTableContainer", "group___m_e_p.html#gaf507fbba46c5ff84e02e89ee98841f02", null ],
-    [ "ACAPI::MEP::v1::GetDuctBranchPreferenceTableContainer", "group___m_e_p.html#gae66db1f2cb8b030bf8747e621b897668", null ],
-    [ "ACAPI::MEP::v1::GetDuctElbowPreferenceTableContainer", "group___m_e_p.html#ga4a5e0fea1934f0be4fb06fa4c46f22bf", null ],
-    [ "ACAPI::MEP::v1::GetDuctReferenceSet", "group___m_e_p.html#ga9c5fd778cedfbd21d675ac8eaada6471", null ],
-    [ "ACAPI::MEP::v1::GetDuctSegmentPreferenceTableContainer", "group___m_e_p.html#ga4fc2877c0a1de7fb820fb60575be1b80", null ],
-    [ "ACAPI::MEP::v1::GetDuctTransitionPreferenceTableContainer", "group___m_e_p.html#ga4a318914fe44db0c54073aaa26c5c878", null ],
-    [ "ACAPI::MEP::GetLocalizedElemTypeName", "group___m_e_p.html#gad4056c42d204abdb958cb630e01bbd99", null ],
-    [ "ACAPI::MEP::v1::GetPipeBranchPreferenceTableContainer", "group___m_e_p.html#ga53cb73ee8f526eaca358f19878cc3db9", null ],
-    [ "ACAPI::MEP::v1::GetPipeElbowPreferenceTableContainer", "group___m_e_p.html#ga05622dfc378c8540e2f3a160b4a43624", null ],
-    [ "ACAPI::MEP::v1::GetPipeReferenceSet", "group___m_e_p.html#ga9c9635988fa1b7fb49a2623f5506f510", null ],
-    [ "ACAPI::MEP::v1::GetPipeSegmentPreferenceTableContainer", "group___m_e_p.html#gabee800d7005654797dffebb10773a245", null ],
-    [ "ACAPI::MEP::v1::GetPipeTransitionPreferenceTableContainer", "group___m_e_p.html#ga997add2e25bebd52895f2cfa84d911b8", null ],
+    [ "ACAPI::MEP::CreateAccessoryDefault", "group___m_e_p.html#ga155ba296e08540bcacd85733282cd9e1", null ],
+    [ "ACAPI::MEP::CreateAccessoryDefault", "group___m_e_p.html#ga3b0697e98d22640dd327de9591ca2224", null ],
+    [ "ACAPI::MEP::CreateAccessoryUIManager", "group___m_e_p.html#gad036461cc66a2076ddedc89bbb5b3c45", null ],
+    [ "ACAPI::MEP::CreateBranchDefault", "group___m_e_p.html#ga66d21a6c37962720cbe9e013b5a32b30", null ],
+    [ "ACAPI::MEP::CreateBranchUIManager", "group___m_e_p.html#ga42b0388ab5809bf10ea32e9166725db8", null ],
+    [ "ACAPI::MEP::CreateDistributionSystemsGraph", "group___m_e_p.html#gaab4b8751e085dc8f55fa949f471be04d", null ],
+    [ "ACAPI::MEP::CreateElbowDefault", "group___m_e_p.html#gaa5495229fc6d92493bb7e19a44a77304", null ],
+    [ "ACAPI::MEP::CreateElbowUIManager", "group___m_e_p.html#ga6da0051475f83b0344a4d9396d5bbc8e", null ],
+    [ "ACAPI::MEP::CreateElementUIManager", "group___m_e_p.html#ga3ae840b4b7473fc34a748f65aa2d7d62", null ],
+    [ "ACAPI::MEP::CreateEquipmentDefault", "group___m_e_p.html#gab5a4d1ab9ef8d64e23d11f6809a0f8bd", null ],
+    [ "ACAPI::MEP::CreateEquipmentDefault", "group___m_e_p.html#ga688f5ba2d4a24ffdd8e6603283f9fbad", null ],
+    [ "ACAPI::MEP::CreateEquipmentUIManager", "group___m_e_p.html#gac39eaed955795c26ff7281bc6a3228a8", null ],
+    [ "ACAPI::MEP::CreateFittingDefault", "group___m_e_p.html#ga9f412960468d8423fc007db1a3fbf291", null ],
+    [ "ACAPI::MEP::CreateFittingDefault", "group___m_e_p.html#ga2d303b8a37ab44fe07bb05fccfffae92", null ],
+    [ "ACAPI::MEP::CreateFittingUIManager", "group___m_e_p.html#ga3f3593fd7dba99b9696fefdf484a76aa", null ],
+    [ "ACAPI::MEP::CreateFlexibleSegmentDefault", "group___m_e_p.html#ga6dd57b3e26b2260ebfffeb7a53c48942", null ],
+    [ "ACAPI::MEP::CreateFlexibleSegmentDefault", "group___m_e_p.html#ga3e37c5572024250b5508986a82debb0e", null ],
+    [ "ACAPI::MEP::CreateFlexibleSegmentUIManager", "group___m_e_p.html#gaba2174d269325b43c256a0f871a9fec9", null ],
+    [ "ACAPI::MEP::CreateRigidSegmentDefault", "group___m_e_p.html#ga401da3dcde238f10fd2314956307b966", null ],
+    [ "ACAPI::MEP::CreateRigidSegmentUIManager", "group___m_e_p.html#gaaaa0da5030b6d1e4b50998482b70996f", null ],
+    [ "ACAPI::MEP::CreateRoutingElementDefault", "group___m_e_p.html#gacbebdc13ce1ebc0317c9d84ccb60aca9", null ],
+    [ "ACAPI::MEP::CreateRoutingElementDefault", "group___m_e_p.html#gaffa18946dcaa035c357ce740ef0373fb", null ],
+    [ "ACAPI::MEP::CreateRoutingElementUIManager", "group___m_e_p.html#ga27b21360929bb6fb55ede81b68a599a5", null ],
+    [ "ACAPI::MEP::CreateRoutingNodeDefault", "group___m_e_p.html#ga01afacf9a2fc76e4fa2d6f387b3a4660", null ],
+    [ "ACAPI::MEP::CreateRoutingNodeUIManager", "group___m_e_p.html#ga3957e2491209673de1fc316f9fec5396", null ],
+    [ "ACAPI::MEP::CreateRoutingSegmentDefault", "group___m_e_p.html#gab48442875432d7a9476436d2f7ba4b11", null ],
+    [ "ACAPI::MEP::CreateRoutingSegmentUIManager", "group___m_e_p.html#gab0aeedce91b560acc2a93146c82f495b", null ],
+    [ "ACAPI::MEP::CreateSystemGroup", "group___m_e_p.html#gaf4fdb6aacff264f00c1f40234817aa13", null ],
+    [ "ACAPI::MEP::CreateTakeOffDefault", "group___m_e_p.html#gac185d36c17cd53234e8a17f31d6acd88", null ],
+    [ "ACAPI::MEP::CreateTakeOffDefault", "group___m_e_p.html#ga939b82117543c4562279c017b94ebe8f", null ],
+    [ "ACAPI::MEP::CreateTakeOffUIManager", "group___m_e_p.html#gac049cb5002da13f9214f92ff022b3fdc", null ],
+    [ "ACAPI::MEP::CreateTerminalDefault", "group___m_e_p.html#gaf6fd958ef7a26c454a137ffaa22bc53d", null ],
+    [ "ACAPI::MEP::CreateTerminalDefault", "group___m_e_p.html#gab195f9e49c399b1b3379db9634dc4b93", null ],
+    [ "ACAPI::MEP::CreateTerminalUIManager", "group___m_e_p.html#ga0e408712bd4055c2a370504a9ff7c915", null ],
+    [ "ACAPI::MEP::CreateTransitionDefault", "group___m_e_p.html#gac08dc41a540b23c9c165c8c29e23650f", null ],
+    [ "ACAPI::MEP::CreateTransitionUIManager", "group___m_e_p.html#gabc30f324fc9325cf2f2cae9750d9bb7a", null ],
+    [ "ACAPI::MEP::FromAttributeEnum", "group___m_e_p.html#ga7ac145164ae0310acc2e6a7cc7d82c7b", null ],
+    [ "ACAPI::MEP::GetCableCarrierSegmentPreferenceTableContainer", "group___m_e_p.html#ga10d4f7d4530cf1d63bfb7a7913d24742", null ],
+    [ "ACAPI::MEP::GetDuctAngleSet", "group___m_e_p.html#ga51afb0ebebc44da07f03688dc6f129f3", null ],
+    [ "ACAPI::MEP::GetDuctBranchPreferenceTableContainer", "group___m_e_p.html#ga58b7aa1ef04728306cd019baba322176", null ],
+    [ "ACAPI::MEP::GetDuctElbowPreferenceTableContainer", "group___m_e_p.html#ga0eef489ee72b896155599d76e84e4cfe", null ],
+    [ "ACAPI::MEP::GetDuctReferenceSet", "group___m_e_p.html#ga2d2774f10ddc964295a293b8bbe7664e", null ],
+    [ "ACAPI::MEP::GetDuctSegmentPreferenceTableContainer", "group___m_e_p.html#ga4b287656739f8d5ac4f24f67bd4eb09d", null ],
+    [ "ACAPI::MEP::GetDuctTransitionPreferenceTableContainer", "group___m_e_p.html#gaf38e3294d5fef99e332dd197380761e8", null ],
+    [ "ACAPI::MEP::GetMEPModelCheckTypeId", "group___m_e_p.html#ga4798dd6eabb715dc5b76f9977190ff5d", null ],
+    [ "ACAPI::MEP::GetPipeAngleSet", "group___m_e_p.html#gafcca214a7327e11acc310237d7ad555d", null ],
+    [ "ACAPI::MEP::GetPipeBranchPreferenceTableContainer", "group___m_e_p.html#ga1abe701eb1a2dc3d32c090d86668edb9", null ],
+    [ "ACAPI::MEP::GetPipeElbowPreferenceTableContainer", "group___m_e_p.html#ga46bcb49146fcf07d603877811730dad1", null ],
+    [ "ACAPI::MEP::GetPipeReferenceSet", "group___m_e_p.html#gab44f9123e2bab9c5067b1fd85ffff806", null ],
+    [ "ACAPI::MEP::GetPipeSegmentPreferenceTableContainer", "group___m_e_p.html#ga93f3ba42092271aa8af5cded8d83a586", null ],
+    [ "ACAPI::MEP::GetPipeTransitionPreferenceTableContainer", "group___m_e_p.html#ga33e8810eaac8e67eb6a045d130217f37", null ],
+    [ "ACAPI::MEP::GetSystemGroupIDs", "group___m_e_p.html#ga607f037cd31c63baa6b9960bfc23140d", null ],
     [ "ACAPI::MEP::IsAccessory", "group___m_e_p.html#ga05afef244f862f2434192e5ec7937665", null ],
-    [ "ACAPI::MEP::IsBend", "group___m_e_p.html#gae0375d40be97ec85ba0299300a8c4f00", null ],
     [ "ACAPI::MEP::IsBranch", "group___m_e_p.html#gaed05bc076db8f741a153d2384050def5", null ],
     [ "ACAPI::MEP::IsCableCarrier", "group___m_e_p.html#gae3e57f2fa9ae10a73398e012d6e5d580", null ],
+    [ "ACAPI::MEP::IsElbow", "group___m_e_p.html#ga502d7d2bc624fb9661ad5b4ebf0a45b6", null ],
     [ "ACAPI::MEP::IsEquipment", "group___m_e_p.html#ga356117d3eed59da90ba66e4d780df198", null ],
     [ "ACAPI::MEP::IsFitting", "group___m_e_p.html#ga1fcf9461b2c2d03209fd7f32c48f937d", null ],
     [ "ACAPI::MEP::IsFlexibleSegment", "group___m_e_p.html#gad68cd3d9c0f4b3755cc3fca8d47bbd87", null ],
@@ -1042,7 +1184,8 @@ var group___m_e_p =
     [ "ACAPI::MEP::IsTerminal", "group___m_e_p.html#ga0b144fa20cd8aeff857da3c23f27a9a8", null ],
     [ "ACAPI::MEP::IsTransition", "group___m_e_p.html#ga4a37850c2e8221fed692243afea37e14", null ],
     [ "ACAPI::MEP::IsVentilation", "group___m_e_p.html#ga78698d947a773c7a77adf403480b8b5f", null ],
+    [ "ACAPI::MEP::RegisterCalculationCallback", "group___m_e_p.html#ga827e5a7ebe74706b932f1b34478ac7f2", null ],
     [ "ACAPI::MEP::Adapter::UniqueID::UniqueID", "group___m_e_p.html#ga6517a6774a88a806a41044227edd83cd", null ],
-    [ "ACAPI::MEP::UniqueID::UniqueID", "group___m_e_p.html#ga9ee57b54f3906f4cbdaa66f33f312fbd", null ],
-    [ "ACAPI::MEP::Adapter::UniqueID::UniqueID", "group___m_e_p.html#ga03f95527feae84d8197fbc28ebb7a19c", null ]
+    [ "ACAPI::MEP::Adapter::UniqueID::UniqueID", "group___m_e_p.html#ga03f95527feae84d8197fbc28ebb7a19c", null ],
+    [ "ACAPI::MEP::UniqueID::UniqueID", "group___m_e_p.html#ga9ee57b54f3906f4cbdaa66f33f312fbd", null ]
 ];

@@ -1,5 +1,5 @@
 var struct_a_p_i___c_w_junction_quantity =
 [
-    [ "filler", "struct_a_p_i___c_w_junction_quantity.html#a5c88489ca6decd752588070002889f7a", null ],
-    [ "typeText", "struct_a_p_i___c_w_junction_quantity.html#a7eea97b6b641f3282c3019020c7dd095", null ]
+    [ "filler", "struct_a_p_i___c_w_junction_quantity.html#a3a15cb86a5aa65433cd3d0505176de69", null ],
+    [ "typeText", "struct_a_p_i___c_w_junction_quantity.html#aaae165196136826bb2a37ab4e3475f8b", null ]
 ];

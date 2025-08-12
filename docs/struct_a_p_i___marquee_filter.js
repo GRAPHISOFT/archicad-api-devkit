@@ -1,7 +1,7 @@
 var struct_a_p_i___marquee_filter =
 [
-    [ "elemsInMarquee", "struct_a_p_i___marquee_filter.html#abcea4551310b64c85572d143d720ab31", null ],
-    [ "marqueeStory", "struct_a_p_i___marquee_filter.html#abe445845d15fd30b36c6ee580d2536b0", null ],
-    [ "marqueeType", "struct_a_p_i___marquee_filter.html#af8d7679b20cd0464a1f1bf56bd8706a3", null ],
-    [ "trimToMarquee", "struct_a_p_i___marquee_filter.html#a0bc72ef1c99135deaac97d20fcdfdc07", null ]
+    [ "elemsInMarquee", "struct_a_p_i___marquee_filter.html#a18efb0d307850b50f2a864ba17175fb5", null ],
+    [ "marqueeStory", "struct_a_p_i___marquee_filter.html#a0fe7b993551aa527f9a439c4ca84970e", null ],
+    [ "marqueeType", "struct_a_p_i___marquee_filter.html#afcff167f1d2793d7d5bf12bfb5713e6f", null ],
+    [ "trimToMarquee", "struct_a_p_i___marquee_filter.html#a66e5436d8a2bc41819a098351744177e", null ]
 ];

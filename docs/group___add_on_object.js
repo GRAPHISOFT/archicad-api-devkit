@@ -1,13 +1,13 @@
 var group___add_on_object =
 [
     [ "API_AddonObject", "struct_a_p_i___addon_object.html", [
-      [ "data", "struct_a_p_i___addon_object.html#aaa3d3c700cf123c2a2bd396e05d40926", null ],
-      [ "id", "struct_a_p_i___addon_object.html#ab56fbf677754587284bc24ef43d48433", null ],
-      [ "name", "struct_a_p_i___addon_object.html#a7993ce94e97c92faa5c840c1dea409a8", null ],
-      [ "type", "struct_a_p_i___addon_object.html#aa1d20de3242d48e5d41174e3b007b914", null ]
+      [ "data", "struct_a_p_i___addon_object.html#a04d34db0e37cf314eaa1983e2dc9fc1d", null ],
+      [ "id", "struct_a_p_i___addon_object.html#a88cff27c5183d8434e7f6ba77ef9f71e", null ],
+      [ "name", "struct_a_p_i___addon_object.html#a9e71d0e01f849f93a1f794df5cdee1de", null ],
+      [ "type", "struct_a_p_i___addon_object.html#a985d8aeace70ac5cdb80adc11db0bd7c", null ]
     ] ],
     [ "APIAddonObjectConvertNewFormatHandlerProc", "group___add_on_object.html#ga8010963c96d6661a8fbdd37a3dcf5804", null ],
-    [ "APIAddonObjectMergeHandlerProc", "group___add_on_object.html#ga71fbd45503b744d85a8bd08be85aada0", null ],
+    [ "APIAddonObjectMergeHandlerProc", "group___add_on_object.html#ga55aa6bf8813420bade1328a38f8e7716", null ],
     [ "APIAddonObjectSaveOldFormatHandlerProc", "group___add_on_object.html#gae44aed8071f2f6001ba603a8abdb1cc6", null ],
     [ "API_AddonObjectType", "group___add_on_object.html#ga806cd9b9d61f71e19dbe4e6541af3f5c", null ],
     [ "ACAPI_AddOnObject_CreateClientOnlyObject", "group___add_on_object.html#gada03dc9c7216883c1d9288e93e92b6c5", null ],

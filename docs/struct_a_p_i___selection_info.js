@@ -1,8 +1,8 @@
 var struct_a_p_i___selection_info =
 [
-    [ "marquee", "struct_a_p_i___selection_info.html#a09dbc6e8322fa420235e63e0480ffbaf", null ],
-    [ "multiStory", "struct_a_p_i___selection_info.html#a33c1f5c8c3427308b1f2ac7a518ab373", null ],
-    [ "sel_nElem", "struct_a_p_i___selection_info.html#ae7b618d7eaff65c7a9a88fc25ad6e134", null ],
-    [ "sel_nElemEdit", "struct_a_p_i___selection_info.html#a4e5e66e0426c709be20b0d9622ce60e0", null ],
-    [ "typeID", "struct_a_p_i___selection_info.html#a54226ad3f16d2eca6e3387743d870efd", null ]
+    [ "marquee", "struct_a_p_i___selection_info.html#adc0d637323e4c26cf6801d2042cdc0ed", null ],
+    [ "multiStory", "struct_a_p_i___selection_info.html#a9492a7ca05dd36958cc00c42de98471f", null ],
+    [ "sel_nElem", "struct_a_p_i___selection_info.html#a21229bef3a484405f055e54d5064baff", null ],
+    [ "sel_nElemEdit", "struct_a_p_i___selection_info.html#aad36b44427fc9d25a1dd0dc78e746e7a", null ],
+    [ "typeID", "struct_a_p_i___selection_info.html#a4a09f3b20407f58b137522fd942bebac", null ]
 ];

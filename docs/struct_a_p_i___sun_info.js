@@ -1,8 +1,8 @@
 var struct_a_p_i___sun_info =
 [
-    [ "ambientIntensity", "struct_a_p_i___sun_info.html#abfe0fd8c78270210b07f6ca0d70b7564", null ],
-    [ "ambientRGB", "struct_a_p_i___sun_info.html#a8a04dda1ce35857181a38f36764222ce", null ],
-    [ "sunIntensity", "struct_a_p_i___sun_info.html#a12ee30db1b423370c9f6f4eaa9e07867", null ],
-    [ "sunRGB", "struct_a_p_i___sun_info.html#a9acf6fa072892e6654c76dda02183cee", null ],
-    [ "sunToAmbient", "struct_a_p_i___sun_info.html#a6aa6498712e4a86d7c5100196724b78a", null ]
+    [ "ambientIntensity", "struct_a_p_i___sun_info.html#a3ac421a50b02d68ecaf576ab4d9e44d7", null ],
+    [ "ambientRGB", "struct_a_p_i___sun_info.html#a5bd70ac9c53f6c6facd4d3f793a4b133", null ],
+    [ "sunIntensity", "struct_a_p_i___sun_info.html#a759712849f2e0d268ee2b92c58357767", null ],
+    [ "sunRGB", "struct_a_p_i___sun_info.html#a44be8a3d80fb4f0db3237d7d0c1c102d", null ],
+    [ "sunToAmbient", "struct_a_p_i___sun_info.html#a22d9a71636769528129bcf2eebab2efc", null ]
 ];

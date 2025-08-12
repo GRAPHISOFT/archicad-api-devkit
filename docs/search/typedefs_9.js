@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['trackerref_0',['TrackerRef',['../group___tracker.html#ga12db74443b4bc8b9f3262ed1a72d262a',1,'ACAPI::Tracking::v1']]],
-  ['translatorgetterproc_1',['TranslatorGetterProc',['../group___publisher.html#gab8ac9e0bc5b7471fcd60cf182a1f86ae',1,'APIdefs_Registration.h']]]
+  ['saveoptionproc_0',['SaveOptionProc',['../group___publisher.html#gabafc3b6d7b76e4add0615d95457caa81',1,'APIdefs_Registration.h']]],
+  ['saveproc_1',['SaveProc',['../group___publisher.html#ga930943e85800de0cdc60481156b0a9da',1,'APIdefs_Registration.h']]],
+  ['shapeprimsproc_2',['ShapePrimsProc',['../group___drawing_primitive.html#ga1a5653415090468c3f5a646304ca5c8a',1,'APIdefs_Callback.h']]],
+  ['status_3',['Status',['../group___design_options.html#gac6bc50b138bdcd13775070dc4459ccd4',1,'ACAPI::DesignOptions::DesignOptionCombinationViewSettings']]]
 ];

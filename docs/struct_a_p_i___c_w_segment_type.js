@@ -1,17 +1,17 @@
 var struct_a_p_i___c_w_segment_type =
 [
-    [ "arcOrigin", "struct_a_p_i___c_w_segment_type.html#a1df13e8f44ce1ef48b6a7100be354f86", null ],
-    [ "begC", "struct_a_p_i___c_w_segment_type.html#a708d49b5ad1cfc2b1998e2032d5c65a9", null ],
-    [ "category", "struct_a_p_i___c_w_segment_type.html#a66a8705533d3110271e006bfb94f99d2", null ],
-    [ "contourNum", "struct_a_p_i___c_w_segment_type.html#a909d5e4216c74553325a8fdc03bf2d7b", null ],
-    [ "endC", "struct_a_p_i___c_w_segment_type.html#aa3a77080faa3011a6c783caf01de717a", null ],
-    [ "extrusion", "struct_a_p_i___c_w_segment_type.html#a66abc0f572f4feef91f8943ede5271dc", null ],
-    [ "gridAngle", "struct_a_p_i___c_w_segment_type.html#a6244b5e19242144ce96a6e0781bd8065", null ],
-    [ "gridOrigin", "struct_a_p_i___c_w_segment_type.html#aef99c5caf588b0dc01bae1e3d984e31c", null ],
-    [ "head", "struct_a_p_i___c_w_segment_type.html#a7bb6889bbd01761ca9e6da04f7c44084", null ],
-    [ "negArc", "struct_a_p_i___c_w_segment_type.html#adbf849508c5f0eecf809980977e358be", null ],
-    [ "owner", "struct_a_p_i___c_w_segment_type.html#aa9ba7afc832aa8ca1ba6dab1dc10dd06", null ],
-    [ "patternCellNum", "struct_a_p_i___c_w_segment_type.html#a75836a4c83237fdf97c47bce62ef7deb", null ],
-    [ "pen", "struct_a_p_i___c_w_segment_type.html#a21b68ec5081055a8fa83a3fc71027707", null ],
-    [ "segmentType", "struct_a_p_i___c_w_segment_type.html#a41a76cf2642b8427ac71a820b4f66abf", null ]
+    [ "arcOrigin", "struct_a_p_i___c_w_segment_type.html#a50916681d71a928cb2918e5a01a72fcd", null ],
+    [ "begC", "struct_a_p_i___c_w_segment_type.html#ac7b258a2a2be46be3da3f383627ff8ad", null ],
+    [ "category", "struct_a_p_i___c_w_segment_type.html#a19c52eae828f50151af93f0687c57687", null ],
+    [ "contourNum", "struct_a_p_i___c_w_segment_type.html#ad33e2f6a5b8b6037cb98778d3c69a0ba", null ],
+    [ "endC", "struct_a_p_i___c_w_segment_type.html#acba25d4c0c2b9dd15d43d216752e3c14", null ],
+    [ "extrusion", "struct_a_p_i___c_w_segment_type.html#acd64a61df6ab8fe63d77351bb3801f38", null ],
+    [ "gridAngle", "struct_a_p_i___c_w_segment_type.html#a9b3c2565cf96709ad938ea76b3d62028", null ],
+    [ "gridOrigin", "struct_a_p_i___c_w_segment_type.html#a73565aa515cefc1f349c5bf4f9bd0a3f", null ],
+    [ "head", "struct_a_p_i___c_w_segment_type.html#ae3fc0e199dd33b4bdc1e2e1462c2e9df", null ],
+    [ "negArc", "struct_a_p_i___c_w_segment_type.html#a83bc1b38084cd73aa4e49fce56c2fbea", null ],
+    [ "owner", "struct_a_p_i___c_w_segment_type.html#a02add70d088f78ef90b59be68decc3e2", null ],
+    [ "patternCellNum", "struct_a_p_i___c_w_segment_type.html#ab8a35deac719a710de17d6f89170295d", null ],
+    [ "pen", "struct_a_p_i___c_w_segment_type.html#ab20e8e0e4a12448782f610375d3732f3", null ],
+    [ "segmentType", "struct_a_p_i___c_w_segment_type.html#acea01a8251f09c6ac8be3ceeb3c5bc2e", null ]
 ];

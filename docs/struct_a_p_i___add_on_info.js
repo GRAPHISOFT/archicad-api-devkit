@@ -1,6 +1,6 @@
 var struct_a_p_i___add_on_info =
 [
-    [ "description", "struct_a_p_i___add_on_info.html#a805479fbd9889b79de7659344e25481d", null ],
-    [ "name", "struct_a_p_i___add_on_info.html#adec5e8ab696e64287d6b8a3d6b29dad9", null ],
-    [ "requiredSSALevel", "struct_a_p_i___add_on_info.html#afb65eb334fc9c410d19607b486e92828", null ]
+    [ "description", "struct_a_p_i___add_on_info.html#a7dc761071ee3297fbbbf2b893732bfee", null ],
+    [ "name", "struct_a_p_i___add_on_info.html#afd2b35960456793cf413db587606a743", null ],
+    [ "requiredSSALevel", "struct_a_p_i___add_on_info.html#ab58f4d14565c788b1597a59dd04e5ef1", null ]
 ];

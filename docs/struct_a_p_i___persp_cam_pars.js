@@ -1,12 +1,12 @@
 var struct_a_p_i___persp_cam_pars =
 [
-    [ "active", "struct_a_p_i___persp_cam_pars.html#acd27cb7c8a73c556e915ddce73e79ac8", null ],
-    [ "dirAng", "struct_a_p_i___persp_cam_pars.html#a9e8830d28f972dd567c4824ad8d2b75e", null ],
-    [ "lenNext", "struct_a_p_i___persp_cam_pars.html#a0100596f57e26fd76c4f1533222e43ff", null ],
-    [ "lenPrev", "struct_a_p_i___persp_cam_pars.html#a857f8cb07077f52345649b8c9539b133", null ],
-    [ "nextCam", "struct_a_p_i___persp_cam_pars.html#af5fafb951d2ec9a159254f47d444970d", null ],
-    [ "pen", "struct_a_p_i___persp_cam_pars.html#ac6a5305d4e0603b26c3864c98e45a437", null ],
-    [ "persp", "struct_a_p_i___persp_cam_pars.html#afdd5cce475987e94fcb3a5a1a9799c83", null ],
-    [ "prevCam", "struct_a_p_i___persp_cam_pars.html#a4976103a69d05b30c901f6917e1a363b", null ],
-    [ "waitFrames", "struct_a_p_i___persp_cam_pars.html#a9361316e97f341d6e8ef55ac43e864e7", null ]
+    [ "active", "struct_a_p_i___persp_cam_pars.html#a1957b629a2aa682177cede0c367b72e4", null ],
+    [ "dirAng", "struct_a_p_i___persp_cam_pars.html#a9432d2ccb30bb6d2935021639f274610", null ],
+    [ "lenNext", "struct_a_p_i___persp_cam_pars.html#af8776a077d91c185f66fc90fb06e22b3", null ],
+    [ "lenPrev", "struct_a_p_i___persp_cam_pars.html#afc066a25f9b7b89d37b17e6e6ea79ec6", null ],
+    [ "nextCam", "struct_a_p_i___persp_cam_pars.html#a45efef5c29c20d7d927edd94871b5c92", null ],
+    [ "pen", "struct_a_p_i___persp_cam_pars.html#a3653dd84a3bc8584791e6963ed3a42c5", null ],
+    [ "persp", "struct_a_p_i___persp_cam_pars.html#af7ff2d11756abdb4b7e51be076ead115", null ],
+    [ "prevCam", "struct_a_p_i___persp_cam_pars.html#a13a94cba4dfb4f2a7d8c5dc2a58fb93f", null ],
+    [ "waitFrames", "struct_a_p_i___persp_cam_pars.html#ab1964996b44d764161dfaa6402a42cbe", null ]
 ];

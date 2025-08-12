@@ -1,17 +1,76 @@
 var group___favorite =
 [
+    [ "ACAPI::Favorite::Favorite", "class_a_c_a_p_i_1_1_favorite_1_1_favorite.html", [
+      [ "GetClassifications", "class_a_c_a_p_i_1_1_favorite_1_1_favorite.html#ad5d7603853296ea55bb1cb42d8b61932", null ],
+      [ "GetElemCategoryValues", "class_a_c_a_p_i_1_1_favorite_1_1_favorite.html#af7be3e964c4037964df069a411711ae9", null ],
+      [ "GetElementDefault", "class_a_c_a_p_i_1_1_favorite_1_1_favorite.html#af1f39be129e468b8e7634f7550df70b4", null ],
+      [ "GetElementMarker", "class_a_c_a_p_i_1_1_favorite_1_1_favorite.html#a1d1ddd53d2e52eaaea31804a5f7b9cd7", null ],
+      [ "GetElementType", "class_a_c_a_p_i_1_1_favorite_1_1_favorite.html#aa880e70ca75c9c7ac3dbdc29e0fd4a37", null ],
+      [ "GetMemo", "class_a_c_a_p_i_1_1_favorite_1_1_favorite.html#a7fd0c796503488cdff43a951f0eaa49e", null ],
+      [ "GetMemoMarker", "class_a_c_a_p_i_1_1_favorite_1_1_favorite.html#a29b769aa931bd424430983bf3bbe2eee", null ],
+      [ "GetName", "class_a_c_a_p_i_1_1_favorite_1_1_favorite.html#a793948fba89019e8672eb392c444df0a", null ],
+      [ "GetOldElementDefault", "class_a_c_a_p_i_1_1_favorite_1_1_favorite.html#a6bc175d09c5a9a0514d62d5f6261db54", null ],
+      [ "GetParentFolder", "class_a_c_a_p_i_1_1_favorite_1_1_favorite.html#afc53af53a9b7893f9264aec1409558a9", null ],
+      [ "GetPreviewImage", "class_a_c_a_p_i_1_1_favorite_1_1_favorite.html#a321eb8cb47f7c8ec9806063fc63cd900", null ],
+      [ "GetProperties", "class_a_c_a_p_i_1_1_favorite_1_1_favorite.html#a6897e8ef58e3552e2b2764f0a7c0e932", null ],
+      [ "GetSubElements", "class_a_c_a_p_i_1_1_favorite_1_1_favorite.html#a9fc7282ac880364b40a0cd04e6416958", null ],
+      [ "IsValid", "class_a_c_a_p_i_1_1_favorite_1_1_favorite.html#a82492dc9e9054b0ff24bbebb6d44f9a1", null ]
+    ] ],
+    [ "ACAPI::Favorite::FavoriteFolder", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_folder.html", [
+      [ "GetFavorites", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_folder.html#a6b1023b37589eb1bc9d43471cf908e96", null ],
+      [ "GetName", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_folder.html#a1ebc685e2336b43fa692c081074774d8", null ],
+      [ "GetParentFolder", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_folder.html#a6fb05a056b55204614082cecdce7d8e4", null ],
+      [ "GetPath", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_folder.html#ad954e979d15978023eb533fee14ffa61", null ],
+      [ "GetSubFolders", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_folder.html#a973fce85035f54e30e2efab3b241d563", null ],
+      [ "IsRoot", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_folder.html#a5c701627f23448649ffaf2c37ae665f5", null ],
+      [ "IsValid", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_folder.html#a4d8df44f79aba5ee462dc854492a54dc", null ]
+    ] ],
+    [ "ACAPI::Favorite::FavoriteManager", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html", [
+      [ "ConflictPolicy", "group___favorite.html#gac26f03c54ddc3aaec14b8ef5cbd40767", [
+        [ "Error", "group___favorite.html#ggac26f03c54ddc3aaec14b8ef5cbd40767a902b0d55fddef6f8d651fe1035b7d4bd", null ],
+        [ "Skip", "group___favorite.html#ggac26f03c54ddc3aaec14b8ef5cbd40767a72ef2b9b6965d078e3c7f95487a82d1c", null ],
+        [ "OverwriteExisting", "group___favorite.html#ggac26f03c54ddc3aaec14b8ef5cbd40767a213fc6f9c23a879020bc94b79cc51d62", null ],
+        [ "RenameNew", "group___favorite.html#ggac26f03c54ddc3aaec14b8ef5cbd40767ad1c861be6490721d5e09dc96eeb5a0f1", null ]
+      ] ],
+      [ "ChangeFavorite", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#a296f0c352bbdbcdfd7731749c24e5076", null ],
+      [ "ChangeFavorite", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#ab21cf30cc2609e69848079c132e8c7e5", null ],
+      [ "CreateFavorite", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#a39b4fb84d568643e9738fe6b9c8dc5cf", null ],
+      [ "CreateFavorite", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#af23df2765ccd4dacf35f036ce496dfb0", null ],
+      [ "CreateFolder", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#a929fadb62aca36d1f8825c9f3defb805", null ],
+      [ "DeleteFavorite", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#a474be14218cb6468325e683d7b10e339", null ],
+      [ "DeleteFavoriteFolder", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#a7af9c0b8531e6ef911b4874249b88186", null ],
+      [ "ExportFavorites", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#a329b6e2a316b74447b96eae7459d2ed0", null ],
+      [ "ExportFavoritesToLegacyPRF", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#a417edffe58c2ebf78e02fbdf15c49e27", null ],
+      [ "GetAllFavorites", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#a88dd60bec1e0ec41d03e7c38de6ae1b2", null ],
+      [ "GetFavoriteByName", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#a84188c48bcba6955d4056c224b0328b3", null ],
+      [ "GetFavoritesByElementType", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#a2a7c2b63d59028d645ca552a5abdad58", null ],
+      [ "GetRootFolder", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#a9af92ad9dc9e9461312c54964fcff118", null ],
+      [ "ImportAllFavorites", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#ac159632f513fce55271b2aed36d537f1", null ],
+      [ "ImportFavorites", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#a199237579f78e1382b929942df577597", null ],
+      [ "ImportFavoritesFromLegacyPRF", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#a2237885f61748e0cff59d747b73a5616", null ],
+      [ "MoveFavorite", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#ae64ea64fc2ea3472b845c565d9055da7", null ],
+      [ "MoveFolder", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#a3f76c0e100b200ecf4f14ee085008703", null ],
+      [ "RenameFavorite", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#a34dd3eb14e026fb75ec31e06573796b8", null ],
+      [ "RenameFolder", "class_a_c_a_p_i_1_1_favorite_1_1_favorite_manager.html#a9f615b09c5994fe341ec433f43bdb6df", null ]
+    ] ],
     [ "API_Favorite", "struct_a_p_i___favorite.html", [
       [ "API_Favorite", "struct_a_p_i___favorite.html#a601d4c31e9a53e6ea886059679798765", null ],
-      [ "classifications", "struct_a_p_i___favorite.html#a39b2e963ee1f60f3ceb9d9d284e44b35", null ],
-      [ "elemCategoryValues", "struct_a_p_i___favorite.html#a5e82f391f488ea8e75c98865488f9914", null ],
-      [ "element", "struct_a_p_i___favorite.html#a45d4564ac009bfcc3b19e0737be1d49a", null ],
-      [ "elementMarker", "struct_a_p_i___favorite.html#a1db913959b35c4fe48e54637a6281930", null ],
-      [ "folder", "struct_a_p_i___favorite.html#a8d4c52e941e03a5e2a92373114dbc5c2", null ],
-      [ "memo", "struct_a_p_i___favorite.html#ad8f8280bc9371b9c45e8d11ac85473e0", null ],
-      [ "memoMarker", "struct_a_p_i___favorite.html#ae40d6e8750849205dabcfa93ac4f539b", null ],
-      [ "name", "struct_a_p_i___favorite.html#ad7144ff3214a931b406f93fb44aaa352", null ],
-      [ "properties", "struct_a_p_i___favorite.html#aa4907ec6e4783dfbac2cf4ea46073371", null ],
-      [ "subElements", "struct_a_p_i___favorite.html#aa7b078093b1f99ba637fdf5456ef78ee", null ]
+      [ "classifications", "struct_a_p_i___favorite.html#acaa5a1b6ff49aca54ea611b5a1635bdb", null ],
+      [ "elemCategoryValues", "struct_a_p_i___favorite.html#a911177f2fc3a0fd754bebdd2bcbc2f72", null ],
+      [ "element", "struct_a_p_i___favorite.html#aea67a912eb2a7ca99729df9d7f2e32bb", null ],
+      [ "elementMarker", "struct_a_p_i___favorite.html#aa2d44b2af281014d38f7b3e475fba6cf", null ],
+      [ "folder", "struct_a_p_i___favorite.html#ab85f7754cb93a609683cf53108eda28a", null ],
+      [ "memo", "struct_a_p_i___favorite.html#a01532f9976314efd0595f21f7bdde318", null ],
+      [ "memoMarker", "struct_a_p_i___favorite.html#ada3268707601f2019f4d5b4b45d8cc72", null ],
+      [ "name", "struct_a_p_i___favorite.html#aa79654d88ca5f2199c9c7144927bb9bd", null ],
+      [ "properties", "struct_a_p_i___favorite.html#a4bde91fbbd1da7871ca7f1261a45b757", null ],
+      [ "subElements", "struct_a_p_i___favorite.html#a818aab5201a00af0dcacc3d8f916682d", null ]
+    ] ],
+    [ "ACAPI::Favorite::FavoriteManager::ConflictPolicy", "group___favorite.html#gac26f03c54ddc3aaec14b8ef5cbd40767", [
+      [ "ACAPI::Favorite::FavoriteManager::ConflictPolicy::Error", "group___favorite.html#ggac26f03c54ddc3aaec14b8ef5cbd40767a902b0d55fddef6f8d651fe1035b7d4bd", null ],
+      [ "ACAPI::Favorite::FavoriteManager::ConflictPolicy::Skip", "group___favorite.html#ggac26f03c54ddc3aaec14b8ef5cbd40767a72ef2b9b6965d078e3c7f95487a82d1c", null ],
+      [ "ACAPI::Favorite::FavoriteManager::ConflictPolicy::OverwriteExisting", "group___favorite.html#ggac26f03c54ddc3aaec14b8ef5cbd40767a213fc6f9c23a879020bc94b79cc51d62", null ],
+      [ "ACAPI::Favorite::FavoriteManager::ConflictPolicy::RenameNew", "group___favorite.html#ggac26f03c54ddc3aaec14b8ef5cbd40767ad1c861be6490721d5e09dc96eeb5a0f1", null ]
     ] ],
     [ "ACAPI_Favorite_Change", "group___favorite.html#ga63d065b89e93e4458462ec91de75a466", null ],
     [ "ACAPI_Favorite_Create", "group___favorite.html#ga543e41291dda3af09c9aca4081267638", null ],
@@ -22,5 +81,6 @@ var group___favorite =
     [ "ACAPI_Favorite_GetPreviewImage", "group___favorite.html#gab2f03072c4cc3e44994c135be57c1759", null ],
     [ "ACAPI_Favorite_Import", "group___favorite.html#ga7c3b3bed00d03045742ceebd065d44fd", null ],
     [ "ACAPI_Favorite_Read", "group___favorite.html#ga103c8253498ad0385394e7a5941bd725", null ],
-    [ "ACAPI_Favorite_Rename", "group___favorite.html#gaa92f16ae57f78ffda5c6a0e77befd086", null ]
+    [ "ACAPI_Favorite_Rename", "group___favorite.html#gaa92f16ae57f78ffda5c6a0e77befd086", null ],
+    [ "ACAPI::Favorite::GetFavoriteManager", "group___favorite.html#ga15a32c7c86b8fc1f569de808953d233b", null ]
 ];

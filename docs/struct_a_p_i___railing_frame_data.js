@@ -1,10 +1,10 @@
 var struct_a_p_i___railing_frame_data =
 [
-    [ "placeIndex", "struct_a_p_i___railing_frame_data.html#a6804b3946a3f7a7dce0895cee1ac2b86", null ],
-    [ "verticalPosition", "struct_a_p_i___railing_frame_data.html#a0f83a1ed8b3367ff80ff801a6599aa7b", null ],
-    [ "xBeginOffset", "struct_a_p_i___railing_frame_data.html#ae2d93c62726f25054cb0423a681c1f1e", null ],
-    [ "xEndOffset", "struct_a_p_i___railing_frame_data.html#a803eceafea58f1454a1456fbb118cd33", null ],
-    [ "yOffset", "struct_a_p_i___railing_frame_data.html#a53ab985235d0979dfc4ac353b31ee9a3", null ],
-    [ "zBottomOffset", "struct_a_p_i___railing_frame_data.html#aafbd6c1a8a78926bfe99465348a2be37", null ],
-    [ "zTopOffset", "struct_a_p_i___railing_frame_data.html#abeb4f82453b192990d47f770095a0bc0", null ]
+    [ "placeIndex", "struct_a_p_i___railing_frame_data.html#a93f0835569e0068478f657be2901c22c", null ],
+    [ "verticalPosition", "struct_a_p_i___railing_frame_data.html#af2d37d01bab247164d57f74baad84a45", null ],
+    [ "xBeginOffset", "struct_a_p_i___railing_frame_data.html#ad47ebcaeda8678cd57e310cf90c48f40", null ],
+    [ "xEndOffset", "struct_a_p_i___railing_frame_data.html#a842d56e4321e6d78b68442e11748fbc1", null ],
+    [ "yOffset", "struct_a_p_i___railing_frame_data.html#a044987dd4bb615240acc4837a6680ae2", null ],
+    [ "zBottomOffset", "struct_a_p_i___railing_frame_data.html#a79394b275c5d106ff0e5b11d77a60ba6", null ],
+    [ "zTopOffset", "struct_a_p_i___railing_frame_data.html#a5d4a48b61784347a0c7054fe7291cdcd", null ]
 ];

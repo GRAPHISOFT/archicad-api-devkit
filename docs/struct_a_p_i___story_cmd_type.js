@@ -1,10 +1,10 @@
 var struct_a_p_i___story_cmd_type =
 [
-    [ "action", "struct_a_p_i___story_cmd_type.html#a0851e1b6495f20d41474484d33e69344", null ],
-    [ "dispOnSections", "struct_a_p_i___story_cmd_type.html#a117f735437e37a6c15e1c19719b19a79", null ],
-    [ "dontRebuild", "struct_a_p_i___story_cmd_type.html#a86a0962b3a711933c19e2acd04fa8c89", null ],
-    [ "elevation", "struct_a_p_i___story_cmd_type.html#a9e01762d976475e6a2d1f8f309872602", null ],
-    [ "height", "struct_a_p_i___story_cmd_type.html#a418ce1e06afb8e5643a9ed5d8dad72e7", null ],
-    [ "index", "struct_a_p_i___story_cmd_type.html#a33a22e7068e09f334bd07ad1bf811d51", null ],
-    [ "uName", "struct_a_p_i___story_cmd_type.html#a418534b4dc74f911256286ec7dd2743e", null ]
+    [ "action", "struct_a_p_i___story_cmd_type.html#a778bed30641f907ad700f1ebd463799c", null ],
+    [ "dispOnSections", "struct_a_p_i___story_cmd_type.html#ac731e223f398a27c23d11d5271c8172a", null ],
+    [ "dontRebuild", "struct_a_p_i___story_cmd_type.html#adcc519b76fc1810e59a8e36277a19de6", null ],
+    [ "elevation", "struct_a_p_i___story_cmd_type.html#aceffa36c49a2137e7c74ec9d131b4e5c", null ],
+    [ "height", "struct_a_p_i___story_cmd_type.html#a765fcdc901d533b0059f6a60ef154229", null ],
+    [ "index", "struct_a_p_i___story_cmd_type.html#af01f1ac9afe89b2e3bca04f3273c5ddd", null ],
+    [ "uName", "struct_a_p_i___story_cmd_type.html#a7d2b8f095a360ea11b278897424d2a98", null ]
 ];

@@ -1,14 +1,14 @@
 var struct_a_p_i___hotlink_type =
 [
-    [ "adjustLevelDiffs", "struct_a_p_i___hotlink_type.html#a9247fcf492bb82bf53525803fb756afe", null ],
-    [ "floorDifference", "struct_a_p_i___hotlink_type.html#a30a431dc1524e1c5127b58d61eadfa16", null ],
-    [ "head", "struct_a_p_i___hotlink_type.html#a58392aba4f788e4f8b5079f931b94c3e", null ],
-    [ "hotlinkGroupGuid", "struct_a_p_i___hotlink_type.html#af80ffdedc6b90d8a51e213720c7d3c92", null ],
-    [ "hotlinkNodeGuid", "struct_a_p_i___hotlink_type.html#aa203ad5f01f31b7313329a33b9fe41db", null ],
-    [ "ignoreTopFloorLinks", "struct_a_p_i___hotlink_type.html#a9a56746334cc5e3d4f6a182eaecad957", null ],
-    [ "relinkWallOpenings", "struct_a_p_i___hotlink_type.html#a4cf2b86e1145ebaa752a7f1750b675ed", null ],
-    [ "skipNested", "struct_a_p_i___hotlink_type.html#acc553e9b0a935a30f3b6e913547fff32", null ],
-    [ "suspendFixAngle", "struct_a_p_i___hotlink_type.html#a516a5add424cb6fad5925080b74818e4", null ],
-    [ "transformation", "struct_a_p_i___hotlink_type.html#acc455ccd98dfcf416b6f06fd1bc991c2", null ],
-    [ "type", "struct_a_p_i___hotlink_type.html#a4f614c0f59ed7f0308610cacf34f008e", null ]
+    [ "adjustLevelDiffs", "struct_a_p_i___hotlink_type.html#a358ed13abcb159a65d102a35ccd12bcc", null ],
+    [ "floorDifference", "struct_a_p_i___hotlink_type.html#a3e7dabd2ed8e18b0f0cbabd16868a83c", null ],
+    [ "head", "struct_a_p_i___hotlink_type.html#a54c0132358bbff59577c8927f42f262c", null ],
+    [ "hotlinkGroupGuid", "struct_a_p_i___hotlink_type.html#ab5f92dfb4139c3be1b067968920dfc86", null ],
+    [ "hotlinkNodeGuid", "struct_a_p_i___hotlink_type.html#a423ab8675e44e572d8ee31c85459ae8d", null ],
+    [ "ignoreTopFloorLinks", "struct_a_p_i___hotlink_type.html#a0c24095b6b7dcf2c7d986f4cdff5b4d8", null ],
+    [ "relinkWallOpenings", "struct_a_p_i___hotlink_type.html#ad201d325a860d0e1def86b13eed7ae1e", null ],
+    [ "skipNested", "struct_a_p_i___hotlink_type.html#a46a485b442166c3411157320b67d89a9", null ],
+    [ "suspendFixAngle", "struct_a_p_i___hotlink_type.html#a5c73f983e2b6bf201cc572cd24e34657", null ],
+    [ "transformation", "struct_a_p_i___hotlink_type.html#ae85037dc6be6c3061a58f83a0af24f46", null ],
+    [ "type", "struct_a_p_i___hotlink_type.html#ab9fe273394663eac67b340cfd8f29772", null ]
 ];

@@ -1,15 +1,13 @@
 var struct_a_p_i___m_e_p_system_type =
 [
-    [ "centerLinePen", "struct_a_p_i___m_e_p_system_type.html#ae3cefb6c16f88ea75c5ee9e68ffd752f", null ],
-    [ "centerLTypeInd", "struct_a_p_i___m_e_p_system_type.html#ac93f259929494cdbb2299853815dae4d", null ],
-    [ "contourPen", "struct_a_p_i___m_e_p_system_type.html#a21267501bdfd370bcbc10808050ed6e8", null ],
-    [ "fillBgPen", "struct_a_p_i___m_e_p_system_type.html#a4f14af04aae4c5f7821d55911cf6e9a9", null ],
-    [ "fillInd", "struct_a_p_i___m_e_p_system_type.html#af42c351013db17d1af9fd9507be5681f", null ],
-    [ "fillPen", "struct_a_p_i___m_e_p_system_type.html#a6253fc2495f245b55d2601edf72a2c3d", null ],
-    [ "head", "struct_a_p_i___m_e_p_system_type.html#a3608beee0210f7455059f485a3caa8cf", null ],
-    [ "insulationMatInd", "struct_a_p_i___m_e_p_system_type.html#aa11bf4d97780ebd2b7e14ba96dfa3241", null ],
-    [ "isForCabling", "struct_a_p_i___m_e_p_system_type.html#a36af0aabe0b8e71732e940f4561fc125", null ],
-    [ "isForDuctwork", "struct_a_p_i___m_e_p_system_type.html#a5fb0a9658dbcfd9c1f888aaaef0b8dfd", null ],
-    [ "isForPipework", "struct_a_p_i___m_e_p_system_type.html#a70190fdf715677b3b8623f895c0d8f43", null ],
-    [ "materialInd", "struct_a_p_i___m_e_p_system_type.html#a5029713bed9a43854e81e52caa1ec5ad", null ]
+    [ "centerLinePen", "struct_a_p_i___m_e_p_system_type.html#a97757fdd6904b9a360f222eaa2f09d87", null ],
+    [ "centerLTypeInd", "struct_a_p_i___m_e_p_system_type.html#af456467becf5f60e656e3c60e1009412", null ],
+    [ "contourPen", "struct_a_p_i___m_e_p_system_type.html#a5fbf5f6924a52d9a2e981a82b07df1b4", null ],
+    [ "domain", "struct_a_p_i___m_e_p_system_type.html#abba50be003fc92246774356aa75d1f12", null ],
+    [ "fillBgPen", "struct_a_p_i___m_e_p_system_type.html#ada1deae68c9b7b45a09162f5913c0a3b", null ],
+    [ "fillInd", "struct_a_p_i___m_e_p_system_type.html#af65203466c7fe97d5cb810dd0732ffc7", null ],
+    [ "fillPen", "struct_a_p_i___m_e_p_system_type.html#a5b8bb1d121d092d1b7168c6455aee8c1", null ],
+    [ "head", "struct_a_p_i___m_e_p_system_type.html#a08e3a0637a2a0f11b2dd2a07a388b0aa", null ],
+    [ "insulationMatInd", "struct_a_p_i___m_e_p_system_type.html#a5ca043a5e0c195de729e4637fc00952e", null ],
+    [ "materialInd", "struct_a_p_i___m_e_p_system_type.html#abcdf4636e8d5d12979c42160d1c0cdeb", null ]
 ];

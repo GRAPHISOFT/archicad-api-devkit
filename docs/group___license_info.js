@@ -1,21 +1,26 @@
 var group___license_info =
 [
-    [ "API_SSALevels", "namespace_a_p_i___s_s_a_levels.html", null ],
-    [ "ACAPI::LicenseInfo::v1::LicenseInfoManager", "class_a_c_a_p_i_1_1_license_info_1_1v1_1_1_license_info_manager.html", [
-      [ "GetProductVersionInfo", "group___license_info.html#ga0063de840c45a8aec307ff558f3fc896", null ],
-      [ "GetLicenseInfoManager", "class_a_c_a_p_i_1_1_license_info_1_1v1_1_1_license_info_manager.html#a30ffb8a534512a6dfa642b9837168b30", null ]
+    [ "ACAPI::LicenseInfo::LicenseInfoManager", "class_a_c_a_p_i_1_1_license_info_1_1_license_info_manager.html", [
+      [ "GetProductVersionInfo", "group___license_info.html#gac7649544d4db6b4efb2ab35f47fbfd58", null ],
+      [ "GetLicenseInfoManager", "class_a_c_a_p_i_1_1_license_info_1_1_license_info_manager.html#a30ffb8a534512a6dfa642b9837168b30", null ]
     ] ],
-    [ "ACAPI::LicenseInfo::v1::ProductVersionInfo", "class_a_c_a_p_i_1_1_license_info_1_1v1_1_1_product_version_info.html", [
-      [ "GetBuildNum", "group___license_info.html#ga40c9d8bc0bebc5c50eac82b6126e5b00", null ],
-      [ "GetGSLanguageCode", "group___license_info.html#gae6d94593384751391939bc813b95d670", null ],
-      [ "GetProductFamilyId", "group___license_info.html#ga93e6c75a4f692ca6f2c9969b2e65e2c7", null ],
-      [ "GetVersionNum1", "group___license_info.html#gac4eee9885440bf3943a6272273fede00", null ],
-      [ "GetVersionNum2", "group___license_info.html#gaf19c1f1b918ee27f88bf49ad5abbb28a", null ],
-      [ "GetVersionNum3", "group___license_info.html#ga0f661b0fee7bc0e2d07e16490cf613f8", null ],
-      [ "GetVersionString", "group___license_info.html#ga9d20e1c0e160e0087b88ea1fd483504c", null ]
+    [ "ACAPI::LicenseInfo::ProductVersionInfo", "class_a_c_a_p_i_1_1_license_info_1_1_product_version_info.html", [
+      [ "GetAppVersionString", "group___license_info.html#ga36a91460c8ee570da133fd40dcf3d483", null ],
+      [ "GetBuildNum", "group___license_info.html#gaf2b1544e6640558f74ebbfdbc6c50f43", null ],
+      [ "GetGSLanguageCode", "group___license_info.html#ga8ffe4d3a20283c7f23abd11bb759dc09", null ],
+      [ "GetGSProductType", "group___license_info.html#gaa9f593a9bd9255379c040b5105ced3e3", null ],
+      [ "GetHotfixVersionString", "group___license_info.html#ga847e1f39a21f8ff372dc93d54206318b", null ],
+      [ "GetMainVersionString", "group___license_info.html#ga33e0860ed5c7a4b6e5ed989b69621c7c", null ],
+      [ "GetProductFamilyId", "group___license_info.html#gacb220ed8c94aa4f6e60d9253e41c47f2", null ],
+      [ "GetProductName", "group___license_info.html#ga5094b884a5a4894fd2d141c68e642955", null ],
+      [ "GetUpdateVersionString", "group___license_info.html#ga46079e8a166df362d4e2accf733539f0", null ]
     ] ],
-    [ "API_SSALevel", "group___license_info.html#ga8a90cc2522810b56bb3ac58fbb349f79", null ],
+    [ "API_SSALevel", "group___license_info.html#ga0427599ccd6616cb0863f94a341ad6ff", null ],
     [ "APILicenseBorrowStatusChangeHandlerProc", "group___license_info.html#ga550a1c7365c1cc9586ba238d059b2c09", null ],
+    [ "API_LicenseBorrowStatusTypeID", "group___license_info.html#ga401ec0819c0762069f0f53cd0031a18e", [
+      [ "API_LicenseBorrowed", "group___license_info.html#gga401ec0819c0762069f0f53cd0031a18eafe1024ab5ad8298948c92555a0a1a817", null ],
+      [ "API_LicenseReturned", "group___license_info.html#gga401ec0819c0762069f0f53cd0031a18ea98947956423b246472097c473f5a3fa8", null ]
+    ] ],
     [ "ACAPI_Licensing_CatchLicenseBorrowStatusChange", "group___license_info.html#ga689deceb5df17b8be594435a08aa2643", null ],
     [ "ACAPI_Licensing_GetBoxMask", "group___license_info.html#gafb72cd85e9e8a82b26273199946d0d1d", null ],
     [ "ACAPI_Licensing_GetConfigurationNumber", "group___license_info.html#ga8190f348634fba53ed58e38ee9e37161", null ],
@@ -26,13 +31,15 @@ var group___license_info =
     [ "ACAPI_Licensing_GetSerialNumber", "group___license_info.html#gabf328ca29b17e3959058de2e1ab675c3", null ],
     [ "ACAPI_Licensing_InvokeForwardDialog", "group___license_info.html#gaec21cfa2fcfc28350ffbf015d9fa522e", null ],
     [ "ACAPI_Licensing_IsSSALevelAtLeast", "group___license_info.html#gacbe5125fcc70e09d0e6eba10d8a0d9f3", null ],
-    [ "ACAPI::LicenseInfo::v1::ProductVersionInfo::GetBuildNum", "group___license_info.html#ga40c9d8bc0bebc5c50eac82b6126e5b00", null ],
-    [ "ACAPI::LicenseInfo::v1::ProductVersionInfo::GetGSLanguageCode", "group___license_info.html#gae6d94593384751391939bc813b95d670", null ],
-    [ "ACAPI::LicenseInfo::v1::GetLicenseInfoManager", "group___license_info.html#gaba248098f8bbb2f373418c264a46f935", null ],
-    [ "ACAPI::LicenseInfo::v1::ProductVersionInfo::GetProductFamilyId", "group___license_info.html#ga93e6c75a4f692ca6f2c9969b2e65e2c7", null ],
-    [ "ACAPI::LicenseInfo::v1::LicenseInfoManager::GetProductVersionInfo", "group___license_info.html#ga0063de840c45a8aec307ff558f3fc896", null ],
-    [ "ACAPI::LicenseInfo::v1::ProductVersionInfo::GetVersionNum1", "group___license_info.html#gac4eee9885440bf3943a6272273fede00", null ],
-    [ "ACAPI::LicenseInfo::v1::ProductVersionInfo::GetVersionNum2", "group___license_info.html#gaf19c1f1b918ee27f88bf49ad5abbb28a", null ],
-    [ "ACAPI::LicenseInfo::v1::ProductVersionInfo::GetVersionNum3", "group___license_info.html#ga0f661b0fee7bc0e2d07e16490cf613f8", null ],
-    [ "ACAPI::LicenseInfo::v1::ProductVersionInfo::GetVersionString", "group___license_info.html#ga9d20e1c0e160e0087b88ea1fd483504c", null ]
+    [ "ACAPI::LicenseInfo::ProductVersionInfo::GetAppVersionString", "group___license_info.html#ga36a91460c8ee570da133fd40dcf3d483", null ],
+    [ "ACAPI::LicenseInfo::ProductVersionInfo::GetBuildNum", "group___license_info.html#gaf2b1544e6640558f74ebbfdbc6c50f43", null ],
+    [ "ACAPI::LicenseInfo::ProductVersionInfo::GetGSLanguageCode", "group___license_info.html#ga8ffe4d3a20283c7f23abd11bb759dc09", null ],
+    [ "ACAPI::LicenseInfo::ProductVersionInfo::GetGSProductType", "group___license_info.html#gaa9f593a9bd9255379c040b5105ced3e3", null ],
+    [ "ACAPI::LicenseInfo::ProductVersionInfo::GetHotfixVersionString", "group___license_info.html#ga847e1f39a21f8ff372dc93d54206318b", null ],
+    [ "ACAPI::LicenseInfo::GetLicenseInfoManager", "group___license_info.html#ga9f56fb0bfdfc6f55f41afcc5b4e1cabe", null ],
+    [ "ACAPI::LicenseInfo::ProductVersionInfo::GetMainVersionString", "group___license_info.html#ga33e0860ed5c7a4b6e5ed989b69621c7c", null ],
+    [ "ACAPI::LicenseInfo::ProductVersionInfo::GetProductFamilyId", "group___license_info.html#gacb220ed8c94aa4f6e60d9253e41c47f2", null ],
+    [ "ACAPI::LicenseInfo::ProductVersionInfo::GetProductName", "group___license_info.html#ga5094b884a5a4894fd2d141c68e642955", null ],
+    [ "ACAPI::LicenseInfo::LicenseInfoManager::GetProductVersionInfo", "group___license_info.html#gac7649544d4db6b4efb2ab35f47fbfd58", null ],
+    [ "ACAPI::LicenseInfo::ProductVersionInfo::GetUpdateVersionString", "group___license_info.html#ga46079e8a166df362d4e2accf733539f0", null ]
 ];

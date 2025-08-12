@@ -1,5 +1,5 @@
 var struct_a_p_i___import_id_mapping_type =
 [
-    [ "edges", "struct_a_p_i___import_id_mapping_type.html#a06da9bbf9389907d8f1b4b27f84fac7c", null ],
-    [ "vertices", "struct_a_p_i___import_id_mapping_type.html#a858426bd683867a8c4f63c43d9ff3c8e", null ]
+    [ "edges", "struct_a_p_i___import_id_mapping_type.html#ad95524feb11a87a2561926793702f7ae", null ],
+    [ "vertices", "struct_a_p_i___import_id_mapping_type.html#ac659d631c0c118c3f596fdea3ea1aa2c", null ]
 ];

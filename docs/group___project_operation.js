@@ -1,42 +1,40 @@
 var group___project_operation =
 [
     [ "API_NewProjectPars", "struct_a_p_i___new_project_pars.html", [
-      [ "enableSaveAlert", "struct_a_p_i___new_project_pars.html#aa9e44de0490f454ddf30792fae9183f9", null ],
-      [ "newAndReset", "struct_a_p_i___new_project_pars.html#a793b1246199dbd85cb00b666becccfaa", null ]
+      [ "newAndReset", "struct_a_p_i___new_project_pars.html#ae4bb44927bcc618b8cc2d745654df3df", null ]
     ] ],
     [ "API_FileOpenPars", "struct_a_p_i___file_open_pars.html", [
-      [ "archiveLib", "struct_a_p_i___file_open_pars.html#a974e7a706fd18487ee04f88bf4d6c71b", null ],
-      [ "enableSaveAlert", "struct_a_p_i___file_open_pars.html#acac267fb42e556a9c4e22e0b4d2b0023", null ],
-      [ "file", "struct_a_p_i___file_open_pars.html#a2e386819d45295b262ab1fd46d3980d4", null ],
-      [ "fileTypeID", "struct_a_p_i___file_open_pars.html#a1230f251b1686887a668ce6ef3341cf8", null ],
-      [ "libGiven", "struct_a_p_i___file_open_pars.html#ae569d1653b90aaa28088295ffc9e3aec", null ],
-      [ "useStoredLib", "struct_a_p_i___file_open_pars.html#a3d13e06191924b6a374e15645133ce9c", null ]
+      [ "archiveLib", "struct_a_p_i___file_open_pars.html#adfda1db6fa70bdb817bad47295720402", null ],
+      [ "file", "struct_a_p_i___file_open_pars.html#a211d4812dcb8bab39047ba0213fa708a", null ],
+      [ "fileTypeID", "struct_a_p_i___file_open_pars.html#ab0f9ccb3914755e7831a647f428ff953", null ],
+      [ "libGiven", "struct_a_p_i___file_open_pars.html#a3a019be4d972cb51e2c925c521105eea", null ],
+      [ "useStoredLib", "struct_a_p_i___file_open_pars.html#af1a2406b51526ccef01b018e58b11455", null ]
     ] ],
     [ "API_SavePars_Archive", "struct_a_p_i___save_pars___archive.html", [
-      [ "backgroundPictOn", "struct_a_p_i___save_pars___archive.html#a590c7dabf3499fd87f56ece3a1d087f9", null ],
-      [ "libraryPartsOn", "struct_a_p_i___save_pars___archive.html#ae0e2db6889c6e8a5e47174231db524d7", null ],
-      [ "picturesInTIFF", "struct_a_p_i___save_pars___archive.html#ad39c1f33bbc7500dcfe3847b573296c3", null ],
-      [ "propertiesOn", "struct_a_p_i___save_pars___archive.html#ae17ddb21f6be0f45946553a86a573bac", null ],
-      [ "texturesOn", "struct_a_p_i___save_pars___archive.html#a58a0e7ee2102ffadca66f16b3d9f3203", null ]
+      [ "backgroundPictOn", "struct_a_p_i___save_pars___archive.html#afa4f35ce87b12c44a2f4d1a16bccc0df", null ],
+      [ "libraryPartsOn", "struct_a_p_i___save_pars___archive.html#a3f8d563a5b4a2acb47209cfe6349d605", null ],
+      [ "picturesInTIFF", "struct_a_p_i___save_pars___archive.html#a60d608be334c6cff1a53e7cede13ce3f", null ],
+      [ "propertiesOn", "struct_a_p_i___save_pars___archive.html#a609a0033aa314feefce9c893ca239903", null ],
+      [ "texturesOn", "struct_a_p_i___save_pars___archive.html#a8b7c5fdb08f650d647b248ab5237ae1a", null ]
     ] ],
     [ "API_SavePars_PlanDump", "struct_a_p_i___save_pars___plan_dump.html", [
-      [ "attributesOn", "struct_a_p_i___save_pars___plan_dump.html#a5d660421984ed0a7019ba820a39dc291", null ],
-      [ "elementsOn", "struct_a_p_i___save_pars___plan_dump.html#aa3fd7ca88dda40b693bfd2f72a86bfb2", null ],
-      [ "propertiesOn", "struct_a_p_i___save_pars___plan_dump.html#acb42d3c9d1826c51d61c8e89e5a086f0", null ]
+      [ "attributesOn", "struct_a_p_i___save_pars___plan_dump.html#a30bab33335f562fa090cc85d2ef2e7be", null ],
+      [ "elementsOn", "struct_a_p_i___save_pars___plan_dump.html#a6311b7d534c389574f0be46dd85bf03a", null ],
+      [ "propertiesOn", "struct_a_p_i___save_pars___plan_dump.html#a06dc3dc610933c4b845d582d1906f885", null ]
     ] ],
     [ "API_SavePars_Object", "struct_a_p_i___save_pars___object.html", [
-      [ "isPlaceable", "struct_a_p_i___save_pars___object.html#ac3db07fe21ddbe6dd518eaf8a1ec5e41", null ],
-      [ "libItMode", "struct_a_p_i___save_pars___object.html#a72a9d4daca3d0827f5ef8197b335a3b1", null ],
-      [ "removeLine", "struct_a_p_i___save_pars___object.html#ac23ced44026fd33abf5b96ef2d7751a2", null ],
-      [ "saveSelOnly", "struct_a_p_i___save_pars___object.html#a0ff9cc4a1456eb71dabc5f9047d06ac3", null ],
-      [ "view2D", "struct_a_p_i___save_pars___object.html#abd9d053af49e89afa01f1365bbb56af1", null ]
+      [ "isPlaceable", "struct_a_p_i___save_pars___object.html#a2e963be28b0411b8ec3795d0b8c0b309", null ],
+      [ "libItMode", "struct_a_p_i___save_pars___object.html#a7f292746c1e118e7fc0987b0f4764a48", null ],
+      [ "removeLine", "struct_a_p_i___save_pars___object.html#a75ccfe7266f0b1be02cf4003f4014e91", null ],
+      [ "saveSelOnly", "struct_a_p_i___save_pars___object.html#a1151ce71d3babf14c2837e0089e9aca4", null ],
+      [ "view2D", "struct_a_p_i___save_pars___object.html#a29ce39a84c7487782191092830843a0d", null ]
     ] ],
     [ "API_SavePars_Picture", "struct_a_p_i___save_pars___picture.html", [
-      [ "colorDepth", "struct_a_p_i___save_pars___picture.html#a74a1e759f0d8689c13eb5a2a9c6ce130", null ],
-      [ "crop", "struct_a_p_i___save_pars___picture.html#a6eda69d6567656f53889927ea8b4bc36", null ],
-      [ "dithered", "struct_a_p_i___save_pars___picture.html#ac7db3b514ad4489bbe28f9c85c82022f", null ],
-      [ "keepSelectionHighlight", "struct_a_p_i___save_pars___picture.html#a90bcc2296b5a5a81452c9e00cecc405c", null ],
-      [ "view2D", "struct_a_p_i___save_pars___picture.html#aaae740113890ce46bb13aa45fb007345", null ]
+      [ "colorDepth", "struct_a_p_i___save_pars___picture.html#aa97494a6d29ab6f98631fa434c585a3d", null ],
+      [ "crop", "struct_a_p_i___save_pars___picture.html#acabfcfad221ae41acdbd6fe33d691e60", null ],
+      [ "dithered", "struct_a_p_i___save_pars___picture.html#a8495ed34651142a4b7c808eead2997c1", null ],
+      [ "keepSelectionHighlight", "struct_a_p_i___save_pars___picture.html#ab0905cf33029774249420f546a07fbab", null ],
+      [ "view2D", "struct_a_p_i___save_pars___picture.html#a86b0f1d21cf17c5c7d21533a9efdb80e", null ]
     ] ],
     [ "API_IFCTranslatorIdentifier", "struct_a_p_i___i_f_c_translator_identifier.html", [
       [ "API_IFCTranslatorIdentifier", "struct_a_p_i___i_f_c_translator_identifier.html#a2790524f77769fc63072328c40431cd1", null ],
@@ -44,106 +42,106 @@ var group___project_operation =
       [ "operator=", "struct_a_p_i___i_f_c_translator_identifier.html#a3bcf26d9a0b019aa159b1400fa148871", null ],
       [ "Swap", "struct_a_p_i___i_f_c_translator_identifier.html#a8254a77c37b23eaad67fe850f99e9161", null ],
       [ "Swap", "struct_a_p_i___i_f_c_translator_identifier.html#a3722bd93f12924fe72cdf1b33a9b2c7a", null ],
-      [ "innerReference", "struct_a_p_i___i_f_c_translator_identifier.html#a299cd9bac22812ac81183063a6a205fa", null ],
-      [ "name", "struct_a_p_i___i_f_c_translator_identifier.html#a0c46dbbf63f014cce78f6a3e727b0538", null ]
+      [ "innerReference", "struct_a_p_i___i_f_c_translator_identifier.html#ad437ca6476f6b60ef05650c20519e333", null ],
+      [ "name", "struct_a_p_i___i_f_c_translator_identifier.html#ab344f800930057a207d65e07955ae453", null ]
     ] ],
     [ "API_SavePars_Ifc", "struct_a_p_i___save_pars___ifc.html", [
-      [ "elementsSet", "struct_a_p_i___save_pars___ifc.html#a685e18a33684021d8f2da25760e45b54", null ],
-      [ "elementsToIfcExport", "struct_a_p_i___save_pars___ifc.html#a63b3f4f00ce3db02b5e03b704facc4eb", null ],
-      [ "includeBoundingBoxGeometry", "struct_a_p_i___save_pars___ifc.html#a2d69a206d780a2c5830cfbbcddd43d5d", null ],
-      [ "subType", "struct_a_p_i___save_pars___ifc.html#adbf8c07c2adef7a8472f35190a40b9bf", null ],
-      [ "translatorIdentifier", "struct_a_p_i___save_pars___ifc.html#a2abe51082bae18ee47dc99ff017c9d18", null ]
+      [ "elementsSet", "struct_a_p_i___save_pars___ifc.html#a02aefb0171074696fd11536843ddd263", null ],
+      [ "elementsToIfcExport", "struct_a_p_i___save_pars___ifc.html#aa7112d1ac5076464dcf025f312fb0ea9", null ],
+      [ "includeBoundingBoxGeometry", "struct_a_p_i___save_pars___ifc.html#aa60b637151cd6ad58ef74452c3625416", null ],
+      [ "subType", "struct_a_p_i___save_pars___ifc.html#a90e9494008038fc94a3418c0c4a2da28", null ],
+      [ "translatorIdentifier", "struct_a_p_i___save_pars___ifc.html#a969b523d5cab45be911c6b9c11284965", null ]
     ] ],
     [ "API_SavePars_Pdf", "struct_a_p_i___save_pars___pdf.html", [
-      [ "bottomMargin", "struct_a_p_i___save_pars___pdf.html#a71b1c03e1c482273327744baed6355c2", null ],
-      [ "leftMargin", "struct_a_p_i___save_pars___pdf.html#ab73cd6c0562a503969e33c18113fca29", null ],
-      [ "rightMargin", "struct_a_p_i___save_pars___pdf.html#a41b564f13fee1dde02e95078730b258e", null ],
-      [ "sizeX", "struct_a_p_i___save_pars___pdf.html#a6551433992bd4f8fce1116991e43c748", null ],
-      [ "sizeY", "struct_a_p_i___save_pars___pdf.html#a7c7e0963ba613387f13ab5d51acdfa86", null ],
-      [ "topMargin", "struct_a_p_i___save_pars___pdf.html#a6a4e667ff3f455ac77594e36d2441e58", null ]
+      [ "bottomMargin", "struct_a_p_i___save_pars___pdf.html#a970308be57394c2d236b2d4385c8ffd3", null ],
+      [ "leftMargin", "struct_a_p_i___save_pars___pdf.html#a7c1b234932566362a8cf19287f353cb2", null ],
+      [ "rightMargin", "struct_a_p_i___save_pars___pdf.html#a17c0cda3fd4cc37f341fc973ea9809c8", null ],
+      [ "sizeX", "struct_a_p_i___save_pars___pdf.html#a5ef57f96fb37fff33b226ad4488f0cf5", null ],
+      [ "sizeY", "struct_a_p_i___save_pars___pdf.html#a7c8d108eec136817a845afe350728356", null ],
+      [ "topMargin", "struct_a_p_i___save_pars___pdf.html#abc8abd0017ade9bf3392c2fc900dfd90", null ]
     ] ],
     [ "API_SavePars_Saf", "struct_a_p_i___save_pars___saf.html", [
-      [ "elementsToSAFExport", "struct_a_p_i___save_pars___saf.html#a51e02fb866719a8ae39c9d6e8a7ce7cf", null ],
-      [ "selectedSAFTranslatorName", "struct_a_p_i___save_pars___saf.html#a05badd3603b04fb171f1b997e4a7c8ce", null ]
+      [ "elementsToSAFExport", "struct_a_p_i___save_pars___saf.html#a6a714becf0cda0077f018aa60122e672", null ],
+      [ "selectedSAFTranslatorName", "struct_a_p_i___save_pars___saf.html#a2f1b1cf85b26a7bed981112e31e97111", null ]
     ] ],
     [ "API_FileSavePars", "struct_a_p_i___file_save_pars.html", [
-      [ "file", "struct_a_p_i___file_save_pars.html#a36445cf8ba93b37985e8e42da9a2c531", null ],
-      [ "fileTypeID", "struct_a_p_i___file_save_pars.html#a2748106cd030ca48f4212218d57b19c7", null ]
+      [ "file", "struct_a_p_i___file_save_pars.html#a33ace7790248ae3e3c02b0332574ebbb", null ],
+      [ "fileTypeID", "struct_a_p_i___file_save_pars.html#aa680ad5ac6600ddcd88c9c1c2daec3bc", null ]
     ] ],
     [ "API_PrintStampType", "struct_a_p_i___print_stamp_type.html", [
-      [ "addCustomText", "struct_a_p_i___print_stamp_type.html#a71b75019980062099c146b9715edd879", null ],
-      [ "addDateTime", "struct_a_p_i___print_stamp_type.html#ad476588ce62b61eec2c641ddde2cd12f", null ],
-      [ "addDispOptComb", "struct_a_p_i___print_stamp_type.html#abfacd039f26451666fa9b4624e986b0f", null ],
-      [ "addLayerComb", "struct_a_p_i___print_stamp_type.html#ad09e8a08f832f92bf9ed8a26db0a1707", null ],
-      [ "addLoginName", "struct_a_p_i___print_stamp_type.html#aa4e5831f2539b19ad1f2c83b38cb5b3a", null ],
-      [ "addPageNumber", "struct_a_p_i___print_stamp_type.html#a6bf3f03600ad3d4a481eec2706a8204c", null ],
-      [ "addPrintingScale", "struct_a_p_i___print_stamp_type.html#a8a98a51cf30dfca1913b997681bd1811", null ],
-      [ "addProjectName", "struct_a_p_i___print_stamp_type.html#a85075aae2e6c1365f511507a5673a4dc", null ],
-      [ "addProjectPath", "struct_a_p_i___print_stamp_type.html#a3da2328b4cc99e88e7e0f66d59feb0d3", null ],
-      [ "addViewName", "struct_a_p_i___print_stamp_type.html#a3a932d8666f8fa8b84643f27d06bbc16", null ],
-      [ "customText", "struct_a_p_i___print_stamp_type.html#ae40c72f198bbae6c7dfe230da3991a4d", null ],
-      [ "fontHeight", "struct_a_p_i___print_stamp_type.html#aba96eb42038e4f67f2fa6bcfdc228d93", null ],
-      [ "fontID", "struct_a_p_i___print_stamp_type.html#aa2940d962e91a2115ec3be5b09bfdf20", null ],
-      [ "position", "struct_a_p_i___print_stamp_type.html#afa0500eedd61bfe18c27246242239abf", null ]
+      [ "addCustomText", "struct_a_p_i___print_stamp_type.html#ab2f2c4ab7532cb0ca668d6a2664af299", null ],
+      [ "addDateTime", "struct_a_p_i___print_stamp_type.html#a9c6bc6cce03b58fbb304ec68b042ab95", null ],
+      [ "addDispOptComb", "struct_a_p_i___print_stamp_type.html#ada13fc91fae19f790060623c33927bc3", null ],
+      [ "addLayerComb", "struct_a_p_i___print_stamp_type.html#a4514196c46d18da04b65fa0d943254f2", null ],
+      [ "addLoginName", "struct_a_p_i___print_stamp_type.html#a420761ae8648801ca02529f4dfc7dea2", null ],
+      [ "addPageNumber", "struct_a_p_i___print_stamp_type.html#ab9d4b16e726e0c4b3273fa9fefcbef08", null ],
+      [ "addPrintingScale", "struct_a_p_i___print_stamp_type.html#aac9cd4de0c685a0c3b96e04d871da9f8", null ],
+      [ "addProjectName", "struct_a_p_i___print_stamp_type.html#adb4dc0a4eedc2e736ebbc9103326aacf", null ],
+      [ "addProjectPath", "struct_a_p_i___print_stamp_type.html#a6b16a0ee8183318ad56bf29becbb2d32", null ],
+      [ "addViewName", "struct_a_p_i___print_stamp_type.html#aa1d8283ed4997ad872f42fdc3fc9974c", null ],
+      [ "customText", "struct_a_p_i___print_stamp_type.html#a2f5935b00edfca0ac2db62265f4b42fb", null ],
+      [ "fontHeight", "struct_a_p_i___print_stamp_type.html#a94e57a533f6fa78f7258c1fc5376b637", null ],
+      [ "fontID", "struct_a_p_i___print_stamp_type.html#ac096fa72e5d48cf84218468a41e9fc97", null ],
+      [ "position", "struct_a_p_i___print_stamp_type.html#aee7b78597dfbdc686d08c331458afbb9", null ]
     ] ],
     [ "API_PrintPars", "struct_a_p_i___print_pars.html", [
-      [ "allColorsToBlack", "struct_a_p_i___print_pars.html#ad1b299bdecf1e97647b5a8bd64ccab22", null ],
-      [ "bottom", "struct_a_p_i___print_pars.html#aeca802de2f19eb8831aa37d5f04627eb", null ],
-      [ "ditherOnPrinter", "struct_a_p_i___print_pars.html#a67b4e9ea67f89aa0a419996c9923914d", null ],
-      [ "fixText", "struct_a_p_i___print_pars.html#a35bd8793fc8e03399028110cc3536bcb", null ],
-      [ "grid", "struct_a_p_i___print_pars.html#abc95d566bc2dbee36251042667ed27a3", null ],
-      [ "isStamp", "struct_a_p_i___print_pars.html#a9963347e907d98cf8c4a42d851216c23", null ],
-      [ "left", "struct_a_p_i___print_pars.html#a5bc0c97911125e4e385130117ab2438f", null ],
-      [ "newSheet", "struct_a_p_i___print_pars.html#a71882733d9a18f87d409633cc444698f", null ],
-      [ "printAlignment", "struct_a_p_i___print_pars.html#a1e7a39c1f6bd96c1f31d71cde91b3a53", null ],
-      [ "printArea", "struct_a_p_i___print_pars.html#a49a034fbaf35e6081942e92081388a10", null ],
-      [ "printGhost", "struct_a_p_i___print_pars.html#ab147beac0666ecc61ba89307f2c11df3", null ],
-      [ "right", "struct_a_p_i___print_pars.html#a68b45bb69d39179017ffa8706d31c969", null ],
-      [ "scale", "struct_a_p_i___print_pars.html#a0a7228709881140f8cf79bbe8e9704ea", null ],
-      [ "scaleFitToPage", "struct_a_p_i___print_pars.html#a0063840cd1b374e15eff975d0515c439", null ],
-      [ "scaleToPaper", "struct_a_p_i___print_pars.html#af2cbdbfc0224e62e655a325e1a95bdef", null ],
-      [ "stamp", "struct_a_p_i___print_pars.html#a6656e33722c63702940af92dd0a0f5f7", null ],
-      [ "top", "struct_a_p_i___print_pars.html#ac3f595c4fd2f7b97fca777d5b2aa94f0", null ],
-      [ "usePrinterRes", "struct_a_p_i___print_pars.html#a6c5d0d1782ed04564694ed3fe6c933e6", null ]
+      [ "allColorsToBlack", "struct_a_p_i___print_pars.html#aa1ab12d74b9b5a11b11e56516d11e844", null ],
+      [ "bottom", "struct_a_p_i___print_pars.html#a64e52616030bc1c9af440f46dd862044", null ],
+      [ "ditherOnPrinter", "struct_a_p_i___print_pars.html#a902a5986b190dc523e251cbae554ed19", null ],
+      [ "fixText", "struct_a_p_i___print_pars.html#abb4cfc5d30d06d0f4b75f5cfd5f74bec", null ],
+      [ "grid", "struct_a_p_i___print_pars.html#aa71323432a84bb524579bd448df24252", null ],
+      [ "isStamp", "struct_a_p_i___print_pars.html#a31fcc840d67fdd28908238a2e50a8f93", null ],
+      [ "left", "struct_a_p_i___print_pars.html#a2692725126b74e1e09efc0ee41b7b5eb", null ],
+      [ "newSheet", "struct_a_p_i___print_pars.html#a8a4338388bcbae5bfe1be064cc16cbd3", null ],
+      [ "printAlignment", "struct_a_p_i___print_pars.html#aa7b423dc1aae2b46060da1cf9700e2b3", null ],
+      [ "printArea", "struct_a_p_i___print_pars.html#a91148f439969166635591b76a8ec8251", null ],
+      [ "printGhost", "struct_a_p_i___print_pars.html#a9600c0d888ec453ed09c836a3830314d", null ],
+      [ "right", "struct_a_p_i___print_pars.html#a9614c1820857df290cf9bbacf7169449", null ],
+      [ "scale", "struct_a_p_i___print_pars.html#a8dbed86541368e7f7324d58ca8446c13", null ],
+      [ "scaleFitToPage", "struct_a_p_i___print_pars.html#a1060e36aecd526b34e86103db14b33b0", null ],
+      [ "scaleToPaper", "struct_a_p_i___print_pars.html#a18816129b0a225203f7b62abc508046a", null ],
+      [ "stamp", "struct_a_p_i___print_pars.html#ab156f56840cda6e5ca843c36f60dac6a", null ],
+      [ "top", "struct_a_p_i___print_pars.html#a97e9daaee7f551b660af371ff593f401", null ],
+      [ "usePrinterRes", "struct_a_p_i___print_pars.html#a1d9f5cf601e87184655f831b13986a9d", null ]
     ] ],
     [ "API_PublishPars", "struct_a_p_i___publish_pars.html", [
-      [ "guid", "struct_a_p_i___publish_pars.html#a2683428b76ef23a0480df90b219f57eb", null ],
-      [ "path", "struct_a_p_i___publish_pars.html#ad76c847dc4e7ce10e3f257ecab67de04", null ]
+      [ "guid", "struct_a_p_i___publish_pars.html#a721b5bac5d8f3b6f94210037e4e0e449", null ],
+      [ "path", "struct_a_p_i___publish_pars.html#a33dea13b084bea7a46d189c71309b802", null ]
     ] ],
     [ "API_ProjectInfo", "struct_a_p_i___project_info.html", [
-      [ "location", "struct_a_p_i___project_info.html#adf7d32f050f8a0554e3cbc66416908ea", null ],
-      [ "location_team", "struct_a_p_i___project_info.html#ab486657700976efd737d861d15e2f3bd", null ],
-      [ "modiStamp", "struct_a_p_i___project_info.html#aebb21852b65862853b71f73212062018", null ],
-      [ "projectName", "struct_a_p_i___project_info.html#a423e40c73bf18b2bff8c85c6bce75403", null ],
-      [ "projectPath", "struct_a_p_i___project_info.html#a0a6eec50849210b315e984af612e7935", null ],
-      [ "teamwork", "struct_a_p_i___project_info.html#a9522964f69ab31f8b919f00a0cfc0357", null ],
-      [ "untitled", "struct_a_p_i___project_info.html#a9c3de96cf7ca930e994bd3f91eaf8aa4", null ],
-      [ "userId", "struct_a_p_i___project_info.html#a7f01310d546c941ee531b3e0f1820656", null ],
-      [ "workGroupMode", "struct_a_p_i___project_info.html#af06672537dfb13b3e40c0865d90fd071", null ]
+      [ "location", "struct_a_p_i___project_info.html#a65deb930df9850cfc651ac07053b14d8", null ],
+      [ "location_team", "struct_a_p_i___project_info.html#adb8457ffd6d999649f4a8d773f860252", null ],
+      [ "modiStamp", "struct_a_p_i___project_info.html#a2c705583f645f3004753fb301ffc9b7b", null ],
+      [ "projectName", "struct_a_p_i___project_info.html#ae086b723078c3f7920745847f5c36416", null ],
+      [ "projectPath", "struct_a_p_i___project_info.html#a73d98ec2c5e6afcc3db40fd81de9f439", null ],
+      [ "teamwork", "struct_a_p_i___project_info.html#a50c1aca78f72e3cfa8d9324d9a5fc0e7", null ],
+      [ "untitled", "struct_a_p_i___project_info.html#a6e1e4fb9f6c10e86e0374629aec62595", null ],
+      [ "userId", "struct_a_p_i___project_info.html#a3e606a996b8c4135602e77be6f8f31c4", null ],
+      [ "workGroupMode", "struct_a_p_i___project_info.html#a2c12a7fcad263addf55fa626ae24012a", null ]
     ] ],
     [ "API_UserInfo", "struct_a_p_i___user_info.html", [
-      [ "connected", "struct_a_p_i___user_info.html#a616dcba6e99a40dd56b4322b448abac6", null ],
-      [ "fullName", "struct_a_p_i___user_info.html#a64aa54bb776312b3d9597be07c483e74", null ],
-      [ "guid", "struct_a_p_i___user_info.html#a575083951818731fff110612460a787d", null ],
-      [ "loginName", "struct_a_p_i___user_info.html#a39cc3da0bdda029fe6afc108b6cd4525", null ],
-      [ "userId", "struct_a_p_i___user_info.html#abcad7f3c7a8054d954eec3159babdd3b", null ]
+      [ "connected", "struct_a_p_i___user_info.html#a0de278a047dd08c9a2689a2e01f8409f", null ],
+      [ "fullName", "struct_a_p_i___user_info.html#a231c686150c3324df5d0fab89bdd9a13", null ],
+      [ "guid", "struct_a_p_i___user_info.html#ac7051da2a59d65b0d3136e30b361ad2a", null ],
+      [ "loginName", "struct_a_p_i___user_info.html#a569602392303abe035778ff491e8ab62", null ],
+      [ "userId", "struct_a_p_i___user_info.html#a20c1559431538c447de72bfbe31e7043", null ]
     ] ],
     [ "API_SharingInfo", "struct_a_p_i___sharing_info.html", [
-      [ "nUsers", "struct_a_p_i___sharing_info.html#acaada80b8dc3a87eb76e10b99cc43492", null ],
-      [ "users", "struct_a_p_i___sharing_info.html#aa5fe1ff05e169ff288569c995730dc89", null ]
+      [ "nUsers", "struct_a_p_i___sharing_info.html#ae23c5312e631a6392825b8bcd442469b", null ],
+      [ "users", "struct_a_p_i___sharing_info.html#a142224a6c9c6d02052336fd73912f29c", null ]
     ] ],
     [ "API_MiscAppInfo", "struct_a_p_i___misc_app_info.html", [
-      [ "caption", "struct_a_p_i___misc_app_info.html#a3e4ce058edf7fcc431c56b9672c445f5", null ],
-      [ "version", "struct_a_p_i___misc_app_info.html#a16db02ff5cadd648805c4e5b351983ef", null ]
+      [ "caption", "struct_a_p_i___misc_app_info.html#a09df5b0078f0146e30a581ac284640f3", null ],
+      [ "version", "struct_a_p_i___misc_app_info.html#abca9ec148bf4c46d0710e13b36c25abc", null ]
     ] ],
     [ "API_MiscPrinterInfo", "struct_a_p_i___misc_printer_info.html", [
-      [ "filler", "struct_a_p_i___misc_printer_info.html#a750556527c63cbaffe0a69ba30504951", null ],
-      [ "name", "struct_a_p_i___misc_printer_info.html#a8a59c669891cea137fc65aefd2c0cc82", null ],
-      [ "orientPortrait", "struct_a_p_i___misc_printer_info.html#a59766ce558728b02b9060b8d5c7064f3", null ]
+      [ "filler", "struct_a_p_i___misc_printer_info.html#a524f7cc51d559bc9d1c30ffbbf192b42", null ],
+      [ "name", "struct_a_p_i___misc_printer_info.html#a3c5fd89e43d1cc3d9f7783e7d9d36cb7", null ],
+      [ "orientPortrait", "struct_a_p_i___misc_printer_info.html#ab5400ebfa3341287b0f4e26620f4f588", null ]
     ] ],
     [ "API_MiscPlotterInfo", "struct_a_p_i___misc_plotter_info.html", [
-      [ "model", "struct_a_p_i___misc_plotter_info.html#ad8885ea00cf739bd408bbd0d3e7062ce", null ],
-      [ "name", "struct_a_p_i___misc_plotter_info.html#aa4c107b8cf6e74b1a437d577e053cea0", null ]
+      [ "model", "struct_a_p_i___misc_plotter_info.html#a93fcec0caa7d4bc6c127b0f7b2a3c8e3", null ],
+      [ "name", "struct_a_p_i___misc_plotter_info.html#af47153d9f6a40a9c4a39d5200b8992d8", null ]
     ] ],
     [ "APIProjectEventHandlerProc", "group___project_operation.html#ga0d88e6e0f13a0b1223db20e4bdac4432", null ],
     [ "API_ConvModID", "group___project_operation.html#ga3a2de40fad928b938f9e42a325c24ae0", null ],

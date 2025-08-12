@@ -1,5 +1,5 @@
 var struct_a_p_i___layer_stat =
 [
-    [ "conClassId", "struct_a_p_i___layer_stat.html#a86d427169360a7abe9d634cc415c65fc", null ],
-    [ "lFlags", "struct_a_p_i___layer_stat.html#a2f3b3dc0865ecc768136339b7ddff07e", null ]
+    [ "conClassId", "struct_a_p_i___layer_stat.html#add4ad3ee20164a31c61113d7d59133d2", null ],
+    [ "lFlags", "struct_a_p_i___layer_stat.html#a16c0535d328b535f638dfbb334fbccb3", null ]
 ];

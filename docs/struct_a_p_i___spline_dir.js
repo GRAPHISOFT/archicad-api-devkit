@@ -1,6 +1,6 @@
 var struct_a_p_i___spline_dir =
 [
-    [ "dirAng", "struct_a_p_i___spline_dir.html#af58800c5dd069e241ab5b05ae22d8a74", null ],
-    [ "lenNext", "struct_a_p_i___spline_dir.html#a3ff7457e45fa6aa97359b7b0c1356a04", null ],
-    [ "lenPrev", "struct_a_p_i___spline_dir.html#a7616ac75a1a33f1471e47666b5ea2f53", null ]
+    [ "dirAng", "struct_a_p_i___spline_dir.html#aed22c19d3dfb67ad7aa7248a2cd4a6d5", null ],
+    [ "lenNext", "struct_a_p_i___spline_dir.html#af68286391c40551cf309505c441f38aa", null ],
+    [ "lenPrev", "struct_a_p_i___spline_dir.html#a2d7a4a9d002513757e7c002be929c967", null ]
 ];

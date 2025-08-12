@@ -1,17 +1,17 @@
 var struct_a_p_i___revolved_shell_data =
 [
-    [ "axisBase", "struct_a_p_i___revolved_shell_data.html#a93e556bf546e83dbcdd69bf649e20d8d", null ],
-    [ "begAngle", "struct_a_p_i___revolved_shell_data.html#af7ff159e5a471a25d5ccac2533a5f12d", null ],
-    [ "begShapeEdgeData", "struct_a_p_i___revolved_shell_data.html#ad6fc5d6b50f594aa52192f86c58c9258", null ],
-    [ "distortionAngle", "struct_a_p_i___revolved_shell_data.html#afef70322ee6f44d6c0d7c45154df839e", null ],
-    [ "distortionVector", "struct_a_p_i___revolved_shell_data.html#a37eeef78801b655827628ed0f66c1457", null ],
-    [ "endShapeEdgeData", "struct_a_p_i___revolved_shell_data.html#aefec9c06911e35f26e296972a29a2b43", null ],
-    [ "revolutionAngle", "struct_a_p_i___revolved_shell_data.html#aa279b32ccc98d0e568598518a1ebd994", null ],
-    [ "revolvedEdgeDatas", "struct_a_p_i___revolved_shell_data.html#a56fdec4fff11dadd7d66d1009d30f6d8", null ],
-    [ "segmentedSurfaces", "struct_a_p_i___revolved_shell_data.html#aac384d82787ae424a7f4cde38ec04825", null ],
-    [ "segmentsByArc", "struct_a_p_i___revolved_shell_data.html#aa69c2a3ccea91f5bfab0caa8924f8e48", null ],
-    [ "segmentsByCircle", "struct_a_p_i___revolved_shell_data.html#af90d17377e236212b40a7949acf5d3bf", null ],
-    [ "segmentType", "struct_a_p_i___revolved_shell_data.html#a4223486ad61274b9a0d6ecf32504e681", null ],
-    [ "shellShape", "struct_a_p_i___revolved_shell_data.html#a6ef9ddf9f528c9c5f4229bde5e3c8a98", null ],
-    [ "slantAngle", "struct_a_p_i___revolved_shell_data.html#a6970bbe7ba073f55ec44464b03190438", null ]
+    [ "axisBase", "struct_a_p_i___revolved_shell_data.html#a54d4db3b6c02e76a62e8d3558dd96ef8", null ],
+    [ "begAngle", "struct_a_p_i___revolved_shell_data.html#a231f0c9c9da4fa7d777d436e8daaeb13", null ],
+    [ "begShapeEdgeData", "struct_a_p_i___revolved_shell_data.html#a15db74c12405140c6d14c253ee1bf3d8", null ],
+    [ "distortionAngle", "struct_a_p_i___revolved_shell_data.html#a1e80b16fcab521060ae54f5e8e890223", null ],
+    [ "distortionVector", "struct_a_p_i___revolved_shell_data.html#a0ff6a250aca077334856592c32f78f0f", null ],
+    [ "endShapeEdgeData", "struct_a_p_i___revolved_shell_data.html#a12540762bf587d4eff068eaefd302e39", null ],
+    [ "revolutionAngle", "struct_a_p_i___revolved_shell_data.html#acc8d68cc85ba266e7c088eba475d8897", null ],
+    [ "revolvedEdgeDatas", "struct_a_p_i___revolved_shell_data.html#a8fe53cb48cc53a35bbeb0dd09b95dc73", null ],
+    [ "segmentedSurfaces", "struct_a_p_i___revolved_shell_data.html#ac23b99d2f1b70b0eb5ce3cba40c5ff7d", null ],
+    [ "segmentsByArc", "struct_a_p_i___revolved_shell_data.html#a70547a2bf9e8162368850f3854007007", null ],
+    [ "segmentsByCircle", "struct_a_p_i___revolved_shell_data.html#a901f72c9d048de8bd25e91333fa97b81", null ],
+    [ "segmentType", "struct_a_p_i___revolved_shell_data.html#ad58eea92d5f58d2f196cacb33bc31b80", null ],
+    [ "shellShape", "struct_a_p_i___revolved_shell_data.html#ad1cfffb4d2e2918887c7b2d7cabc81c2", null ],
+    [ "slantAngle", "struct_a_p_i___revolved_shell_data.html#a0eeb743a8210ecdb4b92856e9dbc65c1", null ]
 ];
