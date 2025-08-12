@@ -1,0 +1,25 @@
+var class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table =
+[
+    [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#accd04e36dc69888ff8f8357a7f09cdb1", null ],
+    [ "GetBranchAxisAngle", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#aee6814519ce29966c2b26ada97bd219f", null ],
+    [ "GetBranchAxisDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a13fb39602dd5c4238247d8d1293a8e95", null ],
+    [ "GetBranchAxisDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#aa6fa00fd590e99f0702cb15861dcb229", null ],
+    [ "GetBranchAxisReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a5d3dfd96861c259f480b6270b7c25c24", null ],
+    [ "GetBranchOffset", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a274ba700133f0e92e13ab271cae49d06", null ],
+    [ "GetBranchOffsetByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a7084a1aac414a9b47d8eb6ae7c0758b8", null ],
+    [ "GetConnectionLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a7dcb2c4b1cf2d566b25943ebfec1902b", null ],
+    [ "GetConnectionLengthByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#aedb23f6c37b40994ca01078f174e7889", null ],
+    [ "GetDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#af1891f82983e59949c277e6a0ab2918c", null ],
+    [ "GetDescriptionByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a51a06bc9757bf81ad118bf5bc5368b8f", null ],
+    [ "GetLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a6086f847ff0e3ae9878752b4d680212f", null ],
+    [ "GetLengthByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#af31285472380b552f7c9466e408b251a", null ],
+    [ "GetMainAxisDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#abab73423aa93a619037d6badb278e295", null ],
+    [ "GetMainAxisDiameterByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#ae04959f4df804dc8afd053ba9023e43d", null ],
+    [ "GetMainAxisReferenceId", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a5c5c10138fcf0d97db39aa64d3371a52", null ],
+    [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a75bccc6475e54d599bc67eb15fda6099", null ],
+    [ "GetSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a3e4f32416978072b352f7ccec0b492bb", null ],
+    [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#ae983db008a121a41985c733818817c3d", null ],
+    [ "IsRowValid", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a9d9194b0a6fdb7855e50fc0e170e1b30", null ],
+    [ "IsRowValidByKey", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#ac3214a374100435de340cbe956d48510", null ],
+    [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_branch_preference_table.html#a54eab56e0858c246544170616a8524e8", null ]
+];

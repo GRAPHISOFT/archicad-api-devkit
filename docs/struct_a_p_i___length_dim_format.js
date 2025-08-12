@@ -1,10 +1,10 @@
 var struct_a_p_i___length_dim_format =
 [
-    [ "hide0Dec", "struct_a_p_i___length_dim_format.html#ad935cc001ddf00e8eb25206084f0e0a9", null ],
-    [ "lenDecimals", "struct_a_p_i___length_dim_format.html#af27d04001ac8cc69e5a22dd00b5c87fc", null ],
-    [ "roundInch", "struct_a_p_i___length_dim_format.html#aaa456992a89ceb65a2d7de136b807237", null ],
-    [ "show0Inch", "struct_a_p_i___length_dim_format.html#a23ffe7a8504899892acb1c566b07eae9", null ],
-    [ "show0Whole", "struct_a_p_i___length_dim_format.html#ad2384e27f631d152b0944f6605c8092d", null ],
-    [ "showSmall5", "struct_a_p_i___length_dim_format.html#a821353894eb6304e5011ac893bf557d3", null ],
-    [ "unit", "struct_a_p_i___length_dim_format.html#a792baf894f0c9c77d27cb3d87c992d3c", null ]
+    [ "hide0Dec", "struct_a_p_i___length_dim_format.html#a10c3c48a0107e33458d575510b453791", null ],
+    [ "lenDecimals", "struct_a_p_i___length_dim_format.html#a962cceb694c2a75339a71c86f75dd0b7", null ],
+    [ "roundInch", "struct_a_p_i___length_dim_format.html#a1990fca5a5039ee1945c768ff7417c03", null ],
+    [ "show0Inch", "struct_a_p_i___length_dim_format.html#ab6a3471b3a5625e6fbcc24bb39d743dc", null ],
+    [ "show0Whole", "struct_a_p_i___length_dim_format.html#ae8c5daa9d4064840a3760da95f67d136", null ],
+    [ "showSmall5", "struct_a_p_i___length_dim_format.html#a356aedf11675e69f04b43bb4876639ad", null ],
+    [ "unit", "struct_a_p_i___length_dim_format.html#aa944495defa7a238e5fb98c21a1bc670", null ]
 ];

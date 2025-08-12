@@ -1,7 +1,7 @@
 var struct_a_p_i___curtain_wall_model_view_options =
 [
-    [ "cwAccessoryDetailLevel", "struct_a_p_i___curtain_wall_model_view_options.html#ac1912168c4a1e590d35e6cb60a626c4b", null ],
-    [ "cwFrameDetailLevel", "struct_a_p_i___curtain_wall_model_view_options.html#aa09dbba372158e7ca76a03bc3e3b6c92", null ],
-    [ "cwJunctionDetailLevel", "struct_a_p_i___curtain_wall_model_view_options.html#a443ad8bb689bba003606b8a3e35ea61b", null ],
-    [ "cwPanelDetailLevel", "struct_a_p_i___curtain_wall_model_view_options.html#a841f198785841b65c06f57972d25ca54", null ]
+    [ "cwAccessoryDetailLevel", "struct_a_p_i___curtain_wall_model_view_options.html#ac284725a4a18291dfffb72d15e0d8109", null ],
+    [ "cwFrameDetailLevel", "struct_a_p_i___curtain_wall_model_view_options.html#af215dab0b1850f862c26625c34c90446", null ],
+    [ "cwJunctionDetailLevel", "struct_a_p_i___curtain_wall_model_view_options.html#abd690af2dd9c3a72252d476b930e690e", null ],
+    [ "cwPanelDetailLevel", "struct_a_p_i___curtain_wall_model_view_options.html#a06e7e77da8b7fb284aaf73e0ac72d384", null ]
 ];

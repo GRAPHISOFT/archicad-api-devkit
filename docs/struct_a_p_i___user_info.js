@@ -1,8 +1,8 @@
 var struct_a_p_i___user_info =
 [
-    [ "connected", "struct_a_p_i___user_info.html#a616dcba6e99a40dd56b4322b448abac6", null ],
-    [ "fullName", "struct_a_p_i___user_info.html#a64aa54bb776312b3d9597be07c483e74", null ],
-    [ "guid", "struct_a_p_i___user_info.html#a575083951818731fff110612460a787d", null ],
-    [ "loginName", "struct_a_p_i___user_info.html#a39cc3da0bdda029fe6afc108b6cd4525", null ],
-    [ "userId", "struct_a_p_i___user_info.html#abcad7f3c7a8054d954eec3159babdd3b", null ]
+    [ "connected", "struct_a_p_i___user_info.html#a0de278a047dd08c9a2689a2e01f8409f", null ],
+    [ "fullName", "struct_a_p_i___user_info.html#a231c686150c3324df5d0fab89bdd9a13", null ],
+    [ "guid", "struct_a_p_i___user_info.html#ac7051da2a59d65b0d3136e30b361ad2a", null ],
+    [ "loginName", "struct_a_p_i___user_info.html#a569602392303abe035778ff491e8ab62", null ],
+    [ "userId", "struct_a_p_i___user_info.html#a20c1559431538c447de72bfbe31e7043", null ]
 ];

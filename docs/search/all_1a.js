@@ -1,9 +1,20 @@
 var searchData=
 [
-  ['_7eapi_5fhotlinknode_0',['~API_HotlinkNode',['../struct_a_p_i___hotlink_node.html#ac4e1b221e1879c3839d01c75d9aa420e',1,'API_HotlinkNode']]],
-  ['_7ehintguard_1',['~HintGuard',['../group___tracker.html#ga88222707c67db8a932dc8c072bcdcbc4',1,'Tracking::Tracker::HintGuard']]],
-  ['_7eicalculationresultcolumn_2',['~ICalculationResultColumn',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_i_calculation_result_column.html#a62fa510c4c14220a3b9edbfc363ac955',1,'ACAPI::MEP::v1::ICalculationResultColumn']]],
-  ['_7eineditkeyboardhandler_3',['~InEditKeyboardHandler',['../class_tracking_1_1_tracker_1_1_in_edit_keyboard_handler.html#a0205dcf4aa580c5a2de5238e5862c224',1,'Tracking::Tracker::InEditKeyboardHandler']]],
-  ['_7eobject_4',['~Object',['../class_a_c_a_p_i_1_1v1_1_1_object.html#a0e4f3d37841d60e05c955f5970dd7b64',1,'ACAPI::v1::Object']]],
-  ['_7erunningmodekeyboardhandler_5',['~RunningModeKeyboardHandler',['../class_tracking_1_1_tracker_1_1_running_mode_keyboard_handler.html#aa91708119e7619e55a9c9a362226091f',1,'Tracking::Tracker::RunningModeKeyboardHandler']]]
+  ['y_0',['y',['../struct_a_p_i___vert_type.html#abfd09b4dd5b4efeef9059384d5e66f45',1,'API_VertType::y'],['../struct_a_p_i___vect_type.html#a475e92ab9a1660b80d38f70f6319ec0e',1,'API_VectType::y'],['../struct_a_p_i___coord.html#afad1c4561be17a4594be3d68f32b1eed',1,'API_Coord::y'],['../struct_a_p_i___coord3_d.html#a22b6cd9f54a14c7f1eee0a585aae5324',1,'API_Coord3D::y']]],
+  ['y0_1',['y0',['../struct_a_p_i___clip_tran.html#a51301c53555f39f7ee42e8ad6a71fd54',1,'API_ClipTran']]],
+  ['yard_2',['Yard',['../group___navigator.html#gga7573cb9469a0f3ace836a5c43ca74383a351cda5a720d59953a9f3d69bd2b3002',1,'APIdefs_Environment.h']]],
+  ['yaxis_3',['yAxis',['../struct_a_p_i___cover_fill_transformation.html#ac3918460348554d1a56beeaa9677d11c',1,'API_CoverFillTransformation']]],
+  ['year_4',['year',['../struct_a_p_i___sun_angle_settings.html#a0b7c3aa5c53a9a0f84b7b7a8ce3960ed',1,'API_SunAngleSettings::year'],['../struct_a_p_i___place_info.html#a3b76989c9414186f938b0a6192322981',1,'API_PlaceInfo::year']]],
+  ['ymax_5',['yMax',['../struct_a_p_i___box.html#a53a1ea03c8e18ca38eebb90fbdb5f582',1,'API_Box::yMax'],['../struct_a_p_i___box3_d.html#a1033684e6230e2d06d0159bce5231abc',1,'API_Box3D::yMax']]],
+  ['ymax_6',['ymax',['../struct_a_p_i___body_type.html#a87665ce80a57315a84c66e4cf228ddb3',1,'API_BodyType']]],
+  ['ymin_7',['yMin',['../struct_a_p_i___box.html#a365983a79530cc4aea81dd4b84355372',1,'API_Box::yMin'],['../struct_a_p_i___box3_d.html#a23db2e6eb7f6485925af00c7d85b2fc2',1,'API_Box3D::yMin']]],
+  ['ymin_8',['ymin',['../struct_a_p_i___body_type.html#a1c2e994d074bc1258d3c7fce3f9f7129',1,'API_BodyType']]],
+  ['yoffset_9',['yOffset',['../struct_a_p_i___railing_frame_data.html#a044987dd4bb615240acc4837a6680ae2',1,'API_RailingFrameData::yOffset'],['../struct_a_p_i___railing_segment_type.html#a75d1ff51ea2a224ef8f4092494f65e5d',1,'API_RailingSegmentType::yOffset']]],
+  ['you_20need_10',['What will You Need?',['../index.html#autotoc_md20',1,'']]],
+  ['your_20first_20add_20on_11',['Let&apos;s Build Your First Add-On',['../index.html#autotoc_md22',1,'']]],
+  ['yratio_12',['yRatio',['../struct_a_p_i___sy_tran.html#afc472e1fb26d6ac3f5752269a4632e44',1,'API_SyTran::yRatio'],['../struct_a_p_i___object_type.html#a86e80d80a156b6341d02c22f92f40db5',1,'API_ObjectType::yRatio']]],
+  ['ysize_13',['ySize',['../struct_a_p_i___texture.html#a518c8064708eb8ada8f781f3b69d5915',1,'API_Texture']]],
+  ['ytype_14',['yType',['../struct_a_p_i___analytical_support___support_values.html#a7671c3ae26df92d452ab224ab9470247',1,'API_AnalyticalSupport_SupportValues']]],
+  ['yvalue_15',['yValue',['../struct_a_p_i___analytical_support___support_values.html#a145d51072ac556adbe4b806590125be3',1,'API_AnalyticalSupport_SupportValues::yValue'],['../struct_a_p_i___analytical_point_load___settings.html#a4d8cef28fc048068ee3956bf03cf624b',1,'API_AnalyticalPointLoad_Settings::yValue'],['../struct_a_p_i___analytical_surface_load___settings.html#a487a52b7b6b3f930e497a97a223ebc43',1,'API_AnalyticalSurfaceLoad_Settings::yValue']]],
+  ['yvector_16',['yVector',['../struct_a_p_i___coordinate_system.html#af2c270cd6eb65c2c7c10ca37248ecbf1',1,'API_CoordinateSystem']]]
 ];

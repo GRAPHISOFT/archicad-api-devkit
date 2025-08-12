@@ -1,6 +1,6 @@
 var struct_a_p_i___attribute_folder =
 [
-    [ "guid", "struct_a_p_i___attribute_folder.html#aed391802642ca925c91f91ba9412b8e1", null ],
-    [ "path", "struct_a_p_i___attribute_folder.html#afe45219c877a8882e1b30b98e9ad6448", null ],
-    [ "typeID", "struct_a_p_i___attribute_folder.html#af6bd1a55348cfff3320b79f7e0aa7730", null ]
+    [ "guid", "struct_a_p_i___attribute_folder.html#a89b819d1bbe29df9e3d44ea38a698c5f", null ],
+    [ "path", "struct_a_p_i___attribute_folder.html#a4b1e7b3711eef4bff3ac9723a1091101", null ],
+    [ "typeID", "struct_a_p_i___attribute_folder.html#a56da8cb2e5a3a6361e7d87451c410c1b", null ]
 ];

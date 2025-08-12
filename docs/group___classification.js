@@ -1,18 +1,18 @@
 var group___classification =
 [
     [ "API_ClassificationItem", "struct_a_p_i___classification_item.html", [
-      [ "description", "struct_a_p_i___classification_item.html#afe1ef84561d5bd9989bb11700fca2059", null ],
-      [ "guid", "struct_a_p_i___classification_item.html#a5b68402860b6aca739489bd1c35d613d", null ],
-      [ "id", "struct_a_p_i___classification_item.html#af8f23b076a33468693434400105c871c", null ],
-      [ "name", "struct_a_p_i___classification_item.html#aa31f096e2bacef0f1ef3ab46b417d257", null ]
+      [ "description", "struct_a_p_i___classification_item.html#a2882362f277f2d317a34487c98cf0888", null ],
+      [ "guid", "struct_a_p_i___classification_item.html#a009cea2675369edd05a07b11de86030d", null ],
+      [ "id", "struct_a_p_i___classification_item.html#a5c3fa19cce4f66089ba64a17281ab769", null ],
+      [ "name", "struct_a_p_i___classification_item.html#a35aaa19b2af5500cf29d1950404ffecf", null ]
     ] ],
     [ "API_ClassificationSystem", "struct_a_p_i___classification_system.html", [
-      [ "description", "struct_a_p_i___classification_system.html#a4332d2261b454a499ffa546a5ac343fa", null ],
-      [ "editionDate", "struct_a_p_i___classification_system.html#aafd88b7a6380bfd810b83c20b0084168", null ],
-      [ "editionVersion", "struct_a_p_i___classification_system.html#a616d68be4fe6af514eba5a0e69a80e94", null ],
-      [ "guid", "struct_a_p_i___classification_system.html#abdd6cc7aad00b2e50dc0402c8e05e512", null ],
-      [ "name", "struct_a_p_i___classification_system.html#aa8776bfa557d9b9bf5b3018dd00140b2", null ],
-      [ "source", "struct_a_p_i___classification_system.html#a4759886fb663777cd9889519eefa48a2", null ]
+      [ "description", "struct_a_p_i___classification_system.html#a900d91ceb826b2838f89543981046022", null ],
+      [ "editionDate", "struct_a_p_i___classification_system.html#a8a2549d95de46040094dd648a53ad9a4", null ],
+      [ "editionVersion", "struct_a_p_i___classification_system.html#a28648153bcb4af6dfd8b7d26847f4fd4", null ],
+      [ "guid", "struct_a_p_i___classification_system.html#a6238203ce1d655ac276385b487ed15ab", null ],
+      [ "name", "struct_a_p_i___classification_system.html#a2439dd3ef0e12e9ad1f5d232bdc15347", null ],
+      [ "source", "struct_a_p_i___classification_system.html#ac7ee98e489d3beeea8b466c21977598e", null ]
     ] ],
     [ "API_ClassificationItemNameConflictResolutionPolicy", "group___classification.html#ga46c6e5af9d7f48a5bc6d76b0055c020c", null ],
     [ "API_ClassificationSystemNameConflictResolutionPolicy", "group___classification.html#ga1636a3d12069af9ff233bc79e797acef", null ],

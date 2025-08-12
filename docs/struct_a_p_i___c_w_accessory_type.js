@@ -1,12 +1,12 @@
 var struct_a_p_i___c_w_accessory_type =
 [
-    [ "category", "struct_a_p_i___c_w_accessory_type.html#a78337ed0f51a5d15b6dca355a011496e", null ],
-    [ "flipped", "struct_a_p_i___c_w_accessory_type.html#a178a3f16dc8fc8fbaaff14bc54314a32", null ],
-    [ "hasSymbol", "struct_a_p_i___c_w_accessory_type.html#ae9682319076c064036ad997e71d0ebb5", null ],
-    [ "head", "struct_a_p_i___c_w_accessory_type.html#aa511ca91389539cf655d97210e0b8909", null ],
-    [ "libInd", "struct_a_p_i___c_w_accessory_type.html#a531d3f1e6a9290f579fd27702de2ace0", null ],
-    [ "owner", "struct_a_p_i___c_w_accessory_type.html#a7561e96dc292c5093727186afa84055b", null ],
-    [ "pen", "struct_a_p_i___c_w_accessory_type.html#a0d577067efbd55201010fa1947edf994", null ],
-    [ "refFrame", "struct_a_p_i___c_w_accessory_type.html#aee3f1483b6989255d2e977bb85d866b3", null ],
-    [ "symbolID", "struct_a_p_i___c_w_accessory_type.html#a111ef8dcbce3a143046a5d80cf52735a", null ]
+    [ "category", "struct_a_p_i___c_w_accessory_type.html#a552c368d5431b95d6d370ea604a1fb8f", null ],
+    [ "flipped", "struct_a_p_i___c_w_accessory_type.html#ae60933936af2244f3c168dfb57e5e4e9", null ],
+    [ "hasSymbol", "struct_a_p_i___c_w_accessory_type.html#a8da0b4d8b3dd1da12b87fcb36f312779", null ],
+    [ "head", "struct_a_p_i___c_w_accessory_type.html#abbca8a1733fca69136e4a54021945f25", null ],
+    [ "libInd", "struct_a_p_i___c_w_accessory_type.html#ae9143688da5cf5319ef7b4bcd7b2de0e", null ],
+    [ "owner", "struct_a_p_i___c_w_accessory_type.html#aa1d1449119e75c2af94667a3b961587c", null ],
+    [ "pen", "struct_a_p_i___c_w_accessory_type.html#a60d097fee668a9ec3907cd60fbc100e0", null ],
+    [ "refFrame", "struct_a_p_i___c_w_accessory_type.html#ad81efc305a85cffd179973b06d7cf021", null ],
+    [ "symbolID", "struct_a_p_i___c_w_accessory_type.html#a7158d5b9ce874ed1193ef22c5f4b188d", null ]
 ];

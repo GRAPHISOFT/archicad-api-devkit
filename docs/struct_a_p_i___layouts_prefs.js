@@ -1,7 +1,7 @@
 var struct_a_p_i___layouts_prefs =
 [
-    [ "adjustDrawingFrameToViewZoom", "struct_a_p_i___layouts_prefs.html#a027bd313d2b148012c34c3a935c1b08d", null ],
-    [ "filler", "struct_a_p_i___layouts_prefs.html#a7d37699acfced6977c5a399d3cc5102d", null ],
-    [ "masterColor", "struct_a_p_i___layouts_prefs.html#ae3d71197f281f8ab27657a4f53d187fc", null ],
-    [ "useOwnMasterColor", "struct_a_p_i___layouts_prefs.html#a19f1b0052081863bb55ce6060b993c22", null ]
+    [ "adjustDrawingFrameToViewZoom", "struct_a_p_i___layouts_prefs.html#a23d721a2d3561bc04877821481f8ee88", null ],
+    [ "filler", "struct_a_p_i___layouts_prefs.html#a93e1907dc8b0e38a9a1e8eda5522aebe", null ],
+    [ "masterColor", "struct_a_p_i___layouts_prefs.html#a449fa012f98cd56d3f0994adba18f762", null ],
+    [ "useOwnMasterColor", "struct_a_p_i___layouts_prefs.html#a520ab787e168bb82b41e6ffe630aa77b", null ]
 ];

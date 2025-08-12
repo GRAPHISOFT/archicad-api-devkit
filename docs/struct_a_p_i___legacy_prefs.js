@@ -1,9 +1,9 @@
 var struct_a_p_i___legacy_prefs =
 [
-    [ "aboveLineType", "struct_a_p_i___legacy_prefs.html#a52eedadc7ffbe773ffa402c08ad41a5d", null ],
-    [ "belowLineType", "struct_a_p_i___legacy_prefs.html#a8bcd2030babf430bc25259ed19c7ca14", null ],
-    [ "coluConnPriority", "struct_a_p_i___legacy_prefs.html#a42b09f44bb8126066d2430fbefc477d3", null ],
-    [ "hideZonesOnSections", "struct_a_p_i___legacy_prefs.html#a701ca7015c5ec5aedc8ff715b4cb9376", null ],
-    [ "roofContourDisplay", "struct_a_p_i___legacy_prefs.html#af89bb00b8360c3b8d70e0264a5159a8d", null ],
-    [ "useLegacyIntersections", "struct_a_p_i___legacy_prefs.html#a9700d6b3a436739799000a4e4a5e19d0", null ]
+    [ "aboveLineType", "struct_a_p_i___legacy_prefs.html#ae5d2e8d292a878e6b7a089b9182e8847", null ],
+    [ "belowLineType", "struct_a_p_i___legacy_prefs.html#a6e07b947c127e89d530ce53aa03e396e", null ],
+    [ "coluConnPriority", "struct_a_p_i___legacy_prefs.html#a54b5bcda835de65575758c959f5963b4", null ],
+    [ "hideZonesOnSections", "struct_a_p_i___legacy_prefs.html#aea1b8063de7327e550dd066f363a190c", null ],
+    [ "roofContourDisplay", "struct_a_p_i___legacy_prefs.html#a531277986a7f7057f3b811ab199c14c1", null ],
+    [ "useLegacyIntersections", "struct_a_p_i___legacy_prefs.html#a974654c097b588d5b582291405117b45", null ]
 ];

@@ -1,7 +1,7 @@
 var struct_a_p_i___box =
 [
-    [ "xMax", "struct_a_p_i___box.html#a33516cc505a5b9e4d87d329d2656970d", null ],
-    [ "xMin", "struct_a_p_i___box.html#a0ce831a55bd32b034a881d220787ea79", null ],
-    [ "yMax", "struct_a_p_i___box.html#a1323ac22a7b6eb3a3fec5e58126ed333", null ],
-    [ "yMin", "struct_a_p_i___box.html#ada709713fbb6757d226065c10d52ba58", null ]
+    [ "xMax", "struct_a_p_i___box.html#aba11d2633a5cc0a2b0450a03f5ff4544", null ],
+    [ "xMin", "struct_a_p_i___box.html#aa49fd29b40fe0fae162f76635a9c8486", null ],
+    [ "yMax", "struct_a_p_i___box.html#a53a1ea03c8e18ca38eebb90fbdb5f582", null ],
+    [ "yMin", "struct_a_p_i___box.html#a365983a79530cc4aea81dd4b84355372", null ]
 ];

@@ -1,18 +1,18 @@
 var struct_a_p_i___material_type =
 [
-    [ "ambientPc", "struct_a_p_i___material_type.html#a41dc7d8552556ab279343e117928ca18", null ],
-    [ "diffusePc", "struct_a_p_i___material_type.html#a3d9c622c473782d5bf08baea2e2bf78f", null ],
-    [ "emissionAtt", "struct_a_p_i___material_type.html#a4d9bc6eb6e911b9083680b2d6a910f73", null ],
-    [ "emissionRGB", "struct_a_p_i___material_type.html#a32595704e1ce9e50c4c597d4fba40446", null ],
-    [ "fillCol", "struct_a_p_i___material_type.html#a2d36e1f386c63075400f98d6d38c3d37", null ],
-    [ "head", "struct_a_p_i___material_type.html#a28b92afe84fadf3e5739f0d2d9070f5d", null ],
-    [ "ifill", "struct_a_p_i___material_type.html#af52d9b5645010df221c96131c4bf665c", null ],
-    [ "mtype", "struct_a_p_i___material_type.html#ae5bd5aac432446b42489dd3db7dc22a0", null ],
-    [ "shine", "struct_a_p_i___material_type.html#a3a805ea0a635c7818945f2845f09057b", null ],
-    [ "specularPc", "struct_a_p_i___material_type.html#a1c1e3f3702ec3d657bade769c765731d", null ],
-    [ "specularRGB", "struct_a_p_i___material_type.html#afb57416b5e0643c4faa51a7ccaaa10ad", null ],
-    [ "surfaceRGB", "struct_a_p_i___material_type.html#a0998f3df76826c2cb973586a87ccb8ae", null ],
-    [ "texture", "struct_a_p_i___material_type.html#aeb765a4cec9a419136985c71d2a3d469", null ],
-    [ "transpAtt", "struct_a_p_i___material_type.html#a752004ad53bd897568c4f175710ffbe0", null ],
-    [ "transpPc", "struct_a_p_i___material_type.html#a2516e5c2160adf5151c9691cd837a8cc", null ]
+    [ "ambientPc", "struct_a_p_i___material_type.html#aa1a6d5aa6ec86a72b27c69b18fc6d528", null ],
+    [ "diffusePc", "struct_a_p_i___material_type.html#a03a6f8478bc6c77bb4d28387cb5bf6f4", null ],
+    [ "emissionAtt", "struct_a_p_i___material_type.html#a4a73093b8b576cd3cc62d3be0a4fc9e1", null ],
+    [ "emissionRGB", "struct_a_p_i___material_type.html#a713a4ec0f94cd2a4336bcfe83cd5bbca", null ],
+    [ "fillCol", "struct_a_p_i___material_type.html#a5ed9d1419b3f79014c9fbac2f6990724", null ],
+    [ "head", "struct_a_p_i___material_type.html#a094efed47306229560fa1a1a3f2b699a", null ],
+    [ "ifill", "struct_a_p_i___material_type.html#a7b842cb9eada89dc9c3890f24a46866a", null ],
+    [ "mtype", "struct_a_p_i___material_type.html#a41f43d7a64b458f87415e620f713147b", null ],
+    [ "shine", "struct_a_p_i___material_type.html#af091f1c0dbb23fa7455d819cc8102d97", null ],
+    [ "specularPc", "struct_a_p_i___material_type.html#ac22022cbe3ce7fc4bc135913f9928940", null ],
+    [ "specularRGB", "struct_a_p_i___material_type.html#ab84d1c2ab68176896dcb1e1772e30058", null ],
+    [ "surfaceRGB", "struct_a_p_i___material_type.html#a0bb44bda46966cae68ff23703fc075b9", null ],
+    [ "texture", "struct_a_p_i___material_type.html#a8b101ab8409a72d365849bc7268ed283", null ],
+    [ "transpAtt", "struct_a_p_i___material_type.html#a1f381264e490493c823f9be4dc249a49", null ],
+    [ "transpPc", "struct_a_p_i___material_type.html#a9d6fc60e876b411f132a340addbf8d67", null ]
 ];

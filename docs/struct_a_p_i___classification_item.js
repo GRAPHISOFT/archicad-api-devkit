@@ -1,7 +1,7 @@
 var struct_a_p_i___classification_item =
 [
-    [ "description", "struct_a_p_i___classification_item.html#afe1ef84561d5bd9989bb11700fca2059", null ],
-    [ "guid", "struct_a_p_i___classification_item.html#a5b68402860b6aca739489bd1c35d613d", null ],
-    [ "id", "struct_a_p_i___classification_item.html#af8f23b076a33468693434400105c871c", null ],
-    [ "name", "struct_a_p_i___classification_item.html#aa31f096e2bacef0f1ef3ab46b417d257", null ]
+    [ "description", "struct_a_p_i___classification_item.html#a2882362f277f2d317a34487c98cf0888", null ],
+    [ "guid", "struct_a_p_i___classification_item.html#a009cea2675369edd05a07b11de86030d", null ],
+    [ "id", "struct_a_p_i___classification_item.html#a5c3fa19cce4f66089ba64a17281ab769", null ],
+    [ "name", "struct_a_p_i___classification_item.html#a35aaa19b2af5500cf29d1950404ffecf", null ]
 ];

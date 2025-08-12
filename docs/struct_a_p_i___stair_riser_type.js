@@ -1,15 +1,15 @@
 var struct_a_p_i___stair_riser_type =
 [
-    [ "angle", "struct_a_p_i___stair_riser_type.html#a1cbfdf83bcc86f03a49272b76a359242", null ],
-    [ "crossSect", "struct_a_p_i___stair_riser_type.html#a62ee8a3404949b11b200f09a1c2a5a73", null ],
-    [ "head", "struct_a_p_i___stair_riser_type.html#a269f8dcf5d3e5ac28dc1efb1e0e717d9", null ],
-    [ "libId", "struct_a_p_i___stair_riser_type.html#a00860c7cd5317de99f2d09f4acb34506", null ],
-    [ "offset", "struct_a_p_i___stair_riser_type.html#afc5758a6c2c8c0b2bb3b70c47b863a91", null ],
-    [ "owner", "struct_a_p_i___stair_riser_type.html#adfe8f7b5b4981fb38fc8ec8d5bb11fd4", null ],
-    [ "riserPosition", "struct_a_p_i___stair_riser_type.html#a6203d75b7580d43203d93e383e65865a", null ],
-    [ "role", "struct_a_p_i___stair_riser_type.html#ac35972f5968ca1722ed33daffd49ffb1", null ],
-    [ "sequenceNumber", "struct_a_p_i___stair_riser_type.html#a2439f19959fda4544ac4271f45f4e6c1", null ],
-    [ "subElemId", "struct_a_p_i___stair_riser_type.html#aaa057f30806193179f84c9911dde1f05", null ],
-    [ "thickness", "struct_a_p_i___stair_riser_type.html#aeb883ae45db33c98cfcf524481a27bba", null ],
-    [ "visible", "struct_a_p_i___stair_riser_type.html#a2f028aaea6eb7512d7d01e271d752fee", null ]
+    [ "angle", "struct_a_p_i___stair_riser_type.html#aa674a6f7fb09b8360e32ff51de8ac2ee", null ],
+    [ "crossSect", "struct_a_p_i___stair_riser_type.html#a8640db9cf81c3b19dd1974dc605edb3b", null ],
+    [ "head", "struct_a_p_i___stair_riser_type.html#a9d9dbb5b0f3e44835c9ecb646e08068d", null ],
+    [ "libId", "struct_a_p_i___stair_riser_type.html#a7426dafd289ebe5d62e0ae564cd713bc", null ],
+    [ "offset", "struct_a_p_i___stair_riser_type.html#a00253f0ba4a516023cc8d7505502f6b5", null ],
+    [ "owner", "struct_a_p_i___stair_riser_type.html#ab9813952bdb6d1b5573a145846dca58f", null ],
+    [ "riserPosition", "struct_a_p_i___stair_riser_type.html#a9d87895d840d75f58df2905783022b13", null ],
+    [ "role", "struct_a_p_i___stair_riser_type.html#aa842c09c621c111316cb9e348fe38656", null ],
+    [ "sequenceNumber", "struct_a_p_i___stair_riser_type.html#a36ff18ba69f54212acc33dc5ab407d4d", null ],
+    [ "subElemId", "struct_a_p_i___stair_riser_type.html#a5f6172495faf2c07c6a4112d85b82d11", null ],
+    [ "thickness", "struct_a_p_i___stair_riser_type.html#ae7abb1b5816d34dad8f8c6263c437ebe", null ],
+    [ "visible", "struct_a_p_i___stair_riser_type.html#a4fc0f8959c12f56b8bd91eed220d8d94", null ]
 ];

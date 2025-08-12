@@ -1,45 +1,45 @@
 var group___add_on_integration =
 [
     [ "API_MenuParams", "struct_a_p_i___menu_params.html", [
-      [ "menuItemRef", "struct_a_p_i___menu_params.html#a6c1045660f5764910430604d159d3f66", null ]
+      [ "menuItemRef", "struct_a_p_i___menu_params.html#a74bab3a69139c1ff046f8e6957126103", null ]
     ] ],
     [ "API_IOParams", "struct_a_p_i___i_o_params.html", [
-      [ "additionalData", "struct_a_p_i___i_o_params.html#af14cfece560c252edb714edf902d70f9", null ],
-      [ "drawingGuid", "struct_a_p_i___i_o_params.html#a1646c4d2b67afd5c82ba0e17d8745e3e", null ],
-      [ "dropOffset", "struct_a_p_i___i_o_params.html#a60a565a822158869b39f0d70270588ba", null ],
-      [ "fileLoc", "struct_a_p_i___i_o_params.html#a1880ad09c7ff7d130e49a78af2b4feae", null ],
-      [ "fileLocOnServer", "struct_a_p_i___i_o_params.html#a4b28d63342899db31a2890511033ad2b", null ],
-      [ "fileTypeID", "struct_a_p_i___i_o_params.html#addbf2833a681a0be9c172448d27195ba", null ],
-      [ "fromDragDrop", "struct_a_p_i___i_o_params.html#a027dd173db1de80afa25fbbba03978a4", null ],
-      [ "method", "struct_a_p_i___i_o_params.html#a95a94cd0082d407a1fcb400a028202cc", null ],
-      [ "noDialog", "struct_a_p_i___i_o_params.html#abcf0332c759e6e7ceac45cc338e3bedd", null ],
-      [ "refCon", "struct_a_p_i___i_o_params.html#a064d52b315da855fa7afa9ba456c068b", null ],
-      [ "saveFileIOName", "struct_a_p_i___i_o_params.html#abb57e2a87ee9523014d609d61a038858", null ]
+      [ "additionalData", "struct_a_p_i___i_o_params.html#a2541fccea5a6dd93557f27f0c8b1a7eb", null ],
+      [ "drawingGuid", "struct_a_p_i___i_o_params.html#a8e034f957fe321d127778855db620c3d", null ],
+      [ "dropOffset", "struct_a_p_i___i_o_params.html#a4301e4712043dcf2d383c351bc2de55f", null ],
+      [ "fileLoc", "struct_a_p_i___i_o_params.html#a707337c4e04407a7076ab1f91ca7aa95", null ],
+      [ "fileLocOnServer", "struct_a_p_i___i_o_params.html#a01148332c90a1719e28de7d85fcab571", null ],
+      [ "fileTypeID", "struct_a_p_i___i_o_params.html#ac49e992fe25529318e8af7cf3b76c939", null ],
+      [ "fromDragDrop", "struct_a_p_i___i_o_params.html#aa6d4e954e3282f4f24bdb8e9704e2c9e", null ],
+      [ "method", "struct_a_p_i___i_o_params.html#a3168268ad2e9f29ed02a1d1af3384a91", null ],
+      [ "noDialog", "struct_a_p_i___i_o_params.html#a7fa72d0fbe6e591c834b6c5aeaf693cd", null ],
+      [ "refCon", "struct_a_p_i___i_o_params.html#a678e409e015643cbceb47b3f6a342fe3", null ],
+      [ "saveFileIOName", "struct_a_p_i___i_o_params.html#aa79cfe6e7e3495bf31e97244c1472f4f", null ]
     ] ],
     [ "API_PropertyObjectParams", "struct_a_p_i___property_object_params.html", [
-      [ "cmd", "struct_a_p_i___property_object_params.html#aa455ee08e85cd35dbf3118c0def864d8", null ],
-      [ "propertyName", "struct_a_p_i___property_object_params.html#aee71887c93a3ad11a86d82e96ada82cf", null ],
-      [ "propertyUnID", "struct_a_p_i___property_object_params.html#a3c7743b8ee13915434598f486808c80e", null ]
+      [ "cmd", "struct_a_p_i___property_object_params.html#a23fa1cb97e65244bf18272c0a737e318", null ],
+      [ "propertyName", "struct_a_p_i___property_object_params.html#a9a600a4099d98062472c042f8d086a49", null ],
+      [ "propertyUnID", "struct_a_p_i___property_object_params.html#a7a7c0ba6d87780df2468146d212b929e", null ]
     ] ],
     [ "API_AttributeManagerFormat", "struct_a_p_i___attribute_manager_format.html", [
-      [ "fileCreator", "struct_a_p_i___attribute_manager_format.html#a084b6f5f5a98d42eabf33dc9c3fa85c6", null ],
-      [ "fileExtension", "struct_a_p_i___attribute_manager_format.html#af01b42682f6303db82e84eaa9eae20e7", null ],
-      [ "fileType", "struct_a_p_i___attribute_manager_format.html#af58bd363dd36b4e3cfbb5e3fbf72f020", null ],
-      [ "popupText", "struct_a_p_i___attribute_manager_format.html#a3ebd9effc920b8e05bee2e987b786451", null ]
+      [ "fileCreator", "struct_a_p_i___attribute_manager_format.html#a4da3ead48b7f39f5ab00aec8ce9ccb84", null ],
+      [ "fileExtension", "struct_a_p_i___attribute_manager_format.html#a1415521fbd540acf90aae9f1c8e5c7e9", null ],
+      [ "fileType", "struct_a_p_i___attribute_manager_format.html#ac0659cc1741d1b75d307566531f5e8ce", null ],
+      [ "popupText", "struct_a_p_i___attribute_manager_format.html#a5c75df9beb5efbdb3d0fb64723dadd09", null ]
     ] ],
     [ "API_PublishFormatData", "struct_a_p_i___publish_format_data.html", [
-      [ "fileExtText2D", "struct_a_p_i___publish_format_data.html#a17f93b983c26cd8ef13120ccecf79aa7", null ],
-      [ "fileExtText3D", "struct_a_p_i___publish_format_data.html#ad2572ff3dfce0501a78efa06f6b00e68", null ],
-      [ "iconID", "struct_a_p_i___publish_format_data.html#ae63ee1760997440bc87ca2ea552436e6", null ],
-      [ "mimeType", "struct_a_p_i___publish_format_data.html#a6a58f0d0fe8e28e2e103876bc8d6d924", null ],
-      [ "popUpText", "struct_a_p_i___publish_format_data.html#ad92091c410bef311aa83c1ef00ccdb87", null ],
-      [ "singleFile", "struct_a_p_i___publish_format_data.html#aa633fe9ca4cf0b6f551180772366fd16", null ],
-      [ "windowTypes", "struct_a_p_i___publish_format_data.html#abded1d122d0b56bfe7fef12e789c8c01", null ],
-      [ "windowTypesInSingleFile", "struct_a_p_i___publish_format_data.html#a7c07c8ee6c48d68c5f29635bd149aafb", null ]
+      [ "fileExtText2D", "struct_a_p_i___publish_format_data.html#ad26dcc19f9df307fd2733800b4c25040", null ],
+      [ "fileExtText3D", "struct_a_p_i___publish_format_data.html#a601ff3786d79e1ad082a50ccecdad69a", null ],
+      [ "iconID", "struct_a_p_i___publish_format_data.html#a69a8295aaa7360200854620d1e5d63d9", null ],
+      [ "mimeType", "struct_a_p_i___publish_format_data.html#abe64a93670c277eddfd35f877e698fa4", null ],
+      [ "popUpText", "struct_a_p_i___publish_format_data.html#a318ca3b5e108e516dc79ea3f8a34eaa3", null ],
+      [ "singleFile", "struct_a_p_i___publish_format_data.html#a817bebe1c3cae29d8c75153b3317c374", null ],
+      [ "windowTypes", "struct_a_p_i___publish_format_data.html#afa6126daac5308a24f1879304dafa4b9", null ],
+      [ "windowTypesInSingleFile", "struct_a_p_i___publish_format_data.html#aa78ccfeca353cb7e96294c168ef35a93", null ]
     ] ],
     [ "API_TranslatorNameConfig", "struct_a_p_i___translator_name_config.html", [
-      [ "guid", "struct_a_p_i___translator_name_config.html#a8aea5bd175f48413338e089be7eb022c", null ],
-      [ "translatorName", "struct_a_p_i___translator_name_config.html#a3d8198bd54fb73624dd77441531355d6", null ]
+      [ "guid", "struct_a_p_i___translator_name_config.html#ad0d07354ec48e85ca1e20dc520466f45", null ],
+      [ "translatorName", "struct_a_p_i___translator_name_config.html#ad0ad6b40035263fd7b88c9fa64f7fc75", null ]
     ] ],
     [ "APIClassificationVisibilityHandlerProc", "group___add_on_integration.html#ga8a8dc577f5f8eceab9bd49ee9d19b3b0", null ],
     [ "APIElemSetSaveOldFormatHandlerProc", "group___add_on_integration.html#ga12ba3ad452063a287bbc4ba8c5a2d923", null ],
@@ -61,9 +61,40 @@ var group___add_on_integration =
     [ "APIPublishFormatCommandProc", "group___add_on_integration.html#ga2b665ae383f3d4ef4715168143c37891", null ],
     [ "APISettingsCreateProc", "group___add_on_integration.html#ga332e425afa5bbd65848e3efe6d733140", null ],
     [ "APISettingsDestroyProc", "group___add_on_integration.html#ga06d67080b2fb1a466c99ba808496e203", null ],
+    [ "API_PanelType", "group___add_on_integration.html#ga2e8d1e122ba55aa64d55f78a255a9122", [
+      [ "APIPanel_None", "group___add_on_integration.html#gga2e8d1e122ba55aa64d55f78a255a9122a8c5e14c80d8aa92196eef86d8d58c17a", null ],
+      [ "APIPanel_Settings", "group___add_on_integration.html#gga2e8d1e122ba55aa64d55f78a255a9122a928bb6f9f9014d01e322e25ee954833e", null ],
+      [ "APIPanel_Attribute", "group___add_on_integration.html#gga2e8d1e122ba55aa64d55f78a255a9122a0c5c50b605991620cd343d94eaafd65b", null ],
+      [ "APIPanel_InfoBox", "group___add_on_integration.html#gga2e8d1e122ba55aa64d55f78a255a9122a2449d3206717bfc9559073eca3bcba9d", null ]
+    ] ],
+    [ "APIMenuCodeID", "group___add_on_integration.html#gae7782179a03e5a2f34a4940b46b86623", [
+      [ "MenuCode_UserDef", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623ae12864dedfac94a3757780311667dec2", null ],
+      [ "MenuCode_File", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623aa7869a67baaab6dc11235ced783027dd", null ],
+      [ "MenuCode_Edit1", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623a1ec4de772256e439057e4d91b2e338af", null ],
+      [ "MenuCode_Edit2", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623af2880a4550c9aecda40f4c4397d97bd0", null ],
+      [ "MenuCode_Edit3", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623a4547393ff218a464df91cb4119533de6", null ],
+      [ "MenuCode_Tools", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623a97e315116aa95528a6497b4633698e86", null ],
+      [ "MenuCode_Options1", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623ab88951f758b321ff3592d7802f350d33", null ],
+      [ "MenuCode_Options2", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623a6aae5cf38db46678a9c205d460e24137", null ],
+      [ "MenuCode_Image", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623ab8e76a23671e00d5e38412b083e60bfd", null ],
+      [ "MenuCode_Calculate", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623a2aa2c7c98c3c3d5d720844f23c4f92df", null ],
+      [ "MenuCode_TeamWork", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623ae3f92a3596da52738756dcbd52a9c863", null ],
+      [ "MenuCode_Display", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623a709760d668ce5780cf71a8b92e4a8bd3", null ],
+      [ "MenuCode_Palettes", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623aba45f53d6028e4ae0040bab3d1c17e0b", null ],
+      [ "MenuCode_Extras", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623a1f06add446ce7c449b75a5353b4f7bb9", null ],
+      [ "MenuCode_Hotlink", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623a212dbcebfce5bf8110a89576367df469", null ],
+      [ "MenuCode_GDLObjects", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623aed967cb076ab55d25cdc8699c0fc0a6c", null ],
+      [ "MenuCode_3DView", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623a5446f65ed1340dd99f4ca58ad492377c", null ],
+      [ "MenuCode_DocExtras", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623a0d685b917bcee9aa06e599258f6a8cce", null ],
+      [ "MenuCode_Interoperability", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623a7ce934469958f239517d6322552c84d4", null ],
+      [ "MenuCode_ModelCheck", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623ac351989f16931bd4f3bda933a8ca19d7", null ],
+      [ "MenuCode_Hidden", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623a573ea40effa73a4bde06ab4f7d0daf2c", null ],
+      [ "MenuCode_RoofExtras", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623aeae9002297d25bc23c92857afe5385d4", null ],
+      [ "MenuCode_Design", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623ac3e06eda463de108ef86151d573cb1ea", null ],
+      [ "MenuCode_Help", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623a725289e07081b628b1072932b05ee388", null ]
+    ] ],
     [ "ACAPI_ActivatePropertyObjectHandler", "group___property.html#gaf96cb9436b05aa30a2cd7177d9e0052b", null ],
     [ "ACAPI_AddOnAddOnCommunication_RegisterSupportedService", "group___add_on_add_on_communication.html#ga79ba0da441937d6cbbbf85e37ec81191", null ],
-    [ "ACAPI_AddOnIntegration_InstallAttrManagerImportMethod", "group___add_on_integration.html#ga0f23e9bf78b065d454d8940ddff28461", null ],
     [ "ACAPI_AddOnIntegration_InstallClassificationVisibilityHandler", "group___add_on_integration.html#ga8ca23f2e354104f05577d9c106f22dec", null ],
     [ "ACAPI_AddOnIntegration_InstallElemSetSaveOldFormatHandler", "group___add_on_integration.html#ga8ac39146e90adba1b645579337b3d558", null ],
     [ "ACAPI_AddOnIntegration_InstallFileTypeHandler", "group___add_on_integration.html#gac2fd5329ecac6a58b03f910ad8e5c7d0", null ],
@@ -81,7 +112,6 @@ var group___add_on_integration =
     [ "ACAPI_AddOnIntegration_InstallPublisherSaveOption", "group___add_on_integration.html#gae294cfd674fde1cbd0c4884b940cef9e", null ],
     [ "ACAPI_AddOnIntegration_InstallPublisherTranslatorGetter", "group___add_on_integration.html#ga8ede7ae0a5b26d2c991b29f20f6e0df8", null ],
     [ "ACAPI_AddOnIntegration_InstallSettingsHandler", "group___add_on_integration.html#ga4179e7dc48195aaef5aba15b776e29de", null ],
-    [ "ACAPI_AddOnIntegration_RegisterAttributeImportFormat", "group___add_on_integration.html#ga58b4dfce0a4dbe9b5396b4182b2c291f", null ],
     [ "ACAPI_AddOnIntegration_RegisterAttributePanel", "group___add_on_integration.html#ga9069a54766487ef3e1c2c8c1ba99f97a", null ],
     [ "ACAPI_AddOnIntegration_RegisterBuiltInLibrary", "group___add_on_integration.html#ga971703b8ea845703fcc9c14401f2ea55", null ],
     [ "ACAPI_AddOnIntegration_RegisterClassificationVisibilityHandler", "group___add_on_integration.html#ga0782ee15d37f3e6b56f7c7061c30b651", null ],

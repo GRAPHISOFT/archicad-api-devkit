@@ -22,987 +22,880 @@
 
  @licend  The above is the entire license notice for the JavaScript code in this file
  */
- function convertToId(search)
- {
-   var result = '';
-   for (i=0;i<search.length;i++)
-   {
-     var c = search.charAt(i);
-     var cn = c.charCodeAt(0);
-     if (c.match(/[a-z0-9\u0080-\uFFFF]/))
-     {
-       result+=c;
-     }
-     else if (cn<16)
-     {
-       result+="_0"+cn.toString(16);
-     }
-     else
-     {
-       result+="_"+cn.toString(16);
-     }
-   }
-   return result;
- }
- 
- function getXPos(item)
- {
-   var x = 0;
-   if (item.offsetWidth)
-   {
-     while (item && item!=document.body)
-     {
-       x   += item.offsetLeft;
-       item = item.offsetParent;
-     }
-   }
-   return x;
- }
- 
- function getYPos(item)
- {
-   var y = 0;
-   if (item.offsetWidth)
-   {
-      while (item && item!=document.body)
-      {
+ class SearchRelevance {
+  constructor(name, searchValue) {
+    this.name = name;
+    this.searchValue = searchValue;
+
+    this.charAt = [];
+    this.distance = -1;
+    this.searchChars();
+  }
+
+  compare(other) {
+    if (this.charAt.length < other.charAt.length) {
+      return -1;
+    } else if (this.charAt.length > other.charAt.length) {
+      return 1;
+    }
+
+
+    let parts = [[this.charAt[0]]];
+    let otherParts = [[other.charAt[0]]];
+    for (let i = 1; i < this.charAt.length; i++) {
+      if (this.charAt[i] - this.charAt[i - 1] > 1) {
+        parts.push([this.charAt[i]]);
+      } else {
+        parts[parts.length - 1].push(this.charAt[i]);
+      }
+      if (other.charAt[i] - other.charAt[i - 1] > 1) {
+        otherParts.push([other.charAt[i]]);
+      } else {
+        otherParts[otherParts.length - 1].push(other.charAt[i]);
+      }
+    }
+
+    if (parts.length < otherParts.length) {
+      return -1;
+    } else if (parts.length > otherParts.length) {
+      return 1;
+    }
+
+    let sortFunction = function(a, b) {
+      if (a.length === b.length) {
+        if (a[0] === b[0]) {
+          return 0;
+        }
+        return a[0] < b[0] ? -1 : 1;
+      }
+      return a.length < b.length ? 1 : -1;
+    };
+
+    let partsByLengthAndIndex = [...parts].sort(sortFunction);
+    let otherPartsByLengthAndIndex = [...otherParts].sort(sortFunction);
+    for (let i = 0; i < partsByLengthAndIndex.length; i++) {
+      if (partsByLengthAndIndex[i].length > otherPartsByLengthAndIndex[i].length) {
+        return -1;
+      } else if (partsByLengthAndIndex[i].length < otherPartsByLengthAndIndex[i].length) {
+        return 1;
+      }
+
+      if (partsByLengthAndIndex[i][0] < otherPartsByLengthAndIndex[i][0]) {
+        return -1;
+      } else if (partsByLengthAndIndex[i][0] > otherPartsByLengthAndIndex[i][0]) {
+        return 1;
+      }
+    }
+
+    if (this.name.length < other.name.length) {
+      return -1;
+    } else if (this.name.length > other.name.length) {
+      return 1;
+    }
+
+    return 0;
+  }
+
+  searchChars() {
+    if (this.name.length < this.searchValue.length) {
+      return;
+    }
+
+    let charMap = new Map();
+    for (let i = 0; i < this.name.length; i++) {
+      if (this.searchValue.includes(this.name[i])) {
+        if (charMap.has(this.name[i])) {
+          charMap.get(this.name[i]).push(i);
+        } else {
+          charMap.set(this.name[i], [i]);
+        }
+      }
+    }
+
+    let findNextChar = function (startIndex, nextCharIndex) {
+      let char = searchValue[nextCharIndex];
+      if (!charMap.has(char)) {
+        return -1;
+      }
+
+      for (let charIndex of charMap.get(char)) {
+        if (startIndex < charIndex) {
+          return charIndex;
+        }
+      }
+      return -1;
+    };
+
+    let searchValue = this.searchValue;
+    let findNextCharIndex = function(startIndex, i) {
+      let nextCharIndex = i + 1;
+
+      let nextChar = findNextChar(startIndex, nextCharIndex);
+      if (nextChar < 0) {
+        return [];
+      }
+
+      return [nextChar].concat(findNextCharIndex (nextChar, nextCharIndex));
+    };
+
+    let getDistance = function(charIndeces) {
+      if (charIndeces.length < 2) {
+        return 0;
+      }
+      return charIndeces[charIndeces.length - 1] - charIndeces[0];
+    };
+
+    let closestMatch = [];
+    let closesetDistance = undefined;
+    if (!charMap.has(this.searchValue[0])) {
+      return;
+    }
+    for (let i of charMap.get(this.searchValue[0])) {
+      let currentMatch = [i].concat(findNextCharIndex(i, 0));
+      if (currentMatch.length < this.searchValue.length) {
+        break;
+      }
+      let distance = getDistance(currentMatch);
+      if (closesetDistance === undefined || distance < closesetDistance) {
+        closestMatch = currentMatch;
+        closesetDistance = distance;
+      }
+    }
+    if (closestMatch.length < this.searchValue.length) {
+      return;
+    }
+    this.charAt = closestMatch;
+    this.distance = closesetDistance;
+  }
+
+  matched() {
+    return this.charAt.length === this.searchValue.length;
+  }
+}
+
+const SEARCH_COOKIE_NAME = ''+'search_grp';
+
+const searchResults = new SearchResults();
+
+/* A class handling everything associated with the search panel.
+
+   Parameters:
+   name - The name of the global variable that will be
+          storing this instance.  Is needed to be able to set timeouts.
+   resultPath - path to use for external files
+*/
+function SearchBox(name, resultsPath, extension) {
+  if (!name || !resultsPath) {  alert("Missing parameters to SearchBox."); }
+  if (!extension || extension == "") { extension = ".html"; }
+
+  function getXPos(item) {
+    let x = 0;
+    if (item.offsetWidth) {
+      while (item && item!=document.body) {
+        x   += item.offsetLeft;
+        item = item.offsetParent;
+      }
+    }
+    return x;
+  }
+
+  function getYPos(item) {
+    let y = 0;
+    if (item.offsetWidth) {
+      while (item && item!=document.body) {
         y   += item.offsetTop;
         item = item.offsetParent;
       }
-   }
-   return y;
- }
- 
- 
- class SearchRelevance {
-   constructor(name, searchValue) {
-     this.name = name;
-     this.searchValue = searchValue;
- 
-     this.charAt = [];
-     this.distance = -1;
-     this.searchChars();
-   }
- 
-   compare(other) {
-     if (this.charAt.length < other.charAt.length) {
-       return -1;
-     } else if (this.charAt.length > other.charAt.length) {
-       return 1;
-     }
- 
- 
-     let parts = [[this.charAt[0]]];
-     let otherParts = [[other.charAt[0]]];
-     for (let i = 1; i < this.charAt.length; i++) {
-       if (this.charAt[i] - this.charAt[i - 1] > 1) {
-         parts.push([this.charAt[i]]);
-       } else {
-         parts[parts.length - 1].push(this.charAt[i]);
-       }
-       if (other.charAt[i] - other.charAt[i - 1] > 1) {
-         otherParts.push([other.charAt[i]]);
-       } else {
-         otherParts[otherParts.length - 1].push(other.charAt[i]);
-       }
-     }
- 
-     if (parts.length < otherParts.length) {
-       return -1;
-     } else if (parts.length > otherParts.length) {
-       return 1;
-     }
- 
-     let sortFunction = function(a, b) {
-       if (a.length === b.length) {
-         if (a[0] === b[0]) {
-           return 0;
-         }
-         return a[0] < b[0] ? -1 : 1;
-       }
-       return a.length < b.length ? 1 : -1;
-     };
- 
-     let partsByLengthAndIndex = [...parts].sort(sortFunction);
-     let otherPartsByLengthAndIndex = [...otherParts].sort(sortFunction);
-     for (let i = 0; i < partsByLengthAndIndex.length; i++) {
-       if (partsByLengthAndIndex[i].length > otherPartsByLengthAndIndex[i].length) {
-         return -1;
-       } else if (partsByLengthAndIndex[i].length < otherPartsByLengthAndIndex[i].length) {
-         return 1;
-       }
- 
-       if (partsByLengthAndIndex[i][0] < otherPartsByLengthAndIndex[i][0]) {
-         return -1;
-       } else if (partsByLengthAndIndex[i][0] > otherPartsByLengthAndIndex[i][0]) {
-         return 1;
-       }
-     }
- 
-     if (this.name.length < other.name.length) {
-       return -1;
-     } else if (this.name.length > other.name.length) {
-       return 1;
-     }
- 
-     return 0;
-   }
- 
-   searchChars() {
-     if (this.name.length < this.searchValue.length) {
-       return;
-     }
- 
-     let charMap = new Map();
-     for (let i = 0; i < this.name.length; i++) {
-       if (this.searchValue.includes(this.name[i])) {
-         if (charMap.has(this.name[i])) {
-           charMap.get(this.name[i]).push(i);
-         } else {
-           charMap.set(this.name[i], [i]);
-         }
-       }
-     }
- 
-     let findNextChar = function (startIndex, nextCharIndex) {
-       let char = searchValue[nextCharIndex];
-       if (!charMap.has(char)) {
-         return -1;
-       }
- 
-       for (let charIndex of charMap.get(char)) {
-         if (startIndex < charIndex) {
-           return charIndex;
-         }
-       }
-       return -1;
-     };
- 
-     let searchValue = this.searchValue;
-     let findNextCharIndex = function(startIndex, i) {
-       let nextCharIndex = i + 1;
- 
-       let nextChar = findNextChar(startIndex, nextCharIndex);
-       if (nextChar < 0) {
-         return [];
-       }
- 
-       return [nextChar].concat(findNextCharIndex (nextChar, nextCharIndex));
-     };
- 
-     let getDistance = function(charIndeces) {
-       if (charIndeces.length < 2) {
-         return 0;
-       }
-       return charIndeces[charIndeces.length - 1] - charIndeces[0];
-     };
- 
-     let closestMatch = [];
-     let closesetDistance = undefined;
-     if (!charMap.has(this.searchValue[0])) {
-       return;
-     }
-     for (let i of charMap.get(this.searchValue[0])) {
-       let currentMatch = [i].concat(findNextCharIndex(i, 0));
-       if (currentMatch.length < this.searchValue.length) {
-         break;
-       }
-       let distance = getDistance(currentMatch);
-       if (closesetDistance === undefined || distance < closesetDistance) {
-         closestMatch = currentMatch;
-         closesetDistance = distance;
-       }
-     }
-     if (closestMatch.length < this.searchValue.length) {
-       return;
-     }
-     this.charAt = closestMatch;
-     this.distance = closesetDistance;
-   }
- 
-   matched() {
-     return this.charAt.length === this.searchValue.length;
-   }
- }
- 
- 
- var searchResults = new SearchResults("searchResults");
- 
- /* A class handling everything associated with the search panel.
- 
-    Parameters:
-    name - The name of the global variable that will be
-           storing this instance.  Is needed to be able to set timeouts.
-    resultPath - path to use for external files
- */
- function SearchBox(name, resultsPath, extension)
- {
-   if (!name || !resultsPath) {  alert("Missing parameters to SearchBox."); }
-   if (!extension || extension == "") { extension = ".html"; }
- 
-   // ---------- Instance variables
-   this.name                  = name;
-   this.resultsPath           = resultsPath;
-   this.keyTimeout            = 0;
-   this.keyTimeoutLength      = 500;
-   this.closeSelectionTimeout = 300;
-   this.lastSearchValue       = "";
-   this.lastResultsPage       = "";
-   this.hideTimeout           = 0;
-   this.searchIndex           = 0;
-   this.searchActive          = false;
-   this.extension             = extension;
- 
-   // ----------- DOM Elements
- 
-   this.DOMSearchField = function()
-   {  return document.getElementById("MSearchField");  }
- 
-   this.DOMSearchSelect = function()
-   {  return document.getElementById("MSearchSelect");  }
- 
-   this.DOMSearchSelectWindow = function()
-   {  return document.getElementById("MSearchSelectWindow");  }
- 
-   this.DOMPopupSearchResults = function()
-   {  return document.getElementById("MSearchResults");  }
- 
-   this.DOMPopupSearchResultsWindow = function()
-   {  return document.getElementById("MSearchResultsWindow");  }
- 
-   this.DOMSearchClose = function()
-   {  return document.getElementById("MSearchClose"); }
- 
-   this.DOMSearchBox = function()
-   {  return document.getElementById("MSearchBox");  }
- 
-   // ------------ Event Handlers
- 
-   // Called when focus is added or removed from the search field.
-   this.OnSearchFieldFocus = function(isActive)
-   {
-     this.Activate(isActive);
-   }
- 
-   this.OnSearchSelectShow = function()
-   {
-     var searchSelectWindow = this.DOMSearchSelectWindow();
-     var searchField        = this.DOMSearchSelect();
- 
-     var left = getXPos(searchField);
-     var top  = getYPos(searchField);
-     top += searchField.offsetHeight;
- 
-     // show search selection popup
-     searchSelectWindow.style.display='block';
-     searchSelectWindow.style.left =  left + 'px';
-     searchSelectWindow.style.top  =  top  + 'px';
- 
-     // stop selection hide timer
-     if (this.hideTimeout)
-     {
-       clearTimeout(this.hideTimeout);
-       this.hideTimeout=0;
-     }
-     return false; // to avoid "image drag" default event
-   }
- 
-   this.OnSearchSelectHide = function()
-   {
-     this.hideTimeout = setTimeout(this.CloseSelectionWindow.bind(this),
-                                   this.closeSelectionTimeout);
-   }
- 
-   // Called when the content of the search field is changed.
-   this.OnSearchFieldChange = function(evt)
-   {
-     if (this.keyTimeout) // kill running timer
-     {
-       clearTimeout(this.keyTimeout);
-       this.keyTimeout = 0;
-     }
- 
-     var e  = (evt) ? evt : window.event; // for IE
-     if (e.keyCode==40 || e.keyCode==13)
-     {
-       if (e.shiftKey==1)
-       {
-         this.OnSearchSelectShow();
-         var win=this.DOMSearchSelectWindow();
-         for (i=0;i<win.childNodes.length;i++)
-         {
-           var child = win.childNodes[i]; // get span within a
-           if (child.className=='SelectItem')
-           {
-             child.focus();
-             return;
-           }
-         }
-         return;
-       }
-       else
-       {
-         var elem = searchResults.NavNext(0);
-         if (elem) elem.focus();
-       }
-     }
-     else if (e.keyCode==27) // Escape out of the search field
-     {
-       this.DOMSearchField().blur();
-       this.DOMPopupSearchResultsWindow().style.display = 'none';
-       this.DOMSearchClose().style.display = 'none';
-       this.lastSearchValue = '';
-       this.Activate(false);
-       return;
-     }
- 
-     // strip whitespaces
-     var searchValue = this.DOMSearchField().value.replaceAll(" ", "");
- 
-     if (searchValue != this.lastSearchValue) // search value has changed
-     {
-       if (searchValue != "") // non-empty search
-       {
-         // set timer for search update
-         this.keyTimeout = setTimeout(this.Search.bind(this),
-                                      this.keyTimeoutLength);
-       }
-       else // empty search field
-       {
-         this.DOMPopupSearchResultsWindow().style.display = 'none';
-         this.DOMSearchClose().style.display = 'none';
-         this.lastSearchValue = '';
-       }
-     }
-   }
- 
-   this.SelectItemCount = function(id)
-   {
-     var count=0;
-     var win=this.DOMSearchSelectWindow();
-     for (i=0;i<win.childNodes.length;i++)
-     {
-       var child = win.childNodes[i]; // get span within a
-       if (child.className=='SelectItem')
-       {
-         count++;
-       }
-     }
-     return count;
-   }
- 
-   this.SelectItemSet = function(id)
-   {
-     var i,j=0;
-     var win=this.DOMSearchSelectWindow();
-     for (i=0;i<win.childNodes.length;i++)
-     {
-       var child = win.childNodes[i]; // get span within a
-       if (child.className=='SelectItem')
-       {
-         var node = child.firstChild;
-         if (j==id)
-         {
-           node.innerHTML='&#8226;';
-         }
-         else
-         {
-           node.innerHTML='&#160;';
-         }
-         j++;
-       }
-     }
-   }
- 
-   // Called when an search filter selection is made.
-   // set item with index id as the active item
-   this.OnSelectItem = function(id)
-   {
-     this.searchIndex = id;
-     this.SelectItemSet(id);
-     var searchValue = this.DOMSearchField().value.replaceAll(" ", "");
-     if (searchValue!="" && this.searchActive) // something was found -> do a search
-     {
-       this.Search();
-     }
-   }
- 
-   this.OnSearchSelectKey = function(evt)
-   {
-     var e = (evt) ? evt : window.event; // for IE
-     if (e.keyCode==40 && this.searchIndex<this.SelectItemCount()) // Down
-     {
-       this.searchIndex++;
-       this.OnSelectItem(this.searchIndex);
-     }
-     else if (e.keyCode==38 && this.searchIndex>0) // Up
-     {
-       this.searchIndex--;
-       this.OnSelectItem(this.searchIndex);
-     }
-     else if (e.keyCode==13 || e.keyCode==27)
-     {
-       this.OnSelectItem(this.searchIndex);
-       this.CloseSelectionWindow();
-       this.DOMSearchField().focus();
-     }
-     return false;
-   }
- 
-   // --------- Actions
- 
-   // Closes the results window.
-   this.CloseResultsWindow = function()
-   {
-     this.DOMPopupSearchResultsWindow().style.display = 'none';
-     this.DOMSearchClose().style.display = 'none';
-     this.Activate(false);
-   }
- 
-   this.CloseSelectionWindow = function()
-   {
-     this.DOMSearchSelectWindow().style.display = 'none';
-   }
- 
-   // Performs a search.
-   this.Search = function()
-   {
-     this.keyTimeout = 0;
- 
-     // strip leading whitespace
-     var searchValue = this.DOMSearchField().value.replaceAll(" ", "");
- 
-     var jsFiles = [];
-     for (let char of indexSectionsWithContent[this.searchIndex]) {      
-       var hexCode=indexSectionsWithContent[this.searchIndex].indexOf(char).toString(16);
-       jsFiles.push(this.resultsPath + indexSectionNames[this.searchIndex] + '_' + hexCode + '.js');
-     }
- 
-     var loadJS = function(url, impl, loc){
-       var scriptTag = document.createElement('script');
-       scriptTag.src = url;
-       scriptTag.onload = impl;
-       scriptTag.onreadystatechange = impl;
-       loc.appendChild(scriptTag);
-     }
- 
-     var domPopupSearchResultsWindow = this.DOMPopupSearchResultsWindow();
-     var domSearchBox = this.DOMSearchBox();
-     var domPopupSearchResults = this.DOMPopupSearchResults();
-     var domSearchClose = this.DOMSearchClose();
-     var resultsPath = this.resultsPath;
-     
-     let onLastLoad = function() {
-       searchResults.Search(searchValue);
- 
-       if (domPopupSearchResultsWindow.style.display!='block')
-       {
-         domSearchClose.style.display = 'inline-block';
-         var left = getXPos(domSearchBox) + 150;
-         var top  = getYPos(domSearchBox) + 20;
-         domPopupSearchResultsWindow.style.display = 'block';
-         left -= domPopupSearchResults.offsetWidth;
-         var maxWidth  = document.body.clientWidth;
-         var maxHeight = document.body.clientHeight;
-         var width = 300;
-         if (left<10) left=10;
-         if (width+left+8>maxWidth) width=maxWidth-left-8;
-         var height = 400;
-         if (height+top+8>maxHeight) height=maxHeight-top-8;
-         domPopupSearchResultsWindow.style.top     = top  + 'px';
-         domPopupSearchResultsWindow.style.left    = left + 'px';
-         domPopupSearchResultsWindow.style.width   = width + 'px';
-         domPopupSearchResultsWindow.style.height  = height + 'px';
-       }
-     }
- 
-     let loadCounter = 0;
-     var handleResults = function() {
-       document.getElementById("Loading").style.display="none";
-       if (typeof searchData !== 'undefined') {
-         createResults(resultsPath, loadCounter === 0);
-         document.getElementById("NoMatches").style.display="none";
-       }
- 
-       loadCounter++;
-       if (jsFiles.length === loadCounter) {
-         onLastLoad();
-       }
-     }
- 
-     for (let jsFile of jsFiles) {
-       loadJS(jsFile, handleResults, this.DOMPopupSearchResultsWindow());
-     }
- 
-     this.lastSearchValue = searchValue;
-   }
- 
-   // -------- Activation Functions
- 
-   // Activates or deactivates the search panel, resetting things to
-   // their default values if necessary.
-   this.Activate = function(isActive)
-   {
-     if (isActive || // open it
-         this.DOMPopupSearchResultsWindow().style.display == 'block'
-        )
-     {
-       this.DOMSearchBox().className = 'MSearchBoxActive';
-       this.searchActive = true;
-     }
-     else if (!isActive) // directly remove the panel
-     {
-       this.DOMSearchBox().className = 'MSearchBoxInactive';
-       this.searchActive             = false;
-       this.lastSearchValue          = ''
-       this.lastResultsPage          = '';
-       this.DOMSearchField().value   = '';
-     }
-   }
- }
- 
- // -----------------------------------------------------------------------
- 
- // The class that handles everything on the search results page.
- function SearchResults(name)
- {
-     // The number of matches from the last run of <Search()>.
-     this.lastMatchCount = 0;
-     this.lastKey = 0;
-     this.repeatOn = false;
- 
-     // Toggles the visibility of the passed element ID.
-     this.FindChildElement = function(id)
-     {
-       var parentElement = document.getElementById(id);
-       var element = parentElement.firstChild;
- 
-       while (element && element!=parentElement)
-       {
-         if (element.nodeName.toLowerCase() == 'div' && element.className == 'SRChildren')
-         {
-           return element;
-         }
- 
-         if (element.nodeName.toLowerCase() == 'div' && element.hasChildNodes())
-         {
-            element = element.firstChild;
-         }
-         else if (element.nextSibling)
-         {
-            element = element.nextSibling;
-         }
-         else
-         {
-           do
-           {
-             element = element.parentNode;
-           }
-           while (element && element!=parentElement && !element.nextSibling);
- 
-           if (element && element!=parentElement)
-           {
-             element = element.nextSibling;
-           }
-         }
-       }
-     }
- 
-     this.Toggle = function(id)
-     {
-       var element = this.FindChildElement(id);
-       if (element)
-       {
-         if (element.style.display == 'block')
-         {
-           element.style.display = 'none';
-         }
-         else
-         {
-           element.style.display = 'block';
-         }
-       }
-     }
- 
-     // Searches for the passed string.  If there is no parameter,
-     // it takes it from the URL query.
-     //
-     // Always returns true, since other documents may try to call it
-     // and that may or may not be possible.
-     this.Search = function(search)
-     {
-       if (!search) // get search word from URL
-       {
-         search = window.location.search;
-         search = search.substring(1);  // Remove the leading '?'
-         search = unescape(search);
-       }
- 
-       search = search.replaceAll(" ", "");
-       search = search.toLowerCase();
- 
-       var resultRows = document.getElementsByTagName("div");
-       var matches = new Map();
- 
-       var i = 0;
-       while (i < resultRows.length)
-       {
-         var row = resultRows.item(i);
-         if (row.className == "SRResult")
-         {
-           var rowMatchName = row.dataset.name.toLowerCase();
-           let searchRelevance = new SearchRelevance(rowMatchName, search);
-           if (searchRelevance.matched()) {
-             row.style.display = 'block';
-             matches.set(rowMatchName, searchRelevance);
-           } else {
-             row.style.display = 'none';
-           }
-         }
-         i++;
-       }
-       document.getElementById("Searching").style.display='none';
-       if (matches.size === 0) // no results
-       {
-         document.getElementById("NoMatches").style.display='block';
-       }
-       else // at least one result
-       {
-         document.getElementById("NoMatches").style.display='none';
- 
-         let list = document.getElementById('SRResults');
-         
-         let items = list.children;
-         let itemsArr = [];
-         for (let item of items) {
-           itemsArr.push(item);
-         }
- 
-         let getKey = function(srResult) {
-           return srResult.dataset.name.toLowerCase();
-         };
- 
-         itemsArr.sort(function(a, b) {
-           let searchRelevanceA = matches.get(getKey(a));
-           let searchRelevanceB = matches.get(getKey(b));
-           if (searchRelevanceA === undefined && searchRelevanceB === undefined) {
-             return 0;
-           } else if (searchRelevanceA === undefined) {
-             return -1;
-           } else if (searchRelevanceB === undefined) {
-             return 1;
-           }
-           
-           return searchRelevanceA.compare(searchRelevanceB);
-         });
- 
-         for (i = 0; i < itemsArr.length; ++i) {
-           const link = itemsArr[i].firstChild.firstChild;
-           link.setAttribute('id', 'Item'+i);
-           setKeyActions(link,'return searchResults.Nav(event,'+i+')');
- 
-           if (link.nextSibling.className === 'SRChildren') {
-             const resultChildren = link.nextSibling.children;
-             for (let j = 0; j < resultChildren.length; j++) {
-               const srChild = resultChildren[j];
-               srChild.setAttribute('id', 'Item'+i+'_c'+j);
-               setKeyActions(srChild,'return searchResults.NavChild(event,'+i+','+j+')');
-             }
-           }
-           list.appendChild(itemsArr[i]);
-         }
-       }
-       this.lastMatchCount = matches.size;
-       return true;
-     }
- 
-     // return the first item with index index or higher that is visible
-     this.NavNext = function(index)
-     {
-       var focusItem;
-       while (1)
-       {
-         var focusName = 'Item'+index;
-         focusItem = document.getElementById(focusName);
-         if (focusItem && focusItem.parentNode.parentNode.style.display=='block')
-         {
-           break;
-         }
-         else if (!focusItem) // last element
-         {
-           break;
-         }
-         focusItem=null;
-         index++;
-       }
-       return focusItem;
-     }
- 
-     this.NavPrev = function(index)
-     {
-       var focusItem;
-       while (1)
-       {
-         var focusName = 'Item'+index;
-         focusItem = document.getElementById(focusName);
-         if (focusItem && focusItem.parentNode.parentNode.style.display=='block')
-         {
-           break;
-         }
-         else if (!focusItem) // last element
-         {
-           break;
-         }
-         focusItem=null;
-         index--;
-       }
-       return focusItem;
-     }
- 
-     this.ProcessKeys = function(e)
-     {
-       if (e.type == "keydown")
-       {
-         this.repeatOn = false;
-         this.lastKey = e.keyCode;
-       }
-       else if (e.type == "keypress")
-       {
-         if (!this.repeatOn)
-         {
-           if (this.lastKey) this.repeatOn = true;
-           return false; // ignore first keypress after keydown
-         }
-       }
-       else if (e.type == "keyup")
-       {
-         this.lastKey = 0;
-         this.repeatOn = false;
-       }
-       return this.lastKey!=0;
-     }
- 
-     this.Nav = function(evt,itemIndex)
-     {
-       var e  = (evt) ? evt : window.event; // for IE
-       if (e.keyCode==13) return true;
-       if (!this.ProcessKeys(e)) return false;
- 
-       if (this.lastKey==38) // Up
-       {
-         var newIndex = itemIndex-1;
-         var focusItem = this.NavPrev(newIndex);
-         if (focusItem)
-         {
-           var child = this.FindChildElement(focusItem.parentNode.parentNode.id);
-           if (child && child.style.display == 'block') // children visible
-           {
-             var n=0;
-             var tmpElem;
-             while (1) // search for last child
-             {
-               tmpElem = document.getElementById('Item'+newIndex+'_c'+n);
-               if (tmpElem)
-               {
-                 focusItem = tmpElem;
-               }
-               else // found it!
-               {
-                 break;
-               }
-               n++;
-             }
-           }
-         }
-         if (focusItem)
-         {
-           focusItem.focus();
-         }
-         else // return focus to search field
-         {
-            document.getElementById("MSearchField").focus();
-         }
-       }
-       else if (this.lastKey==40) // Down
-       {
-         var newIndex = itemIndex+1;
-         var focusItem;
-         var item = document.getElementById('Item'+itemIndex);
-         var elem = this.FindChildElement(item.parentNode.parentNode.id);
-         if (elem && elem.style.display == 'block') // children visible
-         {
-           focusItem = document.getElementById('Item'+itemIndex+'_c0');
-         }
-         if (!focusItem) focusItem = this.NavNext(newIndex);
-         if (focusItem)  focusItem.focus();
-       }
-       else if (this.lastKey==39) // Right
-       {
-         var item = document.getElementById('Item'+itemIndex);
-         var elem = this.FindChildElement(item.parentNode.parentNode.id);
-         if (elem) elem.style.display = 'block';
-       }
-       else if (this.lastKey==37) // Left
-       {
-         var item = document.getElementById('Item'+itemIndex);
-         var elem = this.FindChildElement(item.parentNode.parentNode.id);
-         if (elem) elem.style.display = 'none';
-       }
-       else if (this.lastKey==27) // Escape
-       {
-         searchBox.CloseResultsWindow();
-         document.getElementById("MSearchField").focus();
-       }
-       else if (this.lastKey==13) // Enter
-       {
-         return true;
-       }
-       return false;
-     }
- 
-     this.NavChild = function(evt,itemIndex,childIndex)
-     {
-       var e  = (evt) ? evt : window.event; // for IE
-       if (e.keyCode==13) return true;
-       if (!this.ProcessKeys(e)) return false;
- 
-       if (this.lastKey==38) // Up
-       {
-         if (childIndex>0)
-         {
-           var newIndex = childIndex-1;
-           document.getElementById('Item'+itemIndex+'_c'+newIndex).focus();
-         }
-         else // already at first child, jump to parent
-         {
-           document.getElementById('Item'+itemIndex).focus();
-         }
-       }
-       else if (this.lastKey==40) // Down
-       {
-         var newIndex = childIndex+1;
-         var elem = document.getElementById('Item'+itemIndex+'_c'+newIndex);
-         if (!elem) // last child, jump to parent next parent
-         {
-           elem = this.NavNext(itemIndex+1);
-         }
-         if (elem)
-         {
-           elem.focus();
-         }
-       }
-       else if (this.lastKey==27) // Escape
-       {
-         searchBox.CloseResultsWindow();
-         document.getElementById("MSearchField").focus();
-       }
-       else if (this.lastKey==13) // Enter
-       {
-         return true;
-       }
-       return false;
-     }
- }
- 
- function setKeyActions(elem,action)
- {
-   elem.setAttribute('onkeydown',action);
-   elem.setAttribute('onkeypress',action);
-   elem.setAttribute('onkeyup',action);
- }
- 
- function setClassAttr(elem,attr)
- {
-   elem.setAttribute('class',attr);
-   elem.setAttribute('className',attr);
- }
- 
- function createResults(resultsPath, emptyResults)
- {
-   var results = document.getElementById("SRResults");
-   if (emptyResults) {
-     results.innerHTML = '';
-   }
-   for (var e=0; e<searchData.length; e++)
-   {
-     var id = searchData[e][0];
-     var name = searchData[e][1][0];
-     if (name.endsWith("_Overview")) {
-      continue;
-     }
-     var srResult = document.createElement('div');
-     srResult.setAttribute('id','SR_'+id);
-     srResult.setAttribute('data-name',name);
-     setClassAttr(srResult,'SRResult');
-     var srEntry = document.createElement('div');
-     setClassAttr(srEntry,'SREntry');
-     var srLink = document.createElement('a');
-     srLink.setAttribute('id','Item'+e);
-     setKeyActions(srLink,'return searchResults.Nav(event,'+e+')');
-     setClassAttr(srLink,'SRSymbol');
-     srLink.innerHTML = name;
-     srEntry.appendChild(srLink);
-     if (searchData[e][1].length==2) // single result
-     {
-       srLink.setAttribute('href',resultsPath+searchData[e][1][1][0]);
-       srLink.setAttribute('onclick','searchBox.CloseResultsWindow()');
-       if (searchData[e][1][1][1])
-       {
-        srLink.setAttribute('target','_parent');
-       }
-       else
-       {
-        srLink.setAttribute('target','_blank');
-       }
-       var srScope = document.createElement('span');
-       setClassAttr(srScope,'SRScope');
-       srScope.innerHTML = searchData[e][1][1][2];
-       srEntry.appendChild(srScope);
-     }
-     else // multiple results
-     {
-       srLink.setAttribute('href','javascript:searchResults.Toggle("SR_'+id+'")');
-       var srChildren = document.createElement('div');
-       setClassAttr(srChildren,'SRChildren');
-       for (var c=0; c<searchData[e][1].length-1; c++)
-       {
-         var srChild = document.createElement('a');
-         srChild.setAttribute('id','Item'+e+'_c'+c);
-         setKeyActions(srChild,'return searchResults.NavChild(event,'+e+','+c+')');
-         setClassAttr(srChild,'SRScope');
-         srChild.setAttribute('href',resultsPath+searchData[e][1][c+1][0]);
-         srChild.setAttribute('onclick','searchBox.CloseResultsWindow()');
-         if (searchData[e][1][c+1][1])
-         {
-          srChild.setAttribute('target','_parent');
-         }
-         else
-         {
-          srChild.setAttribute('target','_blank');
-         }
-         srChild.innerHTML = searchData[e][1][c+1][2];
-         srChildren.appendChild(srChild);
-       }
-       srEntry.appendChild(srChildren);
-     }
-     srResult.appendChild(srEntry);
-     results.appendChild(srResult);
-   }
- }
- 
- function init_search()
- {
-   var results = document.getElementById("MSearchSelectWindow");
-   for (var key in indexSectionLabels)
-   {
-     var link = document.createElement('a');
-     link.setAttribute('class','SelectItem');
-     link.setAttribute('onclick','searchBox.OnSelectItem('+key+')');
-     link.href='javascript:void(0)';
-     link.innerHTML='<span class="SelectionMark">&#160;</span>'+indexSectionLabels[key];
-     results.appendChild(link);
-   }
-   searchBox.OnSelectItem(0);
- }
- /* @license-end */
- 
+    }
+    return y;
+  }
+
+  // ---------- Instance variables
+  this.name                  = name;
+  this.resultsPath           = resultsPath;
+  this.keyTimeout            = 0;
+  this.keyTimeoutLength      = 500;
+  this.closeSelectionTimeout = 300;
+  this.lastSearchValue       = "";
+  this.lastResultsPage       = "";
+  this.hideTimeout           = 0;
+  this.searchIndex           = 0;
+  this.searchActive          = false;
+  this.extension             = extension;
+
+  // ----------- DOM Elements
+
+  this.DOMSearchField              = () => document.getElementById("MSearchField");
+  this.DOMSearchSelect             = () => document.getElementById("MSearchSelect");
+  this.DOMSearchSelectWindow       = () => document.getElementById("MSearchSelectWindow");
+  this.DOMPopupSearchResults       = () => document.getElementById("MSearchResults");
+  this.DOMPopupSearchResultsWindow = () => document.getElementById("MSearchResultsWindow");
+  this.DOMSearchClose              = () => document.getElementById("MSearchClose");
+  this.DOMSearchBox                = () => document.getElementById("MSearchBox");
+
+  // ------------ Event Handlers
+
+  // Called when focus is added or removed from the search field.
+  this.OnSearchFieldFocus = function(isActive) {
+    this.Activate(isActive);
+  }
+
+  this.OnSearchSelectShow = function() {
+    const searchSelectWindow = this.DOMSearchSelectWindow();
+    const searchField        = this.DOMSearchSelect();
+
+    const left = getXPos(searchField);
+    const top  = getYPos(searchField) + searchField.offsetHeight;
+
+    // show search selection popup
+    searchSelectWindow.style.display='block';
+    searchSelectWindow.style.left =  left + 'px';
+    searchSelectWindow.style.top  =  top  + 'px';
+
+    // stop selection hide timer
+    if (this.hideTimeout) {
+      clearTimeout(this.hideTimeout);
+      this.hideTimeout=0;
+    }
+    return false; // to avoid "image drag" default event
+  }
+
+  this.OnSearchSelectHide = function() {
+    this.hideTimeout = setTimeout(this.CloseSelectionWindow.bind(this),
+                                  this.closeSelectionTimeout);
+  }
+
+  // Called when the content of the search field is changed.
+  this.OnSearchFieldChange = function(evt) {
+    if (this.keyTimeout) { // kill running timer
+      clearTimeout(this.keyTimeout);
+      this.keyTimeout = 0;
+    }
+
+    const e = evt ? evt : window.event; // for IE
+    if (e.keyCode==40 || e.keyCode==13) {
+      if (e.shiftKey==1) {
+        this.OnSearchSelectShow();
+        const win=this.DOMSearchSelectWindow();
+        for (let i=0;i<win.childNodes.length;i++) {
+          const child = win.childNodes[i]; // get span within a
+          if (child.className=='SelectItem') {
+            child.focus();
+            return;
+          }
+        }
+        return;
+      } else {
+        const elem = searchResults.NavNext(0);
+        if (elem) elem.focus();
+      }
+    } else if (e.keyCode==27) { // Escape out of the search field
+      e.stopPropagation();
+      this.DOMSearchField().blur();
+      this.DOMPopupSearchResultsWindow().style.display = 'none';
+      this.DOMSearchClose().style.display = 'none';
+      this.lastSearchValue = '';
+      this.Activate(false);
+      return;
+    }
+
+    // strip whitespaces
+    const searchValue = this.DOMSearchField().value.replaceAll(" ", "");
+
+    if (searchValue != this.lastSearchValue) { // search value has changed
+      if (searchValue != "") { // non-empty search
+        // set timer for search update
+        this.keyTimeout = setTimeout(this.Search.bind(this), this.keyTimeoutLength);
+      } else { // empty search field
+        this.DOMPopupSearchResultsWindow().style.display = 'none';
+        this.DOMSearchClose().style.display = 'none';
+        this.lastSearchValue = '';
+      }
+    }
+  }
+
+  this.SelectItemCount = function() {
+    let count=0;
+    const win=this.DOMSearchSelectWindow();
+    for (let i=0;i<win.childNodes.length;i++) {
+      const child = win.childNodes[i]; // get span within a
+      if (child.className=='SelectItem') {
+        count++;
+      }
+    }
+    return count;
+  }
+
+  this.GetSelectionIdByName = function(name) {
+    let j=0;
+    const win=this.DOMSearchSelectWindow();
+    for (let i=0;i<win.childNodes.length;i++) {
+      const child = win.childNodes[i];
+      if (child.className=='SelectItem') {
+        if (child.childNodes[1].nodeValue==name) {
+          return j;
+        }
+        j++;
+      }
+    }
+    return 0;
+  }
+
+  this.SelectItemSet = function(id) {
+    let j=0;
+    const win=this.DOMSearchSelectWindow();
+    for (let i=0;i<win.childNodes.length;i++) {
+      const child = win.childNodes[i]; // get span within a
+      if (child.className=='SelectItem') {
+        const node = child.firstChild;
+        if (j==id) {
+          node.innerHTML='&#8226;';
+          Cookie.writeSetting(SEARCH_COOKIE_NAME, child.childNodes[1].nodeValue, 0)
+        } else {
+          node.innerHTML='&#160;';
+        }
+        j++;
+      }
+    }
+  }
+
+  // Called when an search filter selection is made.
+  // set item with index id as the active item
+  this.OnSelectItem = function(id) {
+    this.searchIndex = id;
+    this.SelectItemSet(id);
+    const searchValue = this.DOMSearchField().value.replaceAll(" ", "");
+    if (searchValue!="" && this.searchActive) { // something was found -> do a search
+      this.Search();
+    }
+  }
+
+  this.OnSearchSelectKey = function(evt) {
+    const e = (evt) ? evt : window.event; // for IE
+    if (e.keyCode==40 && this.searchIndex<this.SelectItemCount()) { // Down
+      this.searchIndex++;
+      this.OnSelectItem(this.searchIndex);
+    } else if (e.keyCode==38 && this.searchIndex>0) { // Up
+      this.searchIndex--;
+      this.OnSelectItem(this.searchIndex);
+    } else if (e.keyCode==13 || e.keyCode==27) {
+      e.stopPropagation();
+      this.OnSelectItem(this.searchIndex);
+      this.CloseSelectionWindow();
+      this.DOMSearchField().focus();
+    }
+    return false;
+  }
+
+  // --------- Actions
+
+  // Closes the results window.
+  this.CloseResultsWindow = function() {
+    this.DOMPopupSearchResultsWindow().style.display = 'none';
+    this.DOMSearchClose().style.display = 'none';
+    this.Activate(false);
+  }
+
+  this.CloseSelectionWindow = function() {
+    this.DOMSearchSelectWindow().style.display = 'none';
+  }
+
+  // Performs a search.
+  this.Search = function() {
+    this.keyTimeout = 0;
+
+    // strip leading whitespace
+    const searchValue = this.DOMSearchField().value.replaceAll(" ", "");
+
+    let jsFiles = [];
+    for (let char of indexSectionsWithContent[this.searchIndex]) {      
+      let hexCode=indexSectionsWithContent[this.searchIndex].indexOf(char).toString(16);
+      jsFiles.push(this.resultsPath + indexSectionNames[this.searchIndex] + '_' + hexCode + '.js');
+    }
+
+    const loadJS = function(url, impl, loc) {
+      const scriptTag = document.createElement('script');
+      scriptTag.src = url;
+      scriptTag.onload = impl;
+      scriptTag.onreadystatechange = impl;
+      loc.appendChild(scriptTag);
+    }
+
+    const domPopupSearchResultsWindow = this.DOMPopupSearchResultsWindow();
+    const domSearchBox = this.DOMSearchBox();
+    const domPopupSearchResults = this.DOMPopupSearchResults();
+    const domSearchClose = this.DOMSearchClose();
+    const resultsPath = this.resultsPath;
+    const resultsMap = new Map();
+    
+    let onLastLoad = function() {
+      searchResults.Search(searchValue);
+
+      if (domPopupSearchResultsWindow.style.display!='block') {
+        domSearchClose.style.display = 'inline-block';
+        let left = getXPos(domSearchBox) + 150;
+        let top  = getYPos(domSearchBox) + 20;
+        domPopupSearchResultsWindow.style.display = 'block';
+        left -= domPopupSearchResults.offsetWidth;
+        const maxWidth  = document.body.clientWidth;
+        const maxHeight = document.body.clientHeight;
+        let width = 300;
+        if (left<10) left=10;
+        if (width+left+8>maxWidth) width=maxWidth-left-8;
+        let height = 400;
+        if (height+top+8>maxHeight) height=maxHeight-top-8;
+        domPopupSearchResultsWindow.style.top     = top  + 'px';
+        domPopupSearchResultsWindow.style.left    = left + 'px';
+        domPopupSearchResultsWindow.style.width   = width + 'px';
+        domPopupSearchResultsWindow.style.height  = height + 'px';
+      }
+    }
+
+    let loadCounter = 0;
+    var handleResults = function() {
+      document.getElementById("Loading").style.display="none";
+      if (typeof searchData !== 'undefined') {
+        createResults(resultsPath, resultsMap, loadCounter === 0);
+        document.getElementById("NoMatches").style.display="none";
+      }
+
+      loadCounter++;
+      if (jsFiles.length === loadCounter) {
+        onLastLoad();
+      }
+    }
+
+    for (let jsFile of jsFiles) {
+      loadJS(jsFile, handleResults, this.DOMPopupSearchResultsWindow());
+    }
+
+    this.lastSearchValue = searchValue;
+  }
+
+  // -------- Activation Functions
+
+  // Activates or deactivates the search panel, resetting things to
+  // their default values if necessary.
+  this.Activate = function(isActive) {
+    if (isActive || // open it
+      this.DOMPopupSearchResultsWindow().style.display == 'block'
+    ) {
+      this.DOMSearchBox().className = 'MSearchBoxActive';
+      this.searchActive = true;
+    } else if (!isActive) { // directly remove the panel
+      this.DOMSearchBox().className = 'MSearchBoxInactive';
+      this.searchActive             = false;
+      this.lastSearchValue          = ''
+      this.lastResultsPage          = '';
+      this.DOMSearchField().value   = '';
+    }
+  }
+}
+
+// -----------------------------------------------------------------------
+
+// The class that handles everything on the search results page.
+function SearchResults() {
+
+  function convertToId(search) {
+    let result = '';
+    for (let i=0;i<search.length;i++) {
+      const c = search.charAt(i);
+      const cn = c.charCodeAt(0);
+      if (c.match(/[a-z0-9\u0080-\uFFFF]/)) {
+        result+=c;
+      } else if (cn<16) {
+        result+="_0"+cn.toString(16);
+      } else {
+        result+="_"+cn.toString(16);
+      }
+    }
+    return result;
+  }
+
+  // The number of matches from the last run of <Search()>.
+  this.lastMatchCount = 0;
+  this.lastKey = 0;
+  this.repeatOn = false;
+
+  // Toggles the visibility of the passed element ID.
+  this.FindChildElement = function(id) {
+    const parentElement = document.getElementById(id);
+    let element = parentElement.firstChild;
+
+    while (element && element!=parentElement) {
+      if (element.nodeName.toLowerCase() == 'div' && element.className == 'SRChildren') {
+        return element;
+      }
+
+      if (element.nodeName.toLowerCase() == 'div' && element.hasChildNodes()) {
+        element = element.firstChild;
+      } else if (element.nextSibling) {
+        element = element.nextSibling;
+      } else {
+        do {
+          element = element.parentNode;
+        }
+        while (element && element!=parentElement && !element.nextSibling);
+
+        if (element && element!=parentElement) {
+          element = element.nextSibling;
+        }
+      }
+    }
+  }
+
+  this.Toggle = function(id) {
+    const element = this.FindChildElement(id);
+    if (element) {
+      if (element.style.display == 'block') {
+        element.style.display = 'none';
+      } else {
+        element.style.display = 'block';
+      }
+    }
+  }
+
+  // Searches for the passed string.  If there is no parameter,
+  // it takes it from the URL query.
+  //
+  // Always returns true, since other documents may try to call it
+  // and that may or may not be possible.
+  this.Search = function(search) {
+    if (!search) { // get search word from URL
+      search = window.location.search;
+      search = search.substring(1);  // Remove the leading '?'
+      search = unescape(search);
+    }
+
+    search = search.replaceAll(" ", "");
+    search = search.toLowerCase();
+
+    const resultRows = document.getElementsByTagName("div");
+    let matches = new Map();
+
+    let i = 0;
+    while (i < resultRows.length) {
+      const row = resultRows.item(i);
+      if (row.className == "SRResult") {
+        let rowMatchName = row.dataset.name.toLowerCase();
+        let searchRelevance = new SearchRelevance(rowMatchName, search);
+        if (searchRelevance.matched()) {
+          row.style.display = 'block';
+          matches.set(rowMatchName, searchRelevance);
+        } else {
+          row.style.display = 'none';
+        }
+      }
+      i++;
+    }
+    document.getElementById("Searching").style.display='none';
+    if (matches.size === 0) { // no results
+      document.getElementById("NoMatches").style.display='block';
+    } else { // at least one result
+      document.getElementById("NoMatches").style.display='none';
+
+      let list = document.getElementById('SRResults');
+
+      let items = list.children;
+      let itemsArr = [];
+      for (let item of items) {
+        itemsArr.push(item);
+      }
+
+      let getKey = function(srResult) {
+        return srResult.dataset.name.toLowerCase();
+      };
+
+      itemsArr.sort(function(a, b) {
+        let searchRelevanceA = matches.get(getKey(a));
+        let searchRelevanceB = matches.get(getKey(b));
+        if (searchRelevanceA === undefined && searchRelevanceB === undefined) {
+          return 0;
+        } else if (searchRelevanceA === undefined) {
+          return -1;
+        } else if (searchRelevanceB === undefined) {
+          return 1;
+        }
+
+        return searchRelevanceA.compare(searchRelevanceB);
+      });
+
+      for (i = 0; i < itemsArr.length; ++i) {
+        const link = itemsArr[i].firstChild.firstChild;
+        link.setAttribute('id', 'Item'+i);
+        setKeyActions(link,'return searchResults.Nav(event,'+i+')');
+
+        if (link.nextSibling.className === 'SRChildren') {
+          const resultChildren = link.nextSibling.children;
+          for (let j = 0; j < resultChildren.length; j++) {
+            const srChild = resultChildren[j];
+            srChild.setAttribute('id', 'Item'+i+'_c'+j);
+            setKeyActions(srChild,'return searchResults.NavChild(event,'+i+','+j+')');
+          }
+        }
+        list.appendChild(itemsArr[i]);
+      }
+    }
+    this.lastMatchCount = matches.size;
+    return true;
+  }
+
+  // return the first item with index index or higher that is visible
+  this.NavNext = function(index) {
+    let focusItem;
+    for (;;) {
+      const focusName = 'Item'+index;
+      focusItem = document.getElementById(focusName);
+      if (focusItem && focusItem.parentNode.parentNode.style.display=='block') {
+        break;
+      } else if (!focusItem) { // last element
+        break;
+      }
+      focusItem=null;
+      index++;
+    }
+    return focusItem;
+  }
+
+  this.NavPrev = function(index) {
+    let focusItem;
+    for (;;) {
+      const focusName = 'Item'+index;
+      focusItem = document.getElementById(focusName);
+      if (focusItem && focusItem.parentNode.parentNode.style.display=='block') {
+        break;
+      } else if (!focusItem) { // last element
+        break;
+      }
+      focusItem=null;
+      index--;
+    }
+    return focusItem;
+  }
+
+  this.ProcessKeys = function(e) {
+    if (e.type == "keydown") {
+      this.repeatOn = false;
+      this.lastKey = e.keyCode;
+    } else if (e.type == "keypress") {
+      if (!this.repeatOn) {
+        if (this.lastKey) this.repeatOn = true;
+        return false; // ignore first keypress after keydown
+      }
+    } else if (e.type == "keyup") {
+      this.lastKey = 0;
+      this.repeatOn = false;
+    }
+    return this.lastKey!=0;
+  }
+
+  this.Nav = function(evt,itemIndex) {
+    const e  = (evt) ? evt : window.event; // for IE
+    if (e.keyCode==13) return true;
+    if (!this.ProcessKeys(e)) return false;
+
+    if (this.lastKey==38) { // Up
+      const newIndex = itemIndex-1;
+      let focusItem = this.NavPrev(newIndex);
+      if (focusItem) {
+        let child = this.FindChildElement(focusItem.parentNode.parentNode.id);
+        if (child && child.style.display == 'block') { // children visible
+          let n=0;
+          let tmpElem;
+          for (;;) { // search for last child
+            tmpElem = document.getElementById('Item'+newIndex+'_c'+n);
+            if (tmpElem) {
+              focusItem = tmpElem;
+            } else { // found it!
+              break;
+            }
+            n++;
+          }
+        }
+      }
+      if (focusItem) {
+        focusItem.focus();
+      } else { // return focus to search field
+        document.getElementById("MSearchField").focus();
+      }
+    } else if (this.lastKey==40) { // Down
+      const newIndex = itemIndex+1;
+      let focusItem;
+      const item = document.getElementById('Item'+itemIndex);
+      const elem = this.FindChildElement(item.parentNode.parentNode.id);
+      if (elem && elem.style.display == 'block') { // children visible
+        focusItem = document.getElementById('Item'+itemIndex+'_c0');
+      }
+      if (!focusItem) focusItem = this.NavNext(newIndex);
+      if (focusItem)  focusItem.focus();
+    } else if (this.lastKey==39) { // Right
+      const item = document.getElementById('Item'+itemIndex);
+      const elem = this.FindChildElement(item.parentNode.parentNode.id);
+      if (elem) elem.style.display = 'block';
+    } else if (this.lastKey==37) { // Left
+      const item = document.getElementById('Item'+itemIndex);
+      const elem = this.FindChildElement(item.parentNode.parentNode.id);
+      if (elem) elem.style.display = 'none';
+    } else if (this.lastKey==27) { // Escape
+      e.stopPropagation();
+      searchBox.CloseResultsWindow();
+      document.getElementById("MSearchField").focus();
+    } else if (this.lastKey==13) { // Enter
+      return true;
+    }
+    return false;
+  }
+
+  this.NavChild = function(evt,itemIndex,childIndex) {
+    const e  = (evt) ? evt : window.event; // for IE
+    if (e.keyCode==13) return true;
+    if (!this.ProcessKeys(e)) return false;
+
+    if (this.lastKey==38) { // Up
+      if (childIndex>0) {
+        const newIndex = childIndex-1;
+        document.getElementById('Item'+itemIndex+'_c'+newIndex).focus();
+      } else { // already at first child, jump to parent
+        document.getElementById('Item'+itemIndex).focus();
+      }
+    } else if (this.lastKey==40) { // Down
+      const newIndex = childIndex+1;
+      let elem = document.getElementById('Item'+itemIndex+'_c'+newIndex);
+      if (!elem) { // last child, jump to parent next parent
+        elem = this.NavNext(itemIndex+1);
+      }
+      if (elem) {
+        elem.focus();
+      }
+    } else if (this.lastKey==27) { // Escape
+      e.stopPropagation();
+      searchBox.CloseResultsWindow();
+      document.getElementById("MSearchField").focus();
+    } else if (this.lastKey==13) { // Enter
+      return true;
+    }
+    return false;
+  }
+}
+
+function setKeyActions(elem,action) {
+  elem.setAttribute('onkeydown',action);
+  elem.setAttribute('onkeypress',action);
+  elem.setAttribute('onkeyup',action);
+}
+
+function createResults(resultsPath, resultsMap, emptyResults) {
+
+  function setClassAttr(elem,attr) {
+    elem.setAttribute('class',attr);
+    elem.setAttribute('className',attr);
+  }
+
+  const results = document.getElementById("SRResults");
+  if (emptyResults) {
+    results.innerHTML = '';
+  }
+  searchData.forEach((elem,index) => {
+    const id = elem[0];
+    const name = elem[1][0];
+    let shouldBeAdded = true;
+
+    if (name.endsWith("_Overview")) {
+     return;
+    }
+    const srResult = document.createElement('div');
+    srResult.setAttribute('id','SR_'+id);
+    srResult.setAttribute('data-name',name);
+    setClassAttr(srResult,'SRResult');
+    const srEntry = document.createElement('div');
+    setClassAttr(srEntry,'SREntry');
+    const srLink = document.createElement('a');
+    srLink.setAttribute('id','Item'+index);
+    setKeyActions(srLink,'return searchResults.Nav(event,'+index+')');
+    setClassAttr(srLink,'SRSymbol');
+    srLink.innerHTML = name;
+    srEntry.appendChild(srLink);
+    if (elem[1].length==2) { // single result
+      const itemLink = resultsPath+elem[1][1][0];
+      if (resultsMap.has(name)) {
+        if (resultsMap.get(name).includes(itemLink)) { // do not add duplicate
+          shouldBeAdded = false;
+        } else {
+          resultsMap.get(name).push(itemLink);
+        }
+      } else {
+        resultsMap.set(name, [itemLink]);
+      }
+      srLink.setAttribute('href', itemLink);
+      srLink.setAttribute('onclick','searchBox.CloseResultsWindow()');
+      if (elem[1][1][1]) {
+       srLink.setAttribute('target','_parent');
+      } else {
+       srLink.setAttribute('target','_blank');
+      }
+      const srScope = document.createElement('span');
+      setClassAttr(srScope,'SRScope');
+      srScope.innerHTML = elem[1][1][2];
+      srEntry.appendChild(srScope);
+    } else { // multiple results
+      srLink.setAttribute('href','javascript:searchResults.Toggle("SR_'+id+'")');
+      const srChildren = document.createElement('div');
+      setClassAttr(srChildren,'SRChildren');
+      for (let c=0; c<elem[1].length-1; c++) {
+        const srChild = document.createElement('a');
+        srChild.setAttribute('id','Item'+index+'_c'+c);
+        setKeyActions(srChild,'return searchResults.NavChild(event,'+index+','+c+')');
+        setClassAttr(srChild,'SRScope');
+        srChild.setAttribute('href',resultsPath+elem[1][c+1][0]);
+        srChild.setAttribute('onclick','searchBox.CloseResultsWindow()');
+        if (elem[1][c+1][1]) {
+         srChild.setAttribute('target','_parent');
+        } else {
+         srChild.setAttribute('target','_blank');
+        }
+        srChild.innerHTML = elem[1][c+1][2];
+        srChildren.appendChild(srChild);
+      }
+      srEntry.appendChild(srChildren);
+    }
+    srResult.appendChild(srEntry);
+    if (!shouldBeAdded) {
+      return;
+    }
+    results.appendChild(srResult);
+  });
+}
+
+function init_search() {
+  const results = document.getElementById("MSearchSelectWindow");
+
+  results.tabIndex=0;
+  for (let key in indexSectionLabels) {
+    const link = document.createElement('a');
+    link.setAttribute('class','SelectItem');
+    link.setAttribute('onclick','searchBox.OnSelectItem('+key+')');
+    link.href='javascript:void(0)';
+    link.innerHTML='<span class="SelectionMark">&#160;</span>'+indexSectionLabels[key];
+    results.appendChild(link);
+  }
+
+  const input = document.getElementById("MSearchSelect");
+  const searchSelectWindow = document.getElementById("MSearchSelectWindow");
+  input.tabIndex=0;
+  input.addEventListener("keydown", function(event) {
+    if (event.keyCode==13 || event.keyCode==40) {
+      event.preventDefault();
+      if (searchSelectWindow.style.display == 'block') {
+        searchBox.CloseSelectionWindow();
+      } else {
+        searchBox.OnSearchSelectShow();
+        searchBox.DOMSearchSelectWindow().focus();
+      }
+    }
+  });
+  const name = Cookie.readSetting(SEARCH_COOKIE_NAME,0);
+  const id = searchBox.GetSelectionIdByName(name);
+  searchBox.OnSelectItem(id);
+}
+/* @license-end */

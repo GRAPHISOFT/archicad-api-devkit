@@ -1,13 +1,13 @@
 var struct_a_p_i___working_unit_prefs =
 [
-    [ "angleAccuracy", "struct_a_p_i___working_unit_prefs.html#a8c5098a38306469fd201eee38fc4c80a", null ],
-    [ "angleDecimals", "struct_a_p_i___working_unit_prefs.html#aa4440528ede831ef0b6fd80789c9def4", null ],
-    [ "angleUnit", "struct_a_p_i___working_unit_prefs.html#a2836650d2535972e2b063267fa3e658f", null ],
-    [ "areaDecimals", "struct_a_p_i___working_unit_prefs.html#a0b9f9b247fbb7fd5ecbcb362e7fdc53c", null ],
-    [ "areaUnit", "struct_a_p_i___working_unit_prefs.html#a83e6f77d42a89afb87a9204a6a13d662", null ],
-    [ "lenDecimals", "struct_a_p_i___working_unit_prefs.html#ab5811851680ef0721db9ae98f47fc3d7", null ],
-    [ "lengthUnit", "struct_a_p_i___working_unit_prefs.html#a8c310cf35d1ab9f8f36fb41103fbd682", null ],
-    [ "roundInch", "struct_a_p_i___working_unit_prefs.html#ae0548f103d696ff9270a802e120619b5", null ],
-    [ "volumeDecimals", "struct_a_p_i___working_unit_prefs.html#afef61c23617cfbe902bca6a2fa116570", null ],
-    [ "volumeUnit", "struct_a_p_i___working_unit_prefs.html#ae63e40acfb1cdcde2c0516c33134a5d6", null ]
+    [ "angleAccuracy", "struct_a_p_i___working_unit_prefs.html#a656e657797f8162e40b7604a6d0e180c", null ],
+    [ "angleDecimals", "struct_a_p_i___working_unit_prefs.html#a0b6c3fa84550123c869e4808941b22c9", null ],
+    [ "angleUnit", "struct_a_p_i___working_unit_prefs.html#a2a1d95af4d108c3f4c0ca6e08b3e2719", null ],
+    [ "areaDecimals", "struct_a_p_i___working_unit_prefs.html#a42e4a83970072f26f2c193c6a2965053", null ],
+    [ "areaUnit", "struct_a_p_i___working_unit_prefs.html#ad8ff6cf8e0a145df6bb9177dd8517038", null ],
+    [ "lenDecimals", "struct_a_p_i___working_unit_prefs.html#a2f0ee75d1ef6c893ef8b0c381ef3c030", null ],
+    [ "lengthUnit", "struct_a_p_i___working_unit_prefs.html#a85af7661b3962c59e2a08d41f218cceb", null ],
+    [ "roundInch", "struct_a_p_i___working_unit_prefs.html#aa99fe95119ea49522d8af5d37e9d2e58", null ],
+    [ "volumeDecimals", "struct_a_p_i___working_unit_prefs.html#a6d5721d42b9c421b0776d8856681ad4e", null ],
+    [ "volumeUnit", "struct_a_p_i___working_unit_prefs.html#a1fe18746f058bb0a4383938f04649052", null ]
 ];

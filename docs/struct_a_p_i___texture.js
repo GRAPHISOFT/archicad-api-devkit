@@ -1,12 +1,12 @@
 var struct_a_p_i___texture =
 [
-    [ "fileLoc", "struct_a_p_i___texture.html#a9ab0d7e8f79603170cddf05413a2b88d", null ],
-    [ "irtxt", "struct_a_p_i___texture.html#aee0fcd7a51fb9162ddf101dfda4e97a5", null ],
-    [ "missingPict", "struct_a_p_i___texture.html#a5235e3633b8a71b3f2b11df16f443db1", null ],
-    [ "rotAng", "struct_a_p_i___texture.html#accfdb20cf52193dec4b8c3c2dc057abd", null ],
-    [ "status", "struct_a_p_i___texture.html#a00ed288011bb2fc8d358ffe4c5b80cc1", null ],
-    [ "texName", "struct_a_p_i___texture.html#ab493187df4ced67e37881ccc31ab0415", null ],
-    [ "withoutExtension", "struct_a_p_i___texture.html#ab81a9de4e3ff782661f407b866c11d26", null ],
-    [ "xSize", "struct_a_p_i___texture.html#a6d51eef8e5148c514b9e8428b156d18b", null ],
-    [ "ySize", "struct_a_p_i___texture.html#addf4e162347a39d8a852c34f09996c60", null ]
+    [ "fileLoc", "struct_a_p_i___texture.html#a09759e229a806aea4cf9572fb8c174f3", null ],
+    [ "irtxt", "struct_a_p_i___texture.html#a13d68190fca80335ed3fc0fe33dd237e", null ],
+    [ "missingPict", "struct_a_p_i___texture.html#ab45005f4c4cb7f44b7ae17effe197f75", null ],
+    [ "rotAng", "struct_a_p_i___texture.html#a061514ecd47eed73cefd5ba7d08dbf2a", null ],
+    [ "status", "struct_a_p_i___texture.html#adfee4beef526c045c35afdcf18c13723", null ],
+    [ "texName", "struct_a_p_i___texture.html#af37dd746310e8e3524b54c3320c140f7", null ],
+    [ "withoutExtension", "struct_a_p_i___texture.html#a7065b1a2cf6f7cb2df53b4220b383275", null ],
+    [ "xSize", "struct_a_p_i___texture.html#ad066e1ade946468015d75ea34d5c780b", null ],
+    [ "ySize", "struct_a_p_i___texture.html#a518c8064708eb8ada8f781f3b69d5915", null ]
 ];

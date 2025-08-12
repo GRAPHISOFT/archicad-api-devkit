@@ -1,12 +1,14 @@
 var struct_a_p_i___line_type =
 [
-    [ "arrowData", "struct_a_p_i___line_type.html#a0871eeb3745123e1158ccb686bfaa040", null ],
-    [ "begC", "struct_a_p_i___line_type.html#a132c2d3fd0d7d39fe78761016b9673e5", null ],
-    [ "determination", "struct_a_p_i___line_type.html#a8e8f9c96422011f3785f521fd7da3ff8", null ],
-    [ "endC", "struct_a_p_i___line_type.html#ae92cfae9fe04280bfba3126e1d1ad3b9", null ],
-    [ "head", "struct_a_p_i___line_type.html#a387ba0244eaa861fd886627691da7cf2", null ],
-    [ "linePen", "struct_a_p_i___line_type.html#ad4e30ddb04ea65e1d3b0dad83bd4f219", null ],
-    [ "ltypeInd", "struct_a_p_i___line_type.html#ad425f915cac0c473077d13cf13391c29", null ],
-    [ "penWeight", "struct_a_p_i___line_type.html#a3c4121c00f531e07fa947e7e3361c15a", null ],
-    [ "roomSeparator", "struct_a_p_i___line_type.html#a88683fec64cd811a8fe7ec8ea355449b", null ]
+    [ "begC", "struct_a_p_i___line_type.html#aeec4448f198982dcf3cbe95715b7c166", null ],
+    [ "determination", "struct_a_p_i___line_type.html#af67c8aecb836d08320245ef665950a13", null ],
+    [ "endArrowData", "struct_a_p_i___line_type.html#a5f0fe8fc794795a5d4ca2aa2d73873fd", null ],
+    [ "endC", "struct_a_p_i___line_type.html#aa83a70d8ffde7e7c544840c3bb141d78", null ],
+    [ "head", "struct_a_p_i___line_type.html#a1caaf0cd70add367f99df03985970d52", null ],
+    [ "linePen", "struct_a_p_i___line_type.html#a6c1200ba429b019e66910daff1e1fb16", null ],
+    [ "linkedArrowAttributes", "struct_a_p_i___line_type.html#a50c4726d6af611337550a688c9be599c", null ],
+    [ "ltypeInd", "struct_a_p_i___line_type.html#ad99f01a7523be41ff83deffb07e188bf", null ],
+    [ "penWeight", "struct_a_p_i___line_type.html#a9d16c6a1bc9e9bb6e7662d2d34b35234", null ],
+    [ "roomSeparator", "struct_a_p_i___line_type.html#a546da03c43ebc4aeda091527243a6930", null ],
+    [ "startArrowData", "struct_a_p_i___line_type.html#a6ad1827bf5c51f18bf49bb9536bb89fb", null ]
 ];

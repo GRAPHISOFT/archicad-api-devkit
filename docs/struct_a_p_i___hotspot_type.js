@@ -1,7 +1,7 @@
 var struct_a_p_i___hotspot_type =
 [
-    [ "head", "struct_a_p_i___hotspot_type.html#a35eb8aec865e46084c3476f61c6fa3ee", null ],
-    [ "height", "struct_a_p_i___hotspot_type.html#a7685c7992c2b3b53f49dce06273f6a30", null ],
-    [ "pen", "struct_a_p_i___hotspot_type.html#a8eb73785738e7963b561fd3cf7567bc2", null ],
-    [ "pos", "struct_a_p_i___hotspot_type.html#af7c13b9c0ab3de814563fc7f10c41b93", null ]
+    [ "head", "struct_a_p_i___hotspot_type.html#a6533e64f6984bc2fdce3ac1077d312d6", null ],
+    [ "height", "struct_a_p_i___hotspot_type.html#a43bf9b25b5611dea68b9c248646d99a5", null ],
+    [ "pen", "struct_a_p_i___hotspot_type.html#ad993dacf4c2711e5d0e724101f64c5aa", null ],
+    [ "pos", "struct_a_p_i___hotspot_type.html#aedf665be85c487b3fa97a1eaf9a6c732", null ]
 ];

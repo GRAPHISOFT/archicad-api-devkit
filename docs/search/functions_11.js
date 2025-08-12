@@ -1,10 +1,25 @@
 var searchData=
 [
-  ['then_0',['Then',['../class_a_c_a_p_i_1_1_result.html#a2179009879c1dffed261d61b47d59fae',1,'ACAPI::Result']]],
-  ['toint32_5fdeprecated_1',['ToInt32_Deprecated',['../class_a_p_i___attribute_index.html#a4a85e1ebbd9c2cd99c3bd48d746ff496',1,'API_AttributeIndex']]],
-  ['token_2',['Token',['../class_a_c_a_p_i_1_1_result.html#a336313c59c7bd21ff2d32ac0e91e14cd',1,'ACAPI::Result']]],
-  ['tounistring_3',['ToUniString',['../class_a_p_i___attribute_index.html#ae6b5ff3cb8bc866e38ed9ab5fa5449f3',1,'API_AttributeIndex']]],
-  ['tracker_4',['Tracker',['../group___tracker.html#ga17f6e6ff5d4c93ef0b50a882d6b7ba87',1,'Tracking::Tracker']]],
-  ['transitiondefault_5',['TransitionDefault',['../class_a_c_a_p_i_1_1_m_e_p_1_1v2_1_1_transition_default.html#a095e3232180f1412704fad661e176477',1,'ACAPI::MEP::v2::TransitionDefault::TransitionDefault()'],['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_transition_default.html#a9512c5befaeac75ff4e3bf04f4da6169',1,'ACAPI::MEP::v1::TransitionDefault::TransitionDefault()']]],
-  ['traversetree_6',['TraverseTree',['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_system.html#a2210814b1953fc55637a680225e20899',1,'ACAPI::MEP::v1::DistributionSystem::TraverseTree()'],['../class_a_c_a_p_i_1_1_m_e_p_1_1v1_1_1_distribution_systems_graph.html#ae8860b669ca9bc65a845cc7e194122c1',1,'ACAPI::MEP::v1::DistributionSystemsGraph::TraverseTree()']]]
+  ['uniqueid_0',['UniqueID',['../class_a_c_a_p_i_1_1_unique_i_d.html#add4b799648924f8a695f5516d2ab7fb8',1,'ACAPI::UniqueID::UniqueID(const GS::Guid &amp;, const API_Token &amp;)'],['../class_a_c_a_p_i_1_1_unique_i_d.html#a694921069dd944965f34c39f481f2441',1,'ACAPI::UniqueID::UniqueID(const API_Guid &amp;guid, const API_Token &amp;token)'],['../group___m_e_p.html#ga03f95527feae84d8197fbc28ebb7a19c',1,'ACAPI::MEP::Adapter::UniqueID::UniqueID(const GS::Guid &amp;guid)'],['../group___m_e_p.html#ga6517a6774a88a806a41044227edd83cd',1,'ACAPI::MEP::Adapter::UniqueID::UniqueID(const API_Guid &amp;guid)'],['../group___m_e_p.html#ga9ee57b54f3906f4cbdaa66f33f312fbd',1,'ACAPI::MEP::UniqueID::UniqueID()']]],
+  ['unregisterallproperties_1',['UnregisterAllProperties',['../group___a_p_i_infrastructure.html#ga2979a6ae7882d225aa83aeafb54dcd48',1,'ACAPI::v1::PropertyOperationManager']]],
+  ['unregisterassignmentshook_2',['UnregisterAssignmentsHook',['../group___i_f_c.html#ga4b7797e9dbbe1c7f0a63699e032c5ab7',1,'IFCAPI::HookManager']]],
+  ['unregisterattributehook_3',['UnregisterAttributeHook',['../group___i_f_c.html#ga622879cbdcfebd225172f25004a9995c',1,'IFCAPI::HookManager']]],
+  ['unregisterclassificationreferencehook_4',['UnregisterClassificationReferenceHook',['../group___i_f_c.html#ga65ca5026dd6391283fece430e25a819f',1,'IFCAPI::HookManager']]],
+  ['unregisterfactory_5',['UnregisterFactory',['../group___a_p_i_infrastructure.html#ga671f44a179de25c4c97b5f9ea8cc2621',1,'ACAPI::Impl::FactoryRegistry']]],
+  ['unregisterpropertyhook_6',['UnregisterPropertyHook',['../group___i_f_c.html#ga58fd07baf263f66d0ff87caa326a6477',1,'IFCAPI::HookManager']]],
+  ['unregistertypeobjectattributehook_7',['UnregisterTypeObjectAttributeHook',['../group___i_f_c.html#ga8e42e070f78980b98c6aecdd33bf5926',1,'IFCAPI::HookManager']]],
+  ['unregistertypeobjectclassificationreferencehook_8',['UnregisterTypeObjectClassificationReferenceHook',['../group___i_f_c.html#ga11e268f85c56c642883019e9437d0bb5',1,'IFCAPI::HookManager']]],
+  ['unregistertypeobjectpropertyhook_9',['UnregisterTypeObjectPropertyHook',['../group___i_f_c.html#gae2cceeba1f8db6746d9dcfe8b29d4ec3',1,'IFCAPI::HookManager']]],
+  ['unwrap_10',['Unwrap',['../class_a_c_a_p_i_1_1_result.html#a3ab9cb4a2ae3f4c0c18fb54344c012f5',1,'ACAPI::Result::Unwrap() &amp;&amp;'],['../class_a_c_a_p_i_1_1_result.html#a937618e8a2728417b933ed0047a94265',1,'ACAPI::Result::Unwrap() const &amp;'],['../class_a_c_a_p_i_1_1_result.html#a25376bbf1bbc93a040a2ae5dac6c1f19',1,'ACAPI::Result::Unwrap() &amp;']]],
+  ['unwraperr_11',['UnwrapErr',['../class_a_c_a_p_i_1_1_result.html#a750f5fba77e0d18fc6b194a11c98244c',1,'ACAPI::Result']]],
+  ['unwrapor_12',['UnwrapOr',['../class_a_c_a_p_i_1_1_result.html#a082c78a2b300b049201d4de5373dcbd6',1,'ACAPI::Result']]],
+  ['update_13',['Update',['../class_a_c_a_p_i_1_1_zone_boundary_query_1_1_modifier.html#a6c17604b3c0d13fdd3d895c665114a95',1,'ACAPI::ZoneBoundaryQuery::Modifier']]],
+  ['usecoverfillsofcutelementsoff_14',['UseCoverFillsOfCutElementsOff',['../class_a_c_a_p_i_1_1_element_1_1_modifiable_opening_floor_plan_parameters.html#afc2417a72cd43769b2bc05df6bc27004',1,'ACAPI::Element::ModifiableOpeningFloorPlanParameters']]],
+  ['usecoverfillsofcutelementson_15',['UseCoverFillsOfCutElementsOn',['../class_a_c_a_p_i_1_1_element_1_1_modifiable_opening_floor_plan_parameters.html#a0d445c85733462dab00cc3ed447a2941',1,'ACAPI::Element::ModifiableOpeningFloorPlanParameters']]],
+  ['usecoverfillsoff_16',['UseCoverFillsOff',['../class_a_c_a_p_i_1_1_element_1_1_modifiable_opening_floor_plan_parameters.html#a3cee26902f6cfa4db2dbd7e59b5157d0',1,'ACAPI::Element::ModifiableOpeningFloorPlanParameters']]],
+  ['usecoverfillson_17',['UseCoverFillsOn',['../class_a_c_a_p_i_1_1_element_1_1_modifiable_opening_floor_plan_parameters.html#a9656ffb90e16b080081258ad6de0ee84',1,'ACAPI::Element::ModifiableOpeningFloorPlanParameters']]],
+  ['usecutsurfaceslineofcutelementsoff_18',['UseCutSurfacesLineOfCutElementsOff',['../class_a_c_a_p_i_1_1_element_1_1_modifiable_opening_floor_plan_parameters.html#a10f7ce3690c73109421b847f203518bd',1,'ACAPI::Element::ModifiableOpeningFloorPlanParameters']]],
+  ['usecutsurfaceslineofcutelementson_19',['UseCutSurfacesLineOfCutElementsOn',['../class_a_c_a_p_i_1_1_element_1_1_modifiable_opening_floor_plan_parameters.html#a7df3e6aface47bb0e23d2497bd91364e',1,'ACAPI::Element::ModifiableOpeningFloorPlanParameters']]],
+  ['useoutlineslineofcutelementsoff_20',['UseOutlinesLineOfCutElementsOff',['../class_a_c_a_p_i_1_1_element_1_1_modifiable_opening_floor_plan_parameters.html#ab9de5a688d8ad42ce21d050ce6f44c66',1,'ACAPI::Element::ModifiableOpeningFloorPlanParameters']]],
+  ['useoutlineslineofcutelementson_21',['UseOutlinesLineOfCutElementsOn',['../class_a_c_a_p_i_1_1_element_1_1_modifiable_opening_floor_plan_parameters.html#abfc4f0450a94a32be5f418da45664cfc',1,'ACAPI::Element::ModifiableOpeningFloorPlanParameters']]]
 ];

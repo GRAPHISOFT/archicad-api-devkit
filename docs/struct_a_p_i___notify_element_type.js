@@ -1,6 +1,6 @@
 var struct_a_p_i___notify_element_type =
 [
-    [ "databaseId", "struct_a_p_i___notify_element_type.html#af9165701116946c4a7dbb8a4c4e6ed88", null ],
-    [ "elemHead", "struct_a_p_i___notify_element_type.html#a39e96f703d05e74e3820681b2d41d1ef", null ],
-    [ "notifID", "struct_a_p_i___notify_element_type.html#a611498d9d24796c0306145d3ef37d591", null ]
+    [ "databaseId", "struct_a_p_i___notify_element_type.html#aefc2f1206eb6c3a77d8c69eabf8c6174", null ],
+    [ "elemHead", "struct_a_p_i___notify_element_type.html#a4f923612f83ac28f1ffb58a1a46ae44a", null ],
+    [ "notifID", "struct_a_p_i___notify_element_type.html#a09cced449ea23baeb44ac9fce9af9975", null ]
 ];

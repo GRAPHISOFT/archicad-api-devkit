@@ -1,35 +1,55 @@
 var group___hotlink =
 [
     [ "API_HotlinkUserData", "struct_a_p_i___hotlink_user_data.html", [
-      [ "data", "struct_a_p_i___hotlink_user_data.html#acf0d787ad38bce3eb57e465b338e1f6b", null ],
-      [ "dataVersion", "struct_a_p_i___hotlink_user_data.html#a3d164e156867273d1d27d701bc7a142a", null ],
-      [ "flags", "struct_a_p_i___hotlink_user_data.html#ae1301a38a7ca0a2075e018c006732f8d", null ],
-      [ "platformSign", "struct_a_p_i___hotlink_user_data.html#a78b3a1bcb50dc34fd517f60c0dca8eeb", null ],
-      [ "translatorContent", "struct_a_p_i___hotlink_user_data.html#a64431185765604c63a539f23b639ea93", null ]
+      [ "data", "struct_a_p_i___hotlink_user_data.html#a9e03f3c31d8a8f0e6bcb1c30bea78286", null ],
+      [ "dataVersion", "struct_a_p_i___hotlink_user_data.html#aa638fa279513775062c0510d81d83f8c", null ],
+      [ "flags", "struct_a_p_i___hotlink_user_data.html#a9903517218b8926ee9744f34fa7a3da5", null ],
+      [ "platformSign", "struct_a_p_i___hotlink_user_data.html#aa22f68175b9cd5f8647ce0e23d9fe52f", null ],
+      [ "translatorContent", "struct_a_p_i___hotlink_user_data.html#a33550c33fcfe7ac18267da5593a0158b", null ]
     ] ],
     [ "API_HotlinkNode", "struct_a_p_i___hotlink_node.html", [
       [ "~API_HotlinkNode", "struct_a_p_i___hotlink_node.html#ac4e1b221e1879c3839d01c75d9aa420e", null ],
-      [ "fileSize", "struct_a_p_i___hotlink_node.html#a63a85278ecbe0df5aef97e1beab965b6", null ],
-      [ "guid", "struct_a_p_i___hotlink_node.html#a44626776f8fadf272f1179048f390057", null ],
-      [ "name", "struct_a_p_i___hotlink_node.html#a82098465c04e2f3abf31cb1895f194f9", null ],
-      [ "ownerId", "struct_a_p_i___hotlink_node.html#a41defe5b7de97a75750ff78d01a3a6e2", null ],
-      [ "refFloorInd", "struct_a_p_i___hotlink_node.html#ad36c4fc835990d2bcb414f93d7810f5a", null ],
-      [ "refFloorName", "struct_a_p_i___hotlink_node.html#abcece68a6935999046948b5df59f01b9", null ],
-      [ "serverSourceLocation", "struct_a_p_i___hotlink_node.html#a564ce632e6a2aa129753914bedb66807", null ],
-      [ "sourceLocation", "struct_a_p_i___hotlink_node.html#ae74d36d82802dd1b27224c4897549400", null ],
-      [ "sourceType", "struct_a_p_i___hotlink_node.html#aa90e40ac262d9ab6d714dade8544fca3", null ],
-      [ "storyInfo", "struct_a_p_i___hotlink_node.html#a803180ec8c871b9b2dda9ebd044d13cb", null ],
-      [ "storyRangeType", "struct_a_p_i___hotlink_node.html#aaa7129a7d653c5f920ffff036f3da52e", null ],
-      [ "type", "struct_a_p_i___hotlink_node.html#ad10ad6f55308f0bdb2757ed7fb89fe6b", null ],
-      [ "updateTime", "struct_a_p_i___hotlink_node.html#a8702e21bcd50dd5ade6c24a374a4456d", null ],
-      [ "userData", "struct_a_p_i___hotlink_node.html#a363efbc1e15bd5f6d57f6527a6342228", null ],
-      [ "versionNumber", "struct_a_p_i___hotlink_node.html#ab5c7a6a058df0fa2d546f4db8f1eae27", null ]
+      [ "fileSize", "struct_a_p_i___hotlink_node.html#ade98a48b6686f3c1cb0977919dae435d", null ],
+      [ "guid", "struct_a_p_i___hotlink_node.html#ada77f2af784648d8408722aaafb5bbc0", null ],
+      [ "name", "struct_a_p_i___hotlink_node.html#af9059f95b5e3b378eb7b873d7a7d5581", null ],
+      [ "ownerId", "struct_a_p_i___hotlink_node.html#aa7dc44c132e4e2dedc0a97f075180a6d", null ],
+      [ "refFloorInd", "struct_a_p_i___hotlink_node.html#afc18e1dccfe24f127f1906b7f3edf86b", null ],
+      [ "refFloorName", "struct_a_p_i___hotlink_node.html#a4d02c69276c96cfac1eaa40da8b3b1da", null ],
+      [ "serverSourceLocation", "struct_a_p_i___hotlink_node.html#a7b723abb7147d06708c861abe2cb074a", null ],
+      [ "sourceLocation", "struct_a_p_i___hotlink_node.html#aca43b393613b3ed974b69f7a0633c39c", null ],
+      [ "sourceType", "struct_a_p_i___hotlink_node.html#aaee83818c3491f3d534cd86a8815b467", null ],
+      [ "storyInfo", "struct_a_p_i___hotlink_node.html#aff694b1ef16bc17be8d89821aaf0899c", null ],
+      [ "storyRangeType", "struct_a_p_i___hotlink_node.html#ae0c8f3c123d077dbd854195e7c01df1b", null ],
+      [ "type", "struct_a_p_i___hotlink_node.html#a9754745da183776d9a1244b34da55527", null ],
+      [ "updateTime", "struct_a_p_i___hotlink_node.html#a28442260fb13adf7038be7dda3ed7775", null ],
+      [ "userData", "struct_a_p_i___hotlink_node.html#abdce060689723efeabd785caceb530f0", null ],
+      [ "versionNumber", "struct_a_p_i___hotlink_node.html#a4e7a878df79aa92370d27cbe3adb011c", null ]
     ] ],
     [ "API_HotlinkCacheGenerator", "class_a_p_i___hotlink_cache_generator.html", [
       [ "GenerateCacheContentForHotlinkNode", "class_a_p_i___hotlink_cache_generator.html#a24613e61a42bd5dac0af426d271751b6", null ]
     ] ],
-    [ "API_HotlinkStoryRangeID", "group___hotlink.html#gaf3352d8bbb4f1fbafbc80cdafce50e38", null ],
-    [ "API_HotlinkTypeID", "group___hotlink.html#ga64c936d7011d0be8ebb81acf7d91fc22", null ],
+    [ "API_HotlinkSourceStatus", "group___hotlink.html#ga78292c85b632552768ea60629b383180", [
+      [ "API_HotlinkSource_AuthCanceld", "group___hotlink.html#gga78292c85b632552768ea60629b383180a6f5b77d702744f59d46e321383be05c6", null ],
+      [ "API_HotlinkSource_SourceMissing", "group___hotlink.html#gga78292c85b632552768ea60629b383180a74b71a387a341c5aeb29c80a5a61116b", null ],
+      [ "API_HotlinkSource_SourceAvailable", "group___hotlink.html#gga78292c85b632552768ea60629b383180a860be517e1d237c28b812988f05321e9", null ],
+      [ "API_HotlinkSource_SourceNotAccessible", "group___hotlink.html#gga78292c85b632552768ea60629b383180aff27f21e3695f7cc15eb9f439a422201", null ],
+      [ "API_HotlinkSource_SourceIncompatible", "group___hotlink.html#gga78292c85b632552768ea60629b383180a3e242b57ca52a0450d3d9ce06a9b68d0", null ],
+      [ "API_HotlinkSource_SourceOffline", "group___hotlink.html#gga78292c85b632552768ea60629b383180a842d61ad9dda0dfde1e6d170c4d28f9a", null ]
+    ] ],
+    [ "API_HotlinkSourceTypeID", "group___hotlink.html#gaad8115b6bcdd369ce4b7a58b6848a6b3", [
+      [ "APIHotlink_LocalFile", "group___hotlink.html#ggaad8115b6bcdd369ce4b7a58b6848a6b3a288e57ba01a615e05e2508f44bfcf42e", null ],
+      [ "APIHotlink_TWFS", "group___hotlink.html#ggaad8115b6bcdd369ce4b7a58b6848a6b3ae5cf3d48150776941575f4c17a88ee25", null ],
+      [ "APIHotlink_TWProject", "group___hotlink.html#ggaad8115b6bcdd369ce4b7a58b6848a6b3aef000d3ec7b467fd7928bf71c157a7b1", null ]
+    ] ],
+    [ "API_HotlinkStoryRangeID", "group___hotlink.html#gaf3352d8bbb4f1fbafbc80cdafce50e38", [
+      [ "APIHotlink_SingleStory", "group___hotlink.html#ggaf3352d8bbb4f1fbafbc80cdafce50e38ac79985e1e3197e47fe6122b317c79196", null ],
+      [ "APIHotlink_AllStories", "group___hotlink.html#ggaf3352d8bbb4f1fbafbc80cdafce50e38a5b46d95b35c8a19cedb72b84235854b4", null ]
+    ] ],
+    [ "API_HotlinkTypeID", "group___hotlink.html#ga64c936d7011d0be8ebb81acf7d91fc22", [
+      [ "APIHotlink_Unknown", "group___hotlink.html#gga64c936d7011d0be8ebb81acf7d91fc22a2451329ecff1bd60d578391677fa8cdb", null ],
+      [ "APIHotlink_Module", "group___hotlink.html#gga64c936d7011d0be8ebb81acf7d91fc22a36f801a6d00c0a667e1d6ca0dd973579", null ],
+      [ "APIHotlink_XRef", "group___hotlink.html#gga64c936d7011d0be8ebb81acf7d91fc22ae0f60a6f33478f5966c855d8a31c906a", null ]
+    ] ],
     [ "ACAPI_Hotlink_BreakHotlinkNode", "group___hotlink.html#gae75535eab3dd17518ddf910247c7cba5", null ],
     [ "ACAPI_Hotlink_CreateHotlinkNode", "group___hotlink.html#ga86bf12629801169f8a0502b24bc0dc47", null ],
     [ "ACAPI_Hotlink_DeleteHotlinkNode", "group___hotlink.html#ga618fd73f9e5d27d23ceb8ffaa30f16a8", null ],

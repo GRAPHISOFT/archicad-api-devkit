@@ -1,12 +1,12 @@
 var struct_a_p_i___room_reduction_poly_type =
 [
-    [ "arcs", "struct_a_p_i___room_reduction_poly_type.html#a9815818197c26ae34b38afc362c187e8", null ],
-    [ "area", "struct_a_p_i___room_reduction_poly_type.html#ab7d0896c9feb080d48ba3e640a9e4e1f", null ],
-    [ "coords", "struct_a_p_i___room_reduction_poly_type.html#abb5834a4f6046ca01544d794a111a950", null ],
-    [ "nArcs", "struct_a_p_i___room_reduction_poly_type.html#a580d77ce5198d28b45df1ec7b11b36a1", null ],
-    [ "nCoords", "struct_a_p_i___room_reduction_poly_type.html#ae3b08642c4eb822b8758db081253b8c5", null ],
-    [ "nSubPolys", "struct_a_p_i___room_reduction_poly_type.html#a251ed32e116f5fcb88977ad0227f9668", null ],
-    [ "percent", "struct_a_p_i___room_reduction_poly_type.html#a32a28b0b7461bef6c4453242b470859e", null ],
-    [ "subPolys", "struct_a_p_i___room_reduction_poly_type.html#a2670a2c3821d19deff639fa42764724d", null ],
-    [ "type", "struct_a_p_i___room_reduction_poly_type.html#a7aee829c57d10d3c748db51348b57f4d", null ]
+    [ "arcs", "struct_a_p_i___room_reduction_poly_type.html#a699345763ef21f32480cf686551576be", null ],
+    [ "area", "struct_a_p_i___room_reduction_poly_type.html#adc5a7a7fefe306311e7d0a74530be2a4", null ],
+    [ "coords", "struct_a_p_i___room_reduction_poly_type.html#ab7b1309770a91357f106c4f769cba2cd", null ],
+    [ "nArcs", "struct_a_p_i___room_reduction_poly_type.html#af810d83fef7d74bc13e46ddcaa977909", null ],
+    [ "nCoords", "struct_a_p_i___room_reduction_poly_type.html#a048ecccd3288b016fe3044a5c50fd1f2", null ],
+    [ "nSubPolys", "struct_a_p_i___room_reduction_poly_type.html#a6bcf37c2d1a4ebf9daef537f30537a6b", null ],
+    [ "percent", "struct_a_p_i___room_reduction_poly_type.html#aa43195ee59b4dccfe5a134b86fb1bac8", null ],
+    [ "subPolys", "struct_a_p_i___room_reduction_poly_type.html#a45cdbe421707c1e87a9942a3776fc89f", null ],
+    [ "type", "struct_a_p_i___room_reduction_poly_type.html#aaec0705c4d4503e61ef4258e1315a3ae", null ]
 ];

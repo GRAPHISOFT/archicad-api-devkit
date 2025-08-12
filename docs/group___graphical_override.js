@@ -1,49 +1,49 @@
 var group___graphical_override =
 [
     [ "API_OverrideCombination", "struct_a_p_i___override_combination.html", [
-      [ "guid", "struct_a_p_i___override_combination.html#ab3898ce2e89e4bee31bae141ec936937", null ],
-      [ "name", "struct_a_p_i___override_combination.html#a4e6f7ccd27d1851d9438175fffcc7ebc", null ]
+      [ "guid", "struct_a_p_i___override_combination.html#a016e169a9368847e39abe0f49c1164e3", null ],
+      [ "name", "struct_a_p_i___override_combination.html#a52f0962a1c864534a9fdfec87578ef32", null ]
     ] ],
     [ "API_OverrideRuleGroup", "struct_a_p_i___override_rule_group.html", [
-      [ "guid", "struct_a_p_i___override_rule_group.html#a40fe5d8235dfe84eeab78e667cd64e82", null ],
-      [ "name", "struct_a_p_i___override_rule_group.html#ad04fce83350644f3d99bf24f6eaf4347", null ]
+      [ "guid", "struct_a_p_i___override_rule_group.html#accb3a21352c07be2511e47cbbe5714c4", null ],
+      [ "name", "struct_a_p_i___override_rule_group.html#a7dc7a3e422794f233e4263f6965cd77c", null ]
     ] ],
     [ "API_OverriddenFillType", "struct_a_p_i___overridden_fill_type.html", [
-      [ "overrideCoverFill", "struct_a_p_i___overridden_fill_type.html#a51dde4a8f3ffedcd4d5d048759323689", null ],
-      [ "overrideCutFill", "struct_a_p_i___overridden_fill_type.html#a4976a49578be37c05a4940aaa8e3ed38", null ],
-      [ "overrideDraftingFill", "struct_a_p_i___overridden_fill_type.html#afaf3ec8ec4fda33e9b16daa22b50aaa9", null ]
+      [ "overrideCoverFill", "struct_a_p_i___overridden_fill_type.html#a291614da3ecd924e29a397a43452bac9", null ],
+      [ "overrideCutFill", "struct_a_p_i___overridden_fill_type.html#aacc4b4a24fe81fd7546e6d0313586f59", null ],
+      [ "overrideDraftingFill", "struct_a_p_i___overridden_fill_type.html#a9dfd0aff90dad2bf2cd2725a0c6e29a0", null ]
     ] ],
     [ "API_OverriddenSurfaceType", "struct_a_p_i___overridden_surface_type.html", [
-      [ "overrideCutSurface", "struct_a_p_i___overridden_surface_type.html#ab4693bec7fbcde56497a585a0ce16b7b", null ],
-      [ "overrideUncutSurface", "struct_a_p_i___overridden_surface_type.html#a9070f5ad35c67d6849340bf4eaf283a5", null ]
+      [ "overrideCutSurface", "struct_a_p_i___overridden_surface_type.html#ac74e11221522c6bd211eaf1f011960e1", null ],
+      [ "overrideUncutSurface", "struct_a_p_i___overridden_surface_type.html#a8695483d16f86846717be5f9b5470e04", null ]
     ] ],
     [ "API_OverrideRuleStyle", "struct_a_p_i___override_rule_style.html", [
-      [ "fillBackgroundPenOverride", "struct_a_p_i___override_rule_style.html#a15a1d896fe68f59c062ca1b085fab195", null ],
-      [ "fillForegroundPenOverride", "struct_a_p_i___override_rule_style.html#a067c5bddf0fbb09625cca5fd2cd55ea9", null ],
-      [ "fillOverride", "struct_a_p_i___override_rule_style.html#a4348e3e38121ce9b762ef00f7a7bfa35", null ],
-      [ "fillType", "struct_a_p_i___override_rule_style.html#ade8e25826a5c9b3e37aef3524c161acc", null ],
-      [ "fillTypeBackgroundPen", "struct_a_p_i___override_rule_style.html#aaa2bfe80e4401c87ecae67d97dd63e66", null ],
-      [ "fillTypeForegroundPen", "struct_a_p_i___override_rule_style.html#a7ffefff070309ab5d184ca225ffc7bf2", null ],
-      [ "hiddenContours", "struct_a_p_i___override_rule_style.html#ab872da07a8d8efbe0b42d87c0303bf86", null ],
-      [ "lineMarkerTextPen", "struct_a_p_i___override_rule_style.html#add9d88950885b6e9ddabf375ec8fbf34", null ],
-      [ "lineType", "struct_a_p_i___override_rule_style.html#a38fee5c629b326a029b4f8e121ae1952", null ],
-      [ "overrideContours", "struct_a_p_i___override_rule_style.html#aaa832af675873843d696f95968c9d474", null ],
-      [ "overridePenColorAndThickness", "struct_a_p_i___override_rule_style.html#a46a43ad76dd1f1a7f38d09eb25f35508", null ],
-      [ "showSkinSeparators", "struct_a_p_i___override_rule_style.html#aa2b7a7e0d4b22c9487be751a1bd495bb", null ],
-      [ "surfaceOverride", "struct_a_p_i___override_rule_style.html#a567b1bedc8378285cff6da84ed01bd73", null ],
-      [ "surfaceType", "struct_a_p_i___override_rule_style.html#a855d53a3b4a666c558588ef31d1456fa", null ]
+      [ "fillBackgroundPenOverride", "struct_a_p_i___override_rule_style.html#a63791114785c17dd7fa431f31ef55b4e", null ],
+      [ "fillForegroundPenOverride", "struct_a_p_i___override_rule_style.html#ab9654bbfcc591d7a3b15133a2b835129", null ],
+      [ "fillOverride", "struct_a_p_i___override_rule_style.html#ac6135c0b03906107ec736bdecaec584f", null ],
+      [ "fillType", "struct_a_p_i___override_rule_style.html#a21d54a04a092b56132e6d8f80fd1e540", null ],
+      [ "fillTypeBackgroundPen", "struct_a_p_i___override_rule_style.html#a49ae004cf0fbe46848d1f77b07412350", null ],
+      [ "fillTypeForegroundPen", "struct_a_p_i___override_rule_style.html#a79a35104c0853bcac4803a42be3b74da", null ],
+      [ "hiddenContours", "struct_a_p_i___override_rule_style.html#ae6b75bc501a9f292674650a0b71d5ae5", null ],
+      [ "lineMarkerTextPen", "struct_a_p_i___override_rule_style.html#abec14e7bcc83ddb539d8bb0487f801ca", null ],
+      [ "lineType", "struct_a_p_i___override_rule_style.html#a1a82bad8c3f8fa76159ca56295f8f26b", null ],
+      [ "overrideContours", "struct_a_p_i___override_rule_style.html#a720f829b8874ffd80df1f56d7408a250", null ],
+      [ "overridePenColorAndThickness", "struct_a_p_i___override_rule_style.html#a9f3fc3ecb3f3ab0568fafef7e1421cdf", null ],
+      [ "showSkinSeparators", "struct_a_p_i___override_rule_style.html#a7e27d56ae50b4dcc053e2925406b0fbb", null ],
+      [ "surfaceOverride", "struct_a_p_i___override_rule_style.html#abd2a61b6777002e65a42510497dd3817", null ],
+      [ "surfaceType", "struct_a_p_i___override_rule_style.html#a1a3cfa5058f707e98c37747f614bdeeb", null ]
     ] ],
     [ "API_OverrideRule", "struct_a_p_i___override_rule.html", [
-      [ "criterionXML", "struct_a_p_i___override_rule.html#a00990c2078be6d9211bb48a378665f69", null ],
-      [ "guid", "struct_a_p_i___override_rule.html#a256a1a01c3c12e06f39b63a7ec1c7cec", null ],
-      [ "name", "struct_a_p_i___override_rule.html#af2b9ac2a40b7c49714107f39ba2a5e6e", null ],
-      [ "style", "struct_a_p_i___override_rule.html#aa5acae6a54fefe78bf9fb93b2ce7ebf7", null ]
+      [ "criterionXML", "struct_a_p_i___override_rule.html#a4091836c800c61491630d1d5f90a71a0", null ],
+      [ "guid", "struct_a_p_i___override_rule.html#a9fd5b5f94c19802273c8d02b7e10ef6d", null ],
+      [ "name", "struct_a_p_i___override_rule.html#a7dd271b58696a4368797d1f52ce15f24", null ],
+      [ "style", "struct_a_p_i___override_rule.html#ae53cace36bf7d1ad9ae586b763153ef3", null ]
     ] ],
     [ "API_VisualOverriddenImage", "struct_a_p_i___visual_overridden_image.html", [
-      [ "nativeImagePtr", "struct_a_p_i___visual_overridden_image.html#ad7add3602bccad43a02108b08f7007ff", null ],
-      [ "overrideStyle", "struct_a_p_i___visual_overridden_image.html#a0fe12ccaba7ae0e90f5b6fa51e8083e3", null ],
-      [ "vectorImageHandle", "struct_a_p_i___visual_overridden_image.html#ac2941f16445e0dfe8096f6bcfffd6594", null ],
-      [ "view", "struct_a_p_i___visual_overridden_image.html#ab56c10a745b31286f678e4cffd56ff73", null ]
+      [ "nativeImagePtr", "struct_a_p_i___visual_overridden_image.html#a1370606f1492389bbc9639fa1d48b867", null ],
+      [ "overrideStyle", "struct_a_p_i___visual_overridden_image.html#a4bd64f8aac92e5dda9572c0cc689b067", null ],
+      [ "vectorImageHandle", "struct_a_p_i___visual_overridden_image.html#ac4105b17dd3da4ce97248296ad76b145", null ],
+      [ "view", "struct_a_p_i___visual_overridden_image.html#a4c40937f1a727fef5492a5dc3c0fd2af", null ]
     ] ],
     [ "ACAPI_GraphicalOverride_ChangeOverrideCombination", "group___graphical_override.html#gacf423f6dd19915bb19d285408ad9d7ff", null ],
     [ "ACAPI_GraphicalOverride_ChangeOverrideRule", "group___graphical_override.html#ga665792580f2a9f3fa36327b5e1e80d26", null ],

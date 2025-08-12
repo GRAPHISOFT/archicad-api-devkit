@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['roomreductionpolyproc_0',['RoomReductionPolyProc',['../group___element.html#ga6b3c6efa108c5fd10bf7148f4194cafd',1,'APIdefs_Callback.h']]],
-  ['rubberlineinfoproc_1',['RubberLineInfoProc',['../group___user_input.html#ga66f4984d1aa211f4dc6d5fd8de78e394',1,'APIdefs_Callback.h']]]
+  ['propertybytype_0',['PropertyByType',['../group___i_f_c.html#ga45ec0f80b5bc07d31be8a5f0da1082a3',1,'IFCAPI']]],
+  ['propertyhookfunction_1',['PropertyHookFunction',['../group___i_f_c.html#gaa1c39d547ecf5d60cd336d5548ebc402',1,'IFCAPI::HookManager']]]
 ];

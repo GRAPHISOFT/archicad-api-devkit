@@ -1,10 +1,10 @@
 var struct_a_p_i___room_image =
 [
-    [ "backgroundColor", "struct_a_p_i___room_image.html#ab7441a87cf9c642086e256bd3bb80d76", null ],
-    [ "filler", "struct_a_p_i___room_image.html#a7bc45aba95e266d9d7e5e02632bcce91", null ],
-    [ "nativeImagePtr", "struct_a_p_i___room_image.html#a68c6a414abc69a046e54eae826f7f330", null ],
-    [ "offset", "struct_a_p_i___room_image.html#a0498d3eea75fb31d4c4260f13a74fdbf", null ],
-    [ "roomGuid", "struct_a_p_i___room_image.html#a0b4354be1ebabf32ca0d8d86c5a0f80a", null ],
-    [ "scale", "struct_a_p_i___room_image.html#a3b09c87510948f2e654b88d0ea7db0d9", null ],
-    [ "viewType", "struct_a_p_i___room_image.html#a2da73ecc468efbb8a0040b61ccad5ccd", null ]
+    [ "backgroundColor", "struct_a_p_i___room_image.html#a73720e8f0594796dc63bf901ff75b35b", null ],
+    [ "filler", "struct_a_p_i___room_image.html#ab7aa829d02b928ed36dc7697e3e2e2d8", null ],
+    [ "nativeImagePtr", "struct_a_p_i___room_image.html#ac60b503f47cf3b0168372d71cfe3ccf5", null ],
+    [ "offset", "struct_a_p_i___room_image.html#ab3c6312fe98ad86b54bdc12890d3c299", null ],
+    [ "roomGuid", "struct_a_p_i___room_image.html#a812b59e0116cae119757355285670822", null ],
+    [ "scale", "struct_a_p_i___room_image.html#a09510ddf4b628bfa0cdc0cdbb7df6108", null ],
+    [ "viewType", "struct_a_p_i___room_image.html#ae826bcf8e599886f3dda9381a6ddb3c8", null ]
 ];

@@ -1,7 +1,7 @@
 var struct_a_p_i___text_frame_type =
 [
-    [ "fixedHeight", "struct_a_p_i___text_frame_type.html#a12f23f19d1191372c724366bc762beb1", null ],
-    [ "fixedWidth", "struct_a_p_i___text_frame_type.html#a5b1a6e6936a3d68ff9fe821fab69042f", null ],
-    [ "isSizeFixed", "struct_a_p_i___text_frame_type.html#aec36e7df4a1d6250e7ece4761b905e88", null ],
-    [ "shapeType", "struct_a_p_i___text_frame_type.html#a248a7e9af095db5b7fc56a7856319de8", null ]
+    [ "fixedHeight", "struct_a_p_i___text_frame_type.html#ae61f0f9984ee76985a7a63e70bedc826", null ],
+    [ "fixedWidth", "struct_a_p_i___text_frame_type.html#a1f51c96b5918283609578ef7117c1e4c", null ],
+    [ "isSizeFixed", "struct_a_p_i___text_frame_type.html#ab5db936c864b15320b43e9619e27cf66", null ],
+    [ "shapeType", "struct_a_p_i___text_frame_type.html#a0e99e42212fc923de9b2eecd055560b8", null ]
 ];

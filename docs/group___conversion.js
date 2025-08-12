@@ -1,23 +1,23 @@
 var group___conversion =
 [
     [ "API_UnitConversionData", "struct_a_p_i___unit_conversion_data.html", [
-      [ "convertedValue", "struct_a_p_i___unit_conversion_data.html#ab6fcc7c05ebbb532e157bf0880e3bb43", null ],
-      [ "extraAccuracy", "struct_a_p_i___unit_conversion_data.html#a323d9920f2cf1b69f9915f83a1aca6b5", null ],
-      [ "unit", "struct_a_p_i___unit_conversion_data.html#a74fa0f13dc71ad2a584b4aae1e4ab7bd", null ],
-      [ "unitConvPref", "struct_a_p_i___unit_conversion_data.html#aa48ebc4024fa7b3e20e81d66d3e4ec74", null ],
-      [ "value", "struct_a_p_i___unit_conversion_data.html#a40b5c6137bfeb30e7e00e425cd058812", null ]
+      [ "convertedValue", "struct_a_p_i___unit_conversion_data.html#af6476090634dcca20f7f86dcd648ce09", null ],
+      [ "extraAccuracy", "struct_a_p_i___unit_conversion_data.html#adc45c9f8f9370811d17ed173a7cd99dc", null ],
+      [ "unit", "struct_a_p_i___unit_conversion_data.html#abe91ecaf012ba35a0b452b110e71e9f6", null ],
+      [ "unitConvPref", "struct_a_p_i___unit_conversion_data.html#a6c494ce775938b17bed603575f9d4bb9", null ],
+      [ "value", "struct_a_p_i___unit_conversion_data.html#afa09db95ff8206709527ca5e0d99f1a0", null ]
     ] ],
     [ "API_PictureHandle", "struct_a_p_i___picture_handle.html", [
-      [ "pictHdl", "struct_a_p_i___picture_handle.html#abcaa196bb5a4433418162f6e73861138", null ],
-      [ "storageFormat", "struct_a_p_i___picture_handle.html#abff587cbe38148e401fe5a28d5d630a5", null ]
+      [ "pictHdl", "struct_a_p_i___picture_handle.html#ab34add7db2dec708db967e180f8f0bbe", null ],
+      [ "storageFormat", "struct_a_p_i___picture_handle.html#a6b1f7c4204a010c03b50fc8bf3d249f6", null ]
     ] ],
     [ "API_MimePicture", "struct_a_p_i___mime_picture.html", [
-      [ "inContainsMime", "struct_a_p_i___mime_picture.html#a8173a410e7d046fedebeefda862177a8", null ],
-      [ "inputHdl", "struct_a_p_i___mime_picture.html#a12f2d7dd38ebe7f03d61f1557a8d1af2", null ],
-      [ "mimeIn", "struct_a_p_i___mime_picture.html#af4d9bfa19db5f438e58f678a7206e2be", null ],
-      [ "mimeOut", "struct_a_p_i___mime_picture.html#ac5684a545eb0ae00b4658f30a21706a5", null ],
-      [ "outDepth", "struct_a_p_i___mime_picture.html#ab80a3c77eafcc8c4026d772f1c73349b", null ],
-      [ "outputHdl", "struct_a_p_i___mime_picture.html#a563bed9794d27b92bd552f938e342f63", null ]
+      [ "inContainsMime", "struct_a_p_i___mime_picture.html#a3ad97c39f5f455ade377447e48ac158c", null ],
+      [ "inputHdl", "struct_a_p_i___mime_picture.html#a72a803ee703351d6b9f22195ad560e01", null ],
+      [ "mimeIn", "struct_a_p_i___mime_picture.html#af6112982c7b3b4909c23b65a42e48e04", null ],
+      [ "mimeOut", "struct_a_p_i___mime_picture.html#ab6490b242f2ba0fcff5c47b5dd11cb10", null ],
+      [ "outDepth", "struct_a_p_i___mime_picture.html#a88f3dc69ac0c6e028cec596f632d36bb", null ],
+      [ "outputHdl", "struct_a_p_i___mime_picture.html#a5bc27fb8c939463850edc5346ec66c97", null ]
     ] ],
     [ "API_UnitConversionPrefID", "group___conversion.html#gaa5b7c03c2f6f20f9f178cec6d42c01d7", null ],
     [ "ACAPI_Conversion_ConvertMimePicture", "group___conversion.html#ga8a5809884495a1000a4b06210bd942bc", null ],

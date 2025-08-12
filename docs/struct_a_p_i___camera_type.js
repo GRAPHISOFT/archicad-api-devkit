@@ -1,6 +1,6 @@
 var struct_a_p_i___camera_type =
 [
-    [ "camSetGuid", "struct_a_p_i___camera_type.html#a02777a1b551ed5e9535c5a3e69bb4683", null ],
-    [ "head", "struct_a_p_i___camera_type.html#a971a7537f8af72d75c5ba400045c4183", null ],
-    [ "perspCam", "struct_a_p_i___camera_type.html#a466b86d951a2b269ef33f3d784804cdd", null ]
+    [ "camSetGuid", "struct_a_p_i___camera_type.html#ace4672c5b446080298b03fd036f7c8cc", null ],
+    [ "head", "struct_a_p_i___camera_type.html#ad9f8da1d1c2bec6ac3f5c5f2f9718c0c", null ],
+    [ "perspCam", "struct_a_p_i___camera_type.html#ae898bdc989ae2d1ba499a4bebe394bd2", null ]
 ];

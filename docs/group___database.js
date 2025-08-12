@@ -1,27 +1,28 @@
 var group___database =
 [
     [ "API_Region", "struct_a_p_i___region.html", [
-      [ "box", "struct_a_p_i___region.html#a069ed1976a527312a6a153e9d91ce832", null ],
-      [ "boxRotAngle", "struct_a_p_i___region.html#aa42f87b987ff2205eca98699d0e581e8", null ],
-      [ "coords", "struct_a_p_i___region.html#a4d780db406fa492aab751033f9bdbde7", null ],
-      [ "nCoords", "struct_a_p_i___region.html#adc5fb2585d449845170dcbbf2cc56f12", null ]
+      [ "box", "struct_a_p_i___region.html#a58247be7d89860fa20da4b600eb8b309", null ],
+      [ "boxRotAngle", "struct_a_p_i___region.html#a15a4012a0fe8fa9972d9b18551c762bb", null ],
+      [ "coords", "struct_a_p_i___region.html#a5dd3c78b0e76f96071deeb9f477021d9", null ],
+      [ "nCoords", "struct_a_p_i___region.html#af406def3a6b367d27d076c3456d1c850", null ]
     ] ],
     [ "API_DatabaseUnId", "struct_a_p_i___database_un_id.html", [
-      [ "elemSetId", "struct_a_p_i___database_un_id.html#ad55036d004482f56d1aabbb73fdd211a", null ]
+      [ "elemSetId", "struct_a_p_i___database_un_id.html#aca906f331cf2b971992ac6a09aa00f4d", null ]
     ] ],
     [ "API_ClipTran", "struct_a_p_i___clip_tran.html", [
-      [ "angle", "struct_a_p_i___clip_tran.html#a3054e80e26d14ea340f33f9854c72e3d", null ],
-      [ "floor", "struct_a_p_i___clip_tran.html#a0602640b03817c25ca6ff5fe4e18bf56", null ],
-      [ "scale", "struct_a_p_i___clip_tran.html#adc5e353e1e1fdc6615ae3f3148b9ec29", null ],
-      [ "x0", "struct_a_p_i___clip_tran.html#adbe80fbb57a49603fc90b645aab7146e", null ],
-      [ "y0", "struct_a_p_i___clip_tran.html#af7cb94d2ee5bbc2c9f65480b6ee4963e", null ]
+      [ "angle", "struct_a_p_i___clip_tran.html#a4a5024ae0300920e4301d2d9777766e4", null ],
+      [ "floor", "struct_a_p_i___clip_tran.html#a85fae62f00202acc997935fb7c86e485", null ],
+      [ "scale", "struct_a_p_i___clip_tran.html#a14d260c72be5a71d2d7078272a41ffb9", null ],
+      [ "x0", "struct_a_p_i___clip_tran.html#a4581a71623d7da19f1e5c8add649a7b5", null ],
+      [ "y0", "struct_a_p_i___clip_tran.html#a51301c53555f39f7ee42e8ad6a71fd54", null ]
     ] ],
     [ "API_WindowValidatorInfo", "struct_a_p_i___window_validator_info.html", [
-      [ "checkSumList", "struct_a_p_i___window_validator_info.html#a60d278a16b991b9814d0f2ffe940ca05", null ],
-      [ "elemList", "struct_a_p_i___window_validator_info.html#a3971b3ac624549404629c2582a770638", null ],
-      [ "guid", "struct_a_p_i___window_validator_info.html#a38cf13ee40d0545baf460aff7d2e2074", null ]
+      [ "checkSumList", "struct_a_p_i___window_validator_info.html#a43a60aa40e29afe683eaef617e89df43", null ],
+      [ "elemList", "struct_a_p_i___window_validator_info.html#a9f059b302c17ede725df1706d0cefe68", null ],
+      [ "guid", "struct_a_p_i___window_validator_info.html#a47a0cf58184c8d5f6bab463803796c95", null ]
     ] ],
     [ "API_DatabaseInfo", "group___database.html#ga38bea73a6617d9591c2035d9a37c2c34", null ],
+    [ "API_DatabaseTypeID", "group___database.html#ga952fe8976ad428e5ca6deb307b085624", null ],
     [ "APICustomWindowHandlerProc", "group___window.html#ga2c0a47aaaf95e9f9b18330df14ce0d69", null ],
     [ "ACAPI_Database_BuildWindowValidator", "group___database.html#gad25f93b026ec40edcb736925b60eca3b", null ],
     [ "ACAPI_Database_ChangeCurrentDatabase", "group___database.html#ga4792e476ab41dec96cf9036341b156d7", null ],

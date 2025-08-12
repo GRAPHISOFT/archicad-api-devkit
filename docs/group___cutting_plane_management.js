@@ -1,19 +1,19 @@
 var group___cutting_plane_management =
 [
-    [ "ACAPI::Cutaway::v1::CuttingPlane", "class_a_c_a_p_i_1_1_cutaway_1_1v1_1_1_cutting_plane.html", [
-      [ "AreCuttingPlanesVisible", "group___cutting_plane_management.html#gada87fe0cb56531ce1f381b2fd000a0bd", null ],
-      [ "Is3DCutawayEnabled", "group___cutting_plane_management.html#ga7993c0966dbed4a5550c5f54afaa7f5d", null ],
-      [ "Set3DCutawayStatus", "group___cutting_plane_management.html#gac5e84dfecdae74a01c82474d5b378af0", null ],
-      [ "SetCuttingPlanesVisibility", "group___cutting_plane_management.html#ga869e1239f210e62b4336e22bd0d8f283", null ],
-      [ "GetCuttingPlane", "class_a_c_a_p_i_1_1_cutaway_1_1v1_1_1_cutting_plane.html#a3eb52bbfde68c0ff2ae7e1280386cf3b", null ]
+    [ "ACAPI::Cutaway::CuttingPlane", "class_a_c_a_p_i_1_1_cutaway_1_1_cutting_plane.html", [
+      [ "AreCuttingPlanesVisible", "group___cutting_plane_management.html#ga519c18c6635d7be61ab4aacad4855749", null ],
+      [ "Is3DCutawayEnabled", "group___cutting_plane_management.html#gad92d5039c12554dd373f26242323da9e", null ],
+      [ "Set3DCutawayStatus", "group___cutting_plane_management.html#gaa93e84d6d61f7ed620dfd82698a1c292", null ],
+      [ "SetCuttingPlanesVisibility", "group___cutting_plane_management.html#gadda85b495e96cc6b55d708c23d286972", null ],
+      [ "GetCuttingPlane", "class_a_c_a_p_i_1_1_cutaway_1_1_cutting_plane.html#a3eb52bbfde68c0ff2ae7e1280386cf3b", null ]
     ] ],
-    [ "ACAPI::Cutaway::v1::API_CutPolygonInfo", "struct_a_c_a_p_i_1_1_cutaway_1_1v1_1_1_a_p_i___cut_polygon_info.html", [
-      [ "area", "struct_a_c_a_p_i_1_1_cutaway_1_1v1_1_1_a_p_i___cut_polygon_info.html#a0d34dad7855880526ce9a93e22b6fe6b", null ],
-      [ "cuttingSurfacePolygons", "struct_a_c_a_p_i_1_1_cutaway_1_1v1_1_1_a_p_i___cut_polygon_info.html#a0002fb40270de045f57f7ed35027641c", null ]
+    [ "ACAPI::Cutaway::API_CutPolygonInfo", "struct_a_c_a_p_i_1_1_cutaway_1_1_a_p_i___cut_polygon_info.html", [
+      [ "area", "struct_a_c_a_p_i_1_1_cutaway_1_1_a_p_i___cut_polygon_info.html#a1cf7ed83c22c9b37a6a65075b70d8d2c", null ],
+      [ "cuttingSurfacePolygons", "struct_a_c_a_p_i_1_1_cutaway_1_1_a_p_i___cut_polygon_info.html#a0abd9f002177c16b3b1c9fc40156b9f3", null ]
     ] ],
-    [ "ACAPI::Cutaway::v1::CuttingPlane::AreCuttingPlanesVisible", "group___cutting_plane_management.html#gada87fe0cb56531ce1f381b2fd000a0bd", null ],
-    [ "ACAPI::Cutaway::v1::GetCuttingPlane", "group___cutting_plane_management.html#ga48853383aa6edc4ba8b56280dfcb0854", null ],
-    [ "ACAPI::Cutaway::v1::CuttingPlane::Is3DCutawayEnabled", "group___cutting_plane_management.html#ga7993c0966dbed4a5550c5f54afaa7f5d", null ],
-    [ "ACAPI::Cutaway::v1::CuttingPlane::Set3DCutawayStatus", "group___cutting_plane_management.html#gac5e84dfecdae74a01c82474d5b378af0", null ],
-    [ "ACAPI::Cutaway::v1::CuttingPlane::SetCuttingPlanesVisibility", "group___cutting_plane_management.html#ga869e1239f210e62b4336e22bd0d8f283", null ]
+    [ "ACAPI::Cutaway::CuttingPlane::AreCuttingPlanesVisible", "group___cutting_plane_management.html#ga519c18c6635d7be61ab4aacad4855749", null ],
+    [ "ACAPI::Cutaway::GetCuttingPlane", "group___cutting_plane_management.html#gaa8f7a1c7bc71921763b33fdfb6eed4e2", null ],
+    [ "ACAPI::Cutaway::CuttingPlane::Is3DCutawayEnabled", "group___cutting_plane_management.html#gad92d5039c12554dd373f26242323da9e", null ],
+    [ "ACAPI::Cutaway::CuttingPlane::Set3DCutawayStatus", "group___cutting_plane_management.html#gaa93e84d6d61f7ed620dfd82698a1c292", null ],
+    [ "ACAPI::Cutaway::CuttingPlane::SetCuttingPlanesVisibility", "group___cutting_plane_management.html#gadda85b495e96cc6b55d708c23d286972", null ]
 ];
