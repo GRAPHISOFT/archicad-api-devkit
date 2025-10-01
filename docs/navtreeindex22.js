@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"struct_a_p_i___building_material_type.html#aba9a4c205937861eb03a69eee6c96cdb":[2,8,22,4],
 "struct_a_p_i___building_material_type.html#acd688114d74946e999a91bc49dc9ef92":[2,8,22,14],
 "struct_a_p_i___building_material_type.html#ae20bc49a21d7901af6964a36c53c4845":[2,8,22,16],
 "struct_a_p_i___building_material_type.html#aea3185d04af4265012c82f51ad51c2f1":[2,8,22,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "struct_a_p_i___classification_system.html#a8a2549d95de46040094dd648a53ad9a4":[2,12,1,1],
 "struct_a_p_i___classification_system.html#a900d91ceb826b2838f89543981046022":[2,12,1,0],
 "struct_a_p_i___classification_system.html#ac7ee98e489d3beeea8b466c21977598e":[2,12,1,5],
-"struct_a_p_i___clip_tran.html":[2,20,2],
-"struct_a_p_i___clip_tran.html#a14d260c72be5a71d2d7078272a41ffb9":[2,20,2,2]
+"struct_a_p_i___clip_tran.html":[2,20,2]
 };

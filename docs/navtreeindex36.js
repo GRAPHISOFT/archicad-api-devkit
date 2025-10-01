@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"struct_a_p_i___stair_boundary_data.html#ad8fb14f2c0c00a4a742a5e5975c797a8":[2,29,136,3],
 "struct_a_p_i___stair_boundary_data.html#aee8ac3a326fb6a21d730f9809fa16be6":[2,29,136,5],
 "struct_a_p_i___stair_boundary_edge_data.html":[2,29,135],
 "struct_a_p_i___stair_boundary_edge_data.html#a048e886f78329d80b93173f97073492d":[2,29,135,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX36 =
 "struct_a_p_i___stair_tread_type.html":[2,29,149],
 "struct_a_p_i___stair_tread_type.html#a3da9bb6a91b532bf19f7dbec670c7ca4":[2,29,149,7],
 "struct_a_p_i___stair_tread_type.html#a42969acbe557c68b9a11d7dfe26cfdec":[2,29,149,3],
-"struct_a_p_i___stair_tread_type.html#a47ab020906e95d61fa04cb4b3a73e881":[2,29,149,4],
-"struct_a_p_i___stair_tread_type.html#a48336d1a10f02f766ecd5a4da7056740":[2,29,149,10]
+"struct_a_p_i___stair_tread_type.html#a47ab020906e95d61fa04cb4b3a73e881":[2,29,149,4]
 };
