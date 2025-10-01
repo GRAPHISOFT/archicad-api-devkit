@@ -42,7 +42,8 @@ var menudata={children:[
 {text:"Required functions",url:"_required_functions.html"},
 {text:"Required resources",url:"_required_resources.html"},
 {text:"Add-On Management",url:"_tools__add_on_management.html"},
-{text:"Library Part Subtypes",url:"_subtypes.html"}]},
+{text:"Library Part Subtypes",url:"_subtypes.html"},
+{text:"Dark mode icon generation",url:"darkicongeneration.html"}]},
 {text:"Topics",url:"topics.html"},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},

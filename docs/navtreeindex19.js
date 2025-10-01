@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"hierarchy.html":[3,2],
 "index.html":[],
 "newfeatures.html":[0,4],
 "pages.html":[],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "struct_a_p_i___analytical_link___spring_settings.html#a90ca92b827b0faf9199084748176a254":[2,7,11,0],
 "struct_a_p_i___analytical_link___spring_settings.html#ab68f60b65a90bfd48adb9a3f12df8ece":[2,7,11,2],
 "struct_a_p_i___analytical_link___translation.html":[2,7,8],
-"struct_a_p_i___analytical_link___translation.html#a16266115ee92af5a4b212bee5a421f06":[2,7,8,4],
-"struct_a_p_i___analytical_link___translation.html#a2fad56f348f19441c7b68e75aa5c1a62":[2,7,8,0]
+"struct_a_p_i___analytical_link___translation.html#a16266115ee92af5a4b212bee5a421f06":[2,7,8,4]
 };

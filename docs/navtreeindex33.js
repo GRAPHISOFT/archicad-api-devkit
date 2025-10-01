@@ -1,5 +1,6 @@
 var NAVTREEINDEX33 =
 {
+"struct_a_p_i___railing_baluster_type.html#aa51b9a8493fce2ca83d5105cd94380e4":[2,29,156,0],
 "struct_a_p_i___railing_baluster_type.html#abca549c01fc87149ce291bf640dd1804":[2,29,156,1],
 "struct_a_p_i___railing_baluster_type.html#af8b8c3db6cfe1596cb5c662939b5730f":[2,29,156,3],
 "struct_a_p_i___railing_distribution_data.html":[2,29,154],
@@ -248,6 +249,5 @@ var NAVTREEINDEX33 =
 "struct_a_p_i___rend_effects.html#adac4c728b51506ab348cdfa758df96b4":[2,59,1,0],
 "struct_a_p_i___rend_image.html":[2,59,2],
 "struct_a_p_i___rend_image.html#a0ad6bba2fb3bfd64b0c50c82cd3e5feb":[2,59,2,3],
-"struct_a_p_i___rend_image.html#a157c6247f761730ddbd0690e88d3f4d8":[2,59,2,7],
-"struct_a_p_i___rend_image.html#a320d6c90f2a21d4517191174f59820f0":[2,59,2,9]
+"struct_a_p_i___rend_image.html#a157c6247f761730ddbd0690e88d3f4d8":[2,59,2,7]
 };

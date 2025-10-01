@@ -115,6 +115,7 @@ var NAVTREEINDEX6 =
 "class_tracking_1_1_tracker_1_1_running_mode_keyboard_handler.html#aa91708119e7619e55a9c9a362226091f":[2,68,4,1],
 "class_tracking_1_1_tracker_1_1_running_mode_keyboard_handler.html#ab36d03c1c3cf26829e5caa40cf919db3":[2,68,4,0],
 "classes.html":[3,1],
+"darkicongeneration.html":[1,11],
 "functions.html":[3,3,0],
 "functions.html":[3,3,0,0],
 "functions_b.html":[3,3,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a4f05aa1e350a05f80929b90716d16dd3":[2,0,17,33],
 "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a4f3cca2b0fc592bc6874adc0af5f8ec9":[2,0,17,7],
 "group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a4ff7707f5c7f49a90998cdf26b1f590f":[2,0,17,27],
-"group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a5041e2105fd57359b7329cd781d1848f":[2,0,17,17],
-"group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a51b2febde5b291f54637025bb184ea11":[2,0,17,71]
+"group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2a5041e2105fd57359b7329cd781d1848f":[2,0,17,17]
 };
