@@ -131,7 +131,38 @@ $(function(){initNavTree('darkicongeneration.html',''); initResizable(true); });
 <div class="textblock"><p>Starting with Archicad 29, the APIDevKit provides automatic dark mode icon generation, available exclusively on the Mac platform. This feature processes SVG files to create dark mode variants, but only if colors are specified in the <code>#xxxxxx</code> or <code>#xxx</code> hexadecimal format. Icons using color literals are not supported.</p>
 <p>During the build process, a color check is performed for all SVG files. This check ensures that every color in the SVG has a corresponding dark mode color defined in the configuration file. If any color is missing a counterpart, the build will fail with an error.</p>
 <p>The configuration file, <code>SVG_ColorChange_Darkmode.json</code> under Support/Tools/OSX/ folder, manages the color conversion under the <code>colorTable</code> key. By default, it contains Graphisoft colors and their dark mode equivalents, but you can extend it with your own custom color pairs. The file also allows you to exclude specific files (<code>excludeFiles</code> key) or folders (<code>excludeFolders</code> key) from processing, so those SVGs remain unchanged in dark mode.</p>
-<p>Additionally, you can specify <code>noCheckFiles</code> and <code>noCheckFolders</code>. For these, dark mode icons will be generated, but the color check will be skipped. </p>
+<p>Additionally, you can specify <code>noCheckFiles</code> and <code>noCheckFolders</code>. For these, dark mode icons will be generated, but the color check will be skipped.</p>
+<p>See the example below: </p><div class="fragment"><div class="line">{</div>
+<div class="line">    &quot;colorTable&quot;: {</div>
+<div class="line">        &quot;#010101&quot;: &quot;#010101&quot;,</div>
+<div class="line">        &quot;#06A647&quot;: &quot;#0CCA59&quot;,</div>
+<div class="line">        &quot;#14FF73&quot;: &quot;#8DFFBB&quot;,</div>
+<div class="line">        &quot;#1D9D48&quot;: &quot;#1D9D48&quot;,</div>
+<div class="line">        &quot;#262626&quot;: &quot;#E0E0E0&quot;,</div>
+<div class="line">        &quot;#263238&quot;: &quot;#D9CDC7&quot;,</div>
+<div class="line">        &quot;#263239&quot;: &quot;#263239&quot;,</div>
+<div class="line">    },</div>
+<div class="line">    &quot;excludeFiles&quot;: [</div>
+<div class="line">        &quot;cursor&quot;</div>
+<div class="line">    ],</div>
+<div class="line">    &quot;excludeFolders&quot;: [</div>
+<div class="line">        &quot;Assets&quot;</div>
+<div class="line">    ],</div>
+<div class="line">    &quot;noCheckFiles&quot;: [</div>
+<div class="line">        &quot;icon&quot;</div>
+<div class="line">    ],</div>
+<div class="line">    &quot;noCheckFolders&quot;: [</div>
+<div class="line">        &quot;Customs&quot;</div>
+<div class="line">    ]</div>
+<div class="line">}</div>
+</div><!-- fragment --><p> In this configuration:</p>
+<ul>
+<li>Any file with a name matching <code>cursor.svg</code> will be excluded from processing entirely. No dark mode icon will be generated for these files.</li>
+<li>Files named <code>icon.svg</code> will have dark mode icons generated, but the color check will be skipped for them.</li>
+<li>If a file's path contains the <code>Assets</code> folder (for example, <code>/Volumes/Mac HD/MyProject/Assets/file.svg</code>), it will be excluded from processing, so no dark mode icon will be generated for any file within any <code>Assets</code> folder.</li>
+<li>Similarly, if a file's path contains the <code>Customs</code> folder, all SVGs in that folder will be converted to dark mode icons, but the color check will be skipped for them.</li>
+</ul>
+<p>This allows for flexible control over which icons are processed and how, based on file names and folder paths. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
