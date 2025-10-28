@@ -345,28 +345,40 @@ var group___m_e_p =
       [ "ElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#af3be77f8ac769a25f2ed05023a3b3fd8", null ],
       [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#a998ec74330d12bd134ebf52979e3701b", null ],
       [ "GetAnchorPoint", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#ac6d5819d046e549385737d21252ca64f", null ],
+      [ "GetBaseRotation", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#a3956396e21134b089f869316df99704d", null ],
       [ "GetDirectConnectedMEPElementIds", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#ad0f66361436a55a55359dd666f2c32ed", null ],
       [ "GetObjectId", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#a8f40e43ba22788c09b34a747701083c4", null ],
+      [ "GetObjectXSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#a5539f90c22e4ed42577faf64719e2770", null ],
+      [ "GetObjectYSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#ae3465fa0426285b1835bc1cf124d03c2", null ],
       [ "GetOrientation", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#a3314d300b7fd16a4e19f04fe51996980", null ],
-      [ "GetPortIDs", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#a64e8bf1aded472f79dcf48c30c058446", null ]
+      [ "GetPortIDs", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#a64e8bf1aded472f79dcf48c30c058446", null ],
+      [ "GetReflected", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#aa666dd3c2256674d8795e12e5af660e2", null ]
     ] ],
     [ "ACAPI::MEP::ElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html", [
       [ "ElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#aec9410cce501a29db958922ffdb0fb59", null ],
+      [ "GetBaseRotation", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a293f130fd9c4092942e168aa2934587f", null ],
       [ "GetCableCarrierPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a5d5fdbe2a167216e673aec7953004c12", null ],
       [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a42262e75ff079e322c655f2b233f043d", null ],
       [ "GetDomainOfPort", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#ad238d58473dd041a7d9f4bc84ad43750", null ],
       [ "GetInsulationThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a3fa0ed2a37310550e97fbb2cd688847f", null ],
       [ "GetObjectId", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a5de729ddd6365c9d7c32fe07ccd252d1", null ],
+      [ "GetObjectXSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a4f1b119a9788fa0349a83cd0907bef7f", null ],
+      [ "GetObjectYSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a5dbd0c41cfeb763198f73c462443c08e", null ],
       [ "GetPipingPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#ab9d504ec872774560d646deb8c1c14c2", null ],
       [ "GetPortCount", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#ade303bee9615712c663dcc46ec18c713", null ],
+      [ "GetReflected", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a42264cfd2ba34e6c030b3f03ee4965d7", null ],
       [ "GetVentilationPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a69681a27484a4750f09041702006042d", null ],
       [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a556baec75bf1fa4c47136d8229e2929b", null ]
     ] ],
     [ "ACAPI::MEP::ElementDefault::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default_1_1_modifier.html", [
       [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default_1_1_modifier.html#a97461f533479ab836fccab9688f13511", null ],
       [ "RemoveInsulation", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default_1_1_modifier.html#a84c93f925bf57c8659b730dd7bb82a57", null ],
+      [ "SetBaseRotation", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default_1_1_modifier.html#a574ca7a7f6eea5ae6b5ce92cf981c7ed", null ],
       [ "SetInsulationThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default_1_1_modifier.html#af9a0baac1ca1c85506a1041687db6f21", null ],
-      [ "SetObjectId", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default_1_1_modifier.html#a7a7e7d45e14aec592444f54ebdf8b70b", null ]
+      [ "SetObjectId", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default_1_1_modifier.html#a7a7e7d45e14aec592444f54ebdf8b70b", null ],
+      [ "SetObjectXSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default_1_1_modifier.html#a79ff6f5e198675ab00dfa97904ec8f7b", null ],
+      [ "SetObjectYSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default_1_1_modifier.html#a7e05c904dc807800f34307a354913cca", null ],
+      [ "SetReflected", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default_1_1_modifier.html#a913bbeb63a46163fc3e4cdbf19cbc236", null ]
     ] ],
     [ "ACAPI::MEP::ElementUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_u_i_manager.html", [
       [ "ApplyElementDefaultToToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_u_i_manager.html#af2a09295286ad02a9409362581fe349c", null ],
@@ -448,8 +460,12 @@ var group___m_e_p =
       [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html#a0cee11ad6b7214c28eda962b382146cb", null ],
       [ "FinalizeModification", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html#a790a61247d148cae2edcb873771c82e5", null ],
       [ "SetAnchorPoint", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html#a93e8675a771253fc4ff115dad7e8cf99", null ],
+      [ "SetBaseRotation", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html#a77469d0bdeae122aa0747f8d7a86dd8f", null ],
       [ "SetObjectId", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html#adfd2c38251de6cc1eb84d150c5795a5c", null ],
-      [ "SetOrientation", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html#a2f4134778365a680a5ba94e9c52bc4ce", null ]
+      [ "SetObjectXSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html#a052160ee990e61a037489cf678078dab", null ],
+      [ "SetObjectYSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html#a19c33169ce1ff6667f5ee86bc558db9b", null ],
+      [ "SetOrientation", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html#a2f4134778365a680a5ba94e9c52bc4ce", null ],
+      [ "SetReflected", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html#abf54cd7d9110d3e39115a643ef1711c3", null ]
     ] ],
     [ "ACAPI::MEP::PhysicalSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1_physical_system.html", [
       [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_physical_system.html#a5bd0f6f0b8bd2ebd7cf1d271a1f7e227", null ],

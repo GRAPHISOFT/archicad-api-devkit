@@ -129,8 +129,8 @@ $(function(){initNavTree('newfeatures.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="autotoc_md55"></a>
-New API features in Archicad 29</h1>
-<p>This outline summarizes the major new features and changes in the API available with Archicad 29.</p>
+New API features in Archicad 29.0.1</h1>
+<p>This outline summarizes the major new features and changes in the API available with Archicad 29.0.1 (3100).</p>
 <h2><a class="anchor" id="autotoc_md56"></a>
 System requirements changes</h2>
 <ul>
@@ -139,10 +139,50 @@ System requirements changes</h2>
 <h2><a class="anchor" id="autotoc_md57"></a>
 Technical changes</h2>
 <ul>
+<li>Fix ResConv crash when -sc parameter is missing.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md58"></a>
+New functionality</h2>
+<ul>
+<li>The <code><a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html">ACAPI::MEP::ElementBase</a></code> class includes getters and <code><a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html" title="Modifier of the ModifiableElementBase.">ACAPI::MEP::ModifiableElementBase::Modifier</a></code> includes setters for rotation, reflection, and the A and B parameters of the library (sizes along the X and Y axis).</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md59"></a>
+Modified/new structures</h2>
+<ul>
+<li>None</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md60"></a>
+Modified/new functions</h2>
+<ul>
+<li>None</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md61"></a>
+Deprecated functions and structures</h2>
+<p>These functions and structures are currently available, but they are intended to be removed in the future. They will not receive bug fixes and support.</p>
+<ul>
+<li>None</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md62"></a>
+Deleted functions and structures</h2>
+<ul>
+<li>None</li>
+</ul>
+<hr  />
+<h1><a class="anchor" id="autotoc_md64"></a>
+New API features in Archicad 29.0.0</h1>
+<p>This outline summarizes the major new features and changes in the API available with Archicad 29.0.0 (3000).</p>
+<h2><a class="anchor" id="autotoc_md65"></a>
+System requirements changes</h2>
+<ul>
+<li>None</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md66"></a>
+Technical changes</h2>
+<ul>
 <li>On Windows, we updated the required toolchain version to V143.</li>
 <li>C++20 is required for the compilation.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md58"></a>
+<h2><a class="anchor" id="autotoc_md67"></a>
 New functionality</h2>
 <ul>
 <li>Shortcut mechanism for Expand/Collapse operation of the TreeView control has been enhanced.</li>
@@ -151,7 +191,7 @@ New functionality</h2>
 <li>AddOns can receive notifications of element editings via the <code><a class="el" href="class_a_c_a_p_i_1_1_edit_notification_interface.html" title="EditNotificationInterface is responsible for handling Edit Notifications through API....">ACAPI::EditNotificationInterface</a></code>.</li>
 <li>Notification bubbles can be created with <code><a class="el" href="class_a_c_a_p_i_1_1_u_i_1_1_notification_1_1_notification_bubble_manager.html" title="A class that contains notification bubble related functions.">ACAPI::UI::Notification::NotificationBubbleManager</a></code>.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md59"></a>
+<h2><a class="anchor" id="autotoc_md68"></a>
 Modified/new structures</h2>
 <ul>
 <li><code>API_OpeningType</code> and related structures have been removed. You should use <code><a class="el" href="class_a_c_a_p_i_1_1_element_1_1_opening.html">ACAPI::Element::Opening</a></code> and <code><a class="el" href="class_a_c_a_p_i_1_1_element_1_1_opening_default.html" title="The ElementDefault contains the necessary non-geometric data for creating a MEP element.">ACAPI::Element::OpeningDefault</a></code> instead.</li>
@@ -162,7 +202,7 @@ Modified/new structures</h2>
 <li>Structures that can have two arrowheads (<code><a class="el" href="struct_a_p_i___line_type.html" title="Represents a 2D line.">API_LineType</a></code>, <code><a class="el" href="struct_a_p_i___poly_line_type.html" title="Represents a 2D polyline.">API_PolyLineType</a></code>, <code><a class="el" href="struct_a_p_i___arc_type.html" title="Represents an elliptical or circular arc.">API_ArcType</a></code> and <code><a class="el" href="struct_a_p_i___spline_type.html" title="Represents a cubic or Bezier-spline.">API_SplineType</a></code>) contain a new boolean <code>linkedArrowAttributes</code> variable. Setting this to true links the size and pen attributes of the two arrowheads. When set to true, the size and pen of the <code>endArrowData</code> must be equal to the size and pen of <code>startArrowData</code>, otherwise <code>APIERR_BADPARS</code> will be thrown.</li>
 <li>New enum value was introduced to <code>API_ApplicationTypeID</code>: <code>APIAppl_MEPDesignerID</code>.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md60"></a>
+<h2><a class="anchor" id="autotoc_md69"></a>
 Modified/new functions</h2>
 <ul>
 <li><code><a class="el" href="group___i_f_c.html#ga5462946de58e3496373a9b0a348e9e36" title="Create a default IFC value based on the IFC type.">IFCAPI::PropertyBuilder::CreateDefaultValue</a></code> can create a default <code><a class="el" href="class_i_f_c_a_p_i_1_1_value.html" title="Represent an IFC value.">IFCAPI::Value</a></code> based on a sole <code><a class="el" href="group___i_f_c.html#ga89bcf030e278a09e9f6754bbd5191ed2" title="Type definition for IFC type.">IFCAPI::IFCType</a></code>. With this you can also query the corresponding data type to use in an <code><a class="el" href="group___i_f_c.html#ga000ae17f480b51df392af63737b551d7" title="Type definition to represent a value.">IFCAPI::AnyValue</a></code> for that IFCType.</li>
@@ -199,13 +239,13 @@ Modified/new functions</h2>
 </ul>
 </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md61"></a>
+<h2><a class="anchor" id="autotoc_md70"></a>
 Deprecated functions and structures</h2>
 <p>These functions and structures are currently available, but they are intended to be removed in the future. They will not receive bug fixes and support.</p>
 <ul>
 <li>None</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md62"></a>
+<h2><a class="anchor" id="autotoc_md71"></a>
 Deleted functions and structures</h2>
 <ul>
 <li>Removed the MeasurementSystem from the RegisteredColumn used in the GraphCalculationInterface in the MEPAPI. The AddOns should use the ACAPI_ProjectSetting_GetPreferences with <a class="el" href="struct_a_p_i___working_unit_prefs.html" title="The representation of the Preferences / Units tab page.">API_WorkingUnitPrefs</a> instead.</li>
