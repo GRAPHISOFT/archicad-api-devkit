@@ -1,5 +1,7 @@
 var group___project_setting =
 [
+    [ "Grid Gravity Modes", "group___a_p_i___grid_gravity_modes.html", "group___a_p_i___grid_gravity_modes" ],
+    [ "Grid Status Flags", "group___a_p_i___grid_status_flags.html", "group___a_p_i___grid_status_flags" ],
     [ "API_GridType", "struct_a_p_i___grid_type.html", [
       [ "backColor", "struct_a_p_i___grid_type.html#ac77d69e3f46f21a22b35e5a9708c0f77", null ],
       [ "gridAngle", "struct_a_p_i___grid_type.html#abe762e2da0df425e59320a8323fff590", null ],
@@ -177,8 +179,28 @@ var group___project_setting =
       [ "splCoords", "struct_a_p_i___test_spline_fit.html#adc115b630017c1d23bf1766c89f27a53", null ],
       [ "splDirs", "struct_a_p_i___test_spline_fit.html#ad4d58906bcd1f60926c5c74ae35207bc", null ]
     ] ],
-    [ "API_ConditionalElementPropertyTypeID", "group___project_setting.html#gad00d921b82b87217154b97332e048fe1", null ],
-    [ "API_PrefsTypeID", "group___project_setting.html#gae460b1c2b9b8fc78f5ae3ede1932b63a", null ],
+    [ "API_ConditionalElementPropertyTypeID", "group___project_setting.html#gad00d921b82b87217154b97332e048fe1", [
+      [ "APIConditionalElementPropertyType_Volume", "group___project_setting.html#ggad00d921b82b87217154b97332e048fe1a743167f101f4c1fd3f54d39fb1174043", null ],
+      [ "APIConditionalElementPropertyType_Surface", "group___project_setting.html#ggad00d921b82b87217154b97332e048fe1a6fc0b49ae9e748a40571d664b4ba08f0", null ],
+      [ "APIConditionalElementPropertyType_Length", "group___project_setting.html#ggad00d921b82b87217154b97332e048fe1a8a530e8751af4502a3dfd769e7fecc5a", null ]
+    ] ],
+    [ "API_PrefsTypeID", "group___project_setting.html#gae460b1c2b9b8fc78f5ae3ede1932b63a", [
+      [ "APIPrefs_WorkingUnitsID", "group___project_setting.html#ggae460b1c2b9b8fc78f5ae3ede1932b63aa0c6059e6ec6e49ac975e022dc6d8f437", null ],
+      [ "APIPrefs_ReferenceLevelsID", "group___project_setting.html#ggae460b1c2b9b8fc78f5ae3ede1932b63aa574af22cc2a899e1a7c3e96c95fc0c24", null ],
+      [ "APIPrefs_DimensionsID", "group___project_setting.html#ggae460b1c2b9b8fc78f5ae3ede1932b63aa33de3de3b13a4a3b7920bd3874e25539", null ],
+      [ "APIPrefs_CalcUnitsID", "group___project_setting.html#ggae460b1c2b9b8fc78f5ae3ede1932b63aa3752f97f92439ec15e885de6125857f6", null ],
+      [ "APIPrefs_CalcRulesID", "group___project_setting.html#ggae460b1c2b9b8fc78f5ae3ede1932b63aad6c30a7cb546932cc816ae8ad2e4d1ac", null ],
+      [ "APIPrefs_LegacyID", "group___project_setting.html#ggae460b1c2b9b8fc78f5ae3ede1932b63aafe43c1b09719c9980b748edcf0803430", null ],
+      [ "APIPrefs_ZonesID", "group___project_setting.html#ggae460b1c2b9b8fc78f5ae3ede1932b63aa137b9e1b4d9d49227c5eac770e8c9c5d", null ],
+      [ "APIPrefs_DataSafetyID", "group___project_setting.html#ggae460b1c2b9b8fc78f5ae3ede1932b63aa6414f14514e0a2f791259bdaef0bc8df", null ],
+      [ "APIPrefs_ImagingAndCalcID", "group___project_setting.html#ggae460b1c2b9b8fc78f5ae3ede1932b63aa7ebe3df4331f9191aba9bb1c9c513614", null ],
+      [ "APIPrefs_FloorPlanCutPlaneDef", "group___project_setting.html#ggae460b1c2b9b8fc78f5ae3ede1932b63aa1cdf1a6e29a4f57eccbeaf62457d9fab", null ],
+      [ "APIPrefs_LayoutsID", "group___project_setting.html#ggae460b1c2b9b8fc78f5ae3ede1932b63aaf5b04e085c01f25c8034e212815eee58", null ]
+    ] ],
+    [ "API_RoofContourDisplay", "group___project_setting.html#gab3318d299220e937fc11f225d02eaa6c", [
+      [ "APIRoofDisplay_AllVisibleContours", "group___project_setting.html#ggab3318d299220e937fc11f225d02eaa6cab44bf4608383c353a19d6f9f940a2025", null ],
+      [ "APIRoofDisplay_OnlyTheTopSurfaceOldWay", "group___project_setting.html#ggab3318d299220e937fc11f225d02eaa6ca05497e5e0290e6e8b1e9b3fb8b51dea5", null ]
+    ] ],
     [ "API_VolumeTypeID", "group___project_setting.html#ga975d57ea13e7d919b5d33900833ac3ae", [
       [ "API_VolumeTypeID::CubicMeter", "group___project_setting.html#gga975d57ea13e7d919b5d33900833ac3aeaa6a1681e4a377b6e3f0aa575545fce77", null ],
       [ "API_VolumeTypeID::CubicKiloMeter", "group___project_setting.html#gga975d57ea13e7d919b5d33900833ac3aea51166d48f7cb05b0fd6af4851b69e565", null ],

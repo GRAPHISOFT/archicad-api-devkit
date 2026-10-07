@@ -56,6 +56,7 @@ var group___graphical_override =
     [ "ACAPI_GraphicalOverride_DeleteOverrideRuleGroup", "group___graphical_override.html#ga607cd8e8acf67acce8ce31f6d328bb67", null ],
     [ "ACAPI_GraphicalOverride_EnableRenovationOverride", "group___graphical_override.html#ga9740bd2ca97068f106937fff71cbd170", null ],
     [ "ACAPI_GraphicalOverride_EnableVisualOverride", "group___graphical_override.html#ga0b5ac45cd18de0ad4010114aa1cd6563", null ],
+    [ "ACAPI_GraphicalOverride_GetActualOverrideCombination", "group___graphical_override.html#ga63b7f40ac8f421fbc89ad4569b7083d8", null ],
     [ "ACAPI_GraphicalOverride_GetOverrideCombination", "group___graphical_override.html#gad787632962797ec1b6222bcc2f5ae0d3", null ],
     [ "ACAPI_GraphicalOverride_GetOverrideCombinationList", "group___graphical_override.html#ga339dcadb423378c8bb052e24a2ba2d9c", null ],
     [ "ACAPI_GraphicalOverride_GetOverrideRuleById", "group___graphical_override.html#ga0a9f3adff24e369a2748e3f6de69f9c9", null ],
@@ -65,6 +66,7 @@ var group___graphical_override =
     [ "ACAPI_GraphicalOverride_GetOverrideRuleList", "group___graphical_override.html#ga7ea3a08297d3608a72865ec5e361ff2d", null ],
     [ "ACAPI_GraphicalOverride_GetVisualOverriddenImage", "group___graphical_override.html#ga5fcb0627f28ac285b8ee820999577b50", null ],
     [ "ACAPI_GraphicalOverride_MoveOverrideRule", "group___graphical_override.html#ga3a5083c6a6dfd8512dec83fc5a60ec85", null ],
+    [ "ACAPI_GraphicalOverride_SetActualOverrideCombination", "group___graphical_override.html#gaa7dca1efa38b893ad0bce1f6703d1ab5", null ],
     [ "ACAPI_GraphicalOverride_SetOverrideRuleGroupOrder", "group___graphical_override.html#ga4d18d064d6f391cf102825ce0cdad481", null ],
     [ "ACAPI_GraphicalOverride_SetOverrideRuleOrder", "group___graphical_override.html#ga4feccfe554046731ba15e1f3be6e5652", null ]
 ];

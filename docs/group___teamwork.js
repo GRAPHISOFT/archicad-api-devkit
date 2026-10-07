@@ -1,5 +1,13 @@
 var group___teamwork =
 [
+    [ "API_ReservationInterfaceStatus", "group___teamwork.html#ga6663b06bb69ef47b17c910c77b0943bf", [
+      [ "APIReservationInterfaceStatus_Undefined", "group___teamwork.html#gga6663b06bb69ef47b17c910c77b0943bfacc0362b2249602e3076414df5a3f5ba3", null ],
+      [ "APIReservationInterfaceStatus_Free", "group___teamwork.html#gga6663b06bb69ef47b17c910c77b0943bfae462804f211cef5afe3510805f31978c", null ],
+      [ "APIReservationInterfaceStatus_Editable", "group___teamwork.html#gga6663b06bb69ef47b17c910c77b0943bfa3827e3c086b27df5048bf5f2088c8e67", null ],
+      [ "APIReservationInterfaceStatus_Reserved", "group___teamwork.html#gga6663b06bb69ef47b17c910c77b0943bfa545a07189e5d665a720edc0341062a72", null ],
+      [ "APIReservationInterfaceStatus_NotAvailable", "group___teamwork.html#gga6663b06bb69ef47b17c910c77b0943bfad7388d67f82546cf6e11a7c01aefdbaa", null ],
+      [ "APIReservationInterfaceStatus_EditableAfterReceive", "group___teamwork.html#gga6663b06bb69ef47b17c910c77b0943bfaee101dbda6ac3864c30b450105bcdacd", null ]
+    ] ],
     [ "API_TWAccessRights", "group___teamwork.html#ga19575766111f62796ee40e2c3c2aed66", [
       [ "APINoPermission", "group___teamwork.html#gga19575766111f62796ee40e2c3c2aed66ae0981039a69a5560326d8dfaa6d8089d", null ],
       [ "APILineTypesCreate", "group___teamwork.html#gga19575766111f62796ee40e2c3c2aed66a0a5526d72f389d9ba52abdac15129ffc", null ],
@@ -104,7 +112,8 @@ var group___teamwork =
       [ "APIMEPToolElements", "group___teamwork.html#gga19575766111f62796ee40e2c3c2aed66ae685526fccbed5133b649a734e326909", null ],
       [ "APIMEPPreferences", "group___teamwork.html#gga19575766111f62796ee40e2c3c2aed66a515c8ea0e19831ff0a62b28c08910720", null ],
       [ "APIKeynotesCreate", "group___teamwork.html#gga19575766111f62796ee40e2c3c2aed66ae5dd22c036d05a4478f63a1ee07bdd9c", null ],
-      [ "APIKeynotesDeleteModify", "group___teamwork.html#gga19575766111f62796ee40e2c3c2aed66a0f0da7ae5bb776be8c1820064ba93cc1", null ]
+      [ "APIKeynotesDeleteModify", "group___teamwork.html#gga19575766111f62796ee40e2c3c2aed66a0f0da7ae5bb776be8c1820064ba93cc1", null ],
+      [ "APICreationInfoClear", "group___teamwork.html#gga19575766111f62796ee40e2c3c2aed66a4d99bc48747f6d565d289b6aedc71a47", null ]
     ] ],
     [ "ACAPI_RefreshTeamworkReserveInterface", "group___teamwork.html#gae81e81ddcb9a3d5c1d1f77c5d7c0a388", null ],
     [ "ACAPI_RegisterTeamworkReserveInterface", "group___teamwork.html#gaa4ab6c998943a09ea623668c7bd59945", null ],

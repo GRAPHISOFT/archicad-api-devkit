@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: API Infrastructure</title>
+<title>Archicad 30 C++ API: API Infrastructure</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -295,7 +295,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#gga75cc225b8e9434d91621dd230c3013a2a3cfca06f6481c55bdda9302efb80bb1e">APIERR_MISSINGDEF</a> = APIErrorStart + 1002
 <br />
  }</td></tr>
-<tr class="memdesc:ga75cc225b8e9434d91621dd230c3013a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enum contains the possible errors that can occur while using Archicad API.  <a href="#ga75cc225b8e9434d91621dd230c3013a2">More...</a><br /></td></tr>
+<tr class="memdesc:ga75cc225b8e9434d91621dd230c3013a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enum contains the possible errors that can occur while using the Archicad API.  <a href="#ga75cc225b8e9434d91621dd230c3013a2">More...</a><br /></td></tr>
 <tr class="separator:ga75cc225b8e9434d91621dd230c3013a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -381,7 +381,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gabda26142410fc44949e54fe6433fa61f" id="r_gabda26142410fc44949e54fe6433fa61f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_p_i___guid.html">API_Guid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabda26142410fc44949e54fe6433fa61f">GenerateAPIGuid</a> ()</td></tr>
 <tr class="separator:gabda26142410fc44949e54fe6433fa61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafcab1d7aa26c4f36254852f9a1a48bba" id="r_gafcab1d7aa26c4f36254852f9a1a48bba"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafcab1d7aa26c4f36254852f9a1a48bba">operator==</a> (<a class="el" href="struct_null_value_type.html">NullValueType</a>, <a class="el" href="struct_null_value_type.html">NullValueType</a>)</td></tr>
-<tr class="memdesc:gafcab1d7aa26c4f36254852f9a1a48bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">compares NullValueTyp in the API layer.  <br /></td></tr>
+<tr class="memdesc:gafcab1d7aa26c4f36254852f9a1a48bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares <a class="el" href="struct_null_value_type.html" title="Represents NullValueType in the API layer.">NullValueType</a> in the API layer.  <br /></td></tr>
 <tr class="separator:gafcab1d7aa26c4f36254852f9a1a48bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -406,19 +406,19 @@ constexpr <a class="el" href="struct_a_p_i___guid.html">API_Guid</a>&#160;</td><
       </table>
 </div><div class="memdoc">
 
-<p>This enum contains the possible errors that can occur while using Archicad API. </p>
+<p>This enum contains the possible errors that can occur while using the Archicad API. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2ab1eb22c857b581ec7efdb74abcc93006" name="gga75cc225b8e9434d91621dd230c3013a2ab1eb22c857b581ec7efdb74abcc93006"></a>APIERR_GENERAL&#160;</td><td class="fielddoc"><p>General error code. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a937a7bb80e351259609de34be045d776" name="gga75cc225b8e9434d91621dd230c3013a2a937a7bb80e351259609de34be045d776"></a>APIERR_MEMFULL&#160;</td><td class="fielddoc"><p>Insufficient memory. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a725edca5c5880053b0b783fcd0cdb8a3" name="gga75cc225b8e9434d91621dd230c3013a2a725edca5c5880053b0b783fcd0cdb8a3"></a>APIERR_CANCEL&#160;</td><td class="fielddoc"><p>The operation has been canceled by the user, in case of a long process. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a725edca5c5880053b0b783fcd0cdb8a3" name="gga75cc225b8e9434d91621dd230c3013a2a725edca5c5880053b0b783fcd0cdb8a3"></a>APIERR_CANCEL&#160;</td><td class="fielddoc"><p>The operation has been cancelled by the user, in the case of a long process. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a53ce20ea126a4065688e1c8dfd311d2d" name="gga75cc225b8e9434d91621dd230c3013a2a53ce20ea126a4065688e1c8dfd311d2d"></a>APIERR_BADID&#160;</td><td class="fielddoc"><p>The passed identifier is not a valid one, or valid, but not proper for the given operation. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a53ce20ea126a4065688e1c8dfd311d2d" name="gga75cc225b8e9434d91621dd230c3013a2a53ce20ea126a4065688e1c8dfd311d2d"></a>APIERR_BADID&#160;</td><td class="fielddoc"><p>The passed identifier is not valid, or is valid but not appropriate for the given operation. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a35f268d718718cb960ebf9b6d715424e" name="gga75cc225b8e9434d91621dd230c3013a2a35f268d718718cb960ebf9b6d715424e"></a>APIERR_BADINDEX&#160;</td><td class="fielddoc"><p>The passed index is out of range. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a08ac12be81b425f6d3139c2711c9294d" name="gga75cc225b8e9434d91621dd230c3013a2a08ac12be81b425f6d3139c2711c9294d"></a>APIERR_BADNAME&#160;</td><td class="fielddoc"><p>The passed name is not proper or not found in the existing list. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a08ac12be81b425f6d3139c2711c9294d" name="gga75cc225b8e9434d91621dd230c3013a2a08ac12be81b425f6d3139c2711c9294d"></a>APIERR_BADNAME&#160;</td><td class="fielddoc"><p>The passed name is not appropriate or not found in the existing list. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2aa80187ab8c7f0d6fc76dafb582ba46c0" name="gga75cc225b8e9434d91621dd230c3013a2aa80187ab8c7f0d6fc76dafb582ba46c0"></a>APIERR_BADPARS&#160;</td><td class="fielddoc"><p>The passed parameters are inconsistent. </p>
 </td></tr>
@@ -436,7 +436,7 @@ constexpr <a class="el" href="struct_a_p_i___guid.html">API_Guid</a>&#160;</td><
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a2228d8b46d6cd5cd69e469b0628b56af" name="gga75cc225b8e9434d91621dd230c3013a2a2228d8b46d6cd5cd69e469b0628b56af"></a>APIERR_BADUSERID&#160;</td><td class="fielddoc"><p>The passed user ID (TeamWork client) is not valid. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a5b9a504387c071afa5cf3251ff57c24f" name="gga75cc225b8e9434d91621dd230c3013a2a5b9a504387c071afa5cf3251ff57c24f"></a>APIERR_BADVALUE&#160;</td><td class="fielddoc"><p>The passed autotext value is not valid. See <a class="el" href="group___auto_text.html#gaadd0b2cb3330628e5c09a6318191af1b">ACAPI_AutoText_SetAnAutoText</a>. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a5b9a504387c071afa5cf3251ff57c24f" name="gga75cc225b8e9434d91621dd230c3013a2a5b9a504387c071afa5cf3251ff57c24f"></a>APIERR_BADVALUE&#160;</td><td class="fielddoc"><p>The passed autotext value is not valid. See <a class="el" href="group___property.html#ga73fe9f157c02b60cf6157ed5cd3e5417">ACAPI_Property_CreatePropertyDefinition</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a8386547bdbdcd7d31534b015ec7b72c1" name="gga75cc225b8e9434d91621dd230c3013a2a8386547bdbdcd7d31534b015ec7b72c1"></a>APIERR_BADELEMENTTYPE&#160;</td><td class="fielddoc"><p>The function cannot be applied to the passed element type. See <a class="el" href="group___element.html#gae38b3e1188b73b83f0cf3a0fa1386eb7">ACAPI_Element_Trim_Elements</a>. </p>
 </td></tr>
@@ -444,7 +444,7 @@ constexpr <a class="el" href="struct_a_p_i___guid.html">API_Guid</a>&#160;</td><
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a5041e2105fd57359b7329cd781d1848f" name="gga75cc225b8e9434d91621dd230c3013a2a5041e2105fd57359b7329cd781d1848f"></a>APIERR_BADEXPRESSION&#160;</td><td class="fielddoc"><p>The passed expression string is syntactically incorrect. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2ae6f524d30e129e2251002401d6f85706" name="gga75cc225b8e9434d91621dd230c3013a2ae6f524d30e129e2251002401d6f85706"></a>APIERR_BADGUID&#160;</td><td class="fielddoc"><p>The passed guid is invalid or valid, but not proper for the given operation. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2ae6f524d30e129e2251002401d6f85706" name="gga75cc225b8e9434d91621dd230c3013a2ae6f524d30e129e2251002401d6f85706"></a>APIERR_BADGUID&#160;</td><td class="fielddoc"><p>The passed GUID is invalid or is valid but not appropriate for the given operation. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a172a72b16114a2cd615768fe0eb6bc79" name="gga75cc225b8e9434d91621dd230c3013a2a172a72b16114a2cd615768fe0eb6bc79"></a>APIERR_BADTOKEN&#160;</td><td class="fielddoc"><p>The passed token is invalid. See <a class="el" href="group___add_on_identification.html#gadd3b70d02641e8f327b6febb0adf5790">ACAPI_GetToken</a>. </p>
 </td></tr>
@@ -456,7 +456,7 @@ constexpr <a class="el" href="struct_a_p_i___guid.html">API_Guid</a>&#160;</td><
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a526d40bf737d232ae92582ec6d6dc0bb" name="gga75cc225b8e9434d91621dd230c3013a2a526d40bf737d232ae92582ec6d6dc0bb"></a>APIERR_NOLIB&#160;</td><td class="fielddoc"><p>No library was loaded. The operation cannot be executed without a loaded library. Can be returned by <a class="el" href="group___library_part.html#ga994b54879d6ca52fd828604434efc978">ACAPI_LibraryPart_Create</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a0b25251c6c569a96817c393dadf99664" name="gga75cc225b8e9434d91621dd230c3013a2a0b25251c6c569a96817c393dadf99664"></a>APIERR_NOLIBSECT&#160;</td><td class="fielddoc"><p>The requested LibPart section is not found. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a0b25251c6c569a96817c393dadf99664" name="gga75cc225b8e9434d91621dd230c3013a2a0b25251c6c569a96817c393dadf99664"></a>APIERR_NOLIBSECT&#160;</td><td class="fielddoc"><p>The requested LibPart section was not found. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2abccdb2aad6d1cd75984b7a6a8935f824" name="gga75cc225b8e9434d91621dd230c3013a2abccdb2aad6d1cd75984b7a6a8935f824"></a>APIERR_NOSEL&#160;</td><td class="fielddoc"><p>No selection. The operation cannot be executed without any element selected. </p>
 </td></tr>
@@ -472,17 +472,17 @@ constexpr <a class="el" href="struct_a_p_i___guid.html">API_Guid</a>&#160;</td><
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a8a2faa2ad2a04236f5a9f6c770848979" name="gga75cc225b8e9434d91621dd230c3013a2a8a2faa2ad2a04236f5a9f6c770848979"></a>APIERR_NOUSERDATA&#160;</td><td class="fielddoc"><p>Attempt to get user data assigned to an element, but there isn't any. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a56e7aec40d60c38a0d7e6268a33952cb" name="gga75cc225b8e9434d91621dd230c3013a2a56e7aec40d60c38a0d7e6268a33952cb"></a>APIERR_MOREUSER&#160;</td><td class="fielddoc"><p>The user data cannot be assigned to the element, since there is no free storage block avaliable. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a56e7aec40d60c38a0d7e6268a33952cb" name="gga75cc225b8e9434d91621dd230c3013a2a56e7aec40d60c38a0d7e6268a33952cb"></a>APIERR_MOREUSER&#160;</td><td class="fielddoc"><p>The user data cannot be assigned to the element, since there is no free storage block available. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a4f05aa1e350a05f80929b90716d16dd3" name="gga75cc225b8e9434d91621dd230c3013a2a4f05aa1e350a05f80929b90716d16dd3"></a>APIERR_LINKEXIST&#160;</td><td class="fielddoc"><p>The link already exists. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2aebcf8f683d31dda93a9a2ac207c8a7bc" name="gga75cc225b8e9434d91621dd230c3013a2aebcf8f683d31dda93a9a2ac207c8a7bc"></a>APIERR_LINKNOTEXIST&#160;</td><td class="fielddoc"><p>The link doesn't exist. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2aebcf8f683d31dda93a9a2ac207c8a7bc" name="gga75cc225b8e9434d91621dd230c3013a2aebcf8f683d31dda93a9a2ac207c8a7bc"></a>APIERR_LINKNOTEXIST&#160;</td><td class="fielddoc"><p>The link does not exist. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2ad73cdafcecafc71209945a4950398970" name="gga75cc225b8e9434d91621dd230c3013a2ad73cdafcecafc71209945a4950398970"></a>APIERR_WINDEXIST&#160;</td><td class="fielddoc"><p>The window to be opened already exists. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a25794e1f884a31fff94f3130df59cea9" name="gga75cc225b8e9434d91621dd230c3013a2a25794e1f884a31fff94f3130df59cea9"></a>APIERR_WINDNOTEXIST&#160;</td><td class="fielddoc"><p>The referenced window does not exist. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a5dc51eeac081e3abb5e730af66a84ee9" name="gga75cc225b8e9434d91621dd230c3013a2a5dc51eeac081e3abb5e730af66a84ee9"></a>APIERR_UNDOEMPTY&#160;</td><td class="fielddoc"><p>No undoable entry has got into the opened undo operation. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a5dc51eeac081e3abb5e730af66a84ee9" name="gga75cc225b8e9434d91621dd230c3013a2a5dc51eeac081e3abb5e730af66a84ee9"></a>APIERR_UNDOEMPTY&#160;</td><td class="fielddoc"><p>No undoable entry has been added to the opened undo operation. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2abe79d2175f4d11666e145cc86ca867ed" name="gga75cc225b8e9434d91621dd230c3013a2abe79d2175f4d11666e145cc86ca867ed"></a>APIERR_REFERENCEEXIST&#160;</td><td class="fielddoc"><p>The reference already exists. </p>
 </td></tr>
@@ -500,13 +500,13 @@ constexpr <a class="el" href="struct_a_p_i___guid.html">API_Guid</a>&#160;</td><
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a0711132d7304298da2bdb174d931230f" name="gga75cc225b8e9434d91621dd230c3013a2a0711132d7304298da2bdb174d931230f"></a>APIERR_NOTMINE&#160;</td><td class="fielddoc"><p>The database item is not in the user's workspace. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2ac64f7c2b07e4c36c636b59e9d0688b0a" name="gga75cc225b8e9434d91621dd230c3013a2ac64f7c2b07e4c36c636b59e9d0688b0a"></a>APIERR_NOACCESSRIGHT&#160;</td><td class="fielddoc"><p>Can't access / create / modify / delete an item in a teamwork server. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2ac64f7c2b07e4c36c636b59e9d0688b0a" name="gga75cc225b8e9434d91621dd230c3013a2ac64f7c2b07e4c36c636b59e9d0688b0a"></a>APIERR_NOACCESSRIGHT&#160;</td><td class="fielddoc"><p>Cannot access, create, modify, or delete an item in a Teamwork server. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2ae07ce37ca9232d94dfb14764b018b1e0" name="gga75cc225b8e9434d91621dd230c3013a2ae07ce37ca9232d94dfb14764b018b1e0"></a>APIERR_BADPROPERTY&#160;</td><td class="fielddoc"><p>The property for the passed element or attribute is not available. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a918b03b55e78133c0b23638259af07b7" name="gga75cc225b8e9434d91621dd230c3013a2a918b03b55e78133c0b23638259af07b7"></a>APIERR_BADCLASSIFICATION&#160;</td><td class="fielddoc"><p>Can't set the classification for the passed element or attribute. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a918b03b55e78133c0b23638259af07b7" name="gga75cc225b8e9434d91621dd230c3013a2a918b03b55e78133c0b23638259af07b7"></a>APIERR_BADCLASSIFICATION&#160;</td><td class="fielddoc"><p>Cannot set the classification for the passed element or attribute. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a6c87099012bd81c46aa6c7033c235a21" name="gga75cc225b8e9434d91621dd230c3013a2a6c87099012bd81c46aa6c7033c235a21"></a>APIERR_NOTEXISTINGLAYER&#160;</td><td class="fielddoc"><p>Given layer parameter index is not an existing one. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a6c87099012bd81c46aa6c7033c235a21" name="gga75cc225b8e9434d91621dd230c3013a2a6c87099012bd81c46aa6c7033c235a21"></a>APIERR_NOTEXISTINGLAYER&#160;</td><td class="fielddoc"><p>The given layer parameter index does not exist. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a8e2d7a68c192f8e892a6f4dadaaa4c4a" name="gga75cc225b8e9434d91621dd230c3013a2a8e2d7a68c192f8e892a6f4dadaaa4c4a"></a>APIERR_NOCURRATTRSET&#160;</td><td class="fielddoc"><p>No current attributeset </p>
 </td></tr>
@@ -520,31 +520,31 @@ constexpr <a class="el" href="struct_a_p_i___guid.html">API_Guid</a>&#160;</td><
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a68539c6a5b6d2607954da8fdd2324d8f" name="gga75cc225b8e9434d91621dd230c3013a2a68539c6a5b6d2607954da8fdd2324d8f"></a>APIERR_NOMODULEDATA&#160;</td><td class="fielddoc"><p>No custom data section is saved into the project file identified by the add-on's unique ID. See <a class="el" href="group___modul_data.html#ga3e2dfec830244c682a51d665fe47c09f">ACAPI_ModulData_GetInfo</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2aba5305fa43a2e621d31fafb3c7e25438" name="gga75cc225b8e9434d91621dd230c3013a2aba5305fa43a2e621d31fafb3c7e25438"></a>APIERR_DEPRECATEDCALL&#160;</td><td class="fielddoc"><p>The command (for this element type) is implemented on the C++ API in ArchicadAPI module and it is no longer available via the Old API. The function where it occured can be called for compatibility reasons but it takes no effect. For further information you can search the corresponding functionality in the API Documentation. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2aba5305fa43a2e621d31fafb3c7e25438" name="gga75cc225b8e9434d91621dd230c3013a2aba5305fa43a2e621d31fafb3c7e25438"></a>APIERR_DEPRECATEDCALL&#160;</td><td class="fielddoc"><p>The command (for this element type) is implemented in the C++ API in the ArchicadAPI module and is no longer available via the Old API. The function in which it occurs can be called for compatibility reasons but it has no effect. For further information, you can search for the corresponding functionality in the API Documentation. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a51c81ed41e4f16b04b3ee17bb603a5e8" name="gga75cc225b8e9434d91621dd230c3013a2a51c81ed41e4f16b04b3ee17bb603a5e8"></a>APIERR_PAROVERLAP&#160;</td><td class="fielddoc"><p>Two or more paragraphs are overlapped. The end offset of one is greater than the beginner offset of the next one. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a51c81ed41e4f16b04b3ee17bb603a5e8" name="gga75cc225b8e9434d91621dd230c3013a2a51c81ed41e4f16b04b3ee17bb603a5e8"></a>APIERR_PAROVERLAP&#160;</td><td class="fielddoc"><p>Two or more paragraphs overlap. The end offset of one is greater than the beginning offset of the next one. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a73496e975e5688cfa0badab41a6176ed" name="gga75cc225b8e9434d91621dd230c3013a2a73496e975e5688cfa0badab41a6176ed"></a>APIERR_PARMISSING&#160;</td><td class="fielddoc"><p>Number of paragraphs - the size of <code>paragraphs</code> handle - is zero. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2ad10af2647f7b1c383fa40cf29312ffa7" name="gga75cc225b8e9434d91621dd230c3013a2ad10af2647f7b1c383fa40cf29312ffa7"></a>APIERR_PAROVERFLOW&#160;</td><td class="fielddoc"><p>Paragraph end offset is run over the content length. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2ad10af2647f7b1c383fa40cf29312ffa7" name="gga75cc225b8e9434d91621dd230c3013a2ad10af2647f7b1c383fa40cf29312ffa7"></a>APIERR_PAROVERFLOW&#160;</td><td class="fielddoc"><p>Paragraph end offset runs over the content length. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a920f87f9c33fea6402917d3ae6f2a52a" name="gga75cc225b8e9434d91621dd230c3013a2a920f87f9c33fea6402917d3ae6f2a52a"></a>APIERR_PARIMPLICIT&#160;</td><td class="fielddoc"><p>The content string contains line end character (CR) at invalid position (inside the paragraph range). </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a920f87f9c33fea6402917d3ae6f2a52a" name="gga75cc225b8e9434d91621dd230c3013a2a920f87f9c33fea6402917d3ae6f2a52a"></a>APIERR_PARIMPLICIT&#160;</td><td class="fielddoc"><p>The content string contains a line end character (CR) at an invalid position (inside the paragraph range). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a4b5339e66370b051db7cf604ca70d2b7" name="gga75cc225b8e9434d91621dd230c3013a2a4b5339e66370b051db7cf604ca70d2b7"></a>APIERR_RUNOVERLAP&#160;</td><td class="fielddoc"><p>Two or more runs are overlapped. The end offset of one is greater than the beginner offset of the next one. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a4b5339e66370b051db7cf604ca70d2b7" name="gga75cc225b8e9434d91621dd230c3013a2a4b5339e66370b051db7cf604ca70d2b7"></a>APIERR_RUNOVERLAP&#160;</td><td class="fielddoc"><p>Two or more runs overlap. The end offset of one is greater than the beginning offset of the next one. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a4b28ab04b707d223962756df5502bec4" name="gga75cc225b8e9434d91621dd230c3013a2a4b28ab04b707d223962756df5502bec4"></a>APIERR_RUNMISSING&#160;</td><td class="fielddoc"><p>Number of runs - the size of <code>run</code> pointer - is zero. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2ac9da72cebe6b5bdca3160159b817e2f4" name="gga75cc225b8e9434d91621dd230c3013a2ac9da72cebe6b5bdca3160159b817e2f4"></a>APIERR_RUNOVERFLOW&#160;</td><td class="fielddoc"><p>Run end offset is run over the content length. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2ac9da72cebe6b5bdca3160159b817e2f4" name="gga75cc225b8e9434d91621dd230c3013a2ac9da72cebe6b5bdca3160159b817e2f4"></a>APIERR_RUNOVERFLOW&#160;</td><td class="fielddoc"><p>Run end offset runs over the content length. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2ae9b6fd851c6cfd51122124f637ce5cca" name="gga75cc225b8e9434d91621dd230c3013a2ae9b6fd851c6cfd51122124f637ce5cca"></a>APIERR_RUNIMPLICIT&#160;</td><td class="fielddoc"><p>The beginner offset of one is greater than the end offset of the previous one. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2ae9b6fd851c6cfd51122124f637ce5cca" name="gga75cc225b8e9434d91621dd230c3013a2ae9b6fd851c6cfd51122124f637ce5cca"></a>APIERR_RUNIMPLICIT&#160;</td><td class="fielddoc"><p>The beginning offset of one is greater than the end offset of the previous one. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2afb1954196caea062ce679cc80f7ba8e1" name="gga75cc225b8e9434d91621dd230c3013a2afb1954196caea062ce679cc80f7ba8e1"></a>APIERR_RUNPROTECTED&#160;</td><td class="fielddoc"><p>Attempted to overwrite a protected text run (not used yet). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a8911d23c757ed8baf46963b275f8ce36" name="gga75cc225b8e9434d91621dd230c3013a2a8911d23c757ed8baf46963b275f8ce36"></a>APIERR_EOLOVERLAP&#160;</td><td class="fielddoc"><p>The EOL array is not a monotonous ascendant sequence. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a8911d23c757ed8baf46963b275f8ce36" name="gga75cc225b8e9434d91621dd230c3013a2a8911d23c757ed8baf46963b275f8ce36"></a>APIERR_EOLOVERLAP&#160;</td><td class="fielddoc"><p>The EOL array is not a monotonically ascending sequence. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a311b209d2bdbb353b98da61df5ea8ae0" name="gga75cc225b8e9434d91621dd230c3013a2a311b209d2bdbb353b98da61df5ea8ae0"></a>APIERR_TABOVERLAP&#160;</td><td class="fielddoc"><p>The tabulator array is not a monotonous ascendant sequence. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a311b209d2bdbb353b98da61df5ea8ae0" name="gga75cc225b8e9434d91621dd230c3013a2a311b209d2bdbb353b98da61df5ea8ae0"></a>APIERR_TABOVERLAP&#160;</td><td class="fielddoc"><p>The tabulator array is not a monotonically ascending sequence. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a1ed57dcc6bee5b03ce6bfd9d59976c73" name="gga75cc225b8e9434d91621dd230c3013a2a1ed57dcc6bee5b03ce6bfd9d59976c73"></a>APIERR_NOTINIT&#160;</td><td class="fielddoc"><p>The command needs initialization by an other API call. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a1ed57dcc6bee5b03ce6bfd9d59976c73" name="gga75cc225b8e9434d91621dd230c3013a2a1ed57dcc6bee5b03ce6bfd9d59976c73"></a>APIERR_NOTINIT&#160;</td><td class="fielddoc"><p>The command needs initialization by another API call. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a03bb83a00ae064e151d25d3d2134dce4" name="gga75cc225b8e9434d91621dd230c3013a2a03bb83a00ae064e151d25d3d2134dce4"></a>APIERR_NESTING&#160;</td><td class="fielddoc"><p>The API function is not reentrant. Nesting occurred. </p>
 </td></tr>
@@ -562,7 +562,7 @@ constexpr <a class="el" href="struct_a_p_i___guid.html">API_Guid</a>&#160;</td><
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2aafa4ff5bcfe3538e1d9ad1ecc9f3794a" name="gga75cc225b8e9434d91621dd230c3013a2aafa4ff5bcfe3538e1d9ad1ecc9f3794a"></a>APIERR_NEEDSUNDOSCOPE&#160;</td><td class="fielddoc"><p>The called command should be encapsulated in a <a class="el" href="group___command.html#gab7bf9e1351986b4bb6c69dab76766f1a">ACAPI_CallUndoableCommand</a> scope. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a95f2f106595887ce96ef0d30120b3fbb" name="gga75cc225b8e9434d91621dd230c3013a2a95f2f106595887ce96ef0d30120b3fbb"></a>APIERR_UNDOSCOPEMISUSE&#160;</td><td class="fielddoc"><p>The called command shouldn't be encapsulated in a <a class="el" href="group___command.html#gab7bf9e1351986b4bb6c69dab76766f1a">ACAPI_CallUndoableCommand</a> scope. </p>
+<tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a95f2f106595887ce96ef0d30120b3fbb" name="gga75cc225b8e9434d91621dd230c3013a2a95f2f106595887ce96ef0d30120b3fbb"></a>APIERR_UNDOSCOPEMISUSE&#160;</td><td class="fielddoc"><p>The called command should not be encapsulated in a <a class="el" href="group___command.html#gab7bf9e1351986b4bb6c69dab76766f1a">ACAPI_CallUndoableCommand</a> scope. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga75cc225b8e9434d91621dd230c3013a2a4ac3ecca14071d40de54ea1c6320c320" name="gga75cc225b8e9434d91621dd230c3013a2a4ac3ecca14071d40de54ea1c6320c320"></a>APIERR_MISSINGCODE&#160;</td><td class="fielddoc"><p>The function is not implemented yet. </p>
 </td></tr>
@@ -832,7 +832,7 @@ constexpr <a class="el" href="struct_a_p_i___guid.html">API_Guid</a>&#160;</td><
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Generating an <a class="el" href="struct_a_p_i___guid.html" title="Represents a GS::Guid in the API layer.">API_Guid</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Generates an <a class="el" href="struct_a_p_i___guid.html" title="Represents a GS::Guid in the API layer.">API_Guid</a>. </dd></dl>
 
 </div>
 </div>
@@ -1305,7 +1305,7 @@ constexpr <a class="el" href="struct_a_p_i___guid.html">API_Guid</a>&#160;</td><
 </table>
 </div><div class="memdoc">
 
-<p>compares NullValueTyp in the API layer. </p>
+<p>Compares <a class="el" href="struct_null_value_type.html" title="Represents NullValueType in the API layer.">NullValueType</a> in the API layer. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 27 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns true. </dd></dl>
 

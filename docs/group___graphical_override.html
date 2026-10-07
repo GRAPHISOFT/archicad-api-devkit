@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Graphic Overrides</title>
+<title>Archicad 30 C++ API: Graphic Overrides</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -224,8 +224,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4feccfe554046731ba15e1f3be6e5652" id="r_ga4feccfe554046731ba15e1f3be6e5652"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4feccfe554046731ba15e1f3be6e5652">ACAPI_GraphicalOverride_SetOverrideRuleOrder</a> (const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;ruleGroup, const GS::Array&lt; <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &gt; &amp;orderedRuleIds)</td></tr>
 <tr class="memdesc:ga4feccfe554046731ba15e1f3be6e5652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the order of rules in the specified override rule group.  <br /></td></tr>
 <tr class="separator:ga4feccfe554046731ba15e1f3be6e5652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63b7f40ac8f421fbc89ad4569b7083d8" id="r_ga63b7f40ac8f421fbc89ad4569b7083d8"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga63b7f40ac8f421fbc89ad4569b7083d8">ACAPI_GraphicalOverride_GetActualOverrideCombination</a> (<a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;combinationGuid)</td></tr>
+<tr class="memdesc:ga63b7f40ac8f421fbc89ad4569b7083d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the override combination currently applied to the active window.  <br /></td></tr>
+<tr class="separator:ga63b7f40ac8f421fbc89ad4569b7083d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7dca1efa38b893ad0bce1f6703d1ab5" id="r_gaa7dca1efa38b893ad0bce1f6703d1ab5"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa7dca1efa38b893ad0bce1f6703d1ab5">ACAPI_GraphicalOverride_SetActualOverrideCombination</a> (const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;combinationGuid)</td></tr>
+<tr class="memdesc:gaa7dca1efa38b893ad0bce1f6703d1ab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an override combination to the active window.  <br /></td></tr>
+<tr class="separator:gaa7dca1efa38b893ad0bce1f6703d1ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5fcb0627f28ac285b8ee820999577b50" id="r_ga5fcb0627f28ac285b8ee820999577b50"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5fcb0627f28ac285b8ee820999577b50">ACAPI_GraphicalOverride_GetVisualOverriddenImage</a> (const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;elemGuid, <a class="el" href="struct_a_p_i___visual_overridden_image.html">API_VisualOverriddenImage</a> *image)</td></tr>
-<tr class="memdesc:ga5fcb0627f28ac285b8ee820999577b50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns visual overridden preview image for and element.  <br /></td></tr>
+<tr class="memdesc:ga5fcb0627f28ac285b8ee820999577b50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns visual overridden preview image for an element.  <br /></td></tr>
 <tr class="separator:ga5fcb0627f28ac285b8ee820999577b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -259,11 +265,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADID - The guid did not refer to a valid override combination or an element of the ruleList array did not refer to a valid override rule.</li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADID - The guid did not refer to a valid override combination, or an element of the ruleList array did not refer to a valid override rule.</li>
 <li>APIERR_BADNAME - The specified new name for the combination is invalid (empty, or whitespace only, or contains more than 255 characters)</li>
-<li>APIERR_NAMEALREADYUSED - The specified new name for the combination is already taken in the current project.</li>
-<li>APIERR_NOACCESSRIGHT - Tried to change a built-in combination. </li>
+<li>APIERR_NAMEALREADYUSED - The specified new name for the combination has already been taken in the current project.</li>
+<li>APIERR_NOACCESSRIGHT - You tried to change a built-in combination. </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode MakeOverrideCombinationEmpty (<a class="code hl_struct" href="struct_a_p_i___override_combination.html">API_OverrideCombination</a>&amp; combination)</div>
@@ -298,10 +304,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The guid did not refer to a valid override rule.</li>
 <li>APIERR_BADNAME - The specified new name for the rule is invalid (empty, or whitespace only, or contains more than 255 characters)</li>
-<li>APIERR_NAMEALREADYUSED - The specified new name for the rule is already taken in the current project.</li>
+<li>APIERR_NAMEALREADYUSED - The specified new name for the rule has already been taken in the current project.</li>
 <li>APIERR_NOACCESSRIGHT - Tried to change a built-in rule. </li>
 </ul>
 </dd></dl>
@@ -338,10 +344,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADID - The guid did not refer to a valid override rule group or an element of the ruleList array did not refer to a valid override rule.</li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADID - The guid did not refer to a valid override rule group, or an element of the ruleList array did not refer to a valid override rule.</li>
 <li>APIERR_BADNAME - The specified new name for the rule group is invalid (empty, or whitespace only, or contains more than 255 characters)</li>
-<li>APIERR_NAMEALREADYUSED - The specified new name for the rule group is already taken in the current project.</li>
+<li>APIERR_NAMEALREADYUSED - The specified new name for the rule group has already been used in the current project.</li>
 <li>APIERR_NOACCESSRIGHT - Tried to change a built-in rule group. </li>
 </ul>
 </dd></dl>
@@ -376,16 +382,16 @@ Functions</h2></td></tr>
 <p>Creates an override combination. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">combination</td><td>[in/out] The combination to create. Once the operation is successfully completed, this will hold the valid guid of the created combination. </td></tr>
+    <tr><td class="paramname">combination</td><td>[in/out] The combination to create. Once the operation is successfully completed, this will hold the valid GUID of the created combination. </td></tr>
     <tr><td class="paramname">ruleList</td><td>[in] The ids of the rules that the combination should "contain". </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The guid of a rule did not refer to a valid override rule.</li>
 <li>APIERR_BADNAME - The specified name for the combination is invalid (empty, or whitespace only, or contains more than 255 characters)</li>
-<li>APIERR_NAMEALREADYUSED - The specified name for the combination is already taken in the current project. </li>
+<li>APIERR_NAMEALREADYUSED - The specified name for the combination has already been taken in the current project. </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode CreateEmptyOverrideCombination (<span class="keyword">const</span> GS::UniString&amp; name, <a class="code hl_struct" href="struct_a_p_i___override_combination.html">API_OverrideCombination</a>&amp; combination)</div>
@@ -420,16 +426,16 @@ Functions</h2></td></tr>
 <p>Creates an override rule. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rule</td><td>[in/out] The rule to create. Once the operation is successfully completed, this will hold the valid guid of the created rule. </td></tr>
+    <tr><td class="paramname">rule</td><td>[in/out] The rule to create. Once the operation is successfully completed, this will hold the valid GUID of the created rule. </td></tr>
     <tr><td class="paramname">ruleGroup</td><td>[in] The rule group the rule should belong to. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The guid or name did not refer to a valid override rule group.</li>
 <li>APIERR_BADNAME - The specified name for the rule is invalid (empty, or whitespace only, or contains more than 255 characters)</li>
-<li>APIERR_NAMEALREADYUSED - The specified name for the rule is already taken in the current project. </li>
+<li>APIERR_NAMEALREADYUSED - The specified name for the rule has already been taken in the current project. </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example from Override_Test / TestNormalUsage</dt><dd><div class="fragment"><div class="line">        <span class="comment">// Get the data of a rule using ACAPI_GraphicalOverride_GetOverrideRule knowing its guid</span></div>
@@ -462,14 +468,14 @@ Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>Archicad 27 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ruleGroup</td><td>[in/out] The rule group to create. Once the operation is successfully completed, this will hold the valid guid of the created rule group. </td></tr>
+    <tr><td class="paramname">ruleGroup</td><td>[in/out] The rule group to create. Once the operation is successfully completed, this will hold the valid GUID of the created rule group. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADNAME - The specified name for the rule group is invalid (empty, or whitespace only, or contains more than 255 characters)</li>
-<li>APIERR_NAMEALREADYUSED - The specified name for the rule group is already taken in the current project. </li>
+<li>APIERR_NAMEALREADYUSED - The specified name for the rule group has already been taken in the current project. </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example from Override_Test / TestNormalUsage</dt><dd><div class="fragment"><div class="line">    <span class="comment">// Create an empty rule group using the ACAPI_GraphicalOverride_CreateOverrideRuleGroup function</span></div>
@@ -504,7 +510,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The guid did not refer to a valid override combination.</li>
 <li>APIERR_NOACCESSRIGHT - Tried to delete a built-in combination. </li>
 </ul>
@@ -548,7 +554,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The guid did not refer to a valid override rule.</li>
 <li>APIERR_NOACCESSRIGHT - Tried to delete a built-in rule. </li>
 </ul>
@@ -593,7 +599,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The guid did not refer to a valid override rule group.</li>
 <li>APIERR_NOACCESSRIGHT - Tried to delete a built-in rule group. </li>
 </ul>
@@ -676,6 +682,51 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga63b7f40ac8f421fbc89ad4569b7083d8" name="ga63b7f40ac8f421fbc89ad4569b7083d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga63b7f40ac8f421fbc89ad4569b7083d8">&#9670;&#160;</a></span>ACAPI_GraphicalOverride_GetActualOverrideCombination()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GSErrCode ACAPI_GraphicalOverride_GetActualOverrideCombination </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>combinationGuid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the override combination currently applied to the active window. </p>
+<dl class="section since"><dt>Since</dt><dd>Archicad 30 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">combinationGuid</td><td>[out] The guid of the actually applied override combination. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NoError - The function has completed successfully. </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode GetActualOverrideCombinationName (GS::UniString&amp; combinationName)</div>
+<div class="line">{</div>
+<div class="line">    <a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a> combinationGuid;</div>
+<div class="line">    GSErrCode error = <a class="code hl_function" href="#ga63b7f40ac8f421fbc89ad4569b7083d8">ACAPI_GraphicalOverride_GetActualOverrideCombination</a> (combinationGuid);</div>
+<div class="line">    <span class="keywordflow">if</span> (error == NoError) {</div>
+<div class="line">        <a class="code hl_struct" href="struct_a_p_i___override_combination.html">API_OverrideCombination</a> combination = {combinationGuid};</div>
+<div class="line">        error = <a class="code hl_function" href="#gad787632962797ec1b6222bcc2f5ae0d3">ACAPI_GraphicalOverride_GetOverrideCombination</a> (combination, <span class="keyword">nullptr</span>);</div>
+<div class="line">        <span class="keywordflow">if</span> (error == NoError) {</div>
+<div class="line">            combinationName = combination.<a class="code hl_variable" href="struct_a_p_i___override_combination.html#a52f0962a1c864534a9fdfec87578ef32">name</a>;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> error;</div>
+<div class="line">}</div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
 <a id="gad787632962797ec1b6222bcc2f5ae0d3" name="gad787632962797ec1b6222bcc2f5ae0d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad787632962797ec1b6222bcc2f5ae0d3">&#9670;&#160;</a></span>ACAPI_GraphicalOverride_GetOverrideCombination()</h2>
 
@@ -704,7 +755,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The guid or name did not refer to a valid override combination. </li>
 </ul>
 </dd></dl>
@@ -751,7 +802,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode GetOverrideCombinationNames (GS::Array&lt;GS::UniString&gt;&amp; combinationNames)</div>
@@ -798,7 +849,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The guid did not refer to a valid override rule. </li>
 </ul>
 </dd></dl>
@@ -838,7 +889,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The name did not refer to a valid override rule in that rule group. </li>
 </ul>
 </dd></dl>
@@ -873,13 +924,13 @@ Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>Archicad 27 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ruleGroup</td><td>[in/out] The guid field specifies the rule group to retrieve. If the guid field is APINULLGuid, then the name field is used to find the rule group. Once the operation is successfully completed, this will hold the retrieved rule group. </td></tr>
+    <tr><td class="paramname">ruleGroup</td><td>[in/out] The guid field specifies the rule group to retrieve. If the guid field is APINULLGuid, the name field is used to find the rule group. Once the operation is successfully completed, this will hold the retrieved rule group. </td></tr>
     <tr><td class="paramname">ruleList</td><td>[out] If not a nullptr, then the list of guids of the rules that belong to the rule group. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The guid or name did not refer to a valid override rule group. </li>
 </ul>
 </dd></dl>
@@ -920,7 +971,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example from Override_Test / TestNormalUsage</dt><dd><div class="fragment"><div class="line">    <span class="comment">// We can query the ordered list of all rule groups using the ACAPI_GraphicalOverride_GetOverrideRuleGroupList function</span></div>
@@ -956,7 +1007,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode GetOverrideRuleNames (GS::Array&lt;GS::UniString&gt;&amp; ruleNames)</div>
@@ -998,7 +1049,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns visual overridden preview image for and element. </p>
+<p>Returns visual overridden preview image for an element. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">elemGuid</td><td>[in] Element reference. </td></tr>
@@ -1009,7 +1060,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>APIERR_BADID - The element reference is invalid (guid).</li>
 <li>APIERR_BADPARS - The passed image parameter was nullptr.</li>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>The output preview image shows an element without concrete geometry and connected elements. Outputs are a vector image and a native image. Do not forget to dispose the handle of the output vector image if it is not needed any more. See <a class="el" href="struct_a_p_i___visual_overridden_image.html">API_VisualOverriddenImage</a> structure for further details. </dd></dl>
@@ -1019,16 +1070,16 @@ Functions</h2></td></tr>
 <div class="line">        <span class="keywordflow">switch</span> (index) {</div>
 <div class="line">            <span class="keywordflow">case</span> 0:</div>
 <div class="line">                WriteReport (<span class="stringliteral">&quot;\t APIImage_Section:&quot;</span>);</div>
-<div class="line">                image.view = APIImage_Section;</div>
+<div class="line">                image.view = <a class="code hl_enumvalue" href="group___element.html#gga25c7f8949218bdc8d17d02075cef2a5aa7551cce739e6c43cc27aadc460fcaf77">APIImage_Section</a>;</div>
 <div class="line">                image.overrideStyle.uncutSurfaceType = <a class="code hl_function" href="group___attribute.html#ga6096e41ad85dfa2821764b7b7c722c0c">ACAPI_CreateAttributeIndex</a> (5);      <span class="comment">// Stone - Limestone Fine</span></div>
 <div class="line">                <span class="keywordflow">break</span>;</div>
 <div class="line">            <span class="keywordflow">case</span> 1:</div>
 <div class="line">                WriteReport (<span class="stringliteral">&quot;\t APIImage_Model2D:&quot;</span>);</div>
-<div class="line">                image.view = APIImage_Model2D;</div>
+<div class="line">                image.view = <a class="code hl_enumvalue" href="group___element.html#gga25c7f8949218bdc8d17d02075cef2a5aa2a65de7e391814900f0a4cb83d743dca">APIImage_Model2D</a>;</div>
 <div class="line">                <span class="keywordflow">break</span>;</div>
 <div class="line">            <span class="keywordflow">default</span>:</div>
 <div class="line">                WriteReport (<span class="stringliteral">&quot;\t APIImage_Model3D:&quot;</span>);</div>
-<div class="line">                image.view = APIImage_Model3D;</div>
+<div class="line">                image.view = <a class="code hl_enumvalue" href="group___element.html#gga25c7f8949218bdc8d17d02075cef2a5aaa995b6a797b765fcca46d15a4ea3caaa">APIImage_Model3D</a>;</div>
 <div class="line">                image.overrideStyle.uncutSurfaceType = <a class="code hl_function" href="group___attribute.html#ga6096e41ad85dfa2821764b7b7c722c0c">ACAPI_CreateAttributeIndex</a> (1);  <span class="comment">// Brick - Running Bond</span></div>
 <div class="line">                <span class="keywordflow">break</span>;</div>
 <div class="line">        }</div>
@@ -1076,14 +1127,14 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rule</td><td>[in] The id of the rule to move. </td></tr>
-    <tr><td class="paramname">targetRuleGroup</td><td>[in] The id of the rule group the rule should belong to after the move. </td></tr>
-    <tr><td class="paramname">nextRule</td><td>[in] The id of the rule this rule should be right before in the target group. If this is nullptr then the rule will be the last in the target group. </td></tr>
+    <tr><td class="paramname">targetRuleGroup</td><td>[in] The ID of the rule group the rule should belong to after the move. </td></tr>
+    <tr><td class="paramname">nextRule</td><td>[in] The id of the rule this rule should be right before in the target group. If this is nullptr, then the rule will be the last in the target group. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADID - A guid did not refer to a valid override rule or override rule group, or the referred next rule was not in the target group.</li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADID - A guid did not refer to a valid override rule or override rule group, or the referred following rule was not in the target group.</li>
 <li>APIERR_NAMEALREADYUSED - The specified new name for the rule is already taken in the target group in the current project.</li>
 <li>APIERR_NOACCESSRIGHT - Insufficient teamwork permission or tried to move a built-in rule </li>
 </ul>
@@ -1101,6 +1152,49 @@ Functions</h2></td></tr>
 <div class="line">        ASSERT_NO_ERROR (<a class="code hl_function" href="#ga6c901fc4d9fec5df4322bb39ad27dbca">ACAPI_GraphicalOverride_GetOverrideRuleGroup</a> (ruleGroup2, &amp;rulesInGroup2));</div>
 <div class="line">        ASSERT (rulesInGroup2.GetSize () == 1);</div>
 <div class="line">        ASSERT (rulesInGroup2[0] == newRule.<a class="code hl_variable" href="struct_a_p_i___override_rule.html#a9fd5b5f94c19802273c8d02b7e10ef6d">guid</a>);</div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a id="gaa7dca1efa38b893ad0bce1f6703d1ab5" name="gaa7dca1efa38b893ad0bce1f6703d1ab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa7dca1efa38b893ad0bce1f6703d1ab5">&#9670;&#160;</a></span>ACAPI_GraphicalOverride_SetActualOverrideCombination()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GSErrCode ACAPI_GraphicalOverride_SetActualOverrideCombination </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>combinationGuid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applies an override combination to the active window. </p>
+<dl class="section since"><dt>Since</dt><dd>Archicad 30 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">combinationGuid</td><td>[in] The guid of the override combination to apply. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADPARS - combinationGuid is APINULLGuid.</li>
+<li>APIERR_BADID - combinationGuid does not refer to an existing override combination. </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode ApplyFirstOverrideCombination ()</div>
+<div class="line">{</div>
+<div class="line">    GS::Array&lt;API_Guid&gt; combinationsGuids;</div>
+<div class="line">    GSErrCode error = <a class="code hl_function" href="#ga339dcadb423378c8bb052e24a2ba2d9c">ACAPI_GraphicalOverride_GetOverrideCombinationList</a> (combinationsGuids);</div>
+<div class="line">    <span class="keywordflow">if</span> (error == NoError &amp;&amp; !combinationsGuids.IsEmpty ()) {</div>
+<div class="line">        error = <a class="code hl_function" href="#gaa7dca1efa38b893ad0bce1f6703d1ab5">ACAPI_GraphicalOverride_SetActualOverrideCombination</a> (combinationsGuids[0]);</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> error;</div>
+<div class="line">}</div>
 </div><!-- fragment --> </dd></dl>
 
 </div>
@@ -1129,7 +1223,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - A guid did not refer to a valid override rule group, or the array didn't contain all the user-defined rule groups.</li>
 <li>APIERR_NOACCESSRIGHT - Insufficient teamwork permission or tried to move a built-in rule </li>
 </ul>
@@ -1172,7 +1266,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - A guid did not refer to a valid override rule, or the array didn't contain all the rules in the override rule group.</li>
 <li>APIERR_NOACCESSRIGHT - Insufficient teamwork permission or tried to reorder rules in a built-in group. </li>
 </ul>

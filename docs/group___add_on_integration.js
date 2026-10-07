@@ -61,11 +61,24 @@ var group___add_on_integration =
     [ "APIPublishFormatCommandProc", "group___add_on_integration.html#ga2b665ae383f3d4ef4715168143c37891", null ],
     [ "APISettingsCreateProc", "group___add_on_integration.html#ga332e425afa5bbd65848e3efe6d733140", null ],
     [ "APISettingsDestroyProc", "group___add_on_integration.html#ga06d67080b2fb1a466c99ba808496e203", null ],
+    [ "API_ClassificationVisibilityMode", "group___add_on_integration.html#ga38aac5f2e8bba8514055cc93d7547e12", [
+      [ "APIClassVis_IsEnabled", "group___add_on_integration.html#gga38aac5f2e8bba8514055cc93d7547e12aed24c84a229edc541944bd4e7b41b04d", null ],
+      [ "APIClassVis_IsClassificationVisible", "group___add_on_integration.html#gga38aac5f2e8bba8514055cc93d7547e12acc8ed11e1afc8dd720d6339ba70a6bb6", null ]
+    ] ],
     [ "API_PanelType", "group___add_on_integration.html#ga2e8d1e122ba55aa64d55f78a255a9122", [
       [ "APIPanel_None", "group___add_on_integration.html#gga2e8d1e122ba55aa64d55f78a255a9122a8c5e14c80d8aa92196eef86d8d58c17a", null ],
       [ "APIPanel_Settings", "group___add_on_integration.html#gga2e8d1e122ba55aa64d55f78a255a9122a928bb6f9f9014d01e322e25ee954833e", null ],
       [ "APIPanel_Attribute", "group___add_on_integration.html#gga2e8d1e122ba55aa64d55f78a255a9122a0c5c50b605991620cd343d94eaafd65b", null ],
       [ "APIPanel_InfoBox", "group___add_on_integration.html#gga2e8d1e122ba55aa64d55f78a255a9122a2449d3206717bfc9559073eca3bcba9d", null ]
+    ] ],
+    [ "API_PropertyObjectCmdID", "group___add_on_integration.html#ga9a102dc92f724dd7dca3eca0572cb915", [
+      [ "APIPropObj_None", "group___add_on_integration.html#gga9a102dc92f724dd7dca3eca0572cb915a83832fb6be6c3124401fe655abe7cb60", null ],
+      [ "APIPropObj_AssignProperty", "group___add_on_integration.html#gga9a102dc92f724dd7dca3eca0572cb915a27bcc7788a40c6bef83ac1d501e036b0", null ],
+      [ "APIPropObj_DisableProperty", "group___add_on_integration.html#gga9a102dc92f724dd7dca3eca0572cb915a76b1947d46105328c7ce40432c96eeb0", null ]
+    ] ],
+    [ "API_PropertyVisibilityMode", "group___property.html#ga0bfe013771c05f775821dee649ecad97", [
+      [ "APIPropVis_IsEnabled", "group___property.html#gga0bfe013771c05f775821dee649ecad97aff49304f9e5a11d23dfd729f43892cc1", null ],
+      [ "APIPropVis_IsPropertyVisible", "group___property.html#gga0bfe013771c05f775821dee649ecad97adc8a75eb71fbd9439900fbe1f532ec4f", null ]
     ] ],
     [ "APIMenuCodeID", "group___add_on_integration.html#gae7782179a03e5a2f34a4940b46b86623", [
       [ "MenuCode_UserDef", "group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623ae12864dedfac94a3757780311667dec2", null ],
@@ -108,8 +121,11 @@ var group___add_on_integration =
     [ "ACAPI_AddOnIntegration_InstallPanelHandler", "group___add_on_integration.html#ga29fa171b94724463b999dcbfb3abae27", null ],
     [ "ACAPI_AddOnIntegration_InstallPublisherDefaultTranslatorGetter", "group___add_on_integration.html#ga6819fec71eef6b7ad1508c877e9dd288", null ],
     [ "ACAPI_AddOnIntegration_InstallPublisherFormatInfoGetter", "group___add_on_integration.html#ga1d044cfe8709de048b8598b8c1dfd2ac", null ],
-    [ "ACAPI_AddOnIntegration_InstallPublisherSaveMethod", "group___add_on_integration.html#gaa224c17de80cd55f8111e45dc5f005fc", null ],
+    [ "ACAPI_AddOnIntegration_InstallPublisherSaveInitialOption", "group___add_on_integration.html#ga0ff6b59dc81d7647324722b07c4b58e8", null ],
     [ "ACAPI_AddOnIntegration_InstallPublisherSaveOption", "group___add_on_integration.html#gae294cfd674fde1cbd0c4884b940cef9e", null ],
+    [ "ACAPI_AddOnIntegration_InstallPublisherSaveTranslator", "group___add_on_integration.html#ga056ff4c8c66549c6b9b8f544b0940c2c", null ],
+    [ "ACAPI_AddOnIntegration_InstallPublisherSaveWithOptionMethod", "group___add_on_integration.html#ga7cc973ef3037b2a04e838543fd858754", null ],
+    [ "ACAPI_AddOnIntegration_InstallPublisherSaveWithTranslatorMethod", "group___add_on_integration.html#ga199db38e28460c6f13212693a48d3b02", null ],
     [ "ACAPI_AddOnIntegration_InstallPublisherTranslatorGetter", "group___add_on_integration.html#ga8ede7ae0a5b26d2c991b29f20f6e0df8", null ],
     [ "ACAPI_AddOnIntegration_InstallSettingsHandler", "group___add_on_integration.html#ga4179e7dc48195aaef5aba15b776e29de", null ],
     [ "ACAPI_AddOnIntegration_RegisterAttributePanel", "group___add_on_integration.html#ga9069a54766487ef3e1c2c8c1ba99f97a", null ],

@@ -1,9 +1,12 @@
 var group___publisher =
 [
-    [ "DefaultTranslatorGetterProc", "group___publisher.html#gac6a0406b42e34e61ae1a898c5829d9f2", null ],
+    [ "DefaultTranslatorGetterProc", "group___publisher.html#ga5f382b2f9036044cf1c0cd49559c0675", null ],
     [ "InfoGetterProc", "group___publisher.html#ga4219a052ce771d35b855db27c74066cb", null ],
+    [ "SaveInitialOptionProc", "group___publisher.html#ga1751acd5fd15211543cd551677202dc5", null ],
     [ "SaveOptionProc", "group___publisher.html#gabafc3b6d7b76e4add0615d95457caa81", null ],
-    [ "SaveProc", "group___publisher.html#ga930943e85800de0cdc60481156b0a9da", null ],
+    [ "SaveTranslatorProc", "group___publisher.html#ga8e6b1826209da658eb06285e03d34b1c", null ],
+    [ "SaveWithOptionProc", "group___publisher.html#ga4450a3dc9f76c354bec74caa18841053", null ],
+    [ "SaveWithTranslatorProc", "group___publisher.html#gae87a2542cff98790f46986ff630b3f1b", null ],
     [ "TranslatorGetterProc", "group___publisher.html#gab8ac9e0bc5b7471fcd60cf182a1f86ae", null ],
     [ "API_SaveMethod", "group___publisher.html#ga3483bb71fa09dc5031a5cc23bf10bcb7", [
       [ "Save2DProc", "group___publisher.html#gga3483bb71fa09dc5031a5cc23bf10bcb7a9e3a105874e310f18cd23bbc4e13dd70", null ],

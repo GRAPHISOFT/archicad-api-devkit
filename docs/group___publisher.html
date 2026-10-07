@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Publisher</title>
+<title>Archicad 30 C++ API: Publisher</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -137,17 +137,26 @@ $(function(){initNavTree('group___publisher.html',''); initResizable(true); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga930943e85800de0cdc60481156b0a9da" id="r_ga930943e85800de0cdc60481156b0a9da"><td class="memItemLeft" align="right" valign="top">typedef GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga930943e85800de0cdc60481156b0a9da">SaveProc</a>(<a class="el" href="#ga3483bb71fa09dc5031a5cc23bf10bcb7">API_SaveMethod</a> method, const char *path, <a class="el" href="struct_a_p_i___user_data.html">API_UserData</a> *userData, GS::UniString *reportStr)</td></tr>
-<tr class="memdesc:ga930943e85800de0cdc60481156b0a9da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to save the document in the newly registered publish format.  <br /></td></tr>
-<tr class="separator:ga930943e85800de0cdc60481156b0a9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4450a3dc9f76c354bec74caa18841053" id="r_ga4450a3dc9f76c354bec74caa18841053"><td class="memItemLeft" align="right" valign="top">typedef GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4450a3dc9f76c354bec74caa18841053">SaveWithOptionProc</a>(<a class="el" href="#ga3483bb71fa09dc5031a5cc23bf10bcb7">API_SaveMethod</a> method, const char *path, <a class="el" href="struct_a_p_i___user_data.html">API_UserData</a> *userData, GS::UniString *reportStr)</td></tr>
+<tr class="memdesc:ga4450a3dc9f76c354bec74caa18841053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to save the document with set options in the newly registered publish format.  <br /></td></tr>
+<tr class="separator:ga4450a3dc9f76c354bec74caa18841053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae87a2542cff98790f46986ff630b3f1b" id="r_gae87a2542cff98790f46986ff630b3f1b"><td class="memItemLeft" align="right" valign="top">typedef GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae87a2542cff98790f46986ff630b3f1b">SaveWithTranslatorProc</a>(<a class="el" href="#ga3483bb71fa09dc5031a5cc23bf10bcb7">API_SaveMethod</a> method, const char *path, <a class="el" href="struct_a_p_i___translator_name_config.html">API_TranslatorNameConfig</a> translator, GS::UniString *reportStr)</td></tr>
+<tr class="memdesc:gae87a2542cff98790f46986ff630b3f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to save the document with a translator in the newly registered publish format.  <br /></td></tr>
+<tr class="separator:gae87a2542cff98790f46986ff630b3f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabafc3b6d7b76e4add0615d95457caa81" id="r_gabafc3b6d7b76e4add0615d95457caa81"><td class="memItemLeft" align="right" valign="top">typedef GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabafc3b6d7b76e4add0615d95457caa81">SaveOptionProc</a>(<a class="el" href="#ga3483bb71fa09dc5031a5cc23bf10bcb7">API_SaveMethod</a> method, <a class="el" href="struct_a_p_i___user_data.html">API_UserData</a> *userData)</td></tr>
 <tr class="memdesc:gabafc3b6d7b76e4add0615d95457caa81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to set different options for the newly registered format.  <br /></td></tr>
 <tr class="separator:gabafc3b6d7b76e4add0615d95457caa81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e6b1826209da658eb06285e03d34b1c" id="r_ga8e6b1826209da658eb06285e03d34b1c"><td class="memItemLeft" align="right" valign="top">typedef GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8e6b1826209da658eb06285e03d34b1c">SaveTranslatorProc</a>(<a class="el" href="#ga3483bb71fa09dc5031a5cc23bf10bcb7">API_SaveMethod</a> method, <a class="el" href="struct_a_p_i___translator_name_config.html">API_TranslatorNameConfig</a> &amp;translator)</td></tr>
+<tr class="memdesc:ga8e6b1826209da658eb06285e03d34b1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to set the translator configuration for the newly registered format.  <br /></td></tr>
+<tr class="separator:ga8e6b1826209da658eb06285e03d34b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1751acd5fd15211543cd551677202dc5" id="r_ga1751acd5fd15211543cd551677202dc5"><td class="memItemLeft" align="right" valign="top">typedef GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1751acd5fd15211543cd551677202dc5">SaveInitialOptionProc</a>(<a class="el" href="#ga3483bb71fa09dc5031a5cc23bf10bcb7">API_SaveMethod</a> method, <a class="el" href="struct_a_p_i___user_data.html">API_UserData</a> *userData)</td></tr>
+<tr class="memdesc:ga1751acd5fd15211543cd551677202dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to set initial options for the newly registered format.  <br /></td></tr>
+<tr class="separator:ga1751acd5fd15211543cd551677202dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab8ac9e0bc5b7471fcd60cf182a1f86ae" id="r_gab8ac9e0bc5b7471fcd60cf182a1f86ae"><td class="memItemLeft" align="right" valign="top">typedef GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab8ac9e0bc5b7471fcd60cf182a1f86ae">TranslatorGetterProc</a>(GS::Array&lt; <a class="el" href="struct_a_p_i___translator_name_config.html">API_TranslatorNameConfig</a> &gt; &amp;arr)</td></tr>
 <tr class="memdesc:gab8ac9e0bc5b7471fcd60cf182a1f86ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to receive the translators for the new registered publish forma.  <br /></td></tr>
 <tr class="separator:gab8ac9e0bc5b7471fcd60cf182a1f86ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6a0406b42e34e61ae1a898c5829d9f2" id="r_gac6a0406b42e34e61ae1a898c5829d9f2"><td class="memItemLeft" align="right" valign="top">typedef GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac6a0406b42e34e61ae1a898c5829d9f2">DefaultTranslatorGetterProc</a>(<a class="el" href="struct_a_p_i___translator_name_config.html">API_TranslatorNameConfig</a> &amp;def)</td></tr>
-<tr class="separator:gac6a0406b42e34e61ae1a898c5829d9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f382b2f9036044cf1c0cd49559c0675" id="r_ga5f382b2f9036044cf1c0cd49559c0675"><td class="memItemLeft" align="right" valign="top">typedef GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5f382b2f9036044cf1c0cd49559c0675">DefaultTranslatorGetterProc</a>(<a class="el" href="struct_a_p_i___translator_name_config.html">API_TranslatorNameConfig</a> &amp;translator)</td></tr>
+<tr class="separator:ga5f382b2f9036044cf1c0cd49559c0675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4219a052ce771d35b855db27c74066cb" id="r_ga4219a052ce771d35b855db27c74066cb"><td class="memItemLeft" align="right" valign="top">typedef GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4219a052ce771d35b855db27c74066cb">InfoGetterProc</a>(const <a class="el" href="struct_a_p_i___user_data.html">API_UserData</a> *const userData, GS::UniString &amp;info, bool general)</td></tr>
 <tr class="separator:ga4219a052ce771d35b855db27c74066cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -178,21 +187,21 @@ Enumerations</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions for integrating into the publisher or registering new supported file types. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="gac6a0406b42e34e61ae1a898c5829d9f2" name="gac6a0406b42e34e61ae1a898c5829d9f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac6a0406b42e34e61ae1a898c5829d9f2">&#9670;&#160;</a></span>DefaultTranslatorGetterProc</h2>
+<a id="ga5f382b2f9036044cf1c0cd49559c0675" name="ga5f382b2f9036044cf1c0cd49559c0675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5f382b2f9036044cf1c0cd49559c0675">&#9670;&#160;</a></span>DefaultTranslatorGetterProc</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef GSErrCode DefaultTranslatorGetterProc(<a class="el" href="struct_a_p_i___translator_name_config.html">API_TranslatorNameConfig</a> &amp;def)</td>
+          <td class="memname">typedef GSErrCode DefaultTranslatorGetterProc(<a class="el" href="struct_a_p_i___translator_name_config.html">API_TranslatorNameConfig</a> &amp;translator)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Callback function to receive the default translator for the new registered publish format.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">def</td><td>[out] The output parameter of this function. This configuration will be set to hold the default translator of the format. </td></tr>
+    <tr><td class="paramname">translator</td><td>[out] The output parameter of this function. This configuration will be set to hold the default translator of the format. </td></tr>
   </table>
   </dd>
 </dl>
@@ -214,16 +223,43 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Callback function to receive a string providing additional information about a publisher format or it's current configuration.</p>
+<p>Callback function to receive a string providing additional information about a publisher format or its current configuration.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">info</td><td>[out] The info string that can be displayed by the Publisher. </td></tr>
-    <tr><td class="paramname">general</td><td>[in] Indicates that the info string should have contents for a Publisher Folder item has the same format items, but with different info </td></tr>
+    <tr><td class="paramname">general</td><td>[in] Indicates that the info string should have contents for a Publisher Folder item that has the same format items, but with different info </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>NoError - The function has completed with success. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga1751acd5fd15211543cd551677202dc5" name="ga1751acd5fd15211543cd551677202dc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1751acd5fd15211543cd551677202dc5">&#9670;&#160;</a></span>SaveInitialOptionProc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef GSErrCode SaveInitialOptionProc(<a class="el" href="#ga3483bb71fa09dc5031a5cc23bf10bcb7">API_SaveMethod</a> method, <a class="el" href="struct_a_p_i___user_data.html">API_UserData</a> *userData)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback function to set initial options for the newly registered format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">method</td><td>[in] Any of <code> Save2DProc, SaveSectionProc, Save3DProc, SaveRenderingProc, SaveTextProc, SaveReportProc, SaveDrawProc, SaveLayoutProc, SaveMovie3DProc, SaveMovieRenderingProc, SaveDetailDrawingProc, SaveIESProc, SaveDocumentFrom3DProc </code> </td></tr>
+    <tr><td class="paramname">userData</td><td>[in] The userData contains the save options given by the Add-On. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NoError - The function has been completed with success. </li>
 </ul>
 </dd></dl>
 
@@ -256,24 +292,80 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="ga930943e85800de0cdc60481156b0a9da" name="ga930943e85800de0cdc60481156b0a9da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga930943e85800de0cdc60481156b0a9da">&#9670;&#160;</a></span>SaveProc</h2>
+<a id="ga8e6b1826209da658eb06285e03d34b1c" name="ga8e6b1826209da658eb06285e03d34b1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e6b1826209da658eb06285e03d34b1c">&#9670;&#160;</a></span>SaveTranslatorProc</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef GSErrCode SaveProc(<a class="el" href="#ga3483bb71fa09dc5031a5cc23bf10bcb7">API_SaveMethod</a> method, const char *path, <a class="el" href="struct_a_p_i___user_data.html">API_UserData</a> *userData, GS::UniString *reportStr)</td>
+          <td class="memname">typedef GSErrCode SaveTranslatorProc(<a class="el" href="#ga3483bb71fa09dc5031a5cc23bf10bcb7">API_SaveMethod</a> method, <a class="el" href="struct_a_p_i___translator_name_config.html">API_TranslatorNameConfig</a> &amp;translator)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Callback function to save the document in the newly registered publish format. </p>
+<p>Callback function to set the translator configuration for the newly registered format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">method</td><td>[in] Any of <code> Save2DProc, SaveSectionProc, Save3DProc, SaveRenderingProc, SaveTextProc, SaveReportProc, SaveDrawProc, SaveLayoutProc, SaveMovie3DProc, SaveMovieRenderingProc, SaveDetailDrawingProc, SaveIESProc, SaveDocumentFrom3DProc </code> </td></tr>
+    <tr><td class="paramname">translator</td><td>[in] The translator configuration given by the Add-On. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NoError - The function has been completed with success. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga4450a3dc9f76c354bec74caa18841053" name="ga4450a3dc9f76c354bec74caa18841053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4450a3dc9f76c354bec74caa18841053">&#9670;&#160;</a></span>SaveWithOptionProc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef GSErrCode SaveWithOptionProc(<a class="el" href="#ga3483bb71fa09dc5031a5cc23bf10bcb7">API_SaveMethod</a> method, const char *path, <a class="el" href="struct_a_p_i___user_data.html">API_UserData</a> *userData, GS::UniString *reportStr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback function to save the document with set options in the newly registered publish format. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">method</td><td>[in] Any of <code> Save2DProc, SaveSectionProc, Save3DProc, SaveRenderingProc, SaveTextProc, SaveReportProc, SaveDrawProc, SaveLayoutProc, SaveMovie3DProc, SaveMovieRenderingProc, SaveDetailDrawingProc, SaveIESProc, SaveDocumentFrom3DProc </code> </td></tr>
     <tr><td class="paramname">path</td><td>[in] The path where to save the published file. </td></tr>
     <tr><td class="paramname">userData</td><td>[in] The userData contains the save options given by the Add-On. </td></tr>
+    <tr><td class="paramname">reportStr</td><td>[in] The error message if the publishing failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NoError - The function has been completed with success. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="gae87a2542cff98790f46986ff630b3f1b" name="gae87a2542cff98790f46986ff630b3f1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae87a2542cff98790f46986ff630b3f1b">&#9670;&#160;</a></span>SaveWithTranslatorProc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef GSErrCode SaveWithTranslatorProc(<a class="el" href="#ga3483bb71fa09dc5031a5cc23bf10bcb7">API_SaveMethod</a> method, const char *path, <a class="el" href="struct_a_p_i___translator_name_config.html">API_TranslatorNameConfig</a> translator, GS::UniString *reportStr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback function to save the document with a translator in the newly registered publish format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">method</td><td>[in] Any of <code> Save2DProc, SaveSectionProc, Save3DProc, SaveRenderingProc, SaveTextProc, SaveReportProc, SaveDrawProc, SaveLayoutProc, SaveMovie3DProc, SaveMovieRenderingProc, SaveDetailDrawingProc, SaveIESProc, SaveDocumentFrom3DProc </code> </td></tr>
+    <tr><td class="paramname">path</td><td>[in] The path where to save the published file. </td></tr>
+    <tr><td class="paramname">translator</td><td>[in] The translator configuration given by the Add-On. </td></tr>
     <tr><td class="paramname">reportStr</td><td>[in] The error message if the publishing failed. </td></tr>
   </table>
   </dd>

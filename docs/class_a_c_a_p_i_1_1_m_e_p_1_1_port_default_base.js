@@ -1,6 +1,7 @@
 var class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base =
 [
     [ "PortDefaultBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html#aa3fa3b649023533954337e0eaaf130fa", null ],
+    [ "GetConnectionStyle", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html#abb6355bdcb9fa6c7954c624d41f5df0d", null ],
     [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html#ae3b904c39047bc290b2c21d9c67793d2", null ],
     [ "GetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html#a61ff15e931882cc343aa147af2974cad", null ],
     [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html#aef5110372a07ece341e490b7f446de5d", null ],

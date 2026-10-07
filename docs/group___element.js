@@ -333,7 +333,6 @@ var group___element =
     [ "API_ElemPartId", "class_a_p_i___elem_part_id.html", [
       [ "API_ElemPartId", "class_a_p_i___elem_part_id.html#aa3a241aa3a3d17c4bcd564c6ef63c0d1", null ],
       [ "GenerateHashValue", "class_a_p_i___elem_part_id.html#a98f902dbdb447dcd69ceaa7466992855", null ],
-      [ "operator!=", "class_a_p_i___elem_part_id.html#a972bdbdd6b5bdfa0efe875f0110ac9ab", null ],
       [ "operator==", "class_a_p_i___elem_part_id.html#a04f90ce45179c7f70b3fcc54ba57c1b3", null ],
       [ "floor", "class_a_p_i___elem_part_id.html#a10b19f0e9ec3b58a6dac4e746e8c84a8", null ],
       [ "main", "class_a_p_i___elem_part_id.html#a23d2e8f0d293962ea2b724677e270293", null ],
@@ -1230,17 +1229,28 @@ var group___element =
       [ "note", "struct_a_p_i___dim_elem.html#aa361a2df87ba106ee529cb45a8558b70", null ],
       [ "pos", "struct_a_p_i___dim_elem.html#a4408c25cb95cad345b1a23ac886a8286", null ],
       [ "pos3D", "struct_a_p_i___dim_elem.html#a1b0b4199f9b126a7948fd546888a08b3", null ],
+      [ "witnessExtensionGap", "struct_a_p_i___dim_elem.html#a8f265f183c0ff76813be88ff4004ae9e", null ],
+      [ "witnessExtensionGapSize", "struct_a_p_i___dim_elem.html#a91e73c5ff0364215d92972917dfcaf5d", null ],
+      [ "witnessExtensionLinePen", "struct_a_p_i___dim_elem.html#a53ff9dad727c64a8f94a1c2c0d70e178", null ],
+      [ "witnessExtensionLineType", "struct_a_p_i___dim_elem.html#ae84960f726394eb4aa7d6c2996e8b7b1", null ],
       [ "witnessForm", "struct_a_p_i___dim_elem.html#af4c07b352bb8c67c600b8e8718693417", null ],
+      [ "witnessOverrideExtension", "struct_a_p_i___dim_elem.html#a24bf6295d5a811530e63ceee05068b7b", null ],
       [ "witnessVal", "struct_a_p_i___dim_elem.html#ada641f547ad5c9920b5558eaa8aad5da", null ]
     ] ],
     [ "API_DimensionType", "struct_a_p_i___dimension_type.html", [
       [ "advanced", "struct_a_p_i___dimension_type.html#a2c5f82ea679b836a6f072c7571ef5c2c", null ],
       [ "arcBase", "struct_a_p_i___dimension_type.html#ac10a7cd431afe2fe4dabd6b35bd04713", null ],
-      [ "clipOtherSide", "struct_a_p_i___dimension_type.html#a072c52fc1f07d6375fd4b42f1ac8b46b", null ],
+      [ "clipDimensionLine", "struct_a_p_i___dimension_type.html#a1ee39e9e14793ecc8dc032c517e5411c", null ],
+      [ "clipWitnessLine", "struct_a_p_i___dimension_type.html#a3673edd84483436a40095f9779bc5e43", null ],
       [ "compAutoThick", "struct_a_p_i___dimension_type.html#a8ce47984e81d321896f742b6cf846b34", null ],
       [ "defNote", "struct_a_p_i___dimension_type.html#a680c90fbc22e6a3cc5a572067cb468f8", null ],
       [ "defStaticDim", "struct_a_p_i___dimension_type.html#a72c4760d687041eaadeae5983ba13da2", null ],
+      [ "defWitnessExtensionGap", "struct_a_p_i___dimension_type.html#ad540c0a5db7771626a4d7bc29b9fee39", null ],
+      [ "defWitnessExtensionGapSize", "struct_a_p_i___dimension_type.html#a31c62add9284fb99bbe8445708ca6fb8", null ],
+      [ "defWitnessExtensionLinePen", "struct_a_p_i___dimension_type.html#a2776b3857caff809e658272fd7f0fa4d", null ],
+      [ "defWitnessExtensionLineType", "struct_a_p_i___dimension_type.html#adb15cbfc49c1a1bfe861d8bed606825a", null ],
       [ "defWitnessForm", "struct_a_p_i___dimension_type.html#a4e1b775027b4869488bb4f2cdf6cbc7a", null ],
+      [ "defWitnessOverrideExtension", "struct_a_p_i___dimension_type.html#af1fa16edabd08b67dca69421d5d724d3", null ],
       [ "defWitnessVal", "struct_a_p_i___dimension_type.html#a871aaec8651cf989563eed422282567f", null ],
       [ "detailedHoleDim", "struct_a_p_i___dimension_type.html#a80181522f54e5ed873c07153722f0049", null ],
       [ "dimAppear", "struct_a_p_i___dimension_type.html#a695a09292b062f9fa342a1629d71e3be", null ],
@@ -3203,7 +3213,7 @@ var group___element =
       [ "collidedElemGuid", "struct_a_p_i___collision_elem.html#ad1ff0df7c3a8e814cde79bc2c51dd295", null ],
       [ "filler", "struct_a_p_i___collision_elem.html#a4f2d479ac94296819621d5faa25183a7", null ],
       [ "hasBodyCollision", "struct_a_p_i___collision_elem.html#a294a22e5b80dac435ff92f2f23d060b2", null ],
-      [ "hasClearenceCollision", "struct_a_p_i___collision_elem.html#ac463c3d304b4a7be1fb1f371e886d643", null ]
+      [ "hasClearanceCollision", "struct_a_p_i___collision_elem.html#a5c1b3962fc3193e8e565c5e956acc298", null ]
     ] ],
     [ "API_CollisionDetectionSettings", "struct_a_p_i___collision_detection_settings.html", [
       [ "filler", "struct_a_p_i___collision_detection_settings.html#ad73768cd4dc13c217ba1514e9508569b", null ],
@@ -3230,7 +3240,13 @@ var group___element =
     [ "APIDefaultsChangeHandlerProc", "group___element.html#ga5058c5b3b6385e0d69df0522f2c2631c", null ],
     [ "APIElementEventHandlerProc", "group___element.html#ga9e9c70a4b6e772cfab4b910175429033", null ],
     [ "RoomReductionPolyProc", "group___element.html#ga6b3c6efa108c5fd10bf7148f4194cafd", null ],
-    [ "API_AnalyticalCurveType", "group___element.html#ga70fbdb8c095a349ebea3bfb08b1d08a1", null ],
+    [ "API_AnalyticalCurveType", "group___element.html#ga70fbdb8c095a349ebea3bfb08b1d08a1", [
+      [ "API_AnalyticalCurve_LineType", "group___element.html#gga70fbdb8c095a349ebea3bfb08b1d08a1a1437e0e4c131fab02a6c308dd1e6adff", null ],
+      [ "API_AnalyticalCurve_ArcType", "group___element.html#gga70fbdb8c095a349ebea3bfb08b1d08a1a7da86df049aface690cebde1cebf5455", null ],
+      [ "API_AnalyticalCurve_SplineType", "group___element.html#gga70fbdb8c095a349ebea3bfb08b1d08a1a6c50269b8e4819d20c45b659d9d54c78", null ],
+      [ "API_AnalyticalCurve_BezierType", "group___element.html#gga70fbdb8c095a349ebea3bfb08b1d08a1ac686e4ff8ac109dffd180364335f8cc8", null ],
+      [ "API_AnalyticalCurve_EllipseType", "group___element.html#gga70fbdb8c095a349ebea3bfb08b1d08a1adce3e27f102c9b578ef23152934d80cd", null ]
+    ] ],
     [ "API_AnchorID", "group___element.html#ga10c7815d795466ef807ddc1126442f56", [
       [ "APIAnc_LT", "group___element.html#gga10c7815d795466ef807ddc1126442f56a16227d966e4b002e0081dd57d7c43aab", null ],
       [ "APIAnc_MT", "group___element.html#gga10c7815d795466ef807ddc1126442f56ac1261990132557927c51f9c81c68c397", null ],
@@ -3275,10 +3291,29 @@ var group___element =
       [ "APIArr_HalfArrowCw60", "group___element.html#ggae3c340d1f1a4fc5f9d659c33c3e68846a321c724fc36f18678b7763a8d13729bd", null ],
       [ "APIArr_SlashLine75", "group___element.html#ggae3c340d1f1a4fc5f9d659c33c3e68846a3c95630395e207900facb3e3dcf8549f", null ]
     ] ],
-    [ "API_AssemblySegmentCutTypeID", "group___element.html#ga4f47d4f430bf7b98949cb99f5148e60d", null ],
-    [ "API_AssemblySegmentLengthTypeID", "group___element.html#ga79afae1aa4e4c17de7bdbed9b4750e02", null ],
-    [ "API_BeamShapeTypeID", "group___element.html#ga7b96a67b8fcdd248ce09f8745db1bf39", null ],
-    [ "API_BHoleTypeID", "group___element.html#gac0cabf0d0c512897ab31ba7fba2ebe8a", null ],
+    [ "API_AssemblySegmentCutTypeID", "group___element.html#ga4f47d4f430bf7b98949cb99f5148e60d", [
+      [ "APIAssemblySegmentCut_Horizontal", "group___element.html#gga4f47d4f430bf7b98949cb99f5148e60da950df48fac4bacc386167e3f67a0d451", null ],
+      [ "APIAssemblySegmentCut_Vertical", "group___element.html#gga4f47d4f430bf7b98949cb99f5148e60da183d541358db047b0ad819fc3408103e", null ],
+      [ "APIAssemblySegmentCut_Custom", "group___element.html#gga4f47d4f430bf7b98949cb99f5148e60dac7c64a6c68986a7f82f2b85632e2f97a", null ]
+    ] ],
+    [ "API_AssemblySegmentLengthTypeID", "group___element.html#ga79afae1aa4e4c17de7bdbed9b4750e02", [
+      [ "APIAssemblySegment_Fixed", "group___element.html#gga79afae1aa4e4c17de7bdbed9b4750e02a076012060ac760b72a693226436b7d71", null ],
+      [ "APIAssemblySegment_Proportional", "group___element.html#gga79afae1aa4e4c17de7bdbed9b4750e02a79d5a413c0715cedee40f38e60713e71", null ]
+    ] ],
+    [ "API_BeamShapeTypeID", "group___element.html#ga7b96a67b8fcdd248ce09f8745db1bf39", [
+      [ "API_StraightBeam", "group___element.html#gga7b96a67b8fcdd248ce09f8745db1bf39ab76e1c56ee0117adaa5022760283b5f1", null ],
+      [ "API_HorizontallyCurvedBeam", "group___element.html#gga7b96a67b8fcdd248ce09f8745db1bf39a384efac60ded0ccc553e97bbc0813421", null ],
+      [ "API_VerticallyCurvedBeam", "group___element.html#gga7b96a67b8fcdd248ce09f8745db1bf39a553e3b2c113cc59ce4e0437009d16a99", null ]
+    ] ],
+    [ "API_BeamVisibleLinesID", "group___element.html#ga59758f24d2b1205073992602437312a8", [
+      [ "APIBeamLineShowAlways", "group___element.html#gga59758f24d2b1205073992602437312a8a85458e6015209687741dd74d7e4c96d5", null ],
+      [ "APIBeamLineHideAlways", "group___element.html#gga59758f24d2b1205073992602437312a8a27b636f45179e1cc8074610d047eda6b", null ],
+      [ "APIBeamLineByMVO", "group___element.html#gga59758f24d2b1205073992602437312a8aa122b89b00c0b2aa386afec83b6ecb22", null ]
+    ] ],
+    [ "API_BHoleTypeID", "group___element.html#gac0cabf0d0c512897ab31ba7fba2ebe8a", [
+      [ "APIBHole_Rectangular", "group___element.html#ggac0cabf0d0c512897ab31ba7fba2ebe8aacedec568085829d761340c0c8620115e", null ],
+      [ "APIBHole_Circular", "group___element.html#ggac0cabf0d0c512897ab31ba7fba2ebe8aa22e66d1cc62e382593b2ae3bde674e1e", null ]
+    ] ],
     [ "API_BreakLineAngleTypeID", "group___element.html#ga40ac127256b0de2dd8f683f8e3196ae8", [
       [ "APIBreakLineAngle_AngleToVertical", "group___element.html#gga40ac127256b0de2dd8f683f8e3196ae8a92834d736a59f0237911904f93bef5e7", null ],
       [ "APIBreakLineAngle_AngleToHorizontal", "group___element.html#gga40ac127256b0de2dd8f683f8e3196ae8afeb0be06eb091a24d437ed78d395c8cd", null ],
@@ -3329,15 +3364,65 @@ var group___element =
       [ "APICutPl_MaterialColorShaded", "group___element.html#ggae5395aafe29546133f0fa3846b191133a12e3a78e1415c1aef18d36398eb7e570", null ],
       [ "APICutPl_MaterialColorNonShaded", "group___element.html#ggae5395aafe29546133f0fa3846b191133a48935c7533a9b3a19baaa3cbb05287d2", null ]
     ] ],
-    [ "API_CWAccessoryCategoryID", "group___element.html#ga889bcd8046fcfe6762ec7be2daa23c6b", null ],
-    [ "API_CWBoundaryFramePosID", "group___element.html#ga13b330113357684f02950bb31e3fc057", null ],
-    [ "API_CWFrameObjectTypeID", "group___element.html#gaacf8b1e12b16b5c9c9e9283d1ab75bec", null ],
-    [ "API_CWJunctionCategoryID", "group___element.html#gac2b0470b607c97b8bf93cd31dc157711", null ],
-    [ "API_CWPanelObjectTypeID", "group___element.html#gac6df8858cac74d3edc5f9279b8679517", null ],
-    [ "API_CWPlacementID", "group___element.html#ga0b14048da4b048501936702805503810", null ],
-    [ "API_CWSegmentCategoryID", "group___element.html#ga59d5478935e91d61abd87d235663fa29", null ],
-    [ "API_CWSegmentGridOrigPosTypeID", "group___element.html#gae01f0ca083945c25309230e5643786b6", null ],
-    [ "API_CWSegmentTypeID", "group___element.html#ga1ec5ac4363b0444a01ce0d0b44732a3b", null ],
+    [ "API_CWAccessoryCategoryID", "group___element.html#ga889bcd8046fcfe6762ec7be2daa23c6b", [
+      [ "APICWAccC_System", "group___element.html#gga889bcd8046fcfe6762ec7be2daa23c6ba630f4eb323b45838271c8b91893a7cef", null ],
+      [ "APICWAccC_Custom", "group___element.html#gga889bcd8046fcfe6762ec7be2daa23c6ba6e8ccccba30e5176839bf246f461f053", null ]
+    ] ],
+    [ "API_CWBoundaryFramePosID", "group___element.html#ga13b330113357684f02950bb31e3fc057", [
+      [ "APICW_Boundary_Unknown", "group___element.html#gga13b330113357684f02950bb31e3fc057a51be35710ba161e47c8bdd16dd24c5f7", null ],
+      [ "APICW_Boundary_OutSide", "group___element.html#gga13b330113357684f02950bb31e3fc057a04d1e55c682c84b0d2868e83118772a6", null ],
+      [ "APICW_Boundary_Center", "group___element.html#gga13b330113357684f02950bb31e3fc057ad7ffc382a37baaddebe42f6f097d7622", null ],
+      [ "APICW_Boundary_Inside", "group___element.html#gga13b330113357684f02950bb31e3fc057aa7a567a3c625a4444a6ccfd6c92dc26b", null ]
+    ] ],
+    [ "API_CWCellCrossingFrameTypeID", "group___element.html#gad0e10034f246ff85a1d40829e9770084", [
+      [ "APICWCFT_NoCrossingFrame", "group___element.html#ggad0e10034f246ff85a1d40829e9770084a748f8a02a42fe71b6fe5380d3c3a4b20", null ],
+      [ "APICWCFT_FromBottomLeftToTopRight", "group___element.html#ggad0e10034f246ff85a1d40829e9770084a976741e36c02935fd27ef84c7929d93a", null ],
+      [ "APICWCFT_FromTopLeftToBottomRight", "group___element.html#ggad0e10034f246ff85a1d40829e9770084a5e31865cdb7b4f5b46b4c08090dc657f", null ]
+    ] ],
+    [ "API_CWFrameObjectTypeID", "group___element.html#gaacf8b1e12b16b5c9c9e9283d1ab75bec", [
+      [ "APICWFrObjectType_Invisible", "group___element.html#ggaacf8b1e12b16b5c9c9e9283d1ab75beca710ee264afae933b31e364f89f175eac", null ],
+      [ "APICWFrObjectType_GDL", "group___element.html#ggaacf8b1e12b16b5c9c9e9283d1ab75beca620ebf5501e433ade92b91aa5cce2b7d", null ],
+      [ "APICWFrObjectType_InvisibleConnectedTurning", "group___element.html#ggaacf8b1e12b16b5c9c9e9283d1ab75beca45125b36f0b9f98e5d8b2da40ce71920", null ],
+      [ "APICWFrObjectType_InvisibleConnectedStill", "group___element.html#ggaacf8b1e12b16b5c9c9e9283d1ab75beca4e7653f8d33c7f2726c6f6def780968a", null ]
+    ] ],
+    [ "API_CWJunctionCategoryID", "group___element.html#gac2b0470b607c97b8bf93cd31dc157711", [
+      [ "APICWJunC_System", "group___element.html#ggac2b0470b607c97b8bf93cd31dc157711ad93b998ce7cf5b39af6b96aed8796559", null ],
+      [ "APICWJunC_Custom", "group___element.html#ggac2b0470b607c97b8bf93cd31dc157711ab5e18158719501be85a23952ae1df37a", null ]
+    ] ],
+    [ "API_CWJunctionClampFrameOrientationID", "group___element.html#ga8ba5c4d4c0c7b2c7912d3409160b2340", [
+      [ "APICWJunClampFrameOrient_NoClamp", "group___element.html#gga8ba5c4d4c0c7b2c7912d3409160b2340a435d92869e154c441fe3762d5b48ad25", null ],
+      [ "APICWJunClampFrameOrient_ClampAtBeg", "group___element.html#gga8ba5c4d4c0c7b2c7912d3409160b2340ac57dff6fd699b04e6573a1aac4c77519", null ],
+      [ "APICWJunClampFrameOrient_ClampAtEnd", "group___element.html#gga8ba5c4d4c0c7b2c7912d3409160b2340a83b812b4d97ccb3cf2ed3adc514e7429", null ],
+      [ "APICWJunClampFrameOrient_ClampAtBothEnds", "group___element.html#gga8ba5c4d4c0c7b2c7912d3409160b2340a5cfea4aee5f4da8e66041ffe50a376d3", null ]
+    ] ],
+    [ "API_CWPanelObjectTypeID", "group___element.html#gac6df8858cac74d3edc5f9279b8679517", [
+      [ "APICWPaObjectType_Generic", "group___element.html#ggac6df8858cac74d3edc5f9279b8679517ab7159dbacb9709ac1e87ccd8d7a5af24", null ],
+      [ "APICWPaObjectType_GDL", "group___element.html#ggac6df8858cac74d3edc5f9279b8679517ae5e31c77652ff38581e2b10eed164b85", null ]
+    ] ],
+    [ "API_CWPlacementID", "group___element.html#ga0b14048da4b048501936702805503810", [
+      [ "APICW_Placement_AllGridPoints", "group___element.html#gga0b14048da4b048501936702805503810a8e22427225b306998d36291be5ada7af", null ],
+      [ "APICW_Placement_Manual", "group___element.html#gga0b14048da4b048501936702805503810a9eb849b69f1819c36d7217227990300a", null ]
+    ] ],
+    [ "API_CWSegmentCategoryID", "group___element.html#ga59d5478935e91d61abd87d235663fa29", [
+      [ "APICWSeC_System", "group___element.html#gga59d5478935e91d61abd87d235663fa29a33fb76d730edf7bd1288c9a7a3c630b4", null ],
+      [ "APICWSeC_Custom", "group___element.html#gga59d5478935e91d61abd87d235663fa29a46350c02a48a025ece24f507a789e578", null ]
+    ] ],
+    [ "API_CWSegmentGridOrigPosTypeID", "group___element.html#gae01f0ca083945c25309230e5643786b6", [
+      [ "APICWSeGridOrigin_StartWithPattern", "group___element.html#ggae01f0ca083945c25309230e5643786b6a0ce65463d21fdcdc30e53c92b055673a", null ],
+      [ "APICWSeGridOrigin_StartFromCenter", "group___element.html#ggae01f0ca083945c25309230e5643786b6a3c4919b1bc239f3806479f68f59b9fb7", null ],
+      [ "APICWSeGridOrigin_AlignToCenter", "group___element.html#ggae01f0ca083945c25309230e5643786b6abc8faa84243630af2fd98b4e72fdce91", null ],
+      [ "APICWSeGridOrigin_EndWithPattern", "group___element.html#ggae01f0ca083945c25309230e5643786b6a67b05660d0fcfe2eb52a9c96119c8481", null ]
+    ] ],
+    [ "API_CWSegmentPatternLogicID", "group___element.html#ga5fbf1fb382a68d0ce25bdce050d03560", [
+      [ "APICWSePL_FixedSizes", "group___element.html#gga5fbf1fb382a68d0ce25bdce050d03560a1ffb6952c0464bc112c53595a5c8d555", null ],
+      [ "APICWSePL_BestDivision", "group___element.html#gga5fbf1fb382a68d0ce25bdce050d03560ae9c8a35398854c66fc0de5491d24d415", null ],
+      [ "APICWSePL_NumberOfDivisions", "group___element.html#gga5fbf1fb382a68d0ce25bdce050d03560ae1cca3ec41922f9008e4ea291e283318", null ]
+    ] ],
+    [ "API_CWSegmentTypeID", "group___element.html#ga1ec5ac4363b0444a01ce0d0b44732a3b", [
+      [ "APICWSeT_Invalid", "group___element.html#gga1ec5ac4363b0444a01ce0d0b44732a3ba31c4a51d0143c8a3ad7aec74ea3b71ad", null ],
+      [ "APICWSeT_Line", "group___element.html#gga1ec5ac4363b0444a01ce0d0b44732a3bad5eb4d756584c91835a7e95bc5af540f", null ],
+      [ "APICWSeT_Arc", "group___element.html#gga1ec5ac4363b0444a01ce0d0b44732a3ba7d7ed244f70406cc6272a82cb02c7038", null ]
+    ] ],
     [ "API_DimLayoutID", "group___element.html#ga3e6b012a27cc349edf4cae3121b177c9", [
       [ "API_Legacy", "group___element.html#gga3e6b012a27cc349edf4cae3121b177c9a17f96ce2fb0d7af3e4a5d3da39f848be", null ],
       [ "API_Flexible", "group___element.html#gga3e6b012a27cc349edf4cae3121b177c9ab889bdfdca86fa031814f1fa15af3010", null ],
@@ -3355,7 +3440,20 @@ var group___element =
       [ "API_DimTextFillOrderID::FillAndContourUnderDimLine", "group___element.html#ggac0be4eb4b8520d76ea31a5a9b92f7957ae0d7c871e4091f733c7fde1384023911", null ],
       [ "API_DimTextFillOrderID::FillAndContourAboveDimLine", "group___element.html#ggac0be4eb4b8520d76ea31a5a9b92f7957a658c187b10ea5c0562d478336df1be10", null ]
     ] ],
-    [ "API_DirID", "group___element.html#gac5bd93cf9116d349778a34d9d4d91d48", null ],
+    [ "API_DirID", "group___element.html#gac5bd93cf9116d349778a34d9d4d91d48", [
+      [ "APIDir_Parallel", "group___element.html#ggac5bd93cf9116d349778a34d9d4d91d48a4c47e149b0a48ccc1a2fbc1ae8647f5e", null ],
+      [ "APIDir_Horizontal", "group___element.html#ggac5bd93cf9116d349778a34d9d4d91d48aa90acf64f4dbf27f9f76569715accbf0", null ],
+      [ "APIDir_Vertical", "group___element.html#ggac5bd93cf9116d349778a34d9d4d91d48a5ed7bd3f69159e45d56198e231994f4d", null ],
+      [ "APIDir_General", "group___element.html#ggac5bd93cf9116d349778a34d9d4d91d48aa3d01a91653f58d158431dba86fdfff7", null ],
+      [ "APIDir_Radial", "group___element.html#ggac5bd93cf9116d349778a34d9d4d91d48ab805fde16b2e70d6e1b3e5ce091525a1", null ],
+      [ "APIDir_ArcDim", "group___element.html#ggac5bd93cf9116d349778a34d9d4d91d48a7314f34d2720ed491258a22a61c5ea61", null ],
+      [ "APIDir_Perpendicular", "group___element.html#ggac5bd93cf9116d349778a34d9d4d91d48a54af012e7180ba21fcc42a3f85f0b76c", null ]
+    ] ],
+    [ "API_DistribTypeID", "group___element.html#ga5301957f42c05521332b7b479790a264", [
+      [ "APIDT_Divisions", "group___element.html#gga5301957f42c05521332b7b479790a264af0fe222b93dc05d34bd4f80af8108ce5", null ],
+      [ "APIDT_PatternLength", "group___element.html#gga5301957f42c05521332b7b479790a264a41c105025566e061eda3e045e8591e8f", null ],
+      [ "APIDT_BestDivisionByLength", "group___element.html#gga5301957f42c05521332b7b479790a264a524e4072c4428f55aa54fcb1e216763d", null ]
+    ] ],
     [ "API_EdgeTrimID", "group___element.html#ga9d7cabab5ae00a388f9d8da2113a74e1", [
       [ "APIEdgeTrim_Vertical", "group___element.html#gga9d7cabab5ae00a388f9d8da2113a74e1ad0a80fb806c8cc965b31bff06a037b84", null ],
       [ "APIEdgeTrim_Perpendicular", "group___element.html#gga9d7cabab5ae00a388f9d8da2113a74e1a99857b066fd0ea67ed3d02d83ca6de7e", null ],
@@ -3383,7 +3481,23 @@ var group___element =
       [ "API_AbstractAll", "group___element.html#ggac2191889e04129e2422a003aa9661cc3aff3f5166124b92f9856d5d55cc9a7410", null ],
       [ "API_CutAll", "group___element.html#ggac2191889e04129e2422a003aa9661cc3a4e8c6fc0fa58f9c3d0ff4fcdb996537b", null ]
     ] ],
-    [ "API_ElementDBEventID", "group___element.html#ga9675062b3ddbdebd35b12603913af9d4", null ],
+    [ "API_ElementDBEventID", "group___element.html#ga9675062b3ddbdebd35b12603913af9d4", [
+      [ "APINotifyElement_BeginEvents", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4a6b1f73c6107bc9254bf60f3538b09ddb", null ],
+      [ "APINotifyElement_EndEvents", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4a5b6f6aefbce1992414b8cf14b8eb9464", null ],
+      [ "APINotifyElement_New", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4a1e289ad174e74064d477d24b4c1b68fc", null ],
+      [ "APINotifyElement_Copy", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4a1dc2d278e3eca34ae1c1487a6feef7fd", null ],
+      [ "APINotifyElement_Change", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4ad7e56013d70f0ca8a7368a5b5e7f412b", null ],
+      [ "APINotifyElement_Edit", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4ad62df67f4e4dc26e25c5083296a2d52d", null ],
+      [ "APINotifyElement_Delete", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4a09b5a40fce03ec3d41676fdcc2cae11b", null ],
+      [ "APINotifyElement_Undo_Created", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4a3acc3e69091f8434147dc37df4786402", null ],
+      [ "APINotifyElement_Undo_Modified", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4ad8826f5793f3a918ed097d6ca90243be", null ],
+      [ "APINotifyElement_Undo_Deleted", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4acd1f095b82b052fa69e70e50c32f8cff", null ],
+      [ "APINotifyElement_Redo_Created", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4a379a625dbcee72d89931f8be9d5c64be", null ],
+      [ "APINotifyElement_Redo_Modified", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4ac9e2e5f7a25c5016d0b34425f734586b", null ],
+      [ "APINotifyElement_Redo_Deleted", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4a5c7f2fa42cfa692ed33c42dba9dbbd9f", null ],
+      [ "APINotifyElement_PropertyValueChange", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4ada38ed556b57b12448b45795c27783c3", null ],
+      [ "APINotifyElement_ClassificationChange", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4ac00e4b784c4d895180a57a73e23021e1", null ]
+    ] ],
     [ "API_ElemProjectionModesID", "group___element.html#ga728af682039655b181650b1643b1c254", [
       [ "API_Symbolic", "group___element.html#gga728af682039655b181650b1643b1c254ab65fc1aee157852c2112b6a8d9e584b5", null ],
       [ "API_Projected", "group___element.html#gga728af682039655b181650b1643b1c254a6daebfa36338f0efcedbe3dfc39f65c8", null ],
@@ -3480,6 +3594,17 @@ var group___element =
       [ "API_ToAbsoluteLimit", "group___element.html#gga7b735dccf0c023a7141f196f08152b81a3751db7bb67fa8227f2bc403f054f8db", null ],
       [ "API_EntireElement", "group___element.html#gga7b735dccf0c023a7141f196f08152b81a07875dc33b521b966396a5ac38a06c48", null ]
     ] ],
+    [ "API_GridMeshDirection", "group___element.html#gaa1863dcce88439e28a58b9345db501c1", [
+      [ "API_GridMeshLeft", "group___element.html#ggaa1863dcce88439e28a58b9345db501c1a513ae9589f8c728e0779f4f5c75affc7", null ],
+      [ "API_GridMeshRight", "group___element.html#ggaa1863dcce88439e28a58b9345db501c1af160a3212ed4bde9ec7873f96a571bf4", null ],
+      [ "API_GridMeshLowerRight", "group___element.html#ggaa1863dcce88439e28a58b9345db501c1aacda19c35a3d918bf8c2c1874af8322c", null ],
+      [ "API_GridMeshLower", "group___element.html#ggaa1863dcce88439e28a58b9345db501c1a473f62a2c17d10b14f3e8c71c796311e", null ],
+      [ "API_GridMeshLowerLeft", "group___element.html#ggaa1863dcce88439e28a58b9345db501c1aeca1ef5468a5275dd5a5b2608d5c47ee", null ],
+      [ "API_GridMeshUpperRight", "group___element.html#ggaa1863dcce88439e28a58b9345db501c1aab7e6e564a3633ffa5267aeb90b8900e", null ],
+      [ "API_GridMeshUpper", "group___element.html#ggaa1863dcce88439e28a58b9345db501c1a6eac1cda74b6d2da243fdefcb1996146", null ],
+      [ "API_GridMeshUpperLeft", "group___element.html#ggaa1863dcce88439e28a58b9345db501c1a766b9d4a000ebfaa32ffb71610775c30", null ],
+      [ "API_GridMeshDirNum", "group___element.html#ggaa1863dcce88439e28a58b9345db501c1a9b208a9dcc893e0e8cd71888859135ee", null ]
+    ] ],
     [ "API_HatchFlags", "group___element.html#ga8e625e61c441db45a10495b2baae45a4", [
       [ "APIHatch_HasBkgRGBColor", "group___element.html#gga8e625e61c441db45a10495b2baae45a4afe01e556d94e23911871a3c1d8efa407", null ],
       [ "APIHatch_HasFgRGBColor", "group___element.html#gga8e625e61c441db45a10495b2baae45a4accca8083a55b3e95225c8ef40af9cd27", null ],
@@ -3497,7 +3622,15 @@ var group___element =
       [ "API_FillHatch", "group___element.html#gga97310d71686cf5e33e38245c6b7d25cda0bb79621c2ef124c148db13e6b1367b0", null ],
       [ "API_BuildingMaterialHatch", "group___element.html#gga97310d71686cf5e33e38245c6b7d25cdaf0b6560c7d8f432c20fbe70cbca7fbba", null ]
     ] ],
-    [ "API_ImageViewID", "group___element.html#ga25c7f8949218bdc8d17d02075cef2a5a", null ],
+    [ "API_HeadroomGenerationModeID", "group___element.html#ga8594dc63a1c2e9704e483f3ca6881a81", [
+      [ "APIHM_RightAngleToSlope", "group___element.html#gga8594dc63a1c2e9704e483f3ca6881a81a3494af21d4042298c24833b8c4b2fcbd", null ],
+      [ "APIHM_VerticallyToSlope", "group___element.html#gga8594dc63a1c2e9704e483f3ca6881a81a8cc13dd42e1fd2a39b22393d049c4195", null ]
+    ] ],
+    [ "API_ImageViewID", "group___element.html#ga25c7f8949218bdc8d17d02075cef2a5a", [
+      [ "APIImage_Model2D", "group___element.html#gga25c7f8949218bdc8d17d02075cef2a5aa2a65de7e391814900f0a4cb83d743dca", null ],
+      [ "APIImage_Model3D", "group___element.html#gga25c7f8949218bdc8d17d02075cef2a5aaa995b6a797b765fcca46d15a4ea3caaa", null ],
+      [ "APIImage_Section", "group___element.html#gga25c7f8949218bdc8d17d02075cef2a5aa7551cce739e6c43cc27aadc460fcaf77", null ]
+    ] ],
     [ "API_JustID", "group___element.html#gaeeec688665eefeb31148616e4a51020d", [
       [ "APIJust_Left", "group___element.html#ggaeeec688665eefeb31148616e4a51020da20f34e95d5bd5b0e3cb8eed809dab626", null ],
       [ "APIJust_Center", "group___element.html#ggaeeec688665eefeb31148616e4a51020dab38ae4ff8ee897440b04b22f7040ec76", null ],
@@ -3545,16 +3678,207 @@ var group___element =
       [ "APIMark_FullArrow60", "group___element.html#gga53ff203a4e4c65a0b64ce61a3c348d1ba4dfb9e47557f778114e20cdd305fa992", null ],
       [ "APIMark_SlashLine75", "group___element.html#gga53ff203a4e4c65a0b64ce61a3c348d1bac3fe72716a888fa0bdd667d9e9715fad", null ]
     ] ],
-    [ "API_ModelElemStructureType", "group___element.html#ga8d139f1b627fb47ba7e7d6ab992c1f1d", null ],
-    [ "API_MorphBodyTypeID", "group___element.html#gafc144694c019510238639a2f466efd08", null ],
-    [ "API_MorphEdgeTypeID", "group___element.html#ga5fceba1139636e5eeb40b9a826c73ce5", null ],
-    [ "API_MorphingRuleID", "group___element.html#gaac37230dfbae1cd9fd0caf66fad88604", null ],
+    [ "API_ModelElemStructureType", "group___element.html#ga8d139f1b627fb47ba7e7d6ab992c1f1d", [
+      [ "API_BasicStructure", "group___element.html#gga8d139f1b627fb47ba7e7d6ab992c1f1dad493f5c2c966700b4980a3cb30ce7f7f", null ],
+      [ "API_CompositeStructure", "group___element.html#gga8d139f1b627fb47ba7e7d6ab992c1f1da0d6fbe58d122df457e509b79680c8766", null ],
+      [ "API_ProfileStructure", "group___element.html#gga8d139f1b627fb47ba7e7d6ab992c1f1dac043d9c7b14fb253457999f8bba775e3", null ]
+    ] ],
+    [ "API_MorphBodyTypeID", "group___element.html#gafc144694c019510238639a2f466efd08", [
+      [ "APIMorphBodyType_SurfaceBody", "group___element.html#ggafc144694c019510238639a2f466efd08af1501121cef08b0323b5b3f6f2e0954c", null ],
+      [ "APIMorphBodyType_SolidBody", "group___element.html#ggafc144694c019510238639a2f466efd08acf294e348d930f8795cd1b72c76e1e50", null ]
+    ] ],
+    [ "API_MorphEdgeTypeID", "group___element.html#ga5fceba1139636e5eeb40b9a826c73ce5", [
+      [ "APIMorphEdgeType_SoftHiddenEdge", "group___element.html#gga5fceba1139636e5eeb40b9a826c73ce5aa7645fa70aa1f894c6ccd23c9b189418", null ],
+      [ "APIMorphEdgeType_HardHiddenEdge", "group___element.html#gga5fceba1139636e5eeb40b9a826c73ce5a50e64a02c2dfa902ddde070db6c53fec", null ],
+      [ "APIMorphEdgeType_HardVisibleEdge", "group___element.html#gga5fceba1139636e5eeb40b9a826c73ce5a102a58ff9b89a5c0e25a310d22041240", null ]
+    ] ],
+    [ "API_MorphingRuleID", "group___element.html#gaac37230dfbae1cd9fd0caf66fad88604", [
+      [ "APIMorphingRule_Paired", "group___element.html#ggaac37230dfbae1cd9fd0caf66fad88604a2c050d87fe2a6274ca33ce581deb02e3", null ],
+      [ "APIMorphingRule_Smooth", "group___element.html#ggaac37230dfbae1cd9fd0caf66fad88604a8c3f5562578801c709d60da9372db978", null ]
+    ] ],
     [ "API_NameTypeValues", "group___element.html#ga45484fc7bcdfe9d76f1fb5dfd97a8292", [
       [ "APIName_ViewOrSrcFileName", "group___element.html#gga45484fc7bcdfe9d76f1fb5dfd97a8292af624d4be6fe6a02ff17d7081b76ed98d", null ],
       [ "APIName_ViewIdAndName", "group___element.html#gga45484fc7bcdfe9d76f1fb5dfd97a8292a51222c3d1171920e02c537382931f20d", null ],
       [ "APIName_CustomName", "group___element.html#gga45484fc7bcdfe9d76f1fb5dfd97a8292a24e76dc631c96918f05b45a23de6c20a", null ]
     ] ],
-    [ "API_NeigID", "group___element.html#ga58ee0e482d4747dc7bf3302cd7551272", null ],
+    [ "API_NeigID", "group___element.html#ga58ee0e482d4747dc7bf3302cd7551272", [
+      [ "APINeig_None", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a698bd60d91dc6210606125c9eb288a50", null ],
+      [ "APINeig_Wall", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272af050e698e0f05d932b05e40f2bd8a93a", null ],
+      [ "APINeig_WallPl", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a0b3a437a92b74f7c254bed46d2e906d0", null ],
+      [ "APINeig_WallOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a3e949f6ceb054d8fa86ac67c84dd966e", null ],
+      [ "APINeig_WallPlOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272af0df7be57f85d824c04b9a8fef70b176", null ],
+      [ "APINeig_Colu", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a57d5536c6f9fce6cebe4036f0b6e5e3b", null ],
+      [ "APINeig_Beam", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272af1a38b193a17d81e4b2a7f25231fcfb4", null ],
+      [ "APINeig_BeamOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a93d0ce11fea05158a03d83dfe9705a3a", null ],
+      [ "APINeig_BeamHole", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272acad52f645e8fa1359aeb5d63ab26ffce", null ],
+      [ "APINeig_Wind", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a2984578e07fb80698a249672bc3592bf", null ],
+      [ "APINeig_WindHole", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a357c1a4b5de5b927af9c97490832f238", null ],
+      [ "APINeig_Door", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a1d0ce49e5ac6abeedb929dee439b6c7c", null ],
+      [ "APINeig_DoorHole", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a8e4c91de370265c1e9775cfbcfdcbed6", null ],
+      [ "APINeig_Symb", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a8b5b6469a6010fbb80a1b72fa9a8b691", null ],
+      [ "APINeig_Light", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a5766fc82de4cb3978db6b9fd493b7f59", null ],
+      [ "APINeig_Ceil", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272acb0e9ecd679b364a223adee0762c786c", null ],
+      [ "APINeig_CeilOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aaaaae2b87804ca88d1d8754f5b335375", null ],
+      [ "APINeig_Roof", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a5f4db9bbf8f7631a97058b3bf5d7c20c", null ],
+      [ "APINeig_RoofOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ac750e55bc51340fa927c164f63606eef", null ],
+      [ "APINeig_RBL", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a63039a2ab3235f1b23144e9464d28d6c", null ],
+      [ "APINeig_RBLOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aae962ed9fe0a997697b817c34a1eb8fc", null ],
+      [ "APINeig_Mesh", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a8a5421ce896384879a30989f95c00cd2", null ],
+      [ "APINeig_MeshOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a121f898df62012077b8587cb284cdb2c", null ],
+      [ "APINeig_MeshRidge", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a95a3abcc44f713c8815330ff9303a06e", null ],
+      [ "APINeig_MeshRidgeOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ad68ed5cf944e56b0ab016027eb6f5710", null ],
+      [ "APINeig_DimInt", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aa98a628ca0ead06d1ce1cefd0abee6e7", null ],
+      [ "APINeig_DimPt", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ad5741b91552a34421a4300f06907a4c1", null ],
+      [ "APINeig_DimOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a903dbe3d3ca2187e18f921f5eab929c5", null ],
+      [ "APINeig_RadDim", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aefcefb0f5b73ab5c422a7a9a13345a98", null ],
+      [ "APINeig_LevDim", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a1c19f4caca67143f8ba8a337b41faf3a", null ],
+      [ "APINeig_AngDim", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a3e2d2b9132e88046f6469444ce0aea0e", null ],
+      [ "APINeig_AngDimOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a1c1cb721d1eba1c51a6b4c436f61499c", null ],
+      [ "APINeig_Word", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272acbe5571ed8e0f3f5b4a6d2f0f88836bc", null ],
+      [ "APINeig_Label", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a2aaf1f56c19e03e138860285ce44dc00", null ],
+      [ "APINeig_Room", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ae699bf518dec2934548604f58f12f33f", null ],
+      [ "APINeig_RoomStamp", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a667295d6e4ee70d6be4681c644f0f6cc", null ],
+      [ "APINeig_RoomOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a04c35182ea2e3deae69e855aeb81ad0e", null ],
+      [ "APINeig_RoomRefPt", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ae6b3876f0b6023852b131b3234ac88e5", null ],
+      [ "APINeig_Hatch", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a9657944cb79adc83a6d812c64aa5a42c", null ],
+      [ "APINeig_HatchOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a666466a0b5b70308309482ea9e5994ba", null ],
+      [ "APINeig_Line", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272abf0899dec886ca844744998447bd2136", null ],
+      [ "APINeig_LineOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a99805452a473c260a9c5040681418ed6", null ],
+      [ "APINeig_PolyLine", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aff0af2ffd052c0f731a5b1234d31ebde", null ],
+      [ "APINeig_PolyLineOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a910e7c198ef3bb6e2baaaa1a94560e2a", null ],
+      [ "APINeig_Arc", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a7bbd4d228063d4f81b89e5571467f608", null ],
+      [ "APINeig_ArcOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a0f645309fbda60ad6b7fd3e93438921b", null ],
+      [ "APINeig_Circ", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272af9f112281b5b5d6c12e3d33f16d22ae8", null ],
+      [ "APINeig_CircOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a47d29b202c37082b2f37364635422a0c", null ],
+      [ "APINeig_Spline", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a4d35eed19e6e5e523b9df20c6d998c4e", null ],
+      [ "APINeig_SplineOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a0f1bd7ac64b16430b1c548c7689fb190", null ],
+      [ "APINeig_Hot", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aeb55558ec6440660cf0dd30b260d6e5f", null ],
+      [ "APINeig_CutPlane", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272adba0b4e2b89469ceceebf092061750f2", null ],
+      [ "APINeig_CutPlOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ad15e9c86051ec55dadb8e25df9030c30", null ],
+      [ "APINeig_Camera", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a491c56d75fa2ee46975b1e622f089c37", null ],
+      [ "APINeig_CamSet", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a622a886d852443cf47276bc2afa3e984", null ],
+      [ "APINeig_VirtSy", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a83c477b73a13e21a4647e7150b366230", null ],
+      [ "APINeig_VirtSyOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aef5e8127b3b78f8ec6e08c38ce9b5ab6", null ],
+      [ "APINeig_PictObj", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aa82b5b9f9aa768b29c44b4e0974f4398", null ],
+      [ "APINeig_Detail", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a448551cb95728f1badb50575bc4f1e9b", null ],
+      [ "APINeig_DetailPoly", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272addebec9be46ca38b76428acde8a32c4f", null ],
+      [ "APINeig_DetailPolyOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272af0ab8da5d31f05fae2f529cee0b6a344", null ],
+      [ "APINeig_DetailMarker", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ac108b9c270767bd4ad3261134486aa68", null ],
+      [ "APINeig_Symb3D", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ab21e43769136ac93f162b78b996b21e9", null ],
+      [ "APINeig_Light3D", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a96205dbcbafc881853241ceccee97eb8", null ],
+      [ "APINeig_Wind3D", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a9dcbcb61d6c71facff7c3c0dcb858ffa", null ],
+      [ "APINeig_Door3D", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aeaab8086806bce148ffb00751c5e3f5d", null ],
+      [ "APINeig_WindMark", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a372aa4e6e12f85bb56166299773b14bc", null ],
+      [ "APINeig_DoorMark", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a0c100d6fedda70753424d55892f65bda", null ],
+      [ "APINeig_CutPlMarker", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ae57b13dd94bdc74d9b7b8ef455dd9668", null ],
+      [ "APINeig_WallPlClOff", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ad78b89cef3f58bddb825a21853994f79", null ],
+      [ "APINeig_WallPlOnClOff", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a8a25de8c2460a72ecd6710d55ea64c7d", null ],
+      [ "APINeig_SymbOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a7e5aed0ea3313b145b47b4209fcf8307", null ],
+      [ "APINeig_WindOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a3dc765983db8e104f4044ae22f2dd123", null ],
+      [ "APINeig_DoorOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a6b729c1c6b78e424f027d3275a8e035e", null ],
+      [ "APINeig_LightOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a5193884117e8b593f45fc626af523ed5", null ],
+      [ "APINeig_Note", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a186fb0c7b530209bdcee4e4d520b9824", null ],
+      [ "APINeig_SplineDir", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a3cc8ae019798d9d2996b31cc2559474d", null ],
+      [ "APINeig_DrawingCenter", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a38fa70b2104728a53348bf11782ea520", null ],
+      [ "APINeig_DrawingFrame", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a7dd3b0f4ddfbdd0857e30359421babc2", null ],
+      [ "APINeig_DrawingFrameOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ab922bae70442d8142195fa1483a7fe22", null ],
+      [ "APINeig_DrawingIDF", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272afb1951785601a6d958d1d8ae2035d975", null ],
+      [ "APINeig_DrawingIDFOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a635abf9762d5fbc1af825cf0af9c63d4", null ],
+      [ "APINeig_DrawingTitle", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272acd98041c47aa497a48eb7b3e5c4ed643", null ],
+      [ "APINeig_DrawingTitleOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a3898a4481adc4635331e371faf9b4553", null ],
+      [ "APINeig_Worksheet", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ad192b64d61320cc1892424fad9ede47c", null ],
+      [ "APINeig_WorksheetPoly", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a8bacb4f5ae27067a55224eb69dae0f95", null ],
+      [ "APINeig_WorksheetPolyOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a3e27854b392257abce27b7b4bed463e2", null ],
+      [ "APINeig_WorksheetMarker", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ae5b09594cba4b836fccfda10cd59fa57", null ],
+      [ "APINeig_Elevation", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a9053fb6779d8120422e942e2c5c631e1", null ],
+      [ "APINeig_ElevationOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272af1725887592bc6c89c5cb978146fc776", null ],
+      [ "APINeig_ElevationMarker", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ae9e45a241438af5105f2508fdf3615c1", null ],
+      [ "APINeig_InteriorElevation", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ada094b12fa6fdb1dad7751473a8b9792", null ],
+      [ "APINeig_InteriorElevationOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a277dd39720d542351a6fd2b0c3d4d02d", null ],
+      [ "APINeig_InteriorElevationMarker", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ab52c11253092a1efeedac8bbc1b93e16", null ],
+      [ "APINeig_SectionSegment", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a5ab1d3e424043f32725bddc2f01bb2e1", null ],
+      [ "APINeig_SectionSegmentOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ad505ef16b17ca97e039d0cfa710b90fa", null ],
+      [ "APINeig_SectionSegmentMarker", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a9b7cb2fb7f3b5a225a47dedb62505de3", null ],
+      [ "APINeig_CurtainWall", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a735f412a8936ce41933c99f639d5a187", null ],
+      [ "APINeig_CurtainWallOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a54bd64dcb952692731267f9d28b75a94", null ],
+      [ "APINeig_CurtainWallCut", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a05ef80617c4390fee408676fbb5e737b", null ],
+      [ "APINeig_CurtainWallCutOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ad2c20f66ed04f5c499aab0a490158ea3", null ],
+      [ "APINeig_CWSegment", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a70fb4c66d28b3c9362551f6b9924d1ad", null ],
+      [ "APINeig_CWSegmentOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ac358284ddf0a81aebc69b4fe93a85161", null ],
+      [ "APINeig_CWSegmentBaseLine", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a838dcdd60a2f161f82630cc25c5b3dec", null ],
+      [ "APINeig_CWSegmentBaseLineOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272acba1caa206e562c3de9db8cc2cf52343", null ],
+      [ "APINeig_CWFrame", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a42b26901327a0b1a0e7f791d139ac8be", null ],
+      [ "APINeig_CWFrameOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a039dc9547fd7a8b7c58e47ae4821e7c7", null ],
+      [ "APINeig_CWFrame3D", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ae57a4eb15da0d904974688c528849b76", null ],
+      [ "APINeig_CWPanel", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a8d8e298c9541eb02869ff020a1ec4f82", null ],
+      [ "APINeig_CWPanel3D", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aa8aa9d652630baeb3d939d36009b29f3", null ],
+      [ "APINeig_CWJunction", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272af280bb49c06147caa936019b96748dec", null ],
+      [ "APINeig_CWJunction3D", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272afb4fbe7a953ee92756d3292297e4e9a8", null ],
+      [ "APINeig_CWAccessory", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a66d2a8913277abd28b6095383a37fcc7", null ],
+      [ "APINeig_CWAccessory3D", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a3b815b0f9bb1dbdf7f4555dbebeea594", null ],
+      [ "APINeig_Shell", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a4db8506662e1ed8ab175800fae240487", null ],
+      [ "APINeig_ShellOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aa41a47fbdeda4943fde0c80ea4438fff", null ],
+      [ "APINeig_Skylight", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ab703b82b682061ac4fb0b0fe63aa106e", null ],
+      [ "APINeig_SkylightHole", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ad04bec8663bef347f3ab0430dab7e1b9", null ],
+      [ "APINeig_Skylight3D", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ab12ec5546f1d059677ae4bbfdab9ea91", null ],
+      [ "APINeig_SkylightOn3D", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a2c94ffdead25e6876bdcf270f3dc51e2", null ],
+      [ "APINeig_SkylightOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a5c0b0c57eb49c254d133cc3a5d94b737", null ],
+      [ "APINeig_SkylightMark", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a0948a5a9a4dccef886248fc2063641eb", null ],
+      [ "APINeig_Morph", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a0def76b1a68fcf8ab32ee7ce8bd41710", null ],
+      [ "APINeig_MorphOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a4966ed2e6b468524c6cb8a4de30b97e8", null ],
+      [ "APINeig_ChangeMarker", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272adedb281f36b9e220a2cff6d2b150d29f", null ],
+      [ "APINeig_ChangeMarkerPoly", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a1ca863ce975acb1d53120cd52947cd03", null ],
+      [ "APINeig_ChangeMarkerPolyOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ad53c49493fc23a78228c2d2e76996f7b", null ],
+      [ "APINeig_ChangeMarkerMarker", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a7ba6688934f5b1660cdfc69ba98d9963", null ],
+      [ "APINeig_ColuOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a03fc0efaea24b6ba1e866e062ee4a5ee", null ],
+      [ "APINeig_WordOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a7e7d4a375923477bc7de5b04b8504246", null ],
+      [ "APINeig_CurtainWallBaseLine", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272adf3f1b00d14f65ab43bc09fca8ad32fb", null ],
+      [ "APINeig_CurtainWallBaseLineOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a0ab35671bbb3869885d15bdfabc1454d", null ],
+      [ "APINeig_StairOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aa4aa7fe2f73867b6384bb570d46f31e5", null ],
+      [ "APINeig_Tread", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272afb3ed811457a4d0074e2841c9182a4a7", null ],
+      [ "APINeig_TreadOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a56f405e27ba0c91d848265e2ec5482b1", null ],
+      [ "APINeig_Riser", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a4865d2d05e0da5fae41cad060c964663", null ],
+      [ "APINeig_RiserOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a1e714582353acd99539831207f69a89a", null ],
+      [ "APINeig_Stair", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a24224165ce914282e9a23a47a09cff15", null ],
+      [ "APINeig_StairStructure", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ae713bb35cc9f4d233f1b71b9c5e0f2f4", null ],
+      [ "APINeig_StairStructureOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a4f09849199bc730171a285baec924cdc", null ],
+      [ "APINeig_Railing", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aaf98f411595e3af99139e8275ccafc2c", null ],
+      [ "APINeig_RailingOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a12efd484b12995b6e25f9fd5b1b35148", null ],
+      [ "APINeig_RailingToprail", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a18cfaa8dc7febf1caded8b2eea8922a5", null ],
+      [ "APINeig_RailingToprailOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272abb2fe6ced86eca9b64fc1407cb60a545", null ],
+      [ "APINeig_RailingHandrail", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a0e82e6e6a2d3fc2cc3e18489ea5056a8", null ],
+      [ "APINeig_RailingHandrailOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a4e51501f8910ea39db7d969bb24c3158", null ],
+      [ "APINeig_RailingRail", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aa504835e21d9dd1eff98a6b0f6802a84", null ],
+      [ "APINeig_RailingRailOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a691d5afc8a19c58ad83ead546f091a1a", null ],
+      [ "APINeig_RailingPost", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a09c19662e706f083cbddb417ca361ece", null ],
+      [ "APINeig_RailingPostOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a25902cfcb3fab2901051e9f110b49a0d", null ],
+      [ "APINeig_RailingInnerPost", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a9b842c0d9930078da8b5ce4a228a3a58", null ],
+      [ "APINeig_RailingInnerPostOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a1d75c082b63964d7245525cf2f887c97", null ],
+      [ "APINeig_RailingBaluster", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a48a071cb16adec4798f8c541c3838259", null ],
+      [ "APINeig_RailingBalusterOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a1258d9131e19bc575159500b5be973a9", null ],
+      [ "APINeig_RailingPanel", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a40775abf77538aa733ef8ac190439ecd", null ],
+      [ "APINeig_RailingPanelOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272adad99e50a10104c0688d50d031e4df51", null ],
+      [ "APINeig_RailingToprailEnd", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a09743907f9e732c82ee2e46e222a91f8", null ],
+      [ "APINeig_RailingToprailEndOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ae383d857099becb9b019524b6a65d9f2", null ],
+      [ "APINeig_RailingHandrailEnd", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a9d2ae1b0d5be906f428e451c74b79dab", null ],
+      [ "APINeig_RailingHandrailEndOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a323fe5e3d9b254abfd87c8b6f5cd5c6a", null ],
+      [ "APINeig_RailingRailEnd", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a29b33bcfa87a451c0a523469bd9f12ed", null ],
+      [ "APINeig_RailingRailEndOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a441dd8e91ffc5a402c558798fdb87184", null ],
+      [ "APINeig_RailingToprailConnection", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ad0f1351fd63bd37402987b4d484a3435", null ],
+      [ "APINeig_RailingToprailConnectionOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a9ce72a99f95fff0779a4bd852204171c", null ],
+      [ "APINeig_RailingHandrailConnection", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ab300f1fd28f140023f0c49bbea88bf4a", null ],
+      [ "APINeig_RailingHandrailConnectionOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ab10b26819ee85768a197b82b87b6fd83", null ],
+      [ "APINeig_RailingRailConnection", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ac0f366fa96d493f2563a0c620ca5d0e7", null ],
+      [ "APINeig_RailingRailConnectionOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a40761b25549aa68d0240aee83d851dc7", null ],
+      [ "APINeig_RailingEndFinish", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272af81169c85ed11e3c27e392094f0d1f1e", null ],
+      [ "APINeig_RailingEndFinishOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ab20e7ca6a978feed6b4d72f302dfbb98", null ],
+      [ "APINeig_BeamSegment", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a7c0c3f72ca55c487ab3600673f09e63a", null ],
+      [ "APINeig_BeamSegmentOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a608e7db7ef9fe6e44eba0a2c2b2f07a8", null ],
+      [ "APINeig_ColumnSegment", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a88b8064c38aa133d7f97eb4a3473da15", null ],
+      [ "APINeig_ColumnSegmentOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a08eb798b6134b05efacfb5d689db51c5", null ],
+      [ "APINeig_Opening", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a47cd2317da2a26f72582c99d396d61c3", null ],
+      [ "APINeig_OpeningOn", "group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a5d74a42f18039cc29e3c52201b391ca0", null ]
+    ] ],
     [ "API_NoteContentType", "group___element.html#ga437455a5fc8c46bcb2fb545c072dc83b", [
       [ "API_NoteContent_Measured", "group___element.html#gga437455a5fc8c46bcb2fb545c072dc83ba5d728aacb89191ab0826cce306cc942a", null ],
       [ "API_NoteContent_Custom", "group___element.html#gga437455a5fc8c46bcb2fb545c072dc83ba1e125418636cbf0b46d948ca3436ee1c", null ]
@@ -3563,6 +3887,12 @@ var group___element =
       [ "APINumbering_ByLayout", "group___element.html#gga76347ab43b6471fdafee7a2c14e95736a564f2d8fa59db603558b3ef82e086c7a", null ],
       [ "APINumbering_ByViewId", "group___element.html#gga76347ab43b6471fdafee7a2c14e95736ab7a517565d787615a0bfe4c76bec0e66", null ],
       [ "APINumbering_CustomNum", "group___element.html#gga76347ab43b6471fdafee7a2c14e95736a7be4451d571a6e71f86ca0b9517e37ee", null ]
+    ] ],
+    [ "API_PatternAlignID", "group___element.html#gaf777511beea07f087c75d85b197bf6f3", [
+      [ "APIPA_StartWithPattern", "group___element.html#ggaf777511beea07f087c75d85b197bf6f3a530bb883c3084eaa393468d6b7c78d1c", null ],
+      [ "APIPA_StartFromCenter", "group___element.html#ggaf777511beea07f087c75d85b197bf6f3a6852de0ea070c7fb7ea623d196ce3677", null ],
+      [ "APIPA_CenterAligned", "group___element.html#ggaf777511beea07f087c75d85b197bf6f3ae5c95f0fb9ae7144f055f0e1be1dffff", null ],
+      [ "APIPA_EndWithPattern", "group___element.html#ggaf777511beea07f087c75d85b197bf6f3adb5bd2db42b0f2e9c9b0685985fcd796", null ]
     ] ],
     [ "API_PenTableUsageModeValues", "group___element.html#ga1759e8c4ca5f95be487cfb380bb63944", [
       [ "APIPenTableUsageMode_UseOwnPenTable", "group___element.html#gga1759e8c4ca5f95be487cfb380bb63944a3c6fd1e711cdc93cf50642cf7b64dcb8", null ],
@@ -3577,7 +3907,48 @@ var group___element =
       [ "APIPictForm_JPEG", "group___element.html#ggac3f6e4707a523e41b5ff31703ee706e4ac0931810b367ac845043412f86dc4dd5", null ],
       [ "APIPictForm_PNG", "group___element.html#ggac3f6e4707a523e41b5ff31703ee706e4adb40689a5fb5381fc0c9ffb684364ae6", null ]
     ] ],
-    [ "API_PolyRoofSegmentAngleTypeID", "group___element.html#gadcf2afa5d284d542c16b2e949a1ab949", null ],
+    [ "API_PolyRoofSegmentAngleTypeID", "group___element.html#gadcf2afa5d284d542c16b2e949a1ab949", [
+      [ "APIPolyRoof_SegmentAngleTypeSloped", "group___element.html#ggadcf2afa5d284d542c16b2e949a1ab949a059d13590f93ffc62bfe3b48e529c65c", null ],
+      [ "APIPolyRoof_SegmentAngleTypeGable", "group___element.html#ggadcf2afa5d284d542c16b2e949a1ab949aedb7d03eaee8e01c8c0702964b2c4b31", null ]
+    ] ],
+    [ "API_RailBaseBaseConnectionID", "group___element.html#ga73aec4a0e25dd548ef24352dc3743c15", [
+      [ "APIBB_Horizontal", "group___element.html#gga73aec4a0e25dd548ef24352dc3743c15a67950227e3fd29ce3ee1f69f9ef33a8b", null ],
+      [ "APIBB_Tangential", "group___element.html#gga73aec4a0e25dd548ef24352dc3743c15a439b3eb135ceb85dd9987e7cc0cd6190", null ]
+    ] ],
+    [ "API_RailConnectionTypeID", "group___element.html#gab2fac2e414051f3b12f2c973a150152e", [
+      [ "APICT_NoRailConnection", "group___element.html#ggab2fac2e414051f3b12f2c973a150152eafc3f726991a5c0ef39cebf24a4b50a5e", null ],
+      [ "APICT_GooseneckRailConnection", "group___element.html#ggab2fac2e414051f3b12f2c973a150152ea464d2bd81f273d15dfee05e10c9b31f6", null ],
+      [ "APICT_DirectRailConnection", "group___element.html#ggab2fac2e414051f3b12f2c973a150152eaa01c2ff3f7a655dca120dba9fa4570de", null ]
+    ] ],
+    [ "API_RailEndArcAngleModeID", "group___element.html#gac76ed71e7016f04cb331c8902e3b14a1", [
+      [ "APIAM_SetToVertical", "group___element.html#ggac76ed71e7016f04cb331c8902e3b14a1a51b7522bfe7f6c4821cc57f361a555ac", null ],
+      [ "APIAM_CustomAngle", "group___element.html#ggac76ed71e7016f04cb331c8902e3b14a1a9c3f5a57ce254306da220b342e221f75", null ]
+    ] ],
+    [ "API_RailEndBaseConnectionID", "group___element.html#gaf99087f43644cc21866bc4d938693ef0", [
+      [ "APIBC_Horizontal", "group___element.html#ggaf99087f43644cc21866bc4d938693ef0a679539f13d9c9f9b1983cfbea1143c2f", null ],
+      [ "APIBC_Tangential", "group___element.html#ggaf99087f43644cc21866bc4d938693ef0a58790a374ec59987b9c1c2a6d1aa2740", null ]
+    ] ],
+    [ "API_RailEndExtrusionModeID", "group___element.html#ga5b8422085dc18660fbac06ddff614878", [
+      [ "APIEM_CustomLength", "group___element.html#gga5b8422085dc18660fbac06ddff614878adb4dc02e20aa9af5bf0ef133347d82ef", null ],
+      [ "APIEM_ToReferenceLine", "group___element.html#gga5b8422085dc18660fbac06ddff614878a2cfd9910ab411fd4bb7f9eb7bf2200ed", null ],
+      [ "APIEM_ToHandrailSibling", "group___element.html#gga5b8422085dc18660fbac06ddff614878a067b8cb138e041025c03bc8d88d4548e", null ]
+    ] ],
+    [ "API_RailEndFixtureConnectionID", "group___element.html#ga51e65c001a7cca0e811a79907eb94654", [
+      [ "APIRC_SegmentPlane", "group___element.html#gga51e65c001a7cca0e811a79907eb94654aa8e5afbc93e4789a8f12ce9f2bcea6b0", null ],
+      [ "APIRC_HorizontalRight", "group___element.html#gga51e65c001a7cca0e811a79907eb94654a3a4eb4af852c4f48510e6bad75ab5317", null ],
+      [ "APIRC_HorizontalLeft", "group___element.html#gga51e65c001a7cca0e811a79907eb94654a49e0dc75a4a19ef9126149e63586a69a", null ]
+    ] ],
+    [ "API_RailEndTypeID", "group___element.html#gae61180c560fadd4603f814b7080875db", [
+      [ "APIRE_Extension", "group___element.html#ggae61180c560fadd4603f814b7080875dbad8e917230612740d7d83bed999545af2", null ],
+      [ "APIRE_Curve", "group___element.html#ggae61180c560fadd4603f814b7080875dba95cd2e3d682d9c28b5f141cbff523893", null ],
+      [ "APIRE_FullReturn", "group___element.html#ggae61180c560fadd4603f814b7080875dbaa03a9f33cde0526cfe104715a7b4fc38", null ],
+      [ "APIRE_ConnectWithDuplicate", "group___element.html#ggae61180c560fadd4603f814b7080875dbaf05a4c52c71a5641d838fa16c83e9f81", null ]
+    ] ],
+    [ "API_RailingRefLineLocationID", "group___element.html#ga38fecada5688e41777d4f06f58dad7c4", [
+      [ "APIRLL_Left", "group___element.html#gga38fecada5688e41777d4f06f58dad7c4ab5d800c41024c4097562dbb603b2e2dd", null ],
+      [ "APIRLL_Center", "group___element.html#gga38fecada5688e41777d4f06f58dad7c4a66d6422a75d38b261211dfc3734b45a5", null ],
+      [ "APIRLL_Right", "group___element.html#gga38fecada5688e41777d4f06f58dad7c4a0d149eb4f7c690b79aa68d344ced03fd", null ]
+    ] ],
     [ "API_ReferringLevel", "group___element.html#ga582bac0247816d581e421fdbc5926975", [
       [ "NotReferred", "group___element.html#gga582bac0247816d581e421fdbc5926975a980bceab89e3b9749d6858fa0b6efdca", null ],
       [ "ReferredToViewPoint", "group___element.html#gga582bac0247816d581e421fdbc5926975a02d273c9ddd28f43c220db79b1390b8d", null ],
@@ -3592,8 +3963,27 @@ var group___element =
       [ "APIRP_OnTread", "group___element.html#ggab22584c074c3a409c4f178eb046cd680af73913e3c739a7969ebf26e9f7dd7333", null ],
       [ "APIRP_BehindTread", "group___element.html#ggab22584c074c3a409c4f178eb046cd680ad475f64344bfb46f4111e2ee50280202", null ]
     ] ],
-    [ "API_RoofEdgeTypeID", "group___element.html#ga1c6a6782bf266458fc7a6828dd91c344", null ],
-    [ "API_RoofOverHangTypeID", "group___element.html#gac541ae73009392d5afe7452fe000be7d", null ],
+    [ "API_RoofClassID", "group___element.html#gafa5acd4a1c1c68db849565f725fc52e8", [
+      [ "API_PlaneRoofID", "group___element.html#ggafa5acd4a1c1c68db849565f725fc52e8aa0e4d2813b413e80a5efb823ebcfcd92", null ],
+      [ "API_PolyRoofID", "group___element.html#ggafa5acd4a1c1c68db849565f725fc52e8afb153247f69a113216c1e33c45b2ef39", null ]
+    ] ],
+    [ "API_RoofEdgeTypeID", "group___element.html#ga1c6a6782bf266458fc7a6828dd91c344", [
+      [ "APIRoofEdgeType_Undefined", "group___element.html#gga1c6a6782bf266458fc7a6828dd91c344a924a5d7e6a8ec4c4b6b013357d1d86be", null ],
+      [ "APIRoofEdgeType_Ridge", "group___element.html#gga1c6a6782bf266458fc7a6828dd91c344acba6053c25a3b4f83a1626a8110486bf", null ],
+      [ "APIRoofEdgeType_Valley", "group___element.html#gga1c6a6782bf266458fc7a6828dd91c344ad2198b0c723ec06e04fd3984e02515f5", null ],
+      [ "APIRoofEdgeType_Gable", "group___element.html#gga1c6a6782bf266458fc7a6828dd91c344a5c1e82a34ebb8b31b4c45663845120be", null ],
+      [ "APIRoofEdgeType_Hip", "group___element.html#gga1c6a6782bf266458fc7a6828dd91c344a62724b2aad5dabed42393b206a090213", null ],
+      [ "APIRoofEdgeType_Eaves", "group___element.html#gga1c6a6782bf266458fc7a6828dd91c344a59cad3b7624b6b884e597bfec5ac95fc", null ],
+      [ "APIRoofEdgeType_Peak", "group___element.html#gga1c6a6782bf266458fc7a6828dd91c344ad33fa81a90aec78f1d8c91eb9ce3f9a8", null ],
+      [ "APIRoofEdgeType_SideWall", "group___element.html#gga1c6a6782bf266458fc7a6828dd91c344a2d3af354e184b9b532cd413e691c9dd7", null ],
+      [ "APIRoofEdgeType_EndWall", "group___element.html#gga1c6a6782bf266458fc7a6828dd91c344a54f6a498062e29198443c7640d74e88d", null ],
+      [ "APIRoofEdgeType_RTDome", "group___element.html#gga1c6a6782bf266458fc7a6828dd91c344a55b1ebea249a151ac8816093bc3af13a", null ],
+      [ "APIRoofEdgeType_RTHollow", "group___element.html#gga1c6a6782bf266458fc7a6828dd91c344a7c2adada1f7304e6019edf1775c4c415", null ]
+    ] ],
+    [ "API_RoofOverHangTypeID", "group___element.html#gac541ae73009392d5afe7452fe000be7d", [
+      [ "API_OffsetOverhang", "group___element.html#ggac541ae73009392d5afe7452fe000be7da48733b5b0f651cc14234796903bea883", null ],
+      [ "API_ManualOverhang", "group___element.html#ggac541ae73009392d5afe7452fe000be7da0f97da026106b3503cf1df0470c8f173", null ]
+    ] ],
     [ "API_SegmentHorizontalRange", "group___element.html#ga9d5d4d50c9c6df955e3e89e58752b9df", [
       [ "APIHorRange_Infinite", "group___element.html#gga9d5d4d50c9c6df955e3e89e58752b9dfafe75c501e35bcfdbac53846e56e5696c", null ],
       [ "APIHorRange_Limited", "group___element.html#gga9d5d4d50c9c6df955e3e89e58752b9dfaa92fee129d538a2b1f21cd65b8ae43b4", null ],
@@ -3604,12 +3994,53 @@ var group___element =
       [ "APIVerRange_Limited", "group___element.html#ggaea09251a4415532a4c56b6437494d2fba505190e1128446c4640d67c19682d5ba", null ],
       [ "APIVerRange_FitToZoneRange", "group___element.html#ggaea09251a4415532a4c56b6437494d2fba029b8b77d743ad8925a0e5135b386559", null ]
     ] ],
-    [ "API_ShellBaseContourEdgeTypeID", "group___element.html#ga5ea04ed854afbf94b1e5779d805669e8", null ],
-    [ "API_ShellBaseCutBodyTypeID", "group___element.html#gabdb296fe4b17e63ad11cb5bd1b770dd4", null ],
-    [ "API_ShellBaseSegmentTypeID", "group___element.html#ga2c17c7b3531c076d36862447f37c30c4", null ],
-    [ "API_SkylightAnchorID", "group___element.html#ga2f904f645b838b87a306f581d1b5090c", null ],
-    [ "API_SkylightFixModeID", "group___element.html#gac848f99ad0f91a8500ca0e04c569620d", null ],
-    [ "API_SlabReferencePlaneLocationID", "group___element.html#gafdbb4b996c13726fe88b0b654361dcf0", null ],
+    [ "API_ShellBaseContourEdgeTypeID", "group___element.html#ga5ea04ed854afbf94b1e5779d805669e8", [
+      [ "APIShellBaseContour_Undefined", "group___element.html#gga5ea04ed854afbf94b1e5779d805669e8a65bd335eb66d001e22f3ff5783bfe74c", null ],
+      [ "APIShellBaseContour_Ridge", "group___element.html#gga5ea04ed854afbf94b1e5779d805669e8a21eddfa983c4381d5ce4e6947d26bad0", null ],
+      [ "APIShellBaseContour_Valley", "group___element.html#gga5ea04ed854afbf94b1e5779d805669e8a6700cd798a884d64399f521826897674", null ],
+      [ "APIShellBaseContour_Gable", "group___element.html#gga5ea04ed854afbf94b1e5779d805669e8aafc2fe24df117e134957130b1fc0cb3c", null ],
+      [ "APIShellBaseContour_Hip", "group___element.html#gga5ea04ed854afbf94b1e5779d805669e8a8b2b07f4d801a18c1c7a0237c3c4aeb8", null ],
+      [ "APIShellBaseContour_Eaves", "group___element.html#gga5ea04ed854afbf94b1e5779d805669e8a7d9445f76ce226502f2ec8a56d881e3f", null ],
+      [ "APIShellBaseContour_Peak", "group___element.html#gga5ea04ed854afbf94b1e5779d805669e8aa18d5a1386d9bd9fb04bbf02cb3429bc", null ],
+      [ "APIShellBaseContour_SideWall", "group___element.html#gga5ea04ed854afbf94b1e5779d805669e8aa11a1ed07390f975350a1707356fcbe3", null ],
+      [ "APIShellBaseContour_EndWall", "group___element.html#gga5ea04ed854afbf94b1e5779d805669e8a634a79aef70113cc7cf91b9f86af19db", null ],
+      [ "APIShellBaseContour_RTDome", "group___element.html#gga5ea04ed854afbf94b1e5779d805669e8a9294df48f3741143fca79986890e233a", null ],
+      [ "APIShellBaseContour_RTHollow", "group___element.html#gga5ea04ed854afbf94b1e5779d805669e8a655d2b60b1a4256ba45647d37ba86e7d", null ]
+    ] ],
+    [ "API_ShellBaseCutBodyTypeID", "group___element.html#gabdb296fe4b17e63ad11cb5bd1b770dd4", [
+      [ "APIShellBaseCutBody_Editable", "group___element.html#ggabdb296fe4b17e63ad11cb5bd1b770dd4a849fa46f4f557878b175fff18e054f90", null ],
+      [ "APIShellBaseCutBody_ContoursDown", "group___element.html#ggabdb296fe4b17e63ad11cb5bd1b770dd4a918f6056dabcf987dd6f2436010b2480", null ],
+      [ "APIShellBaseCutBody_PivotLinesDown", "group___element.html#ggabdb296fe4b17e63ad11cb5bd1b770dd4a9ac180b734fe69970de18acbca9c63b5", null ],
+      [ "APIShellBaseCutBody_UpwardsExtrusion", "group___element.html#ggabdb296fe4b17e63ad11cb5bd1b770dd4aa98a7525d09afba0e4d1cdf28fb2731f", null ],
+      [ "APIShellBaseCutBody_DownwardsExtrusion", "group___element.html#ggabdb296fe4b17e63ad11cb5bd1b770dd4a1be82e2fc971480a8f236b3b8edddcae", null ]
+    ] ],
+    [ "API_ShellBaseSegmentTypeID", "group___element.html#ga2c17c7b3531c076d36862447f37c30c4", [
+      [ "APIShellBase_SegmentsByCircle", "group___element.html#gga2c17c7b3531c076d36862447f37c30c4a1077e3c32e94f1ac1037dd861d518dc9", null ],
+      [ "APIShellBase_SegmentsByArc", "group___element.html#gga2c17c7b3531c076d36862447f37c30c4a3ee746a1297b1033588152f9dc2202b7", null ]
+    ] ],
+    [ "API_ShellClassID", "group___element.html#gaf545ac3646d7f0acf9941c4cd1098f45", [
+      [ "API_ExtrudedShellID", "group___element.html#ggaf545ac3646d7f0acf9941c4cd1098f45a814c8b00cefb4d0fa4be3fd0041b389c", null ],
+      [ "API_RevolvedShellID", "group___element.html#ggaf545ac3646d7f0acf9941c4cd1098f45a5de0999c4d4dc8eb33432bcac1b1cb56", null ],
+      [ "API_RuledShellID", "group___element.html#ggaf545ac3646d7f0acf9941c4cd1098f45a9fdf97f5f8bc37bd6616fe6a38aeeeb0", null ]
+    ] ],
+    [ "API_SkylightAnchorID", "group___element.html#ga2f904f645b838b87a306f581d1b5090c", [
+      [ "APISkylightAnchor_BC", "group___element.html#gga2f904f645b838b87a306f581d1b5090cae1cd05589fe91989176c117a82b510f6", null ],
+      [ "APISkylightAnchor_BL", "group___element.html#gga2f904f645b838b87a306f581d1b5090ca6ddc9e5c36d719b94c43fa73d4ea4b0c", null ],
+      [ "APISkylightAnchor_BR", "group___element.html#gga2f904f645b838b87a306f581d1b5090cae9b525edd78e2e6fe43a43d8c6b01d99", null ],
+      [ "APISkylightAnchor_TC", "group___element.html#gga2f904f645b838b87a306f581d1b5090cab9186ec6902f12ad0e50716f4e1fef0a", null ],
+      [ "APISkylightAnchor_TL", "group___element.html#gga2f904f645b838b87a306f581d1b5090ca3c0bbc9cbd417cd50f6ce87bbb8e4986", null ],
+      [ "APISkylightAnchor_TR", "group___element.html#gga2f904f645b838b87a306f581d1b5090ca3b8ff0da538e333e9327645f116403a7", null ]
+    ] ],
+    [ "API_SkylightFixModeID", "group___element.html#gac848f99ad0f91a8500ca0e04c569620d", [
+      [ "APISkylightFixMode_Horizontal", "group___element.html#ggac848f99ad0f91a8500ca0e04c569620daa0dc1c86ae62bad7a960d0484ded6682", null ],
+      [ "APISkylightFixMode_Vertical", "group___element.html#ggac848f99ad0f91a8500ca0e04c569620da0881a554efd976a39a1e1c15054f1007", null ]
+    ] ],
+    [ "API_SlabReferencePlaneLocationID", "group___element.html#gafdbb4b996c13726fe88b0b654361dcf0", [
+      [ "APISlabRefPlane_Top", "group___element.html#ggafdbb4b996c13726fe88b0b654361dcf0aea899d844766374906c44b683021a330", null ],
+      [ "APISlabRefPlane_CoreTop", "group___element.html#ggafdbb4b996c13726fe88b0b654361dcf0a86d9c52a52d7e556a83761621fd6bf81", null ],
+      [ "APISlabRefPlane_CoreBottom", "group___element.html#ggafdbb4b996c13726fe88b0b654361dcf0aad9a558c76753e8061ce243b97b3da4e", null ],
+      [ "APISlabRefPlane_Bottom", "group___element.html#ggafdbb4b996c13726fe88b0b654361dcf0aef3583918cbe4571b4977df610e5d94c", null ]
+    ] ],
     [ "API_SolidOperationID", "group___element.html#gad3d4b71a035c3811dd05b70ce429810f", [
       [ "APISolid_Substract", "group___element.html#ggad3d4b71a035c3811dd05b70ce429810fabc393a927abc2cdef7ae8376d161b99c", null ],
       [ "APISolid_SubstUp", "group___element.html#ggad3d4b71a035c3811dd05b70ce429810fa362d60236a2e0a5a4bc56d6b75e0dd15", null ],
@@ -3617,11 +4048,28 @@ var group___element =
       [ "APISolid_Intersect", "group___element.html#ggad3d4b71a035c3811dd05b70ce429810fa4e0e1489c52b735e1dab6594fcb7ff2b", null ],
       [ "APISolid_Add", "group___element.html#ggad3d4b71a035c3811dd05b70ce429810fa39c426171a45260369e3f7f852e4576a", null ]
     ] ],
+    [ "API_StairDirectionID", "group___element.html#gaa5c45d3fdea59f914bd9f179526f548c", [
+      [ "APISD_Upward", "group___element.html#ggaa5c45d3fdea59f914bd9f179526f548cab0e53c05e7906f3ea381a159ccae6650", null ],
+      [ "APISD_Inverse", "group___element.html#ggaa5c45d3fdea59f914bd9f179526f548ca84ab1dd5c386cd25acf1a9ac96067010", null ]
+    ] ],
     [ "API_StairDisplayTypeID", "group___element.html#gaba042ae2817f64ce5adc8eb16cddb90b", [
       [ "APIStairDisplay_Custom", "group___element.html#ggaba042ae2817f64ce5adc8eb16cddb90ba6011037619fe8f8b6aaf06f8de0e2c4b", null ],
       [ "APIStairDisplay_ByModelViewOptions", "group___element.html#ggaba042ae2817f64ce5adc8eb16cddb90ba918a7e552f6d8f5aa6b5718ceaa418a7", null ]
     ] ],
-    [ "API_StairDLWinderNumTypeID", "group___element.html#gaba2ad236a7ff61fff79638acb3d4116f", null ],
+    [ "API_StairDLWinderNumTypeID", "group___element.html#gaba2ad236a7ff61fff79638acb3d4116f", [
+      [ "APIDWN_Max", "group___element.html#ggaba2ad236a7ff61fff79638acb3d4116fa35c190a0f16e3aaae2fb77a560f14cef", null ],
+      [ "APIDWN_Optimal", "group___element.html#ggaba2ad236a7ff61fff79638acb3d4116fa8f130c63be0455f37e4dc1b2bfb9d4d2", null ],
+      [ "APIDWN_Fix", "group___element.html#ggaba2ad236a7ff61fff79638acb3d4116fa992b257a271494c4b1782a4991954a6d", null ],
+      [ "APIDWN_Uniform", "group___element.html#ggaba2ad236a7ff61fff79638acb3d4116fa01ce51abfb6c1f066152c62fc55d9712", null ]
+    ] ],
+    [ "API_StairDrainSideID", "group___element.html#ga14acdd14ee8688669fde96c5750eefb1", [
+      [ "APIDS_Left", "group___element.html#gga14acdd14ee8688669fde96c5750eefb1ab103d75998c5336740e42cf066e9b515", null ],
+      [ "APIDS_Right", "group___element.html#gga14acdd14ee8688669fde96c5750eefb1a5f4ea9e7e925749c54b3b39faef19e84", null ]
+    ] ],
+    [ "API_StairDrainSurfaceTypeID", "group___element.html#gacf7205146491a53abdf38808d6c0b6c9", [
+      [ "APIST_Stepped", "group___element.html#ggacf7205146491a53abdf38808d6c0b6c9af3af01f0dfdd245ca27b83c7f08ea3ef", null ],
+      [ "APIST_Smooth", "group___element.html#ggacf7205146491a53abdf38808d6c0b6c9addb356d0ae23d0ef9e96f5d63227b73c", null ]
+    ] ],
     [ "API_StairGridTypeID", "group___element.html#ga876d603c7cf81774d3ad9aa30ab08ee2", [
       [ "APIStairGrid_NotRelevant", "group___element.html#gga876d603c7cf81774d3ad9aa30ab08ee2a382532777e7150b2dbf548ccbbfb125d", null ],
       [ "APIStairGrid_WithSingleBreaklineFull", "group___element.html#gga876d603c7cf81774d3ad9aa30ab08ee2afe49cc49d6df91ed5f7fedea93bd8460", null ],
@@ -3639,20 +4087,135 @@ var group___element =
       [ "APIStairGrid_WithBreakMarkAllVisible", "group___element.html#gga876d603c7cf81774d3ad9aa30ab08ee2a47b24fc3b7acc9fc51f95ce0a719ec3e", null ],
       [ "APIStairGrid_WithBreakMarkHiddenVisible", "group___element.html#gga876d603c7cf81774d3ad9aa30ab08ee2a4d2567c43ead0a716bb8e0774bf37516", null ]
     ] ],
-    [ "API_StairPartRoleID", "group___element.html#ga5cff80f27c0617909a84dd7533458a99", null ],
-    [ "API_StairPolyGeometryTypeID", "group___element.html#gac833bcbc1fd153f782aec0e69d6e02e6", null ],
-    [ "API_StairPolyTypeID", "group___element.html#gaef9843d1a19f3de4ca6aeaaeee8aeb1b", null ],
+    [ "API_StairInnerWidthOffsetTypeID", "group___element.html#gafdd95ae0bd236f79607fd3211b4db810", [
+      [ "APIIWO_Min", "group___element.html#ggafdd95ae0bd236f79607fd3211b4db810a6b571abc4128fc55c77e53448d5d0f27", null ],
+      [ "APIIWO_Fix", "group___element.html#ggafdd95ae0bd236f79607fd3211b4db810aab751364f1c0329a0edf22083ceda17b", null ]
+    ] ],
+    [ "API_StairNumberingID", "group___element.html#ga669561c1c514f208f4ad99bb6b373fb8", [
+      [ "APISN_Treads", "group___element.html#gga669561c1c514f208f4ad99bb6b373fb8ae59df48aa3f7f71ac88e5f1745b3c648", null ],
+      [ "APISN_Risers", "group___element.html#gga669561c1c514f208f4ad99bb6b373fb8adc38a623cbd9df7d0aec3544726d8415", null ]
+    ] ],
+    [ "API_StairPartRoleID", "group___element.html#ga5cff80f27c0617909a84dd7533458a99", [
+      [ "APISR_Run", "group___element.html#gga5cff80f27c0617909a84dd7533458a99aa4ec848caa8aff092fb0a7fe0ec04f1c", null ],
+      [ "APISR_Landing", "group___element.html#gga5cff80f27c0617909a84dd7533458a99a3f9a25a2687973dedc857d991c4cc26f", null ]
+    ] ],
+    [ "API_StairPolyGeometryTypeID", "group___element.html#gac833bcbc1fd153f782aec0e69d6e02e6", [
+      [ "APISG_Vertex", "group___element.html#ggac833bcbc1fd153f782aec0e69d6e02e6a85a4967cfc0cb9e16399eb1388a2e59c", null ],
+      [ "APISG_Edge", "group___element.html#ggac833bcbc1fd153f782aec0e69d6e02e6a633406f88cfe685938ecf3cc314abab7", null ],
+      [ "APISG_Surface", "group___element.html#ggac833bcbc1fd153f782aec0e69d6e02e6ab2e1d6a3afb40636ada52975940aca84", null ]
+    ] ],
+    [ "API_StairPolyTypeID", "group___element.html#gaef9843d1a19f3de4ca6aeaaeee8aeb1b", [
+      [ "APISP_Undefined", "group___element.html#ggaef9843d1a19f3de4ca6aeaaeee8aeb1ba6d1bbc17fe763a62cdbd8253b81e14ed", null ],
+      [ "APISP_BaseLine", "group___element.html#ggaef9843d1a19f3de4ca6aeaaeee8aeb1ba296c301cff17a469f17fa1af6bd1d399", null ],
+      [ "APISP_LeftBoundary", "group___element.html#ggaef9843d1a19f3de4ca6aeaaeee8aeb1bad818936be89cbeb244e25d25e12c6d22", null ],
+      [ "APISP_RightBoundary", "group___element.html#ggaef9843d1a19f3de4ca6aeaaeee8aeb1ba894328a1a3cb3569d71e20b8dfaca684", null ],
+      [ "APISP_Tread", "group___element.html#ggaef9843d1a19f3de4ca6aeaaeee8aeb1bac3e599b5adff0426a871e6778436e4cc", null ],
+      [ "APISP_Riser", "group___element.html#ggaef9843d1a19f3de4ca6aeaaeee8aeb1ba507fc08afc43ea6e2d360b4579b0f42d", null ],
+      [ "APISP_WalkingLine", "group___element.html#ggaef9843d1a19f3de4ca6aeaaeee8aeb1ba3443d39d3580231996ac48511795aa37", null ],
+      [ "APISP_FloorPlanSymb", "group___element.html#ggaef9843d1a19f3de4ca6aeaaeee8aeb1ba25d4609ace9007be32be5e7f7abfcd7e", null ],
+      [ "APISP_BreakMark", "group___element.html#ggaef9843d1a19f3de4ca6aeaaeee8aeb1bac5ee7ad6f3f23af648004bfd33c99d51", null ],
+      [ "APISP_DummyTreadLeading", "group___element.html#ggaef9843d1a19f3de4ca6aeaaeee8aeb1ba3e25b34b6669307295d9a64614f6a49c", null ],
+      [ "APISP_DummyTreadTrailing", "group___element.html#ggaef9843d1a19f3de4ca6aeaaeee8aeb1baf7992e922cdf1e155cba18c08d47e498", null ]
+    ] ],
+    [ "API_StairSegmentTypeID", "group___element.html#ga279e003ba51a1861c4acca80001d7d96", [
+      [ "APIST_StepsSegment", "group___element.html#gga279e003ba51a1861c4acca80001d7d96a8af8bf761e215b41442e8e977e9b4750", null ],
+      [ "APIST_LandingSegment", "group___element.html#gga279e003ba51a1861c4acca80001d7d96a2f66a47440583fe519e1227ff12ce1e2", null ],
+      [ "APIST_DividedLandingSegment", "group___element.html#gga279e003ba51a1861c4acca80001d7d96a93a78ef393c8296b0147bc2c3c24955e", null ]
+    ] ],
+    [ "API_StairStoryVisibilityID", "group___element.html#ga5b643ed8875d6021ed553e3188e11a2f", [
+      [ "APISSV_HomeStoryOnly", "group___element.html#gga5b643ed8875d6021ed553e3188e11a2fa2d1aaad3524cf7830c1fe54050360481", null ],
+      [ "APISSV_HomeAndOneStoryUp", "group___element.html#gga5b643ed8875d6021ed553e3188e11a2fa7c2c657debde6e8170b0483744a09d0e", null ],
+      [ "APISSV_HomeAndOneStoryDown", "group___element.html#gga5b643ed8875d6021ed553e3188e11a2fa6041539408dadd04724d5579c915ffb0", null ],
+      [ "APISSV_HomeAndOneStoryUpAndDown", "group___element.html#gga5b643ed8875d6021ed553e3188e11a2faf58190991219ee6f405364beea1a4956", null ],
+      [ "APISSV_OneStoryUp", "group___element.html#gga5b643ed8875d6021ed553e3188e11a2facc82f90a97632e013df5b03a94d759d7", null ],
+      [ "APISSV_OneStoryDown", "group___element.html#gga5b643ed8875d6021ed553e3188e11a2fa4a7ebe63e8e3e67cc78c7f7c84526c1b", null ],
+      [ "APISSV_AllStories", "group___element.html#gga5b643ed8875d6021ed553e3188e11a2fa7bd9404e1a2655f273243bea9cb7282f", null ],
+      [ "APISSV_AllRelevantStories", "group___element.html#gga5b643ed8875d6021ed553e3188e11a2fa92b4d5b5bffdca03f3db5a755fee18f0", null ],
+      [ "APISSV_AllRelevantAndOneStoryUp", "group___element.html#gga5b643ed8875d6021ed553e3188e11a2fa1fa02ecd3f656343bb45f7c201f1e6e5", null ],
+      [ "APISSV_AllRelevantAndOneStoryDown", "group___element.html#gga5b643ed8875d6021ed553e3188e11a2fa1dea1114dced2e7258ee98d2200c7b78", null ]
+    ] ],
     [ "API_StairStructBottomTypeID", "group___element.html#gaa8b263bed13aba3c7322016d5de05652", [
       [ "APISB_Stepped", "group___element.html#ggaa8b263bed13aba3c7322016d5de05652a74c883f66e2a37c863f44cc6926bdf03", null ],
       [ "APISB_Flat", "group___element.html#ggaa8b263bed13aba3c7322016d5de05652a26e4c054cd05d5317bc121199d5a4883", null ],
       [ "APISB_Smooth", "group___element.html#ggaa8b263bed13aba3c7322016d5de05652a6ad677142fbdea2687358be9a7deb420", null ]
+    ] ],
+    [ "API_StairStructHeightMeasureID", "group___element.html#gab9ebd30c0e49530c98214c04fe1c805a", [
+      [ "APIHM_Perpendicular", "group___element.html#ggab9ebd30c0e49530c98214c04fe1c805aaa07091ec539f896d7ecfdbd8651d2630", null ],
+      [ "APIHM_Vertical", "group___element.html#ggab9ebd30c0e49530c98214c04fe1c805aa947f11eb0c62a0839a34875d0766d9dd", null ]
+    ] ],
+    [ "API_StairStructSymbPartID", "group___element.html#ga95a3201059a6f7e6d9b3fe341c5c4b22", [
+      [ "APISP_Visible", "group___element.html#gga95a3201059a6f7e6d9b3fe341c5c4b22a6dc09e71f229426d89ffb84934e61031", null ],
+      [ "APISP_Hidden", "group___element.html#gga95a3201059a6f7e6d9b3fe341c5c4b22ab7bad71014c4d38af76e17d19053e090", null ]
+    ] ],
+    [ "API_StairStructSymbRelevantStoriesID", "group___element.html#ga8565d83fac34e527f53dce8e49d6f65e", [
+      [ "APISCV_ALL_STORIES", "group___element.html#gga8565d83fac34e527f53dce8e49d6f65ea255fbd306bf03dd143807d6e11bf366f", null ],
+      [ "APISCV_BELOW_RELEVANT", "group___element.html#gga8565d83fac34e527f53dce8e49d6f65eab79d54e63149e03041116d66bd013d81", null ],
+      [ "APISCV_BOTTOM_RELEVANT", "group___element.html#gga8565d83fac34e527f53dce8e49d6f65ea37857fe5c21889ba3ffd9a357a93b79f", null ],
+      [ "APISCV_MID_RELEVANT", "group___element.html#gga8565d83fac34e527f53dce8e49d6f65eaeef885e66237e292db2ed9d6bf57c92c", null ],
+      [ "APISCV_TOP_RELEVANT", "group___element.html#gga8565d83fac34e527f53dce8e49d6f65eae365c3a7f360faa285f02209540a3f0f", null ],
+      [ "APISCV_ABOVE_RELEVANT", "group___element.html#gga8565d83fac34e527f53dce8e49d6f65eac59d9ae8152058baf0b0fe742aa5e03e", null ]
+    ] ],
+    [ "API_StairStructSymbTypeID", "group___element.html#gacd82a46e3d7e80d741f2d89a86ba6326", [
+      [ "APIST_UnderStructure", "group___element.html#ggacd82a46e3d7e80d741f2d89a86ba6326a0bf58e7bdc636db1d2b0f944afe61c74", null ],
+      [ "APIST_Stringer", "group___element.html#ggacd82a46e3d7e80d741f2d89a86ba6326aa4bcc9cb306f3162dd01e2dfb4ec491f", null ]
+    ] ],
+    [ "API_StairStructSymbViewID", "group___element.html#ga554d172efe012cee66c5f6d1352d21cd", [
+      [ "APISV_FloorPlan", "group___element.html#gga554d172efe012cee66c5f6d1352d21cda7fa79751fb19bdd814ab9ae19de16b1e", null ],
+      [ "APISV_CeilingPlan", "group___element.html#gga554d172efe012cee66c5f6d1352d21cda8a18f268b30dbbdccef09280d8af6822", null ]
+    ] ],
+    [ "API_StairStructSymbVisibilityID", "group___element.html#gaea91305b7b3ae399bdf782a6cddc120b", [
+      [ "APISV_Beam", "group___element.html#ggaea91305b7b3ae399bdf782a6cddc120bacaaa8e3e934bc771b0869dc9b2eb2fb4", null ],
+      [ "APISV_Cantilevered", "group___element.html#ggaea91305b7b3ae399bdf782a6cddc120ba67958c7a41018b69ad7a65909010bf9a", null ],
+      [ "APISV_Stringer", "group___element.html#ggaea91305b7b3ae399bdf782a6cddc120baa5f27b230d44440967ca2ca77df06d7c", null ],
+      [ "APISV_Monolith", "group___element.html#ggaea91305b7b3ae399bdf782a6cddc120ba9156b2154fdb5d85bf05e5583520624d", null ]
+    ] ],
+    [ "API_StairStructureSideID", "group___element.html#ga3fab96054efa56494bea27c6e9216043", [
+      [ "APISS_LeftSide", "group___element.html#gga3fab96054efa56494bea27c6e9216043a5754aeb6cf443a55de4eb8f1750a788e", null ],
+      [ "APISS_RightSide", "group___element.html#gga3fab96054efa56494bea27c6e9216043a8f8ca3fc8c073e88058bb3f75dde6beb", null ],
+      [ "APISS_UnderSide", "group___element.html#gga3fab96054efa56494bea27c6e9216043a86144647341c2c7aeaad8ef9319571ad", null ]
+    ] ],
+    [ "API_StairStructureTypeID", "group___element.html#gaaf9f1627aa9cee9107a863d4441d81f5", [
+      [ "APIST_Side", "group___element.html#ggaaf9f1627aa9cee9107a863d4441d81f5a9cc38d9877b107d45d23a3ddd2cf4d10", null ],
+      [ "APIST_Monolith", "group___element.html#ggaaf9f1627aa9cee9107a863d4441d81f5a4ace382128fdc69e8a944ecaef692d5f", null ],
+      [ "APIST_BeamSupport", "group___element.html#ggaaf9f1627aa9cee9107a863d4441d81f5a91989aa337cab3a0d69ebc6b56d444b9", null ],
+      [ "APIST_CantileveredSupport", "group___element.html#ggaaf9f1627aa9cee9107a863d4441d81f5ae8f84f7a1297e3ab624e438678ae941d", null ]
+    ] ],
+    [ "API_StairTreadNosingTypeID", "group___element.html#gac04543982400fc1110e3d468b7c80579", [
+      [ "APITN_ByValue", "group___element.html#ggac04543982400fc1110e3d468b7c80579a0bf4229490c4e208ccfa87954d3bc85f", null ],
+      [ "APITN_BySlanting", "group___element.html#ggac04543982400fc1110e3d468b7c80579a636d31ad7989891bb60d75c59b559a22", null ]
+    ] ],
+    [ "API_StairTurnTypeID", "group___element.html#ga7be5fc4b466736ee034ad44e2db345a3", [
+      [ "APIST_NoTurn", "group___element.html#gga7be5fc4b466736ee034ad44e2db345a3aec046edda15629f11f92818117d1247a", null ],
+      [ "APIST_LandingTurn", "group___element.html#gga7be5fc4b466736ee034ad44e2db345a3aedda2de23739d4ef1a59fc25001207a9", null ],
+      [ "APIST_WinderTurn", "group___element.html#gga7be5fc4b466736ee034ad44e2db345a3a9ccbb91423b66ce086009786fa6c855c", null ],
+      [ "APIST_DividedLandingTurn", "group___element.html#gga7be5fc4b466736ee034ad44e2db345a3a5588397fcfdcc78b25aa939acd73b38d", null ]
+    ] ],
+    [ "API_StairWalkLineSymbPosID", "group___element.html#ga39cd6d6e91b70045d5083b42647dc76c", [
+      [ "APISP_Auto", "group___element.html#gga39cd6d6e91b70045d5083b42647dc76cab2b277923be838519c703b18b96b8ae0", null ],
+      [ "APISP_Center", "group___element.html#gga39cd6d6e91b70045d5083b42647dc76ca3af14a1699fa76ccd473b42b13dbba40", null ],
+      [ "APISP_Custom", "group___element.html#gga39cd6d6e91b70045d5083b42647dc76ca6e1cae2a669fd7fae09ae9e817bc7e82", null ]
+    ] ],
+    [ "API_StairWinderID", "group___element.html#ga650d4bfa3568c62c8709846ad7e05017", [
+      [ "APIWT_DINTurn", "group___element.html#gga650d4bfa3568c62c8709846ad7e05017ad26224dce4d17f831eb4fde3b09bf143", null ],
+      [ "APIWT_NZETurn", "group___element.html#gga650d4bfa3568c62c8709846ad7e05017add5b49ffce9b16f2b3a6512145e65a48", null ],
+      [ "APIWT_SIPTurn", "group___element.html#gga650d4bfa3568c62c8709846ad7e05017a7ff2a1dc47ef56421c22bbbb64d9d216", null ],
+      [ "APIWT_AGNTurn", "group___element.html#gga650d4bfa3568c62c8709846ad7e05017ac2f3063a04ef6262625054bdc54f6415", null ]
+    ] ],
+    [ "API_StairWinderNumTypeID", "group___element.html#ga6c3db6cb7389c19fb447b782d1ab7977", [
+      [ "APIWN_Min", "group___element.html#gga6c3db6cb7389c19fb447b782d1ab7977ac800ae3388668ebcaaf6a5c8b5c714c3", null ],
+      [ "APIWN_Fix", "group___element.html#gga6c3db6cb7389c19fb447b782d1ab7977aee3a369df52154af53102f0e0973c5c5", null ]
     ] ],
     [ "API_StoryHandleAppearance", "group___element.html#ga1e2d85a5174430c28c303202bf68e31c", [
       [ "APICutPl_SHANone", "group___element.html#gga1e2d85a5174430c28c303202bf68e31cae419d7a82b6a14115589593575835aea", null ],
       [ "APICutPl_SHADisplayOnly", "group___element.html#gga1e2d85a5174430c28c303202bf68e31ca344eeb2346521700c5628dd3c41bfdf6", null ],
       [ "APICutPl_SHAAll", "group___element.html#gga1e2d85a5174430c28c303202bf68e31cab5828eab31e1eaba354e52b0ef4621ae", null ]
     ] ],
-    [ "API_StructureDisplay", "group___element.html#ga7d96491ef5c4979d4868fae7e1bc84e5", null ],
+    [ "API_StructureDisplay", "group___element.html#ga7d96491ef5c4979d4868fae7e1bc84e5", [
+      [ "API_EntireStructure", "group___element.html#gga7d96491ef5c4979d4868fae7e1bc84e5a1b7632078a5be779751d6be89763edeb", null ],
+      [ "API_CoreOnly", "group___element.html#gga7d96491ef5c4979d4868fae7e1bc84e5ac01bb048a5c0614dbfaceffd06d98c30", null ],
+      [ "API_WithoutFinishes", "group___element.html#gga7d96491ef5c4979d4868fae7e1bc84e5a6d419cdf1b11be2c7eb5ee6d512f3dfc", null ],
+      [ "API_StructureOnly", "group___element.html#gga7d96491ef5c4979d4868fae7e1bc84e5ad1f08f103f6ddbf5fc82a5ed43bb0929", null ]
+    ] ],
     [ "API_SubElementType", "group___element.html#ga80de98510d6ef3076b2ed97c74ada8cf", [
       [ "APISubElement_MainMarker", "group___element.html#gga80de98510d6ef3076b2ed97c74ada8cfa4c01ac91052fddf7f7f151ef7e7140a5", null ],
       [ "APISubElement_SHMarker", "group___element.html#gga80de98510d6ef3076b2ed97c74ada8cfa1e77d62b7508f5bc2e0f895a9cd92615", null ],
@@ -3712,10 +4275,26 @@ var group___element =
       [ "API_TextFrameShapeType_Rectangle", "group___element.html#gga59d201ef64a6c018977dfbc84fa49731a03a726ecfc8680af18a37be55f907a00", null ],
       [ "API_TextFrameShapeType_Circle", "group___element.html#gga59d201ef64a6c018977dfbc84fa49731a61e647d7af70372a2c1c06c10ebcb090", null ],
       [ "API_TextFrameShapeType_RoundedRectangle", "group___element.html#gga59d201ef64a6c018977dfbc84fa49731a112d37caa01ce976d3ce4f5959d7387c", null ],
-      [ "API_TextFrameShapeType_Pill", "group___element.html#gga59d201ef64a6c018977dfbc84fa49731a90a508fa203ec052c74a5c855f80ae4b", null ]
+      [ "API_TextFrameShapeType_Pill", "group___element.html#gga59d201ef64a6c018977dfbc84fa49731a90a508fa203ec052c74a5c855f80ae4b", null ],
+      [ "API_TextFrameShapeType_Diamond", "group___element.html#gga59d201ef64a6c018977dfbc84fa49731aff2167d93ee6f72596dce367d6544473", null ],
+      [ "API_TextFrameShapeType_Pointed_Rectangle90", "group___element.html#gga59d201ef64a6c018977dfbc84fa49731a5648948231d36582e678816e36c54001", null ],
+      [ "API_TextFrameShapeType_Pointed_Rectangle120", "group___element.html#gga59d201ef64a6c018977dfbc84fa49731a1f16a151f114c917db85a9f6e114a066", null ],
+      [ "API_TextFrameShapeType_Hexagon", "group___element.html#gga59d201ef64a6c018977dfbc84fa49731a0b6b96b2e73f2034035ae99efd8243a3", null ],
+      [ "API_TextFrameShapeType_Hexagon_Rotated", "group___element.html#gga59d201ef64a6c018977dfbc84fa49731a8422ed9863fab382a9b6878ace9310b8", null ]
     ] ],
-    [ "API_TextPosID", "group___element.html#gae53fcb394000cf7ca2d60e1d61b02f7b", null ],
-    [ "API_TextureProjectionTypeID", "group___element.html#ga12bd8e26932265001fafa910acc5b32b", null ],
+    [ "API_TextPosID", "group___element.html#gae53fcb394000cf7ca2d60e1d61b02f7b", [
+      [ "APIPos_Above", "group___element.html#ggae53fcb394000cf7ca2d60e1d61b02f7bada7cce1bc4630e706eb20f4c68f29d00", null ],
+      [ "APIPos_In", "group___element.html#ggae53fcb394000cf7ca2d60e1d61b02f7ba181ac4d2bd57b34e4abe77da294f70e3", null ],
+      [ "APIPos_Below", "group___element.html#ggae53fcb394000cf7ca2d60e1d61b02f7ba2d1438f090797f8c49c3e2411740b3bb", null ]
+    ] ],
+    [ "API_TextureProjectionTypeID", "group___element.html#ga12bd8e26932265001fafa910acc5b32b", [
+      [ "APITextureProjectionType_Invalid", "group___element.html#gga12bd8e26932265001fafa910acc5b32ba1bea94e0673b134d207fd924b042a23f", null ],
+      [ "APITextureProjectionType_Planar", "group___element.html#gga12bd8e26932265001fafa910acc5b32baf1e639af6deb990b6b41bde20cda6fbb", null ],
+      [ "APITextureProjectionType_Default", "group___element.html#gga12bd8e26932265001fafa910acc5b32ba69ec1e8c9b39d6b4572437dd58017763", null ],
+      [ "APITextureProjectionType_Cylindric", "group___element.html#gga12bd8e26932265001fafa910acc5b32bae8634becb729d9266f0ac1dd8fbf7198", null ],
+      [ "APITextureProjectionType_Spheric", "group___element.html#gga12bd8e26932265001fafa910acc5b32baac4bfe9c885da5e194fead32f4275f6c", null ],
+      [ "APITextureProjectionType_Box", "group___element.html#gga12bd8e26932265001fafa910acc5b32baef856d93ffa077e8e4dfba8631e67ec3", null ]
+    ] ],
     [ "API_TitlePreviewModes", "group___element.html#ga233f09821a6e36c5e3c33da817e7af42", [
       [ "APITitlePreviewMode_DrawingWithTitle", "group___element.html#gga233f09821a6e36c5e3c33da817e7af42a7814f3e23599affcb39fa302eae282b0", null ],
       [ "APITitlePreviewMode_TitleOnly", "group___element.html#gga233f09821a6e36c5e3c33da817e7af42a82aeea153ea754ed42b836f8ae8ca865", null ]
@@ -3726,13 +4305,56 @@ var group___element =
       [ "APITrim_KeepOutside", "group___element.html#gga79ec8a1f707d0a07e6ad961b3e5bcaa9a51c0cce06ac9241289ad8735a3cf4707", null ],
       [ "APITrim_KeepAll", "group___element.html#gga79ec8a1f707d0a07e6ad961b3e5bcaa9a538400099399c81807397eec1c240cc0", null ]
     ] ],
-    [ "API_VeneerTypeID", "group___element.html#ga07b4e5e97809c31c6994a62b74b3b491", null ],
-    [ "API_WallReferenceLineLocationID", "group___element.html#ga141f348b9cd8a0c3b7a1ad5c3b6efa7b", null ],
-    [ "API_WallTypeID", "group___element.html#ga5ff16bf8990a0bdabd56f1b8fc907342", null ],
-    [ "API_WindowDoorDirectionTypes", "group___element.html#ga750a952810918f8bcca9b0d8f754e0e1", null ],
-    [ "API_WindowDoorRevealDepthLocationID", "group___element.html#ga72d5c733e600b446cc3504160c2dd572", null ],
-    [ "API_WitnessID", "group___element.html#ga91661100664aaec6536892d3f6d89baf", null ],
-    [ "API_ZoneRelID", "group___element.html#gadd0380fab128ae73e3ca39d3b918bafb", null ],
+    [ "API_VeneerTypeID", "group___element.html#ga07b4e5e97809c31c6994a62b74b3b491", [
+      [ "APIVeneer_Core", "group___element.html#gga07b4e5e97809c31c6994a62b74b3b491aafed437b7000f3e74edb3c4b2ed2ae9a", null ],
+      [ "APIVeneer_Finish", "group___element.html#gga07b4e5e97809c31c6994a62b74b3b491ad40169f59c1d07ac72c2f587ceb8a22c", null ],
+      [ "APIVeneer_Other", "group___element.html#gga07b4e5e97809c31c6994a62b74b3b491a449c27ff36053d6711428239c5fdf910", null ]
+    ] ],
+    [ "API_VerticalLinkID", "group___element.html#ga4f235e3d8a3d51ab77a612b347bd52b6", [
+      [ "API_NoLink", "group___element.html#gga4f235e3d8a3d51ab77a612b347bd52b6aa1f412a3898f10611fc3a6e4c1877f77", null ],
+      [ "API_LinkSillToWallBottom", "group___element.html#gga4f235e3d8a3d51ab77a612b347bd52b6a84b653e562ac153be789daa0bb62fe8c", null ],
+      [ "API_LinkSillToStory", "group___element.html#gga4f235e3d8a3d51ab77a612b347bd52b6ac1265d0de6d2d3b69b932c23a109f18a", null ],
+      [ "API_LinkHeaderToWallBottom", "group___element.html#gga4f235e3d8a3d51ab77a612b347bd52b6ad37ba5fcebc882b1ab7803d5ace23045", null ],
+      [ "API_LinkHeaderToStory", "group___element.html#gga4f235e3d8a3d51ab77a612b347bd52b6a3ad159b2f10aae64929a0a76f588a2ed", null ],
+      [ "API_LinkSkylightToRoofPivot", "group___element.html#gga4f235e3d8a3d51ab77a612b347bd52b6a618122357649e813cceeb7decc0a8990", null ],
+      [ "API_LinkSkylightToStory", "group___element.html#gga4f235e3d8a3d51ab77a612b347bd52b6a7d6adfc79894c0e580ee4b90b15dddc9", null ],
+      [ "API_LinkSkylightToShellBase", "group___element.html#gga4f235e3d8a3d51ab77a612b347bd52b6a28773ba6df266a2ac4170a3c5d1649ee", null ],
+      [ "API_LinkSillToWallTop", "group___element.html#gga4f235e3d8a3d51ab77a612b347bd52b6a46fe0e028cf9260720111009f1b6ddbf", null ],
+      [ "API_LinkHeaderToWallTop", "group___element.html#gga4f235e3d8a3d51ab77a612b347bd52b6a5a98d932ae4cef328e43df54b0c6b385", null ]
+    ] ],
+    [ "API_WallReferenceLineLocationID", "group___element.html#ga141f348b9cd8a0c3b7a1ad5c3b6efa7b", [
+      [ "APIWallRefLine_Outside", "group___element.html#gga141f348b9cd8a0c3b7a1ad5c3b6efa7baaeef6f16c907d6fece5383c8ff592b45", null ],
+      [ "APIWallRefLine_Center", "group___element.html#gga141f348b9cd8a0c3b7a1ad5c3b6efa7ba01b471fb70ad501414b55774b38ab372", null ],
+      [ "APIWallRefLine_Inside", "group___element.html#gga141f348b9cd8a0c3b7a1ad5c3b6efa7ba4782543aa6af036365b48c0ece2676f6", null ],
+      [ "APIWallRefLine_CoreOutside", "group___element.html#gga141f348b9cd8a0c3b7a1ad5c3b6efa7baf19253efbbe7844994ad470193a23b44", null ],
+      [ "APIWallRefLine_CoreCenter", "group___element.html#gga141f348b9cd8a0c3b7a1ad5c3b6efa7ba0a8b0872b484d7caecfe7579f8169f0e", null ],
+      [ "APIWallRefLine_CoreInside", "group___element.html#gga141f348b9cd8a0c3b7a1ad5c3b6efa7baa5ac7c60156988c1ea5f73d65a719e93", null ]
+    ] ],
+    [ "API_WallTypeID", "group___element.html#ga5ff16bf8990a0bdabd56f1b8fc907342", [
+      [ "APIWtyp_Normal", "group___element.html#gga5ff16bf8990a0bdabd56f1b8fc907342ac5df747e1f7e9afa1dfe024215287255", null ],
+      [ "APIWtyp_Trapez", "group___element.html#gga5ff16bf8990a0bdabd56f1b8fc907342a9461701c64dca010811da273d0f2b7a2", null ],
+      [ "APIWtyp_Poly", "group___element.html#gga5ff16bf8990a0bdabd56f1b8fc907342af6e9fa0b4bc499f0958a597999050d40", null ]
+    ] ],
+    [ "API_WindowDoorDirectionTypes", "group___element.html#ga750a952810918f8bcca9b0d8f754e0e1", [
+      [ "API_WDAssociativeToWall", "group___element.html#gga750a952810918f8bcca9b0d8f754e0e1a7e66502abe7a24593a97133037ee3f1b", null ],
+      [ "API_WDVertical", "group___element.html#gga750a952810918f8bcca9b0d8f754e0e1a9a6b6aba17d6747614265ddbe121efac", null ]
+    ] ],
+    [ "API_WindowDoorRevealDepthLocationID", "group___element.html#ga72d5c733e600b446cc3504160c2dd572", [
+      [ "APIWDRevealDepth_Side", "group___element.html#gga72d5c733e600b446cc3504160c2dd572ac05bfe362949a875ea8e568d54543f89", null ],
+      [ "APIWDRevealDepth_Core", "group___element.html#gga72d5c733e600b446cc3504160c2dd572aa741519cd502d297b699f0c6f48bf202", null ]
+    ] ],
+    [ "API_WitnessID", "group___element.html#ga91661100664aaec6536892d3f6d89baf", [
+      [ "APIWtn_None", "group___element.html#gga91661100664aaec6536892d3f6d89bafa1c12d695c8b3876ba10855095c7989ac", null ],
+      [ "APIWtn_Small", "group___element.html#gga91661100664aaec6536892d3f6d89bafabd3cb19c752f86b827332ac56fd6d51c", null ],
+      [ "APIWtn_Large", "group___element.html#gga91661100664aaec6536892d3f6d89bafa75100ff50905e6001b5e7bd7891b4fa5", null ],
+      [ "APIWtn_Fix", "group___element.html#gga91661100664aaec6536892d3f6d89bafa9919323ec7431cba7e4bbee6d2f7d337", null ]
+    ] ],
+    [ "API_ZoneRelID", "group___element.html#gadd0380fab128ae73e3ca39d3b918bafb", [
+      [ "APIZRel_Boundary", "group___element.html#ggadd0380fab128ae73e3ca39d3b918bafba696108e8a727d960b9a2ea7ca11866ce", null ],
+      [ "APIZRel_ReduceArea", "group___element.html#ggadd0380fab128ae73e3ca39d3b918bafba458853f790f1592f9f64c815e54d7aba", null ],
+      [ "APIZRel_None", "group___element.html#ggadd0380fab128ae73e3ca39d3b918bafba2a92b923f453d5a46fb3bb230eaa7ae7", null ],
+      [ "APIZRel_SubtractFromZone", "group___element.html#ggadd0380fab128ae73e3ca39d3b918bafbab50838c56ea14a0942f585b7924e93e2", null ]
+    ] ],
     [ "ACAPI::Element::Constraint", "group___element.html#gaae8e83ce9c135e48fbb423266838da77", [
       [ "ACAPI::Element::Constraint::ForcedVertical", "group___element.html#ggaae8e83ce9c135e48fbb423266838da77a5ec78693b25dd3d50725059425fa2081", null ],
       [ "ACAPI::Element::Constraint::ForcedHorizontal", "group___element.html#ggaae8e83ce9c135e48fbb423266838da77a28e644d21a40bbc068c9ef9a33086fec", null ],
@@ -3837,6 +4459,7 @@ var group___element =
     [ "ACAPI_Element_GetPropertyDefinitions", "group___element.html#ga06bb43401caf6779c03e2578efc8c839", null ],
     [ "ACAPI_Element_GetPropertyDefinitions", "group___element.html#ga31dab90b95adcdd542a27fe5f1daa4c6", null ],
     [ "ACAPI_Element_GetPropertyDefinitionsOfDefaultElem", "group___element.html#gad5812ddd53c4cfb1e0d0c1f96619cb03", null ],
+    [ "ACAPI_Element_GetPropertyObjects", "group___element.html#ga9368e350f2e674b94a5f21c9e6e951cb", null ],
     [ "ACAPI_Element_GetPropertyObjects", "group___element.html#ga208a1084283a38aded77b225ca45e8f1", null ],
     [ "ACAPI_Element_GetPropertyValue", "group___element.html#gaf954bd662beb4a4635ddbfb8e768717f", null ],
     [ "ACAPI_Element_GetPropertyValue", "group___element.html#ga2c43302f613d7bcf07bc906324f817f0", null ],

@@ -142,8 +142,25 @@ var group___model_access =
       [ "pgonIndex", "struct_a_p_i___tex_coord_pars.html#aaa5898955dd93185442b429b4ece5580", null ],
       [ "surfacePoint", "struct_a_p_i___tex_coord_pars.html#a91aec5b03aa81b1affc5b30fa8600440", null ]
     ] ],
-    [ "API_3DTypeID", "group___model_access.html#gab57a668e63c5452d92887a7021b3ec40", null ],
-    [ "API_LghtSouID", "group___model_access.html#gaa3c414a53a631d2fbe5a5a95464ff888", null ],
+    [ "API_3DTypeID", "group___model_access.html#gab57a668e63c5452d92887a7021b3ec40", [
+      [ "API_Zombie3DID", "group___model_access.html#ggab57a668e63c5452d92887a7021b3ec40aa76fd7dba9be33f1254e8581456c4ce8", null ],
+      [ "API_BodyID", "group___model_access.html#ggab57a668e63c5452d92887a7021b3ec40a8bc8b7569d6c440dc45f8bdee645c74d", null ],
+      [ "API_PgonID", "group___model_access.html#ggab57a668e63c5452d92887a7021b3ec40a4cc85fd4f433b437b19fbc950329c0e2", null ],
+      [ "API_PedgID", "group___model_access.html#ggab57a668e63c5452d92887a7021b3ec40a88486e2b5daaa35ff84a1bcc2da52d7c", null ],
+      [ "API_EdgeID", "group___model_access.html#ggab57a668e63c5452d92887a7021b3ec40a6fb39acedd0682d78fe9fc340338b3ac", null ],
+      [ "API_VertID", "group___model_access.html#ggab57a668e63c5452d92887a7021b3ec40a0ebd0d0bc530b1810767141ea7368ae2", null ],
+      [ "API_VectID", "group___model_access.html#ggab57a668e63c5452d92887a7021b3ec40abec33a9e16a6f3c3da3e57479e258ccb", null ],
+      [ "API_UmatID", "group___model_access.html#ggab57a668e63c5452d92887a7021b3ec40afbbc51511041b18f471a75ddc9d5ab38", null ],
+      [ "API_LghtID", "group___model_access.html#ggab57a668e63c5452d92887a7021b3ec40a7521e99001e8bf9ca7f6dfdffd0d4fd4", null ]
+    ] ],
+    [ "API_LghtSouID", "group___model_access.html#gaa3c414a53a631d2fbe5a5a95464ff888", [
+      [ "APILght_DistantID", "group___model_access.html#ggaa3c414a53a631d2fbe5a5a95464ff888afb31b7b6fe4285a5401d29ffe68574c3", null ],
+      [ "APILght_DirectionID", "group___model_access.html#ggaa3c414a53a631d2fbe5a5a95464ff888ac5ed578d4d56c78cc6a8f1ed69953b1c", null ],
+      [ "APILght_SpotID", "group___model_access.html#ggaa3c414a53a631d2fbe5a5a95464ff888a523dc0b45c1faf1557aa9eb1a8a8c78e", null ],
+      [ "APILght_PointID", "group___model_access.html#ggaa3c414a53a631d2fbe5a5a95464ff888a6a97f1a3b6201bc61cd03e76af0665f5", null ],
+      [ "APILght_SunID", "group___model_access.html#ggaa3c414a53a631d2fbe5a5a95464ff888acb8f5e597ef77924eac8e16c09046326", null ],
+      [ "APILght_EyeID", "group___model_access.html#ggaa3c414a53a631d2fbe5a5a95464ff888a5549cfb1fb15675681053e094ef0d75c", null ]
+    ] ],
     [ "API_MaterTypeID", "group___model_access.html#ga8ca5f765869a7cd806e420ef451c8495", [
       [ "APIMater_GeneralID", "group___model_access.html#gga8ca5f765869a7cd806e420ef451c8495a3bc7e77094211f4997d9b01997bd9930", null ],
       [ "APIMater_SimpleID", "group___model_access.html#gga8ca5f765869a7cd806e420ef451c8495acf68a335dfabebc052ffe8e92500e132", null ],

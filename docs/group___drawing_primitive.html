@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Drawing Primitives</title>
+<title>Archicad 30 C++ API: Drawing Primitives</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -202,7 +202,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>NoError - The element was drawn successfully.</li>
-<li>APINOTIFY_NODATA - Supress hierarchical decomposition.</li>
+<li>APINOTIFY_NODATA - Suppress hierarchical decomposition.</li>
 <li>APINOTIFY_OWN_MEMORY_HANDLER - Tells the API that your add-on took over the ownership of the passed coords, pends and parcs array. For lines, polylines and polygons only.</li>
 <li>APIERR_GENERAL - Any user-defined error can be returned. </li>
 </ul>
@@ -290,17 +290,17 @@ Functions</h2></td></tr>
 <p>Draws the primitives of the Story Level Control elements on the given Section/Elevation database. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">databaseUnId</td><td>[in] The unique ID of the database </td></tr>
-    <tr><td class="paramname">shapePrimsProc</td><td>[in] The function to be called to process the element primitives </td></tr>
+    <tr><td class="paramname">databaseUnId</td><td>[in] The unique ID of the database. </td></tr>
+    <tr><td class="paramname">shapePrimsProc</td><td>[in] The function to be called to process the element primitives. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - The passed dbUnID or the shapePrimsProc parameter nullptr, </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - The passed dbUnID or the shapePrimsProc parameter is nullptr. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Use this function to export the primitives of the Story Level Control of a Section/Elevation database. Similarly to <a class="el" href="#ga4c54d352ecf2d4abec4bf2d8f762d4b5">ACAPI_DrawingPrimitive_ShapePrims</a> and <a class="el" href="group___library_part.html#ga44b49790fde80e887d79c8c9156681f7">ACAPI_LibraryPart_ShapePrims</a> it calls back the passed handler function with each drawing primitive part of the Story Level Handler. Since the Story Level Handler is not a separate element type in API, it is referenced by the database unique ID of the Section/Elevation the Story Levels are displayed on. The settings of the Story Level lines and Markers can be accessed via the <a class="el" href="struct_a_p_i___cut_plane_type.html">API_CutPlaneType</a> structure. Note that the primitives are sent only when the value of <code>API_StoryHandleAppearance</code> is <code>APICutPl_SHAAll</code> in the settings of the Cut Plane element. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Use this function to export the primitives of the Story Level Control of a Section/Elevation database. Similarly to <a class="el" href="#ga4c54d352ecf2d4abec4bf2d8f762d4b5">ACAPI_DrawingPrimitive_ShapePrims</a> and <a class="el" href="group___library_part.html#ga44b49790fde80e887d79c8c9156681f7">ACAPI_LibraryPart_ShapePrims</a>, it calls back the passed handler function with each drawing primitive part of the Story Level Handler. Since the Story Level Handler is not a separate element type in the API, it is referenced by the database unique ID of the Section/Elevation the Story Levels are displayed on. The settings of the Story Level lines and markers can be accessed via the <a class="el" href="struct_a_p_i___cut_plane_type.html">API_CutPlaneType</a> structure. Note that the primitives are sent only when the value of <code>API_StoryHandleAppearance</code> is <code>APICutPl_SHAAll</code> in the settings of the Cut Plane element. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___window_info.html">API_DatabaseInfo</a> databaseInfo {};</div>
 <div class="line"> </div>
 <div class="line">GSErrCode err = <a class="code hl_function" href="group___database.html#gaf1d24c9fb822b1d7f5c0b578c7cecf9c">ACAPI_Database_GetCurrentDatabase</a> (&amp;databaseInfo);</div>
@@ -339,7 +339,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter is nullptr; element</li>
 <li>APIERR_BADDATABASE - Not the appropriate database was open for the operation. For example you tried to access a 2D element while the 3D window - and also the 3D database - was active.</li>
 <li>APIERR_BADID - The element type is invalid, </li>
@@ -413,7 +413,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADDATABASE - Not the appropriate database was open for the operation. For example you tried to access a 2D element while the 3D window - and also the 3D database - was active.</li>
 <li>APIERR_BADID - The element type is invalid, or the element guid is invalid, or the element type is not supported by the server application</li>
 <li>APIERR_REFUSEDCMD - This error code is returned when the element specified by the guid parameter is not on the current floor.</li>

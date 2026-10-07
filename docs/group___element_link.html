@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Element Links</title>
+<title>Archicad 30 C++ API: Element Links</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -146,20 +146,92 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga697e4708e72a8433b0282c03b835f79b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of elements linked to the given element.  <br /></td></tr>
 <tr class="separator:ga697e4708e72a8433b0282c03b835f79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac5f9163a32904185c72f81fb9045f789" id="r_gac5f9163a32904185c72f81fb9045f789"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac5f9163a32904185c72f81fb9045f789">ACAPI_ElementLink_GetLinkFlags</a> (const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;guid_linkFrom, const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;guid_linkTo, GSFlags *linkFlags)</td></tr>
-<tr class="memdesc:gac5f9163a32904185c72f81fb9045f789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the link flags associated to the link between the two elements.  <br /></td></tr>
+<tr class="memdesc:gac5f9163a32904185c72f81fb9045f789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the link flags associated with the link between the two elements.  <br /></td></tr>
 <tr class="separator:gac5f9163a32904185c72f81fb9045f789"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga229bacf0fd2d4c95ff66ed57ad278390" id="r_ga229bacf0fd2d4c95ff66ed57ad278390"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga229bacf0fd2d4c95ff66ed57ad278390">ACAPI_ElementLink_GetLinkedPropertyObjects</a> (const <a class="el" href="struct_a_p_i___elem___head.html">API_Elem_Head</a> *head, bool *criteria, Int32 *inviduallyLibInd, Int32 **critLibInds, Int32 *nCrits)</td></tr>
-<tr class="memdesc:ga229bacf0fd2d4c95ff66ed57ad278390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves property objects linked to an element or the element default.  <br /></td></tr>
-<tr class="separator:ga229bacf0fd2d4c95ff66ed57ad278390"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7fe6ea5021237ff1c958df3b228e23f0" id="r_ga7fe6ea5021237ff1c958df3b228e23f0"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7fe6ea5021237ff1c958df3b228e23f0">ACAPI_ElementLink_SetLinkedPropertyObjects</a> (<a class="el" href="struct_a_p_i___elem___head.html">API_Elem_Head</a> *head, bool criteria, Int32 inviduallyLibInd)</td></tr>
-<tr class="memdesc:ga7fe6ea5021237ff1c958df3b228e23f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Link property objects to an element or the element default.  <br /></td></tr>
-<tr class="separator:ga7fe6ea5021237ff1c958df3b228e23f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c2c2cc9d1012055950c238ac2ef693b" id="r_ga3c2c2cc9d1012055950c238ac2ef693b"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3c2c2cc9d1012055950c238ac2ef693b">ACAPI_ElementLink_GetLinkedPropertyObjects</a> (const <a class="el" href="struct_a_p_i___elem___head.html">API_Elem_Head</a> *head, bool *criteria, Int32 *individuallyLibInd, Int32 **critLibInds, Int32 *nCrits)</td></tr>
+<tr class="memdesc:ga3c2c2cc9d1012055950c238ac2ef693b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves property objects linked to an element or the element default.  <br /></td></tr>
+<tr class="separator:ga3c2c2cc9d1012055950c238ac2ef693b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf4d57866528c08c3aaac16939358621" id="r_gadf4d57866528c08c3aaac16939358621"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gadf4d57866528c08c3aaac16939358621">ACAPI_ElementLink_GetLinkedPropertyObjects</a> (const <a class="el" href="struct_a_p_i___elem___head.html">API_Elem_Head</a> &amp;head, bool &amp;criteria, Int32 &amp;individuallyLibInd, std::vector&lt; Int32 &gt; &amp;critLibInds)</td></tr>
+<tr class="memdesc:gadf4d57866528c08c3aaac16939358621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves property objects linked to an element or the element default.  <br /></td></tr>
+<tr class="separator:gadf4d57866528c08c3aaac16939358621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa33410323dbae8be8de9754d7aac0df2" id="r_gaa33410323dbae8be8de9754d7aac0df2"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa33410323dbae8be8de9754d7aac0df2">ACAPI_ElementLink_SetLinkedPropertyObjects</a> (<a class="el" href="struct_a_p_i___elem___head.html">API_Elem_Head</a> *head, bool criteria, Int32 individuallyLibInd)</td></tr>
+<tr class="memdesc:gaa33410323dbae8be8de9754d7aac0df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Link property objects to an element or the element default.  <br /></td></tr>
+<tr class="separator:gaa33410323dbae8be8de9754d7aac0df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions for creating, handling and deleting custom (Add-On specific) Element Links. These links can provide associations between two elements. The advantage of using element linking is that the server application automatically tracks changes in the GUIDs, and updates them accordingly. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga229bacf0fd2d4c95ff66ed57ad278390" name="ga229bacf0fd2d4c95ff66ed57ad278390"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga229bacf0fd2d4c95ff66ed57ad278390">&#9670;&#160;</a></span>ACAPI_ElementLink_GetLinkedPropertyObjects()</h2>
+<a id="gadf4d57866528c08c3aaac16939358621" name="gadf4d57866528c08c3aaac16939358621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf4d57866528c08c3aaac16939358621">&#9670;&#160;</a></span>ACAPI_ElementLink_GetLinkedPropertyObjects() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GSErrCode ACAPI_ElementLink_GetLinkedPropertyObjects </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_a_p_i___elem___head.html">API_Elem_Head</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>head</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;</td>          <td class="paramname"><span class="paramname"><em>criteria</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Int32 &amp;</td>          <td class="paramname"><span class="paramname"><em>individuallyLibInd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; Int32 &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>critLibInds</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves property objects linked to an element or the element default. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">head</td><td>[in] Header of the element (only field guid is used). Properties linked to the default element are retrieved when guid is APINULLGuid </td></tr>
+    <tr><td class="paramname">criteria</td><td>[out] Determines whether the matching properties by criteria are linked to the element </td></tr>
+    <tr><td class="paramname">individuallyLibInd</td><td>[out] Library index of individually assigned property (value zero means no individual property assigned) </td></tr>
+    <tr><td class="paramname">critLibInds</td><td>[out] Array of the library indices of linked properties matching the criteria </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the list of property objects for a linked element. Properties can be associated with construction elements by criteria and/or by individual direct assignment (at most one individual assignment can be applied to an element). This applies to all types of construction elements. If no element is specified (ie. guid is APINULLGuid), the default settings of the given element type are retrieved. All arguments need to be passed. </dd></dl>
+<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">void</span> GetLinkedProperties (<span class="keyword">const</span> <a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a>&amp; guid)</div>
+<div class="line">{</div>
+<div class="line">    <a class="code hl_union" href="union_a_p_i___element.html">API_Element</a>  element {};</div>
+<div class="line"> </div>
+<div class="line">    element.<a class="code hl_variable" href="union_a_p_i___element.html#a2d99c75ff8448dd4206758c7bc65127d">header</a>.<a class="code hl_variable" href="struct_a_p_i___elem___head.html#ae1c055907c06039af552a4e42a9a4e84">guid</a>  = guid;</div>
+<div class="line">    GSErrCode err = <a class="code hl_function" href="group___element.html#ga365cc4e0f7ecb9bad0ca6d27a2474169">ACAPI_Element_Get</a> (&amp;element);</div>
+<div class="line">    <span class="keywordflow">if</span> (err == NoError) {</div>
+<div class="line">        <span class="keywordtype">bool</span>    byCrit;</div>
+<div class="line">        Int32   indivLibInd;</div>
+<div class="line">        std::vector&lt;Int32&gt;  critLibInds;</div>
+<div class="line">        <span class="keywordflow">if</span> (<a class="code hl_function" href="#ga3c2c2cc9d1012055950c238ac2ef693b">ACAPI_ElementLink_GetLinkedPropertyObjects</a> (element.<a class="code hl_variable" href="union_a_p_i___element.html#a2d99c75ff8448dd4206758c7bc65127d">header</a>, byCrit, indivLibInd, critLibInds) == NoError) {</div>
+<div class="line">            <span class="keywordflow">if</span> (indivLibInd != 0) {</div>
+<div class="line">                DBPrintf (<span class="stringliteral">&quot;Library index of individually linked property is %d.\n&quot;</span>, indivLibInd);</div>
+<div class="line">            }</div>
+<div class="line">            <span class="keywordflow">if</span> (byCrit) {</div>
+<div class="line">                DBPrintf (<span class="stringliteral">&quot;Library indices of linked properties matching criteria are [ &quot;</span>);</div>
+<div class="line">                <span class="keywordflow">for</span> (<span class="keyword">const</span> Int32&amp; elem : critLibInds) {</div>
+<div class="line">                    DBPrintf (<span class="stringliteral">&quot;%d &quot;</span>, elem);</div>
+<div class="line">                }</div>
+<div class="line">                DBPrintf (<span class="stringliteral">&quot;].\n&quot;</span>);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a id="ga3c2c2cc9d1012055950c238ac2ef693b" name="ga3c2c2cc9d1012055950c238ac2ef693b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c2c2cc9d1012055950c238ac2ef693b">&#9670;&#160;</a></span>ACAPI_ElementLink_GetLinkedPropertyObjects() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,7 +249,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Int32 *</td>          <td class="paramname"><span class="paramname"><em>inviduallyLibInd</em></span>, </td>
+          <td class="paramtype">Int32 *</td>          <td class="paramname"><span class="paramname"><em>individuallyLibInd</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -193,11 +265,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieves property objects linked to an element or the element default. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated</a></b></dt><dd>This function is deprecated and will be removed in future versions. Use <a class="el" href="#gadf4d57866528c08c3aaac16939358621" title="Retrieves property objects linked to an element or the element default.">ACAPI_ElementLink_GetLinkedPropertyObjects(const API_Elem_Head&amp;, bool&amp;, Int32&amp;, std::vector&lt;Int32&gt;&amp;)</a> instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">head</td><td>[in] Header of the element (only field guid is used). Properties linked to the default element are retrieved when guid is APINULLGuid </td></tr>
     <tr><td class="paramname">criteria</td><td>[out] Determines whether the matching properties by criteria are linked to the element </td></tr>
-    <tr><td class="paramname">inviduallyLibInd</td><td>[out] Library index of individually assigned property (value zero means no individual property assigned) </td></tr>
+    <tr><td class="paramname">individuallyLibInd</td><td>[out] Library index of individually assigned property (value zero means no individual property assigned) </td></tr>
     <tr><td class="paramname">critLibInds</td><td>[out] Aray of the library indices of linked properties matching the criteria </td></tr>
     <tr><td class="paramname">nCrits</td><td>[out] Number of linked properties matching the criteria </td></tr>
   </table>
@@ -205,33 +278,6 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the list of property objects for a linked element. Properties can be associated with construction elements by criteria and/or by individual direct assignment (at most one individual assignment can be applied to an element). This applies to all types of construction elements. If no element is specified (ie. guid is APINULLGuid), the default settings of the given element type are retrieved. Any of the arguments except head can be nullptr, in this case the function retrieves only the rest of the parameters. Remember to free the critLibInds array when not needed any more. </dd></dl>
-<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">void</span> GetLinkedProperties (<span class="keyword">const</span> <a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a>&amp; guid)</div>
-<div class="line">{</div>
-<div class="line">    <a class="code hl_union" href="union_a_p_i___element.html">API_Element</a>  element {};</div>
-<div class="line"> </div>
-<div class="line">    element.<a class="code hl_variable" href="union_a_p_i___element.html#a2d99c75ff8448dd4206758c7bc65127d">header</a>.<a class="code hl_variable" href="struct_a_p_i___elem___head.html#ae1c055907c06039af552a4e42a9a4e84">guid</a>  = guid;</div>
-<div class="line">    GSErrCode err = <a class="code hl_function" href="group___element.html#ga365cc4e0f7ecb9bad0ca6d27a2474169">ACAPI_Element_Get</a> (&amp;element);</div>
-<div class="line">    <span class="keywordflow">if</span> (err == NoError) {</div>
-<div class="line">        <span class="keywordtype">bool</span>    byCrit;</div>
-<div class="line">        Int32   indivLibInd;</div>
-<div class="line">        Int32   nCrits;</div>
-<div class="line">        Int32   *critLibInds;</div>
-<div class="line">        <span class="keywordflow">if</span> (<a class="code hl_function" href="#ga229bacf0fd2d4c95ff66ed57ad278390">ACAPI_ElementLink_GetLinkedPropertyObjects</a> (&amp;element.<a class="code hl_variable" href="union_a_p_i___element.html#a2d99c75ff8448dd4206758c7bc65127d">header</a>, &amp;byCrit, &amp;indivLibInd, &amp;critLibInds, &amp;nCrits) == NoError) {</div>
-<div class="line">            <span class="keywordflow">if</span> (indivLibInd != 0) {</div>
-<div class="line">                DBPrintf (<span class="stringliteral">&quot;Library index of individually linked property is %d.\n&quot;</span>, indivLibInd);</div>
-<div class="line">            }</div>
-<div class="line">            <span class="keywordflow">if</span> (byCrit) {</div>
-<div class="line">                DBPrintf (<span class="stringliteral">&quot;Library indices of linked properties matching criteria are [ &quot;</span>);</div>
-<div class="line">                <span class="keywordflow">for</span> (Int32 i = 0; i &lt; nCrits; ++i) {</div>
-<div class="line">                    DBPrintf (<span class="stringliteral">&quot;%d &quot;</span>, critLibInds[i]);</div>
-<div class="line">                }</div>
-<div class="line">                DBPrintf (<span class="stringliteral">&quot;].\n&quot;</span>);</div>
-<div class="line">            }</div>
-<div class="line">            BMKillPtr ((GSPtr *) &amp;critLibInds);  <span class="comment">// dispose critLibInds</span></div>
-<div class="line">        }</div>
-<div class="line">    }</div>
-<div class="line">}</div>
-</div><!-- fragment --> </dd></dl>
 
 </div>
 </div>
@@ -259,22 +305,22 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the link flags associated to the link between the two elements. </p>
+<p>Retrieves the link flags associated with the link between the two elements. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guid_linkFrom</td><td>[in] Identifies the element to which the other element was linked. </td></tr>
-    <tr><td class="paramname">guid_linkTo</td><td>[in] Identifies the element which was linked to the first element. </td></tr>
+    <tr><td class="paramname">guid_linkTo</td><td>[in] Identifies the element that was linked to the first element. </td></tr>
     <tr><td class="paramname">linkFlags</td><td>[out] Returns the custom flags assigned to the link with <a class="el" href="#ga8dafce884b3eee1258672cb2468a17dd">ACAPI_ElementLink_Link</a>. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed linkFlags pointer is nullptr.</li>
 <li>APIERR_BADDATABASE, APIERR_NOTMINE - The function cannot operate on the current database. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>When you link an element to an other, you can also pass custom flags which are stored with the link in the database. With this function you can retrieve these flags. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>When you link an element to another, you can also pass custom flags, which are stored with the link in the database. With this function, you can retrieve these flags. </dd></dl>
 
 </div>
 </div>
@@ -301,17 +347,17 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guid_linkFrom</td><td>[in] Identifies the element to which the other elements were linked. </td></tr>
-    <tr><td class="paramname">guid_linkTo</td><td>[out] Returns the GUIDs of the elements which were linked to the first element. </td></tr>
+    <tr><td class="paramname">guid_linkTo</td><td>[out] Returns the GUIDs of the elements that were linked to the first element. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed guid_linkTo pointer is nullptr.</li>
 <li>APIERR_BADDATABASE, APIERR_NOTMINE - The function cannot operate on the current database. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>The element links are not bidirectional, you always link one element to another. This function returns the list of elements linked to the element having the guid_linkFrom GUID. Note that if this function is called in an unclosed undoable session, then it returns not only the existing links, but also the links which have been deleted in the current undoable session. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>The element links are not bidirectional; you always link one element to another. This function returns the list of elements linked to the element having the guid_linkFrom GUID. Note that if this function is called in an unclosed undoable session, then it returns not only the existing links, but also the links that have been deleted in the current undoable session. </dd></dl>
 
 </div>
 </div>
@@ -349,19 +395,19 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_NEEDSUNDOSCOPE - The function must be undoable, it wasn't called from an undoable command scope.</li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_NEEDSUNDOSCOPE - The function must be undoable; it wasn't called from an undoable command scope.</li>
 <li>APIERR_BADDATABASE, APIERR_NOTMINE - The function cannot operate on the current database.</li>
 <li>APIERR_BADID - One or both of the passed unique IDs are invalid, or the two IDs are equal.</li>
-<li>APIERR_LINKEXIST - The elements has already been linked together. </li>
+<li>APIERR_LINKEXIST - The elements have already been linked together. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>The add-on creating the link is also registered with the link; so the link "belongs" to the add-on. The advantage of using element linking is that the server application automatically tracks changes in the GUIDs, and updates them accordingly. After establishing a link, you can also install an element observer with a callback function, that will be called when any of the observed elements change. In this callback you can find out which other elements are linked to the observed element with <a class="el" href="#ga697e4708e72a8433b0282c03b835f79b">ACAPI_ElementLink_GetLinks</a>, and retrieve the supplied linkFlags with <a class="el" href="#gac5f9163a32904185c72f81fb9045f789">ACAPI_ElementLink_GetLinkFlags</a>. You can remove the link when you are done with <a class="el" href="#gaacdb3a1c2b4454c90d11e2a5f18cac2c">ACAPI_ElementLink_Unlink</a>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>The add-on creating the link is also registered with the link, so the link "belongs" to the add-on. The advantage of using element linking is that the server application automatically tracks changes in the GUIDs and updates them accordingly. After establishing a link, you can also install an element observer with a callback function that will be called when any of the observed elements change. In this callback, you can find out which other elements are linked to the observed element with <a class="el" href="#ga697e4708e72a8433b0282c03b835f79b">ACAPI_ElementLink_GetLinks</a>, and retrieve the supplied linkFlags with <a class="el" href="#gac5f9163a32904185c72f81fb9045f789">ACAPI_ElementLink_GetLinkFlags</a>. You can remove the link when you are done with <a class="el" href="#gaacdb3a1c2b4454c90d11e2a5f18cac2c">ACAPI_ElementLink_Unlink</a>. </dd></dl>
 
 </div>
 </div>
-<a id="ga7fe6ea5021237ff1c958df3b228e23f0" name="ga7fe6ea5021237ff1c958df3b228e23f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7fe6ea5021237ff1c958df3b228e23f0">&#9670;&#160;</a></span>ACAPI_ElementLink_SetLinkedPropertyObjects()</h2>
+<a id="gaa33410323dbae8be8de9754d7aac0df2" name="gaa33410323dbae8be8de9754d7aac0df2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa33410323dbae8be8de9754d7aac0df2">&#9670;&#160;</a></span>ACAPI_ElementLink_SetLinkedPropertyObjects()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -379,7 +425,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Int32</td>          <td class="paramname"><span class="paramname"><em>inviduallyLibInd</em></span>&#160;)</td>
+          <td class="paramtype">Int32</td>          <td class="paramname"><span class="paramname"><em>individuallyLibInd</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -389,12 +435,12 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">head</td><td>[in] Header of the element (only fields type and guid are used). The setting is applied to element defaults if guid is APINULLGuid. </td></tr>
     <tr><td class="paramname">criteria</td><td>[in] Determines whether the matching properties by criteria need to be linked to the element </td></tr>
-    <tr><td class="paramname">inviduallyLibInd</td><td>[in] Library index of individually selected property to be linked to the element (value zero means no individual property is to be assigned) </td></tr>
+    <tr><td class="paramname">individuallyLibInd</td><td>[in] Library index of individually selected property to be linked to the element (value zero means no individual property is to be assigned) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - head is nullptr</li>
 <li>APIERR_BADID - Incorrect type was specified, or an element with the specified guid was not found.</li>
 <li>APIERR_MEMFULL - Not enough memory to set the properties </li>
@@ -417,9 +463,10 @@ Functions</h2></td></tr>
 <div class="line">        <span class="keywordflow">if</span> (err == NoError) {</div>
 <div class="line">            <a class="code hl_struct" href="struct_a_p_i___elem___head.html">API_Elem_Head</a>   defHead {};</div>
 <div class="line">            defHead.<a class="code hl_variable" href="struct_a_p_i___elem___head.html#a04205822a00b386df0875148b41835e3">type</a> = <a class="code hl_enumvalue" href="group___element.html#gga2502601bf26ffc7abc608f6988da4d91a1371b65c26c45bf2e6024c420bc2d3e7">API_ColumnID</a>;    <span class="comment">// guid remains APINULLGuid</span></div>
-<div class="line">            err = <a class="code hl_function" href="#ga229bacf0fd2d4c95ff66ed57ad278390">ACAPI_ElementLink_GetLinkedPropertyObjects</a> (&amp;defHead, &amp;byCrit, &amp;indivLibInd, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);   <span class="comment">// retrieve defaults</span></div>
+<div class="line">            std::vector&lt;Int32&gt;  critLibInds;</div>
+<div class="line">            err = <a class="code hl_function" href="#ga3c2c2cc9d1012055950c238ac2ef693b">ACAPI_ElementLink_GetLinkedPropertyObjects</a> (defHead, byCrit, indivLibInd, critLibInds);   <span class="comment">// retrieve defaults</span></div>
 <div class="line">            <span class="keywordflow">if</span> (err == NoError)</div>
-<div class="line">                err = <a class="code hl_function" href="#ga7fe6ea5021237ff1c958df3b228e23f0">ACAPI_ElementLink_SetLinkedPropertyObjects</a> (&amp;element.<a class="code hl_variable" href="union_a_p_i___element.html#a2d99c75ff8448dd4206758c7bc65127d">header</a>, <span class="keyword">true</span>, 0);    <span class="comment">// link properties</span></div>
+<div class="line">                err = <a class="code hl_function" href="#gaa33410323dbae8be8de9754d7aac0df2">ACAPI_ElementLink_SetLinkedPropertyObjects</a> (&amp;element.<a class="code hl_variable" href="union_a_p_i___element.html#a2d99c75ff8448dd4206758c7bc65127d">header</a>, <span class="keyword">true</span>, 0);    <span class="comment">// link properties</span></div>
 <div class="line">        }</div>
 <div class="line"> </div>
 <div class="line">        <span class="keywordflow">return</span> err;</div>
@@ -451,15 +498,15 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guid_linkFrom</td><td>[in] Identifies the element to which the other element is linked. </td></tr>
-    <tr><td class="paramname">guid_linkTo</td><td>[in] Identifies the element which is linked to the first element. </td></tr>
+    <tr><td class="paramname">guid_linkTo</td><td>[in] Identifies the element that is linked to the first element. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADDATABASE, APIERR_NOTMINE - The function cannot operate on the current database.</li>
-<li>APIERR_NEEDSUNDOSCOPE - The function must be undoable, it wasn't called from an undoable command scope.</li>
-<li>APIERR_LINKNOTEXIST - There isn't any link from the second element to the first. </li>
+<li>APIERR_NEEDSUNDOSCOPE - The function must be undoable; it wasn't called from an undoable command scope.</li>
+<li>APIERR_LINKNOTEXIST - There is no link from the second element to the first. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This element removes the link to the second element (identified by guid_linkTo) from the element identified by guid_linkFrom. See <a class="el" href="#ga8dafce884b3eee1258672cb2468a17dd">ACAPI_ElementLink_Link</a> for more details. </dd></dl>

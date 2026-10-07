@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Property Manager</title>
+<title>Archicad 30 C++ API: Property Manager</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -174,12 +174,23 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gaaf17632ac6f7c54d173fa909762e6a94" id="r_gaaf17632ac6f7c54d173fa909762e6a94"><td class="memItemLeft" align="right" valign="top">typedef GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___add_on_integration.html#gaaf17632ac6f7c54d173fa909762e6a94">APIPropertyObjectCommandProc</a>(<a class="el" href="struct_a_p_i___property_object_params.html">API_PropertyObjectParams</a> *propertyParams)</td></tr>
 <tr class="memdesc:gaaf17632ac6f7c54d173fa909762e6a94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to handle the different property assignments.  <br /></td></tr>
 <tr class="separator:gaaf17632ac6f7c54d173fa909762e6a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga77ac7401f68d736477c763fd0281e13b" id="r_ga77ac7401f68d736477c763fd0281e13b"><td class="memItemLeft" align="right" valign="top">typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga77ac7401f68d736477c763fd0281e13b">APIPropertyVisibilityHandlerProc</a>(API_PropertyVisibilityMode visibilityMode, const GS::Array&lt; <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &gt; &amp;classificationGuids, const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;propertyDefinitionGuid)</td></tr>
+<tr class="memitem:ga77ac7401f68d736477c763fd0281e13b" id="r_ga77ac7401f68d736477c763fd0281e13b"><td class="memItemLeft" align="right" valign="top">typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga77ac7401f68d736477c763fd0281e13b">APIPropertyVisibilityHandlerProc</a>(<a class="el" href="#ga0bfe013771c05f775821dee649ecad97">API_PropertyVisibilityMode</a> visibilityMode, const GS::Array&lt; <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &gt; &amp;classificationGuids, const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;propertyDefinitionGuid)</td></tr>
 <tr class="memdesc:ga77ac7401f68d736477c763fd0281e13b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to handle the visibility of a property.  <br /></td></tr>
 <tr class="separator:ga77ac7401f68d736477c763fd0281e13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ga0bfe013771c05f775821dee649ecad97" id="r_ga0bfe013771c05f775821dee649ecad97"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0bfe013771c05f775821dee649ecad97">API_PropertyVisibilityMode</a> { <a class="el" href="#gga0bfe013771c05f775821dee649ecad97aff49304f9e5a11d23dfd729f43892cc1">APIPropVis_IsEnabled</a> = 0
+, <a class="el" href="#gga0bfe013771c05f775821dee649ecad97adc8a75eb71fbd9439900fbe1f532ec4f">APIPropVis_IsPropertyVisible</a> = 1
+ }</td></tr>
+<tr class="memdesc:ga0bfe013771c05f775821dee649ecad97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies what should the callback function return.  <a href="#ga0bfe013771c05f775821dee649ecad97">More...</a><br /></td></tr>
+<tr class="separator:ga0bfe013771c05f775821dee649ecad97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2168452de59b76977c00b4baea9371be" id="r_ga2168452de59b76977c00b4baea9371be"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2168452de59b76977c00b4baea9371be">API_PropertyDefinitionNameConflictResolutionPolicy</a> { <a class="el" href="#gga2168452de59b76977c00b4baea9371beac2230ed8bf380222e96dadeff36b0123">API_AppendConflictingProperties</a>
+, <a class="el" href="#gga2168452de59b76977c00b4baea9371bea855a3c1813c649c82eb8fcb5ff2837b8">API_ReplaceConflictingProperties</a>
+, <a class="el" href="#gga2168452de59b76977c00b4baea9371beae8f50fc2b8408876f372b59ca0c0258e">API_SkipConflictingProperties</a>
+ }</td></tr>
+<tr class="memdesc:ga2168452de59b76977c00b4baea9371be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolution policy for property definition name conflicts.  <a href="#ga2168452de59b76977c00b4baea9371be">More...</a><br /></td></tr>
+<tr class="separator:ga2168452de59b76977c00b4baea9371be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1ebc4ad2b0b92d78210b5307f294e660" id="r_ga1ebc4ad2b0b92d78210b5307f294e660"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1ebc4ad2b0b92d78210b5307f294e660">API_PropertyGroupType</a> { <a class="el" href="#gga1ebc4ad2b0b92d78210b5307f294e660a276d69dd36ebc0d3140d1d83eb1e5f27">API_PropertyStaticBuiltInGroupType</a>
 , <a class="el" href="#gga1ebc4ad2b0b92d78210b5307f294e660a66c87e875cfc718d779fd57c07f9dc2f">API_PropertyDynamicBuiltInGroupType</a>
 , <a class="el" href="#gga1ebc4ad2b0b92d78210b5307f294e660a5dae92b1f1ba4e00cb669a4dd230cf04">API_PropertyCustomGroupType</a>
@@ -211,6 +222,28 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907fab8f63ac1cf3e79be23785fb879a3390f">API_PropertyVolumeMeasureType</a>
 , <a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907fa0ac81c3947499d20c2507f15c57f24bc">API_PropertyAngleMeasureType</a>
+, <a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907faf4ec622c5cd5b1f30a1c4ba5f930f68b">API_PropertyLineTypeIndexMeasureType</a>
+, <a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907facf1c2702fa85cc5425d7aea76ce1b44d">API_PropertyFillIndexMeasureType</a>
+, <br />
+&#160;&#160;<a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907fa52825f4bd6233eca928d3169a0e21c51">API_PropertyCoverFillIndexMeasureType</a>
+, <a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907fad6265ffe7bade27cd5ccd1787dbef987">API_PropertySurfaceIndexMeasureType</a>
+, <a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907fae72e8c05cf1f38cff87a2d30d1abd809">API_PropertyBuildingMaterialIndexMeasureType</a>
+, <a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907fa2042b4477d07476e98adab6d13c2e226">API_PropertyCompositeMeasureType</a>
+, <br />
+&#160;&#160;<a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907fa469c83162469d10a91405336946a257a">API_PropertyProfileIndexMeasureType</a>
+, <a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907fa081f2326cfaff1713f6cf9278e86ac94">API_PropertyLayerIndexMeasureType</a>
+, <a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907fa396aefd282e35b9cd2d2a02219c3ce59">API_PropertyLayerCombinationIndexMeasureType</a>
+, <a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907fa145976cf27c199bafe3970a29cd1168f">API_PropertyRoomCategoryIndexMeasureType</a>
+, <br />
+&#160;&#160;<a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907fa7cf2eee5cb7bdc15062e4edd73b28fc6">API_PropertyMEPSystemIndexMeasureType</a>
+, <a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907fa2544b618451fc94b204c42ade5a4e835">API_PropertyPenSetIndexMeasureType</a>
+, <a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907fa1ef3d49bbcffc10a2f189dc375fd99c5">API_PropertyPenIndexMeasureType</a>
+, <a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907fa3325c307583b1d5df2975953ced462f6">API_PropertyFontIdMeasureType</a>
+, <br />
+&#160;&#160;<a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907fa53048c039c3b735c18daac4856df6035">API_PropertyTextLeadingMeasureType</a>
+, <a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907fafa3aa2338f12fd3ef04807521187686e">API_PropertyTextAlignmentMeasureType</a>
+, <a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907fa4c72f2c7f97ee3fd8d8b442191af16ce">API_PropertyFontStyleMeasureType</a>
+, <a class="el" href="#ggacf12dd55ca0b3e49df281a098cef907fae1e62ce8ccba0a2c15d1c874c3c3f264">API_PropertyFontSizeMeasureType</a>
 <br />
  }</td></tr>
 <tr class="memdesc:gacf12dd55ca0b3e49df281a098cef907f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Property measure types.  <a href="#gacf12dd55ca0b3e49df281a098cef907f">More...</a><br /></td></tr>
@@ -269,6 +302,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga208a1084283a38aded77b225ca45e8f1" id="r_ga208a1084283a38aded77b225ca45e8f1"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___element.html#ga208a1084283a38aded77b225ca45e8f1">ACAPI_Element_GetPropertyObjects</a> (const <a class="el" href="struct_a_p_i___elem___head.html">API_Elem_Head</a> *elemHead, <a class="el" href="struct_a_p_i___property_object_ref_type.html">API_PropertyObjectRefType</a> ***propRefs, Int32 *nProp)</td></tr>
 <tr class="memdesc:ga208a1084283a38aded77b225ca45e8f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns property objects of the element.  <br /></td></tr>
 <tr class="separator:ga208a1084283a38aded77b225ca45e8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9368e350f2e674b94a5f21c9e6e951cb" id="r_ga9368e350f2e674b94a5f21c9e6e951cb"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___element.html#ga9368e350f2e674b94a5f21c9e6e951cb">ACAPI_Element_GetPropertyObjects</a> (const <a class="el" href="struct_a_p_i___elem___head.html">API_Elem_Head</a> &amp;elemHead, std::vector&lt; <a class="el" href="struct_a_p_i___property_object_ref_type.html">API_PropertyObjectRefType</a> &gt; &amp;propRefs)</td></tr>
+<tr class="memdesc:ga9368e350f2e674b94a5f21c9e6e951cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns property objects of the element.  <br /></td></tr>
+<tr class="separator:ga9368e350f2e674b94a5f21c9e6e951cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga31dab90b95adcdd542a27fe5f1daa4c6" id="r_ga31dab90b95adcdd542a27fe5f1daa4c6"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___element.html#ga31dab90b95adcdd542a27fe5f1daa4c6">ACAPI_Element_GetPropertyDefinitions</a> (const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;elemGuid, <a class="el" href="#gaf0176877bc7209625764e30656d4cf39">API_PropertyDefinitionFilter</a> filter, GS::Array&lt; <a class="el" href="struct_a_p_i___property_definition.html">API_PropertyDefinition</a> &gt; &amp;propertyDefinitions)</td></tr>
 <tr class="memdesc:ga31dab90b95adcdd542a27fe5f1daa4c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves all of the property definitions that are available for an element.  <br /></td></tr>
 <tr class="separator:ga31dab90b95adcdd542a27fe5f1daa4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -377,7 +413,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga37d7d822dae26c799a18667514d63c4e" id="r_ga37d7d822dae26c799a18667514d63c4e"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga37d7d822dae26c799a18667514d63c4e">ACAPI_Property_DeletePropertyDefinition</a> (const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;propertyGuid)</td></tr>
 <tr class="memdesc:ga37d7d822dae26c799a18667514d63c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a property definition in the current plan.  <br /></td></tr>
 <tr class="separator:ga37d7d822dae26c799a18667514d63c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7b8d39283eec94b526cab89388df2768" id="r_ga7b8d39283eec94b526cab89388df2768"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7b8d39283eec94b526cab89388df2768">ACAPI_Property_Import</a> (const GS::UniString &amp;propertyXml, API_PropertyDefinitionNameConflictResolutionPolicy conflictPolicy)</td></tr>
+<tr class="memitem:ga7b8d39283eec94b526cab89388df2768" id="r_ga7b8d39283eec94b526cab89388df2768"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7b8d39283eec94b526cab89388df2768">ACAPI_Property_Import</a> (const GS::UniString &amp;propertyXml, <a class="el" href="#ga2168452de59b76977c00b4baea9371be">API_PropertyDefinitionNameConflictResolutionPolicy</a> conflictPolicy)</td></tr>
 <tr class="memdesc:ga7b8d39283eec94b526cab89388df2768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imports a property xml.  <br /></td></tr>
 <tr class="separator:ga7b8d39283eec94b526cab89388df2768"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabc69af5018954e8f0f67c4f8e6551f52" id="r_gabc69af5018954e8f0f67c4f8e6551f52"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabc69af5018954e8f0f67c4f8e6551f52">ACAPI_Property_GetPropertyValueString</a> (const <a class="el" href="struct_a_p_i___property.html">API_Property</a> &amp;apiProperty, GS::UniString *resultString)</td></tr>
@@ -421,14 +457,14 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions related to accessing and manipulating Properties and the category-related data of elements and attributes. </p>
-<h1><a class="anchor" id="autotoc_md162"></a>
+<h1><a class="anchor" id="autotoc_md169"></a>
 Properties</h1>
-<h2><a class="anchor" id="autotoc_md163"></a>
+<h2><a class="anchor" id="autotoc_md170"></a>
 Overview</h2>
 <p>This feature of the Archicad allows one to store user-defined name-value pairs for Model elements. The keys (names) of the properties are represented with <a class="el" href="struct_a_p_i___property_definition.html">API_PropertyDefinition</a>, that are stored per project, not per element. The definitions are part of a two-level deep tree structure. On the top level there are <a class="el" href="struct_a_p_i___property_group.html">API_PropertyGroup</a>, which are a collection of definitions with a unique name. The definitions' name also has to be unique within its group.</p>
 <p>The definitions also have descriptions and they store the value type (e.g int, double) and collection type (e.g single value, list) of the data it can store. If a definition is made available for a classification, then all the elements in that classification will have that property - initially with a default value, that is part of the definition.</p>
 <p>Properties can also have an enumerated collection type, which means that their values are limited to a finite number of predefined valid values. In this case these predefined values are part of the definition</p>
-<h2><a class="anchor" id="autotoc_md164"></a>
+<h2><a class="anchor" id="autotoc_md171"></a>
 Handler functions</h2>
 <p>Please refer to the functions below the header of a thematic group to get details on that topic.</p>
 <p>The following functions let you manipulate <a class="el" href="struct_a_p_i___property_group.html">API_PropertyGroup</a>.</p>
@@ -524,7 +560,7 @@ Handler functions</h2>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef bool APIPropertyVisibilityHandlerProc(API_PropertyVisibilityMode visibilityMode, const GS::Array&lt; <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &gt; &amp;classificationGuids, const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;propertyDefinitionGuid)</td>
+          <td class="memname">typedef bool APIPropertyVisibilityHandlerProc(<a class="el" href="#ga0bfe013771c05f775821dee649ecad97">API_PropertyVisibilityMode</a> visibilityMode, const GS::Array&lt; <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &gt; &amp;classificationGuids, const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;propertyDefinitionGuid)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -608,6 +644,30 @@ Handler functions</h2>
 
 </div>
 </div>
+<a id="ga2168452de59b76977c00b4baea9371be" name="ga2168452de59b76977c00b4baea9371be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2168452de59b76977c00b4baea9371be">&#9670;&#160;</a></span>API_PropertyDefinitionNameConflictResolutionPolicy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga2168452de59b76977c00b4baea9371be">API_PropertyDefinitionNameConflictResolutionPolicy</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolution policy for property definition name conflicts. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga2168452de59b76977c00b4baea9371beac2230ed8bf380222e96dadeff36b0123" name="gga2168452de59b76977c00b4baea9371beac2230ed8bf380222e96dadeff36b0123"></a>API_AppendConflictingProperties&#160;</td><td class="fielddoc"><p>Generate a new, unused name for the imported property </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2168452de59b76977c00b4baea9371bea855a3c1813c649c82eb8fcb5ff2837b8" name="gga2168452de59b76977c00b4baea9371bea855a3c1813c649c82eb8fcb5ff2837b8"></a>API_ReplaceConflictingProperties&#160;</td><td class="fielddoc"><p>Replace the definition in the plan with the imported one </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2168452de59b76977c00b4baea9371beae8f50fc2b8408876f372b59ca0c0258e" name="gga2168452de59b76977c00b4baea9371beae8f50fc2b8408876f372b59ca0c0258e"></a>API_SkipConflictingProperties&#160;</td><td class="fielddoc"><p>Keep the definition in the plan intact, and discard the imported one </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="gadaf7e2961f2554165912f1d6a1f50635" name="gadaf7e2961f2554165912f1d6a1f50635"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gadaf7e2961f2554165912f1d6a1f50635">&#9670;&#160;</a></span>API_PropertyDefinitionType</h2>
 
@@ -685,6 +745,42 @@ Handler functions</h2>
 </td></tr>
 <tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907fa0ac81c3947499d20c2507f15c57f24bc" name="ggacf12dd55ca0b3e49df281a098cef907fa0ac81c3947499d20c2507f15c57f24bc"></a>API_PropertyAngleMeasureType&#160;</td><td class="fielddoc"><p>Represents an angle measure type. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907faf4ec622c5cd5b1f30a1c4ba5f930f68b" name="ggacf12dd55ca0b3e49df281a098cef907faf4ec622c5cd5b1f30a1c4ba5f930f68b"></a>API_PropertyLineTypeIndexMeasureType&#160;</td><td class="fielddoc"><p>Represents a line type attribute index type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907facf1c2702fa85cc5425d7aea76ce1b44d" name="ggacf12dd55ca0b3e49df281a098cef907facf1c2702fa85cc5425d7aea76ce1b44d"></a>API_PropertyFillIndexMeasureType&#160;</td><td class="fielddoc"><p>Represents a fill attribute index type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907fa52825f4bd6233eca928d3169a0e21c51" name="ggacf12dd55ca0b3e49df281a098cef907fa52825f4bd6233eca928d3169a0e21c51"></a>API_PropertyCoverFillIndexMeasureType&#160;</td><td class="fielddoc"><p>Represents a cover fill attribute index type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907fad6265ffe7bade27cd5ccd1787dbef987" name="ggacf12dd55ca0b3e49df281a098cef907fad6265ffe7bade27cd5ccd1787dbef987"></a>API_PropertySurfaceIndexMeasureType&#160;</td><td class="fielddoc"><p>Represents a surface attribute index type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907fae72e8c05cf1f38cff87a2d30d1abd809" name="ggacf12dd55ca0b3e49df281a098cef907fae72e8c05cf1f38cff87a2d30d1abd809"></a>API_PropertyBuildingMaterialIndexMeasureType&#160;</td><td class="fielddoc"><p>Represents a building material attribute index type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907fa2042b4477d07476e98adab6d13c2e226" name="ggacf12dd55ca0b3e49df281a098cef907fa2042b4477d07476e98adab6d13c2e226"></a>API_PropertyCompositeMeasureType&#160;</td><td class="fielddoc"><p>Represents a composite attribute index type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907fa469c83162469d10a91405336946a257a" name="ggacf12dd55ca0b3e49df281a098cef907fa469c83162469d10a91405336946a257a"></a>API_PropertyProfileIndexMeasureType&#160;</td><td class="fielddoc"><p>Represents a profile attribute index type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907fa081f2326cfaff1713f6cf9278e86ac94" name="ggacf12dd55ca0b3e49df281a098cef907fa081f2326cfaff1713f6cf9278e86ac94"></a>API_PropertyLayerIndexMeasureType&#160;</td><td class="fielddoc"><p>Represents a layer index type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907fa396aefd282e35b9cd2d2a02219c3ce59" name="ggacf12dd55ca0b3e49df281a098cef907fa396aefd282e35b9cd2d2a02219c3ce59"></a>API_PropertyLayerCombinationIndexMeasureType&#160;</td><td class="fielddoc"><p>Represents a layer combination index type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907fa145976cf27c199bafe3970a29cd1168f" name="ggacf12dd55ca0b3e49df281a098cef907fa145976cf27c199bafe3970a29cd1168f"></a>API_PropertyRoomCategoryIndexMeasureType&#160;</td><td class="fielddoc"><p>Represents a zone category index type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907fa7cf2eee5cb7bdc15062e4edd73b28fc6" name="ggacf12dd55ca0b3e49df281a098cef907fa7cf2eee5cb7bdc15062e4edd73b28fc6"></a>API_PropertyMEPSystemIndexMeasureType&#160;</td><td class="fielddoc"><p>Represents an MEP system index type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907fa2544b618451fc94b204c42ade5a4e835" name="ggacf12dd55ca0b3e49df281a098cef907fa2544b618451fc94b204c42ade5a4e835"></a>API_PropertyPenSetIndexMeasureType&#160;</td><td class="fielddoc"><p>Represents a pen set index type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907fa1ef3d49bbcffc10a2f189dc375fd99c5" name="ggacf12dd55ca0b3e49df281a098cef907fa1ef3d49bbcffc10a2f189dc375fd99c5"></a>API_PropertyPenIndexMeasureType&#160;</td><td class="fielddoc"><p>Represents a pen index type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907fa3325c307583b1d5df2975953ced462f6" name="ggacf12dd55ca0b3e49df281a098cef907fa3325c307583b1d5df2975953ced462f6"></a>API_PropertyFontIdMeasureType&#160;</td><td class="fielddoc"><p>Represents a font id type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907fa53048c039c3b735c18daac4856df6035" name="ggacf12dd55ca0b3e49df281a098cef907fa53048c039c3b735c18daac4856df6035"></a>API_PropertyTextLeadingMeasureType&#160;</td><td class="fielddoc"><p>Represents a text leading type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907fafa3aa2338f12fd3ef04807521187686e" name="ggacf12dd55ca0b3e49df281a098cef907fafa3aa2338f12fd3ef04807521187686e"></a>API_PropertyTextAlignmentMeasureType&#160;</td><td class="fielddoc"><p>Represents a text alignment type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907fa4c72f2c7f97ee3fd8d8b442191af16ce" name="ggacf12dd55ca0b3e49df281a098cef907fa4c72f2c7f97ee3fd8d8b442191af16ce"></a>API_PropertyFontStyleMeasureType&#160;</td><td class="fielddoc"><p>Represents a font style type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacf12dd55ca0b3e49df281a098cef907fae1e62ce8ccba0a2c15d1c874c3c3f264" name="ggacf12dd55ca0b3e49df281a098cef907fae1e62ce8ccba0a2c15d1c874c3c3f264"></a>API_PropertyFontSizeMeasureType&#160;</td><td class="fielddoc"><p>Represents a font size type. </p>
+</td></tr>
 </table>
 
 </div>
@@ -714,6 +810,28 @@ Handler functions</h2>
 
 </div>
 </div>
+<a id="ga0bfe013771c05f775821dee649ecad97" name="ga0bfe013771c05f775821dee649ecad97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0bfe013771c05f775821dee649ecad97">&#9670;&#160;</a></span>API_PropertyVisibilityMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga0bfe013771c05f775821dee649ecad97">API_PropertyVisibilityMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies what should the callback function return. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga0bfe013771c05f775821dee649ecad97aff49304f9e5a11d23dfd729f43892cc1" name="gga0bfe013771c05f775821dee649ecad97aff49304f9e5a11d23dfd729f43892cc1"></a>APIPropVis_IsEnabled&#160;</td><td class="fielddoc"><p>The callback function should return true if the visibility handling is enabled. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0bfe013771c05f775821dee649ecad97adc8a75eb71fbd9439900fbe1f532ec4f" name="gga0bfe013771c05f775821dee649ecad97adc8a75eb71fbd9439900fbe1f532ec4f"></a>APIPropVis_IsPropertyVisible&#160;</td><td class="fielddoc"><p>The callback function should return true if the given property is visible. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="gabe5a53a4e63d69afe2f9fcf20b9e666c" name="gabe5a53a4e63d69afe2f9fcf20b9e666c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gabe5a53a4e63d69afe2f9fcf20b9e666c">&#9670;&#160;</a></span>API_VariantStatus</h2>
 
@@ -728,7 +846,7 @@ Handler functions</h2>
 
 <p>Describes the status of a variant value. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggabe5a53a4e63d69afe2f9fcf20b9e666cadd4ea7d597758a045b0e0955c48c0247" name="ggabe5a53a4e63d69afe2f9fcf20b9e666cadd4ea7d597758a045b0e0955c48c0247"></a>API_VariantStatusNull&#160;</td><td class="fielddoc"><p>Indicates that the variant is invalid in some way, e.g., it is a result of an unsuccesful operation. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggabe5a53a4e63d69afe2f9fcf20b9e666cadd4ea7d597758a045b0e0955c48c0247" name="ggabe5a53a4e63d69afe2f9fcf20b9e666cadd4ea7d597758a045b0e0955c48c0247"></a>API_VariantStatusNull&#160;</td><td class="fielddoc"><p>Indicates that the variant is invalid in some way, e.g., it is a result of an unsuccessful operation. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ggabe5a53a4e63d69afe2f9fcf20b9e666ca486909f6de81d00e25bf22fd60b9374b" name="ggabe5a53a4e63d69afe2f9fcf20b9e666ca486909f6de81d00e25bf22fd60b9374b"></a>API_VariantStatusUserUndefined&#160;</td><td class="fielddoc"><p>The variant is explicitly set to undefined by the user, but it is still valid. </p>
 </td></tr>
@@ -798,7 +916,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>Only one property handler can be active in Archicad at a time. The return value of this functions depends on the user, as a dialog pops up when you issue this command. When the function returns, you should adjust your menu items accordingly. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
@@ -857,7 +975,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The value of elemComponent did not refer to a valid component. </li>
 </ul>
 </dd></dl>
@@ -911,7 +1029,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The elemGuid did not refer to a valid element. </li>
 </ul>
 </dd></dl>
@@ -966,7 +1084,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - Incorrect type was specified. </li>
 </ul>
 </dd></dl>
@@ -987,8 +1105,73 @@ Handler functions</h2>
 
 </div>
 </div>
+<a id="ga9368e350f2e674b94a5f21c9e6e951cb" name="ga9368e350f2e674b94a5f21c9e6e951cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9368e350f2e674b94a5f21c9e6e951cb">&#9670;&#160;</a></span>ACAPI_Element_GetPropertyObjects() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GSErrCode ACAPI_Element_GetPropertyObjects </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_a_p_i___elem___head.html">API_Elem_Head</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>elemHead</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="struct_a_p_i___property_object_ref_type.html">API_PropertyObjectRefType</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>propRefs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns property objects of the element. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elemHead</td><td>[in] The element to get the properties for. </td></tr>
+    <tr><td class="paramname">propRefs</td><td>[out] List of property objects. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADID - Incorrect elemHead was specified</li>
+<li>APIERR_MEMFULL - Not enough memory to get the properties </li>
+</ul>
+</dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the list of property objects for a linked element. The properties can be associated with construction elements by criteria or by individual direct assignment. This applies to all construction elements. From Archicad 9 the linked properties of both an element instance and the element defaults can be accessed with two new functions: <a class="el" href="group___element_link.html#ga3c2c2cc9d1012055950c238ac2ef693b">ACAPI_ElementLink_GetLinkedPropertyObjects</a> and <a class="el" href="group___element_link.html#gaa33410323dbae8be8de9754d7aac0df2">ACAPI_ElementLink_SetLinkedPropertyObjects</a>. </dd></dl>
+<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">void</span> GetProperties (<span class="keyword">const</span> <a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a>&amp; guid)</div>
+<div class="line">{</div>
+<div class="line">    <a class="code hl_struct" href="struct_a_p_i___elem___head.html">API_Elem_Head</a>                           elemHead {};</div>
+<div class="line">    std::vector&lt;API_PropertyObjectRefType&gt;  propRefs;</div>
+<div class="line">    <a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a>                             libPart;</div>
+<div class="line">    <span class="keywordtype">char</span>                                    s[256];</div>
+<div class="line">    GSErrCode                               err;</div>
+<div class="line"> </div>
+<div class="line">    elemHead.guid = guid;</div>
+<div class="line"> </div>
+<div class="line">    err = <a class="code hl_function" href="group___element.html#ga208a1084283a38aded77b225ca45e8f1">ACAPI_Element_GetPropertyObjects</a> (elemHead, propRefs);</div>
+<div class="line">    <span class="keywordflow">if</span> (err == NoError) {</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_struct" href="struct_a_p_i___property_object_ref_type.html">API_PropertyObjectRefType</a>&amp; elem : propRefs) {</div>
+<div class="line">            libPart = {};</div>
+<div class="line">            libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#ae2c5c2b3b16b5b857d35932a5be868f7">index</a> = elem.libIndex;</div>
+<div class="line">            err = <a class="code hl_function" href="group___library_part.html#ga26a6f5f7d4ffeedc841aad3f0e0489a3">ACAPI_LibraryPart_Get</a> (&amp;libPart);</div>
+<div class="line">            <span class="keywordflow">if</span> (err == NoError) {</div>
+<div class="line">                <span class="keywordflow">if</span> (elem.assign)</div>
+<div class="line">                    sprintf (s, <span class="stringliteral">&quot;Associated property:&quot;</span>);</div>
+<div class="line">                <span class="keywordflow">else</span></div>
+<div class="line">                    sprintf (s, <span class="stringliteral">&quot;Property by criteria:&quot;</span>);</div>
+<div class="line">                sprintf (s, <span class="stringliteral">&quot;%s %s&quot;</span>, s, (<span class="keyword">const</span> <span class="keywordtype">char</span> *) GS::UniString (libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#a7188ede45f613116ba5237aa56177ddf">docu_UName</a>).ToCStr ());</div>
+<div class="line">                <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (s, <span class="keyword">false</span>);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
 <a id="ga208a1084283a38aded77b225ca45e8f1" name="ga208a1084283a38aded77b225ca45e8f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga208a1084283a38aded77b225ca45e8f1">&#9670;&#160;</a></span>ACAPI_Element_GetPropertyObjects()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga208a1084283a38aded77b225ca45e8f1">&#9670;&#160;</a></span>ACAPI_Element_GetPropertyObjects() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1012,6 +1195,7 @@ Handler functions</h2>
 </div><div class="memdoc">
 
 <p>Returns property objects of the element. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated</a></b></dt><dd>This function is deprecated and will be removed in future versions. Use <a class="el" href="group___element.html#ga9368e350f2e674b94a5f21c9e6e951cb" title="Returns property objects of the element.">ACAPI_Element_GetPropertyObjects(const API_Elem_Head&amp;, std::vector&lt;API_PropertyObjectRefType&gt;&amp;)</a> instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">elemHead</td><td>[in] The element to get the properties for. </td></tr>
@@ -1027,37 +1211,7 @@ Handler functions</h2>
 <li>APIERR_MEMFULL - Not enough memory to get the properties </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the list of property objects for a linked element. The properties can be associated with construction elements by criteria or by individual direct assignment. This applies to all construction elements. From Archicad 9 the linked properties of both an element instance and the element defaults can be accessed with two new functions: <a class="el" href="group___element_link.html#ga229bacf0fd2d4c95ff66ed57ad278390">ACAPI_ElementLink_GetLinkedPropertyObjects</a> and <a class="el" href="group___element_link.html#ga7fe6ea5021237ff1c958df3b228e23f0">ACAPI_ElementLink_SetLinkedPropertyObjects</a>. </dd></dl>
-<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">void</span> GetProperties (<span class="keyword">const</span> <a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a>&amp; guid)</div>
-<div class="line">{</div>
-<div class="line">    <a class="code hl_struct" href="struct_a_p_i___elem___head.html">API_Elem_Head</a>               elemHead {};</div>
-<div class="line">    <a class="code hl_struct" href="struct_a_p_i___property_object_ref_type.html">API_PropertyObjectRefType</a>   **propRefs;</div>
-<div class="line">    <a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a>                 libPart;</div>
-<div class="line">    Int32                       nProp, i;</div>
-<div class="line">    <span class="keywordtype">char</span>                        s[256];</div>
-<div class="line">    GSErrCode                   err;</div>
-<div class="line"> </div>
-<div class="line">    elemHead.guid = guid;</div>
-<div class="line"> </div>
-<div class="line">    err = <a class="code hl_function" href="group___element.html#ga208a1084283a38aded77b225ca45e8f1">ACAPI_Element_GetPropertyObjects</a> (&amp;elemHead, &amp;propRefs, &amp;nProp);</div>
-<div class="line">    <span class="keywordflow">if</span> (err == NoError) {</div>
-<div class="line">        <span class="keywordflow">for</span> (i = 0; i &lt; nProp; i++) {</div>
-<div class="line">            libPart = {};</div>
-<div class="line">            libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#ae2c5c2b3b16b5b857d35932a5be868f7">index</a> = (*propRefs)[i].libIndex;</div>
-<div class="line">            err = <a class="code hl_function" href="group___library_part.html#ga26a6f5f7d4ffeedc841aad3f0e0489a3">ACAPI_LibraryPart_Get</a> (&amp;libPart);</div>
-<div class="line">            <span class="keywordflow">if</span> (err == NoError) {</div>
-<div class="line">                <span class="keywordflow">if</span> ((*propRefs)[i].assign)</div>
-<div class="line">                    sprintf (s, <span class="stringliteral">&quot;Associated property:&quot;</span>);</div>
-<div class="line">                <span class="keywordflow">else</span></div>
-<div class="line">                    sprintf (s, <span class="stringliteral">&quot;Property by criteria:&quot;</span>);</div>
-<div class="line">                sprintf (s, <span class="stringliteral">&quot;%s %s&quot;</span>, s, (<span class="keyword">const</span> <span class="keywordtype">char</span> *) GS::UniString (libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#a7188ede45f613116ba5237aa56177ddf">docu_UName</a>).ToCStr ());</div>
-<div class="line">                <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (s, <span class="keyword">false</span>);</div>
-<div class="line">            }</div>
-<div class="line">        }</div>
-<div class="line">        BMKillHandle ((GSHandle *) &amp;propRefs);</div>
-<div class="line">    }</div>
-<div class="line">}</div>
-</div><!-- fragment --> </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the list of property objects for a linked element. The properties can be associated with construction elements by criteria or by individual direct assignment. This applies to all construction elements. From Archicad 9 the linked properties of both an element instance and the element defaults can be accessed with two new functions: <a class="el" href="group___element_link.html#ga3c2c2cc9d1012055950c238ac2ef693b">ACAPI_ElementLink_GetLinkedPropertyObjects</a> and <a class="el" href="group___element_link.html#gaa33410323dbae8be8de9754d7aac0df2">ACAPI_ElementLink_SetLinkedPropertyObjects</a>. </dd></dl>
 
 </div>
 </div>
@@ -1095,7 +1249,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The elemComponent did not refer to a valid component.</li>
 <li>APIERR_GENERAL - The propertyDefinitionGuid did not refer to a valid property definition. </li>
 </ul>
@@ -1152,7 +1306,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The elemGuid did not refer to a valid element.</li>
 <li>APIERR_GENERAL - The propertyDefinitionGuid did not refer to a valid property definition. </li>
 </ul>
@@ -1210,7 +1364,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - Incorrect type was specified. </li>
 </ul>
 </dd></dl>
@@ -1267,7 +1421,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The elemComponent did not refer to a valid element. </li>
 </ul>
 </dd></dl>
@@ -1329,7 +1483,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The elemGuid did not refer to a valid element. </li>
 </ul>
 </dd></dl>
@@ -1391,7 +1545,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The elemComponent did not refer to a valid element. </li>
 </ul>
 </dd></dl>
@@ -1457,7 +1611,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The elemGuid did not refer to a valid element. </li>
 </ul>
 </dd></dl>
@@ -1526,7 +1680,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - Incorrect type was specified. </li>
 </ul>
 </dd></dl>
@@ -1590,7 +1744,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - Incorrect type was specified. </li>
 </ul>
 </dd></dl>
@@ -1746,14 +1900,14 @@ Handler functions</h2>
 <p>Tells whether the value of the property can be modified for the specified element. If the elemGuid argument is APINULLGuid, it tells whether the property definition's default value is editable. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">elemGuid</td><td>[in] The element GUID to search for. It can be APINULLGuid, in this case the property definition's default value is checked. </td></tr>
+    <tr><td class="paramname">elemGuid</td><td>[in] The element GUID to search for. It can be APINULLGuid; in this case, the property definition's default value is checked. </td></tr>
     <tr><td class="paramname">propertyGuid</td><td>[in] The property definition GUID to search for. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>true - The value of the property, or the property definition's default value can be modified.</li>
-<li>false - The value of the property, or the property definition's default value can not be modified. For example, it is a read-only property, or a User Defined property with expression, which has cyclic property references. </li>
+<li>false - The value of the property, or the property definition's default value cannot be modified. For example, it is a read-only property, or a User Defined property with expression, which has cyclic property references. </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode GetEditablePropertyDefinitions (<span class="keyword">const</span> <a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a>&amp; elemGuid, GS::Array&lt;API_PropertyDefinition&gt;&amp; editableProperties)</div>
@@ -1803,7 +1957,7 @@ Handler functions</h2>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>true - The value of the property can be modified.</li>
-<li>false - The value of the property can not be modified. For example, it is a read-only property, or a User Defined property with expression, which has cyclic property references. </li>
+<li>false - The value of the property cannot be modified. For example, it is a read-only property, or a User Defined property with expression, which has cyclic property references. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>From version 26 the typeID and variationID parameters were merged into a single <a class="el" href="struct_a_p_i___elem_type.html">API_ElemType</a> parameter. </dd></dl>
@@ -1952,7 +2106,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The elemGuid did not refer to a valid element.</li>
 <li>APIERR_NOACCESSRIGHT - The current user does not have the right to modify the properties of the specified element on a teamwork server.</li>
 <li>APIERR_READONLY - Tried to modify a read-only property (for example a property coming from a hotlink).</li>
@@ -2009,7 +2163,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - Incorrect type was specified or one of the property definitions' guid did not refer to a valid object.</li>
 <li>APIERR_NOACCESSRIGHT - The current user does not have the right to modify the properties of the specified element on a teamwork server.</li>
 <li>APIERR_READONLY - Tried to modify a read-only property (for example a property coming from a hotlink).</li>
@@ -2066,7 +2220,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The elemGuid did not refer to a valid element.</li>
 <li>APIERR_NOACCESSRIGHT - The current user does not have the right to modify the properties of the specified element on a teamwork server.</li>
 <li>APIERR_READONLY - Tried to modify a read-only property (for example a property coming from a hotlink).</li>
@@ -2121,7 +2275,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - Incorrect type was specified or one of the property definitions' guid did not refer to a valid object.</li>
 <li>APIERR_NOACCESSRIGHT - The current user does not have the right to modify the properties of the specified element on a teamwork server.</li>
 <li>APIERR_READONLY - Tried to modify a read-only property (for example a property coming from a hotlink).</li>
@@ -2196,12 +2350,12 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The guid of the parameter did not refer to a valid property definition or the groupGuid of the parameter did not refer to a valid property group or one of the availabilities' guid did not refer to a valid structural type category value.</li>
 <li>APIERR_NOACCESSRIGHT - Do not have the right to modify a property definition on a teamwork server.</li>
 <li>APIERR_NAMEALREADYUSED - The new name of the definition is already used in the target property group.</li>
 <li>APIERR_BADPARS - Either the new value of the definition is inconsistent, for example the default value has a different value type than the definition itself, or the definitionType of the definition is not supported by the function.</li>
-<li>APIERR_BADVALUE - One of enumerations did not have their value out of the allowed ones. This includes c++ enums (i.e. they were uninitialized or memsetted), and enumeration property values (the possibleEnumValues doesn't contain the default value) </li>
+<li>APIERR_BADVALUE - One of the enumerations did not have their value out of the allowed ones. This includes C++ enums (i.e. they were uninitialized or memsetted), and enumeration property values (the possibleEnumValues doesn't contain the default value) </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode RenameFirstPropertyDefinition ()</div>
@@ -2242,7 +2396,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The guid of the parameter did not refer to a valid property group.</li>
 <li>APIERR_BADPARS - The groupType of the parameter is not supported by the function.</li>
 <li>APIERR_NOACCESSRIGHT - Do not have the right to modify a property group on a teamwork server.</li>
@@ -2320,12 +2474,12 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The groupGuid of the parameter did not refer to a valid property group or one of the availabilities' guid did not refer to a valid structural type category value.</li>
 <li>APIERR_NOACCESSRIGHT - Do not have the right to create a property definition on a teamwork server.</li>
 <li>APIERR_NAMEALREADYUSED - The name of the definition is already used in the given property group.</li>
 <li>APIERR_BADPARS - Either the value of the definition is inconsistent, for example the default value has a different value type than the definition itself, or the definitionType of the parameter is not supported by the function.</li>
-<li>APIERR_BADVALUE - One of enumerations did not have their value out of the allowed ones. This includes c++ enums (i.e. they were uninitialized or memsetted), and enumeration property values (the possibleEnumValues doesn't contain the default value) </li>
+<li>APIERR_BADVALUE - One of the enumerations did not have their value out of the allowed ones. This includes C++ enums (i.e. they were uninitialized or memsetted), and enumeration property values (the possibleEnumValues doesn't contain the default value) </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode CreateExamplePropertyDefinition (<a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a> groupGuid, <a class="code hl_struct" href="struct_a_p_i___property_definition.html">API_PropertyDefinition</a>&amp; definition)</div>
@@ -2369,7 +2523,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The groupType of the parameter is not supported by the function.</li>
 <li>APIERR_NOACCESSRIGHT - Do not have the right to create a property group on a teamwork server.</li>
 <li>APIERR_NAMEALREADYUSED - The name of the group is already used. </li>
@@ -2410,7 +2564,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The propertyGuid parameter did not refer to a valid property definition.</li>
 <li>APIERR_NOACCESSRIGHT - Do not have the right to delete a property definition on a teamwork server. </li>
 </ul>
@@ -2452,7 +2606,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The groupGuid parameter did not refer to a valid property group.</li>
 <li>APIERR_NOACCESSRIGHT - Do not have the right to delete a property group on a teamwork server. </li>
 </ul>
@@ -2494,7 +2648,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The guid of the parameter did not refer to a valid property definition. </li>
 </ul>
 </dd></dl>
@@ -2535,13 +2689,13 @@ Handler functions</h2>
 <p>Retrieves all the property definitions from a given group. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">groupGuid</td><td>[out] The identifier of the group to search for or APINULLGuid if all property definitions should be retrieved. </td></tr>
+    <tr><td class="paramname">groupGuid</td><td>[in] The identifier of the group to search for or APINULLGuid if all property definitions should be retrieved. </td></tr>
     <tr><td class="paramname">definitions</td><td>[out] The retrieved property definitions. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The groupGuid parameter wasn't APINULLGuid and it did not refer to a valid property group. </li>
 </ul>
 </dd></dl>
@@ -2620,7 +2774,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The guid of the parameter did not refer to a valid property group. </li>
 </ul>
 </dd></dl>
@@ -2662,7 +2816,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode GetPropertyGroupNames (GS::Array&lt;GS::UniString&gt;&amp; names)</div>
@@ -2711,7 +2865,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - Incorrect variant or param was specified. </li>
 </ul>
 </dd></dl>
@@ -2732,7 +2886,7 @@ Handler functions</h2>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">API_PropertyDefinitionNameConflictResolutionPolicy</td>          <td class="paramname"><span class="paramname"><em>conflictPolicy</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#ga2168452de59b76977c00b4baea9371be">API_PropertyDefinitionNameConflictResolutionPolicy</a></td>          <td class="paramname"><span class="paramname"><em>conflictPolicy</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2756,7 +2910,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - Invalid property XML. </li>
 </ul>
 </dd></dl>
@@ -2791,10 +2945,10 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>The string resource will appear in Archicad's dialogs. This function should be called from the Initialize function of the add-on, after registering the property handler with <a class="el" href="#ga9881c061fe05a6ece98cd75c05f80dbe">ACAPI_Property_RegisterPropertyObjectHandler</a>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>The string resource will appear in Archicad's dialogs. This function should be called from the add-on's Initialize function after registering the property handler with <a class="el" href="#ga9881c061fe05a6ece98cd75c05f80dbe">ACAPI_Property_RegisterPropertyObjectHandler</a>. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">//------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Called after the add-on has been loaded into memory</span></div>
 <div class="line"><span class="comment">//------------------------------------------------------</span></div>
@@ -2832,7 +2986,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function should be called from the Initialize function of the add-on, after registering the property handler with <a class="el" href="#ga994fe3b6fe1eb64f770efce956e94256">ACAPI_Property_RegisterPropertyVisibilityHandler</a>. </dd></dl>
@@ -2840,7 +2994,7 @@ Handler functions</h2>
 <div class="line"><span class="comment">// Called after the add-on has been loaded into memory</span></div>
 <div class="line"><span class="comment">//------------------------------------------------------</span></div>
 <div class="line">GSErrCode APIMenuCommandProc_Main   (<span class="keyword">const</span> <a class="code hl_struct" href="struct_a_p_i___menu_params.html">API_MenuParams</a> *menuParams);</div>
-<div class="line"><span class="keywordtype">bool</span> PropertyVisibilityHandler (API_PropertyVisibilityMode visibilityMode, <span class="keyword">const</span> GS::Array&lt;API_Guid&gt;&amp; classificationGuids, <span class="keyword">const</span> <a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a>&amp; propertyDefinitionGuid);</div>
+<div class="line"><span class="keywordtype">bool</span> PropertyVisibilityHandler (<a class="code hl_enumeration" href="#ga0bfe013771c05f775821dee649ecad97">API_PropertyVisibilityMode</a> visibilityMode, <span class="keyword">const</span> GS::Array&lt;API_Guid&gt;&amp; classificationGuids, <span class="keyword">const</span> <a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a>&amp; propertyDefinitionGuid);</div>
 <div class="line"> </div>
 <div class="line">GSErrCode <a class="code hl_function" href="group___add_on_lifetime.html#gaa8f1f7d553305c1afe5de7e4dcb66e99">Initialize</a> (<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
@@ -2939,7 +3093,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - One of the elemGuids did not refer to a valid element.</li>
 <li>APIERR_NOACCESSRIGHT - The current user does not have the right to modify the properties of a specified element on a teamwork server.</li>
 <li>APIERR_READONLY - Tried to modify a read-only property (for example a property coming from a hotlink).</li>
@@ -3006,12 +3160,12 @@ Handler functions</h2>
 <p>Registers a property handler. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">assignStrResID</td><td>[in] The string resource ID, which will be used in Archicad's dialogs. </td></tr>
+    <tr><td class="paramname">assignStrResID</td><td>[in] The string resource ID will be used in Archicad's dialogs. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function should be called from the RegisterInterface routine in your add-on. </dd></dl>
@@ -3046,7 +3200,7 @@ Handler functions</h2>
 
 <p>Tells Archicad that your add-on wants to modify property visibility. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function should be called from the RegisterInterface routine in your add-on. </dd></dl>
@@ -3106,7 +3260,7 @@ Handler functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The <a class="el" href="struct_a_p_i___property.html">API_Property</a> is nullptr, the property definition does not exist or the value creation from the string failed.</li>
 <li>APIERR_BADVALUE - The property definition is invalid. </li>
 </ul>

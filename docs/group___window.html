@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Window Management</title>
+<title>Archicad 30 C++ API: Window Management</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -148,12 +148,16 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga2c0a47aaaf95e9f9b18330df14ce0d69" id="r_ga2c0a47aaaf95e9f9b18330df14ce0d69"><td class="memItemLeft" align="right" valign="top">typedef GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2c0a47aaaf95e9f9b18330df14ce0d69">APICustomWindowHandlerProc</a>(const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;userRefId, API_NotifyWindowEventID notifID)</td></tr>
+<tr class="memitem:ga2c0a47aaaf95e9f9b18330df14ce0d69" id="r_ga2c0a47aaaf95e9f9b18330df14ce0d69"><td class="memItemLeft" align="right" valign="top">typedef GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2c0a47aaaf95e9f9b18330df14ce0d69">APICustomWindowHandlerProc</a>(const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;userRefId, <a class="el" href="group___notification.html#ga364db38089d40f7818ae1ebf0eeab308">API_NotifyWindowEventID</a> notifID)</td></tr>
 <tr class="memdesc:ga2c0a47aaaf95e9f9b18330df14ce0d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">User supplied callback function for handling events in windows opened by the add-on.  <br /></td></tr>
 <tr class="separator:ga2c0a47aaaf95e9f9b18330df14ce0d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ga865537ca3bce5a5a0c485f09f1c230fd" id="r_ga865537ca3bce5a5a0c485f09f1c230fd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga865537ca3bce5a5a0c485f09f1c230fd">API_ActionCenterItemID</a> { <a class="el" href="#gga865537ca3bce5a5a0c485f09f1c230fda6dc305de1e81ed1596c4bf9fd8279695">APIActionCenterItem_Hotlinks</a> = 0
+ }</td></tr>
+<tr class="memdesc:ga865537ca3bce5a5a0c485f09f1c230fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible check method of the Action Center.  <a href="#ga865537ca3bce5a5a0c485f09f1c230fd">More...</a><br /></td></tr>
+<tr class="separator:ga865537ca3bce5a5a0c485f09f1c230fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga22bf85c5f2e58820825ad9960c66a484" id="r_ga22bf85c5f2e58820825ad9960c66a484"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga22bf85c5f2e58820825ad9960c66a484">API_WindowTypeID</a> { <br />
 &#160;&#160;<a class="el" href="#gga22bf85c5f2e58820825ad9960c66a484a424c4fe71420d9859357a46587ccfe5a">API_ZombieWindowID</a>
 , <a class="el" href="#gga22bf85c5f2e58820825ad9960c66a484aaa467545a22d5d6c2afa4ac0825ee7c6">APIWind_FloorPlanID</a>
@@ -221,7 +225,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa8d4a0d60712261ae51c8389c4ff3053" id="r_gaa8d4a0d60712261ae51c8389c4ff3053"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa8d4a0d60712261ae51c8389c4ff3053">ACAPI_Window_SetWindowId</a> (const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> *pOldGuid, const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> *pNewGuid)</td></tr>
 <tr class="memdesc:gaa8d4a0d60712261ae51c8389c4ff3053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the guid of a previously registered window. Useful when replacing already opened windows by reusing their window object.  <br /></td></tr>
 <tr class="separator:gaa8d4a0d60712261ae51c8389c4ff3053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa5a30877a9da53be0b6b792f49b160ed" id="r_gaa5a30877a9da53be0b6b792f49b160ed"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa5a30877a9da53be0b6b792f49b160ed">ACAPI_Window_Check</a> (API_ActionCenterItemID item)</td></tr>
+<tr class="memitem:gaa5a30877a9da53be0b6b792f49b160ed" id="r_gaa5a30877a9da53be0b6b792f49b160ed"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa5a30877a9da53be0b6b792f49b160ed">ACAPI_Window_Check</a> (<a class="el" href="#ga865537ca3bce5a5a0c485f09f1c230fd">API_ActionCenterItemID</a> item)</td></tr>
 <tr class="memdesc:gaa5a30877a9da53be0b6b792f49b160ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the selected checks of the Action Center.  <br /></td></tr>
 <tr class="separator:gaa5a30877a9da53be0b6b792f49b160ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -235,7 +239,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef GSErrCode APICustomWindowHandlerProc(const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;userRefId, API_NotifyWindowEventID notifID)</td>
+          <td class="memname">typedef GSErrCode APICustomWindowHandlerProc(const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;userRefId, <a class="el" href="group___notification.html#ga364db38089d40f7818ae1ebf0eeab308">API_NotifyWindowEventID</a> notifID)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -267,6 +271,27 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga865537ca3bce5a5a0c485f09f1c230fd" name="ga865537ca3bce5a5a0c485f09f1c230fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga865537ca3bce5a5a0c485f09f1c230fd">&#9670;&#160;</a></span>API_ActionCenterItemID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga865537ca3bce5a5a0c485f09f1c230fd">API_ActionCenterItemID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Possible check method of the Action Center. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>This enum is used with the <a class="el" href="#gaa5a30877a9da53be0b6b792f49b160ed">ACAPI_Window_Check</a> function. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga865537ca3bce5a5a0c485f09f1c230fda6dc305de1e81ed1596c4bf9fd8279695" name="gga865537ca3bce5a5a0c485f09f1c230fda6dc305de1e81ed1596c4bf9fd8279695"></a>APIActionCenterItem_Hotlinks&#160;</td><td class="fielddoc"><p>Checks whether all hotlinks are up-to-date. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="ga22bf85c5f2e58820825ad9960c66a484" name="ga22bf85c5f2e58820825ad9960c66a484"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga22bf85c5f2e58820825ad9960c66a484">&#9670;&#160;</a></span>API_WindowTypeID</h2>
 
@@ -280,7 +305,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Possible values of a window/database identifier. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>This structure holds the parameters of a window or database reference. It must be passed in the case of changing the current window/database (<a class="el" href="group___database.html#ga4792e476ab41dec96cf9036341b156d7">ACAPI_Database_ChangeCurrentDatabase</a>), or just getting the identification of the active one.(<a class="el" href="#gabdcb6c195f6a97da8871b068c4dc8bec">ACAPI_Window_GetCurrentWindow</a> /<a class="el" href="group___database.html#gaf1d24c9fb822b1d7f5c0b578c7cecf9c">ACAPI_Database_GetCurrentDatabase</a>) In <a class="el" href="struct_a_p_i___publish_format_data.html">API_PublishFormatData</a> structure it defines the windows in which the publish format is available. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This structure holds the parameters of a window or database reference. It must be passed in the case of changing the current window/database (<a class="el" href="group___database.html#ga4792e476ab41dec96cf9036341b156d7">ACAPI_Database_ChangeCurrentDatabase</a>), or just getting the identification of the active one. (<a class="el" href="#gabdcb6c195f6a97da8871b068c4dc8bec">ACAPI_Window_GetCurrentWindow</a> /<a class="el" href="group___database.html#gaf1d24c9fb822b1d7f5c0b578c7cecf9c">ACAPI_Database_GetCurrentDatabase</a>) In <a class="el" href="struct_a_p_i___publish_format_data.html">API_PublishFormatData</a> structure it defines the windows in which the publish format is available. </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga22bf85c5f2e58820825ad9960c66a484a424c4fe71420d9859357a46587ccfe5a" name="gga22bf85c5f2e58820825ad9960c66a484a424c4fe71420d9859357a46587ccfe5a"></a>API_ZombieWindowID&#160;</td><td class="fielddoc"><p>Unknown window/database type </p>
 </td></tr>
@@ -362,7 +387,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - gridPars is nullptr </li>
 </ul>
 </dd></dl>
@@ -402,7 +427,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - windowInfo is nullptr.</li>
 <li>APIERR_NOPLAN - There is no any project opened.</li>
 <li>APIERR_BADWINDOW - the requested front window is invalid </li>
@@ -446,7 +471,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">GSErrCode ACAPI_Window_Check </td>
           <td>(</td>
-          <td class="paramtype">API_ActionCenterItemID</td>          <td class="paramname"><span class="paramname"><em>item</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#ga865537ca3bce5a5a0c485f09f1c230fd">API_ActionCenterItemID</a></td>          <td class="paramname"><span class="paramname"><em>item</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -461,7 +486,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOPLAN - There is no open project.</li>
 <li>APIERR_REFUSEDCMD - Refused to run check method because of opened modal dialog. </li>
 </ul>
@@ -493,7 +518,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - windowPars is nullptr.</li>
 <li>APIERR_REFUSEDCMD - the function is called from notification level.</li>
 <li>APIERR_REFUSEDPAR - not <code>APIWind_MyTextID</code> or <code>APIWind_MyDrawID</code> is requested.</li>
@@ -530,17 +555,17 @@ Functions</h2></td></tr>
 <p>Returns the identifier of the current (active) window. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">windowInfo</td><td>[out] The identification parameters of the front window </td></tr>
+    <tr><td class="paramname">windowInfo</td><td>[out] The identification parameters of the front window. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - windowInfo is nullptr.</li>
-<li>APIERR_BADWINDOW - the type of the current front window is not known by the API </li>
+<li>APIERR_BADWINDOW - The type of the current front window is not known by the API. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to return the parameters of the front window of the server application. It can be used to identify which window your command was called on. Generally the current window and the window of the current database are the same. However you must be careful; the database dependent functions work on the current database not on the database of the current window. The interface functions work on the current window always. Note that this function fills out only the fields which are needed to identify the window type and the database behind the window. In order to retrieve the additional parameters of the database (title, name, ref, masterLayoutUnId) call the <a class="el" href="group___database.html#gab49927cb5e1cf060977428312b220d8f">ACAPI_Window_GetDatabaseInfo</a> function with the databaseUnId of the current window. Use the <a class="el" href="#ga065cae8bccda86611ff2d9d3c8a8f35c">ACAPI_Window_ChangeWindow</a> function to change the current window. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function returns the parameters of the front window of the server application. It can be used to identify which window your command was called on. Generally, the current window and the window of the current database are the same. However, you must be careful; the database-dependent functions work on the current database, not on the database of the current window. The interface functions always work on the current window. Note that this function fills out only the fields needed to identify the window type and the database behind the window. To retrieve additional parameters of the database (title, name, ref, masterLayoutUnId), call the <a class="el" href="group___database.html#gab49927cb5e1cf060977428312b220d8f">ACAPI_Window_GetDatabaseInfo</a> function with the databaseUnId of the current window. Use the <a class="el" href="#ga065cae8bccda86611ff2d9d3c8a8f35c">ACAPI_Window_ChangeWindow</a> function to change the current window. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___window_info.html">API_WindowInfo</a> windowInfo {};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">return</span> <a class="code hl_function" href="#gabdcb6c195f6a97da8871b068c4dc8bec">ACAPI_Window_GetCurrentWindow</a> (&amp;windowInfo);</div>
@@ -571,7 +596,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - <code>gridPars</code> is <code>nullptr</code> </li>
 </ul>
 </dd></dl>
@@ -616,7 +641,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_NOPLAN - There is no open project. The operation cannot be executed without an open project.</li>
 <li>APIERR_BADPARS - Incorrect windowTypeID or guid was specified. </li>
 </ul>
@@ -652,7 +677,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - windowPars is nullptr.</li>
 <li>APIERR_REFUSEDCMD - the function is called from notification level.</li>
 <li>APIERR_REFUSEDPAR - not <code>APIWind_MyTextID</code> or <code>APIWind_MyDrawID</code> is requested.</li>
@@ -690,11 +715,11 @@ Functions</h2></td></tr>
 
 <p>Deletes the database elements of the current window and sets up a new, empty environment. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADWINDOW - The current database is not a custom drawing or owned by an other addon. </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADWINDOW - The current database is not a custom drawing or is owned by another add-on. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to delete all elements from the current window. It returns an error if the active window is not a custom window owned by the caller addon. You can use the <a class="el" href="group___database.html#gaa914c768a602867067fcb24d26fb3ef6">ACAPI_Window_ResetCurrentDatabase</a> function to reset the content of any window being in the background. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function deletes all elements from the current window. It returns an error if the active window is not a custom window owned by the caller add-on. You can use the <a class="el" href="group___database.html#gaa914c768a602867067fcb24d26fb3ef6">ACAPI_Window_ResetCurrentDatabase</a> function to reset the content of any window in the background. </dd></dl>
 
 </div>
 </div>
@@ -726,7 +751,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - pOldGuid or pNewGuid is nullptr</li>
 <li>APIERR_WINDNOTEXIST - No window found with the given guid.</li>
 <li>APIERR_WINDEXIST - There is a window already registered with the new guid.</li>

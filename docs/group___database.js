@@ -24,6 +24,7 @@ var group___database =
     [ "API_DatabaseInfo", "group___database.html#ga38bea73a6617d9591c2035d9a37c2c34", null ],
     [ "API_DatabaseTypeID", "group___database.html#ga952fe8976ad428e5ca6deb307b085624", null ],
     [ "APICustomWindowHandlerProc", "group___window.html#ga2c0a47aaaf95e9f9b18330df14ce0d69", null ],
+    [ "API_ImageSource", "group___database.html#ga186c214f02e0692cfe003db0b74ba6f0", null ],
     [ "ACAPI_Database_BuildWindowValidator", "group___database.html#gad25f93b026ec40edcb736925b60eca3b", null ],
     [ "ACAPI_Database_ChangeCurrentDatabase", "group___database.html#ga4792e476ab41dec96cf9036341b156d7", null ],
     [ "ACAPI_Database_CheckWindowValidator", "group___database.html#gaef06b425dd9daa42dab6098256537c98", null ],

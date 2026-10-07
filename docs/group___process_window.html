@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Process Windows</title>
+<title>Archicad 30 C++ API: Process Windows</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -137,8 +137,8 @@ $(function(){initNavTree('group___process_window.html',''); initResizable(true);
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga9f45adbcad17ea00c99d8fff57ad4c8f" id="r_ga9f45adbcad17ea00c99d8fff57ad4c8f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9f45adbcad17ea00c99d8fff57ad4c8f">API_ProcessControlTypeID</a> { <b>API_MenuCommandEnabled</b>
-, <b>API_MenuCommandDisabled</b>
+<tr class="memitem:ga9f45adbcad17ea00c99d8fff57ad4c8f" id="r_ga9f45adbcad17ea00c99d8fff57ad4c8f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9f45adbcad17ea00c99d8fff57ad4c8f">API_ProcessControlTypeID</a> { <a class="el" href="#gga9f45adbcad17ea00c99d8fff57ad4c8fa506bf8ddab4a886713cb8e3f8831887e">API_MenuCommandEnabled</a>
+, <a class="el" href="#gga9f45adbcad17ea00c99d8fff57ad4c8fa711fbb7b9b3cb96a38cdd829cede136f">API_MenuCommandDisabled</a>
  }</td></tr>
 <tr class="memdesc:ga9f45adbcad17ea00c99d8fff57ad4c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process control types.  <a href="#ga9f45adbcad17ea00c99d8fff57ad4c8f">More...</a><br /></td></tr>
 <tr class="separator:ga9f45adbcad17ea00c99d8fff57ad4c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,13 +161,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga1440088158bb8296146628ef3faf0cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the next process phase in the process window.  <br /></td></tr>
 <tr class="separator:ga1440088158bb8296146628ef3faf0cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafb905b9390fbe4cc31e16f6978ae79bf" id="r_gafb905b9390fbe4cc31e16f6978ae79bf"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafb905b9390fbe4cc31e16f6978ae79bf">ACAPI_ProcessWindow_SetProcessValue</a> (Int32 *newval)</td></tr>
-<tr class="memdesc:gafb905b9390fbe4cc31e16f6978ae79bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the progress bar.  <br /></td></tr>
+<tr class="memdesc:gafb905b9390fbe4cc31e16f6978ae79bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the process bar in the process window.  <br /></td></tr>
 <tr class="separator:gafb905b9390fbe4cc31e16f6978ae79bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafd63627111c3f4294d061deb3c845db4" id="r_gafd63627111c3f4294d061deb3c845db4"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafd63627111c3f4294d061deb3c845db4">ACAPI_ProcessWindow_IncProcessValue</a> (Int32 *incval=nullptr)</td></tr>
-<tr class="memdesc:gafd63627111c3f4294d061deb3c845db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the value of the progress bar.  <br /></td></tr>
+<tr class="memdesc:gafd63627111c3f4294d061deb3c845db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the value of the process bar in the process window.  <br /></td></tr>
 <tr class="separator:gafd63627111c3f4294d061deb3c845db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1ba556557712fc70d5d8b57a7f368410" id="r_ga1ba556557712fc70d5d8b57a7f368410"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1ba556557712fc70d5d8b57a7f368410">ACAPI_ProcessWindow_IsProcessCanceled</a> ()</td></tr>
-<tr class="memdesc:ga1ba556557712fc70d5d8b57a7f368410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for user breaks during long processes.  <br /></td></tr>
+<tr class="memdesc:ga1ba556557712fc70d5d8b57a7f368410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the process was canceled by the user.  <br /></td></tr>
 <tr class="separator:ga1ba556557712fc70d5d8b57a7f368410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1b11e30c31a72717e153c46ba67f4fcb" id="r_ga1b11e30c31a72717e153c46ba67f4fcb"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1b11e30c31a72717e153c46ba67f4fcb">ACAPI_ProcessWindow_SetProcessOnOffSwitch</a> (bool *switchOff)</td></tr>
 <tr class="memdesc:ga1b11e30c31a72717e153c46ba67f4fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns the process window on/off.  <br /></td></tr>
@@ -193,6 +193,12 @@ Functions</h2></td></tr>
 
 <p>Process control types. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>Used in <a class="el" href="#gacda3bc51b8d878d8494d313ecac47023">ACAPI_ProcessWindow_InitProcessWindow</a>. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga9f45adbcad17ea00c99d8fff57ad4c8fa506bf8ddab4a886713cb8e3f8831887e" name="gga9f45adbcad17ea00c99d8fff57ad4c8fa506bf8ddab4a886713cb8e3f8831887e"></a>API_MenuCommandEnabled&#160;</td><td class="fielddoc"><p>Enabled </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9f45adbcad17ea00c99d8fff57ad4c8fa711fbb7b9b3cb96a38cdd829cede136f" name="gga9f45adbcad17ea00c99d8fff57ad4c8fa711fbb7b9b3cb96a38cdd829cede136f"></a>API_MenuCommandDisabled&#160;</td><td class="fielddoc"><p>Disabled </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -217,7 +223,7 @@ Functions</h2></td></tr>
 <li>NoError - The function always returns NoError. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to close the process window opened with <a class="el" href="#gacda3bc51b8d878d8494d313ecac47023">ACAPI_ProcessWindow_InitProcessWindow</a>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function closes the process window opened with <a class="el" href="#gacda3bc51b8d878d8494d313ecac47023">ACAPI_ProcessWindow_InitProcessWindow</a>. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode       err;</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a>     libPart {};</div>
 <div class="line">GS::UniString   title (<span class="stringliteral">&quot;Listing the library&quot;</span>);</div>
@@ -325,19 +331,50 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Increases the value of the progress bar. </p>
+<p>Increments the value of the process bar in the process window. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">incval</td><td>[in] The value to add to the progress bar in the current process phase. </td></tr>
+    <tr><td class="paramname">incval</td><td>[in] The value to increment the process bar by in the current process phase. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - incval is nullptr </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - increment is nullptr. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to increase the progress bar value of the current phase in the process window. The increment should be passed in the incval parameter. Use the <a class="el" href="#gafb905b9390fbe4cc31e16f6978ae79bf">ACAPI_ProcessWindow_SetProcessValue</a> function to set the process value to a given value, instead of increasing the current one. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function increments the value of the process bar in the process window by the specified increment. The value is added to the current value of the process bar. </dd></dl>
+<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode       err;</div>
+<div class="line"><a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a>     libPart {};</div>
+<div class="line">GS::UniString   title (<span class="stringliteral">&quot;Listing the library&quot;</span>);</div>
+<div class="line">GS::UniString   subtitle (<span class="stringliteral">&quot;working...&quot;</span>);</div>
+<div class="line">Int32           nPhase;</div>
+<div class="line">Int32           i, nLib;</div>
+<div class="line"><span class="keywordtype">char</span>            buffer [256];</div>
+<div class="line"> </div>
+<div class="line">err = <a class="code hl_function" href="group___library_part.html#gae3c22c535a2ed90a900a43c052b1768f">ACAPI_LibraryPart_GetNum</a> (&amp;nLib);</div>
+<div class="line"><span class="keywordflow">if</span> (nLib &gt; 0) {</div>
+<div class="line">    nPhase = 1;</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_function" href="#gacda3bc51b8d878d8494d313ecac47023">ACAPI_ProcessWindow_InitProcessWindow</a> (&amp;title, &amp;nPhase);</div>
+<div class="line">    <a class="code hl_function" href="#ga1440088158bb8296146628ef3faf0cf4">ACAPI_ProcessWindow_SetNextProcessPhase</a> (&amp;subtitle, &amp;nLib);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">for</span> (i = 1; i &lt;= nLib; i++) {</div>
+<div class="line">        libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#ae2c5c2b3b16b5b857d35932a5be868f7">index</a> = i;</div>
+<div class="line">        err = <a class="code hl_function" href="group___library_part.html#ga26a6f5f7d4ffeedc841aad3f0e0489a3">ACAPI_LibraryPart_Get</a> (&amp;libPart);</div>
+<div class="line">        <span class="keywordflow">if</span> (!err) {</div>
+<div class="line">            sprintf (buffer, <span class="stringliteral">&quot;[%2d] \&quot;%s\&quot;&quot;</span>, i, (<span class="keyword">const</span> <span class="keywordtype">char</span> *) GS::UniString (libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#a7188ede45f613116ba5237aa56177ddf">docu_UName</a>).ToCStr ());</div>
+<div class="line">            <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (buffer, <span class="keyword">false</span>);</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <a class="code hl_function" href="#gafb905b9390fbe4cc31e16f6978ae79bf">ACAPI_ProcessWindow_SetProcessValue</a> (&amp;i);</div>
+<div class="line">        <span class="keywordflow">if</span> (<a class="code hl_function" href="#ga1ba556557712fc70d5d8b57a7f368410">ACAPI_ProcessWindow_IsProcessCanceled</a> ())</div>
+<div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_function" href="#gacb933ab1037071dd990470c2e426a423">ACAPI_ProcessWindow_CloseProcessWindow</a> ();</div>
+<div class="line">}</div>
+</div><!-- fragment --> </dd></dl>
 
 </div>
 </div>
@@ -368,18 +405,18 @@ Functions</h2></td></tr>
 <p>Opens the process window. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">title</td><td>[in] Process string. </td></tr>
+    <tr><td class="paramname">title</td><td>[in] Title of the process. </td></tr>
     <tr><td class="paramname">nPhase</td><td>[in] Number of phases. </td></tr>
-    <tr><td class="paramname">processCntrolType</td><td>[in] </td></tr>
+    <tr><td class="paramname">processCntrolType</td><td>[in] Type of process control. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - nPhase is nullptr </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - nPhase is nullptr. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to prepare the process window for a long operation. You can specify the name of the whole operation and the number of the phases of the process. Other process window related functions are:<ul>
+<dl class="section remark"><dt>Remarks</dt><dd>This function prepares the process window for a long operation. You can specify the name of the entire operation and the number of phases in the process. Other related process window functions are:<ul>
 <li><a class="el" href="#ga1440088158bb8296146628ef3faf0cf4">ACAPI_ProcessWindow_SetNextProcessPhase</a></li>
 <li><a class="el" href="#gafb905b9390fbe4cc31e16f6978ae79bf">ACAPI_ProcessWindow_SetProcessValue</a></li>
 <li><a class="el" href="#gafd63627111c3f4294d061deb3c845db4">ACAPI_ProcessWindow_IncProcessValue</a></li>
@@ -436,13 +473,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Checks for user breaks during long processes. </p>
+<p>Checks if the process was canceled by the user. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>NoError - The function has completed with success.</li>
-<li>APIERR_CANCEL - The current process was canceled </li>
+<li>APIERR_CANCEL - The current process was canceled. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to check whether the user has canceled a long process (by clicking on the Cancel button of the process window, or by pressing the appropriate keys on the keyboard). It also give visual feedback on processing by changing the cursor shape. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to check whether the user has canceled a long process (by clicking on the Cancel button of the process window, or by pressing the appropriate keys on the keyboard). It also gives visual feedback by changing the cursor shape. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode       err;</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a>     libPart {};</div>
 <div class="line">GS::UniString   title (<span class="stringliteral">&quot;Listing the library&quot;</span>);</div>
@@ -535,16 +572,16 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">subtitle</td><td>[in] Description of the process phase. </td></tr>
     <tr><td class="paramname">maxval</td><td>[in] Maximum value of the progress bar. </td></tr>
-    <tr><td class="paramname">showPercent</td><td>[in] Show phase percentage. (optional) </td></tr>
+    <tr><td class="paramname">showPercent</td><td>[in] Whether to show the phase percentage (optional). </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - maxval is nullptr </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - maxval is nullptr. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to reinitialize the process window for the next process phase during a long operation. Set some description about the process phase in the subtitle parameter. The progress bar will be divided up according to the value of the maxval parameter. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function reinitializes the process window for the next process phase during a long operation. Set a description for the process phase in the subtitle parameter. The progress bar will be divided according to the value of the maxval parameter. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode       err;</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a>     libPart {};</div>
 <div class="line">GS::UniString   title (<span class="stringliteral">&quot;Listing the library&quot;</span>);</div>
@@ -623,19 +660,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the value of the progress bar. </p>
+<p>Sets the value of the process bar in the process window. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">newval</td><td>[in] The new value of the progress bar in the current process phase. </td></tr>
+    <tr><td class="paramname">newval</td><td>[in] The new value of the process bar in the current process phase. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - newval is nullptr </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - value is nullptr. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to set the progress bar value of the current phase in the process window. Use the <a class="el" href="#gafd63627111c3f4294d061deb3c845db4">ACAPI_ProcessWindow_IncProcessValue</a> function to increment the process value, instead of setting it to a given value. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function sets the value of the process bar in the process window. The value parameter should be between 0 and the maximum value set by <a class="el" href="#ga1440088158bb8296146628ef3faf0cf4">ACAPI_ProcessWindow_SetNextProcessPhase</a>. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode       err;</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a>     libPart {};</div>
 <div class="line">GS::UniString   title (<span class="stringliteral">&quot;Listing the library&quot;</span>);</div>

@@ -14,8 +14,15 @@ var group___classification =
       [ "name", "struct_a_p_i___classification_system.html#a2439dd3ef0e12e9ad1f5d232bdc15347", null ],
       [ "source", "struct_a_p_i___classification_system.html#ac7ee98e489d3beeea8b466c21977598e", null ]
     ] ],
-    [ "API_ClassificationItemNameConflictResolutionPolicy", "group___classification.html#ga46c6e5af9d7f48a5bc6d76b0055c020c", null ],
-    [ "API_ClassificationSystemNameConflictResolutionPolicy", "group___classification.html#ga1636a3d12069af9ff233bc79e797acef", null ],
+    [ "API_ClassificationItemNameConflictResolutionPolicy", "group___classification.html#ga46c6e5af9d7f48a5bc6d76b0055c020c", [
+      [ "API_ReplaceConflictingItems", "group___classification.html#gga46c6e5af9d7f48a5bc6d76b0055c020ca6eb82c5d1847632af174303271eaa78c", null ],
+      [ "API_SkipConflicitingItems", "group___classification.html#gga46c6e5af9d7f48a5bc6d76b0055c020caa84a6d304a9f0f8a48f49e940f43c346", null ]
+    ] ],
+    [ "API_ClassificationSystemNameConflictResolutionPolicy", "group___classification.html#ga1636a3d12069af9ff233bc79e797acef", [
+      [ "API_MergeConflictingSystems", "group___classification.html#gga1636a3d12069af9ff233bc79e797acefa75f5ed358ace3ebe549e63ec874c2b6c", null ],
+      [ "API_ReplaceConflictingSystems", "group___classification.html#gga1636a3d12069af9ff233bc79e797acefa94ed0016d4ac6ff0426587d05ec2472b", null ],
+      [ "API_SkipConflictingSystems", "group___classification.html#gga1636a3d12069af9ff233bc79e797acefa0e9a1e4868079e416eec804754f6a063", null ]
+    ] ],
     [ "ACAPI_Classification_ChangeClassificationItem", "group___classification.html#ga1bed4824c0e5571d7d797093f6cc64a0", null ],
     [ "ACAPI_Classification_ChangeClassificationSystem", "group___classification.html#ga59765c3f2ddaba55138b63f28bde2e56", null ],
     [ "ACAPI_Classification_CreateClassificationItem", "group___classification.html#gaa7248f36b6dd799e1253183769536f72", null ],

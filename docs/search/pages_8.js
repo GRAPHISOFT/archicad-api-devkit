@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['keynote_5foverview_0',['Keynote_Overview',['../md__e_1_2_dev_2_a_c29__0__1_2_bin_8_win_2_modules___v_s__64_8dev_2_group_overviews_2_keynote___overview.html',1,'']]],
-  ['kit_2029_1',['General API Development Kit 29',['../_dev_kit.html',1,'']]]
+  ['icon_20generation_0',['Dark mode icon generation',['../darkicongeneration.html',1,'']]],
+  ['ifc_5foverview_1',['IFC_Overview',['../md__common_doxygen_files_2_group_overviews_2_i_f_c___overview.html',1,'']]],
+  ['in_20archicad_2030_2',['New API features in Archicad 30',['../newfeatures.html',1,'']]],
+  ['in_20settings_20dialogs_3',['Custom panels in settings dialogs',['../_custom_panels.html',1,'']]],
+  ['into_20the_20database_4',['Own Data Saved into the Database',['../_own_data.html',1,'']]]
 ];

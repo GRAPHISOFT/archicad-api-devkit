@@ -340,6 +340,115 @@ var group___m_e_p =
       [ "CreateElbowDefaultFromToolUIData", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_u_i_manager.html#a99e40dc60c53b3ad88b91db2facc617a", null ],
       [ "CreateElbowUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_u_i_manager.html#a34a4e22a2e0a6efe091e5115cc3379b8", null ]
     ] ],
+    [ "ACAPI::MEP::ElectricalCircuit", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html", [
+      [ "GetChildDeviceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a241f20a4ec63ce7af2f12f3deb035bfe", null ],
+      [ "GetChildPanelIds", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a3715c86fbaf294bcbca33da542a114e9", null ],
+      [ "GetCircuitDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a7f8180a02edc6b78b041d6db67c65483", null ],
+      [ "GetCircuitNameWithPrefix", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#ac8fc1ab9e3450aa100e057d6ca2c82f5", null ],
+      [ "GetConnectedLoad", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#aa2e6c05e4f50349f6fefff3a5efba5cf", null ],
+      [ "GetConnectedLoadPhaseA", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#aea4822988ab43ca54066e1b9744636b2", null ],
+      [ "GetConnectedLoadPhaseB", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#ad1da254ab29610f356e7a623f2a014ad", null ],
+      [ "GetConnectedLoadPhaseC", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#afe3c50a2aadd6c5658564180eb3a56d4", null ],
+      [ "GetDemandLoad", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#acd590afd71a444f1d744d0249e515a1b", null ],
+      [ "GetDemandLoadPhaseA", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#aee87921311644d6558362745ab698632", null ],
+      [ "GetDemandLoadPhaseB", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#afb28f86ea4f3245aaaf7a4c60b32312d", null ],
+      [ "GetDemandLoadPhaseC", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a57e5d92024ca3ab1a4ffbb1958fa93b1", null ],
+      [ "GetEstimatedCableLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a4eaf7876be570f95f47fe3de06964f44", null ],
+      [ "GetOwnerPanelId", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#acede6275647781bec423de24c39b2dc6", null ],
+      [ "GetPhaseString", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a760a9d0be8dab276a9c5b20bda731f76", null ],
+      [ "GetVoltage", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a83e1aa64a780139a61b7620f79f8f2b2", null ],
+      [ "GetVoltageDrop", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a700c83e341281c12b74933b9813c4d2e", null ],
+      [ "GetWiringTypeName", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a7dae90dff856f39352de1839783a8b11", null ],
+      [ "IsPhaseAUsed", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#ae0ae26e2f0567cdccc72f3d447c1dea3", null ],
+      [ "IsPhaseBUsed", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a86c08b3e008033cfab8dde9cb15ed772", null ],
+      [ "IsPhaseCUsed", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a626b98f552c6fd0b292114fac976d52a", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#adb54666d463ab4fc8b3480ad2eb1fca2", null ]
+    ] ],
+    [ "ACAPI::MEP::ElectricalCircuit::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit_1_1_modifier.html", [
+      [ "SetCircuitDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit_1_1_modifier.html#a65ea8bb6c8c4dbc88c97ea5179a23b4b", null ],
+      [ "SetIsPhaseAUsed", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit_1_1_modifier.html#a1ef3c8f99bc23756ee4ea8e5f420054d", null ],
+      [ "SetIsPhaseBUsed", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit_1_1_modifier.html#ab498d365464e16b535beafbab9271c47", null ],
+      [ "SetIsPhaseCUsed", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit_1_1_modifier.html#a8ec20ca7449849c157007d380ebc121b", null ],
+      [ "SetVoltage", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit_1_1_modifier.html#a37ce056bc9891ad8ac0d7d4e765e8094", null ],
+      [ "SetWiringTypeName", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit_1_1_modifier.html#aba61545b5aae1011fec8c2c8d245eb5a", null ]
+    ] ],
+    [ "ACAPI::MEP::ElectricalDevice", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device.html", [
+      [ "GetApparentPower", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device.html#a354a8dbbfaddb3c70eed04d984076e5e", null ],
+      [ "GetApparentPowerEnabled", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device.html#a218d7360332455b1cf1bca3b2615c955", null ],
+      [ "GetDemandLoad", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device.html#aecc4b54c1417c106bd388b0e784b5889", null ],
+      [ "GetLoadClassificationName", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device.html#a45151d97b97081f29e0ec3615f3a1482", null ],
+      [ "GetParentCircuitId", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device.html#a078e6943326ba95eddc36c894fca9180", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device.html#a60361514dba1eca2b169c54ec1fce93a", null ],
+      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device.html#a7d33817a662579a8dda1e7d8970ca79d", null ]
+    ] ],
+    [ "ACAPI::MEP::ElectricalDevice::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device_1_1_modifier.html", [
+      [ "ConnectToCircuit", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device_1_1_modifier.html#a6759e8f94da4d2e650ac13629d5e4fef", null ],
+      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device_1_1_modifier.html#a3fff7e3265ad4d8b9322ea882807a101", null ],
+      [ "SetApparentPower", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device_1_1_modifier.html#a480c399a5c0ba68f71851cee0a18e1b6", null ],
+      [ "SetApparentPowerEnabled", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device_1_1_modifier.html#a47d18f3327656cb26f39ba77daafa9a5", null ],
+      [ "SetLoadClassificationName", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device_1_1_modifier.html#a1651e68c14e26c7999034215dbd40649", null ]
+    ] ],
+    [ "ACAPI::MEP::ElectricalDeviceDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device_default.html", [
+      [ "GetApparentPower", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device_default.html#ab8c9443b7ca21b662e332e7c505ec382", null ],
+      [ "GetApparentPowerEnabled", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device_default.html#a72d8260de6110d54f96959fd5fa35c36", null ],
+      [ "GetLoadClassificationName", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device_default.html#a32bfe5118c59cf6a302b2bcd63ce8eee", null ],
+      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device_default.html#afd4337617d72e679b02b15442806c29a", null ],
+      [ "CreateElectricalDeviceDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device_default.html#a8874e9654d0a33ebd28a034c0cb9d75a", null ],
+      [ "CreateElectricalDeviceDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device_default.html#a19584cc51e149536089f644356875d10", null ]
+    ] ],
+    [ "ACAPI::MEP::ElectricalPanel", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel.html", [
+      [ "GetCircuitIds", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel.html#a3f443b6d6f2d9d6c78eb1a6fcfe8dc23", null ],
+      [ "GetCircuitIdStyle", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel.html#a35989f0ca8f13fccb4d699bc66cc509b", null ],
+      [ "GetCircuitNamePrefix", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel.html#ab4e961f7d3249798001723385953702c", null ],
+      [ "GetConnectedLoad", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel.html#aa7bacc2a1fc973c0a3c8542c82b6b829", null ],
+      [ "GetConnectedLoadPhaseA", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel.html#a490b9fb283ebcd188cdf3b3f11f91ff4", null ],
+      [ "GetConnectedLoadPhaseB", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel.html#a3a0b83ee59ab58315b4e3072cebc365d", null ],
+      [ "GetConnectedLoadPhaseC", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel.html#aa5942d370bfb46161ac000a37dbc6ff6", null ],
+      [ "GetDemandLoad", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel.html#aefd2ed44fbf00c777a781718f1ea1b53", null ],
+      [ "GetDemandLoadPhaseA", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel.html#aa89ca037a6a8cb80e2e8825f499baf5b", null ],
+      [ "GetDemandLoadPhaseB", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel.html#a33df94c11ecd17f9439d8c93181b0cbb", null ],
+      [ "GetDemandLoadPhaseC", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel.html#a8f3506a996e08df2f8004a3dcbc6e3cc", null ],
+      [ "GetPanelName", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel.html#a1b3a367e9f713bff0e4853fe5e81ee01", null ],
+      [ "GetParentCircuitId", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel.html#ad8f2d4f4712f0d2f7e9a882fc7a04537", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel.html#a1550b5045026049184e581bd4f677d1b", null ],
+      [ "PickUpDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel.html#a87bccb77f2caf2417b9412b891f4d937", null ]
+    ] ],
+    [ "ACAPI::MEP::ElectricalPanel::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_1_1_modifier.html", [
+      [ "AddCircuit", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_1_1_modifier.html#a742d0eb469a080dd7e8b4288b499ea0c", null ],
+      [ "ConnectToCircuit", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_1_1_modifier.html#aab8d0978a6d277c682cab8bddfc1627e", null ],
+      [ "Inject", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_1_1_modifier.html#a505b4d06cf3d1e4ebef089a79aca5a49", null ],
+      [ "RemoveCircuit", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_1_1_modifier.html#a8e38bffd7ccaf2f0ea32da0f50c46389", null ],
+      [ "SetCircuitIdStyle", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_1_1_modifier.html#a3738e181319230c27a92d372e08efa7f", null ],
+      [ "SetCircuitNamePrefix", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_1_1_modifier.html#a9878a2f461166e6857f48a199de6724c", null ],
+      [ "SetPanelName", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_1_1_modifier.html#a30f81cc06e3c3b1a993e8affb6ca06d0", null ]
+    ] ],
+    [ "ACAPI::MEP::ElectricalPanelDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_default.html", [
+      [ "GetCircuitDefaultCount", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_default.html#a5075e005d0a6d1fd6860637669fc477e", null ],
+      [ "GetCircuitIdStyle", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_default.html#ae96279a42b8a5fb51373f22afa870908", null ],
+      [ "GetCircuitNamePrefix", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_default.html#a5bc3b6c1df88a58bc83113148284635e", null ],
+      [ "GetPanelName", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_default.html#ab8bbab00aaedbe74ea5d07ec7894a3ba", null ],
+      [ "Place", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_default.html#ad01464271805942fe1f61241d20c0e03", null ],
+      [ "CreateElectricalPanelDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_default.html#a4983b7dbd8dff2f1ba7bbb6198fed969", null ],
+      [ "CreateElectricalPanelDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_default.html#a04c4591992ac04b0724af85baf475808", null ]
+    ] ],
+    [ "ACAPI::MEP::ElectricalProjectSettings", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings.html", [
+      [ "GetLoadClassificationDemandFactor", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings.html#a314f79d7061fe3206c698d51587b825a", null ],
+      [ "GetLoadClassificationNames", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings.html#a1d42d677c1fc2c40ae436fdb43739ac1", null ],
+      [ "GetVoltage", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings.html#af8f526e62a32cc16440ca3fada272ffa", null ],
+      [ "GetWiringTypeCrossSectionalArea", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings.html#a9bcf0cd7b4ad0b44b63d6ab90b8db693", null ],
+      [ "GetWiringTypeNames", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings.html#a51f0fa416e81655525c6572b097bb131", null ],
+      [ "IsEditable", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings.html#af7f7c408c4e158e831a0996fbd0faa4a", null ],
+      [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings.html#a42979d4965d6b79ff5a7e5d9b8cc9b48", null ]
+    ] ],
+    [ "ACAPI::MEP::ElectricalProjectSettings::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings_1_1_modifier.html", [
+      [ "AddLoadClassification", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings_1_1_modifier.html#a8f676ee77717e97b8bc166cc7657dd93", null ],
+      [ "AddWiringType", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings_1_1_modifier.html#abaa8021fe6acf51885d46a5861928912", null ],
+      [ "ClearLoadClassifications", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings_1_1_modifier.html#ad20186b15f276f0d0f98247032c8d309", null ],
+      [ "ClearWiringTypes", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings_1_1_modifier.html#a7aeed7b042fd48ad7939fcb2421ab0db", null ],
+      [ "RemoveLoadClassification", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings_1_1_modifier.html#a4e574ca54f50a2136439543641e9a0f5", null ],
+      [ "RemoveWiringType", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings_1_1_modifier.html#a326cbf3c5022174413d400d87dedce56", null ],
+      [ "SetVoltage", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings_1_1_modifier.html#afc81e0aa26a7f4e4da7255f608e3be85", null ]
+    ] ],
     [ "ACAPI::MEP::Element", "class_a_c_a_p_i_1_1_m_e_p_1_1_element.html", null ],
     [ "ACAPI::MEP::ElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html", [
       [ "ElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#af3be77f8ac769a25f2ed05023a3b3fd8", null ],
@@ -352,12 +461,14 @@ var group___m_e_p =
       [ "GetObjectYSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#ae3465fa0426285b1835bc1cf124d03c2", null ],
       [ "GetOrientation", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#a3314d300b7fd16a4e19f04fe51996980", null ],
       [ "GetPortIDs", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#a64e8bf1aded472f79dcf48c30c058446", null ],
+      [ "GetPorts", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#aa0fc62a23c9bc797a9891622996a8044", null ],
       [ "GetReflected", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#aa666dd3c2256674d8795e12e5af660e2", null ]
     ] ],
     [ "ACAPI::MEP::ElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html", [
       [ "ElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#aec9410cce501a29db958922ffdb0fb59", null ],
       [ "GetBaseRotation", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a293f130fd9c4092942e168aa2934587f", null ],
       [ "GetCableCarrierPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a5d5fdbe2a167216e673aec7953004c12", null ],
+      [ "GetCableCarrierPortDefaults", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a73da81e964990193ea675c4facf2a279", null ],
       [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a42262e75ff079e322c655f2b233f043d", null ],
       [ "GetDomainOfPort", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#ad238d58473dd041a7d9f4bc84ad43750", null ],
       [ "GetInsulationThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a3fa0ed2a37310550e97fbb2cd688847f", null ],
@@ -365,9 +476,12 @@ var group___m_e_p =
       [ "GetObjectXSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a4f1b119a9788fa0349a83cd0907bef7f", null ],
       [ "GetObjectYSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a5dbd0c41cfeb763198f73c462443c08e", null ],
       [ "GetPipingPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#ab9d504ec872774560d646deb8c1c14c2", null ],
+      [ "GetPipingPortDefaults", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#ab81d283691131278ea20314900f89dd1", null ],
       [ "GetPortCount", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#ade303bee9615712c663dcc46ec18c713", null ],
+      [ "GetPortDefaults", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a637fe36e6c6b488bd2c29857681f1b80", null ],
       [ "GetReflected", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a42264cfd2ba34e6c030b3f03ee4965d7", null ],
       [ "GetVentilationPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a69681a27484a4750f09041702006042d", null ],
+      [ "GetVentilationPortDefaults", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a77788af9f4351a7ba6c2105f0a6d5b92", null ],
       [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html#a556baec75bf1fa4c47136d8229e2929b", null ]
     ] ],
     [ "ACAPI::MEP::ElementDefault::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default_1_1_modifier.html", [
@@ -651,18 +765,23 @@ var group___m_e_p =
       [ "GetPipeTransitionPreferenceTableContainer", "class_a_c_a_p_i_1_1_m_e_p_1_1_pipe_transition_preference_table_container.html#a558c4df778fff87a2666ccbd4e4ad421", null ]
     ] ],
     [ "ACAPI::MEP::PipingPort", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port.html", [
+      [ "GetFlangeSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port.html#aee310f5c8dce4cd82befca9b220c02fa", null ],
       [ "GetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port.html#aa101c1e14956a5b7a05753ce3266c326", null ],
+      [ "GetNominalSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port.html#aadbf5e0be869155cf3fecc459007e9dc", null ],
       [ "GetOuterDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port.html#ac881277cabf6ea7cd34b54a954551084", null ],
       [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port.html#a805cc200d326e9885d0dd238c0288258", null ],
       [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port.html#a73bafd95d2fc0adddd625d6b57861c1b", null ]
     ] ],
     [ "ACAPI::MEP::PipingPort::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_1_1_modifier.html", [
+      [ "SetFlangeSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_1_1_modifier.html#aaf69bc6a21761dfa83b0498833093955", null ],
       [ "SetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_1_1_modifier.html#a288e1740dfc061da22aad1f25fc9389c", null ],
+      [ "SetNominalSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_1_1_modifier.html#a128971449f02b5768df428f7c9136a23", null ],
       [ "SetOuterDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_1_1_modifier.html#a23b8040dc09ec6c07b1e82fa336a6776", null ],
       [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_1_1_modifier.html#abf99374a6dd2b682e10e36ba974f686a", null ]
     ] ],
     [ "ACAPI::MEP::PipingPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default.html", [
       [ "GetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default.html#accc4b82054485aa86e02468739267deb", null ],
+      [ "GetFlangeSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default.html#a1eab2c1bb34b072ade50c34d958c1617", null ],
       [ "GetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default.html#ab28911bae01de72ad2f7591fa388ff23", null ],
       [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default.html#a1149f90cf06a077fa866d4824f9cc334", null ],
       [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default.html#a91033948edcab550268a06e531c05d2a", null ]
@@ -670,6 +789,7 @@ var group___m_e_p =
     [ "ACAPI::MEP::PipingPortDefault::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default_1_1_modifier.html", [
       [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default_1_1_modifier.html#a0b0e07ebb7df7fe496e57e0b2aa34b81", null ],
       [ "SetDiameter", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default_1_1_modifier.html#a0101b99f72f95e88df89c9f277e82fd4", null ],
+      [ "SetFlangeSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default_1_1_modifier.html#a93c398d4493f3c0194a73030c4a9cac0", null ],
       [ "SetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default_1_1_modifier.html#a0b4789bec372d7c900ecb755a97d2346", null ],
       [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_piping_port_default_1_1_modifier.html#a0e505a4c769d2fc44fb184a6ea2f6431", null ]
     ] ],
@@ -679,7 +799,9 @@ var group___m_e_p =
       [ "Exists", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#af6ac4a50754928b1a7765959deedcda4", null ],
       [ "GetConnectedMEPElementId", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#a58e71e55c871e68ec02e03f23f58d9cb", null ],
       [ "GetConnectedPortId", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#a42cb9e8b05ac6c93ae9b8a2f1cbadb30", null ],
+      [ "GetConnectionStyle", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#a6ed6ef1a5cd90beda67305dcbda5e7ce", null ],
       [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#af8fc95a17a5d8893af20502e9444ee08", null ],
+      [ "GetElemId", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#ad2a62f053c9b44e895223b31547ce198", null ],
       [ "GetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#a7e08c7ba860422c3afdedcbc7933f439", null ],
       [ "GetMEPElementId", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#ac1a21f7691b8c45eafd7636d1675f05f", null ],
       [ "GetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html#a768ecba98835d9f12db8134d3836d7a3", null ],
@@ -695,6 +817,7 @@ var group___m_e_p =
     [ "ACAPI::MEP::PortBase::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base_1_1_modifier.html", [
       [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base_1_1_modifier.html#ad4b423c427fc4bb84e16d7e17af961b9", null ],
       [ "FinalizeModification", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base_1_1_modifier.html#aae3ed080a4bea3c00823c8144deb2bda", null ],
+      [ "SetConnectionStyle", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base_1_1_modifier.html#a858178f4335cc22ba2e413d89e267820", null ],
       [ "SetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base_1_1_modifier.html#ad1c90870df8ab28c8ca13067e933a66b", null ],
       [ "SetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base_1_1_modifier.html#ae5df7a6e974d9a491061ca4027225742", null ],
       [ "SetShape", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_base_1_1_modifier.html#ab08190c3761960f9cb48248c0d4a1460", null ],
@@ -702,6 +825,7 @@ var group___m_e_p =
     ] ],
     [ "ACAPI::MEP::PortDefaultBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html", [
       [ "PortDefaultBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html#aa3fa3b649023533954337e0eaaf130fa", null ],
+      [ "GetConnectionStyle", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html#abb6355bdcb9fa6c7954c624d41f5df0d", null ],
       [ "GetDomain", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html#ae3b904c39047bc290b2c21d9c67793d2", null ],
       [ "GetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html#a61ff15e931882cc343aa147af2974cad", null ],
       [ "GetName", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base.html#aef5110372a07ece341e490b7f446de5d", null ],
@@ -711,6 +835,7 @@ var group___m_e_p =
     ] ],
     [ "ACAPI::MEP::PortDefaultBase::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base_1_1_modifier.html", [
       [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base_1_1_modifier.html#aada7e98c401ab0e08ed3a336bccd3a05", null ],
+      [ "SetConnectionStyle", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base_1_1_modifier.html#a0c3a8e3a18f5c8d28131ddc364dbd48b", null ],
       [ "SetMEPSystem", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base_1_1_modifier.html#a9150c4e20850f7ed52df1299a83b16be", null ],
       [ "SetShape", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base_1_1_modifier.html#ae389f848690378c231f73546ffc0f9f5", null ],
       [ "SetWidth", "class_a_c_a_p_i_1_1_m_e_p_1_1_port_default_base_1_1_modifier.html#afd8831aff3c21f611b6f9ac4b67daea1", null ]
@@ -1053,15 +1178,18 @@ var group___m_e_p =
       [ "UniqueID", "group___m_e_p.html#ga9ee57b54f3906f4cbdaa66f33f312fbd", null ]
     ] ],
     [ "ACAPI::MEP::VentilationPort", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port.html", [
+      [ "GetFlangeSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port.html#a41a0dc209ca34b14fe37b4343b36ce78", null ],
       [ "GetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port.html#a0e3afb5caf1eab6ccf2b1120db7c92b3", null ],
       [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port.html#a576629890c106185a98e44c9f733c4bb", null ],
       [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port.html#aedb9c88358186d3fa7f253a11dfab11b", null ]
     ] ],
     [ "ACAPI::MEP::VentilationPort::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_1_1_modifier.html", [
+      [ "SetFlangeSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_1_1_modifier.html#a99c172817b10dfca424b36ba7438599b", null ],
       [ "SetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_1_1_modifier.html#a2c326f8b4f8e8b5e068a13024a120ade", null ],
       [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_1_1_modifier.html#a0c61bacb7aa137ca22a503a89b9eaaa8", null ]
     ] ],
     [ "ACAPI::MEP::VentilationPortDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default.html", [
+      [ "GetFlangeSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default.html#aabf66fe97e453a21908a7929fe0fdcda", null ],
       [ "GetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default.html#a63742618f361c14f635dbbdc1934287c", null ],
       [ "GetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default.html#aa484ef2b3ef1c7cb02540231b7848757", null ],
       [ "GetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default.html#a68e5769090749f5eb095b2cc87c8c4d0", null ],
@@ -1069,6 +1197,7 @@ var group___m_e_p =
     ] ],
     [ "ACAPI::MEP::VentilationPortDefault::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default_1_1_modifier.html", [
       [ "Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default_1_1_modifier.html#a12f3b4cd8f57f61374a3da368b6c6620", null ],
+      [ "SetFlangeSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default_1_1_modifier.html#a940e57a2d89e75ca3112fee375245825", null ],
       [ "SetFlowDirection", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default_1_1_modifier.html#ad7d4eb4df2e5dd35e63ecf676d77e114", null ],
       [ "SetHeight", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default_1_1_modifier.html#a15c6c03ed5c9ee51361434c452889e2c", null ],
       [ "SetWallThickness", "class_a_c_a_p_i_1_1_m_e_p_1_1_ventilation_port_default_1_1_modifier.html#a413d623e0e1397b807d7a4489d47661b", null ]
@@ -1142,6 +1271,10 @@ var group___m_e_p =
     [ "ACAPI::MEP::CreateDistributionSystemsGraph", "group___m_e_p.html#gaab4b8751e085dc8f55fa949f471be04d", null ],
     [ "ACAPI::MEP::CreateElbowDefault", "group___m_e_p.html#gaa5495229fc6d92493bb7e19a44a77304", null ],
     [ "ACAPI::MEP::CreateElbowUIManager", "group___m_e_p.html#ga6da0051475f83b0344a4d9396d5bbc8e", null ],
+    [ "ACAPI::MEP::CreateElectricalDeviceDefault", "group___m_e_p.html#gab250b6e99c6e7b807fab871f67cdad24", null ],
+    [ "ACAPI::MEP::CreateElectricalDeviceDefault", "group___m_e_p.html#ga3ba0a0a363e28acd85f8629cf54e99e0", null ],
+    [ "ACAPI::MEP::CreateElectricalPanelDefault", "group___m_e_p.html#gae41aac9ff770c57cfcdd2e7eec242a6f", null ],
+    [ "ACAPI::MEP::CreateElectricalPanelDefault", "group___m_e_p.html#ga004ea71115592b23a721d7fd71bf21d4", null ],
     [ "ACAPI::MEP::CreateElementUIManager", "group___m_e_p.html#ga3ae840b4b7473fc34a748f65aa2d7d62", null ],
     [ "ACAPI::MEP::CreateEquipmentDefault", "group___m_e_p.html#gab5a4d1ab9ef8d64e23d11f6809a0f8bd", null ],
     [ "ACAPI::MEP::CreateEquipmentDefault", "group___m_e_p.html#ga688f5ba2d4a24ffdd8e6603283f9fbad", null ],
@@ -1178,6 +1311,7 @@ var group___m_e_p =
     [ "ACAPI::MEP::GetDuctReferenceSet", "group___m_e_p.html#ga2d2774f10ddc964295a293b8bbe7664e", null ],
     [ "ACAPI::MEP::GetDuctSegmentPreferenceTableContainer", "group___m_e_p.html#ga4b287656739f8d5ac4f24f67bd4eb09d", null ],
     [ "ACAPI::MEP::GetDuctTransitionPreferenceTableContainer", "group___m_e_p.html#gaf38e3294d5fef99e332dd197380761e8", null ],
+    [ "ACAPI::MEP::GetElectricalProjectSettings", "group___m_e_p.html#gaeee3af872f0ecf89b7b4a2dab89ca4f4", null ],
     [ "ACAPI::MEP::GetMEPModelCheckTypeId", "group___m_e_p.html#ga4798dd6eabb715dc5b76f9977190ff5d", null ],
     [ "ACAPI::MEP::GetPipeAngleSet", "group___m_e_p.html#gafcca214a7327e11acc310237d7ad555d", null ],
     [ "ACAPI::MEP::GetPipeBranchPreferenceTableContainer", "group___m_e_p.html#ga1abe701eb1a2dc3d32c090d86668edb9", null ],
@@ -1190,6 +1324,9 @@ var group___m_e_p =
     [ "ACAPI::MEP::IsBranch", "group___m_e_p.html#gaed05bc076db8f741a153d2384050def5", null ],
     [ "ACAPI::MEP::IsCableCarrier", "group___m_e_p.html#gae3e57f2fa9ae10a73398e012d6e5d580", null ],
     [ "ACAPI::MEP::IsElbow", "group___m_e_p.html#ga502d7d2bc624fb9661ad5b4ebf0a45b6", null ],
+    [ "ACAPI::MEP::IsElectricalCircuit", "group___m_e_p.html#ga05a374d5d6d462f3a521c42e36c6a9a1", null ],
+    [ "ACAPI::MEP::IsElectricalDevice", "group___m_e_p.html#gab8ba124600a9fe10fc19510fc157b7d8", null ],
+    [ "ACAPI::MEP::IsElectricalPanel", "group___m_e_p.html#gadb1743c35e060bb0e5e312f499a7b055", null ],
     [ "ACAPI::MEP::IsEquipment", "group___m_e_p.html#ga356117d3eed59da90ba66e4d780df198", null ],
     [ "ACAPI::MEP::IsFitting", "group___m_e_p.html#ga1fcf9461b2c2d03209fd7f32c48f937d", null ],
     [ "ACAPI::MEP::IsFlexibleSegment", "group___m_e_p.html#gad68cd3d9c0f4b3755cc3fca8d47bbd87", null ],

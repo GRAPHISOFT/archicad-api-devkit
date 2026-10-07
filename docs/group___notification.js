@@ -58,6 +58,7 @@ var group___notification =
       [ "NotifyMarqueeEvent", "class_a_p_i___i_a_c_event_notifier.html#a2c0e7a987ad25c9424c15b09c2e8601d", null ],
       [ "NotifyPropertyDefinitionChanges", "class_a_p_i___i_a_c_event_notifier.html#a381693146fa60063e5ef5c9f4e44c124", null ],
       [ "NotifyPropertyGroupChanges", "class_a_p_i___i_a_c_event_notifier.html#aff663d351b1201db4dc6fb911d6a294c", null ],
+      [ "NotifyView3DSettingsEvent", "class_a_p_i___i_a_c_event_notifier.html#a3d2054d8e8966959a46340db883d84a6", null ],
       [ "NotifyWindowChanges", "class_a_p_i___i_a_c_event_notifier.html#acb72c81957559f6c6599c3901fec6ba9", null ]
     ] ],
     [ "API_IEventHandler", "class_a_p_i___i_event_handler.html", [
@@ -116,6 +117,12 @@ var group___notification =
       [ "OnWindowBroughtForward", "class_a_p_i___i_window_event_handler.html#a820daa33863d227cccdc2a3d69d1f5e5", null ],
       [ "OnWindowSentBackward", "class_a_p_i___i_window_event_handler.html#afbc10410c92306ea22e8e47203973b38", null ]
     ] ],
+    [ "API_IView3DSettingsEventHandler", "class_a_p_i___i_view3_d_settings_event_handler.html", [
+      [ "Dispatch", "class_a_p_i___i_view3_d_settings_event_handler.html#a1314d16ee105954e7a132a08286af371", null ],
+      [ "GetName", "class_a_p_i___i_view3_d_settings_event_handler.html#a5dddcc99aa142772041e00b359d387f9", null ],
+      [ "View3DSettingsChanged", "class_a_p_i___i_view3_d_settings_event_handler.html#a0ee544e0b0ea30f82a9c6919e2313e49", null ],
+      [ "View3DSettingsChangedInNavigation", "class_a_p_i___i_view3_d_settings_event_handler.html#af5329715abbb45ef15f5c35aabd8b18f", null ]
+    ] ],
     [ "API_ActTranPars", "struct_a_p_i___act_tran_pars.html", [
       [ "rotAxis", "struct_a_p_i___act_tran_pars.html#a94cee5776164ff23ee7412da68ebe58b", null ],
       [ "sectionLineDir", "struct_a_p_i___act_tran_pars.html#afacdb974a044909e50f8d380ccd05be7", null ],
@@ -140,7 +147,23 @@ var group___notification =
     [ "APISelectionChangeHandlerProc", "group___notification.html#ga36fda8d571836dc69959886ed2ad9fcc", null ],
     [ "APIToolChangeHandlerProc", "group___notification.html#ga820d0daea369f42ca34377a75aa57d01", null ],
     [ "APIViewEventHandlerProc", "group___notification.html#ga1e4676ac7d71338b21c9337f6dc4fbd8", null ],
-    [ "API_ElementDBEventID", "group___element.html#ga9675062b3ddbdebd35b12603913af9d4", null ],
+    [ "API_ElementDBEventID", "group___element.html#ga9675062b3ddbdebd35b12603913af9d4", [
+      [ "APINotifyElement_BeginEvents", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4a6b1f73c6107bc9254bf60f3538b09ddb", null ],
+      [ "APINotifyElement_EndEvents", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4a5b6f6aefbce1992414b8cf14b8eb9464", null ],
+      [ "APINotifyElement_New", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4a1e289ad174e74064d477d24b4c1b68fc", null ],
+      [ "APINotifyElement_Copy", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4a1dc2d278e3eca34ae1c1487a6feef7fd", null ],
+      [ "APINotifyElement_Change", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4ad7e56013d70f0ca8a7368a5b5e7f412b", null ],
+      [ "APINotifyElement_Edit", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4ad62df67f4e4dc26e25c5083296a2d52d", null ],
+      [ "APINotifyElement_Delete", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4a09b5a40fce03ec3d41676fdcc2cae11b", null ],
+      [ "APINotifyElement_Undo_Created", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4a3acc3e69091f8434147dc37df4786402", null ],
+      [ "APINotifyElement_Undo_Modified", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4ad8826f5793f3a918ed097d6ca90243be", null ],
+      [ "APINotifyElement_Undo_Deleted", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4acd1f095b82b052fa69e70e50c32f8cff", null ],
+      [ "APINotifyElement_Redo_Created", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4a379a625dbcee72d89931f8be9d5c64be", null ],
+      [ "APINotifyElement_Redo_Modified", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4ac9e2e5f7a25c5016d0b34425f734586b", null ],
+      [ "APINotifyElement_Redo_Deleted", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4a5c7f2fa42cfa692ed33c42dba9dbbd9f", null ],
+      [ "APINotifyElement_PropertyValueChange", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4ada38ed556b57b12448b45795c27783c3", null ],
+      [ "APINotifyElement_ClassificationChange", "group___element.html#gga9675062b3ddbdebd35b12603913af9d4ac00e4b784c4d895180a57a73e23021e1", null ]
+    ] ],
     [ "API_NavigatorMapID", "group___notification.html#ga34db1cfa084cd90d24e4268e43e176fe", [
       [ "API_UndefinedMap", "group___notification.html#gga34db1cfa084cd90d24e4268e43e176fea88c928007495f8695499da8b43f2f4e8", null ],
       [ "API_ProjectMap", "group___notification.html#gga34db1cfa084cd90d24e4268e43e176fea49829c71dcb435f3348b506c6f4e6017", null ],
@@ -149,8 +172,42 @@ var group___notification =
       [ "API_LayoutMap", "group___notification.html#gga34db1cfa084cd90d24e4268e43e176fea5d0c6bd6742dcaf157e1d91b3763f13b", null ],
       [ "API_PublisherSets", "group___notification.html#gga34db1cfa084cd90d24e4268e43e176fea0a953445eeb4b0fec45a8a07e5fe918b", null ]
     ] ],
-    [ "API_NotifyEventID", "group___project_operation.html#ga53738527de6fe0daccedd7f9cb9ff81c", null ],
-    [ "API_NotifyViewEventID", "group___project_operation.html#ga70f285687b4cdb6d2ba04490923234ff", null ],
+    [ "API_NotifyEventID", "group___project_operation.html#ga53738527de6fe0daccedd7f9cb9ff81c", [
+      [ "APINotify_New", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca947c3db4033fc235500de01bb255cea7", null ],
+      [ "APINotify_NewAndReset", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca80c64a432b3612723798505eafcba957", null ],
+      [ "APINotify_Open", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca44bcad20b3de40164bd9609cfb407ad2", null ],
+      [ "APINotify_PreSave", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca5061f4a73a860bc7cc6c785a363fac97", null ],
+      [ "APINotify_Save", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca1215bd22fe8cb03111c8495dd57688b5", null ],
+      [ "APINotify_Close", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca29c0820cf7d6153d31d2e6a0bfab78b5", null ],
+      [ "APINotify_Quit", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca93f511732da8001bdda37bbbe94e018a", null ],
+      [ "APINotify_TempSave", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81cae2e026851ce5fc3b0bacff4de9d18371", null ],
+      [ "APINotify_SendChanges", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca40ab233673c369fe683929fd980737a9", null ],
+      [ "APINotify_ReceiveChanges", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81cad0e01ad7e47a3d562e6ac7a9e5b80fc7", null ],
+      [ "APINotify_ChangeProjectDB", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81cafbf0bc4543fd9f8e55acd7c4f80b5012", null ],
+      [ "APINotify_ChangeWindow", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca7c74d741ac3a6da2cf9d23b1bf60ca9c", null ],
+      [ "APINotify_ChangeFloor", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca86230c4059a918142236507a41da4d81", null ],
+      [ "APINotify_ChangeLibrary", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca1e3e99b9a6cf630a599633c2e79770fa", null ],
+      [ "APINotify_AllInputFinished", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca5dea68ad4bdb3fd723d42e7c7545d6fe", null ],
+      [ "APINotify_UnitChanged", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca91069c374e6d92491e13ea700211cdc8", null ],
+      [ "APINotify_SideviewCreated", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca81a7bd9a4f4cf427457ed71f49bef1f2", null ],
+      [ "APINotify_SideviewRebuilt", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca791dfede7118c34871cfd74209248ec8", null ],
+      [ "APINotify_PropertyVisibilityChanged", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca6a777ec39ffd151d4788ef4f0d7a2cfd", null ],
+      [ "APINotify_ClassificationVisibilityChanged", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca52bafea1c6ff6d070b266a2a5251c43a", null ],
+      [ "APINotify_ShowIn3DChanged", "group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81cad83107916acdc97c498d55d6a1af7845", null ]
+    ] ],
+    [ "API_NotifyViewEventID", "group___project_operation.html#ga70f285687b4cdb6d2ba04490923234ff", [
+      [ "APINotifyView_Inserted", "group___project_operation.html#gga70f285687b4cdb6d2ba04490923234ffa0c1105c08e7be65388c15d76260afede", null ],
+      [ "APINotifyView_Modified", "group___project_operation.html#gga70f285687b4cdb6d2ba04490923234ffab147be5a969505828ef268e885b8ba6a", null ],
+      [ "APINotifyView_Deleted", "group___project_operation.html#gga70f285687b4cdb6d2ba04490923234ffacb0c1fa45243f681bdfee6a98e18600e", null ],
+      [ "APINotifyView_Opened", "group___project_operation.html#gga70f285687b4cdb6d2ba04490923234ffa3ed60b1de922d2f436397471bce7f1eb", null ],
+      [ "APINotifyView_Begin", "group___project_operation.html#gga70f285687b4cdb6d2ba04490923234ffa71fd52543475fac151a5ab27dc79e9b2", null ],
+      [ "APINotifyView_End", "group___project_operation.html#gga70f285687b4cdb6d2ba04490923234ffa4335131f8aec79b18a2b70eea2340ea4", null ]
+    ] ],
+    [ "API_NotifyWindowEventID", "group___notification.html#ga364db38089d40f7818ae1ebf0eeab308", [
+      [ "APINotifyWindow_Rebuild", "group___notification.html#gga364db38089d40f7818ae1ebf0eeab308a90b88837a58072d1a9db1bf2c321d881", null ],
+      [ "APINotifyWindow_Activate", "group___notification.html#gga364db38089d40f7818ae1ebf0eeab308a103838960cc13309db34f66419291485", null ],
+      [ "APINotifyWindow_Close", "group___notification.html#gga364db38089d40f7818ae1ebf0eeab308a26c43ec94f3f61f73ea7073f93a2bf41", null ]
+    ] ],
     [ "ACAPI_Element_AttachObserver", "group___element.html#ga4e7696dc5135c83ca77fc0c076222adf", null ],
     [ "ACAPI_Element_CatchChangeDefaults", "group___element.html#ga768940c37ff87f92dce41b8c138476dc", null ],
     [ "ACAPI_Element_CatchNewElement", "group___element.html#gaa640b4d073a2e78c2eb83fe351def4ae", null ],

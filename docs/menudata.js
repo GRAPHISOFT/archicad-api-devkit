@@ -25,11 +25,11 @@
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
 {text:"Introductory material",url:"usergroup0.html",children:[
-{text:"General API Development Kit 29",url:"_dev_kit.html"},
+{text:"General API Development Kit 30",url:"_dev_kit.html"},
 {text:"API White Paper",url:"apiwhitepaper.html"},
 {text:"API Compatibility",url:"apicompatibility.html"},
 {text:"License Agreement",url:"_license_agreement.html"},
-{text:"New API features in Archicad 29",url:"newfeatures.html"},
+{text:"New API features in Archicad 30",url:"newfeatures.html"},
 {text:"Registration",url:"_registration.html"}]},
 {text:"Technical introduction",url:"usergroup1.html",children:[
 {text:"Control the Load/Unload Mechanism",url:"_load_unload.html"},
@@ -37,13 +37,15 @@ var menudata={children:[
 {text:"Error Codes",url:"_error_codes.html"},
 {text:"FAQ",url:"_f_a_q.html"},
 {text:"GSRoot and STL analogies",url:"gsroot.html"},
+{text:"Unicode String Handling",url:"unicodestringhandling.html"},
 {text:"Modeless Palettes",url:"_modeless_palettes.html"},
 {text:"Own Data Saved into the Database",url:"_own_data.html"},
 {text:"Required functions",url:"_required_functions.html"},
 {text:"Required resources",url:"_required_resources.html"},
 {text:"Add-On Management",url:"_tools__add_on_management.html"},
 {text:"Library Part Subtypes",url:"_subtypes.html"},
-{text:"Dark mode icon generation",url:"darkicongeneration.html"}]},
+{text:"Dark mode icon generation",url:"darkicongeneration.html"},
+{text:"Using the HTTPClient module",url:"httpclientmodule.html"}]},
 {text:"Topics",url:"topics.html"},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},
@@ -97,6 +99,7 @@ var menudata={children:[
 {text:"s",url:"functions_func_s.html#index_s"},
 {text:"t",url:"functions_func_t.html#index_t"},
 {text:"u",url:"functions_func_u.html#index_u"},
+{text:"v",url:"functions_func_v.html#index_v"},
 {text:"w",url:"functions_func_w.html#index_w"},
 {text:"~",url:"functions_func_~.html#index__7E"}]},
 {text:"Variables",url:"functions_vars.html",children:[

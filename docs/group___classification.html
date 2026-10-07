@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Classification Manager</title>
+<title>Archicad 30 C++ API: Classification Manager</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -147,14 +147,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga1636a3d12069af9ff233bc79e797acef" id="r_ga1636a3d12069af9ff233bc79e797acef"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1636a3d12069af9ff233bc79e797acef">API_ClassificationSystemNameConflictResolutionPolicy</a> { <b>API_MergeConflictingSystems</b>
-, <b>API_ReplaceConflictingSystems</b>
-, <b>API_SkipConflictingSystems</b>
+<tr class="memitem:ga1636a3d12069af9ff233bc79e797acef" id="r_ga1636a3d12069af9ff233bc79e797acef"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1636a3d12069af9ff233bc79e797acef">API_ClassificationSystemNameConflictResolutionPolicy</a> { <a class="el" href="#gga1636a3d12069af9ff233bc79e797acefa75f5ed358ace3ebe549e63ec874c2b6c">API_MergeConflictingSystems</a>
+, <a class="el" href="#gga1636a3d12069af9ff233bc79e797acefa94ed0016d4ac6ff0426587d05ec2472b">API_ReplaceConflictingSystems</a>
+, <a class="el" href="#gga1636a3d12069af9ff233bc79e797acefa0e9a1e4868079e416eec804754f6a063">API_SkipConflictingSystems</a>
  }</td></tr>
 <tr class="memdesc:ga1636a3d12069af9ff233bc79e797acef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum used by <a class="el" href="#ga949e7d19b4ce4763a0ea6db30b958a39">ACAPI_Classification_Import</a>.  <a href="#ga1636a3d12069af9ff233bc79e797acef">More...</a><br /></td></tr>
 <tr class="separator:ga1636a3d12069af9ff233bc79e797acef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga46c6e5af9d7f48a5bc6d76b0055c020c" id="r_ga46c6e5af9d7f48a5bc6d76b0055c020c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga46c6e5af9d7f48a5bc6d76b0055c020c">API_ClassificationItemNameConflictResolutionPolicy</a> { <b>API_ReplaceConflictingItems</b>
-, <b>API_SkipConflicitingItems</b>
+<tr class="memitem:ga46c6e5af9d7f48a5bc6d76b0055c020c" id="r_ga46c6e5af9d7f48a5bc6d76b0055c020c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga46c6e5af9d7f48a5bc6d76b0055c020c">API_ClassificationItemNameConflictResolutionPolicy</a> { <a class="el" href="#gga46c6e5af9d7f48a5bc6d76b0055c020ca6eb82c5d1847632af174303271eaa78c">API_ReplaceConflictingItems</a>
+, <a class="el" href="#gga46c6e5af9d7f48a5bc6d76b0055c020caa84a6d304a9f0f8a48f49e940f43c346">API_SkipConflicitingItems</a>
  }</td></tr>
 <tr class="memdesc:ga46c6e5af9d7f48a5bc6d76b0055c020c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum used by <a class="el" href="#ga949e7d19b4ce4763a0ea6db30b958a39">ACAPI_Classification_Import</a>.  <a href="#ga46c6e5af9d7f48a5bc6d76b0055c020c">More...</a><br /></td></tr>
 <tr class="separator:ga46c6e5af9d7f48a5bc6d76b0055c020c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,7 +247,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enum used by <a class="el" href="#ga949e7d19b4ce4763a0ea6db30b958a39">ACAPI_Classification_Import</a>. </p>
-<dl class="section since"><dt>Since</dt><dd>Archicad 20 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga46c6e5af9d7f48a5bc6d76b0055c020ca6eb82c5d1847632af174303271eaa78c" name="gga46c6e5af9d7f48a5bc6d76b0055c020ca6eb82c5d1847632af174303271eaa78c"></a>API_ReplaceConflictingItems&#160;</td><td class="fielddoc"><p>Replace the item in the plan with the imported one </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga46c6e5af9d7f48a5bc6d76b0055c020caa84a6d304a9f0f8a48f49e940f43c346" name="gga46c6e5af9d7f48a5bc6d76b0055c020caa84a6d304a9f0f8a48f49e940f43c346"></a>API_SkipConflicitingItems&#160;</td><td class="fielddoc"><p>Keep the item in the plan intact, and discard the imported one </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -264,7 +269,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enum used by <a class="el" href="#ga949e7d19b4ce4763a0ea6db30b958a39">ACAPI_Classification_Import</a>. </p>
-<dl class="section since"><dt>Since</dt><dd>Archicad 20 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1636a3d12069af9ff233bc79e797acefa75f5ed358ace3ebe549e63ec874c2b6c" name="gga1636a3d12069af9ff233bc79e797acefa75f5ed358ace3ebe549e63ec874c2b6c"></a>API_MergeConflictingSystems&#160;</td><td class="fielddoc"><p>Merge the conflicting systems </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1636a3d12069af9ff233bc79e797acefa94ed0016d4ac6ff0426587d05ec2472b" name="gga1636a3d12069af9ff233bc79e797acefa94ed0016d4ac6ff0426587d05ec2472b"></a>API_ReplaceConflictingSystems&#160;</td><td class="fielddoc"><p>Replace the system in the plan with the imported one </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1636a3d12069af9ff233bc79e797acefa0e9a1e4868079e416eec804754f6a063" name="gga1636a3d12069af9ff233bc79e797acefa0e9a1e4868079e416eec804754f6a063"></a>API_SkipConflictingSystems&#160;</td><td class="fielddoc"><p>Keep the system in the plan intact, and discard the imported one </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -292,7 +304,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOACCESSRIGHT - Don't have the right to modify a classification item in this plan.</li>
 <li>APIERR_BADID - The item.guid does not refer to a valid classification item.</li>
 <li>APIERR_READONLY - The referenced classification item can not be modified (i.e. comes from a hotlink).</li>
@@ -326,7 +338,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOACCESSRIGHT - Don't have the right to modify a classification system in this plan.</li>
 <li>APIERR_BADID - The guid of the system parameter does not refer to a valid classification system.</li>
 <li>APIERR_READONLY - The referenced classification system can not be modified (i.e. comes from a hotlink).</li>
@@ -378,7 +390,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOACCESSRIGHT - Don't have the right to create a classification item in this plan.</li>
 <li>APIERR_BADID - One of the parameter guids did not refer to a valid object.</li>
 <li>APIERR_BADPARS - The given parent item is in a different system or the given next item is not on the same level as the item to be created.</li>
@@ -412,7 +424,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOACCESSRIGHT - Don't have the right to create a classification system in this plan.</li>
 <li>APIERR_BADNAME - The name field of the system is not a valid name for a classification system (i.e. empty string).</li>
 <li>APIERR_NAMEALREADYUSED - The name field of the system is already used as a classification system name in the current plan with the same edition version.</li>
@@ -445,7 +457,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOACCESSRIGHT - Don't have the right to delete a classification item in this plan.</li>
 <li>APIERR_BADID - The guid of the item parameter does not refer to a valid classification.</li>
 <li>APIERR_READONLY - The referenced classification item can not be deleted (i.e. comes from a hotlink). </li>
@@ -477,7 +489,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOACCESSRIGHT - Don't have the right to delete a classification system in this plan.</li>
 <li>APIERR_BADID - The systemGuid parameter does not refer to a valid classification system.</li>
 <li>APIERR_READONLY - The referenced classification system can not be deleted (i.e. comes from a hotlink). </li>
@@ -509,7 +521,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The item.guid did not refer to a valid classification item. </li>
 </ul>
 </dd></dl>
@@ -544,7 +556,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The itemGuid did not refer to a valid classification item. </li>
 </ul>
 </dd></dl>
@@ -579,7 +591,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The itemGuid did not refer to a valid classification item. </li>
 </ul>
 </dd></dl>
@@ -614,7 +626,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The itemGuid did not refer to a valid classification item. </li>
 </ul>
 </dd></dl>
@@ -644,7 +656,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The system.guid is not null and did not refer to a valid classification system or the system.name and system.editionVersion together did not refer to a valid classification system. </li>
 </ul>
 </dd></dl>
@@ -679,7 +691,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The systemGuid did not refer to a valid classification system. </li>
 </ul>
 </dd></dl>
@@ -709,7 +721,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 
@@ -760,14 +772,14 @@ Functions</h2></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">API_ReplaceConflictingItems   </td><td class="markdownTableBodyNone">Replace the item in the plan with the imported one    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">API_SkipConflicitingItems   </td><td class="markdownTableBodyNone">Keep the item in the plan intact, and discard the imported one   </td></tr>
+<td class="markdownTableBodyNone">API_SkipConflictingItems   </td><td class="markdownTableBodyNone">Keep the item in the plan intact, and discard the imported one   </td></tr>
 </table>
 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - Invalid classification XML. </li>
 </ul>
 </dd></dl>
@@ -808,7 +820,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The elemGuid did not refer to a valid element or systemGuid did not refer to a valid classification system. </li>
 </ul>
 </dd></dl>
@@ -850,7 +862,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The type did not refer to a valid default element or systemGuid did not refer to a valid classification system. </li>
 </ul>
 </dd></dl>
@@ -886,7 +898,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The elemGuid did not refer to a valid element. </li>
 </ul>
 </dd></dl>
@@ -922,7 +934,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The type did not refer to a valid default element. </li>
 </ul>
 </dd></dl>
@@ -1058,7 +1070,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The elemGuid did not refer to a valid element or itemGuid did not refer to a valid classification item.</li>
 <li>APIERR_BADPARS - The element did not have the specified classification.</li>
 <li>APIERR_READONLY - The element can not be modified (i.e. from a hotlink) or you do not have the right to remove classifications from elements in the current teamwork plan. </li>
@@ -1096,7 +1108,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The type did not refer to a valid default element or itemGuid did not refer to a valid classification item.</li>
 <li>APIERR_BADPARS - The element did not have the specified classification.</li>
 <li>APIERR_READONLY - The element can not be modified (i.e. from a hotlink) or you do not have the right to remove classifications from elements in the current teamwork plan. </li>

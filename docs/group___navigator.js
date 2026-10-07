@@ -363,7 +363,14 @@ var group___navigator =
       [ "API_BuildingMaterialID", "group___navigator.html#gga1ced849eced2cac8366a288bccabb874a656b69aa6acd357a86404bcbd2eb719f", null ],
       [ "API_LastAttributeID", "group___navigator.html#gga1ced849eced2cac8366a288bccabb874afe026833695a1db4ec7f1b1eb59c4a30", null ]
     ] ],
-    [ "API_ExtraAccuracyID", "group___navigator.html#ga897eb1598d6e884f3f8e66afc3ffdc16", null ],
+    [ "API_ExtraAccuracyID", "group___navigator.html#ga897eb1598d6e884f3f8e66afc3ffdc16", [
+      [ "APIExtAc_Off", "group___navigator.html#gga897eb1598d6e884f3f8e66afc3ffdc16a514feae82b38e8f8dfb47daf68fdbe7b", null ],
+      [ "APIExtAc_Small5", "group___navigator.html#gga897eb1598d6e884f3f8e66afc3ffdc16a329e2afc077407f57e63dc564a11af6c", null ],
+      [ "APIExtAc_Small25", "group___navigator.html#gga897eb1598d6e884f3f8e66afc3ffdc16acc1f72a78cc00a4712da561d8a018a7c", null ],
+      [ "APIExtAc_Small1", "group___navigator.html#gga897eb1598d6e884f3f8e66afc3ffdc16a957519376f4aa18dcea1658c9ea691b8", null ],
+      [ "APIExtAc_Small01", "group___navigator.html#gga897eb1598d6e884f3f8e66afc3ffdc16a622eba3f2d254816b1e9b633bc723c9b", null ],
+      [ "APIExtAc_Fractions", "group___navigator.html#gga897eb1598d6e884f3f8e66afc3ffdc16a7181d65d54dd7dceeedebdaab7d6ee5b", null ]
+    ] ],
     [ "API_LengthTypeID", "group___navigator.html#ga7573cb9469a0f3ace836a5c43ca74383", [
       [ "API_LengthTypeID::Meter", "group___navigator.html#gga7573cb9469a0f3ace836a5c43ca74383a17c9c40b9db5a0983d1075a012c1f90a", null ],
       [ "API_LengthTypeID::Decimeter", "group___navigator.html#gga7573cb9469a0f3ace836a5c43ca74383aa49e07cc21f18abce1bf63713ff879ba", null ],

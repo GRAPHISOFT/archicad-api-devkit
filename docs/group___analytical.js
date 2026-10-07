@@ -315,17 +315,36 @@ var group___analytical =
       [ "API_AnalyticalAlignmentType::BottomRight", "group___analytical.html#gga6cc0a2d61a7dee290c7bd40a9b0dedd0a9146bfc669fddc88db2c4d89297d0e9a", null ],
       [ "API_AnalyticalAlignmentType::None", "group___analytical.html#gga6cc0a2d61a7dee290c7bd40a9b0dedd0a6adf97f83acf6453d4a6a4b1070f3754", null ]
     ] ],
-    [ "API_AnalyticalCoordSysDirection", "group___analytical.html#gabfc8f7ba3c961d826bcb421ed7706f5e", null ],
+    [ "API_AnalyticalCoordSysDirection", "group___analytical.html#gabfc8f7ba3c961d826bcb421ed7706f5e", [
+      [ "API_Global", "group___analytical.html#ggabfc8f7ba3c961d826bcb421ed7706f5ead26d1149d1c402bf8db0618e411ae931", null ],
+      [ "API_Local", "group___analytical.html#ggabfc8f7ba3c961d826bcb421ed7706f5ea92ade72cbda19b7118f49a3e6319017a", null ]
+    ] ],
     [ "API_AnalyticalCrossSectionType", "group___analytical.html#ga7cfdaf743ed52b75b77409ce58597613", [
       [ "API_CrossSection_Rectangle", "group___analytical.html#gga7cfdaf743ed52b75b77409ce58597613a718d53be921de1808a5e9ad59203f64c", null ],
       [ "API_CrossSection_Circle", "group___analytical.html#gga7cfdaf743ed52b75b77409ce58597613a1944696cacb278472f8a83fe8fa0ea3a", null ],
       [ "API_CrossSection_Attribute", "group___analytical.html#gga7cfdaf743ed52b75b77409ce58597613a7384413a93aebfe0eb6ab7dbbb563dc8", null ],
       [ "API_CrossSection_Custom", "group___analytical.html#gga7cfdaf743ed52b75b77409ce58597613a3bc5403d49fb93cf27e59c37093ab134", null ]
     ] ],
-    [ "API_AnalyticalLink_LinkGeometry", "group___analytical.html#gaa8d064ba190d79d46eaa44c79d7a1c88", null ],
-    [ "API_AnalyticalLink_LinkType", "group___analytical.html#ga6ea4ed42c89db450c6b030edd9e62790", null ],
-    [ "API_AnalyticalLink_RigidLinkConnectionType", "group___analytical.html#gaabfffa8686944db7988b0c494ee42a8f", null ],
-    [ "API_AnalyticalLoad_LoadDistributionType", "group___analytical.html#gaa4312b7c9975a8aac76ced55f2d8d85e", null ],
+    [ "API_AnalyticalLink_LinkGeometry", "group___analytical.html#gaa8d064ba190d79d46eaa44c79d7a1c88", [
+      [ "API_Link1D", "group___analytical.html#ggaa8d064ba190d79d46eaa44c79d7a1c88a7d859c33df4932d95673587b0ebb6891", null ],
+      [ "API_Link2D", "group___analytical.html#ggaa8d064ba190d79d46eaa44c79d7a1c88a8099dc852b58424261308229588e0733", null ]
+    ] ],
+    [ "API_AnalyticalLink_LinkType", "group___analytical.html#ga6ea4ed42c89db450c6b030edd9e62790", [
+      [ "API_Rigid", "group___analytical.html#gga6ea4ed42c89db450c6b030edd9e62790a4d3071cf1f3937c3a68aaef4bc4f38b1", null ],
+      [ "API_Spring", "group___analytical.html#gga6ea4ed42c89db450c6b030edd9e62790ac910bc0d4b4e1a77535e0e0275c25f3a", null ]
+    ] ],
+    [ "API_AnalyticalLink_RigidLinkConnectionType", "group___analytical.html#gaabfffa8686944db7988b0c494ee42a8f", [
+      [ "API_RigidConnection", "group___analytical.html#ggaabfffa8686944db7988b0c494ee42a8faa271b240a9c8a3c05f61ad96e4a9993b", null ],
+      [ "API_HingeConnection", "group___analytical.html#ggaabfffa8686944db7988b0c494ee42a8fa22421d75ed0d89f3ca7a2a79a092fc81", null ]
+    ] ],
+    [ "API_AnalyticalLoad_LoadDistributionType", "group___analytical.html#gaa4312b7c9975a8aac76ced55f2d8d85e", [
+      [ "API_Uniform", "group___analytical.html#ggaa4312b7c9975a8aac76ced55f2d8d85ea14ae9b998f196874082a90118fda96e1", null ],
+      [ "API_Trapezoid", "group___analytical.html#ggaa4312b7c9975a8aac76ced55f2d8d85ea270b0a0a8c79a02967526007b2445549", null ]
+    ] ],
+    [ "API_AnalyticalLoad_LoadForceType", "group___analytical.html#ga7c71f0fdd8378f80ea2830b7f8ff885e", [
+      [ "API_Force", "group___analytical.html#gga7c71f0fdd8378f80ea2830b7f8ff885ead2471b8189beb0b54c340e9ae929f746", null ],
+      [ "API_Moment", "group___analytical.html#gga7c71f0fdd8378f80ea2830b7f8ff885ea07718db5cebc733b5a1ad1c42be1a6f3", null ]
+    ] ],
     [ "API_AnalyticalLoadCaseActionType", "group___analytical.html#ga015dbc3fa43c22203bc2733ad51ab947", [
       [ "API_AnalyticalLoadCase_PermanentAction", "group___analytical.html#gga015dbc3fa43c22203bc2733ad51ab947a211b7d781c2503c9e3c2570952d3a3ed", null ],
       [ "API_AnalyticalLoadCase_VariableAction", "group___analytical.html#gga015dbc3fa43c22203bc2733ad51ab947a547d38ed5d828836004234b04f659db9", null ],
@@ -388,7 +407,16 @@ var group___analytical =
       [ "API_AnalyticalLoadGroup_TensioningLoad", "group___analytical.html#gga1cfe8a83eaadf79d1931c69c8fba42b9adec5df0be5a8130dcd4c1be3e0c5cd9b", null ],
       [ "API_AnalyticalLoadGroup_FireLoad", "group___analytical.html#gga1cfe8a83eaadf79d1931c69c8fba42b9ade9ba79ae8445fda9d9b567ee65fa55a", null ]
     ] ],
-    [ "API_AnalyticalMemberPartRefType", "group___analytical.html#ga99aadac149f3cb8d3a1cf7783956039d", null ],
+    [ "API_AnalyticalMemberPartRefType", "group___analytical.html#ga99aadac149f3cb8d3a1cf7783956039d", [
+      [ "API_AMPartRef_BegVertex", "group___analytical.html#gga99aadac149f3cb8d3a1cf7783956039da4d2a25696461bd73aea1d4d61994b146", null ],
+      [ "API_AMPartRef_EndVertex", "group___analytical.html#gga99aadac149f3cb8d3a1cf7783956039dabc0c6c40058de115772016b1a5cfdf98", null ],
+      [ "API_AMPartRef_CustomVertex", "group___analytical.html#gga99aadac149f3cb8d3a1cf7783956039daa8bd4084aec08c48661f67f517bb741d", null ],
+      [ "API_AMPartRef_Edge", "group___analytical.html#gga99aadac149f3cb8d3a1cf7783956039da030013652231384c553dfab95f471f24", null ],
+      [ "API_AMPartRef_RatioEdge", "group___analytical.html#gga99aadac149f3cb8d3a1cf7783956039da083f4af5469838d3c8c530af6ad81f09", null ],
+      [ "API_AMPartRef_Surface", "group___analytical.html#gga99aadac149f3cb8d3a1cf7783956039da7e3d39f38611c012158677f779dc7bbc", null ],
+      [ "API_AMPartRef_CustomSurface", "group___analytical.html#gga99aadac149f3cb8d3a1cf7783956039da541e22471ca611263e785f2d4e5e1b1a", null ],
+      [ "API_AMPartRef_CustomEdge", "group___analytical.html#gga99aadac149f3cb8d3a1cf7783956039dae434b7013b4ec2b622a490c146ce8fcc", null ]
+    ] ],
     [ "API_AnalyticalMemberType", "group___analytical.html#gab41b3e21e90323e3cf4d395c519d8dfe", [
       [ "API_AnalyticalMemberType::Unknown", "group___analytical.html#ggab41b3e21e90323e3cf4d395c519d8dfea88183b946cc5f0e8c96b2e66e1c74a7e", null ],
       [ "API_AnalyticalMemberType::Beam", "group___analytical.html#ggab41b3e21e90323e3cf4d395c519d8dfeadc6e84a67852dd96c1ba57da273b26ac", null ],
@@ -397,8 +425,20 @@ var group___analytical =
       [ "API_AnalyticalMemberType::Slab", "group___analytical.html#ggab41b3e21e90323e3cf4d395c519d8dfea07605c26b7bd2e8b30a21a990c4cab00", null ],
       [ "API_AnalyticalMemberType::Wall", "group___analytical.html#ggab41b3e21e90323e3cf4d395c519d8dfea94e8a499539d1a472f3b5dbbb85508c0", null ]
     ] ],
-    [ "API_AnalyticalRigidityType", "group___analytical.html#gab7668a48f286c0f3680ae5db0f3ecd5f", null ],
-    [ "API_AnalyticalSupport_SupportType", "group___analytical.html#ga85196d4dd403e258b5d2c8411df96450", null ],
+    [ "API_AnalyticalRigidityType", "group___analytical.html#gab7668a48f286c0f3680ae5db0f3ecd5f", [
+      [ "API_FreeType", "group___analytical.html#ggab7668a48f286c0f3680ae5db0f3ecd5fabf60c2831f65f5ec9a4694753d53b54b", null ],
+      [ "API_RigidType", "group___analytical.html#ggab7668a48f286c0f3680ae5db0f3ecd5fa54c8388f8a99ae4e9895112651b0fb16", null ],
+      [ "API_CustomType", "group___analytical.html#ggab7668a48f286c0f3680ae5db0f3ecd5fa2d0cdc055352dbc37bfe25b4783f0964", null ],
+      [ "API_RigidCompressionOnlyType", "group___analytical.html#ggab7668a48f286c0f3680ae5db0f3ecd5fa2a410e3cfceea09eb76e51636584327c", null ],
+      [ "API_RigidTensionOnlyType", "group___analytical.html#ggab7668a48f286c0f3680ae5db0f3ecd5fa334060ddb0fb49fe60a2619b10d982db", null ],
+      [ "API_CustomCompressionOnlyType", "group___analytical.html#ggab7668a48f286c0f3680ae5db0f3ecd5fa18340a8cf47cc33b33740c4fb377ed3c", null ],
+      [ "API_CustomTensionOnlyType", "group___analytical.html#ggab7668a48f286c0f3680ae5db0f3ecd5fa2859a103d5828f78a9cc8485841641fa", null ]
+    ] ],
+    [ "API_AnalyticalSupport_SupportType", "group___analytical.html#ga85196d4dd403e258b5d2c8411df96450", [
+      [ "API_SimplePoint", "group___analytical.html#gga85196d4dd403e258b5d2c8411df96450a1986c7fce917b3a5fa3e27e23d266d64", null ],
+      [ "API_SingleLine", "group___analytical.html#gga85196d4dd403e258b5d2c8411df96450a4799f951114a04181d12e47a5e9b4bbf", null ],
+      [ "API_Surface", "group___analytical.html#gga85196d4dd403e258b5d2c8411df96450a68d03f698d646eb6b83fa81cf7e3968b", null ]
+    ] ],
     [ "API_AnalyticalSurfaceType", "group___analytical.html#gaefced146c860067c0fac0f0a6cd3eabd", [
       [ "API_AnalyticalSurface_PlaneType", "group___analytical.html#ggaefced146c860067c0fac0f0a6cd3eabda3303879b311e6b1e59b8d3c416e25185", null ],
       [ "API_AnalyticalSurface_CylinderType", "group___analytical.html#ggaefced146c860067c0fac0f0a6cd3eabdac688f77e3a447ec3c28d6404c73e3d35", null ]

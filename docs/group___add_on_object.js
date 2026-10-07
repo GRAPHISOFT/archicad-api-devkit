@@ -9,7 +9,11 @@ var group___add_on_object =
     [ "APIAddonObjectConvertNewFormatHandlerProc", "group___add_on_object.html#ga8010963c96d6661a8fbdd37a3dcf5804", null ],
     [ "APIAddonObjectMergeHandlerProc", "group___add_on_object.html#ga55aa6bf8813420bade1328a38f8e7716", null ],
     [ "APIAddonObjectSaveOldFormatHandlerProc", "group___add_on_object.html#gae44aed8071f2f6001ba603a8abdb1cc6", null ],
-    [ "API_AddonObjectType", "group___add_on_object.html#ga806cd9b9d61f71e19dbe4e6541af3f5c", null ],
+    [ "API_AddonObjectType", "group___add_on_object.html#ga806cd9b9d61f71e19dbe4e6541af3f5c", [
+      [ "GeneralAddOnObject", "group___add_on_object.html#gga806cd9b9d61f71e19dbe4e6541af3f5ca09bfebb1aa6911ecaa464200bf2963fd", null ],
+      [ "UniqueAddOnObject", "group___add_on_object.html#gga806cd9b9d61f71e19dbe4e6541af3f5ca803c28204d9218a0597f4dd350fd387d", null ],
+      [ "ClientOnlyAddOnObject", "group___add_on_object.html#gga806cd9b9d61f71e19dbe4e6541af3f5ca7e653c2220419ca14e4f684ab128bc5c", null ]
+    ] ],
     [ "ACAPI_AddOnObject_CreateClientOnlyObject", "group___add_on_object.html#gada03dc9c7216883c1d9288e93e92b6c5", null ],
     [ "ACAPI_AddOnObject_CreateObject", "group___add_on_object.html#gafaea4e5746457e8aa76bb203b5ceaba7", null ],
     [ "ACAPI_AddOnObject_CreateUniqueObject", "group___add_on_object.html#gaa4d960680dae4f2a32baaaadc83f3743", null ],

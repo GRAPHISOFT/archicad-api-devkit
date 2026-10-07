@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Polygons</title>
+<title>Archicad 30 C++ API: Polygons</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -156,7 +156,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#gga67e8e6b5b07f66f1d80c2d812a760f21ac3981b4709757952f58241cdeadc9dbe">APISurfaceType_BeamCut</a>
 , <br />
 &#160;&#160;<a class="el" href="#gga67e8e6b5b07f66f1d80c2d812a760f21a9fac8c49c38208fba258d7a655deb8a5">APISurfaceType_BeamLast</a> = APISurfaceType_BeamCut
-, <a class="el" href="#gga67e8e6b5b07f66f1d80c2d812a760f21a0444fc1319ffb926a48837e51b25a156">APISurfaceType_ColumnFisrt</a> = 0x2000
+, <a class="el" href="#gga67e8e6b5b07f66f1d80c2d812a760f21ae5197541fdd6896e42e270bfcfa8e384">APISurfaceType_ColumnFirst</a> = 0x2000
 , <a class="el" href="#gga67e8e6b5b07f66f1d80c2d812a760f21aab589100ceb0f0aa607596d18fbdecec">APISurfaceType_ColumnTop</a> = 0x2000
 , <a class="el" href="#gga67e8e6b5b07f66f1d80c2d812a760f21a2e0fdf8e77a79074ecd513533704d9aa">APISurfaceType_ColumnBottom</a>
 , <br />
@@ -275,7 +275,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gae7f07032434b553a26754eeb062bd023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decomposes a polygon into triangles.  <br /></td></tr>
 <tr class="separator:gae7f07032434b553a26754eeb062bd023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9732343ab197ee96bb554a2408f13aea" id="r_ga9732343ab197ee96bb554a2408f13aea"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9732343ab197ee96bb554a2408f13aea">ACAPI_Polygon_PolygonId2SurfaceType</a> (const <a class="el" href="union_a_p_i___element.html">API_Element</a> *elem=nullptr, const Int32 *polygonId=nullptr, <a class="el" href="#ga67e8e6b5b07f66f1d80c2d812a760f21">API_SurfaceTypeID</a> *surfaceType=nullptr)</td></tr>
-<tr class="memdesc:ga9732343ab197ee96bb554a2408f13aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a picture into another image format.  <br /></td></tr>
+<tr class="memdesc:ga9732343ab197ee96bb554a2408f13aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a picture to another image format.  <br /></td></tr>
 <tr class="separator:ga9732343ab197ee96bb554a2408f13aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -314,7 +314,7 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="gga67e8e6b5b07f66f1d80c2d812a760f21a9fac8c49c38208fba258d7a655deb8a5" name="gga67e8e6b5b07f66f1d80c2d812a760f21a9fac8c49c38208fba258d7a655deb8a5"></a>APISurfaceType_BeamLast&#160;</td><td class="fielddoc"><p>APISurfaceType_BeamLast </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga67e8e6b5b07f66f1d80c2d812a760f21a0444fc1319ffb926a48837e51b25a156" name="gga67e8e6b5b07f66f1d80c2d812a760f21a0444fc1319ffb926a48837e51b25a156"></a>APISurfaceType_ColumnFisrt&#160;</td><td class="fielddoc"><p>APISurfaceType_ColumnFirst </p>
+<tr><td class="fieldname"><a id="gga67e8e6b5b07f66f1d80c2d812a760f21ae5197541fdd6896e42e270bfcfa8e384" name="gga67e8e6b5b07f66f1d80c2d812a760f21ae5197541fdd6896e42e270bfcfa8e384"></a>APISurfaceType_ColumnFirst&#160;</td><td class="fielddoc"><p>APISurfaceType_ColumnFirst </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga67e8e6b5b07f66f1d80c2d812a760f21aab589100ceb0f0aa607596d18fbdecec" name="gga67e8e6b5b07f66f1d80c2d812a760f21aab589100ceb0f0aa607596d18fbdecec"></a>APISurfaceType_ColumnTop&#160;</td><td class="fielddoc"><p>APISurfaceType_ColumnTop </p>
 </td></tr>
@@ -513,16 +513,16 @@ Functions</h2></td></tr>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">switch</span> (neig.<a class="code hl_variable" href="struct_a_p_i___neig.html#a1a9ac7712106d86eb39c1888fc39e94f">neigID</a>) {</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_Ceil:</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_Roof:</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_Mesh:</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_Room:</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_Hatch:</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_PolyLine:</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_DetailPoly:</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_WorksheetPoly:</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_DrawingFrame:</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_InteriorElevation:     <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272acb0e9ecd679b364a223adee0762c786c">APINeig_Ceil</a>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a5f4db9bbf8f7631a97058b3bf5d7c20c">APINeig_Roof</a>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a8a5421ce896384879a30989f95c00cd2">APINeig_Mesh</a>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ae699bf518dec2934548604f58f12f33f">APINeig_Room</a>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a9657944cb79adc83a6d812c64aa5a42c">APINeig_Hatch</a>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aff0af2ffd052c0f731a5b1234d31ebde">APINeig_PolyLine</a>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272addebec9be46ca38b76428acde8a32c4f">APINeig_DetailPoly</a>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a8bacb4f5ae27067a55224eb69dae0f95">APINeig_WorksheetPoly</a>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a7dd3b0f4ddfbdd0857e30359421babc2">APINeig_DrawingFrame</a>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ada094b12fa6fdb1dad7751473a8b9792">APINeig_InteriorElevation</a>:     <span class="keywordflow">break</span>;</div>
 <div class="line"> </div>
 <div class="line">        <span class="keywordflow">default</span>:                            WriteReport_Alert (<span class="stringliteral">&quot;Only polygon nodes are accepted&quot;</span>);</div>
 <div class="line">                                            <span class="keywordflow">return</span>;</div>
@@ -710,16 +710,16 @@ Functions</h2></td></tr>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">switch</span> (neig.<a class="code hl_variable" href="struct_a_p_i___neig.html#a1a9ac7712106d86eb39c1888fc39e94f">neigID</a>) {</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_CeilOn:</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_RoofOn:</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_MeshOn:</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_RoomOn:</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_HatchOn:</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_PolyLineOn:</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_DetailPolyOn:</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_WorksheetPolyOn:</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_DrawingFrameOn:</div>
-<div class="line">        <span class="keywordflow">case</span> APINeig_InteriorElevationOn:   <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aaaaae2b87804ca88d1d8754f5b335375">APINeig_CeilOn</a>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ac750e55bc51340fa927c164f63606eef">APINeig_RoofOn</a>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a121f898df62012077b8587cb284cdb2c">APINeig_MeshOn</a>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a04c35182ea2e3deae69e855aeb81ad0e">APINeig_RoomOn</a>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a666466a0b5b70308309482ea9e5994ba">APINeig_HatchOn</a>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a910e7c198ef3bb6e2baaaa1a94560e2a">APINeig_PolyLineOn</a>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272af0ab8da5d31f05fae2f529cee0b6a344">APINeig_DetailPolyOn</a>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a3e27854b392257abce27b7b4bed463e2">APINeig_WorksheetPolyOn</a>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272ab922bae70442d8142195fa1483a7fe22">APINeig_DrawingFrameOn</a>:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a277dd39720d542351a6fd2b0c3d4d02d">APINeig_InteriorElevationOn</a>:   <span class="keywordflow">break</span>;</div>
 <div class="line"> </div>
 <div class="line">        <span class="keywordflow">default</span>:                            WriteReport_Alert (<span class="stringliteral">&quot;Only polygon edges are accepted&quot;</span>);</div>
 <div class="line">                                            <span class="keywordflow">return</span>;</div>
@@ -732,7 +732,7 @@ Functions</h2></td></tr>
 <div class="line">        ErrorBeep (<span class="stringliteral">&quot;ACAPI_Element_Get&quot;</span>, err);</div>
 <div class="line">        <span class="keywordflow">return</span>;</div>
 <div class="line">    }</div>
-<div class="line">    <span class="keywordflow">if</span> (elem.header.type == <a class="code hl_enumvalue" href="group___element.html#gga2502601bf26ffc7abc608f6988da4d91ae7256fdde5e1066bc60d22225c0fc99d">API_RoofID</a> &amp;&amp; elem.roof.roofClass != API_PlaneRoofID) {</div>
+<div class="line">    <span class="keywordflow">if</span> (elem.header.type == <a class="code hl_enumvalue" href="group___element.html#gga2502601bf26ffc7abc608f6988da4d91ae7256fdde5e1066bc60d22225c0fc99d">API_RoofID</a> &amp;&amp; elem.roof.roofClass != <a class="code hl_enumvalue" href="group___element.html#ggafa5acd4a1c1c68db849565f725fc52e8aa0e4d2813b413e80a5efb823ebcfcd92">API_PlaneRoofID</a>) {</div>
 <div class="line">        WriteReport_Alert (<span class="stringliteral">&quot;Only plane roofs are accepted&quot;</span>);</div>
 <div class="line">        <span class="keywordflow">return</span>;</div>
 <div class="line">    }</div>
@@ -833,7 +833,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Converts a picture into another image format. </p>
+<p>Converts a picture to another image format. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">elem</td><td>[in] Parameter elem for element type identification. Give elem.header.guid or elem.header.typeId. For roofs specify elem.roof.roofClass also. </td></tr>

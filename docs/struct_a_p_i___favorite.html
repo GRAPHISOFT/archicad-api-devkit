@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: API_Favorite Struct Reference</title>
+<title>Archicad 30 C++ API: API_Favorite Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -141,7 +141,7 @@ $(function(){initNavTree('struct_a_p_i___favorite.html',''); initResizable(true)
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a601d4c31e9a53e6ea886059679798765" id="r_a601d4c31e9a53e6ea886059679798765"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a601d4c31e9a53e6ea886059679798765">API_Favorite</a> (const GS::UniString &amp;<a class="el" href="#aa79654d88ca5f2199c9c7144927bb9bd">name</a>=GS::EmptyUniString)</td></tr>
-<tr class="memdesc:a601d4c31e9a53e6ea886059679798765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="struct_a_p_i___favorite.html" title="A container for Favorite entry settings.">API_Favorite</a> object with the given name and zeroed-out element.  <br /></td></tr>
+<tr class="memdesc:a601d4c31e9a53e6ea886059679798765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="struct_a_p_i___favorite.html" title="A container for Favorite entry settings.">API_Favorite</a> object with the given name and a zeroed-out element.  <br /></td></tr>
 <tr class="separator:a601d4c31e9a53e6ea886059679798765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -184,13 +184,12 @@ GS::Optional&lt; API_FavoriteFolderHierarchy &gt;&#160;</td><td class="memItemRi
 <tr class="separator:ab85f7754cb93a609683cf53108eda28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a818aab5201a00af0dcacc3d8f916682d" id="r_a818aab5201a00af0dcacc3d8f916682d"><td class="memItemLeft" align="right" valign="top"><a id="a818aab5201a00af0dcacc3d8f916682d" name="a818aab5201a00af0dcacc3d8f916682d"></a>
 GS::Optional&lt; GS::Array&lt; <a class="el" href="struct_a_p_i___sub_element.html">API_SubElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>subElements</b></td></tr>
-<tr class="memdesc:a818aab5201a00af0dcacc3d8f916682d"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Optional) The subelements of the Favorite ( <br /></td></tr>
+<tr class="memdesc:a818aab5201a00af0dcacc3d8f916682d"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Optional) The subelements of the Favorite. <br /></td></tr>
 <tr class="separator:a818aab5201a00af0dcacc3d8f916682d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A container for Favorite entry settings. </p>
-<dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>In case of <a class="el" href="group___favorite.html#ga596acd9b3ee36c791bdb8c9d3f4f55cd">ACAPI_Favorite_Get</a> and <code>ACAPI_Favorite_Change</code> functions, you have to set the name field for identifying the Favorite and set which optional fields do you want to retrieve/change. Remember to call <a class="el" href="group___element.html#gad24d36ab301120ab689a94743c8fd95a">ACAPI_DisposeElemMemoHdls</a> for the <code>memo</code> and <code>memoMarker</code> fields if you set them and they are not needed anymore. The <code>API_FavoriteFolderHierarchy</code> type is a typedef of <code>GS::Array &lt;GS::UniString&gt;</code>;. In Archicad 25 the <code>subElements</code> member was introduced. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>In case of <a class="el" href="group___favorite.html#ga596acd9b3ee36c791bdb8c9d3f4f55cd">ACAPI_Favorite_Get</a> and <a class="el" href="group___favorite.html#ga63d065b89e93e4458462ec91de75a466">ACAPI_Favorite_Change</a> functions, you have to set the name field for identifying the Favorite and set which optional fields you want to retrieve/change. Remember to call <a class="el" href="group___element.html#gad24d36ab301120ab689a94743c8fd95a">ACAPI_DisposeElemMemoHdls</a> for the <code>memo</code> and <code>memoMarker</code> fields if you set them and they are not needed anymore. The <code>API_FavoriteFolderHierarchy</code> type is a typedef of <code>GS::Array&lt;GS::UniString&gt;</code>. In Archicad 25, the <code>subElements</code> member was introduced. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a601d4c31e9a53e6ea886059679798765" name="a601d4c31e9a53e6ea886059679798765"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a601d4c31e9a53e6ea886059679798765">&#9670;&#160;</a></span>API_Favorite()</h2>
@@ -215,10 +214,10 @@ GS::Optional&lt; GS::Array&lt; <a class="el" href="struct_a_p_i___sub_element.ht
 </table>
 </div><div class="memdoc">
 
-<p>Construct a new <a class="el" href="struct_a_p_i___favorite.html" title="A container for Favorite entry settings.">API_Favorite</a> object with the given name and zeroed-out element. </p>
+<p>Constructs a new <a class="el" href="struct_a_p_i___favorite.html" title="A container for Favorite entry settings.">API_Favorite</a> object with the given name and a zeroed-out element. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>Name of the favorite. </td></tr>
+    <tr><td class="paramname">name</td><td>Name of the Favorite. </td></tr>
   </table>
   </dd>
 </dl>

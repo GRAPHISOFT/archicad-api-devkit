@@ -1,0 +1,25 @@
+var class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit =
+[
+    [ "GetChildDeviceIds", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a241f20a4ec63ce7af2f12f3deb035bfe", null ],
+    [ "GetChildPanelIds", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a3715c86fbaf294bcbca33da542a114e9", null ],
+    [ "GetCircuitDescription", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a7f8180a02edc6b78b041d6db67c65483", null ],
+    [ "GetCircuitNameWithPrefix", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#ac8fc1ab9e3450aa100e057d6ca2c82f5", null ],
+    [ "GetConnectedLoad", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#aa2e6c05e4f50349f6fefff3a5efba5cf", null ],
+    [ "GetConnectedLoadPhaseA", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#aea4822988ab43ca54066e1b9744636b2", null ],
+    [ "GetConnectedLoadPhaseB", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#ad1da254ab29610f356e7a623f2a014ad", null ],
+    [ "GetConnectedLoadPhaseC", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#afe3c50a2aadd6c5658564180eb3a56d4", null ],
+    [ "GetDemandLoad", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#acd590afd71a444f1d744d0249e515a1b", null ],
+    [ "GetDemandLoadPhaseA", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#aee87921311644d6558362745ab698632", null ],
+    [ "GetDemandLoadPhaseB", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#afb28f86ea4f3245aaaf7a4c60b32312d", null ],
+    [ "GetDemandLoadPhaseC", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a57e5d92024ca3ab1a4ffbb1958fa93b1", null ],
+    [ "GetEstimatedCableLength", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a4eaf7876be570f95f47fe3de06964f44", null ],
+    [ "GetOwnerPanelId", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#acede6275647781bec423de24c39b2dc6", null ],
+    [ "GetPhaseString", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a760a9d0be8dab276a9c5b20bda731f76", null ],
+    [ "GetVoltage", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a83e1aa64a780139a61b7620f79f8f2b2", null ],
+    [ "GetVoltageDrop", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a700c83e341281c12b74933b9813c4d2e", null ],
+    [ "GetWiringTypeName", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a7dae90dff856f39352de1839783a8b11", null ],
+    [ "IsPhaseAUsed", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#ae0ae26e2f0567cdccc72f3d447c1dea3", null ],
+    [ "IsPhaseBUsed", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a86c08b3e008033cfab8dde9cb15ed772", null ],
+    [ "IsPhaseCUsed", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#a626b98f552c6fd0b292114fac976d52a", null ],
+    [ "Modify", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html#adb54666d463ab4fc8b3480ad2eb1fca2", null ]
+];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['29_0',['29',['../_dev_kit.html',1,'General API Development Kit 29'],['../newfeatures.html',1,'New API features in Archicad 29']]],
-  ['29_20c_20api_1',['Archicad 29 C++ API',['../index.html',1,'']]]
+  ['30_0',['30',['../_dev_kit.html',1,'General API Development Kit 30'],['../newfeatures.html',1,'New API features in Archicad 30']]],
+  ['30_20c_20api_1',['Archicad 30 C++ API',['../index.html',1,'']]]
 ];

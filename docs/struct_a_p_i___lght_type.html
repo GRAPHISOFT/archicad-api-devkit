@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: API_LghtType Struct Reference</title>
+<title>Archicad 30 C++ API: API_LghtType Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -185,11 +185,11 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>radius</b></td></tr
 <tr class="separator:adfc66aea5c05c2ca9a21cdd9d272a5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa410a9a110cbe8ded57abccb36121ec3" id="r_aa410a9a110cbe8ded57abccb36121ec3"><td class="memItemLeft" align="right" valign="top"><a id="aa410a9a110cbe8ded57abccb36121ec3" name="aa410a9a110cbe8ded57abccb36121ec3"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>cosa</b></td></tr>
-<tr class="memdesc:aa410a9a110cbe8ded57abccb36121ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cosine of the angle of the cone within the light has its maximum intensity. <br /></td></tr>
+<tr class="memdesc:aa410a9a110cbe8ded57abccb36121ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cosine of the angle of the cone within which the light has its maximum intensity. <br /></td></tr>
 <tr class="separator:aa410a9a110cbe8ded57abccb36121ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41349dc4f077a7615680f63ea9ee3fde" id="r_a41349dc4f077a7615680f63ea9ee3fde"><td class="memItemLeft" align="right" valign="top"><a id="a41349dc4f077a7615680f63ea9ee3fde" name="a41349dc4f077a7615680f63ea9ee3fde"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>cosb</b></td></tr>
-<tr class="memdesc:a41349dc4f077a7615680f63ea9ee3fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cosine of the angle of the cone within the intensity falls to zero. <br /></td></tr>
+<tr class="memdesc:a41349dc4f077a7615680f63ea9ee3fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cosine of the angle of the cone within which the intensity falls to zero. <br /></td></tr>
 <tr class="separator:a41349dc4f077a7615680f63ea9ee3fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29d26d405feb2b14481058b38f5f5f33" id="r_a29d26d405feb2b14481058b38f5f5f33"><td class="memItemLeft" align="right" valign="top"><a id="a29d26d405feb2b14481058b38f5f5f33" name="a29d26d405feb2b14481058b38f5f5f33"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>afall</b></td></tr>
@@ -205,12 +205,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>dist2</b></td></tr>
 <tr class="separator:a5c065cc2936a4f5385390c564ace038c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09aca13653543f3a0bedce5206ff4fc2" id="r_a09aca13653543f3a0bedce5206ff4fc2"><td class="memItemLeft" align="right" valign="top"><a id="a09aca13653543f3a0bedce5206ff4fc2" name="a09aca13653543f3a0bedce5206ff4fc2"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>dfall</b></td></tr>
-<tr class="memdesc:a09aca13653543f3a0bedce5206ff4fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls the fall-of of intensity depending on the distance. <br /></td></tr>
+<tr class="memdesc:a09aca13653543f3a0bedce5206ff4fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controls the fall-off of intensity depending on the distance. <br /></td></tr>
 <tr class="separator:a09aca13653543f3a0bedce5206ff4fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Representation of a 3D light source. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>A light source radiates <code>lightRGB</code> colored light from the local origin (<code>posx</code>, <code>posy</code>, <code>posz</code>) along the direction vector ( <code>dirx</code>, <code>diry</code>, <code>dirz</code>). The light is projected parallel to the direction vector from a point or circle source. (See figure below!) It has its maximum intensity within the alpha-angle frustum of a cone and falls to zero at the beta-angle frustum of a cone. This falloff is controlled by the <code>afall</code> parameter. (Zero gives the light a sharp edge, higher values mean that the transition is smoother.) The effect of the light is limited along the axis by the <code>dist1</code> and <code>dist2</code> clipping values. The <code>dfall</code> parameter controls the decrease in intensity depending on the distance. (Zero value means a constant intensity, bigger values are used for stronger falloff.) The type of light source can be one of the <code>@ref API_LghtSouID</code> members. The status must be <code>APILight_CastShadow</code> if you want Archicad to calculate shadow casting from this light source, or else set it zero. <div class="image">
+<dl class="section remark"><dt>Remarks</dt><dd>A light source radiates <code>lightRGB</code> colored light from the local origin (<code>posx</code>, <code>posy</code>, <code>posz</code>) along the direction vector (<code>dirx</code>, <code>diry</code>, <code>dirz</code>). The light is projected parallel to the direction vector from a point or circle source. (See figure below!) It has its maximum intensity within the alpha-angle frustum of a cone and falls to zero at the beta-angle frustum of a cone. This falloff is controlled by the <code>afall</code> parameter. (Zero gives the light a sharp edge; higher values mean that the transition is smoother.) The effect of the light is limited along the axis by the <code>dist1</code> and <code>dist2</code> clipping values. The <code>dfall</code> parameter controls the decrease in intensity depending on the distance. (Zero value means a constant intensity; bigger values are used for stronger falloff.) The type of light source can be one of the <code>@ref API_LghtSouID</code> members. The status must be <code>APILight_CastShadow</code> if you want Archicad to calculate shadow casting from this light source; otherwise, set it to zero. <div class="image">
 <img src="LightSource.png" alt="" width="50%"/>
 <div class="caption">
 Light source</div></div>

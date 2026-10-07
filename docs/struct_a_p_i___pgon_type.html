@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: API_PgonType Struct Reference</title>
+<title>Archicad 30 C++ API: API_PgonType Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -145,7 +145,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3a03a2e6e09b48ec2fb55fbe81ac1a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c3152da4d040555f2244aacbe6ef770" id="r_a6c3152da4d040555f2244aacbe6ef770"><td class="memItemLeft" align="right" valign="top"><a id="a6c3152da4d040555f2244aacbe6ef770" name="a6c3152da4d040555f2244aacbe6ef770"></a>
 Int32&#160;</td><td class="memItemRight" valign="bottom"><b>status</b></td></tr>
-<tr class="memdesc:a6c3152da4d040555f2244aacbe6ef770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about the properties of polygon. <br /></td></tr>
+<tr class="memdesc:a6c3152da4d040555f2244aacbe6ef770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about the properties of the polygon. <br /></td></tr>
 <tr class="separator:a6c3152da4d040555f2244aacbe6ef770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6676d9809d93ee6e517a24d7244095e" id="r_ad6676d9809d93ee6e517a24d7244095e"><td class="memItemLeft" align="right" valign="top"><a id="ad6676d9809d93ee6e517a24d7244095e" name="ad6676d9809d93ee6e517a24d7244095e"></a>
 Int32&#160;</td><td class="memItemRight" valign="bottom"><b>iumat</b></td></tr>
@@ -170,13 +170,13 @@ Int32&#160;</td><td class="memItemRight" valign="bottom"><b>lpedg</b></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Representation of a 3D Polygon. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>Accessing polygons must be base on bodies. First you should get a body by <a class="el" href="group___model_access.html#gab13567a056753ac91fb88df1ce160e59">ACAPI_ModelAccess_GetComponent</a> and just after is obtainable its polygons. A polygon component consist of directed edges. You can get those using <code>fpedg</code>, <code>lpedg</code> index range. These indices refer to <a class="el" href="struct_a_p_i___pedg_type.html">API_PedgType</a> components, which can be use to retrieve the edges of the given polygon. It may occure that <code>fpedg &gt;lpedg</code>, that means the polygon has no edge references. Note that negative pedg value in <a class="el" href="struct_a_p_i___pedg_type.html">API_PedgType</a> means opposite direction. The <code>ivect</code> is an index to an <a class="el" href="struct_a_p_i___vect_type.html">API_VectType</a> component. This is the normal vector of this polygon. If <code>ivect</code> is negative, the direction of the normal vector is the opposite of the stored one. The <code>status</code> field specifies some properties of the polygon. You can use the bitwise-OR operator (|) to combine any of the following constants:<ul>
+<dl class="section remark"><dt>Remarks</dt><dd>Accessing polygons must be based on bodies. First, you should get a body by <a class="el" href="group___model_access.html#gab13567a056753ac91fb88df1ce160e59">ACAPI_ModelAccess_GetComponent</a>, and only after that are its polygons obtainable. A polygon component consists of directed edges. You can get those using the <code>fpedg</code>, <code>lpedg</code> index range. These indices refer to <a class="el" href="struct_a_p_i___pedg_type.html">API_PedgType</a> components, which can be used to retrieve the edges of the given polygon. It may occur that <code>fpedg &gt; lpedg</code>, which means the polygon has no edge references. Note that a negative pedg value in <a class="el" href="struct_a_p_i___pedg_type.html">API_PedgType</a> means opposite direction. The <code>ivect</code> is an index to an <a class="el" href="struct_a_p_i___vect_type.html">API_VectType</a> component. This is the normal vector of this polygon. If <code>ivect</code> is negative, the direction of the normal vector is the opposite of the stored one. The <code>status</code> field specifies some properties of the polygon. You can use the bitwise-OR operator (|) to combine any of the following constants:<ul>
 <li><code>APIPgon_Invis</code> : invisible polygon,</li>
 <li><code>APIPgon_Curved</code> : polygon of a curved surface,</li>
 <li><code>APIPgon_Concav</code> : concave polygon,</li>
 <li><code>APIPgon_PHole</code> : polygon with holes,</li>
 <li><code>APIPgon_HolesCnv</code> : hole(s) are convex,</li>
-<li><code>APIPgon_Complex</code> : the polygon is concave or with holes. </li>
+<li><code>APIPgon_Complex</code> : the polygon is concave or has holes. </li>
 </ul>
 </dd></dl>
 </div></div><!-- contents -->

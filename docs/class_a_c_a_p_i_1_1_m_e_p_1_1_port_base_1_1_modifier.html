@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: ACAPI::MEP::PortBase::Modifier Class Reference</title>
+<title>Archicad 30 C++ API: ACAPI::MEP::PortBase::Modifier Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -163,6 +163,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae5df7a6e974d9a491061ca4027225742" id="r_ae5df7a6e974d9a491061ca4027225742"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_c_a_p_i_1_1_result.html">Result</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5df7a6e974d9a491061ca4027225742">SetMEPSystem</a> (const <a class="el" href="class_a_p_i___attribute_index.html">API_AttributeIndex</a> &amp;attributeIndex)</td></tr>
 <tr class="memdesc:ae5df7a6e974d9a491061ca4027225742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the MEPSystem attribute of a <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_port.html" title="The Port represents an instantiable PortBase. Through this object you can reference to the three doma...">Port</a>.  <br /></td></tr>
 <tr class="separator:ae5df7a6e974d9a491061ca4027225742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a858178f4335cc22ba2e413d89e267820" id="r_a858178f4335cc22ba2e413d89e267820"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_c_a_p_i_1_1_result.html">Result</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a858178f4335cc22ba2e413d89e267820">SetConnectionStyle</a> (<a class="el" href="group___m_e_p.html#ga644d09d21b565c798869f523fc353684">ConnectionStyle</a> connectionStyle)</td></tr>
+<tr class="memdesc:a858178f4335cc22ba2e413d89e267820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the connection style of the <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_port.html" title="The Port represents an instantiable PortBase. Through this object you can reference to the three doma...">Port</a>.  <br /></td></tr>
+<tr class="separator:a858178f4335cc22ba2e413d89e267820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -211,6 +214,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>FinalizeModification<
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a858178f4335cc22ba2e413d89e267820" name="a858178f4335cc22ba2e413d89e267820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a858178f4335cc22ba2e413d89e267820">&#9670;&#160;</a></span>SetConnectionStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_c_a_p_i_1_1_result.html">Result</a>&lt; void &gt; ACAPI::MEP::PortBase::Modifier::SetConnectionStyle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___m_e_p.html#ga644d09d21b565c798869f523fc353684">ConnectionStyle</a></td>          <td class="paramname"><span class="paramname"><em>connectionStyle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the connection style of the <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_port.html" title="The Port represents an instantiable PortBase. Through this object you can reference to the three doma...">Port</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">connectionStyle</td><td>The value to be set. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns an error if the <a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_port.html" title="The Port represents an instantiable PortBase. Through this object you can reference to the three doma...">Port</a>'s domain does not support the provided connection style, otherwise nothing. </dd></dl>
+
+</div>
+</div>
 <a id="ad1c90870df8ab28c8ca13067e933a66b" name="ad1c90870df8ab28c8ca13067e933a66b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad1c90870df8ab28c8ca13067e933a66b">&#9670;&#160;</a></span>SetHeight()</h2>
 

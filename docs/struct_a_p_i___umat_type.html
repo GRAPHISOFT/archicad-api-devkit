@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: API_UmatType Struct Reference</title>
+<title>Archicad 30 C++ API: API_UmatType Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -145,12 +145,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a553a12a4d1f717da38c5beab829d9734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47a5b4164d9784213c54e1cf188517ca" id="r_a47a5b4164d9784213c54e1cf188517ca"><td class="memItemLeft" align="right" valign="top"><a id="a47a5b4164d9784213c54e1cf188517ca" name="a47a5b4164d9784213c54e1cf188517ca"></a>
 <a class="el" href="struct_a_p_i___material_type.html">API_MaterialType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mater</b></td></tr>
-<tr class="memdesc:a47a5b4164d9784213c54e1cf188517ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The definition of the material. the <code>head.index</code> is <code>0</code> in case of GDL materials; and <code>n</code> in case of global material reference. <br /></td></tr>
+<tr class="memdesc:a47a5b4164d9784213c54e1cf188517ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The definition of the material. The <code>head.index</code> is <code>0</code> in case of GDL materials; and <code>n</code> in case of global material reference. <br /></td></tr>
 <tr class="separator:a47a5b4164d9784213c54e1cf188517ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Representation of a 3D material. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>This structure contains the properties of a material. These properties are described in <a class="el" href="struct_a_p_i___material_type.html">API_MaterialType</a> structure. Basically there are two source of materials. First is the globally stored, the second is when they are come from an object's GDL script. In case of GDL materials the index in the header is 0. In case of global material the value of the header is than 0. In both cases the parameters of the material can be obtained from the mater field of this structure. The following 3D components can refer to material: <a class="el" href="struct_a_p_i___pgon_type.html">API_PgonType</a>, <a class="el" href="struct_a_p_i___body_type.html">API_BodyType</a>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This structure contains the properties of a material. These properties are described in the <a class="el" href="struct_a_p_i___material_type.html">API_MaterialType</a> structure. Basically, there are two sources of materials. The first is the globally stored material, the second is when they come from an object's GDL script. In the case of GDL materials, the index in the header is 0. In the case of a global material, the value of the header is greater than 0. In both cases, the parameters of the material can be obtained from the mater field of this structure. The following 3D components can refer to a material: <a class="el" href="struct_a_p_i___pgon_type.html">API_PgonType</a>, <a class="el" href="struct_a_p_i___body_type.html">API_BodyType</a>. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 </body>

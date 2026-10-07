@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: API_Component3D Union Reference</title>
+<title>Archicad 30 C++ API: API_Component3D Union Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -178,7 +178,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>General representation of a 3D component. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>This structure is used to work with 3D components of the actual database. The definition of a 3D component is described in this structure, which is in fact a union of all component types. Before you try to understand how the 3D model corresponds to the API structures, please read carefully the Primitive Elements chapter in the GDL Reference Manual. The 3D geometry itself is described by the <a class="el" href="struct_a_p_i___pgon_type.html">API_PgonType</a>, <a class="el" href="struct_a_p_i___pedg_type.html">API_PedgType</a>, <a class="el" href="struct_a_p_i___edge_type.html">API_EdgeType</a>, <a class="el" href="struct_a_p_i___vert_type.html">API_VertType</a> and <a class="el" href="struct_a_p_i___vect_type.html">API_VectType</a> structures. Negative index referring to an edge or a normal vector indicates that the component should be interpreted reversed. In this case require the component using the absolute value of the index, but consider the edge directing from the second vertex to the first one, or when retrieving a normal vector, invert its coordinates. The 3D representation also owns a common pool of the surface materials. The polygon instances of the geometry description refer to these materials by indices. One surface definition is described by the <a class="el" href="struct_a_p_i___umat_type.html">API_UmatType</a> structure. Surface materials may come from two sources. The list of materials contains all the global material attributes which are referenced by any polygon of the 3D geometry. Materials may be defined in GDL scripts also. Elements placed with the light tool on the floorplan may contain light emissions, defined via GDL scripts. All of the light sources present in the 3D geometry are described with the <a class="el" href="struct_a_p_i___lght_type.html">API_LghtType</a> structure. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This structure is used to work with 3D components of the actual database. The definition of a 3D component is described in this structure, which is in fact a union of all component types. Before you try to understand how the 3D model corresponds to the API structures, please read carefully the Primitive Elements chapter in the GDL Reference Manual. The 3D geometry itself is described by the <a class="el" href="struct_a_p_i___pgon_type.html">API_PgonType</a>, <a class="el" href="struct_a_p_i___pedg_type.html">API_PedgType</a>, <a class="el" href="struct_a_p_i___edge_type.html">API_EdgeType</a>, <a class="el" href="struct_a_p_i___vert_type.html">API_VertType</a>, and <a class="el" href="struct_a_p_i___vect_type.html">API_VectType</a> structures. A negative index referring to an edge or a normal vector indicates that the component should be interpreted in reverse. In this case, request the component using the absolute value of the index, but consider the edge as directed from the second vertex to the first one, or when retrieving a normal vector, invert its coordinates. The 3D representation also owns a common pool of the surface materials. The polygon instances of the geometry description refer to these materials by indices. One surface definition is described by the <a class="el" href="struct_a_p_i___umat_type.html">API_UmatType</a> structure. Surface materials may come from two sources. The list of materials contains all the global material attributes which are referenced by any polygon of the 3D geometry. Materials may be defined in GDL scripts also. Elements placed with the light tool on the floorplan may contain light emissions, defined via GDL scripts. All of the light sources present in the 3D geometry are described with the <a class="el" href="struct_a_p_i___lght_type.html">API_LghtType</a> structure. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 </body>

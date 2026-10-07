@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Element difference generator</title>
+<title>Archicad 30 C++ API: Element difference generator</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -142,7 +142,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common structure for the element difference generator components.  <a href="struct_a_p_i___elem_difference.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___elem_difference_generator_state.html">API_ElemDifferenceGeneratorState</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common structure for the element difference generator components.  <a href="struct_a_p_i___elem_difference_generator_state.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common structure for the element difference generator state.  <a href="struct_a_p_i___elem_difference_generator_state.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -151,13 +151,13 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#ga07041323f077084f1b80cf731d928109a31aea6f67fde24d53a5ac4f66ed339bb">APIDiff_3DModelBased</a> = '3DMB'
 , <a class="el" href="#ga07041323f077084f1b80cf731d928109acfea8c6f9b1d5eab09f99a3bc95b349b">APIDiff_ContextBased</a> = 'CBSD'
  }</td></tr>
-<tr class="memdesc:ga07041323f077084f1b80cf731d928109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the type of the element difference generator methode type. <br /></td></tr>
+<tr class="memdesc:ga07041323f077084f1b80cf731d928109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the type of the element difference generator method type. <br /></td></tr>
 <tr class="separator:ga07041323f077084f1b80cf731d928109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabc3bf389aa7d7ce48303090c46c21573" id="r_gabc3bf389aa7d7ce48303090c46c21573"><td class="memItemLeft" align="right" valign="top"><a id="gabc3bf389aa7d7ce48303090c46c21573" name="gabc3bf389aa7d7ce48303090c46c21573"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabc3bf389aa7d7ce48303090c46c21573">API_ElemDifferenceGeneratorStateType</a> { <a class="el" href="#gabc3bf389aa7d7ce48303090c46c21573a3cabe15029a7a2a1f85ff968f7f3d8f4">APIDiffState_InFile</a> = 1
 , <a class="el" href="#gabc3bf389aa7d7ce48303090c46c21573a0cd23987a4a5c7d14b1571ca56e09e44">APIDiffState_InMemory</a>
 , <a class="el" href="#gabc3bf389aa7d7ce48303090c46c21573aef74e5e4ad87407ad4fb57f6d6c508e0">APIDiffState_CurrentProject</a>
  }</td></tr>
-<tr class="memdesc:gabc3bf389aa7d7ce48303090c46c21573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the type of the element difference generator methode type. <br /></td></tr>
+<tr class="memdesc:gabc3bf389aa7d7ce48303090c46c21573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the type of the element difference generator state type. <br /></td></tr>
 <tr class="separator:gabc3bf389aa7d7ce48303090c46c21573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -166,7 +166,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga8aab2bfa7083db390ba52dd6c8f33a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classifies an element.  <br /></td></tr>
 <tr class="separator:ga8aab2bfa7083db390ba52dd6c8f33a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacd2090d948b0b658d7cc519f93689fc3" id="r_gacd2090d948b0b658d7cc519f93689fc3"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacd2090d948b0b658d7cc519f93689fc3">ACAPI_DifferenceGenerator_GenerateDifference</a> (<a class="el" href="#ga07041323f077084f1b80cf731d928109">API_ElemDifferenceGeneratorTypeID</a> type, <a class="el" href="struct_a_p_i___elem_difference_generator_state.html">API_ElemDifferenceGeneratorState</a> *diffState1, <a class="el" href="struct_a_p_i___elem_difference_generator_state.html">API_ElemDifferenceGeneratorState</a> *diffState2, <a class="el" href="struct_a_p_i___elem_difference.html">API_ElemDifference</a> &amp;difference)</td></tr>
-<tr class="memdesc:gacd2090d948b0b658d7cc519f93689fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">It gives back the differencies between two states.  <br /></td></tr>
+<tr class="memdesc:gacd2090d948b0b658d7cc519f93689fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">It gives back the differences between two states.  <br /></td></tr>
 <tr class="separator:gacd2090d948b0b658d7cc519f93689fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -201,7 +201,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>It gives back the differencies between two states. </p>
+<p>It gives back the differences between two states. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 26 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -213,7 +213,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The diffState1 or diffState2 is nullptr, or has wrong input parameters.</li>
 <li>APIERR_GENERAL - There is no current plan open. </li>
 </ul>
@@ -249,7 +249,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The diffGeneratorState is nullptr, or has wrong input parameters.</li>
 <li>APIERR_GENERAL - There is no current plan open. </li>
 </ul>

@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Toolbox</title>
+<title>Archicad 30 C++ API: Toolbox</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -223,17 +223,17 @@ Functions</h2></td></tr>
     <tr><td class="paramname">smallIconResID</td><td>[in] Resource ID of the small-sized toolbox (toolbar) item icon </td></tr>
     <tr><td class="paramname">largeIconResID</td><td>[in] Resource ID of the large-sized toolbox item icon </td></tr>
     <tr><td class="paramname">toolGroupId</td><td>[in] Toolbox item position </td></tr>
-    <tr><td class="paramname">enableFlags</td><td>[in] Enable or disable the subtype tool depending on the active window </td></tr>
+    <tr><td class="paramname">enableFlags</td><td>[in] Enable or turn off the subtype tool depending on the active window </td></tr>
     <tr><td class="paramname">defaultsResID</td><td>[in] ID of the 'ACP0' resource that contains the element default values for this subtype </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>APIERR_BADPARS - templateFileResID refers to an invalid 'FILE' resource or the built-in library part cannot be accepted as subtype template.</li>
-<li>NoError - The function has completed with success. </li>
+<li>APIERR_BADPARS - templateFileResID refers to an invalid 'FILE' resource, or the built-in library part cannot be accepted as a subtype template.</li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function registers a new library part subtype. In order to have an own element subtype the add-on must contain a built-in library part in its reource module. This library part will be loaded into the active libraries, and become a new node in the ancestry tree. The new element type will be identified with the signature identifier chosen by the add-on's writer. The signature should be unique in order to avoid collisions. You may pass 0 in the signature parameter if you do not need a new element type but a single subtype node. The subtype can appear in the toolbox as an external tool, and also on the Windows toolbar. In this case you must pass two valid icon resource IDs in the smallIconResID and the largeIconResID parameters. The size of the icons should be 16x16 and 30x21 pixels respectively. You can specify the position of the subtype item inserted into the toolbox with the toolGroupId parameter as follows: <table class="markdownTable">
+<dl class="section remark"><dt>Remarks</dt><dd>This function registers a new library part subtype. The add-on must contain a built-in library part in its resource module to have its element subtype. This library part will be loaded into the active libraries and becomes a new node in the ancestry tree. The new element type will be identified with the signature identifier chosen by the add-on's writer. The signature should be unique to avoid collisions. You may pass 0 in the signature parameter if you do not need a new element type but a single subtype node. The subtype can appear in the toolbox as an external tool and on the Windows toolbar. In this case, you must pass two valid icon resource IDs in the smallIconResID and the largeIconResID parameters. The size of the icons should be 16x16 and 30x21 pixels, respectively. You can specify the position of the subtype item inserted into the toolbox with the toolGroupId parameter as follows: <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">API_TBoxGroup   </th><th class="markdownTableHeadNone">Meaning    </th></tr>
 <tr class="markdownTableRowOdd">
@@ -266,7 +266,7 @@ Functions</h2></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">API_TBoxEnabled_DrawingInteriorElevation   </td><td class="markdownTableBodyNone">on drawing type interior elevation windows   </td></tr>
 </table>
-<p>If you want to register your subtype tool without appearing in the toolbox, pass 0 for both the <code>smallIconResID</code> and the <code>largeIconResID</code> parameters. If you register a subtype tool you should define the factory default values for this element type in an 'ACP0' resource. The element default will be initialized with these parameters when no preferences data is stored. The structure of this resource is shown at the example below. The resource ID should be passed in the defaultsResID parameter. Learn more about this topic at the general description of Library Part Subtypes. </p><dl class="section user"><dt>Example</dt><dd>Resources in the .GRC file: <div class="fragment"><div class="line">&#39;FILE&#39; 132 &quot;Roof Opening.gsm&quot; {</div>
+<p>If you want to register your subtype tool without appearing in the toolbox, pass 0 for both the <code>smallIconResID</code> and the <code>largeIconResID</code> parameters. If you register a subtype tool, you should define the factory default values for this element type in an 'ACP0' resource. The element default will be initialized with these parameters when no preferences data is stored. The structure of this resource is shown in the example below. The resource ID should be passed in the defaultsResID parameter. Learn more about this topic at the general description of Library Part Subtypes. </p><dl class="section user"><dt>Example</dt><dd>Resources in the .GRC file: <div class="fragment"><div class="line">&#39;FILE&#39; 132 &quot;Roof Opening.gsm&quot; {</div>
 <div class="line">    &quot;Roof Opening.gsm&quot;</div>
 <div class="line">}</div>
 </div><!-- fragment --> <div class="fragment"><div class="line">&#39;STR#&#39; 32611 &quot;Skylight subtype&quot; {</div>

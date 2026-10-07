@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Dialog and Palette integration</title>
+<title>Archicad 30 C++ API: Dialog and Palette integration</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -149,10 +149,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RGB color reference.  <a href="struct_a_p_i___r_g_b_color.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___polygon.html">API_Polygon</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representation of a two dimensional polygon.  <a href="struct_a_p_i___polygon.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representation of a two-dimensional polygon.  <a href="struct_a_p_i___polygon.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___plane3_d.html">API_Plane3D</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desribes a 3D plane.  <a href="struct_a_p_i___plane3_d.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a 3D plane.  <a href="struct_a_p_i___plane3_d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___sun_angle_settings.html">API_SunAngleSettings</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sun angle settings.  <a href="struct_a_p_i___sun_angle_settings.html#details">More...</a><br /></td></tr>
@@ -193,6 +193,17 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:gae9a40093f4616e2565d7a7595b77c29e" id="r_gae9a40093f4616e2565d7a7595b77c29e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae9a40093f4616e2565d7a7595b77c29e">API_RenovationStatusType</a> { <br />
+&#160;&#160;<a class="el" href="#ggae9a40093f4616e2565d7a7595b77c29ea94d9f87a4ff6e71d66e3929a17f01dd4">API_UndefinedStatus</a> = -1
+, <a class="el" href="#ggae9a40093f4616e2565d7a7595b77c29eab79540bbc31da6955875a94c154ac995">API_DefaultStatus</a> = 0
+, <a class="el" href="#ggae9a40093f4616e2565d7a7595b77c29eaa0e573f430c7a04b7a98e4d5b9994990">API_ExistingStatus</a> = 1
+, <a class="el" href="#ggae9a40093f4616e2565d7a7595b77c29ea322abe2580439263c5b458dcf4d92b06">API_NewStatus</a> = 2
+, <br />
+&#160;&#160;<a class="el" href="#ggae9a40093f4616e2565d7a7595b77c29ea32ded0c450fabb4eabe26fa284be1a2c">API_DemolishedStatus</a> = 3
+<br />
+ }</td></tr>
+<tr class="memdesc:gae9a40093f4616e2565d7a7595b77c29e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renovation status of the (primitive) element.  <a href="#gae9a40093f4616e2565d7a7595b77c29e">More...</a><br /></td></tr>
+<tr class="separator:gae9a40093f4616e2565d7a7595b77c29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga908dbd4bef0b6da2878e89f6fb9491b1" id="r_ga908dbd4bef0b6da2878e89f6fb9491b1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga908dbd4bef0b6da2878e89f6fb9491b1">API_ColorDepthID</a> { <br />
 &#160;&#160;<b>APIColorDepth_FromSourceImage</b> = -1
 , <b>APIColorDepth_BW</b> = 0
@@ -221,85 +232,94 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:gac8a55b706390d5b986d0269d93825830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sun position options for calculating Sun's angles.  <a href="#gac8a55b706390d5b986d0269d93825830">More...</a><br /></td></tr>
 <tr class="separator:gac8a55b706390d5b986d0269d93825830"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae9a40093f4616e2565d7a7595b77c29e" id="r_gae9a40093f4616e2565d7a7595b77c29e"><td class="memItemLeft" align="right" valign="top"><a id="gae9a40093f4616e2565d7a7595b77c29e" name="gae9a40093f4616e2565d7a7595b77c29e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae9a40093f4616e2565d7a7595b77c29e">API_RenovationStatusType</a> { <br />
-&#160;&#160;<b>API_UndefinedStatus</b> = -1
-, <b>API_DefaultStatus</b> = 0
-, <b>API_ExistingStatus</b> = 1
-, <b>API_NewStatus</b> = 2
+<tr class="memitem:ga9eec4199288e4b1817de263ce2d28000" id="r_ga9eec4199288e4b1817de263ce2d28000"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9eec4199288e4b1817de263ce2d28000">API_PaletteMessageID</a> { <br />
+&#160;&#160;<a class="el" href="#gga9eec4199288e4b1817de263ce2d28000a42c52a4e35c9c23e3db26e77b39284de">APIPalMsg_ClosePalette</a> = 1
+, <a class="el" href="#gga9eec4199288e4b1817de263ce2d28000a67c86927da2b6aea3fe685018904ca26">APIPalMsg_HidePalette_Begin</a> = 2
+, <a class="el" href="#gga9eec4199288e4b1817de263ce2d28000a59de022ee9ed0c4ad1dab3c1b706254f">APIPalMsg_HidePalette_End</a> = 3
+, <a class="el" href="#gga9eec4199288e4b1817de263ce2d28000a55b487a48f03397581855915a96e875a">APIPalMsg_DisableItems_Begin</a> = 4
 , <br />
-&#160;&#160;<b>API_DemolishedStatus</b> = 3
+&#160;&#160;<a class="el" href="#gga9eec4199288e4b1817de263ce2d28000a02dae47ad39e8a2e760ed6a1df1c9f3a">APIPalMsg_DisableItems_End</a> = 5
+, <a class="el" href="#gga9eec4199288e4b1817de263ce2d28000a5ce53fff477dbb3ff7e45b651710da1a">APIPalMsg_OpenPalette</a> = 6
+, <a class="el" href="#gga9eec4199288e4b1817de263ce2d28000a76d15e254407a3e752838d4f7b8c181b">APIPalMsg_IsPaletteVisible</a> = 7
+, <a class="el" href="#gga9eec4199288e4b1817de263ce2d28000aad80a3853b7472377c79a02f3398a6ca">APIPalMsg_GetPaletteDeactivationMethod</a> = 8
 <br />
  }</td></tr>
-<tr class="memdesc:gae9a40093f4616e2565d7a7595b77c29e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renovation status of the (primitive) element. <br /></td></tr>
-<tr class="separator:gae9a40093f4616e2565d7a7595b77c29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ga9eec4199288e4b1817de263ce2d28000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Messages sent to the add-on's palette.  <a href="#ga9eec4199288e4b1817de263ce2d28000">More...</a><br /></td></tr>
+<tr class="separator:ga9eec4199288e4b1817de263ce2d28000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada01f12355d1586b43d5a7a9d524f086" id="r_gada01f12355d1586b43d5a7a9d524f086"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gada01f12355d1586b43d5a7a9d524f086">API_PaletteDeactivationMethod</a> { <a class="el" href="#ggada01f12355d1586b43d5a7a9d524f086aab4e92bb70e290cd5e29f0f8774d8799">APIPaletteDeactivationMethod_Default</a> = 1
+, <a class="el" href="#ggada01f12355d1586b43d5a7a9d524f086af88bece44d7e459410519db2a409808b">APIPaletteDeactivationMethod_Hide</a> = 2
+, <a class="el" href="#ggada01f12355d1586b43d5a7a9d524f086aad993010af2558de0bdd90a094e28bb4">APIPaletteDeactivationMethod_DisableItems</a> = 3
+ }</td></tr>
+<tr class="memdesc:gada01f12355d1586b43d5a7a9d524f086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivation method of the palette.  <a href="#gada01f12355d1586b43d5a7a9d524f086">More...</a><br /></td></tr>
+<tr class="separator:gada01f12355d1586b43d5a7a9d524f086"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8d178dbd01e32dd4bc0f408159997a74" id="r_ga8d178dbd01e32dd4bc0f408159997a74"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8d178dbd01e32dd4bc0f408159997a74">API_UserControlType</a> { <br />
-&#160;&#160;<b>APIUserControlType_Pen</b>
-, <b>APIUserControlType_PenWithNull</b>
-, <b>APIUserControlType_PolyFill</b>
-, <b>APIUserControlType_WallFill</b>
+&#160;&#160;<a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74af6309eb9c61cfc1fc7a598a6ae15f0e2">APIUserControlType_Pen</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74a1837a833ef3391becb90d17704d00075">APIUserControlType_PenWithNull</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74a01c64357b0bc78676fbc589926954048">APIUserControlType_PolyFill</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74a20c90ba3b40eb90c2bda558c100994c7">APIUserControlType_WallFill</a>
 , <br />
-&#160;&#160;<b>APIUserControlType_WallCompFill</b>
-, <b>APIUserControlType_AllFill</b>
-, <b>APIUserControlType_AllFillGradNoComp</b>
-, <b>APIUserControlType_WallSetsFill</b>
+&#160;&#160;<a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74a896aec3d2b44ad04f2fa403fab13d68c">APIUserControlType_WallCompFill</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74ab12dfa5944f420ca2835d580e912aa92">APIUserControlType_AllFill</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74a9a3385ab256f1e748be65cd001661a74">APIUserControlType_AllFillGradNoComp</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74abd96b75d9b59b060a5cb273c5e1d1efe">APIUserControlType_WallSetsFill</a>
 , <br />
-&#160;&#160;<b>APIUserControlType_WallComposites</b>
-, <b>APIUserControlType_SlabSetsFill</b>
-, <b>APIUserControlType_SlabComposites</b>
-, <b>APIUserControlType_RoofSetsFill</b>
+&#160;&#160;<a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74af9653592ef01b192429bbdce01dd18d5">APIUserControlType_WallComposites</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74abd890028ae197a1c2017f527d21b2e1d">APIUserControlType_SlabSetsFill</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74a6915dfa41624311db3dfe6b9a60a3db2">APIUserControlType_SlabComposites</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74a0b2a23b2804021ec4fdde9edee0287c6">APIUserControlType_RoofSetsFill</a>
 , <br />
-&#160;&#160;<b>APIUserControlType_RoofComposites</b>
-, <b>APIUserControlType_ShellSetsFill</b>
-, <b>APIUserControlType_ShellComposites</b>
-, <b>APIUserControlType_OnlyCompFill</b>
+&#160;&#160;<a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74a02fbe883a416c1654662d5625b8f833e">APIUserControlType_RoofComposites</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74a81c6d33cedbc2f40a85f05af6a724823">APIUserControlType_ShellSetsFill</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74acff2ae0cf7ee67887248474b003d973e">APIUserControlType_ShellComposites</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74aa48633f9f7aa513d6955dd9dfd28f5dc">APIUserControlType_OnlyCompFill</a>
 , <br />
-&#160;&#160;<b>APIUserControlType_Material</b>
-, <b>APIUserControlType_MaterialWithGeneral</b>
-, <b>APIUserControlType_Layer</b>
-, <b>APIUserControlType_ZoneCategory</b>
+&#160;&#160;<a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74ac70b465aee3a8017afff67faa3f85235">APIUserControlType_Material</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74ae3d93695a91e5e8141cc1bf06f979232">APIUserControlType_MaterialWithGeneral</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74ae60f5acdd63f4f28cf28af1da010e36f">APIUserControlType_Layer</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74ac07765fbc09a5c39f6a59fe1d0e7283d">APIUserControlType_ZoneCategory</a>
 , <br />
-&#160;&#160;<b>APIUserControlType_DashedLine</b>
-, <b>APIUserControlType_SymbolLine</b>
-, <b>APIUserControlType_CoverFill</b>
-, <b>APIUserControlType_WallProfile</b>
+&#160;&#160;<a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74ab1d685fb7125b084e37a5077a02b3a8e">APIUserControlType_DashedLine</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74ac14522ac6a42a54239211a9a758fe4a8">APIUserControlType_SymbolLine</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74a784ecd7dd876b6c83b69404963390e3e">APIUserControlType_CoverFill</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74a302988cb29059a318ed2d8206b591c53">APIUserControlType_WallProfile</a>
 , <br />
-&#160;&#160;<b>APIUserControlType_BeamProfile</b>
-, <b>APIUserControlType_ColumnProfile</b>
-, <b>APIUserControlType_AllProfile</b>
-, <b>APIUserControlType_PolyFillWithGradient</b>
+&#160;&#160;<a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74a302fc35dede1582cd1ad97007e0bdee8">APIUserControlType_BeamProfile</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74a1c9ee0799ba425e30100d5799bbe1608">APIUserControlType_ColumnProfile</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74a2cc52aac0e3b8d1e389a7e05b4f1f960">APIUserControlType_AllProfile</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74ac3d2045a11e79d7ee9c4fb16215e43ed">APIUserControlType_PolyFillWithGradient</a>
 , <br />
-&#160;&#160;<b>APIUserControlType_BuildingMaterial</b>
-, <b>APIUserControlType_HandrailProfile</b>
-, <b>APIUserControlType_OtherGDLObjectProfile</b>
-, <b>APIUserControlType_BeamAndColumnProfile</b>
+&#160;&#160;<a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74a1149db697edd8ac14ba066e05623b2f5">APIUserControlType_BuildingMaterial</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74a067eb708e44eba94654e48516322569e">APIUserControlType_HandrailProfile</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74a44d8f4895ab23a53251fc303de9ce9b2">APIUserControlType_OtherGDLObjectProfile</a>
+, <a class="el" href="#gga8d178dbd01e32dd4bc0f408159997a74a7a413fb9c588e5872a7a6344a0ebc1b6">APIUserControlType_BeamAndColumnProfile</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga8d178dbd01e32dd4bc0f408159997a74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the different types of user controls.  <a href="#ga8d178dbd01e32dd4bc0f408159997a74">More...</a><br /></td></tr>
 <tr class="separator:ga8d178dbd01e32dd4bc0f408159997a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga06dffb8774ffc6a426f5304eaf0bb720" id="r_ga06dffb8774ffc6a426f5304eaf0bb720"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga06dffb8774ffc6a426f5304eaf0bb720">API_AddParID</a> : Int32 { <br />
-&#160;&#160;<b>API_ZombieParT</b> = 0
-, <b>APIParT_Integer</b>
-, <b>APIParT_Length</b>
-, <b>APIParT_Angle</b>
+&#160;&#160;<a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720ad3dd94990ac8bbc21a43a1750a73e87e">API_ZombieParT</a> = 0
+, <a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720a20e6e92da406e21aa847ad107ede8f8e">APIParT_Integer</a>
+, <a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720a365caf4926bc5228e27af655265f34f7">APIParT_Length</a>
+, <a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720ade34a5103544cb8a858f0e2c8c037adb">APIParT_Angle</a>
 , <br />
-&#160;&#160;<b>APIParT_RealNum</b>
-, <b>APIParT_LightSw</b>
-, <b>APIParT_ColRGB</b>
-, <b>APIParT_Intens</b>
+&#160;&#160;<a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720a86d058f5a25434adc999d00e31406d03">APIParT_RealNum</a>
+, <a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720a39698ef12e6d9af70246f240b9f62568">APIParT_LightSw</a>
+, <a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720a42fc78a34732eeec100a1e8251db6e52">APIParT_ColRGB</a>
+, <a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720a20f30bca44c70df9dde7bc5df9dd0aef">APIParT_Intens</a>
 , <br />
-&#160;&#160;<b>APIParT_LineTyp</b>
-, <b>APIParT_Mater</b>
-, <b>APIParT_FillPat</b>
-, <b>APIParT_PenCol</b>
+&#160;&#160;<a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720ae6ee1f8e444c56229a7ddac195129067">APIParT_LineTyp</a>
+, <a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720aa4077bc7a74dda08ca1b757edb182de9">APIParT_Mater</a>
+, <a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720ad15a8abda08961906a0f6c3525559ee7">APIParT_FillPat</a>
+, <a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720a292ced05b54b69d552c96285be4fc9bc">APIParT_PenCol</a>
 , <br />
-&#160;&#160;<b>APIParT_CString</b>
-, <b>APIParT_Boolean</b>
-, <b>APIParT_Separator</b>
-, <b>APIParT_Title</b>
+&#160;&#160;<a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720af05e499a13576c5ff1f515940850ea88">APIParT_CString</a>
+, <a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720a6e5d808d2614ef91f4a48c376ed9f41b">APIParT_Boolean</a>
+, <a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720acbe476f785d515483e68a8b6d0dd824c">APIParT_Separator</a>
+, <a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720af50764fd5e8a1bda41e3c6831f130ed2">APIParT_Title</a>
 , <br />
-&#160;&#160;<b>APIParT_BuildingMaterial</b>
-, <b>APIParT_Profile</b>
-, <b>APIParT_Dictionary</b>
+&#160;&#160;<a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720afc2c6912c28d2e19d9645bcce06540bd">APIParT_BuildingMaterial</a>
+, <a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720acaa3007dd743b7245fc10484efde7789">APIParT_Profile</a>
+, <a class="el" href="#gga06dffb8774ffc6a426f5304eaf0bb720a2d672122cadcee2b98aab12b5efd107a">APIParT_Dictionary</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga06dffb8774ffc6a426f5304eaf0bb720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible types of a Library Part additive parameter.  <a href="#ga06dffb8774ffc6a426f5304eaf0bb720">More...</a><br /></td></tr>
@@ -347,7 +367,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gaaec9ea16cf46fef1c0f1a76027ddb3ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends the registration of an add-on's modeless palette with the API.  <br /></td></tr>
 <tr class="separator:gaaec9ea16cf46fef1c0f1a76027ddb3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga75bf1a5faae2194c165ee4fcaf6afa38" id="r_ga75bf1a5faae2194c165ee4fcaf6afa38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (const GS::UniString &amp;format, bool withDial,...)</td></tr>
-<tr class="memdesc:ga75bf1a5faae2194c165ee4fcaf6afa38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a report string into the Report Windowot into a custom alert window.  <br /></td></tr>
+<tr class="memdesc:ga75bf1a5faae2194c165ee4fcaf6afa38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a report string into the Report Window or into a custom alert window.  <br /></td></tr>
 <tr class="separator:ga75bf1a5faae2194c165ee4fcaf6afa38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf4c19309a4ad840d45143ae89658ba47" id="r_gaf4c19309a4ad840d45143ae89658ba47"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf4c19309a4ad840d45143ae89658ba47">ACAPI_Dialog_CreateAttributePicker</a> (const <a class="el" href="struct_a_p_i___attribute_picker_params.html">API_AttributePickerParams</a> &amp;attributePickerParams, GS::Owner&lt; <a class="el" href="class_a_p_i___attribute_picker.html">API_AttributePicker</a> &gt; &amp;attributePicker)</td></tr>
 <tr class="memdesc:gaf4c19309a4ad840d45143ae89658ba47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the attribute picker functionality for a push check, if the user clicks the push check, the picker will open. Attributes pickers can be used to choose an attribute. On these new pickers, the folder structure and searching functionality is enabled.  <br /></td></tr>
@@ -410,6 +430,46 @@ Functions</h2></td></tr>
 
 <p>Possible types of a Library Part additive parameter. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>This identifier is mainly referenced from the <a class="el" href="struct_a_p_i___add_par_type.html">API_AddParType</a> structure. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720ad3dd94990ac8bbc21a43a1750a73e87e" name="gga06dffb8774ffc6a426f5304eaf0bb720ad3dd94990ac8bbc21a43a1750a73e87e"></a>API_ZombieParT&#160;</td><td class="fielddoc"><p>Dummy parameter type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720a20e6e92da406e21aa847ad107ede8f8e" name="gga06dffb8774ffc6a426f5304eaf0bb720a20e6e92da406e21aa847ad107ede8f8e"></a>APIParT_Integer&#160;</td><td class="fielddoc"><p>Integer additional parameter type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720a365caf4926bc5228e27af655265f34f7" name="gga06dffb8774ffc6a426f5304eaf0bb720a365caf4926bc5228e27af655265f34f7"></a>APIParT_Length&#160;</td><td class="fielddoc"><p>Length additional parameter type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720ade34a5103544cb8a858f0e2c8c037adb" name="gga06dffb8774ffc6a426f5304eaf0bb720ade34a5103544cb8a858f0e2c8c037adb"></a>APIParT_Angle&#160;</td><td class="fielddoc"><p>Angle additional parameter type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720a86d058f5a25434adc999d00e31406d03" name="gga06dffb8774ffc6a426f5304eaf0bb720a86d058f5a25434adc999d00e31406d03"></a>APIParT_RealNum&#160;</td><td class="fielddoc"><p>Real number additional parameter type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720a39698ef12e6d9af70246f240b9f62568" name="gga06dffb8774ffc6a426f5304eaf0bb720a39698ef12e6d9af70246f240b9f62568"></a>APIParT_LightSw&#160;</td><td class="fielddoc"><p>Light on/off additional parameter type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720a42fc78a34732eeec100a1e8251db6e52" name="gga06dffb8774ffc6a426f5304eaf0bb720a42fc78a34732eeec100a1e8251db6e52"></a>APIParT_ColRGB&#160;</td><td class="fielddoc"><p>RGB color additional parameter type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720a20f30bca44c70df9dde7bc5df9dd0aef" name="gga06dffb8774ffc6a426f5304eaf0bb720a20f30bca44c70df9dde7bc5df9dd0aef"></a>APIParT_Intens&#160;</td><td class="fielddoc"><p>Intensity additional parameter type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720ae6ee1f8e444c56229a7ddac195129067" name="gga06dffb8774ffc6a426f5304eaf0bb720ae6ee1f8e444c56229a7ddac195129067"></a>APIParT_LineTyp&#160;</td><td class="fielddoc"><p>Line type additional parameter type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720aa4077bc7a74dda08ca1b757edb182de9" name="gga06dffb8774ffc6a426f5304eaf0bb720aa4077bc7a74dda08ca1b757edb182de9"></a>APIParT_Mater&#160;</td><td class="fielddoc"><p>Material additional parameter type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720ad15a8abda08961906a0f6c3525559ee7" name="gga06dffb8774ffc6a426f5304eaf0bb720ad15a8abda08961906a0f6c3525559ee7"></a>APIParT_FillPat&#160;</td><td class="fielddoc"><p>Fill pattern additional parameter type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720a292ced05b54b69d552c96285be4fc9bc" name="gga06dffb8774ffc6a426f5304eaf0bb720a292ced05b54b69d552c96285be4fc9bc"></a>APIParT_PenCol&#160;</td><td class="fielddoc"><p>Pen color additional parameter type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720af05e499a13576c5ff1f515940850ea88" name="gga06dffb8774ffc6a426f5304eaf0bb720af05e499a13576c5ff1f515940850ea88"></a>APIParT_CString&#160;</td><td class="fielddoc"><p>C string additional parameter type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720a6e5d808d2614ef91f4a48c376ed9f41b" name="gga06dffb8774ffc6a426f5304eaf0bb720a6e5d808d2614ef91f4a48c376ed9f41b"></a>APIParT_Boolean&#160;</td><td class="fielddoc"><p>Boolean additional parameter type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720acbe476f785d515483e68a8b6d0dd824c" name="gga06dffb8774ffc6a426f5304eaf0bb720acbe476f785d515483e68a8b6d0dd824c"></a>APIParT_Separator&#160;</td><td class="fielddoc"><p>Separator line, no value. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720af50764fd5e8a1bda41e3c6831f130ed2" name="gga06dffb8774ffc6a426f5304eaf0bb720af50764fd5e8a1bda41e3c6831f130ed2"></a>APIParT_Title&#160;</td><td class="fielddoc"><p>Title text, no value. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720afc2c6912c28d2e19d9645bcce06540bd" name="gga06dffb8774ffc6a426f5304eaf0bb720afc2c6912c28d2e19d9645bcce06540bd"></a>APIParT_BuildingMaterial&#160;</td><td class="fielddoc"><p>Building material additional parameter type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720acaa3007dd743b7245fc10484efde7789" name="gga06dffb8774ffc6a426f5304eaf0bb720acaa3007dd743b7245fc10484efde7789"></a>APIParT_Profile&#160;</td><td class="fielddoc"><p>Profile additional parameter type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga06dffb8774ffc6a426f5304eaf0bb720a2d672122cadcee2b98aab12b5efd107a" name="gga06dffb8774ffc6a426f5304eaf0bb720a2d672122cadcee2b98aab12b5efd107a"></a>APIParT_Dictionary&#160;</td><td class="fielddoc"><p>Dictionary additional parameter type. The use of this parameter type is currently limited. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -477,6 +537,92 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gada01f12355d1586b43d5a7a9d524f086" name="gada01f12355d1586b43d5a7a9d524f086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gada01f12355d1586b43d5a7a9d524f086">&#9670;&#160;</a></span>API_PaletteDeactivationMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#gada01f12355d1586b43d5a7a9d524f086">API_PaletteDeactivationMethod</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deactivation method of the palette. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggada01f12355d1586b43d5a7a9d524f086aab4e92bb70e290cd5e29f0f8774d8799" name="ggada01f12355d1586b43d5a7a9d524f086aab4e92bb70e290cd5e29f0f8774d8799"></a>APIPaletteDeactivationMethod_Default&#160;</td><td class="fielddoc"><p>disable palette items if it is docked before deactivation, hide palette if it is undocked before deactivation </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggada01f12355d1586b43d5a7a9d524f086af88bece44d7e459410519db2a409808b" name="ggada01f12355d1586b43d5a7a9d524f086af88bece44d7e459410519db2a409808b"></a>APIPaletteDeactivationMethod_Hide&#160;</td><td class="fielddoc"><p>hide palette when it is deactivated </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggada01f12355d1586b43d5a7a9d524f086aad993010af2558de0bdd90a094e28bb4" name="ggada01f12355d1586b43d5a7a9d524f086aad993010af2558de0bdd90a094e28bb4"></a>APIPaletteDeactivationMethod_DisableItems&#160;</td><td class="fielddoc"><p>disable palette items when it is deactivated </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga9eec4199288e4b1817de263ce2d28000" name="ga9eec4199288e4b1817de263ce2d28000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9eec4199288e4b1817de263ce2d28000">&#9670;&#160;</a></span>API_PaletteMessageID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga9eec4199288e4b1817de263ce2d28000">API_PaletteMessageID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Messages sent to the add-on's palette. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga9eec4199288e4b1817de263ce2d28000a42c52a4e35c9c23e3db26e77b39284de" name="gga9eec4199288e4b1817de263ce2d28000a42c52a4e35c9c23e3db26e77b39284de"></a>APIPalMsg_ClosePalette&#160;</td><td class="fielddoc"><p>The API asks the add-on to close its palette. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9eec4199288e4b1817de263ce2d28000a67c86927da2b6aea3fe685018904ca26" name="gga9eec4199288e4b1817de263ce2d28000a67c86927da2b6aea3fe685018904ca26"></a>APIPalMsg_HidePalette_Begin&#160;</td><td class="fielddoc"><p>Your palette should be hidden for some reason, e.g. the user chose <b>Hide</b> <b>All</b> <b>Palettes</b> from the menu. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9eec4199288e4b1817de263ce2d28000a59de022ee9ed0c4ad1dab3c1b706254f" name="gga9eec4199288e4b1817de263ce2d28000a59de022ee9ed0c4ad1dab3c1b706254f"></a>APIPalMsg_HidePalette_End&#160;</td><td class="fielddoc"><p>The palette can be shown again if needed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9eec4199288e4b1817de263ce2d28000a55b487a48f03397581855915a96e875a" name="gga9eec4199288e4b1817de263ce2d28000a55b487a48f03397581855915a96e875a"></a>APIPalMsg_DisableItems_Begin&#160;</td><td class="fielddoc"><p>Certain palette items should be disabled, because the user is performing an input. This is necessary because you shouldn't make any modifications to the database during input. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9eec4199288e4b1817de263ce2d28000a02dae47ad39e8a2e760ed6a1df1c9f3a" name="gga9eec4199288e4b1817de263ce2d28000a02dae47ad39e8a2e760ed6a1df1c9f3a"></a>APIPalMsg_DisableItems_End&#160;</td><td class="fielddoc"><p>The reason behind <code>APIPalMsg_DisableItems_Begin</code> is gone; you can enable the items on the palette. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9eec4199288e4b1817de263ce2d28000a5ce53fff477dbb3ff7e45b651710da1a" name="gga9eec4199288e4b1817de263ce2d28000a5ce53fff477dbb3ff7e45b651710da1a"></a>APIPalMsg_OpenPalette&#160;</td><td class="fielddoc"><p>Sent when the palette should be opened automatically as set in the Work Environment. Your palette should pass a GUID when created: <code>DG::Palette</code> (resourceId, paletteGuid) to make this work. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9eec4199288e4b1817de263ce2d28000a76d15e254407a3e752838d4f7b8c181b" name="gga9eec4199288e4b1817de263ce2d28000a76d15e254407a3e752838d4f7b8c181b"></a>APIPalMsg_IsPaletteVisible&#160;</td><td class="fielddoc"><p>The Work Environment queries the palette for its visibility status on closing the current document/quitting the application. If you return <code>true</code> in <code>param</code> (really a <code>bool*</code>), then Archicad will send a <code>APIPalMsg_OpenPalette</code> to your add-on on next launch, so that you can re-open your add-on's palette. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9eec4199288e4b1817de263ce2d28000aad80a3853b7472377c79a02f3398a6ca" name="gga9eec4199288e4b1817de263ce2d28000aad80a3853b7472377c79a02f3398a6ca"></a>APIPalMsg_GetPaletteDeactivationMethod&#160;</td><td class="fielddoc"><p>returns the API_PaletteDeactivationMethod </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gae9a40093f4616e2565d7a7595b77c29e" name="gae9a40093f4616e2565d7a7595b77c29e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae9a40093f4616e2565d7a7595b77c29e">&#9670;&#160;</a></span>API_RenovationStatusType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#gae9a40093f4616e2565d7a7595b77c29e">API_RenovationStatusType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Renovation status of the (primitive) element. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggae9a40093f4616e2565d7a7595b77c29ea94d9f87a4ff6e71d66e3929a17f01dd4" name="ggae9a40093f4616e2565d7a7595b77c29ea94d9f87a4ff6e71d66e3929a17f01dd4"></a>API_UndefinedStatus&#160;</td><td class="fielddoc"><p>Certain element types (like cutplanes or drawings) don't have any renovation status; this value indicates that. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae9a40093f4616e2565d7a7595b77c29eab79540bbc31da6955875a94c154ac995" name="ggae9a40093f4616e2565d7a7595b77c29eab79540bbc31da6955875a94c154ac995"></a>API_DefaultStatus&#160;</td><td class="fielddoc"><p>Input-only pseudo-value; when you create or modify an element, Archicad will take the renovation status from the current element default. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae9a40093f4616e2565d7a7595b77c29eaa0e573f430c7a04b7a98e4d5b9994990" name="ggae9a40093f4616e2565d7a7595b77c29eaa0e573f430c7a04b7a98e4d5b9994990"></a>API_ExistingStatus&#160;</td><td class="fielddoc"><p>One of the three pre-defined statuses; denotes an existing element. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae9a40093f4616e2565d7a7595b77c29ea322abe2580439263c5b458dcf4d92b06" name="ggae9a40093f4616e2565d7a7595b77c29ea322abe2580439263c5b458dcf4d92b06"></a>API_NewStatus&#160;</td><td class="fielddoc"><p>One of the three pre-defined statuses; denotes an element created in the current phase. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae9a40093f4616e2565d7a7595b77c29ea32ded0c450fabb4eabe26fa284be1a2c" name="ggae9a40093f4616e2565d7a7595b77c29ea32ded0c450fabb4eabe26fa284be1a2c"></a>API_DemolishedStatus&#160;</td><td class="fielddoc"><p>One of the three pre-defined statuses; denotes an element which should be demolished in the current phase. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="gac8a55b706390d5b986d0269d93825830" name="gac8a55b706390d5b986d0269d93825830"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac8a55b706390d5b986d0269d93825830">&#9670;&#160;</a></span>API_SunAngleSettings_SunPositionOption</h2>
 
@@ -514,6 +660,72 @@ Functions</h2></td></tr>
 
 <p>Describes the different types of user controls. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>These are the special constants used in <a class="el" href="#gafeef2ab288937ece075ce5559473bf89">ACAPI_Dialog_SetUserControlCallback</a> (...) function. They define the attribute set used in the user control. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74af6309eb9c61cfc1fc7a598a6ae15f0e2" name="gga8d178dbd01e32dd4bc0f408159997a74af6309eb9c61cfc1fc7a598a6ae15f0e2"></a>APIUserControlType_Pen&#160;</td><td class="fielddoc"><p>pen control </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74a1837a833ef3391becb90d17704d00075" name="gga8d178dbd01e32dd4bc0f408159997a74a1837a833ef3391becb90d17704d00075"></a>APIUserControlType_PenWithNull&#160;</td><td class="fielddoc"><p>pen control with background pen </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74a01c64357b0bc78676fbc589926954048" name="gga8d178dbd01e32dd4bc0f408159997a74a01c64357b0bc78676fbc589926954048"></a>APIUserControlType_PolyFill&#160;</td><td class="fielddoc"><p>polygon fill control (drafting fills) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74a20c90ba3b40eb90c2bda558c100994c7" name="gga8d178dbd01e32dd4bc0f408159997a74a20c90ba3b40eb90c2bda558c100994c7"></a>APIUserControlType_WallFill&#160;</td><td class="fielddoc"><p>wall fill control (cut fills) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74a896aec3d2b44ad04f2fa403fab13d68c" name="gga8d178dbd01e32dd4bc0f408159997a74a896aec3d2b44ad04f2fa403fab13d68c"></a>APIUserControlType_WallCompFill&#160;</td><td class="fielddoc"><p>wall fill control without composites </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74ab12dfa5944f420ca2835d580e912aa92" name="gga8d178dbd01e32dd4bc0f408159997a74ab12dfa5944f420ca2835d580e912aa92"></a>APIUserControlType_AllFill&#160;</td><td class="fielddoc"><p>all fill types control </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74a9a3385ab256f1e748be65cd001661a74" name="gga8d178dbd01e32dd4bc0f408159997a74a9a3385ab256f1e748be65cd001661a74"></a>APIUserControlType_AllFillGradNoComp&#160;</td><td class="fielddoc"><p>all fill types without composites </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74abd96b75d9b59b060a5cb273c5e1d1efe" name="gga8d178dbd01e32dd4bc0f408159997a74abd96b75d9b59b060a5cb273c5e1d1efe"></a>APIUserControlType_WallSetsFill&#160;</td><td class="fielddoc"><p>fill control like in the Wall Settings dialog </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74af9653592ef01b192429bbdce01dd18d5" name="gga8d178dbd01e32dd4bc0f408159997a74af9653592ef01b192429bbdce01dd18d5"></a>APIUserControlType_WallComposites&#160;</td><td class="fielddoc"><p>composite control like in the Wall Settings dialog </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74abd890028ae197a1c2017f527d21b2e1d" name="gga8d178dbd01e32dd4bc0f408159997a74abd890028ae197a1c2017f527d21b2e1d"></a>APIUserControlType_SlabSetsFill&#160;</td><td class="fielddoc"><p>fill control like in the Slab Settings dialog </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74a6915dfa41624311db3dfe6b9a60a3db2" name="gga8d178dbd01e32dd4bc0f408159997a74a6915dfa41624311db3dfe6b9a60a3db2"></a>APIUserControlType_SlabComposites&#160;</td><td class="fielddoc"><p>composite control like in the Slab Settings dialog </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74a0b2a23b2804021ec4fdde9edee0287c6" name="gga8d178dbd01e32dd4bc0f408159997a74a0b2a23b2804021ec4fdde9edee0287c6"></a>APIUserControlType_RoofSetsFill&#160;</td><td class="fielddoc"><p>fill control like in the Roof Settings dialog </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74a02fbe883a416c1654662d5625b8f833e" name="gga8d178dbd01e32dd4bc0f408159997a74a02fbe883a416c1654662d5625b8f833e"></a>APIUserControlType_RoofComposites&#160;</td><td class="fielddoc"><p>composite control like in the Roof Settings dialog </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74a81c6d33cedbc2f40a85f05af6a724823" name="gga8d178dbd01e32dd4bc0f408159997a74a81c6d33cedbc2f40a85f05af6a724823"></a>APIUserControlType_ShellSetsFill&#160;</td><td class="fielddoc"><p>fill control like in the Shell Settings dialog </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74acff2ae0cf7ee67887248474b003d973e" name="gga8d178dbd01e32dd4bc0f408159997a74acff2ae0cf7ee67887248474b003d973e"></a>APIUserControlType_ShellComposites&#160;</td><td class="fielddoc"><p>composite control like in the Shell Settings dialog </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74aa48633f9f7aa513d6955dd9dfd28f5dc" name="gga8d178dbd01e32dd4bc0f408159997a74aa48633f9f7aa513d6955dd9dfd28f5dc"></a>APIUserControlType_OnlyCompFill&#160;</td><td class="fielddoc"><p>fill control containing composite fills only </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74ac70b465aee3a8017afff67faa3f85235" name="gga8d178dbd01e32dd4bc0f408159997a74ac70b465aee3a8017afff67faa3f85235"></a>APIUserControlType_Material&#160;</td><td class="fielddoc"><p>material control </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74ae3d93695a91e5e8141cc1bf06f979232" name="gga8d178dbd01e32dd4bc0f408159997a74ae3d93695a91e5e8141cc1bf06f979232"></a>APIUserControlType_MaterialWithGeneral&#160;</td><td class="fielddoc"><p>material control with general material </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74ae60f5acdd63f4f28cf28af1da010e36f" name="gga8d178dbd01e32dd4bc0f408159997a74ae60f5acdd63f4f28cf28af1da010e36f"></a>APIUserControlType_Layer&#160;</td><td class="fielddoc"><p>layer control </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74ac07765fbc09a5c39f6a59fe1d0e7283d" name="gga8d178dbd01e32dd4bc0f408159997a74ac07765fbc09a5c39f6a59fe1d0e7283d"></a>APIUserControlType_ZoneCategory&#160;</td><td class="fielddoc"><p>zone category control </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74ab1d685fb7125b084e37a5077a02b3a8e" name="gga8d178dbd01e32dd4bc0f408159997a74ab1d685fb7125b084e37a5077a02b3a8e"></a>APIUserControlType_DashedLine&#160;</td><td class="fielddoc"><p>dashed line control </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74ac14522ac6a42a54239211a9a758fe4a8" name="gga8d178dbd01e32dd4bc0f408159997a74ac14522ac6a42a54239211a9a758fe4a8"></a>APIUserControlType_SymbolLine&#160;</td><td class="fielddoc"><p>all line types </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74a784ecd7dd876b6c83b69404963390e3e" name="gga8d178dbd01e32dd4bc0f408159997a74a784ecd7dd876b6c83b69404963390e3e"></a>APIUserControlType_CoverFill&#160;</td><td class="fielddoc"><p>cover fill type control </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74a302988cb29059a318ed2d8206b591c53" name="gga8d178dbd01e32dd4bc0f408159997a74a302988cb29059a318ed2d8206b591c53"></a>APIUserControlType_WallProfile&#160;</td><td class="fielddoc"><p>wall profiles control </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74a302fc35dede1582cd1ad97007e0bdee8" name="gga8d178dbd01e32dd4bc0f408159997a74a302fc35dede1582cd1ad97007e0bdee8"></a>APIUserControlType_BeamProfile&#160;</td><td class="fielddoc"><p>beam profiles control </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74a1c9ee0799ba425e30100d5799bbe1608" name="gga8d178dbd01e32dd4bc0f408159997a74a1c9ee0799ba425e30100d5799bbe1608"></a>APIUserControlType_ColumnProfile&#160;</td><td class="fielddoc"><p>column profiles control </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74a2cc52aac0e3b8d1e389a7e05b4f1f960" name="gga8d178dbd01e32dd4bc0f408159997a74a2cc52aac0e3b8d1e389a7e05b4f1f960"></a>APIUserControlType_AllProfile&#160;</td><td class="fielddoc"><p>all profiles control </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74ac3d2045a11e79d7ee9c4fb16215e43ed" name="gga8d178dbd01e32dd4bc0f408159997a74ac3d2045a11e79d7ee9c4fb16215e43ed"></a>APIUserControlType_PolyFillWithGradient&#160;</td><td class="fielddoc"><p>polygon fill control with gradient fills </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74a1149db697edd8ac14ba066e05623b2f5" name="gga8d178dbd01e32dd4bc0f408159997a74a1149db697edd8ac14ba066e05623b2f5"></a>APIUserControlType_BuildingMaterial&#160;</td><td class="fielddoc"><p>building material control </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74a067eb708e44eba94654e48516322569e" name="gga8d178dbd01e32dd4bc0f408159997a74a067eb708e44eba94654e48516322569e"></a>APIUserControlType_HandrailProfile&#160;</td><td class="fielddoc"><p>handrail profiles control </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74a44d8f4895ab23a53251fc303de9ce9b2" name="gga8d178dbd01e32dd4bc0f408159997a74a44d8f4895ab23a53251fc303de9ce9b2"></a>APIUserControlType_OtherGDLObjectProfile&#160;</td><td class="fielddoc"><p>other GDL object profiles control </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8d178dbd01e32dd4bc0f408159997a74a7a413fb9c588e5872a7a6344a0ebc1b6" name="gga8d178dbd01e32dd4bc0f408159997a74a7a413fb9c588e5872a7a6344a0ebc1b6"></a>APIUserControlType_BeamAndColumnProfile&#160;</td><td class="fielddoc"><p>column and beam profile control </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -572,7 +784,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - Incorrect attributePickerParams was specified. </li>
 </ul>
 </dd></dl>
@@ -607,7 +819,7 @@ Functions</h2></td></tr>
 <li>APIERR_BADID - objectSettingsPars contains invalid data. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>The Settings dialog may show only library parts with a given subtype. The default library part's library index can also be passed onto this function. It returns the parameters set in the Settings dialog, and also the additional parameters of the selected library part. If subtypeID is an empty string, then the passed typeID and variationID will be used to identify the tool whose subtype will serve as a filter. If libIndex is 0 (i.e. you haven't used <a class="el" href="group___library_part.html#ga9e49cd1689140705c08d1c7d6f9ec816">ACAPI_LibraryPart_Search</a> to find an appropriate library item), then the function tried to find the first item in the loaded libraries, whose subtype matches the passed subTypeID (or typeID and variationID). The linked properties information specified on the Listing and Labeling page returns in the propIndivLibInd and propCriteria fields. These properties should be linked to the element you would create after calling the Object Settings dialog (see <a class="el" href="group___element_link.html#ga7fe6ea5021237ff1c958df3b228e23f0">ACAPI_ElementLink_SetLinkedPropertyObjects</a>). </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>The Settings dialog may show only library parts with a given subtype. The default library part's library index can also be passed onto this function. It returns the parameters set in the Settings dialog, and also the additional parameters of the selected library part. If subtypeID is an empty string, then the passed typeID and variationID will be used to identify the tool whose subtype will serve as a filter. If libIndex is 0 (i.e. you haven't used <a class="el" href="group___library_part.html#ga9e49cd1689140705c08d1c7d6f9ec816">ACAPI_LibraryPart_Search</a> to find an appropriate library item), then the function tried to find the first item in the loaded libraries, whose subtype matches the passed subTypeID (or typeID and variationID). The linked properties information specified on the Listing and Labeling page returns in the propIndivLibInd and propCriteria fields. These properties should be linked to the element you would create after calling the Object Settings dialog (see <a class="el" href="group___element_link.html#gaa33410323dbae8be8de9754d7aac0df2">ACAPI_ElementLink_SetLinkedPropertyObjects</a>). </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode SelectObject (<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">short</span> story)</div>
 <div class="line">{</div>
 <div class="line">    GSErrCode   err = NoError;</div>
@@ -638,7 +850,7 @@ Functions</h2></td></tr>
 <div class="line">                [&amp;] () -&gt; GSErrCode {</div>
 <div class="line">                    GSErrCode err1 = <a class="code hl_function" href="group___element.html#gad4ba2707aac702e651c6b1ec9e212baf">ACAPI_Element_Create</a> (&amp;element, &amp;memo);</div>
 <div class="line">                    <span class="keywordflow">if</span> (err1 == NoError)</div>
-<div class="line">                        err1 = <a class="code hl_function" href="group___element_link.html#ga7fe6ea5021237ff1c958df3b228e23f0">ACAPI_ElementLink_SetLinkedPropertyObjects</a> (&amp;element.<a class="code hl_variable" href="union_a_p_i___element.html#a2d99c75ff8448dd4206758c7bc65127d">header</a>, api_objSetPars.propCriteria, api_objSetPars.propIndivLibInd);</div>
+<div class="line">                        err1 = <a class="code hl_function" href="group___element_link.html#gaa33410323dbae8be8de9754d7aac0df2">ACAPI_ElementLink_SetLinkedPropertyObjects</a> (&amp;element.<a class="code hl_variable" href="union_a_p_i___element.html#a2d99c75ff8448dd4206758c7bc65127d">header</a>, api_objSetPars.propCriteria, api_objSetPars.propIndivLibInd);</div>
 <div class="line">                    <span class="keywordflow">return</span> err1;</div>
 <div class="line">                });</div>
 <div class="line">        }</div>
@@ -811,7 +1023,7 @@ Functions</h2></td></tr>
 <li>APIERR_BADPARS - One or both of the parameters are nullptr.</li>
 <li>APIERR_NESTING - Pet palettes cannot be opened when the input has already begun.</li>
 <li>APIERR_BADWINDOW - Pet palettes can be opened only above drawing windows.</li>
-<li>APIERR_BADID - One of the following errors occured: The petIconIDsHdl is nullptr. The petIconIDsHdl contain more or less IDs, thanindicated by nCols * nRows. The supplied petPaletteID collides with abuilt-in Archicad petpalette identifier. Choosing the old pictID for identifier is a good idea. The supplied petPaletteIDcollides withanother petpalette, which differs from the actual one: it hasmore or less items, or it has the same number of items, butat least one of them has different icon resource identifier. The Add-On is using the old <a class="el" href="struct_a_p_i___pet_palette_type.html">API_PetPaletteType</a> structure. For other common API errors see the API Errors document. </li>
+<li>APIERR_BADID - One of the following errors occurred: The petIconIDsHdl is nullptr. The petIconIDsHdl contain more or less IDs, than indicated by nCols * nRows. The supplied petPaletteID collides with a built-in Archicad pet palette identifier. Choosing the old pictID for identifier is a good idea. The supplied petPaletteID collides with another pet palette, which differs from the actual one: it has more or less items, or it has the same number of items, but at least one of them has different icon resource identifier. The Add-On is using the old <a class="el" href="struct_a_p_i___pet_palette_type.html">API_PetPaletteType</a> structure. For other common API errors see the API Errors document. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>The pet palette consists of individual 'GICN' icon resources (pet items). Each pet item in the palette assumed to be 22 pixels wide and 22 pixels high. Larger icons will appear truncated. The iconIDs should be passed to the Archicad in a GSHandle consisting of short numbers. The Archicad builds up the palette from these icons. Besides this, each different pet palette should have a unique identifier. Choosing the old pictID for identifier is a good idea. The pet palette can have tooltip (yellow bar) strings and help anchors (the help mechanism is loaded with it). The strings should be placed as pairs into a 'DHLP' resource. In the 'DHLP' resource, every tooltip and help anchor pair belongs to the corresponding pet item on the palette. This resource should be compiled into the API resource module, and their identifier can be passed to the <a class="el" href="struct_a_p_i___pet_palette_type.html">API_PetPaletteType</a> structure. The API will search for only this resource, and will index this with the pet palette item's relative index to get the help object and take an action: it will display the tooltip string, or will pass the anchor as a parameter to the help engine configured by the add-on. If the add-on wants to take these opportunities, then it should set the Location of its own help engine by the DGRegisterAdditionalHelpLocation function of the Dialog Manager module. This can be done during the Initialize phase, and you should unregister the help location by calling DGUnregisterAdditionalHelpLocation during the FreeData phase. The developerId and localId is the MDID stored in your 32500 'MDID' resource. The palette callback procedure is called with the actual value of the pet palette (see APIPetPaletteCallBackProc). </dd></dl>
@@ -1033,7 +1245,7 @@ Functions</h2></td></tr>
 <div class="line"> </div>
 <div class="line"><span class="comment">// initialize user controls</span></div>
 <div class="line">ucb.<a class="code hl_variable" href="struct_a_p_i___u_c_callback_type.html#aab9ba899bc659c9c2e1df54a25537871">dialogID</a> = TAB_ATTRIBUTE;           <span class="comment">// dialog or tab page ID</span></div>
-<div class="line">ucb.type     = APIUserControlType_Pen;  <span class="comment">// control type</span></div>
+<div class="line">ucb.type     = <a class="code hl_enumvalue" href="#gga8d178dbd01e32dd4bc0f408159997a74af6309eb9c61cfc1fc7a598a6ae15f0e2">APIUserControlType_Pen</a>;  <span class="comment">// control type</span></div>
 <div class="line">ucb.itemID   = IDC_PENSET;              <span class="comment">// user control&#39;s item ID</span></div>
 <div class="line"><a class="code hl_function" href="#gafeef2ab288937ece075ce5559473bf89">ACAPI_Dialog_SetUserControlCallback</a> (&amp;ucb);</div>
 </div><!-- fragment --> </dd></dl>
@@ -1063,7 +1275,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - The passed library part information is incorrect. </li>
 </ul>
 </dd></dl>
@@ -1286,10 +1498,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>When you close the modeless palette the registration should be ended with this function; call it in the FreeData function. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>When you close the modeless palette, the registration should be ended with this function; call it in the FreeData function. </dd></dl>
 
 </div>
 </div>
@@ -1316,7 +1528,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">objectId</td><td>[in] The unique identifier of this interface (that you passed during registration). </td></tr>
-    <tr><td class="paramname">dialogId</td><td>[out] The dialog ID you registered the interface for. </td></tr>
+    <tr><td class="paramname">dialogId</td><td>[in] The dialog ID you registered the interface for. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1352,12 +1564,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Writes a report string into the Report Windowot into a custom alert window. </p>
+<p>Writes a report string into the Report Window or into a custom alert window. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">format</td><td>A pointer to the message/format string. </td></tr>
-    <tr><td class="paramname">withDial</td><td>If <code>true</code> an alert window displaying the report string comes up, otherwise it writes to the Report window. </td></tr>
-    <tr><td class="paramname">...</td><td>This a variadic argument which supplies the parameters to the <code>format</code> string </td></tr>
+    <tr><td class="paramname">withDial</td><td>If <code>true</code>, an alert window displaying the report string will appear; otherwise, it will write to the Report window. </td></tr>
+    <tr><td class="paramname">...</td><td>This is a variadic argument which supplies the parameters to the <code>format</code> string </td></tr>
   </table>
   </dd>
 </dl>

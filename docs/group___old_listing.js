@@ -49,7 +49,13 @@ var group___old_listing =
       [ "key", "union_a_p_i___list_data.html#ab35cb128ad328a84f396944589e37774", null ],
       [ "unit", "union_a_p_i___list_data.html#a07866045a2ccde4a34f919fbac64176d", null ]
     ] ],
-    [ "API_ListDataID", "group___old_listing.html#gad54fa78ba87e7fbf43ef1e2c65a8f546", null ],
+    [ "API_ListDataID", "group___old_listing.html#gad54fa78ba87e7fbf43ef1e2c65a8f546", [
+      [ "API_ZombieListDataID", "group___old_listing.html#ggad54fa78ba87e7fbf43ef1e2c65a8f546a12a67233ebd39b96a28118b62eb5f9d2", null ],
+      [ "API_KeyID", "group___old_listing.html#ggad54fa78ba87e7fbf43ef1e2c65a8f546aebcbe0e2b003359bba1e9019db854c10", null ],
+      [ "API_UnitID", "group___old_listing.html#ggad54fa78ba87e7fbf43ef1e2c65a8f546a9e066de48f0747e93e26437ef4a45a15", null ],
+      [ "API_Obsolete_ComponentID", "group___old_listing.html#ggad54fa78ba87e7fbf43ef1e2c65a8f546a5d46dfe9c261aecbf26715c2aae24eff", null ],
+      [ "API_DescriptorID", "group___old_listing.html#ggad54fa78ba87e7fbf43ef1e2c65a8f546a7e3dce97aa2a810512afc2bdd99d652e", null ]
+    ] ],
     [ "ACAPI_OldListing_Get", "group___old_listing.html#ga4ddba6888c22341e41a29fa7136c8316", null ],
     [ "ACAPI_OldListing_GetLocal", "group___old_listing.html#ga6491d52b89966da95052718317da5d97", null ],
     [ "ACAPI_OldListing_GetNum", "group___old_listing.html#gaa65eb2d76332103065ab651a873888e5", null ],

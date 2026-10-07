@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Issue management</title>
+<title>Archicad 30 C++ API: Issue management</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -241,7 +241,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Describes the type of a component attached to a Mark-Up entry. </p>
-<dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>ACAPI_Markup_AttachElements and <a class="el" href="#gae33e071d8b34e5a8a552915d704e846b">ACAPI_Markup_GetAttachedElements</a> functions use this enum. </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad37935f84f120b73883cdb287fa7f268ab01d5df088c42cb3c4ba7946d37ebef3" name="ggad37935f84f120b73883cdb287fa7f268ab01d5df088c42cb3c4ba7946d37ebef3"></a>APIMarkUpComponent_Creation&#160;</td><td class="fielddoc"><p>Creation (previously it was named correction) </p>
@@ -285,7 +284,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NEEDSUNDOSCOPE - The function must be undoable, it wasn't called from an undoable command scope.</li>
 <li>APIERR_BADPARS - The passed markUpGuid parameter was incorrect. </li>
 </ul>
@@ -336,7 +335,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NEEDSUNDOSCOPE - The function must be undoable, it wasn't called from an undoable command scope.</li>
 <li>APIERR_BADPARS - The passed markUpGuid parameter or at least one of the given element GUIDs was incorrect. </li>
 </ul>
@@ -369,7 +368,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NEEDSUNDOSCOPE - The function must be undoable, it wasn't called from an undoable command scope. </li>
 </ul>
 </dd></dl>
@@ -416,7 +415,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOPLAN - There is no opened project.</li>
 <li>APIERR_NEEDSUNDOSCOPE - The function must be undoable, it wasn't called from an undoable command scope.</li>
 <li>APIERR_BADID - Issue not found with the given guid.</li>
@@ -457,7 +456,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NEEDSUNDOSCOPE - The function must be undoable, it wasn't called from an undoable command scope.</li>
 <li>APIERR_BADPARS - The passed markUpGuid parameter or at least one of the given element GUIDs was incorrect. </li>
 </ul>
@@ -508,7 +507,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>Use this function to export BCF files. To learn more about the usage of the External IFC ID please refer to <a class="el" href="group___i_f_c.html#gadd13bccf6fa3af7ce31a41e2f2fb34ad">IFCAPI::ObjectAccessor::GetGlobalId</a> and <a class="el" href="group___i_f_c.html#gae59ec67fc3e27dce1aeb74ed657c0e0e">IFCAPI::ObjectAccessor::GetExternalGlobalId</a>. <div class="fragment"><div class="line">GSErrCode DoBCFExport ()</div>
@@ -571,7 +570,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed markUpGuid parameter was incorrect. </li>
 </ul>
 </dd></dl>
@@ -608,7 +607,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed markUpGuid parameter was incorrect or the passed commentList is nullptr. </li>
 </ul>
 </dd></dl>
@@ -651,7 +650,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed elemGuid parameter was invalid or the passed markUpList is nullptr. </li>
 </ul>
 </dd></dl>
@@ -713,7 +712,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed fileLoc is not a valid BCF file. </li>
 </ul>
 </dd></dl>
@@ -784,7 +783,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOTSUPPORTED - The passed fileLoc is not a PDF file.</li>
 <li>APIERR_BADTOKEN - The entered password is incorrect</li>
 <li>APIERR_BADVALUE - The passed file is not supported, cannot be extracted or contains no pages.</li>

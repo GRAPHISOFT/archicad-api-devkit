@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Attribute Management</title>
+<title>Archicad 30 C++ API: Attribute Management</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -170,7 +170,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the simple fills contained in composite structures.  <a href="struct_a_p_i___c_wall_component.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___c_wall_line_component.html">API_CWallLineComponent</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the lines separate the simple fills contained in composite structures.  <a href="struct_a_p_i___c_wall_line_component.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the lines separating the simple fills contained in composite structures.  <a href="struct_a_p_i___c_wall_line_component.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___comp_wall_type.html">API_CompWallType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composite fill attribute representation.  <a href="struct_a_p_i___comp_wall_type.html#details">More...</a><br /></td></tr>
@@ -226,6 +226,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___attribute_folder_content.html">API_AttributeFolderContent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Content of an attribute folder. Contains direct subfolders and attributes.  <a href="struct_a_p_i___attribute_folder_content.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___attribute_creation_info.html">API_AttributeCreationInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creation metadata attached to an attribute.  <a href="struct_a_p_i___attribute_creation_info.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___pen.html">API_Pen</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pen attribute representation.  <a href="struct_a_p_i___pen.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,8 +254,9 @@ Typedefs</h2></td></tr>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>API_AttributeUserData</b> = <a class="el" href="struct_a_p_i___user_data.html">API_UserData</a></td></tr>
 <tr class="memdesc:gaa9cfb11d312c694bd8c4df24afd00be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A UserData attached to an Attribute. <br /></td></tr>
 <tr class="separator:gaa9cfb11d312c694bd8c4df24afd00be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa76149c14157b1316b4e18b37b6372a2" id="r_gaa76149c14157b1316b4e18b37b6372a2"><td class="memItemLeft" align="right" valign="top">typedef GS::HashTable&lt; <a class="el" href="group___navigator.html#ga1ced849eced2cac8366a288bccabb874">API_AttrTypeID</a>, GS::HashTable&lt; <a class="el" href="class_a_p_i___attribute_index.html">API_AttributeIndex</a>, <a class="el" href="class_a_p_i___attribute_index.html">API_AttributeIndex</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa76149c14157b1316b4e18b37b6372a2">API_AttributeReplaceIndexTable</a></td></tr>
-<tr class="memdesc:gaa76149c14157b1316b4e18b37b6372a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the deleted and replaced attribute indices grouped by attribute type.  <br /></td></tr>
+<tr class="memitem:gaa76149c14157b1316b4e18b37b6372a2" id="r_gaa76149c14157b1316b4e18b37b6372a2"><td class="memItemLeft" align="right" valign="top"><a id="gaa76149c14157b1316b4e18b37b6372a2" name="gaa76149c14157b1316b4e18b37b6372a2"></a>
+typedef GS::HashTable&lt; <a class="el" href="group___navigator.html#ga1ced849eced2cac8366a288bccabb874">API_AttrTypeID</a>, GS::HashTable&lt; <a class="el" href="class_a_p_i___attribute_index.html">API_AttributeIndex</a>, <a class="el" href="class_a_p_i___attribute_index.html">API_AttributeIndex</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>API_AttributeReplaceIndexTable</b></td></tr>
+<tr class="memdesc:gaa76149c14157b1316b4e18b37b6372a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the deleted and replaced attribute indices grouped by attribute type. <br /></td></tr>
 <tr class="separator:gaa76149c14157b1316b4e18b37b6372a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -291,7 +295,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#gga99c564bd36c3cfad679ff35132251ed7a00d7ad81270b3c9a638892bb712af8d1">APIFill_Image</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ga99c564bd36c3cfad679ff35132251ed7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the various sub types of a fill.  <a href="#ga99c564bd36c3cfad679ff35132251ed7">More...</a><br /></td></tr>
+<tr class="memdesc:ga99c564bd36c3cfad679ff35132251ed7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the various subtypes of a fill.  <a href="#ga99c564bd36c3cfad679ff35132251ed7">More...</a><br /></td></tr>
 <tr class="separator:ga99c564bd36c3cfad679ff35132251ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3ded060e4058e0e520c8e02bb1ff9192" id="r_ga3ded060e4058e0e520c8e02bb1ff9192"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3ded060e4058e0e520c8e02bb1ff9192">API_OccupancyTypeID</a> { <a class="el" href="#gga3ded060e4058e0e520c8e02bb1ff9192a37c82d16955b4c8281339301599193db">APIOccupancyType_Residential</a> = 1
 , <a class="el" href="#gga3ded060e4058e0e520c8e02bb1ff9192a205f812ffe263ab3ddbaae692b6859bc">APIOccupancyType_NonResidential</a> = 2
@@ -323,13 +327,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:gaa5117e2e738a849e9f1baf2508754af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the memory occupied by all of the attribute definition handles.  <br /></td></tr>
 <tr class="separator:gaa5117e2e738a849e9f1baf2508754af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf35160714821244fa834df4a667ed1f3" id="r_gaf35160714821244fa834df4a667ed1f3"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf35160714821244fa834df4a667ed1f3">ACAPI_Attribute_ModifyPen</a> (const <a class="el" href="struct_a_p_i___pen.html">API_Pen</a> &amp;pen)</td></tr>
-<tr class="memdesc:gaf35160714821244fa834df4a667ed1f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify a pen by index in the active pentable.  <br /></td></tr>
+<tr class="memdesc:gaf35160714821244fa834df4a667ed1f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify a pen by index in the active pen table.  <br /></td></tr>
 <tr class="separator:gaf35160714821244fa834df4a667ed1f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga081c7dcac6627833cc8b7beee7207596" id="r_ga081c7dcac6627833cc8b7beee7207596"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga081c7dcac6627833cc8b7beee7207596">ACAPI_Attribute_GetPen</a> (<a class="el" href="struct_a_p_i___pen.html">API_Pen</a> &amp;pen)</td></tr>
-<tr class="memdesc:ga081c7dcac6627833cc8b7beee7207596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pen by index from the active pentable.  <br /></td></tr>
+<tr class="memdesc:ga081c7dcac6627833cc8b7beee7207596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pen by index from the active pen table.  <br /></td></tr>
 <tr class="separator:ga081c7dcac6627833cc8b7beee7207596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9cbff42ec913055a85bb485e3c63c753" id="r_ga9cbff42ec913055a85bb485e3c63c753"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9cbff42ec913055a85bb485e3c63c753">ACAPI_Attribute_GetPenNum</a> (UInt32 &amp;count)</td></tr>
-<tr class="memdesc:ga9cbff42ec913055a85bb485e3c63c753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of pens in the active pentable.  <br /></td></tr>
+<tr class="memdesc:ga9cbff42ec913055a85bb485e3c63c753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of pens in the active pen table.  <br /></td></tr>
 <tr class="separator:ga9cbff42ec913055a85bb485e3c63c753"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab12445cc5271eef70854523302dfd893" id="r_gab12445cc5271eef70854523302dfd893"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab12445cc5271eef70854523302dfd893">ACAPI_Attribute_GetNum</a> (<a class="el" href="group___navigator.html#ga1ced849eced2cac8366a288bccabb874">API_AttrTypeID</a> typeID, UInt32 &amp;count)</td></tr>
 <tr class="memdesc:gab12445cc5271eef70854523302dfd893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of instances of a given type of attribute.  <br /></td></tr>
@@ -346,15 +350,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga103f20d2f6e99293efb0647eff656942" id="r_ga103f20d2f6e99293efb0647eff656942"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga103f20d2f6e99293efb0647eff656942">ACAPI_Attribute_GetDef</a> (<a class="el" href="group___navigator.html#ga1ced849eced2cac8366a288bccabb874">API_AttrTypeID</a> typeID, <a class="el" href="class_a_p_i___attribute_index.html">API_AttributeIndex</a> index, <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a> *defs)</td></tr>
 <tr class="memdesc:ga103f20d2f6e99293efb0647eff656942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves extended information for an attribute.  <br /></td></tr>
 <tr class="separator:ga103f20d2f6e99293efb0647eff656942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga301958ef7f58e945ec38ccd4ebbb1bac" id="r_ga301958ef7f58e945ec38ccd4ebbb1bac"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga301958ef7f58e945ec38ccd4ebbb1bac">ACAPI_Attribute_GetCreationInfo</a> (<a class="el" href="group___navigator.html#ga1ced849eced2cac8366a288bccabb874">API_AttrTypeID</a> typeID, <a class="el" href="class_a_p_i___attribute_index.html">API_AttributeIndex</a> index, std::optional&lt; <a class="el" href="struct_a_p_i___attribute_creation_info.html">API_AttributeCreationInfo</a> &gt; &amp;creationInfo)</td></tr>
+<tr class="memdesc:ga301958ef7f58e945ec38ccd4ebbb1bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves creation metadata for an attribute.  <br /></td></tr>
+<tr class="separator:ga301958ef7f58e945ec38ccd4ebbb1bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7a55be50b9a68f0e070ef012bec7a06c" id="r_ga7a55be50b9a68f0e070ef012bec7a06c"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7a55be50b9a68f0e070ef012bec7a06c">ACAPI_Attribute_GetDefExt</a> (<a class="el" href="group___navigator.html#ga1ced849eced2cac8366a288bccabb874">API_AttrTypeID</a> typeID, <a class="el" href="class_a_p_i___attribute_index.html">API_AttributeIndex</a> index, <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> *defs)</td></tr>
 <tr class="memdesc:ga7a55be50b9a68f0e070ef012bec7a06c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves extended information for an attribute.  <br /></td></tr>
 <tr class="separator:ga7a55be50b9a68f0e070ef012bec7a06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabff99a54b27c3879c6eb71c15a004391" id="r_gabff99a54b27c3879c6eb71c15a004391"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabff99a54b27c3879c6eb71c15a004391">ACAPI_Attribute_Create</a> (<a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> *attribute, <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a> *defs)</td></tr>
-<tr class="memdesc:gabff99a54b27c3879c6eb71c15a004391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an attribute.  <br /></td></tr>
-<tr class="separator:gabff99a54b27c3879c6eb71c15a004391"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaefcc1320aa6d7c1aafc0db4557a7eebe" id="r_gaefcc1320aa6d7c1aafc0db4557a7eebe"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaefcc1320aa6d7c1aafc0db4557a7eebe">ACAPI_Attribute_CreateExt</a> (<a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> *attribute, <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> *defs)</td></tr>
-<tr class="memdesc:gaefcc1320aa6d7c1aafc0db4557a7eebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an attribute.  <br /></td></tr>
-<tr class="separator:gaefcc1320aa6d7c1aafc0db4557a7eebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef3e440cfe08948765a0f6da87937c6d" id="r_gaef3e440cfe08948765a0f6da87937c6d"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaef3e440cfe08948765a0f6da87937c6d">ACAPI_Attribute_Create</a> (<a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> *attribute, <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a> *defs, API_AttrCreationMethod creationMethod=APIAttrCreationMethod_AddOn, const GS::UniString &amp;source=GS::EmptyUniString)</td></tr>
+<tr class="memdesc:gaef3e440cfe08948765a0f6da87937c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an attribute.  <br /></td></tr>
+<tr class="separator:gaef3e440cfe08948765a0f6da87937c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76520929693304344bc348908d45a463" id="r_ga76520929693304344bc348908d45a463"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga76520929693304344bc348908d45a463">ACAPI_Attribute_CreateExt</a> (<a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> *attribute, <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> *defs, API_AttrCreationMethod creationMethod=APIAttrCreationMethod_AddOn, const GS::UniString &amp;source=GS::EmptyUniString)</td></tr>
+<tr class="memdesc:ga76520929693304344bc348908d45a463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an attribute.  <br /></td></tr>
+<tr class="separator:ga76520929693304344bc348908d45a463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7e438863b05d0a872f1b04968489babe" id="r_ga7e438863b05d0a872f1b04968489babe"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7e438863b05d0a872f1b04968489babe">ACAPI_Attribute_Modify</a> (<a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> *attribute, <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a> *defs)</td></tr>
 <tr class="memdesc:ga7e438863b05d0a872f1b04968489babe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies an attribute.  <br /></td></tr>
 <tr class="separator:ga7e438863b05d0a872f1b04968489babe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -383,7 +390,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gad5c8fb97be21472a4d79dd5f8656da9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an attribute reader for the currently used attribute set.  <br /></td></tr>
 <tr class="separator:gad5c8fb97be21472a4d79dd5f8656da9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae8b8e8267becbc34abb4e1b02cca35ce" id="r_gae8b8e8267becbc34abb4e1b02cca35ce"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae8b8e8267becbc34abb4e1b02cca35ce">ACAPI_Attribute_GetFolder</a> (<a class="el" href="struct_a_p_i___attribute_folder.html">API_AttributeFolder</a> &amp;folder)</td></tr>
-<tr class="memdesc:gae8b8e8267becbc34abb4e1b02cca35ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an existing attribute folder by it's path or guid.  <br /></td></tr>
+<tr class="memdesc:gae8b8e8267becbc34abb4e1b02cca35ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an existing attribute folder by its path or guid.  <br /></td></tr>
 <tr class="separator:gae8b8e8267becbc34abb4e1b02cca35ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaed5c2a09b6ee66872978a23703a36f64" id="r_gaed5c2a09b6ee66872978a23703a36f64"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaed5c2a09b6ee66872978a23703a36f64">ACAPI_Attribute_CreateFolder</a> (<a class="el" href="struct_a_p_i___attribute_folder.html">API_AttributeFolder</a> &amp;folder)</td></tr>
 <tr class="memdesc:gaed5c2a09b6ee66872978a23703a36f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates attribute folders. To create a folder, its full path has to be provided. The command will create all folders along the path, if they do not exist.  <br /></td></tr>
@@ -401,7 +408,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gae60e538ba682582898809fddc5b52d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes an attribute folder and all the folders and attributes it contains.  <br /></td></tr>
 <tr class="separator:gae60e538ba682582898809fddc5b52d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad215ed2646a6981faff2b50612efbdf3" id="r_gad215ed2646a6981faff2b50612efbdf3"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad215ed2646a6981faff2b50612efbdf3">ACAPI_Attribute_CreateAttributeFolderPicker</a> (const <a class="el" href="struct_a_p_i___attribute_folder_picker_params.html">API_AttributeFolderPickerParams</a> &amp;attributeFolderPickerParams, GS::Owner&lt; <a class="el" href="class_a_p_i___attribute_folder_picker.html">API_AttributeFolderPicker</a> &gt; &amp;attributeFolderPicker)</td></tr>
-<tr class="memdesc:gad215ed2646a6981faff2b50612efbdf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the attribute folder picker functionality for a push check, if the user clicks the push check, the picker will open. Attributes folder pickers can be used to choose an attribute folder.  <br /></td></tr>
+<tr class="memdesc:gad215ed2646a6981faff2b50612efbdf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the attribute folder picker functionality for a push check. If the user clicks the push check, the picker will open. Attributes folder pickers can be used to choose an attribute folder.  <br /></td></tr>
 <tr class="separator:gad215ed2646a6981faff2b50612efbdf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga01ad5a7b653a6725ef2f9595de0450d6" id="r_ga01ad5a7b653a6725ef2f9595de0450d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_p_i___attribute_index.html">API_AttributeIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga01ad5a7b653a6725ef2f9595de0450d6">ACAPI_Attribute_GetFirstValidAttribute</a> (<a class="el" href="group___navigator.html#ga1ced849eced2cac8366a288bccabb874">API_AttrTypeID</a> typeID)</td></tr>
 <tr class="memdesc:ga01ad5a7b653a6725ef2f9595de0450d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first valid attribute index.  <br /></td></tr>
@@ -466,7 +473,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions related to accessing and manipulating Attribute and the Attribute-related data of elements. </p>
-<h1><a class="anchor" id="autotoc_md101"></a>
+<h1><a class="anchor" id="autotoc_md108"></a>
 Attribute Overview</h1>
 <p>Available types of attributes are enumerated in the <a class="el" href="group___navigator.html#ga1ced849eced2cac8366a288bccabb874">API_AttrTypeID</a> structure. The definition of an attribute is described in the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure, which is in fact a union of all types of attributes. All of the attribute structures begin with a common header structure, named [API<a class="el" href="struct_a_p_i___attr___head.html">API_Attr_Head</a></p>
 <ul>
@@ -479,7 +486,7 @@ Attribute Overview</h1>
 </ul>
 <p>Many attribute related functions use the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure on the parameter list. As a general rule, you have to fill the required fields in the union, then Archicad parses the request based on the values and passes the return parameters in the same parameter. This is why most of the functions do not have the <code>const</code> directive in the prototypes.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md102"></a>
+<h1><a class="anchor" id="autotoc_md109"></a>
 Retrieving an attribute</h1>
 <p>Let's see a simple example. Assume you are interested in the definition of the second line type of the data structure. In this case you should use a variable with the type <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure.</p>
 <div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___attribute.html">API_Attribute</a>    attrib = {};</div>
@@ -490,16 +497,16 @@ Retrieving an attribute</h1>
 <div class="line"> </div>
 <div class="line">err = <a class="code hl_function" href="#ga1a6c06eb82706031fef8ff0ea0af78a6">ACAPI_Attribute_Get</a> (&amp;attrib);</div>
 <div class="ttc" id="agroup___attribute_html_ga1a6c06eb82706031fef8ff0ea0af78a6"><div class="ttname"><a href="#ga1a6c06eb82706031fef8ff0ea0af78a6">ACAPI_Attribute_Get</a></div><div class="ttdeci">GSErrCode ACAPI_Attribute_Get(API_Attribute *attribute)</div><div class="ttdoc">Retrieves an attribute from the database.</div></div>
-<div class="ttc" id="agroup___navigator_html_gga1ced849eced2cac8366a288bccabb874a91e9be9d689275844d55f5387177bf96"><div class="ttname"><a href="group___navigator.html#gga1ced849eced2cac8366a288bccabb874a91e9be9d689275844d55f5387177bf96">API_LinetypeID</a></div><div class="ttdeci">@ API_LinetypeID</div><div class="ttdef"><b>Definition</b> APIdefs_Attributes.h:60</div></div>
-<div class="ttc" id="astruct_a_p_i___attr___head_html_abe53711f5744dba5528ea04080641c55"><div class="ttname"><a href="struct_a_p_i___attr___head.html#abe53711f5744dba5528ea04080641c55">API_Attr_Head::index</a></div><div class="ttdeci">API_AttributeIndex index</div><div class="ttdoc">The attribute index is the current database index of the given attribute. References to any attribute...</div><div class="ttdef"><b>Definition</b> APIdefs_Attributes.h:122</div></div>
-<div class="ttc" id="astruct_a_p_i___attr___head_html_ae253be1eae6d432df469061ec8044fe2"><div class="ttname"><a href="struct_a_p_i___attr___head.html#ae253be1eae6d432df469061ec8044fe2">API_Attr_Head::typeID</a></div><div class="ttdeci">API_AttrTypeID typeID</div><div class="ttdoc">Type of the attribute; this identifies the attribute along with the index field. Refer to the API_Att...</div><div class="ttdef"><b>Definition</b> APIdefs_Attributes.h:114</div></div>
-<div class="ttc" id="aunion_a_p_i___attribute_html"><div class="ttname"><a href="union_a_p_i___attribute.html">API_Attribute</a></div><div class="ttdoc">Describes the different attributes.</div><div class="ttdef"><b>Definition</b> APIdefs_Attributes.h:1972</div></div>
-<div class="ttc" id="aunion_a_p_i___attribute_html_aa8fcba6db764d3631ffff28d0e230ab4"><div class="ttname"><a href="union_a_p_i___attribute.html#aa8fcba6db764d3631ffff28d0e230ab4">API_Attribute::header</a></div><div class="ttdeci">API_Attr_Head header</div><div class="ttdoc">A common header for all the attribute types. It contains information which applies to all the attribu...</div><div class="ttdef"><b>Definition</b> APIdefs_Attributes.h:1978</div></div>
+<div class="ttc" id="agroup___navigator_html_gga1ced849eced2cac8366a288bccabb874a91e9be9d689275844d55f5387177bf96"><div class="ttname"><a href="group___navigator.html#gga1ced849eced2cac8366a288bccabb874a91e9be9d689275844d55f5387177bf96">API_LinetypeID</a></div><div class="ttdeci">@ API_LinetypeID</div><div class="ttdef"><b>Definition</b> APIdefs_Attributes.h:54</div></div>
+<div class="ttc" id="astruct_a_p_i___attr___head_html_abe53711f5744dba5528ea04080641c55"><div class="ttname"><a href="struct_a_p_i___attr___head.html#abe53711f5744dba5528ea04080641c55">API_Attr_Head::index</a></div><div class="ttdeci">API_AttributeIndex index</div><div class="ttdoc">The attribute index is the current database index of the given attribute. References to any attribute...</div><div class="ttdef"><b>Definition</b> APIdefs_Attributes.h:116</div></div>
+<div class="ttc" id="astruct_a_p_i___attr___head_html_ae253be1eae6d432df469061ec8044fe2"><div class="ttname"><a href="struct_a_p_i___attr___head.html#ae253be1eae6d432df469061ec8044fe2">API_Attr_Head::typeID</a></div><div class="ttdeci">API_AttrTypeID typeID</div><div class="ttdoc">Type of the attribute; this identifies the attribute along with the index field. Refer to the API_Att...</div><div class="ttdef"><b>Definition</b> APIdefs_Attributes.h:108</div></div>
+<div class="ttc" id="aunion_a_p_i___attribute_html"><div class="ttname"><a href="union_a_p_i___attribute.html">API_Attribute</a></div><div class="ttdoc">Describes the different attributes.</div><div class="ttdef"><b>Definition</b> APIdefs_Attributes.h:1963</div></div>
+<div class="ttc" id="aunion_a_p_i___attribute_html_aa8fcba6db764d3631ffff28d0e230ab4"><div class="ttname"><a href="union_a_p_i___attribute.html#aa8fcba6db764d3631ffff28d0e230ab4">API_Attribute::header</a></div><div class="ttdeci">API_Attr_Head header</div><div class="ttdoc">A common header for all the attribute types. It contains information which applies to all the attribu...</div><div class="ttdef"><b>Definition</b> APIdefs_Attributes.h:1969</div></div>
 </div><!-- fragment --><p>The description of the attribute is returned in the <code>attrib.linetype</code> part of the union. With this function call, you get the basic data of the given attribute, such as the name, the flags, the defined scale, etc., but you do not get the definition of the actual shape of the line type. Since producing this data may be a relatively a long conversion process, this information can be obtained with an additional function call.</p>
 <div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>    defs;</div>
 <div class="line">err = <a class="code hl_function" href="#ga103f20d2f6e99293efb0647eff656942">ACAPI_Attribute_GetDef</a> (<a class="code hl_enumvalue" href="group___navigator.html#gga1ced849eced2cac8366a288bccabb874a91e9be9d689275844d55f5387177bf96">API_LinetypeID</a>, 2, &amp;defs);</div>
 <div class="ttc" id="agroup___attribute_html_ga103f20d2f6e99293efb0647eff656942"><div class="ttname"><a href="#ga103f20d2f6e99293efb0647eff656942">ACAPI_Attribute_GetDef</a></div><div class="ttdeci">GSErrCode ACAPI_Attribute_GetDef(API_AttrTypeID typeID, API_AttributeIndex index, API_AttributeDef *defs)</div><div class="ttdoc">Retrieves extended information for an attribute.</div></div>
-<div class="ttc" id="astruct_a_p_i___attribute_def_html"><div class="ttname"><a href="struct_a_p_i___attribute_def.html">API_AttributeDef</a></div><div class="ttdoc">Describes the extended information for different attributes.</div><div class="ttdef"><b>Definition</b> APIdefs_Attributes.h:2122</div></div>
+<div class="ttc" id="astruct_a_p_i___attribute_def_html"><div class="ttname"><a href="struct_a_p_i___attribute_def.html">API_AttributeDef</a></div><div class="ttdoc">Describes the extended information for different attributes.</div><div class="ttdef"><b>Definition</b> APIdefs_Attributes.h:2113</div></div>
 </div><!-- fragment --><p>In this case, you have all of the additional data related to the particular attribute. The <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a> structure is a collection of several handles (dynamic memory). If any of them are allocated it contains data. If you do not need the data any more, you have to free the allocated memory blocks to avoid memory leaks. The suggested way is the following:</p>
 <div class="fragment"><div class="line"><a class="code hl_function" href="#ga16f503d117d0ac10291756e523cc286f">ACAPI_DisposeAttrDefsHdls</a> (&amp;defs);</div>
 <div class="ttc" id="agroup___attribute_html_ga16f503d117d0ac10291756e523cc286f"><div class="ttname"><a href="#ga16f503d117d0ac10291756e523cc286f">ACAPI_DisposeAttrDefsHdls</a></div><div class="ttdeci">GSErrCode ACAPI_DisposeAttrDefsHdls(API_AttributeDef *defs)</div><div class="ttdoc">Frees the memory occupied by all of the attribute definition handles.</div></div>
@@ -521,13 +528,13 @@ Retrieving an attribute</h1>
 <div class="line">    <span class="keywordflow">if</span> (err == <a class="code hl_enumvalue" href="group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2af7356cf647514e0c342b7d07d1264caa">APIERR_DELETED</a>)</div>
 <div class="line">        err = NoError;</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup___a_p_i_infrastructure_html_gga75cc225b8e9434d91621dd230c3013a2af7356cf647514e0c342b7d07d1264caa"><div class="ttname"><a href="group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2af7356cf647514e0c342b7d07d1264caa">APIERR_DELETED</a></div><div class="ttdeci">@ APIERR_DELETED</div><div class="ttdef"><b>Definition</b> APIdefs_ErrorCodes.h:165</div></div>
+<div class="ttc" id="agroup___a_p_i_infrastructure_html_gga75cc225b8e9434d91621dd230c3013a2af7356cf647514e0c342b7d07d1264caa"><div class="ttname"><a href="group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2af7356cf647514e0c342b7d07d1264caa">APIERR_DELETED</a></div><div class="ttdeci">@ APIERR_DELETED</div><div class="ttdef"><b>Definition</b> APIdefs_ErrorCodes.h:159</div></div>
 <div class="ttc" id="agroup___attribute_html_gab12445cc5271eef70854523302dfd893"><div class="ttname"><a href="#gab12445cc5271eef70854523302dfd893">ACAPI_Attribute_GetNum</a></div><div class="ttdeci">GSErrCode ACAPI_Attribute_GetNum(API_AttrTypeID typeID, UInt32 &amp;count)</div><div class="ttdoc">Returns the number of instances of a given type of attribute.</div></div>
 </div><!-- fragment --><p>First you need to get the number of line types in the database. You can do that with the <a class="el" href="#gab12445cc5271eef70854523302dfd893">ACAPI_Attribute_GetNum</a> function, but be careful. This function returns the largest index used in the database, not the number of installed attributes, because instances may be deleted. Deleted attributes are not purged from the database immediately, which means that the valid index range is not (always) continuous. This is why the APIERR_DELETED return code has to be handled.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md103"></a>
+<h1><a class="anchor" id="autotoc_md110"></a>
 Creating an attribute</h1>
-<p>The attribute creation process is also fairly simple. All you have to do is to fill the appropriate part of the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a>, and optionally the <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure. The <a class="el" href="#gaefcc1320aa6d7c1aafc0db4557a7eebe">ACAPI_Attribute_CreateExt</a> function does the following:</p>
+<p>The attribute creation process is also fairly simple. All you have to do is to fill the appropriate part of the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a>, and optionally the <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure. The <a class="el" href="#ga76520929693304344bc348908d45a463">ACAPI_Attribute_CreateExt</a> function does the following:</p>
 <ul>
 <li>It checks the data for possible inconsistency. If some problem is encountered it may be corrected automatically or an error code is generated.</li>
 <li>It ignores for example, the <code>index</code> field in the header structure, you cannot influence which index the attribute should be referenced by. This value is automatically generated and returned to you.</li>
@@ -546,13 +553,13 @@ Creating an attribute</h1>
 <div class="line"><span class="comment">/* fill attrib.linetype */</span></div>
 <div class="line"><span class="comment">/* fill defs for dashed and symbol line types */</span></div>
 <div class="line"> </div>
-<div class="line">err = <a class="code hl_function" href="#gaefcc1320aa6d7c1aafc0db4557a7eebe">ACAPI_Attribute_CreateExt</a> (&amp;attrib, &amp;defs);</div>
+<div class="line">err = <a class="code hl_function" href="#ga76520929693304344bc348908d45a463">ACAPI_Attribute_CreateExt</a> (&amp;attrib, &amp;defs);</div>
 <div class="line">ltypeIndex = attrib.<a class="code hl_variable" href="union_a_p_i___attribute.html#aa8fcba6db764d3631ffff28d0e230ab4">header</a>.<a class="code hl_variable" href="struct_a_p_i___attr___head.html#abe53711f5744dba5528ea04080641c55">index</a>;</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="#gaa5117e2e738a849e9f1baf2508754af4">ACAPI_DisposeAttrDefsHdlsExt</a> (&amp;defs);</div>
+<div class="ttc" id="agroup___attribute_html_ga76520929693304344bc348908d45a463"><div class="ttname"><a href="#ga76520929693304344bc348908d45a463">ACAPI_Attribute_CreateExt</a></div><div class="ttdeci">GSErrCode ACAPI_Attribute_CreateExt(API_Attribute *attribute, API_AttributeDefExt *defs, API_AttrCreationMethod creationMethod=APIAttrCreationMethod_AddOn, const GS::UniString &amp;source=GS::EmptyUniString)</div><div class="ttdoc">Creates an attribute.</div></div>
 <div class="ttc" id="agroup___attribute_html_gaa5117e2e738a849e9f1baf2508754af4"><div class="ttname"><a href="#gaa5117e2e738a849e9f1baf2508754af4">ACAPI_DisposeAttrDefsHdlsExt</a></div><div class="ttdeci">GSErrCode ACAPI_DisposeAttrDefsHdlsExt(API_AttributeDefExt *defs)</div><div class="ttdoc">Frees the memory occupied by all of the attribute definition handles.</div></div>
-<div class="ttc" id="agroup___attribute_html_gaefcc1320aa6d7c1aafc0db4557a7eebe"><div class="ttname"><a href="#gaefcc1320aa6d7c1aafc0db4557a7eebe">ACAPI_Attribute_CreateExt</a></div><div class="ttdeci">GSErrCode ACAPI_Attribute_CreateExt(API_Attribute *attribute, API_AttributeDefExt *defs)</div><div class="ttdoc">Creates an attribute.</div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md104"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md111"></a>
 Handler Functions</h1>
 <p>All of the attribute handler functions begins with the <b>ACAPI_Attribute_</b> prefix. This function family gives support to query the attribute database, to modify the existing items, and also to create new instances. Refer to the functions below to have details on these topics.</p>
 <ul>
@@ -561,8 +568,8 @@ Handler Functions</h1>
 <li><a class="el" href="#ga1a6c06eb82706031fef8ff0ea0af78a6">ACAPI_Attribute_Get</a></li>
 <li><a class="el" href="#ga103f20d2f6e99293efb0647eff656942">ACAPI_Attribute_GetDef</a></li>
 <li><a class="el" href="#ga7a55be50b9a68f0e070ef012bec7a06c">ACAPI_Attribute_GetDefExt</a></li>
-<li><a class="el" href="#gabff99a54b27c3879c6eb71c15a004391">ACAPI_Attribute_Create</a></li>
-<li><a class="el" href="#gaefcc1320aa6d7c1aafc0db4557a7eebe">ACAPI_Attribute_CreateExt</a></li>
+<li><a class="el" href="#gaef3e440cfe08948765a0f6da87937c6d">ACAPI_Attribute_Create</a></li>
+<li><a class="el" href="#ga76520929693304344bc348908d45a463">ACAPI_Attribute_CreateExt</a></li>
 <li><a class="el" href="#ga9b0bf8d01a22b70620626db460ec40c0">ACAPI_Attribute_Delete</a></li>
 <li><a class="el" href="#gaac9f263216df496d1848e05823da1f6c">ACAPI_Attribute_DeleteMore</a></li>
 <li><a class="el" href="#ga7e438863b05d0a872f1b04968489babe">ACAPI_Attribute_Modify</a></li>
@@ -605,7 +612,7 @@ Handler Functions</h1>
 <li><a class="el" href="group___dialog.html#gaf4c19309a4ad840d45143ae89658ba47">ACAPI_Dialog_CreateAttributePicker</a></li>
 <li><a class="el" href="#gad215ed2646a6981faff2b50612efbdf3">ACAPI_Attribute_CreateAttributeFolderPicker</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md105"></a>
+<h1><a class="anchor" id="autotoc_md112"></a>
 General Error Codes</h1>
 <p><code>APIERR_BADID</code></p>
 <p>invalid reference; <br  />
@@ -619,7 +626,7 @@ General Error Codes</h1>
 <p><code>APIERR_NOTMINE</code></p>
 <p>permission denied; <br  />
  the attribute is out of the users workspace</p>
-<h1><a class="anchor" id="autotoc_md106"></a>
+<h1><a class="anchor" id="autotoc_md113"></a>
 Notes</h1>
 <p>There are certain rules which effect the attribute operations; i.e. they may be refused for some reason. The most important rules are:</p>
 <ul>
@@ -628,23 +635,6 @@ Notes</h1>
 <li>any type of modification is allowed only in the case when the target attribute instance is in the user's workspace </li>
 </ul>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="gaa76149c14157b1316b4e18b37b6372a2" name="gaa76149c14157b1316b4e18b37b6372a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa76149c14157b1316b4e18b37b6372a2">&#9670;&#160;</a></span>API_AttributeReplaceIndexTable</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef GS::HashTable&lt;<a class="el" href="group___navigator.html#ga1ced849eced2cac8366a288bccabb874">API_AttrTypeID</a>, GS::HashTable&lt;<a class="el" href="class_a_p_i___attribute_index.html">API_AttributeIndex</a>, <a class="el" href="class_a_p_i___attribute_index.html">API_AttributeIndex</a>&gt; &gt; <a class="el" href="#gaa76149c14157b1316b4e18b37b6372a2">API_AttributeReplaceIndexTable</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Contains the deleted and replaced attribute indices grouped by attribute type. </p>
-<dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
-
-</div>
-</div>
 <a id="ga1c89e13893df21fe429d518aed488908" name="ga1c89e13893df21fe429d518aed488908"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1c89e13893df21fe429d518aed488908">&#9670;&#160;</a></span>APIAttributeReplacementHandlerProc</h2>
 
@@ -658,7 +648,6 @@ Notes</h1>
 </div><div class="memdoc">
 
 <p>User supplied callback procedure for handling attribute replacements. </p>
-<dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">table</td><td>[in] List of attributes replaced. The hash key in the hash table is the type of attribute (material, profile etc.), the paired value is another hash table, which holds the old (deleted) attribute indices as keys, and the replacement attribute indices as values. </td></tr>
@@ -710,7 +699,7 @@ Notes</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Describes the various sub types of a fill. </p>
+<p>Describes the various subtypes of a fill. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga99c564bd36c3cfad679ff35132251ed7afb98f3e2b5746e2b968be4b75d9cc057" name="gga99c564bd36c3cfad679ff35132251ed7afb98f3e2b5746e2b968be4b75d9cc057"></a>APIFill_Vector&#160;</td><td class="fielddoc"><p>Vector fill. </p>
 </td></tr>
@@ -882,7 +871,7 @@ Notes</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADINDEX - The attrHead did not refer to a valid attribute.</li>
 <li>APIERR_READONLY - The attribute can not be modified (i.e. from a hotlink) or you do not have the right to classify attributes in the current teamwork plan.</li>
 <li>APIERR_BADID - Inexistent classification item.</li>
@@ -892,8 +881,8 @@ Notes</h1>
 
 </div>
 </div>
-<a id="gabff99a54b27c3879c6eb71c15a004391" name="gabff99a54b27c3879c6eb71c15a004391"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabff99a54b27c3879c6eb71c15a004391">&#9670;&#160;</a></span>ACAPI_Attribute_Create()</h2>
+<a id="gaef3e440cfe08948765a0f6da87937c6d" name="gaef3e440cfe08948765a0f6da87937c6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaef3e440cfe08948765a0f6da87937c6d">&#9670;&#160;</a></span>ACAPI_Attribute_Create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -906,7 +895,17 @@ Notes</h1>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>defs</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>defs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">API_AttrCreationMethod</td>          <td class="paramname"><span class="paramname"><em>creationMethod</em></span><span class="paramdefsep"> = </span><span class="paramdefval">APIAttrCreationMethod_AddOn</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GS::UniString &amp;</td>          <td class="paramname"><span class="paramname"><em>source</em></span><span class="paramdefsep"> = </span><span class="paramdefval">GS::EmptyUniString</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -916,19 +915,21 @@ Notes</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">attribute</td><td>[in/out] Parameters of the attribute. The type of the attribute must be passed in the typeID field in the attribute header. The index field of the attribute header is used as an output parameter to return the reference index to the newly created attribute. </td></tr>
-    <tr><td class="paramname">defs</td><td>[in] Additional parameters of the attribute. It is required or optional to pass depending on the type of the attribute. </td></tr>
+    <tr><td class="paramname">defs</td><td>[in] Additional parameters of the attribute. It is required or optional to pass, depending on the type of the attribute. </td></tr>
+    <tr><td class="paramname">creationMethod</td><td>[in] The method how the attribute is created. See API_AttrCreationMethod for the allowed values. Default value is APIAttrCreationMethod_AddOn. </td></tr>
+    <tr><td class="paramname">source</td><td>[in] The source of the created attribute (file or teamwork project) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_ATTREXIST - An attribute with the same name already exists.</li>
 <li>APIERR_BADID - Invalid attribute type was passed, or a pen or font attribute type was given.</li>
 <li>APIERR_BADPARS - A nullptr attribute pointer was passed.</li>
 <li>APIERR_NOTMINE - You are in view-only mode for a teamwork project. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to create an attribute, defined by the typeID field of the attribute header. The reference index of the newly created attribute is returned in the index field of the attribute header. You cannot create pen and font attributes. The function also checks the data for possible inconsistency. If a problem is encountered it may be corrected automatically, or an error code is generated. If an attribute with the same name exists in the database, the existing index will be returned. The matching procedure ignores the differences of the attribute definition. Multiple attributes with the same name are not allowed. When creating the attribute, the applicable fields should be filled. <a class="el" href="struct_a_p_i___attr___head.html">API_Attr_Head</a> typeID required index ignored flags required where applicable name required <code>API_AttributeTypeID</code> defs <code>API_LayerID</code> - <code>API_LinetypeID</code> ltype_dashItems (for dashed line type) ltype_lineItems(for symbol line type) <code>API_FilltypeID</code> fill_lineItems (for vector fill type) fill_lineLength (for vector fill type) sfill_Items (for symbol fill type) <code>API_CompWallID</code> cwall_compItems <code>API_MaterialID</code> - <code>API_LayerCombID</code> layer_statItems <code>API_ZoneCatID</code> zone_addParItems <code>API_MEPSystemID</code> - It is important that Archicad does not free any dynamic data structure you have allocated and passed to Archicad. It is your responsibility to dispose the handles passed in the defs parameter, when they are no longer needed. It is advised to use the <a class="el" href="#ga16f503d117d0ac10291756e523cc286f">ACAPI_DisposeAttrDefsHdls</a> function for compatibility reasons. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. You cannot create pen and font attributes. The function also checks the data for possible inconsistency. If a problem is encountered it may be corrected automatically, or an error code is generated. If an attribute with the same name exists in the database, the existing index will be returned. The matching procedure ignores the differences of the attribute definition. Multiple attributes with the same name are not allowed. When creating the attribute, the applicable fields should be filled. Use this function instead of <a class="el" href="#gabff99a54b27c3879c6eb71c15a004391">ACAPI_Attribute_Create</a> function because <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure contains more fields - detailed information for composite wall attribute - than <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>. <table class="markdownTable">
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to create an attribute, defined by the typeID field of the attribute header. The reference index of the newly created attribute is returned in the index field of the attribute header. You cannot create pen and font attributes. The function also checks the data for possible inconsistency. If a problem is encountered it may be corrected automatically, or an error code is generated. If an attribute with the same name exists in the database, the existing index will be returned. The matching procedure ignores the differences in the attribute definition. Multiple attributes with the same name are not allowed. When creating the attribute, fill out the applicable fields. <a class="el" href="struct_a_p_i___attr___head.html">API_Attr_Head</a> typeID required index ignored flags required where applicable name required <code>API_AttributeTypeID</code> defs <code>API_LayerID</code> - <code>API_LinetypeID</code> ltype_dashItems (for dashed line type) ltype_lineItems(for symbol line type) <code>API_FilltypeID</code> fill_lineItems (for vector fill type) fill_lineLength (for vector fill type) sfill_Items (for symbol fill type) <code>API_CompWallID</code> cwall_compItems <code>API_MaterialID</code> - <code>API_LayerCombID</code> layer_statItems <code>API_ZoneCatID</code> zone_addParItems <code>API_MEPSystemID</code> - It is vital to know that Archicad does not free any dynamic data structure you have allocated and passed to Archicad. It is your responsibility to dispose of the handles passed in the defs parameter when they are no longer needed. It is advised to use the <a class="el" href="#ga16f503d117d0ac10291756e523cc286f">ACAPI_DisposeAttrDefsHdls</a> function for compatibility reasons. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. You cannot create pen and font attributes. The function also checks the data for possible inconsistency. If a problem is encountered, it may be corrected automatically, or an error code is generated. If an attribute with the same name exists in the database, the existing index will be returned. The matching procedure ignores the differences in the attribute definition. Multiple attributes with the same name are not allowed. When creating the attribute, fill out the applicable fields. Use this function instead of <a class="el" href="#gaef3e440cfe08948765a0f6da87937c6d">ACAPI_Attribute_Create</a> function because <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure contains more fields - detailed information for composite wall attribute - than <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>. <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone" colspan="2"><a class="el" href="struct_a_p_i___attr___head.html">API_Attr_Head</a>    </th></tr>
 <tr class="markdownTableRowOdd">
@@ -964,7 +965,15 @@ sfill_Items (for symbol fill type)    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><code>API_MEPSystemID</code>   </td><td class="markdownTableBodyNone">-   </td></tr>
 </table>
-<p>It is important that Archicad does not free any dynamic data structure you have allocated and passed to Archicad. It is your responsibility to dispose of the handles passed in the defs parameter, when they are no longer needed. It is advised to use the <a class="el" href="#gaa5117e2e738a849e9f1baf2508754af4">ACAPI_DisposeAttrDefsHdlsExt</a> function for compatibility reasons. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </p><dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___attribute.html">API_Attribute</a>       attrib {};</div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Parameter   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>creationMethod</code>   </td><td class="markdownTableBodyNone">Defines how the attribute is created. Use the default <code>APIAttrCreationMethod_AddOn</code> for standard add-on initiated creation.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>source</code>   </td><td class="markdownTableBodyNone">Optional source identifier (usually a filename) stored with the creation metadata of the attribute.   </td></tr>
+</table>
+<p>It is vital to know that Archicad does not free any dynamic data structure you have allocated and passed to Archicad. It is your responsibility to dispose of the handles passed in the defs parameter when they are no longer needed. It is advised to use the <a class="el" href="#gaa5117e2e738a849e9f1baf2508754af4">ACAPI_DisposeAttrDefsHdlsExt</a> function for compatibility reasons. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </p><dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___attribute.html">API_Attribute</a>       attrib {};</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>    defs {};</div>
 <div class="line"><a class="code hl_class" href="class_a_p_i___attribute_index.html">API_AttributeIndex</a>  ltypeIndex;</div>
 <div class="line">GSErrCode           err;</div>
@@ -973,7 +982,7 @@ sfill_Items (for symbol fill type)    </td></tr>
 <div class="line"><span class="comment">/* fill attrib.linetype */</span></div>
 <div class="line"><span class="comment">/* fill defs for non solid linetypes */</span></div>
 <div class="line"> </div>
-<div class="line">err = <a class="code hl_function" href="#gabff99a54b27c3879c6eb71c15a004391">ACAPI_Attribute_Create</a> (&amp;attrib, &amp;defs);</div>
+<div class="line">err = <a class="code hl_function" href="#gaef3e440cfe08948765a0f6da87937c6d">ACAPI_Attribute_Create</a> (&amp;attrib, &amp;defs);</div>
 <div class="line">ltypeIndex = attrib.header.index;</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="#ga16f503d117d0ac10291756e523cc286f">ACAPI_DisposeAttrDefsHdls</a> (&amp;defs);</div>
@@ -1000,7 +1009,7 @@ sfill_Items (for symbol fill type)    </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enables the attribute folder picker functionality for a push check, if the user clicks the push check, the picker will open. Attributes folder pickers can be used to choose an attribute folder. </p>
+<p>Enables the attribute folder picker functionality for a push check. If the user clicks the push check, the picker will open. Attributes folder pickers can be used to choose an attribute folder. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 26 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1010,15 +1019,15 @@ sfill_Items (for symbol fill type)    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - Incorrect attributeFolderPickerParams was specified. </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="gaefcc1320aa6d7c1aafc0db4557a7eebe" name="gaefcc1320aa6d7c1aafc0db4557a7eebe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaefcc1320aa6d7c1aafc0db4557a7eebe">&#9670;&#160;</a></span>ACAPI_Attribute_CreateExt()</h2>
+<a id="ga76520929693304344bc348908d45a463" name="ga76520929693304344bc348908d45a463"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga76520929693304344bc348908d45a463">&#9670;&#160;</a></span>ACAPI_Attribute_CreateExt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1031,7 +1040,17 @@ sfill_Items (for symbol fill type)    </td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> *</td>          <td class="paramname"><span class="paramname"><em>defs</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> *</td>          <td class="paramname"><span class="paramname"><em>defs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">API_AttrCreationMethod</td>          <td class="paramname"><span class="paramname"><em>creationMethod</em></span><span class="paramdefsep"> = </span><span class="paramdefval">APIAttrCreationMethod_AddOn</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GS::UniString &amp;</td>          <td class="paramname"><span class="paramname"><em>source</em></span><span class="paramdefsep"> = </span><span class="paramdefval">GS::EmptyUniString</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1041,19 +1060,21 @@ sfill_Items (for symbol fill type)    </td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">attribute</td><td>[in/out] Parameters of the attribute. The type of the attribute must be passed in the typeID field in the attribute header. The index field of the attribute header is used as an output parameter to return the reference index to the newly created attribute. </td></tr>
-    <tr><td class="paramname">defs</td><td>[in] Additional parameters of the attribute. It is required or optional to pass depending on the type of the attribute. </td></tr>
+    <tr><td class="paramname">defs</td><td>[in] Additional parameters of the attribute. It is required or optional to pass, depending on the type of the attribute. </td></tr>
+    <tr><td class="paramname">creationMethod</td><td>[in] The method how the attribute is created. See API_AttrCreationMethod for the allowed values. Default value is APIAttrCreationMethod_AddOn. </td></tr>
+    <tr><td class="paramname">source</td><td>[in] The source of the created attribute (file or teamwork project). </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_ATTREXIST - An attribute with the same name already exists.</li>
 <li>APIERR_BADID - Invalid attribute type was passed, or a pen or font attribute type was given.</li>
 <li>APIERR_BADPARS - A nullptr attribute pointer was passed.</li>
 <li>APIERR_NOTMINE - You are in view-only mode for a teamwork project. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to create an attribute, defined by the typeID field of the attribute header. The reference index of the newly created attribute is returned in the index field of the attribute header. You cannot create pen and font attributes. The function also checks the data for possible inconsistency. If a problem is encountered it may be corrected automatically, or an error code is generated. If an attribute with the same name exists in the database, the existing index will be returned. The matching procedure ignores the differences of the attribute definition. Multiple attributes with the same name are not allowed. When creating the attribute, the applicable fields should be filled. <a class="el" href="struct_a_p_i___attr___head.html">API_Attr_Head</a> typeID required index ignored flags required where applicable name required <code>API_AttributeTypeID</code> defs <code>API_LayerID</code> - <code>API_LinetypeID</code> ltype_dashItems (for dashed line type) ltype_lineItems(for symbol line type) <code>API_FilltypeID</code> fill_lineItems (for vector fill type) fill_lineLength (for vector fill type) sfill_Items (for symbol fill type) <code>API_CompWallID</code> cwall_compItems <code>API_MaterialID</code> - <code>API_LayerCombID</code> layer_statItems <code>API_ZoneCatID</code> zone_addParItems <code>API_MEPSystemID</code> - It is important that Archicad does not free any dynamic data structure you have allocated and passed to Archicad. It is your responsibility to dispose the handles passed in the defs parameter, when they are no longer needed. It is advised to use the <a class="el" href="#ga16f503d117d0ac10291756e523cc286f">ACAPI_DisposeAttrDefsHdls</a> function for compatibility reasons. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. You cannot create pen and font attributes. The function also checks the data for possible inconsistency. If a problem is encountered it may be corrected automatically, or an error code is generated. If an attribute with the same name exists in the database, the existing index will be returned. The matching procedure ignores the differences of the attribute definition. Multiple attributes with the same name are not allowed. When creating the attribute, the applicable fields should be filled. Use this function instead of <a class="el" href="#gabff99a54b27c3879c6eb71c15a004391">ACAPI_Attribute_Create</a> function because <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure contains more fields - detailed information for composite wall attribute - than <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>.<br  />
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to create an attribute, defined by the typeID field of the attribute header. The reference index of the newly created attribute is returned in the index field of the attribute header. You cannot create pen and font attributes. The function also checks the data for possible inconsistency. If a problem is encountered it may be corrected automatically, or an error code is generated. If an attribute with the same name exists in the database, the existing index will be returned. The matching procedure ignores the differences in the attribute definition. Multiple attributes with the same name are not allowed. When creating the attribute, fill out the applicable fields. <a class="el" href="struct_a_p_i___attr___head.html">API_Attr_Head</a> typeID required index ignored flags required where applicable name required <code>API_AttributeTypeID</code> defs <code>API_LayerID</code> - <code>API_LinetypeID</code> ltype_dashItems (for dashed line type) ltype_lineItems(for symbol line type) <code>API_FilltypeID</code> fill_lineItems (for vector fill type) fill_lineLength (for vector fill type) sfill_Items (for symbol fill type) <code>API_CompWallID</code> cwall_compItems <code>API_MaterialID</code> - <code>API_LayerCombID</code> layer_statItems <code>API_ZoneCatID</code> zone_addParItems <code>API_MEPSystemID</code> - It is vital to know that Archicad does not free any dynamic data structure you have allocated and passed to Archicad. It is your responsibility to dispose of the handles passed in the defs parameter when they are no longer needed. It is advised to use the <a class="el" href="#ga16f503d117d0ac10291756e523cc286f">ACAPI_DisposeAttrDefsHdls</a> function for compatibility reasons. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. You cannot create pen and font attributes. The function also checks the data for possible inconsistencies. If a problem is encountered, it may be corrected automatically, or an error code may be generated. If an attribute with the same name exists in the database, the existing index will be returned. The matching procedure ignores the differences in the attribute definition. Multiple attributes with the same name are not allowed. When creating the attribute, fill out the applicable fields. Use this function instead of <a class="el" href="#gaef3e440cfe08948765a0f6da87937c6d">ACAPI_Attribute_Create</a> function because <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure contains more fields - detailed information for composite wall attribute - than <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>.<br  />
  <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone" colspan="2"><code><a class="el" href="struct_a_p_i___attr___head.html" title="Contains common information related to all attribute types.">API_Attr_Head</a></code>    </th></tr>
@@ -1091,7 +1112,15 @@ cwall_compLItems    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">API_MEPSystemID   </td><td class="markdownTableBodyNone">-   </td></tr>
 </table>
-<p>It is important that Archicad does not free any dynamic data structure you have allocated and passed to Archicad. It is your responsibility to dispose the handles passed in the defs parameter, when they are no longer needed. It is advised to use the <a class="el" href="#gaa5117e2e738a849e9f1baf2508754af4">ACAPI_DisposeAttrDefsHdlsExt</a> function for compatibility reasons. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </p><dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___attribute.html">API_Attribute</a>       attrib {};</div>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Parameter   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">creationMethod   </td><td class="markdownTableBodyNone">Defines how the attribute is created. Use the default APIAttrCreationMethod_AddOn for standard add-on initiated creation.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">source   </td><td class="markdownTableBodyNone">Optional source identifier (usually a filename) stored with the creation metadata of the attribute.   </td></tr>
+</table>
+<p>It is vital to know that Archicad does not free any dynamic data structure you have allocated and passed to Archicad. It is your responsibility to dispose of the handles passed in the defs parameter when they are no longer needed. It is advised to use the <a class="el" href="#gaa5117e2e738a849e9f1baf2508754af4">ACAPI_DisposeAttrDefsHdlsExt</a> function for compatibility reasons. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </p><dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___attribute.html">API_Attribute</a>       attrib {};</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> defs {};</div>
 <div class="line"><a class="code hl_class" href="class_a_p_i___attribute_index.html">API_AttributeIndex</a>  ltypeIndex;</div>
 <div class="line">GSErrCode           err;</div>
@@ -1100,7 +1129,7 @@ cwall_compLItems    </td></tr>
 <div class="line"><span class="comment">/* fill attrib.linetype */</span></div>
 <div class="line"><span class="comment">/* fill defs for non solid linetypes */</span></div>
 <div class="line"> </div>
-<div class="line">err = <a class="code hl_function" href="#gaefcc1320aa6d7c1aafc0db4557a7eebe">ACAPI_Attribute_CreateExt</a> (&amp;attrib, &amp;defs);</div>
+<div class="line">err = <a class="code hl_function" href="#ga76520929693304344bc348908d45a463">ACAPI_Attribute_CreateExt</a> (&amp;attrib, &amp;defs);</div>
 <div class="line">ltypeIndex = attrib.header.index;</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="#gaa5117e2e738a849e9f1baf2508754af4">ACAPI_DisposeAttrDefsHdlsExt</a> (&amp;defs);</div>
@@ -1132,16 +1161,16 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - Incorrect folder.typeID was specified, or folder.path is illegal, see remarks.</li>
 <li>APIERR_NOPLAN - There is no open project.</li>
 <li>APIERR_NOACCESSRIGHT - User has no permission to create folders under typeID.</li>
 <li>APIERR_BADPARS - Folder creation is not available for folder.typeID. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>older.path has to be legal, i.e. all names in the array must not be empty, and must not begin or end with whitespace. If a folder in folder.path already exists, it is not renamed or recreated. Name collision of folders is case insensitive. Examples:<ul>
+<dl class="section remark"><dt>Remarks</dt><dd>older.path has to be legal, i.e. all names in the array must not be empty, and must not begin or end with whitespace. If a folder at folder.path already exists, it is not renamed or recreated. Name collision of folders is case-insensitive. Examples:<ul>
 <li>If the folders A/B exist, and folder.path = a/b/c/d, two new folders, c/d under A/B are created. A and B are not renamed to a and b.</li>
-<li>If the folders A/B/C exist, and folder.path = a/b/c, this has no effect. NoError will be returned. If a folder at folder.path was successfully created, it's unique identifier is set to folder.guid. It can be used later, even if the folder was moved or renamed since it's creation. </li>
+<li>If the folders A/B/C exist, and folder.path = a/b/c, this has no effect. NoError will be returned. If a folder at folder.path was successfully created, its unique identifier is set to folder.guid. It can be used later, even if the folder was moved or renamed since its creation. </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___attribute_folder.html">API_AttributeFolder</a> folder {};</div>
@@ -1171,18 +1200,18 @@ cwall_compLItems    </td></tr>
 <dl class="section since"><dt>Since</dt><dd>Archicad 26 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">attrHead</td><td>[in] The typeID and index fields in the header identifies the attribute to delete. </td></tr>
+    <tr><td class="paramname">attrHead</td><td>[in] The typeID and index fields in the header identify the attribute to delete. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter (attrHead) is invalid.</li>
 <li>APIERR_REFUSEDPAR - You tried to delete pens, fonts, a solid or an empty fill, or an attribute with index 1.</li>
-<li>APIERR_NOTMINE - The attribute is out of the users workspace. </li>
+<li>APIERR_NOTMINE - The attribute is out of the user's workspace. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to delete an attribute, defined by the typeID and index field of the attribute header. Certain attributes in the database can not be deleted; see the return values. Note, that deleting an attribute do not effect any changes in the element database; they will refer to an attribute which is missing. That is not a problem, the server applications work in the same way when an attribute is deleted from the menus. The only exception is the layer attribute. Once a layer is deleted all the elements will be deleted; no matter in which database they are. The floor plan and all the section/elevations will be scanned to delete the elements which are on the given layer. You can delete more than one attribute of the same type with the <a class="el" href="#gaac9f263216df496d1848e05823da1f6c">ACAPI_Attribute_DeleteMore</a> function. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to delete an attribute, defined by the typeID and index field of the attribute header. Certain attributes in the database can not be deleted; see the return values. Note that deleting an attribute does not affect any changes in the element database; they will refer to a missing attribute. That is not a problem; the server applications work similarly when an attribute is deleted from the menus. The only exception is the layer attribute. Once a layer is deleted, all the elements will be deleted, no matter which database they are in. The floor plan and all the sections/elevations will be scanned to delete the elements that are on the given layer. You can delete more than one attribute of the same type with the <a class="el" href="#gaac9f263216df496d1848e05823da1f6c">ACAPI_Attribute_DeleteMore</a> function. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___attribute.html">API_Attribute</a> attrib {};</div>
 <div class="line">attrib.<a class="code hl_variable" href="union_a_p_i___attribute.html#aa8fcba6db764d3631ffff28d0e230ab4">header</a>.<a class="code hl_variable" href="struct_a_p_i___attr___head.html#ae253be1eae6d432df469061ec8044fe2">typeID</a> = <a class="code hl_enumvalue" href="group___navigator.html#gga1ced849eced2cac8366a288bccabb874a91e9be9d689275844d55f5387177bf96">API_LinetypeID</a>;</div>
 <div class="line">attrib.header.index = <a class="code hl_function" href="#ga6096e41ad85dfa2821764b7b7c722c0c">ACAPI_CreateAttributeIndex</a> (5);</div>
@@ -1216,14 +1245,14 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - Incorrect folder was specified.</li>
 <li>APIERR_NOPLAN - There is no open project.</li>
 <li>APIERR_NOACCESSRIGHT - User has no permission to delete folders under folder.typeID.</li>
 <li>APIERR_NOTMINE - Attribute type folder.typeID is not reserved. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Folder has to be an existing folder identified by it's typeID, and path or guid.. Deletes all deletable attributes and folders the given folder contains. If an attribute is not deletable, the folders containing the attribute are not deleted. newName has to be legal, must not be empty, and must not begin or end with whitespace. Renames the specified folder (while preserving it's guid). The root folder can't be renamed, two folders in the same parent folder can't have the same name. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Folder has to be an existing folder identified by its typeID, and path or guid.. Deletes all deletable attributes and folders that the given folder contains. If an attribute is not deletable, the folders containing the attribute are not deleted. newName has to be legal, must not be empty, and must not begin or end with whitespace. Renames the specified folder (while preserving its guid). The root folder can't be renamed, and two folders in the same parent folder can't have the same name. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___attribute_folder.html">API_AttributeFolder</a> lineFolder {};</div>
 <div class="line">lineFolder.<a class="code hl_variable" href="struct_a_p_i___attribute_folder.html#a56da8cb2e5a3a6361e7d87451c410c1b">typeID</a> = <a class="code hl_enumvalue" href="group___navigator.html#gga1ced849eced2cac8366a288bccabb874a91e9be9d689275844d55f5387177bf96">API_LinetypeID</a>;</div>
 <div class="line">lineFolder.path = { <span class="stringliteral">&quot;A&quot;</span>, <span class="stringliteral">&quot;B&quot;</span>, <span class="stringliteral">&quot;C&quot;</span> };</div>
@@ -1260,16 +1289,16 @@ cwall_compLItems    </td></tr>
 <dl class="section since"><dt>Since</dt><dd>Archicad 26 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">attrTypeID</td><td>[in] Identifies the type of the attributes to delete. </td></tr>
+    <tr><td class="paramname">attrTypeID</td><td>[in] Identifies the type of attributes to delete. </td></tr>
     <tr><td class="paramname">attrIndexList</td><td>[in] List of attribute indices to be deleted. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter attrTypeID is invalid or the given attrIndexList is empty.</li>
 <li>APIERR_REFUSEDPAR - You tried to delete pens, fonts, a solid or an empty fill, or an attribute with index 1.</li>
-<li>APIERR_NOTMINE - The attribute is out of the users workspace. </li>
+<li>APIERR_NOTMINE - The attribute is out of the user's workspace. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function is the extension of <a class="el" href="#ga9b0bf8d01a22b70620626db460ec40c0">ACAPI_Attribute_Delete</a>. You can specify a list of attribute indices to be deleted. If you pass only one index in the attrIndexList parameter, this function works like <a class="el" href="#ga9b0bf8d01a22b70620626db460ec40c0">ACAPI_Attribute_Delete</a>. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
@@ -1334,21 +1363,21 @@ cwall_compLItems    </td></tr>
 <dl class="section since"><dt>Since</dt><dd>Archicad 27 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">attribute</td><td>[in/out] Parameters of the attribute. The type and the index or the name of the attribute must be passed in the typeID and index, or in the typeID and name fields in the attribute header. The data of the attribute is returned in the appropriate fields of the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure. </td></tr>
+    <tr><td class="paramname">attribute</td><td>[in/out] Parameters of the attribute. The type and the index or the name of the attribute must be passed in the typeID and index, or in the typeID and name fields in the attribute header. The attribute data is returned in the appropriate fields of the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter (attribute) is nullptr</li>
 <li>APIERR_BADID - The attribute type is invalid</li>
 <li>APIERR_BADINDEX - The attribute index is invalid; if referenced by index</li>
 <li>APIERR_BADNAME - The attribute with the given name doesn't exist; if referenced by name </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to retrieve one attribute's data from the database. Beside the typeID, you should specify either the index or the name field of the header. In the latter case, the index field should be set to zero, and the attribute database is searched by name. You may optionally call <a class="el" href="#ga103f20d2f6e99293efb0647eff656942">ACAPI_Attribute_GetDef</a> to get extended information for certain attribute types. The index range is not always continuous; deleted attributes are not purged immediately from the database. Note: The received attributes can have dynamically allocated members depending on the typeID. They should be disposed when they are no more needed.<ul>
-<li><code>API_MaterialID</code> : attribute.material.texture.fileLoc</li>
-<li><code>API_ModelViewOptionsID</code> : attribute.modelViewOpt.modelViewOpt.gdlOptions Note: Special pen IDs can be used:</li>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to retrieve one attribute's data from the database. Beside the typeID, you should specify either the index or the name field of the header. In the latter case, the index field should be set to zero, and the attribute database is searched by name. You may optionally call <a class="el" href="#ga103f20d2f6e99293efb0647eff656942">ACAPI_Attribute_GetDef</a> to get extended information for certain attribute types. The index range is not always continuous; deleted attributes are not purged immediately from the database. Note: The received attributes can have dynamically allocated members depending on the typeID. They should be disposed of when they are no longer needed.<ul>
+<li><code>API_MaterialID:</code> attribute.material.texture.fileLoc</li>
+<li><code>API_ModelViewOptionsID:</code> attribute.modelViewOpt.modelViewOpt.gdlOptions Note: Special pen IDs can be used:</li>
 <li>1000 : returns the color of the grid line</li>
 <li>1001 : returns the color of the zone stamp</li>
 <li>1002 : returns the color of the ghost story </li>
@@ -1440,14 +1469,14 @@ cwall_compLItems    </td></tr>
 <p>Loads the given attributes from a project file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">location</td><td>[in] The location of the project to load the attributes from. </td></tr>
+    <tr><td class="paramname">location</td><td>[in] The location of the project from which to load the attributes. </td></tr>
     <tr><td class="paramname">typeID</td><td>[in] The attribute type to load from the project. </td></tr>
-    <tr><td class="paramname">resultArray</td><td>[out] The list of attributes that has been loaded successfully. </td></tr>
+    <tr><td class="paramname">resultArray</td><td>[out] The list of attributes that have been loaded successfully. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>Be aware that certain attribute types (e.g., composite walls) refer to other attribute types as well. </dd></dl>
@@ -1488,7 +1517,7 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADINDEX - The attrHead did not refer to a valid attribute.</li>
 <li>APIERR_BADID - Inexistent classification system. </li>
 </ul>
@@ -1524,11 +1553,65 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADINDEX - The attrHead did not refer to a valid attribute.</li>
 <li>APIERR_GENERAL - Internal error. </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<a id="ga301958ef7f58e945ec38ccd4ebbb1bac" name="ga301958ef7f58e945ec38ccd4ebbb1bac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga301958ef7f58e945ec38ccd4ebbb1bac">&#9670;&#160;</a></span>ACAPI_Attribute_GetCreationInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GSErrCode ACAPI_Attribute_GetCreationInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___navigator.html#ga1ced849eced2cac8366a288bccabb874">API_AttrTypeID</a></td>          <td class="paramname"><span class="paramname"><em>typeID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_a_p_i___attribute_index.html">API_AttributeIndex</a></td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::optional&lt; <a class="el" href="struct_a_p_i___attribute_creation_info.html">API_AttributeCreationInfo</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>creationInfo</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves creation metadata for an attribute. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">typeID</td><td>[in] Type of the attribute. </td></tr>
+    <tr><td class="paramname">index</td><td>[in] Index of the attribute. </td></tr>
+    <tr><td class="paramname">creationInfo</td><td>[out] Receives the creation-related information for the specified attribute. Can be std::nullopt if the attribute does not have any creation metadata. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADID - The attribute type is invalid.</li>
+<li>APIERR_BADINDEX - The attribute index is invalid. </li>
+</ul>
+</dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Use this function to obtain creation-related information for an attribute, such as metadata that is not part of the base <code><a class="el" href="union_a_p_i___attribute.html" title="Describes the different attributes.">API_Attribute</a></code> or its extended definitions. This function complements <code>ACAPI_Attribute_Get</code> and <code>ACAPI_Attribute_GetDef/ACAPI_Attribute_GetDefExt</code>, which return the attribute’s data and extended definition. The returned <code>creationInfo</code> may contain fields like timestamps, origin, or other creation-time details depending on the implementation of <code>AttributeCreationInfo</code>. </dd></dl>
+<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___attribute.html">API_Attribute</a>               attrib {};</div>
+<div class="line">std::optional&lt;API_AttributeCreationInfo&gt;    creationInfo;</div>
+<div class="line">GSErrCode                   err;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">/* retrieve all information for the &quot;Wave&quot; linetype */</span></div>
+<div class="line">attrib.<a class="code hl_variable" href="union_a_p_i___attribute.html#aa8fcba6db764d3631ffff28d0e230ab4">header</a>.<a class="code hl_variable" href="struct_a_p_i___attr___head.html#ae253be1eae6d432df469061ec8044fe2">typeID</a> = <a class="code hl_enumvalue" href="group___navigator.html#gga1ced849eced2cac8366a288bccabb874a91e9be9d689275844d55f5387177bf96">API_LinetypeID</a>;</div>
+<div class="line">CHCopyC (<span class="stringliteral">&quot;Wave&quot;</span>, attrib.header.name);</div>
+<div class="line">err = <a class="code hl_function" href="#ga1a6c06eb82706031fef8ff0ea0af78a6">ACAPI_Attribute_Get</a> (&amp;attrib);</div>
+<div class="line"><span class="keywordflow">if</span> (err == NoError)</div>
+<div class="line">    err = <a class="code hl_function" href="#ga301958ef7f58e945ec38ccd4ebbb1bac">ACAPI_Attribute_GetCreationInfo</a> (attrib.header.typeID, attrib.header.index, creationInfo);</div>
+</div><!-- fragment --> </dd></dl>
 
 </div>
 </div>
@@ -1550,7 +1633,7 @@ cwall_compLItems    </td></tr>
 <p>Returns an attribute reader for the currently used attribute set. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Use this function when an attribute reader is required as a parameter of other functions. For example when retrieving the 3D model by using the EXPGetModel function. The returned attribute reader is allocated on the heap. Don't forget to delete it when it's not needed anymore! </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Use this function when an attribute reader is required as a parameter of other functions. For example, when retrieving the 3D model by using the EXPGetModel function. The returned attribute reader is allocated on the heap. Don't forget to delete it when it's not needed anymore! </dd></dl>
 
 </div>
 </div>
@@ -1619,13 +1702,13 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter (defs) is nullptr</li>
 <li>APIERR_BADID - The attribute type is invalid; see Remarks</li>
 <li>APIERR_BADINDEX - The attribute index is invalid </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to return detailed information on the specified attribute. This function is available only for lines, fills, composites, layers, and zone categories. Other type of attributes do not have extended information; all of the their data can be passed through the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure. See the <a class="el" href="#ga1a6c06eb82706031fef8ff0ea0af78a6">ACAPI_Attribute_Get</a> function to get the base parameters of an attribute. Do not forget to dispose the returned data handles if they are not needed any more. Use the <a class="el" href="#ga16f503d117d0ac10291756e523cc286f">ACAPI_DisposeAttrDefsHdls</a> function for this purpose. This function is available only for lines, fills, composites, layers, and zone categories. Other type of attributes do not have extended information; all of the their data can be passed through the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure. See the <a class="el" href="#ga1a6c06eb82706031fef8ff0ea0af78a6">ACAPI_Attribute_Get</a> function to get the base parameters of an attribute. Do not forget to dispose the returned data handles if they are not needed any more. Use the <a class="el" href="#gaa5117e2e738a849e9f1baf2508754af4">ACAPI_DisposeAttrDefsHdlsExt</a> function for this purpose. Use this function instead of <a class="el" href="#ga103f20d2f6e99293efb0647eff656942">ACAPI_Attribute_GetDef</a> function because <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure contains more fields - detailed information for composite wall attribute - than <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to return detailed information on the specified attribute. This function is available only for lines, fills, composites, layers, and zone categories. Other types of attributes do not have extended information; all of their data can be passed through the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure. See the <a class="el" href="#ga1a6c06eb82706031fef8ff0ea0af78a6">ACAPI_Attribute_Get</a> function to get the base parameters of an attribute. Do not forget to dispose of the returned data handles if they are not needed anymore. Use the <a class="el" href="#ga16f503d117d0ac10291756e523cc286f">ACAPI_DisposeAttrDefsHdls</a> function for this purpose. This function is available only for lines, fills, composites, layers, and zone categories. Other types of attributes do not have extended information; all of their data can be passed through the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure. See the <a class="el" href="#ga1a6c06eb82706031fef8ff0ea0af78a6">ACAPI_Attribute_Get</a> function to get the base parameters of an attribute. Do not forget to dispose of the returned data handles if they are not needed anymore. Use the <a class="el" href="#gaa5117e2e738a849e9f1baf2508754af4">ACAPI_DisposeAttrDefsHdlsExt</a> function for this purpose. Use this function instead of <a class="el" href="#ga103f20d2f6e99293efb0647eff656942">ACAPI_Attribute_GetDef</a> function because <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure contains more fields - detailed information for composite wall attribute - than <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___attribute.html">API_Attribute</a>       attrib {};</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>    defs {};</div>
 <div class="line">GSErrCode           err;</div>
@@ -1676,13 +1759,13 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter (defs) is nullptr</li>
 <li>APIERR_BADID - The attribute type is invalid; see Remarks</li>
 <li>APIERR_BADINDEX - The attribute index is invalid </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to return detailed information on the specified attribute. This function is available only for lines, fills, composites, layers, and zone categories. Other type of attributes do not have extended information; all of the their data can be passed through the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure. See the <a class="el" href="#ga1a6c06eb82706031fef8ff0ea0af78a6">ACAPI_Attribute_Get</a> function to get the base parameters of an attribute. Do not forget to dispose the returned data handles if they are not needed any more. Use the <a class="el" href="#ga16f503d117d0ac10291756e523cc286f">ACAPI_DisposeAttrDefsHdls</a> function for this purpose. This function is available only for lines, fills, composites, layers, and zone categories. Other type of attributes do not have extended information; all of the their data can be passed through the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure. See the <a class="el" href="#ga1a6c06eb82706031fef8ff0ea0af78a6">ACAPI_Attribute_Get</a> function to get the base parameters of an attribute. Do not forget to dispose the returned data handles if they are not needed any more. Use the <a class="el" href="#gaa5117e2e738a849e9f1baf2508754af4">ACAPI_DisposeAttrDefsHdlsExt</a> function for this purpose. Use this function instead of <a class="el" href="#ga103f20d2f6e99293efb0647eff656942">ACAPI_Attribute_GetDef</a> function because <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure contains more fields - detailed information for composite wall attribute - than <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to return detailed information on the specified attribute. This function is available only for lines, fills, composites, layers, and zone categories. Other types of attributes do not have extended information; all of their data can be passed through the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure. See the <a class="el" href="#ga1a6c06eb82706031fef8ff0ea0af78a6">ACAPI_Attribute_Get</a> function to get the base parameters of an attribute. Do not forget to dispose of the returned data handles if they are not needed anymore. Use the <a class="el" href="#ga16f503d117d0ac10291756e523cc286f">ACAPI_DisposeAttrDefsHdls</a> function for this purpose. This function is available only for lines, fills, composites, layers, and zone categories. Other types of attributes do not have extended information; all of their data can be passed through the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure. See the <a class="el" href="#ga1a6c06eb82706031fef8ff0ea0af78a6">ACAPI_Attribute_Get</a> function to get the base parameters of an attribute. Do not forget to dispose of the returned data handles if they are not needed anymore. Use the <a class="el" href="#gaa5117e2e738a849e9f1baf2508754af4">ACAPI_DisposeAttrDefsHdlsExt</a> function for this purpose. Use this function instead of <a class="el" href="#ga103f20d2f6e99293efb0647eff656942">ACAPI_Attribute_GetDef</a> function because <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure contains more fields - detailed information for composite wall attribute - than <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___attribute.html">API_Attribute</a>       attrib {};</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> defs {};</div>
 <div class="line">GSErrCode           err;</div>
@@ -1743,7 +1826,7 @@ cwall_compLItems    </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves an existing attribute folder by it's path or guid. </p>
+<p>Retrieves an existing attribute folder by its path or guid. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 26 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1752,7 +1835,7 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - Incorrect folder.typeID was specified, or folder.path is illegal, see remarks.</li>
 <li>APIERR_NOPLAN - There is no open project. </li>
 </ul>
@@ -1794,12 +1877,12 @@ cwall_compLItems    </td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">folder</td><td>[in] Identifier of the folder to query. </td></tr>
-    <tr><td class="paramname">result</td><td>[out] Content of te queried folder. </td></tr>
+    <tr><td class="paramname">result</td><td>[out] Content of the queried folder. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - Incorrect folder was specified.</li>
 <li>APIERR_NOPLAN - There is no open project. </li>
 </ul>
@@ -1835,7 +1918,7 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter is nullptr; count</li>
 <li>APIERR_BADID - The attribute type is invalid </li>
 </ul>
@@ -1866,16 +1949,16 @@ cwall_compLItems    </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a pen by index from the active pentable. </p>
+<p>Returns a pen by index from the active pen table. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 27 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pen</td><td>[out] Reference of an <a class="el" href="struct_a_p_i___pen.html" title="Pen attribute representation.">API_Pen</a>. </td></tr>
+    <tr><td class="paramname">pen</td><td>[out] Reference to an <a class="el" href="struct_a_p_i___pen.html" title="Pen attribute representation.">API_Pen</a>. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADINDEX - bad pen index</li>
 <li>APIERR_NOCURRATTRSET - no current attributeset </li>
 </ul>
@@ -1898,16 +1981,16 @@ cwall_compLItems    </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the number of pens in the active pentable. </p>
+<p>Get the number of pens in the active pen table. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 27 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">count</td><td>[out] Reference of a UInt32. </td></tr>
+    <tr><td class="paramname">count</td><td>[out] Reference to a UInt32. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOCURRATTRSET - no current attributeSet exists </li>
 </ul>
 </dd></dl>
@@ -1948,7 +2031,7 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADINDEX - The attrHead did not refer to a valid attribute. </li>
 </ul>
 </dd></dl>
@@ -2007,7 +2090,7 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADINDEX - The attrHead did not refer to a valid attribute.</li>
 <li>APIERR_GENERAL - Every other case. </li>
 </ul>
@@ -2073,7 +2156,7 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADINDEX - The attrHead did not refer to a valid attribute.</li>
 <li>APIERR_GENERAL - Every other case. </li>
 </ul>
@@ -2138,7 +2221,7 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADINDEX - The attrHead did not refer to a valid attribute.</li>
 <li>APIERR_GENERAL - Every other case. </li>
 </ul>
@@ -2385,20 +2468,20 @@ cwall_compLItems    </td></tr>
 <dl class="section since"><dt>Since</dt><dd>Archicad 27 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">attribute</td><td>[in] The attribute to be modified is defined by the typeID and index fields of the header. </td></tr>
-    <tr><td class="paramname">defs</td><td>[in] The extended information for the attribute where needed. </td></tr>
+    <tr><td class="paramname">attribute</td><td>[in] The header's typeID and index fields define the attribute to be modified. </td></tr>
+    <tr><td class="paramname">defs</td><td>[in] The extended information for the attribute where it is needed. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter is nullptr; attribute, [defs]</li>
 <li>APIERR_BADID - The attribute type is invalid</li>
 <li>APIERR_BADINDEX - The attribute index is invalid</li>
-<li>APIERR_REFUSEDPAR - For layers, fills and line types you cannot modify the attribute with index 1. Solid and empty fills are also unalterable. </li>
+<li>APIERR_REFUSEDPAR - You cannot modify the attribute with index 1 for layers, fills, and line types. Solid and empty fills are also unalterable. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to modify an attribute. The attribute to be modified is identified by the typeID and the index fields in the attribute header. You can either modify the parameters passed through the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure or the extended information given in <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>. The attribute will be named according to <code>uniStringNamePtr</code> in <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a>, or <code>name</code> if the first was nullptr. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. You can either modify the parameters passed through the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure or the extended information given in <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a>. Use this function instead of <a class="el" href="#ga7e438863b05d0a872f1b04968489babe">ACAPI_Attribute_Modify</a> function because <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure contains more fields - detailed information for composite wall attribute - than <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function modifies an attribute. The attribute to be modified is identified by the typeID and index fields in the attribute header. You can either modify the parameters passed through the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure or the extended information given in <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>. The attribute will be named according to <code>uniStringNamePtr</code> in <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a>, or <code>name</code> if the first was nullptr. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. You can either modify the parameters passed through the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure or the extended information given in <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a>. Use this function instead of <a class="el" href="#ga7e438863b05d0a872f1b04968489babe">ACAPI_Attribute_Modify</a> function because <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure contains more fields - detailed information for composite wall attribute - than <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___attribute.html">API_Attribute</a>       attrib {};</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>    defs {};</div>
 <div class="line">GSErrCode           err;</div>
@@ -2445,20 +2528,20 @@ cwall_compLItems    </td></tr>
 <dl class="section since"><dt>Since</dt><dd>Archicad 27 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">attribute</td><td>[in] The attribute to be modified is defined by the typeID and index fields of the header. </td></tr>
-    <tr><td class="paramname">defs</td><td>[in] The extended information for the attribute where needed. </td></tr>
+    <tr><td class="paramname">attribute</td><td>[in] The header's typeID and index fields define the attribute to be modified. </td></tr>
+    <tr><td class="paramname">defs</td><td>[in] The extended information for the attribute where it is needed. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter is nullptr; attribute, [defs]</li>
 <li>APIERR_BADID - The attribute type is invalid</li>
 <li>APIERR_BADINDEX - The attribute index is invalid</li>
-<li>APIERR_REFUSEDPAR - For layers, fills and line types you cannot modify the attribute with index 1. Solid and empty fills are also unalterable. </li>
+<li>APIERR_REFUSEDPAR - You cannot modify the attribute with index 1 for layers, fills, and line types. Solid and empty fills are also unalterable. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to modify an attribute. The attribute to be modified is identified by the typeID and the index fields in the attribute header. You can either modify the parameters passed through the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure or the extended information given in <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>. The attribute will be named according to <code>uniStringNamePtr</code> in <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a>, or <code>name</code> if the first was nullptr. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. You can either modify the parameters passed through the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure or the extended information given in <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a>. Use this function instead of <a class="el" href="#ga7e438863b05d0a872f1b04968489babe">ACAPI_Attribute_Modify</a> function because <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure contains more fields - detailed information for composite wall attribute - than <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function modifies an attribute. The attribute to be modified is identified by the typeID and index fields in the attribute header. You can either modify the parameters passed through the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure or the extended information given in <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>. The attribute will be named according to <code>uniStringNamePtr</code> in <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a>, or <code>name</code> if the first was nullptr. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. You can either modify the parameters passed through the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure or the extended information given in <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a>. Use this function instead of <a class="el" href="#ga7e438863b05d0a872f1b04968489babe">ACAPI_Attribute_Modify</a> function because <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure contains more fields - detailed information for composite wall attribute - than <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___attribute.html">API_Attribute</a>       attrib {};</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> defs {};</div>
 <div class="line">GSErrCode           err;</div>
@@ -2499,7 +2582,7 @@ cwall_compLItems    </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Modify a pen by index in the active pentable. </p>
+<p>Modify a pen by index in the active pen table. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 27 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2508,7 +2591,7 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOACCESSRIGHT - no access right in teamwork</li>
 <li>APIERR_NOTMINE - pen tables not reserved in teamwork</li>
 <li>APIERR_General - general error</li>
@@ -2547,7 +2630,7 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - Inexistent property item.</li>
 <li>APIERR_NOACCESSRIGHT - The current user does not have the right to modify the properties of a specified attribute on a teamwork server.</li>
 <li>APIERR_READONLY - Tried to modify a read-only property (for example a property coming from a hotlink).</li>
@@ -2587,19 +2670,19 @@ cwall_compLItems    </td></tr>
   <table class="params">
     <tr><td class="paramname">foldersToMove</td><td>[in] List of folders to move. </td></tr>
     <tr><td class="paramname">attributesToMove</td><td>[in] List of attributes to move. </td></tr>
-    <tr><td class="paramname">targetFolder</td><td>[in] Target folder, i.e. the new parent of the folders and attributes to move. </td></tr>
+    <tr><td class="paramname">targetFolder</td><td>[in] Target folder, i.e., the new parent of the folders and attributes to move. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - Incorrect typeID was specified. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>All folders (items of foldersToMove and targetFolder) have to be existing folders. Handling name collisions:<ul>
 <li>If there are name collisions, the moved folders will be merged with the colliding folders in targetFolder, like in a filesystem.</li>
-<li>Name collision of folders is case insensitive. An existing folder in targetFolder will not be renamed. E.g. merging 'foo' into an existing 'Foo' keeps the 'Foo' name.</li>
-<li>Name collision between two moved folders will be handled in order of appearance in foldersToMove. E.g. moving 'A/foo' and 'B/Foo' (in this order) to 'Bar' will result in 'Bar/foo', because 'foo' is first created in 'Bar', and then it is not renamed to 'Foo'. foldersToMove and attributesToMove can contain repeated items. Repeated items will be handled as if only the first occurrence would be present in the list. foldersToMove and attributesToMove can contain items which are already under targetFolder. Such items will be left in place. foldersToMove and attributesToMove can contain items which are under a folder to move. Such items will be ignored, as if they would not be on the list, and only the outermost folder will be moved. A folder or attribute cannot be moved out of its attribute type. </li>
+<li>Name collision of folders is case-insensitive. An existing folder in targetFolder will not be renamed. E.g., merging 'foo' into an existing 'Foo' keeps the 'Foo' name.</li>
+<li>Name collision between two moved folders will be handled in order of appearance in foldersToMove. E.g., moving 'A/foo' and 'B/Foo' (in this order) to 'Bar' will result in 'Bar/foo', because 'foo' is first created in 'Bar', and then it is not renamed to 'Foo'. foldersToMove and attributesToMove can contain repeated items. Repeated items will be handled as if only the first occurrence were present in the list. foldersToMove and attributesToMove can contain items that are already under targetFolder. Such items will be left in place. foldersToMove and attributesToMove can contain items that are under a folder to move. Such items will be ignored, as if they would not be on the list, and only the outermost folder will be moved. A folder or attribute cannot be moved out of its attribute type. </li>
 </ul>
 </dd></dl>
 
@@ -2633,7 +2716,7 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADINDEX - The attrHead did not refer to a valid attribute.</li>
 <li>APIERR_READONLY - The attribute can not be modified (i.e. from a hotlink) or you do not have the right to remove classifications from attributes in the current teamwork plan.</li>
 <li>APIERR_BADID - Inexistent classification item.</li>
@@ -2672,14 +2755,14 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - Incorrect folder was specified.</li>
 <li>APIERR_NOPLAN - There is no open project.</li>
 <li>APIERR_NOACCESSRIGHT - User has no permission to rename folders under folder.typeID.</li>
 <li>APIERR_NOTMINE - Attribute type folder.typeID is not reserved. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Folder has to be an existing folder identified by it's typeID, and path or guid.. Deletes all deletable attributes and folders the given folder contains. If an attribute is not deletable, the folders containing the attribute are not deleted. newName has to be legal, must not be empty, and must not begin or end with whitespace. Renames the specified folder (while preserving it's guid). The root folder can't be renamed, two folders in the same parent folder can't have the same name. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Folder has to be an existing folder identified by its typeID, and path or guid.. Deletes all deletable attributes and folders that the given folder contains. If an attribute is not deletable, the folders containing the attribute are not deleted. newName has to be legal, must not be empty, and must not begin or end with whitespace. Renames the specified folder (while preserving its guid). The root folder can't be renamed, and two folders in the same parent folder can't have the same name. </dd></dl>
 
 </div>
 </div>
@@ -2706,7 +2789,7 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter is nullptr; attrHead</li>
 <li>APIERR_BADID - The attribute type is invalid</li>
 <li>APIERR_BADGUID - The attribute with the given guid doesn't exist</li>
@@ -2757,7 +2840,7 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - Incorrect attributeTypeID or attributeIndex was specified or one of the property definitions' guid did not refer to a valid object.</li>
 <li>APIERR_NOACCESSRIGHT - The current user does not have the right to modify the properties of the specified attribute on a teamwork server.</li>
 <li>APIERR_READONLY - Tried to modify a read-only property (for example a property coming from a hotlink).</li>
@@ -2818,11 +2901,11 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADINDEX - The attrHead did not refer to a valid attribute.</li>
 <li>APIERR_NOACCESSRIGHT - The property can not be modified because you do not have the right to classify attributes in the current teamwork plan.</li>
-<li>APIERR_READONLY - The proeprty can not be modified because it is readonly.</li>
-<li>APIERR_BADID - Inexistent propert item.</li>
+<li>APIERR_READONLY - The property cannot be modified because it is read-only.</li>
+<li>APIERR_BADID - Nonexistent property item.</li>
 <li>APIERR_GENERAL - Every other case. </li>
 </ul>
 </dd></dl>
@@ -2882,12 +2965,12 @@ cwall_compLItems    </td></tr>
 <p>Frees the memory occupied by all of the attribute definition handles. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">defs</td><td>[in] Points to an <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a> structure which contains handles used for previous operations and not needed any more. </td></tr>
+    <tr><td class="paramname">defs</td><td>[in] Points to an <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a> structure which contains handles used for previous operations and are no longer needed. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This is the recommended way of disposing the attribute definition handles for compatibility reasons, as in a later version of the API the <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a> structure might change. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This is the recommended way of disposing of the attribute definition handles for compatibility reasons, as the <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a> structure might change later in the API. </dd></dl>
 
 </div>
 </div>
@@ -2909,12 +2992,12 @@ cwall_compLItems    </td></tr>
 <p>Frees the memory occupied by all of the attribute definition handles. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">defs</td><td>[in] Points to an <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure which contains handles used for previous operations and not needed any more. </td></tr>
+    <tr><td class="paramname">defs</td><td>[in] Points to an <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure which contains handles used for previous operations and are no longer needed. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This is the recommended way of disposing the attribute definition handles for compatibility reasons, as in a later version of the API the <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure might change. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This is the recommended way of disposing of the attribute definition handles for compatibility reasons, as in a later version of the API, the <a class="el" href="struct_a_p_i___attribute_def_ext.html">API_AttributeDefExt</a> structure might change. </dd></dl>
 
 </div>
 </div>
@@ -3004,14 +3087,14 @@ cwall_compLItems    </td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - Any of the passed parameters is nullptr</li>
 <li>APIERR_BADPLATFORMSIGN - The user data contained platform sign is invalid (out of range)</li>
 <li>APIERR_MEMFULL - Out of memory</li>
 <li>APIERR_NOUSERDATA - No user data attached by the caller module </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the user attached data from an atribute. The typeID and index fields of the DDD record has to be filled to get the data attached to the attribute. The caller should not allocate the userData-&gt;dataHdl field. It's allocated by the function itself but should be destroyed after use by the caller! Use the <a class="el" href="group___user_data.html#ga92c2158188147f3bb6c5f56cdc1b7282">ACAPI_UserData_SetUserData</a> functions to push data into the attribute record. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the user-attached data from an attribute. The typeID and index fields of the DDD record must be filled to get the data attached to the attribute. The caller should not allocate the userData-&gt;dataHdl field. It's allocated by the function itself, but should be destroyed after use by the caller! Use the <a class="el" href="group___user_data.html#ga92c2158188147f3bb6c5f56cdc1b7282">ACAPI_UserData_SetUserData</a> functions to push data into the attribute record. </dd></dl>
 
 </div>
 </div>
@@ -3037,18 +3120,18 @@ cwall_compLItems    </td></tr>
 <p>Attaches user data to an attribute, or deletes the attached data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">attrHead</td><td>[in] The attribute to attach the user data to is defined by the typeID and index fields of the header. </td></tr>
+    <tr><td class="paramname">attrHead</td><td>[in] The attribute to which the user data is attached is defined by the typeID and index fields of the header. </td></tr>
     <tr><td class="paramname">userData</td><td>[in] The user data to store. If dataHdl is nullptr, then the function deletes the user data. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - A nullptr attrHead or userData pointer was passed.</li>
 <li>APIERR_BADPLATFORMSIGN - The platform sign in the user data is invalid (out of range). </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to attach user data to an an atribute, or to delete the attached information (if userData-&gt;dataHdl is nullptr. The caller is responsible for allocating and deleting the userData-&gt;dataHdl. You can safely destroy the passed handle after use, as it is copied into the internal database. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to attach user data to an attribute, or to delete the attached information (if userData-&gt;dataHdl is nullptr. The caller is responsible for allocating and deleting the userData-&gt;dataHdl. You can safely destroy the passed handle after use, as it is copied into the internal database. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
 
 </div>
 </div>

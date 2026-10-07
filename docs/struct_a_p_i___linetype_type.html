@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: API_LinetypeType Struct Reference</title>
+<title>Archicad 30 C++ API: API_LinetypeType Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -178,9 +178,13 @@ The type of the linetype can take the following values: <table class="markdownTa
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Value   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APILine_SolidLine</code>   </td><td class="markdownTableBodyNone">Solid line.   </td></tr>
+<td class="markdownTableBodyNone"><code>APILine_SolidLine</code>   </td><td class="markdownTableBodyNone">Solid line.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>APILine_DashedLine</code>   </td><td class="markdownTableBodyNone">Dashed line (contains dashes and gaps between them).    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>APILine_SymbolLine</code>   </td><td class="markdownTableBodyNone">Symbol line (can contain different 2D shapes).   </td></tr>
 </table>
-| <code>APILine_DashedLine</code> | Dashed line (contains dashes and gaps between them). || | <code>APILine_SymbolLine</code> | Symbol line (can contain different 2D shapes). | A solid line is a straight line, without any gaps. You need to fill only the fields of the <code>API_LineTypeType</code> structure to create such a line type. To create a dashed line, you need to specify the following fields of the structure: <table class="markdownTable">
+A solid line is a straight line, without any gaps. You need to fill only the fields of the <code>API_LineTypeType</code> structure to create such a line type. To create a dashed line, you need to specify the following fields of the structure: <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Field   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
@@ -204,7 +208,7 @@ To create a symbol line, you need to specify the following fields of the structu
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">ltype_lineItems in <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a>   </td><td class="markdownTableBodyNone">This is a handle of <a class="el" href="struct_a_p_i___line_items.html">API_LineItems</a>, where the dash and gap fields describe the length of the visible and invisible part of one item, respectively.   </td></tr>
 </table>
-There are additional data assigned to line type attributes in the <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a> structure; the definition of a line type dash pattern or symbol is passed through the <code>ltype_dashItems</code> and <code>ltype_lineItems</code> fields, respectively. Refer to the <a class="el" href="struct_a_p_i___dash_items.html">API_DashItems</a> and <a class="el" href="struct_a_p_i___line_items.html">API_LineItems</a> structures to get more details on them.</dd></dl>
+There is additional data assigned to line type attributes in the <a class="el" href="struct_a_p_i___attribute_def.html">API_AttributeDef</a> structure; the definition of a line type dash pattern or symbol is passed through the <code>ltype_dashItems</code> and <code>ltype_lineItems</code> fields, respectively. Refer to the <a class="el" href="struct_a_p_i___dash_items.html">API_DashItems</a> and <a class="el" href="struct_a_p_i___line_items.html">API_LineItems</a> structures to get more details on them.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_a_p_i___attr___head.html" title="Contains common information related to all attribute types.">API_Attr_Head</a>, <a class="el" href="union_a_p_i___attribute.html" title="Describes the different attributes.">API_Attribute</a>, <a class="el" href="struct_a_p_i___attribute_def.html" title="Describes the extended information for different attributes.">API_AttributeDef</a>, <a class="el" href="group___attribute.html" title="Functions related to accessing and manipulating Attribute and the Attribute-related data of elements.">Attribute Management</a> Management </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->

@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: API_Guid Struct Reference</title>
+<title>Archicad 30 C++ API: API_Guid Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -147,7 +147,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Represents a <code>GS::Guid</code> in the API layer. </p>
 <dl class="section remark"><dt>Remarks</dt><dd><a class="el" href="struct_a_p_i___guid.html" title="Represents a GS::Guid in the API layer.">API_Guid</a> is essentially a <code>GS::Guid</code>. It has the same size and structure and only exists because of certain C++ language limitations: namely that a union (like <a class="el" href="union_a_p_i___element.html">API_Element</a>) cannot contain a class that has a constructor or destructor. Since <a class="el" href="struct_a_p_i___elem___head.html">API_Elem_Head</a> needs to contain a Guid member, and it cannot be a <code>GS::Guid</code>, the <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> structure was introduced. This means that you should treat <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> structures as <code>GS::Guid</code> in your code, and use the following provided functions to convert between the two: <code>cpp inline GS::Guid APIGuid2GSGuid (<a class="el" href="struct_a_p_i___guid.html" title="Represents a GS::Guid in the API layer.">API_Guid</a> guid); inline const GS::Guid APIGuid2GSGuid (const <a class="el" href="struct_a_p_i___guid.html" title="Represents a GS::Guid in the API layer.">API_Guid</a> guid); inline <a class="el" href="struct_a_p_i___guid.html" title="Represents a GS::Guid in the API layer.">API_Guid</a> GSGuid2APIGuid (GS::Guid guid); inline const <a class="el" href="struct_a_p_i___guid.html" title="Represents a GS::Guid in the API layer.">API_Guid</a> GSGuid2APIGuid (const GS::Guid guid); </code> All these functions do two things:<ul>
 <li>check that <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> and <code>GS::Guid</code> are the same size at compile time and</li>
-<li>reinterpret_cast the input <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> reference to a <code>GS::Guid</code> reference, or vice versa. There are comparison operators (==,!=, &lt;, &gt;=, &gt;, &gt;=) defined to compare <code>API_Guids</code> with each other or with <code>GS::Guid</code> s. There's also a macro called APINULLGuid for the <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> representation of the GS::NULLGuid constant. From Archicad 12 you are able to use <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> for GS::HashTable key because it has GenerateHashValue method. </li>
+<li>reinterpret_cast the input <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> reference to a <code>GS::Guid</code> reference, or vice versa. There are comparison operators (==, !=, &lt;, &lt;=, &gt;, &gt;=) defined to compare <code><a class="el" href="struct_a_p_i___guid.html" title="Represents a GS::Guid in the API layer.">API_Guid</a></code> values with each other or with <code>GS::Guid</code> values. There's also a macro called APINULLGuid for the <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> representation of the GS::NULLGuid constant. From Archicad 12 you are able to use <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> for GS::HashTable key because it has a GenerateHashValue method. </li>
 </ul>
 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>

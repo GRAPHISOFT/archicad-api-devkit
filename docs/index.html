@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Archicad 29 C++ API</title>
+<title>Archicad 30 C++ API: Archicad 30 C++ API</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -125,7 +125,7 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Archicad 29 C++ API </div></div>
+  <div class="headertitle"><div class="title">Archicad 30 C++ API </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h2><a class="anchor" id="autotoc_md18"></a>
@@ -161,7 +161,9 @@ What will You Need?</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Archicad 28   </td><td class="markdownTableBodyNone">Visual Studio 2019 (v142 toolset)   </td><td class="markdownTableBodyNone">Latest Xcode (deployment target macOS 13.0)    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Archicad 29   </td><td class="markdownTableBodyNone">Visual Studio 2022 (v143 toolset)   </td><td class="markdownTableBodyNone">Latest Xcode (deployment target macOS 15.1)   </td></tr>
+<td class="markdownTableBodyNone">Archicad 29   </td><td class="markdownTableBodyNone">Visual Studio 2022 (v143 toolset)   </td><td class="markdownTableBodyNone">Latest Xcode (deployment target macOS 15.1)    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Archicad 30   </td><td class="markdownTableBodyNone">Visual Studio 2022 (v143 toolset)   </td><td class="markdownTableBodyNone">Latest Xcode (deployment target macOS 15.1)   </td></tr>
 </table>
 <h2><a class="anchor" id="autotoc_md21"></a>
 Structure of the API Development Kit</h2>
@@ -179,11 +181,11 @@ Generate IDE Project for the Add-On</h3>
 <p>After you downloaded the <a href="https://github.com/GRAPHISOFT/archicad-addon-cmake">template Add-On</a>, you have to use CMake to generate the project for your favourite Development Environment. Starting from the root folder you can generate the projects with the commands below. Make sure to replace the value of AC_API_DEVKIT_DIR variable with your DevKit installation folder.</p>
 <p>On Windows: </p><pre class="fragment">mkdir Build
 cd Build
-cmake -G "Visual Studio 17 2022" -A "x64" -DAC\_API\_DEVKIT\_DIR="C:\\API Development Kit 29.&lt;release build number&gt;" ..
+cmake -G "Visual Studio 17 2022" -A "x64" -DAC\_API\_DEVKIT\_DIR="C:\\API Development Kit 30.&lt;release build number&gt;" ..
 cd ..
 </pre><p>On MacOS </p><pre class="fragment">mkdir Build
 cd Build
-cmake -G "Xcode" -DAC\_API\_DEVKIT\_DIR=/Applications/GRAPHISOFT\\ ARCHICAD\\ API\\ DevKit\\ 29.&lt;release build number&gt; ..
+cmake -G "Xcode" -DAC\_API\_DEVKIT\_DIR=/Applications/GRAPHISOFT\\ ARCHICAD\\ API\\ DevKit\\ 30.&lt;release build number&gt; ..
 cd ..
 </pre><p>Don't forget to replace "&lt;release build number&gt;" with the actual build number of the DevKit. Please note the ".." at the end of the commands. It means that CMake will search for the CMakeLists.txt file in the parent folder.</p>
 <h3><a class="anchor" id="autotoc_md24"></a>
@@ -225,7 +227,7 @@ Invalid MDID</h3>
 <p>On Windows</p>
 <p>Archicad.exe -DEMO</p>
 <p>On Mac</p>
-<p>"Archicad 29.app/Contents/MacOS/Archicad" -demo</p>
+<p>"Archicad 30.app/Contents/MacOS/Archicad" -demo</p>
 <h2><a class="anchor" id="autotoc_md29"></a>
 Anatomy of an Add-On</h2>
 <p>You can find several subfolders in the <b>Sources</b> folder.</p>
@@ -262,20 +264,20 @@ Add-On Sources</h3>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">return</span> NoError;</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup___add_on_integration_html_ggae7782179a03e5a2f34a4940b46b86623a97e315116aa95528a6497b4633698e86"><div class="ttname"><a href="group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623a97e315116aa95528a6497b4633698e86">MenuCode_Tools</a></div><div class="ttdeci">@ MenuCode_Tools</div><div class="ttdef"><b>Definition</b> APIdefs_Registration.h:305</div></div>
+<div class="ttc" id="agroup___add_on_integration_html_ggae7782179a03e5a2f34a4940b46b86623a97e315116aa95528a6497b4633698e86"><div class="ttname"><a href="group___add_on_integration.html#ggae7782179a03e5a2f34a4940b46b86623a97e315116aa95528a6497b4633698e86">MenuCode_Tools</a></div><div class="ttdeci">@ MenuCode_Tools</div><div class="ttdef"><b>Definition</b> APIdefs_Registration.h:304</div></div>
 <div class="ttc" id="agroup___add_on_lifetime_html_ga04d82e269703a9b433002bbe20f1d3b2"><div class="ttname"><a href="group___add_on_lifetime.html#ga04d82e269703a9b433002bbe20f1d3b2">FreeData</a></div><div class="ttdeci">GSErrCode FreeData(void)</div></div>
-<div class="ttc" id="agroup___add_on_lifetime_html_ga3d5b6a23422e44dce66728b0f4eb943e"><div class="ttname"><a href="group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e">RegisterInterface</a></div><div class="ttdeci">GSErrCode RegisterInterface(void)</div><div class="ttdoc">In this function the add-on can register its services, and menu commands.</div></div>
-<div class="ttc" id="agroup___add_on_lifetime_html_ga7323a17897372b0fc97fcfe0874213f3"><div class="ttname"><a href="group___add_on_lifetime.html#ga7323a17897372b0fc97fcfe0874213f3">API_AddonType</a></div><div class="ttdeci">API_AddonType</div><div class="ttdoc">Describes the different types of add-ons.</div><div class="ttdef"><b>Definition</b> APIdefs_Registration.h:254</div></div>
+<div class="ttc" id="agroup___add_on_lifetime_html_ga3d5b6a23422e44dce66728b0f4eb943e"><div class="ttname"><a href="group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e">RegisterInterface</a></div><div class="ttdeci">GSErrCode RegisterInterface(void)</div><div class="ttdoc">In this function, the add-on can register its services and menu commands.</div></div>
+<div class="ttc" id="agroup___add_on_lifetime_html_ga7323a17897372b0fc97fcfe0874213f3"><div class="ttname"><a href="group___add_on_lifetime.html#ga7323a17897372b0fc97fcfe0874213f3">API_AddonType</a></div><div class="ttdeci">API_AddonType</div><div class="ttdoc">Describes the different types of add-ons.</div><div class="ttdef"><b>Definition</b> APIdefs_Registration.h:253</div></div>
 <div class="ttc" id="agroup___add_on_lifetime_html_gaa8f1f7d553305c1afe5de7e4dcb66e99"><div class="ttname"><a href="group___add_on_lifetime.html#gaa8f1f7d553305c1afe5de7e4dcb66e99">Initialize</a></div><div class="ttdeci">GSErrCode Initialize(void)</div><div class="ttdoc">The main entry point of the add-on.</div></div>
-<div class="ttc" id="agroup___add_on_lifetime_html_gaf36d63d09853e5344932b63ee23d2bb9"><div class="ttname"><a href="group___add_on_lifetime.html#gaf36d63d09853e5344932b63ee23d2bb9">CheckEnvironment</a></div><div class="ttdeci">API_AddonType CheckEnvironment(API_EnvirParams *envirParams)</div><div class="ttdoc">Defines the behavior of the add-on based on the current running environment.</div></div>
-<div class="ttc" id="agroup___add_on_lifetime_html_gga7323a17897372b0fc97fcfe0874213f3a1d41939c287586c8641e2aa5a40b72c7"><div class="ttname"><a href="group___add_on_lifetime.html#gga7323a17897372b0fc97fcfe0874213f3a1d41939c287586c8641e2aa5a40b72c7">APIAddon_Normal</a></div><div class="ttdeci">@ APIAddon_Normal</div><div class="ttdef"><b>Definition</b> APIdefs_Registration.h:262</div></div>
+<div class="ttc" id="agroup___add_on_lifetime_html_gaf36d63d09853e5344932b63ee23d2bb9"><div class="ttname"><a href="group___add_on_lifetime.html#gaf36d63d09853e5344932b63ee23d2bb9">CheckEnvironment</a></div><div class="ttdeci">API_AddonType CheckEnvironment(API_EnvirParams *envirParams)</div><div class="ttdoc">Defines the add-on's behavior based on the current running environment.</div></div>
+<div class="ttc" id="agroup___add_on_lifetime_html_gga7323a17897372b0fc97fcfe0874213f3a1d41939c287586c8641e2aa5a40b72c7"><div class="ttname"><a href="group___add_on_lifetime.html#gga7323a17897372b0fc97fcfe0874213f3a1d41939c287586c8641e2aa5a40b72c7">APIAddon_Normal</a></div><div class="ttdeci">@ APIAddon_Normal</div><div class="ttdef"><b>Definition</b> APIdefs_Registration.h:261</div></div>
 <div class="ttc" id="agroup___menu_item_html_gaec79ce2178f5bb5482da171a49ba88ef"><div class="ttname"><a href="group___menu_item.html#gaec79ce2178f5bb5482da171a49ba88ef">ACAPI_MenuItem_RegisterMenu</a></div><div class="ttdeci">GSErrCode ACAPI_MenuItem_RegisterMenu(short menuStrResID, short promptStrResID, APIMenuCodeID menuPosCode, GSFlags menuFlags)</div><div class="ttdoc">Registers the menu items of the add-on.</div></div>
 <div class="ttc" id="agroup___menu_item_html_gaf40884810b9a156a9dbded23168dbde8"><div class="ttname"><a href="group___menu_item.html#gaf40884810b9a156a9dbded23168dbde8">ACAPI_MenuItem_InstallMenuHandler</a></div><div class="ttdeci">GSErrCode ACAPI_MenuItem_InstallMenuHandler(short menuStrResID, APIMenuCommandProc *handlerProc)</div><div class="ttdoc">Installs a callback procedure for handling the add-on's menu commands.</div></div>
-<div class="ttc" id="agroup___resource_html_gaf1228260879fd5622cb1e9a5284e0c50"><div class="ttname"><a href="group___resource.html#gaf1228260879fd5622cb1e9a5284e0c50">ACAPI_GetOwnResModule</a></div><div class="ttdeci">GSResModule ACAPI_GetOwnResModule(void)</div><div class="ttdoc">Returns the add-on's own resource module identifier for loading resources.</div></div>
-<div class="ttc" id="astruct_a_p_i___add_on_info_html_a7dc761071ee3297fbbbf2b893732bfee"><div class="ttname"><a href="struct_a_p_i___add_on_info.html#a7dc761071ee3297fbbbf2b893732bfee">API_AddOnInfo::description</a></div><div class="ttdeci">GS::UniString description</div><div class="ttdoc">The description of the functionality of the add-on, in Unicode.</div><div class="ttdef"><b>Definition</b> APIdefs_Registration.h:119</div></div>
-<div class="ttc" id="astruct_a_p_i___add_on_info_html_afd2b35960456793cf413db587606a743"><div class="ttname"><a href="struct_a_p_i___add_on_info.html#afd2b35960456793cf413db587606a743">API_AddOnInfo::name</a></div><div class="ttdeci">GS::UniString name</div><div class="ttdoc">The name of the add-on, in Unicode.</div><div class="ttdef"><b>Definition</b> APIdefs_Registration.h:113</div></div>
-<div class="ttc" id="astruct_a_p_i___envir_params_html"><div class="ttname"><a href="struct_a_p_i___envir_params.html">API_EnvirParams</a></div><div class="ttdoc">Describes the different parameters of the running environment.</div><div class="ttdef"><b>Definition</b> APIdefs_Registration.h:197</div></div>
-<div class="ttc" id="astruct_a_p_i___envir_params_html_aee697649a2ea94a9a0ea71a932c88a08"><div class="ttname"><a href="struct_a_p_i___envir_params.html#aee697649a2ea94a9a0ea71a932c88a08">API_EnvirParams::addOnInfo</a></div><div class="ttdeci">API_AddOnInfo addOnInfo</div><div class="ttdoc">Textual description of the add-on; the add-on should fill this in.</div><div class="ttdef"><b>Definition</b> APIdefs_Registration.h:209</div></div>
+<div class="ttc" id="agroup___resource_html_gaf1228260879fd5622cb1e9a5284e0c50"><div class="ttname"><a href="group___resource.html#gaf1228260879fd5622cb1e9a5284e0c50">ACAPI_GetOwnResModule</a></div><div class="ttdeci">GSResModule ACAPI_GetOwnResModule(void)</div><div class="ttdoc">Returns the add-on's resource module identifier for loading resources.</div></div>
+<div class="ttc" id="astruct_a_p_i___add_on_info_html_a7dc761071ee3297fbbbf2b893732bfee"><div class="ttname"><a href="struct_a_p_i___add_on_info.html#a7dc761071ee3297fbbbf2b893732bfee">API_AddOnInfo::description</a></div><div class="ttdeci">GS::UniString description</div><div class="ttdoc">The description of the functionality of the add-on, in Unicode.</div><div class="ttdef"><b>Definition</b> APIdefs_Registration.h:112</div></div>
+<div class="ttc" id="astruct_a_p_i___add_on_info_html_afd2b35960456793cf413db587606a743"><div class="ttname"><a href="struct_a_p_i___add_on_info.html#afd2b35960456793cf413db587606a743">API_AddOnInfo::name</a></div><div class="ttdeci">GS::UniString name</div><div class="ttdoc">The name of the add-on, in Unicode.</div><div class="ttdef"><b>Definition</b> APIdefs_Registration.h:106</div></div>
+<div class="ttc" id="astruct_a_p_i___envir_params_html"><div class="ttname"><a href="struct_a_p_i___envir_params.html">API_EnvirParams</a></div><div class="ttdoc">Describes the different parameters of the running environment.</div><div class="ttdef"><b>Definition</b> APIdefs_Registration.h:196</div></div>
+<div class="ttc" id="astruct_a_p_i___envir_params_html_aee697649a2ea94a9a0ea71a932c88a08"><div class="ttname"><a href="struct_a_p_i___envir_params.html#aee697649a2ea94a9a0ea71a932c88a08">API_EnvirParams::addOnInfo</a></div><div class="ttdeci">API_AddOnInfo addOnInfo</div><div class="ttdoc">Textual description of the add-on; the add-on should fill this in.</div><div class="ttdef"><b>Definition</b> APIdefs_Registration.h:208</div></div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md31"></a>
 Add-On Resources</h3>
 <p>The source code for resources is in the <b>AddOnResources</b> folder.</p>
@@ -310,10 +312,10 @@ Call an API Function</h2>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">return</span> NoError;</div>
 <div class="line">}</div>
-<div class="ttc" id="astruct_a_p_i___menu_item_ref_html_aef080cac7ebdcbc88b22c62839728d21"><div class="ttname"><a href="struct_a_p_i___menu_item_ref.html#aef080cac7ebdcbc88b22c62839728d21">API_MenuItemRef::menuResID</a></div><div class="ttdeci">short menuResID</div><div class="ttdoc">The resource ID which the tool command belongs to.</div><div class="ttdef"><b>Definition</b> APIdefs_Interface.h:129</div></div>
-<div class="ttc" id="astruct_a_p_i___menu_item_ref_html_afe147f8c06bca2aa3c143d314b5ee962"><div class="ttname"><a href="struct_a_p_i___menu_item_ref.html#afe147f8c06bca2aa3c143d314b5ee962">API_MenuItemRef::itemIndex</a></div><div class="ttdeci">Int32 itemIndex</div><div class="ttdoc">The index of the command within the specified menu.</div><div class="ttdef"><b>Definition</b> APIdefs_Interface.h:141</div></div>
-<div class="ttc" id="astruct_a_p_i___menu_params_html"><div class="ttname"><a href="struct_a_p_i___menu_params.html">API_MenuParams</a></div><div class="ttdoc">Describes the menu item that was chosen.</div><div class="ttdef"><b>Definition</b> APIdefs_Callback.h:54</div></div>
-<div class="ttc" id="astruct_a_p_i___menu_params_html_a74bab3a69139c1ff046f8e6957126103"><div class="ttname"><a href="struct_a_p_i___menu_params.html#a74bab3a69139c1ff046f8e6957126103">API_MenuParams::menuItemRef</a></div><div class="ttdeci">API_MenuItemRef menuItemRef</div><div class="ttdoc">The menu item chosen by the user. The menuItemRef.menuResID is the same what you called ACAPI_MenuIte...</div><div class="ttdef"><b>Definition</b> APIdefs_Callback.h:60</div></div>
+<div class="ttc" id="astruct_a_p_i___menu_item_ref_html_aef080cac7ebdcbc88b22c62839728d21"><div class="ttname"><a href="struct_a_p_i___menu_item_ref.html#aef080cac7ebdcbc88b22c62839728d21">API_MenuItemRef::menuResID</a></div><div class="ttdeci">short menuResID</div><div class="ttdoc">The resource ID which the tool command belongs to.</div><div class="ttdef"><b>Definition</b> APIdefs_Interface.h:125</div></div>
+<div class="ttc" id="astruct_a_p_i___menu_item_ref_html_afe147f8c06bca2aa3c143d314b5ee962"><div class="ttname"><a href="struct_a_p_i___menu_item_ref.html#afe147f8c06bca2aa3c143d314b5ee962">API_MenuItemRef::itemIndex</a></div><div class="ttdeci">Int32 itemIndex</div><div class="ttdoc">The index of the command within the specified menu.</div><div class="ttdef"><b>Definition</b> APIdefs_Interface.h:137</div></div>
+<div class="ttc" id="astruct_a_p_i___menu_params_html"><div class="ttname"><a href="struct_a_p_i___menu_params.html">API_MenuParams</a></div><div class="ttdoc">Describes the menu item that was chosen.</div><div class="ttdef"><b>Definition</b> APIdefs_Callback.h:49</div></div>
+<div class="ttc" id="astruct_a_p_i___menu_params_html_a74bab3a69139c1ff046f8e6957126103"><div class="ttname"><a href="struct_a_p_i___menu_params.html#a74bab3a69139c1ff046f8e6957126103">API_MenuParams::menuItemRef</a></div><div class="ttdeci">API_MenuItemRef menuItemRef</div><div class="ttdoc">The menu item chosen by the user. The menuItemRef.menuResID is the same what you called ACAPI_MenuIte...</div><div class="ttdef"><b>Definition</b> APIdefs_Callback.h:55</div></div>
 </div><!-- fragment --><p>The <code>CountNumberOfWalls</code> function can be implemented like in the example below.</p>
 <div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> CountNumberOfWalls ()</div>
 <div class="line">{</div>
@@ -327,7 +329,7 @@ Call an API Function</h2>
 <div class="line">    DG::InformationAlert (GS::ValueToUniString (wallCount), <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;OK&quot;</span>);</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup___element_html_ga1e5c492e5419647568f209003ab0571b"><div class="ttname"><a href="group___element.html#ga1e5c492e5419647568f209003ab0571b">ACAPI_Element_GetElemList</a></div><div class="ttdeci">GSErrCode ACAPI_Element_GetElemList(const API_ElemType &amp;type, GS::Array&lt; API_Guid &gt; *elemList, API_ElemFilterFlags filterBits=APIFilt_None, const API_Guid &amp;renovationFilterGuid=APINULLGuid)</div><div class="ttdoc">Returns an array of guids of the elements of the given type.</div></div>
-<div class="ttc" id="agroup___element_html_gga2502601bf26ffc7abc608f6988da4d91a97df09286f89e43fadeb4c6abbc09bc3"><div class="ttname"><a href="group___element.html#gga2502601bf26ffc7abc608f6988da4d91a97df09286f89e43fadeb4c6abbc09bc3">API_WallID</a></div><div class="ttdeci">@ API_WallID</div><div class="ttdef"><b>Definition</b> APIdefs_Elements.h:78</div></div>
+<div class="ttc" id="agroup___element_html_gga2502601bf26ffc7abc608f6988da4d91a97df09286f89e43fadeb4c6abbc09bc3"><div class="ttname"><a href="group___element.html#gga2502601bf26ffc7abc608f6988da4d91a97df09286f89e43fadeb4c6abbc09bc3">API_WallID</a></div><div class="ttdeci">@ API_WallID</div><div class="ttdef"><b>Definition</b> APIdefs_Elements.h:73</div></div>
 </div><!-- fragment --><p>It accesses the list of walls from the current plan, and shows the length of the array in a dialog.</p>
 <p>If everything is OK, you should see something like this:</p>
 <div class="image">

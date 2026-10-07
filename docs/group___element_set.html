@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Element Set</title>
+<title>Archicad 30 C++ API: Element Set</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -151,14 +151,14 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Provides functions to create and handle element sets for any kind of purpose. You may also add custom information to the element set. </p>
-<h1><a class="anchor" id="autotoc_md124"></a>
+<h1><a class="anchor" id="autotoc_md131"></a>
 Element Set Manager</h1>
 <p>The Element Set Manager lets your add-on mark a group of elements to be treated as a collection.</p>
 <p>For example you have a building schedule database, and you want to assign elements to the tasks they are involved in. So you can create an element set for this task. Since an element can belong to more than one task, different element sets can contain the same element as well.</p>
 <p>The elements in the set are referenced by their GUIDs. The Element Set Manager service automatically updates the GUID lists at merge or paste operations, when ID collision could happen.</p>
 <p>You may also attach custom user data to an element set.</p>
 <p>Note that from Archicad 12 element sets are referenced with their GUIDs rather than indices, because element sets can be re-indexed during the lifetime of a project, and that could have made difficult to follow up.</p>
-<h2><a class="anchor" id="autotoc_md125"></a>
+<h2><a class="anchor" id="autotoc_md132"></a>
 Functions</h2>
 <p>The Element Set Manager functions begin with the <b>ACAPI_ElementSet_</b> prefix.</p>
 <ul>
@@ -206,7 +206,7 @@ Functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - guids or setGuid parameter is nullptr.</li>
 <li>APIERR_BADDATABASE, APIERR_NOTMINE - The function cannot operate on the current database.</li>
 <li>APIERR_NEEDSUNDOSCOPE - The function must be undoable, it wasn't called from an undoable command scope.</li>
@@ -283,7 +283,7 @@ Functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADDATABASE - The function cannot operate on the current database.</li>
 <li>APIERR_NEEDSUNDOSCOPE - The function must be undoable, it wasn't called from an undoable command scope.</li>
 <li>APIERR_BADID - The setGuid parameter is invalid.</li>
@@ -350,7 +350,7 @@ Functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADDATABASE - The function cannot operate on the current database.</li>
 <li>APIERR_BADID - The setGuid parameter is invalid.</li>
 <li>APIERR_NOTMINE - The element set referenced by setGuid is owned by another user.</li>
@@ -389,7 +389,7 @@ Functions</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The setGuids parameter is nullptr.</li>
 <li>APIERR_BADDATABASE - The function cannot operate on the current database. </li>
 </ul>

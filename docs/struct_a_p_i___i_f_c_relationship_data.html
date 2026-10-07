@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: API_IFCRelationshipData Struct Reference</title>
+<title>Archicad 30 C++ API: API_IFCRelationshipData Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -162,7 +162,7 @@ GS::HashTable&lt; GS::UniString, GS::UniString &gt;&#160;</td><td class="memItem
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains IFC Entity relations which are specific for the IFC. The IFC Entities are represented by their GlobalId. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>This structure is used in <a class="el" href="group___project_operation.html#ga96c54887dae51bfeef2e4895bb72dbc3">ACAPI_ProjectOperation_Save</a>. The IFC containment tree (containmentTable) is in "child -&gt;parent" format. Example: IfcBuilding -&gt;IfcProject IfcSite -&gt;IfcBuilding IfcBuildingStorey -&gt;IfcBuilding IfcWall -&gt;IfcBuildingStorey IfcBuildingElementPart -&gt;IfcWall. The IFC assignmentTable set (assignmentTable) is in "child -&gt;parent" format. Example: IfcWall -&gt;IfcRelAssignsToGroup IfcRelAssignsToGroup -&gt;IfcGroup. The IFC Type Products (typeProductTable) is in "child -&gt;parent" format. Example: IfcWall -&gt;IfcWallType. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This structure is used in <a class="el" href="group___project_operation.html#ga96c54887dae51bfeef2e4895bb72dbc3">ACAPI_ProjectOperation_Save</a>. The IFC containment tree (containmentTable) is in "child -&gt;parent" format. Example: IfcBuilding -&gt;IfcProject IfcSite -&gt;IfcBuilding IfcBuildingStorey -&gt;IfcBuilding IfcWall -&gt;IfcBuildingStorey IfcBuildingElementPart -&gt;IfcWall. The IFC assignmentTable set (assignmentTable) is in "child -&gt;parent" format. Example: IfcWall -&gt;IfcRelAssignsToGroup -&gt;IfcGroup. The IFC Type Products (typeProductTable) is in "child -&gt;parent" format. Example: IfcWall -&gt;IfcWallType. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 </body>

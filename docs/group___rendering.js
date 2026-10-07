@@ -26,7 +26,10 @@ var group___rendering =
       [ "scaleType", "struct_a_p_i___rend_image.html#a644fa3f856bb8e470a2dd1d4fd64eb3a", null ],
       [ "vSize", "struct_a_p_i___rend_image.html#af0f53f390ecd25f3bc3c52ddd52aa196", null ]
     ] ],
-    [ "API_RendSetTypeID", "group___rendering.html#gad4f68e67737cf4c873cf249c2649e73c", null ],
+    [ "API_RendSetTypeID", "group___rendering.html#gad4f68e67737cf4c873cf249c2649e73c", [
+      [ "APIRendSet_EffectsID", "group___rendering.html#ggad4f68e67737cf4c873cf249c2649e73ca4556d654efa2ae68a8343153dfae437a", null ],
+      [ "APIRendSet_ImageID", "group___rendering.html#ggad4f68e67737cf4c873cf249c2649e73cae0fbb91079b89aef09dbd6a590786ff6", null ]
+    ] ],
     [ "ACAPI_Rendering_ChangeRenderingSets", "group___rendering.html#ga2352e2e2daa922d5d2723602070a37fe", null ],
     [ "ACAPI_Rendering_GetRenderingSceneNames", "group___rendering.html#gab5a7a0810c9dd9099a123a3ae3918e15", null ],
     [ "ACAPI_Rendering_GetRenderingSets", "group___rendering.html#gaa9c720b4cff8d212fb4fe71f69e920cd", null ],

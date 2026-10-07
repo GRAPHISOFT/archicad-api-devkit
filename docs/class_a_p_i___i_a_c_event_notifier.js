@@ -9,5 +9,6 @@ var class_a_p_i___i_a_c_event_notifier =
     [ "NotifyMarqueeEvent", "class_a_p_i___i_a_c_event_notifier.html#a2c0e7a987ad25c9424c15b09c2e8601d", null ],
     [ "NotifyPropertyDefinitionChanges", "class_a_p_i___i_a_c_event_notifier.html#a381693146fa60063e5ef5c9f4e44c124", null ],
     [ "NotifyPropertyGroupChanges", "class_a_p_i___i_a_c_event_notifier.html#aff663d351b1201db4dc6fb911d6a294c", null ],
+    [ "NotifyView3DSettingsEvent", "class_a_p_i___i_a_c_event_notifier.html#a3d2054d8e8966959a46340db883d84a6", null ],
     [ "NotifyWindowChanges", "class_a_p_i___i_a_c_event_notifier.html#acb72c81957559f6c6599c3901fec6ba9", null ]
 ];

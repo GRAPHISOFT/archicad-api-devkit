@@ -52,12 +52,19 @@ var group___geo_location =
       [ "placeInfo", "struct_a_p_i___geo_location.html#a314f453174365dd8aef85234c094cd17", null ],
       [ "surveyPointPosition", "struct_a_p_i___geo_location.html#a1c399527480d0ebcde2472c63c703e31", null ]
     ] ],
-    [ "API_AltitudeUnitID", "group___geo_location.html#ga796cf9d60cd28041ff91c7b53f9bfe70", null ],
+    [ "API_AltitudeUnitID", "group___geo_location.html#ga796cf9d60cd28041ff91c7b53f9bfe70", [
+      [ "APIAltitudeUnit_Meter", "group___geo_location.html#gga796cf9d60cd28041ff91c7b53f9bfe70a914d56b4a9640a6f5657eb184366351a", null ],
+      [ "APIAltitudeUnit_DecFoot", "group___geo_location.html#gga796cf9d60cd28041ff91c7b53f9bfe70ab9d075b2754fceb7eac03719441d6ac4", null ]
+    ] ],
     [ "API_LongLatUnitID", "group___geo_location.html#ga5ebe841edd8e3f5407110f3acc14ce71", [
       [ "API_LongLatUnitID::APILongLatUnit_DecimalDegree", "group___geo_location.html#gga5ebe841edd8e3f5407110f3acc14ce71a8fbedf2ac735795fb81fa75a6c398863", null ],
       [ "API_LongLatUnitID::APILongLatUnit_DegreeMinSec", "group___geo_location.html#gga5ebe841edd8e3f5407110f3acc14ce71a596f652517f80a9a68e46e12fa273759", null ]
     ] ],
-    [ "API_NorthUnitID", "group___geo_location.html#ga8eba2f88c72e8a2947832029b01e1a15", null ],
+    [ "API_NorthUnitID", "group___geo_location.html#ga8eba2f88c72e8a2947832029b01e1a15", [
+      [ "APINorthUnit_DecimalDegree", "group___geo_location.html#gga8eba2f88c72e8a2947832029b01e1a15a67b2657213f6edc8169329bcd5bd34b4", null ],
+      [ "APINorthUnit_DegreeMinSec", "group___geo_location.html#gga8eba2f88c72e8a2947832029b01e1a15a82811cfb64acc2d41bd7520a512d36b9", null ]
+    ] ],
+    [ "ACAPI_GeoLocation_CalcSunOnPlace", "group___geo_location.html#ga37cc01fbecf48f9356ed660fcdbd2289", null ],
     [ "ACAPI_GeoLocation_CalcSunOnPlace", "group___geo_location.html#ga3bddfc82bdbfe5a609b44eff58aac8c8", null ],
     [ "ACAPI_GeoLocation_CanChangePlaceSets", "group___geo_location.html#ga8acb541c13d5a320cc2ceb037e59a1a9", null ],
     [ "ACAPI_GeoLocation_ChangePlaceSets", "group___geo_location.html#gac07dde190dcb063d5790dbb61bede069", null ],

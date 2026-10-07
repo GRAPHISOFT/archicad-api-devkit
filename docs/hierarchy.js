@@ -70,6 +70,7 @@ var hierarchy =
     [ "API_AssemblySegmentSchemeData", "struct_a_p_i___assembly_segment_scheme_data.html", null ],
     [ "API_Attr_Head", "struct_a_p_i___attr___head.html", null ],
     [ "API_Attribute", "union_a_p_i___attribute.html", null ],
+    [ "API_AttributeCreationInfo", "struct_a_p_i___attribute_creation_info.html", null ],
     [ "API_AttributeDef", "struct_a_p_i___attribute_def.html", null ],
     [ "API_AttributeDefExt", "struct_a_p_i___attribute_def_ext.html", null ],
     [ "API_AttributeFolder", "struct_a_p_i___attribute_folder.html", null ],
@@ -250,6 +251,7 @@ var hierarchy =
       [ "API_IMarqueeEventHandler", "class_a_p_i___i_marquee_event_handler.html", null ],
       [ "API_IPropertyDefinitionEventHandler", "class_a_p_i___i_property_definition_event_handler.html", null ],
       [ "API_IPropertyGroupEventHandler", "class_a_p_i___i_property_group_event_handler.html", null ],
+      [ "API_IView3DSettingsEventHandler", "class_a_p_i___i_view3_d_settings_event_handler.html", null ],
       [ "API_IWindowEventHandler", "class_a_p_i___i_window_event_handler.html", null ]
     ] ],
     [ "API_IEventNotifier", "class_a_p_i___i_event_notifier.html", [
@@ -643,6 +645,8 @@ var hierarchy =
       [ "ACAPI::MEP::DuctElbowPreferenceTable::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_elbow_preference_table_1_1_modifier.html", null ],
       [ "ACAPI::MEP::DuctRectangularSegmentPreferenceTable::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table_1_1_modifier.html", null ],
       [ "ACAPI::MEP::DuctTransitionPreferenceTable::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table_1_1_modifier.html", null ],
+      [ "ACAPI::MEP::ElectricalCircuit::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit_1_1_modifier.html", null ],
+      [ "ACAPI::MEP::ElectricalProjectSettings::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings_1_1_modifier.html", null ],
       [ "ACAPI::MEP::ElementDefault::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default_1_1_modifier.html", [
         [ "ACAPI::MEP::ElbowDefault::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_default_1_1_modifier.html", null ],
         [ "ACAPI::MEP::TransitionDefault::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_transition_default_1_1_modifier.html", null ]
@@ -650,6 +654,8 @@ var hierarchy =
       [ "ACAPI::MEP::ModifiableElementBase::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html", [
         [ "ACAPI::MEP::Accessory::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_accessory_1_1_modifier.html", null ],
         [ "ACAPI::MEP::Branch::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch_1_1_modifier.html", null ],
+        [ "ACAPI::MEP::ElectricalDevice::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device_1_1_modifier.html", null ],
+        [ "ACAPI::MEP::ElectricalPanel::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_1_1_modifier.html", null ],
         [ "ACAPI::MEP::Equipment::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_equipment_1_1_modifier.html", null ],
         [ "ACAPI::MEP::Fitting::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting_1_1_modifier.html", null ],
         [ "ACAPI::MEP::FlexibleSegment::Modifier", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_1_1_modifier.html", null ],
@@ -708,6 +714,8 @@ var hierarchy =
           [ "ACAPI::MEP::ModifiableElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base.html", [
             [ "ACAPI::MEP::Accessory", "class_a_c_a_p_i_1_1_m_e_p_1_1_accessory.html", null ],
             [ "ACAPI::MEP::Branch", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch.html", null ],
+            [ "ACAPI::MEP::ElectricalDevice", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device.html", null ],
+            [ "ACAPI::MEP::ElectricalPanel", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel.html", null ],
             [ "ACAPI::MEP::Equipment", "class_a_c_a_p_i_1_1_m_e_p_1_1_equipment.html", null ],
             [ "ACAPI::MEP::Fitting", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting.html", null ],
             [ "ACAPI::MEP::FlexibleSegment", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment.html", null ],
@@ -728,6 +736,8 @@ var hierarchy =
           [ "ACAPI::MEP::AccessoryDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_accessory_default.html", null ],
           [ "ACAPI::MEP::BranchDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_branch_default.html", null ],
           [ "ACAPI::MEP::ElbowDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_default.html", null ],
+          [ "ACAPI::MEP::ElectricalDeviceDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device_default.html", null ],
+          [ "ACAPI::MEP::ElectricalPanelDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_default.html", null ],
           [ "ACAPI::MEP::EquipmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_equipment_default.html", null ],
           [ "ACAPI::MEP::FittingDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting_default.html", null ],
           [ "ACAPI::MEP::FlexibleSegmentDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_flexible_segment_default.html", null ],
@@ -771,6 +781,8 @@ var hierarchy =
       [ "ACAPI::MEP::DuctRectangularSegmentPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_rectangular_segment_preference_table.html", null ],
       [ "ACAPI::MEP::DuctTransitionPreferenceTable", "class_a_c_a_p_i_1_1_m_e_p_1_1_duct_transition_preference_table.html", null ],
       [ "ACAPI::MEP::ElbowUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_u_i_manager.html", null ],
+      [ "ACAPI::MEP::ElectricalCircuit", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html", null ],
+      [ "ACAPI::MEP::ElectricalProjectSettings", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings.html", null ],
       [ "ACAPI::MEP::ElementUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_u_i_manager.html", null ],
       [ "ACAPI::MEP::EquipmentUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_equipment_u_i_manager.html", null ],
       [ "ACAPI::MEP::FittingUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_fitting_u_i_manager.html", null ],
@@ -852,6 +864,7 @@ var hierarchy =
     [ "DG::PanelObserver", null, [
       [ "Tracking::Tracker", "class_tracking_1_1_tracker.html", null ]
     ] ],
+    [ "DG::RawAndDisplayText", "class_d_g_1_1_raw_and_display_text.html", null ],
     [ "ResultBase", null, [
       [ "ACAPI::Result< T, E >", "class_a_c_a_p_i_1_1_result.html", null ]
     ] ],

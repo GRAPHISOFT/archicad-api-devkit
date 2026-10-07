@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: API_Attribute Union Reference</title>
+<title>Archicad 30 C++ API: API_Attribute Union Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -177,7 +177,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a2d2c78a4b037567caebd6b2ed6d01eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17653da6545302f84ae5ce3d7ea97119" id="r_a17653da6545302f84ae5ce3d7ea97119"><td class="memItemLeft" align="right" valign="top"><a id="a17653da6545302f84ae5ce3d7ea97119" name="a17653da6545302f84ae5ce3d7ea97119"></a>
 <a class="el" href="struct_a_p_i___pen_table_type.html">API_PenTableType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>penTable</b></td></tr>
-<tr class="memdesc:a17653da6545302f84ae5ce3d7ea97119"><td class="mdescLeft">&#160;</td><td class="mdescRight">A named pen table attribute.. <br /></td></tr>
+<tr class="memdesc:a17653da6545302f84ae5ce3d7ea97119"><td class="mdescLeft">&#160;</td><td class="mdescRight">A named pen table attribute. <br /></td></tr>
 <tr class="separator:a17653da6545302f84ae5ce3d7ea97119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c4c1179443433b8d6a450162b46eef9" id="r_a2c4c1179443433b8d6a450162b46eef9"><td class="memItemLeft" align="right" valign="top"><a id="a2c4c1179443433b8d6a450162b46eef9" name="a2c4c1179443433b8d6a450162b46eef9"></a>
 <a class="el" href="struct_a_p_i___m_e_p_system_type.html">API_MEPSystemType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mepSystem</b></td></tr>
@@ -194,7 +194,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes the different attributes. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>Database items named attributes are global collections of layers, pen colors, surface materials, fill patterns, etc. that are available to all eligible tools. They are referenced by indices and changes to an attribute effects every element that uses that attribute. Attributes can be accessed and edited through the Options menu. API functions operating on the attribute set begin with the <code>ACAPI_Attribute_</code> prefix, refer to the Attribute Manager for more details. Many attribute related functions use the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure on the parameter list. As a general rule, you have to fill the required fields in the union, then Archicad parses the request based on the values, and passes the return parameters in the same parameter. This is why most of the functions do not have the const directive in the prototypes. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Database items named attributes are global collections of layers, pen colors, surface materials, fill patterns, etc. that are available to all eligible tools. They are referenced by indices and changes to an attribute affect every element that uses that attribute. Attributes can be accessed and edited through the Options menu. API functions operating on the attribute set begin with the <code>ACAPI_Attribute_</code> prefix; refer to the Attribute Manager for more details. Many attribute-related functions use the <a class="el" href="union_a_p_i___attribute.html">API_Attribute</a> structure on the parameter list. As a general rule, you have to fill the required fields in the union, then Archicad parses the request based on the values, and passes the return parameters in the same parameter. This is why most of the functions do not have the const directive in the prototypes. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 </body>

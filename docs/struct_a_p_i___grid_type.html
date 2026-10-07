@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: API_GridType Struct Reference</title>
+<title>Archicad 30 C++ API: API_GridType Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -157,7 +157,7 @@ short&#160;</td><td class="memItemRight" valign="bottom"><b>nLineMainY</b></td><
 <tr class="separator:a65b97a0f7e5ff82f2f8de0ec22c0b3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe1a4793eef46715084028ab3dc7da96" id="r_afe1a4793eef46715084028ab3dc7da96"><td class="memItemLeft" align="right" valign="top"><a id="afe1a4793eef46715084028ab3dc7da96" name="afe1a4793eef46715084028ab3dc7da96"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>gridSwitch</b></td></tr>
-<tr class="memdesc:afe1a4793eef46715084028ab3dc7da96"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if grid is visible <br /></td></tr>
+<tr class="memdesc:afe1a4793eef46715084028ab3dc7da96"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if grid is visible. <br /></td></tr>
 <tr class="separator:afe1a4793eef46715084028ab3dc7da96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc45fd4d09254ced28b6fa9f34dafc0b" id="r_acc45fd4d09254ced28b6fa9f34dafc0b"><td class="memItemLeft" align="right" valign="top"><a id="acc45fd4d09254ced28b6fa9f34dafc0b" name="acc45fd4d09254ced28b6fa9f34dafc0b"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>spaceAuxX</b></td></tr>
@@ -177,7 +177,7 @@ short&#160;</td><td class="memItemRight" valign="bottom"><b>nLineAuxY</b></td></
 <tr class="separator:a10359a1e2d3373ffd876a184a31c3da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af072cb5bc75ed0a382b8ba42709cb985" id="r_af072cb5bc75ed0a382b8ba42709cb985"><td class="memItemLeft" align="right" valign="top"><a id="af072cb5bc75ed0a382b8ba42709cb985" name="af072cb5bc75ed0a382b8ba42709cb985"></a>
 unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>gridMode</b></td></tr>
-<tr class="memdesc:af072cb5bc75ed0a382b8ba42709cb985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gravity to the grid; <code>0</code> : none, <code>1</code> : grid, <code>2</code> : snap. <br /></td></tr>
+<tr class="memdesc:af072cb5bc75ed0a382b8ba42709cb985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gravity to the grid; one of the <a class="el" href="group___a_p_i___grid_gravity_modes.html">Grid Gravity Modes</a> values. <br /></td></tr>
 <tr class="separator:af072cb5bc75ed0a382b8ba42709cb985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fe329bc9ab4f1d29e182c23e44c0100" id="r_a5fe329bc9ab4f1d29e182c23e44c0100"><td class="memItemLeft" align="right" valign="top"><a id="a5fe329bc9ab4f1d29e182c23e44c0100" name="a5fe329bc9ab4f1d29e182c23e44c0100"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>snapOffsX</b></td></tr>
@@ -197,11 +197,11 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>snapStepY</b></td><
 <tr class="separator:a7ef56fa13668fbe5b83835f54156832d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8162f0de3335bc7d0470817fb3d26f5" id="r_ab8162f0de3335bc7d0470817fb3d26f5"><td class="memItemLeft" align="right" valign="top"><a id="ab8162f0de3335bc7d0470817fb3d26f5" name="ab8162f0de3335bc7d0470817fb3d26f5"></a>
 short&#160;</td><td class="memItemRight" valign="bottom"><b>status</b></td></tr>
-<tr class="memdesc:ab8162f0de3335bc7d0470817fb3d26f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">status of the grid <br /></td></tr>
+<tr class="memdesc:ab8162f0de3335bc7d0470817fb3d26f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of the grid; a combination of the <a class="el" href="group___a_p_i___grid_status_flags.html">Grid Status Flags</a> values combined with the bitwise OR (<code>|</code>) operator. <br /></td></tr>
 <tr class="separator:ab8162f0de3335bc7d0470817fb3d26f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe762e2da0df425e59320a8323fff590" id="r_abe762e2da0df425e59320a8323fff590"><td class="memItemLeft" align="right" valign="top"><a id="abe762e2da0df425e59320a8323fff590" name="abe762e2da0df425e59320a8323fff590"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>gridAngle</b></td></tr>
-<tr class="memdesc:abe762e2da0df425e59320a8323fff590"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotation angle of the grid, relative to horizontal <br /></td></tr>
+<tr class="memdesc:abe762e2da0df425e59320a8323fff590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotation angle of the grid, relative to horizontal. <br /></td></tr>
 <tr class="separator:abe762e2da0df425e59320a8323fff590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8142c09583514844c616b5c94e9f1abf" id="r_a8142c09583514844c616b5c94e9f1abf"><td class="memItemLeft" align="right" valign="top"><a id="a8142c09583514844c616b5c94e9f1abf" name="a8142c09583514844c616b5c94e9f1abf"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>gridOffsX</b></td></tr>

@@ -24,7 +24,7 @@ var group___polygon =
       [ "APISurfaceType_BeamBottom", "group___polygon.html#gga67e8e6b5b07f66f1d80c2d812a760f21af3d676f289d8e22f7374dcdf1ba53345", null ],
       [ "APISurfaceType_BeamCut", "group___polygon.html#gga67e8e6b5b07f66f1d80c2d812a760f21ac3981b4709757952f58241cdeadc9dbe", null ],
       [ "APISurfaceType_BeamLast", "group___polygon.html#gga67e8e6b5b07f66f1d80c2d812a760f21a9fac8c49c38208fba258d7a655deb8a5", null ],
-      [ "APISurfaceType_ColumnFisrt", "group___polygon.html#gga67e8e6b5b07f66f1d80c2d812a760f21a0444fc1319ffb926a48837e51b25a156", null ],
+      [ "APISurfaceType_ColumnFirst", "group___polygon.html#gga67e8e6b5b07f66f1d80c2d812a760f21ae5197541fdd6896e42e270bfcfa8e384", null ],
       [ "APISurfaceType_ColumnTop", "group___polygon.html#gga67e8e6b5b07f66f1d80c2d812a760f21aab589100ceb0f0aa607596d18fbdecec", null ],
       [ "APISurfaceType_ColumnBottom", "group___polygon.html#gga67e8e6b5b07f66f1d80c2d812a760f21a2e0fdf8e77a79074ecd513533704d9aa", null ],
       [ "APISurfaceType_ColumnCoreSide", "group___polygon.html#gga67e8e6b5b07f66f1d80c2d812a760f21a90dc11719076545ba06ea6713b524034", null ],

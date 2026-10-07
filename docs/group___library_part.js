@@ -122,8 +122,30 @@ var group___library_part =
       [ "version", "struct_a_p_i___lib_part_section.html#aad37809157c242ac757e5be9e7876df4", null ]
     ] ],
     [ "APIESYMCommandProc", "group___library_part.html#ga13721e6f355feace411ad3a8d4ddfe33", null ],
-    [ "API_LibTypeID", "group___library_part.html#gacd655f5dbf61af0671962cbbe65ed59f", null ],
-    [ "API_LockableStatus", "group___library_part.html#gada81f0b453c0e5ad4e3f00a0100fd7dd", null ],
+    [ "API_LibTypeID", "group___library_part.html#gacd655f5dbf61af0671962cbbe65ed59f", [
+      [ "API_ZombieLibID", "group___library_part.html#ggacd655f5dbf61af0671962cbbe65ed59faa858638ecbf3d1763b55616fa51d4363", null ],
+      [ "APILib_SpecID", "group___library_part.html#ggacd655f5dbf61af0671962cbbe65ed59fac77c465f99c623e8f7b82e6f3000207c", null ],
+      [ "APILib_WindowID", "group___library_part.html#ggacd655f5dbf61af0671962cbbe65ed59fac3bc130ba7fb74992be7747316399095", null ],
+      [ "APILib_DoorID", "group___library_part.html#ggacd655f5dbf61af0671962cbbe65ed59facd13cdc760d3524429c43c400916dfed", null ],
+      [ "APILib_ObjectID", "group___library_part.html#ggacd655f5dbf61af0671962cbbe65ed59fa16822964d4a29ea70445c9a7995b7ede", null ],
+      [ "APILib_LampID", "group___library_part.html#ggacd655f5dbf61af0671962cbbe65ed59fa4dba6f085f0c203560d597f233831a93", null ],
+      [ "APILib_RoomID", "group___library_part.html#ggacd655f5dbf61af0671962cbbe65ed59fa781a305dd1692b23eaaaba5f791d997e", null ],
+      [ "APILib_PropertyID", "group___library_part.html#ggacd655f5dbf61af0671962cbbe65ed59fac4149fe6c9dd946545a98ffe1cc84f74", null ],
+      [ "APILib_PlanSignID", "group___library_part.html#ggacd655f5dbf61af0671962cbbe65ed59fa25feb403894e2a164b9c3ee74b16fb37", null ],
+      [ "APILib_LabelID", "group___library_part.html#ggacd655f5dbf61af0671962cbbe65ed59fa7b4dcb6a99a77b81e0b91118e9c48002", null ],
+      [ "APILib_MacroID", "group___library_part.html#ggacd655f5dbf61af0671962cbbe65ed59fa415346a66b099604de379edeacdddcfc", null ],
+      [ "APILib_PictID", "group___library_part.html#ggacd655f5dbf61af0671962cbbe65ed59fafc929c19165671d6c035eb6cb4a425a3", null ],
+      [ "APILib_ListSchemeID", "group___library_part.html#ggacd655f5dbf61af0671962cbbe65ed59fa882083c9495e1baf9176a5796bbb645d", null ],
+      [ "APILib_SkylightID", "group___library_part.html#ggacd655f5dbf61af0671962cbbe65ed59fa086275e45cfeb6b77aafe60c5bc194e8", null ],
+      [ "APILib_OpeningSymbolID", "group___library_part.html#ggacd655f5dbf61af0671962cbbe65ed59fada0966bcf8c07d3bb7383cfd8267089e", null ]
+    ] ],
+    [ "API_LockableStatus", "group___library_part.html#gada81f0b453c0e5ad4e3f00a0100fd7dd", [
+      [ "APILockableStatus_NotExist", "group___library_part.html#ggada81f0b453c0e5ad4e3f00a0100fd7ddab41e70fb80f0ef8cf5fb8e028a904e84", null ],
+      [ "APILockableStatus_Free", "group___library_part.html#ggada81f0b453c0e5ad4e3f00a0100fd7dda6acf701d7d800609f09340622a62a179", null ],
+      [ "APILockableStatus_Editable", "group___library_part.html#ggada81f0b453c0e5ad4e3f00a0100fd7dda6e04c051c79ab0bcde7beaedf7a9a618", null ],
+      [ "APILockableStatus_Locked", "group___library_part.html#ggada81f0b453c0e5ad4e3f00a0100fd7ddae5da0a9ca0f7d817b2d4f9234ae30fd8", null ],
+      [ "APILockableStatus_NotAvailable", "group___library_part.html#ggada81f0b453c0e5ad4e3f00a0100fd7dda5931a2a14417ab7a1b9059ae6041a08c", null ]
+    ] ],
     [ "API_PrimTypeID", "group___library_part.html#ga4bb639c931b1e4f27b42b6415db128f0", [
       [ "API_ZombiePrimID", "group___library_part.html#gga4bb639c931b1e4f27b42b6415db128f0af9d242ddaf52f90ed46d548609abf0dc", null ],
       [ "API_PrimPointID", "group___library_part.html#gga4bb639c931b1e4f27b42b6415db128f0ae4b2573679f5528e2cea6ea492cb8bab", null ],

@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Library Management</title>
+<title>Archicad 30 C++ API: Library Management</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -667,9 +667,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1839121028df1ab4d6e7f42c6ac00fe8" id="r_ga1839121028df1ab4d6e7f42c6ac00fe8"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1839121028df1ab4d6e7f42c6ac00fe8">ACAPI_LibraryManagement_GetLibPartOrigLocation</a> (const Int32 *libItemIndex, IO::Location *origLocation)</td></tr>
 <tr class="memdesc:ga1839121028df1ab4d6e7f42c6ac00fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the original location of a library part.  <br /></td></tr>
 <tr class="separator:ga1839121028df1ab4d6e7f42c6ac00fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab646aa37d5ef25d6a1de28b4a4400ace" id="r_gab646aa37d5ef25d6a1de28b4a4400ace"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab646aa37d5ef25d6a1de28b4a4400ace">ACAPI_LibraryManagement_UsableGDLString</a> (const char *str)</td></tr>
-<tr class="memdesc:gab646aa37d5ef25d6a1de28b4a4400ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the string is a GDL keyword or reserved symbol.  <br /></td></tr>
-<tr class="separator:gab646aa37d5ef25d6a1de28b4a4400ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62ce745eb766b9bae04087aec8b7f1da" id="r_ga62ce745eb766b9bae04087aec8b7f1da"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga62ce745eb766b9bae04087aec8b7f1da">ACAPI_LibraryManagement_UsableGDLString</a> (const GS::UniString &amp;str)</td></tr>
+<tr class="memdesc:ga62ce745eb766b9bae04087aec8b7f1da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the string is a GDL keyword or reserved symbol.  <br /></td></tr>
+<tr class="separator:ga62ce745eb766b9bae04087aec8b7f1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9877adbb6c0a91b746ed10cb62582c29" id="r_ga9877adbb6c0a91b746ed10cb62582c29"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9877adbb6c0a91b746ed10cb62582c29">ACAPI_LibraryManagement_RunGDLParScript</a> (const <a class="el" href="struct_a_p_i___elem___head.html">API_Elem_Head</a> *elemHead, UInt32 mask=0)</td></tr>
 <tr class="memdesc:ga9877adbb6c0a91b746ed10cb62582c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run GDL parameter script.  <br /></td></tr>
 <tr class="separator:ga9877adbb6c0a91b746ed10cb62582c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -696,12 +696,12 @@ std::vector&lt; std::byte &gt;&#160;</td><td class="memItemRight" valign="bottom
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions to load, iterate and manipulate libraries and library parts. </p>
-<h1><a class="anchor" id="autotoc_md135"></a>
+<h1><a class="anchor" id="autotoc_md142"></a>
 Library Management Overview</h1>
 <p>Classes and functions related to library management allow add-ons to access and modify loaded libraries and library parts in the planfile, similar to how users interact with the UI. The basic concepts are similar to those known from UI: <a class="el" href="class_a_c_a_p_i_1_1_library_1_1_library_manager.html">ACAPI::Library::LibraryManager</a>, <a class="el" href="class_a_c_a_p_i_1_1_library_1_1_library.html">ACAPI::Library::Library</a>, <a class="el" href="class_a_c_a_p_i_1_1_library_1_1_lib_part.html">ACAPI::Library::LibPart</a>, <a class="el" href="class_a_c_a_p_i_1_1_library_1_1_g_s_m_object.html">ACAPI::Library::GSMObject</a>. Starting with Archicad 28, GSM file-specific operations have been separated from general library part management to more logically align with how Archicad operates. <a class="el" href="class_a_c_a_p_i_1_1_library_1_1_library_tree_path.html">ACAPI::Library::LibraryTreePath</a> is an additional concept that helps map the library structure and provides access to Teamwork functions.</p>
 <p>All classes and functions can be found in the <code>ACAPI/Library/*.hpp</code> header files and in the <code>ACAPI::Library</code> namespace.</p>
 <p>For working examples, check the <code>LibraryManagement_Test_ExampleFunctions.cpp</code> file from the API DevKit.</p>
-<h1><a class="anchor" id="autotoc_md136"></a>
+<h1><a class="anchor" id="autotoc_md143"></a>
 The LibraryManager</h1>
 <p>The <a class="el" href="class_a_c_a_p_i_1_1_library_1_1_library_manager.html">ACAPI::Library::LibraryManager</a> class is the main entry point for library-related functionalities. This class is <b>not</b> a one-to-one equivalent of the familiar UI dialogue, but it provides the same functionalities.</p>
 <p>While it doesn't store data itself, it provides access to the data in the plan file. It can be instantiated anywhere the plan file already exists, and this instantiation is a low-cost operation. However, instance creation can fail, as we can't guarantee that a plan file is loaded in every context. That is why the creation is packaged in a factory:</p>
@@ -718,7 +718,7 @@ The LibraryManager</h1>
 <div class="ttc" id="agroup___library_management_html_ga370881df2186ab6a20eb1cf943464e24"><div class="ttname"><a href="#ga370881df2186ab6a20eb1cf943464e24">ACAPI::Library::GetLibraryManager</a></div><div class="ttdeci">Result&lt; LibraryManager &gt; GetLibraryManager()</div><div class="ttdoc">Creates a LibraryManager instance.</div><div class="ttdef"><b>Definition</b> LibraryManager.hpp:194</div></div>
 </div><!-- fragment --><p>In a safe context, where the plan file definitely exists, you can instantiate it in a more compact way:</p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> libraryManager = *<a class="code hl_function" href="#ga370881df2186ab6a20eb1cf943464e24">ACAPI::Library::GetLibraryManager</a> ();</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md137"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md144"></a>
 Query Libraries and Library Parts</h2>
 <p>Library and Library Part can be searched and queried using the methods of the created LibraryManager instance. You can search and filter with unary predicates, similar to the <code>find_if</code> function from the C++ standard library. We provide reusable predicates for the most common searches.</p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> libraryManager = *<a class="code hl_function" href="#ga370881df2186ab6a20eb1cf943464e24">ACAPI::Library::GetLibraryManager</a> ();</div>
@@ -774,7 +774,7 @@ Query Libraries and Library Parts</h2>
 <div class="ttc" id="agroup___library_management_html_gad178c5a2689999c4a27572b0a79586bc"><div class="ttname"><a href="#gad178c5a2689999c4a27572b0a79586bc">ACAPI::Library::Library::IsEmbedded</a></div><div class="ttdeci">ACAPI::Result&lt; bool &gt; IsEmbedded() const</div><div class="ttdoc">The library is embedded, if it is the one embedded in the plan file.</div></div>
 <div class="ttc" id="agroup___library_management_html_gae1124a1a5ab16dca01f72408a48912a5"><div class="ttname"><a href="#gae1124a1a5ab16dca01f72408a48912a5">ACAPI::Library::LibraryManager::FindLibPart</a></div><div class="ttdeci">Result&lt; LibPart &gt; FindLibPart(const std::function&lt; bool(const LibPart &amp;)&gt; &amp;selector) const</div><div class="ttdoc">Find Library Part using a custom selector function.</div></div>
 <div class="ttc" id="agroup___library_management_html_gafaf10e7d5078cd291bfb984d102e17b5"><div class="ttname"><a href="#gafaf10e7d5078cd291bfb984d102e17b5">ACAPI::Library::LibraryManager::GetLibraryByName</a></div><div class="ttdeci">Result&lt; Library &gt; GetLibraryByName(const GS::UniString &amp;name) const</div><div class="ttdoc">Returns the Library with the given name.</div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md138"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md145"></a>
 Modifying the library list</h2>
 <p>The modifications can be accessed within a <em>modification scope</em>. This allows multiple modifications to be executed at once, in one step, just like the operation of the Library Manager dialog box. Opening the scope also checks the modification rights, and returns an error if the given user does not reserve the library list in Teamwork.</p>
 <div class="fragment"><div class="line">GSErrCode AddLocalLibraryList (<span class="keyword">const</span> GS::Array&lt;IO::Location&gt;&amp; libraryLocations)</div>
@@ -801,7 +801,7 @@ Modifying the library list</h2>
 <div class="ttc" id="agroup___library_management_html_ga3c02cacfaa33face8410ef4f22ced663"><div class="ttname"><a href="#ga3c02cacfaa33face8410ef4f22ced663">ACAPI::Library::LibraryManager::ModifyLibraryList</a></div><div class="ttdeci">Result&lt; void &gt; ModifyLibraryList(const std::function&lt; GSErrCode(Modifier &amp;)&gt; &amp;modifierFunc)</div><div class="ttdoc">Executed the passed modifier scope in a NotUndoable command.</div></div>
 <div class="ttc" id="agroup___library_management_html_ga89c18decd800903c9a1ae2b59bd15a1f"><div class="ttname"><a href="#ga89c18decd800903c9a1ae2b59bd15a1f">ACAPI::Library::LibraryManager::Modifier::AddLibrary</a></div><div class="ttdeci">Result&lt; void &gt; AddLibrary(const IO::Location &amp;libraryPath)</div><div class="ttdoc">Add a libary to the actual library list.</div></div>
 </div><!-- fragment --><p>See more examples in <code>LibraryManagement_Test_ExampleFunctions.cpp</code>.</p>
-<h1><a class="anchor" id="autotoc_md139"></a>
+<h1><a class="anchor" id="autotoc_md146"></a>
 Library Parts and GSM Objects</h1>
 <p>Similar to the Archicad UI concept, the API also separates the functionalities of the Library Parts from those that are specific to GSM files. A Library Part is anything that is part of a loaded library. However, a GSM can also be a local file that is not a loaded Library Part, but was read from outside.</p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> libraryManager = *<a class="code hl_function" href="#ga370881df2186ab6a20eb1cf943464e24">ACAPI::Library::GetLibraryManager</a> ();</div>
@@ -815,7 +815,7 @@ Library Parts and GSM Objects</h1>
 <div class="ttc" id="agroup___library_management_html_ga5f6c08bf0e41fdf2ba5d4cbf58eb3959"><div class="ttname"><a href="#ga5f6c08bf0e41fdf2ba5d4cbf58eb3959">ACAPI::Library::LibraryManager::LoadGSMObjectFromFile</a></div><div class="ttdeci">Result&lt; GSMObject &gt; LoadGSMObjectFromFile(const IO::Location &amp;location) const</div><div class="ttdoc">Loads a .gsm object from a file.</div></div>
 <div class="ttc" id="agroup___library_management_html_ga9d16d7076ba2b7d11705a9baa0dfa8df"><div class="ttname"><a href="#ga9d16d7076ba2b7d11705a9baa0dfa8df">ACAPI::Library::LibraryManager::GetGSMObjectOfLibPart</a></div><div class="ttdeci">Result&lt; GSMObject &gt; GetGSMObjectOfLibPart(const LibPart &amp;libPart) const</div><div class="ttdoc">Returns the .gsm object representation of the Library Part.</div></div>
 </div><!-- fragment --><p>Be aware that loading the same object from a file and from a libpart can result different behaviors. If you are interested in the state that also appears in the plan file, always create a GSMObject from a LibPart. You should load GSM from a file only when you would access its raw content. If the object comes from a .libpack library, it means, it is not translated.</p>
-<h2><a class="anchor" id="autotoc_md140"></a>
+<h2><a class="anchor" id="autotoc_md147"></a>
 Creating and modifying a GSM file</h2>
 <p>You cannot directly create or modify a GSM file in a loaded library. You need an object loaded from an external file, which can optionally be copied into the library after editing.</p>
 <p>The modification methods are available from a modification scope. This ensures that modification methods are available for objects loaded from file, and all of the modification calls will perform in an atomic step.</p>
@@ -845,7 +845,7 @@ Creating and modifying a GSM file</h2>
 <div class="ttc" id="agroup___library_management_html_gaea5920c936e65751884e32bf3b121bb8"><div class="ttname"><a href="#gaea5920c936e65751884e32bf3b121bb8">ACAPI::Library::GSMObject::Modifier::Set3DScript</a></div><div class="ttdeci">ACAPI::Result&lt; void &gt; Set3DScript(const GS::UniString &amp;script)</div><div class="ttdoc">Sets the 3D script. This function will replace the existing 3D script. If it is empty,...</div></div>
 <div class="ttc" id="agroup___library_management_html_gga5e3340da528b4458e67e59688ce82e75a03ab2a45b6e064f07ca605be23db772b"><div class="ttname"><a href="#gga5e3340da528b4458e67e59688ce82e75a03ab2a45b6e064f07ca605be23db772b">ACAPI::Library::GSMObject::CopyMethod::GenerateNewUnID</a></div><div class="ttdeci">@ GenerateNewUnID</div></div>
 </div><!-- fragment --><p>See more detailed examples in <code>LibraryManagement_Test_ExampleFunctions.cpp</code>.</p>
-<h2><a class="anchor" id="autotoc_md141"></a>
+<h2><a class="anchor" id="autotoc_md148"></a>
 Copy a GSM file to a library</h2>
 <p>Copying an external file back into an editable loaded library works in the old, traditional way. Of course, copying multiple files here also happens in one step.</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="class_a_c_a_p_i_1_1_library_1_1_library_manager.html">ACAPI::Library::LibraryManager</a> libraryManager = *<a class="code hl_function" href="#ga370881df2186ab6a20eb1cf943464e24">ACAPI::Library::GetLibraryManager</a> ();</div>
@@ -858,7 +858,7 @@ Copy a GSM file to a library</h2>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="#ga16390b46cb31ef15f4dbd35664fdfe76">ACAPI_LibraryManagement_CopyFilesIntoLibrary</a> (&amp;embeddedLocation, &amp;newFileLocations, &amp;overwrite);</div>
 <div class="ttc" id="agroup___library_management_html_ga16390b46cb31ef15f4dbd35664fdfe76"><div class="ttname"><a href="#ga16390b46cb31ef15f4dbd35664fdfe76">ACAPI_LibraryManagement_CopyFilesIntoLibrary</a></div><div class="ttdeci">GSErrCode ACAPI_LibraryManagement_CopyFilesIntoLibrary(const IO::Location *targetFolderLocationInLibrary, const GS::Array&lt; IO::Location &gt; *filesToCopy, const bool *overwriteIfExists)</div><div class="ttdoc">Copies files into a folder inside a loaded library.</div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md142"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md149"></a>
 Teamwork functionalities</h1>
 <p>A reservable component can be reserved, released or its status can be queried using with <code>ACAPI_Teamwork_*</code> functions. Full documentation can be found here: <a class="el" href="group___teamwork.html">Teamwork</a></p>
 <p>The <code><a class="el" href="class_a_c_a_p_i_1_1_library_1_1_library_manager.html" title="LibraryManager is the central point of the Library and the LibPart management.">ACAPI::Library::LibraryManager</a></code> can represent a point in the library tree with the <code><a class="el" href="class_a_c_a_p_i_1_1_library_1_1_library_tree_path.html" title="Library tree location (E.g. folder, Library Part)">ACAPI::Library::LibraryTreePath</a></code> type. With this, we can get the reservable object identifier, which can be used to call the <code>ACAPI_Teamwork_*</code> functions.</p>
@@ -870,25 +870,26 @@ Teamwork functionalities</h1>
 <div class="line">GS::Guid guid = *libraryManager.<a class="code hl_function" href="#ga311b69c3a338eea98e6ae448d5e403df">GetTWID</a> (parentPath);</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_enumeration" href="group___library_part.html#gada81f0b453c0e5ad4e3f00a0100fd7dd">API_LockableStatus</a>  lockableStatus = <a class="code hl_function" href="group___teamwork.html#ga2663c9f52125a8b59459fe1f48ebdadf">ACAPI_Teamwork_GetLockableStatus</a> (<a class="code hl_function" href="group___conversion.html#ga1bcc79df1215ada034e802fab7d01df4">GSGuid2APIGuid</a> (guid));</div>
-<div class="line"><span class="keywordflow">if</span> (lockableStatus == APILockableStatus_Free) {</div>
+<div class="line"><span class="keywordflow">if</span> (lockableStatus == <a class="code hl_enumvalue" href="group___library_part.html#ggada81f0b453c0e5ad4e3f00a0100fd7dda6acf701d7d800609f09340622a62a179">APILockableStatus_Free</a>) {</div>
 <div class="line">    <a class="code hl_function" href="group___teamwork.html#ga9398b6e24d97acd7aa95727efba64417">ACAPI_Teamwork_ReserveLockable</a> (<a class="code hl_function" href="group___conversion.html#ga1bcc79df1215ada034e802fab7d01df4">GSGuid2APIGuid</a> (guid));</div>
 <div class="line">}</div>
 <div class="ttc" id="aclass_a_c_a_p_i_1_1_library_1_1_library_tree_path_html"><div class="ttname"><a href="class_a_c_a_p_i_1_1_library_1_1_library_tree_path.html">ACAPI::Library::LibraryTreePath</a></div><div class="ttdoc">Library tree location (E.g. folder, Library Part)</div><div class="ttdef"><b>Definition</b> LibraryTreePath.hpp:24</div></div>
-<div class="ttc" id="agroup___conversion_html_ga1bcc79df1215ada034e802fab7d01df4"><div class="ttname"><a href="group___conversion.html#ga1bcc79df1215ada034e802fab7d01df4">GSGuid2APIGuid</a></div><div class="ttdeci">API_Guid &amp; GSGuid2APIGuid(GS::Guid &amp;guid)</div><div class="ttdoc">Converting from GS::Guid to API_Guid.</div><div class="ttdef"><b>Definition</b> API_Guid.hpp:95</div></div>
+<div class="ttc" id="agroup___conversion_html_ga1bcc79df1215ada034e802fab7d01df4"><div class="ttname"><a href="group___conversion.html#ga1bcc79df1215ada034e802fab7d01df4">GSGuid2APIGuid</a></div><div class="ttdeci">API_Guid &amp; GSGuid2APIGuid(GS::Guid &amp;guid)</div><div class="ttdoc">Converting from GS::Guid to API_Guid.</div><div class="ttdef"><b>Definition</b> API_Guid.hpp:91</div></div>
 <div class="ttc" id="agroup___library_management_html_ga15c5e1ed36ec40b3a9128b81c11407b2"><div class="ttname"><a href="#ga15c5e1ed36ec40b3a9128b81c11407b2">ACAPI::Library::LibraryManager::GetLibraryTreePathOfLibPart</a></div><div class="ttdeci">Result&lt; LibraryTreePath &gt; GetLibraryTreePathOfLibPart(const LibPart &amp;libPart) const</div><div class="ttdoc">Returns the LibraryTreePath of the LibPart.</div></div>
 <div class="ttc" id="agroup___library_management_html_ga311b69c3a338eea98e6ae448d5e403df"><div class="ttname"><a href="#ga311b69c3a338eea98e6ae448d5e403df">ACAPI::Library::LibraryManager::GetTWID</a></div><div class="ttdeci">Result&lt; GS::Guid &gt; GetTWID(const LibraryTreePath &amp;libraryTreePath) const</div><div class="ttdoc">Returns the Teamwork Identifier of the Library Tree location.</div></div>
 <div class="ttc" id="agroup___library_management_html_ga60f51eab0c8782bfbedb37c9f0edcef6"><div class="ttname"><a href="#ga60f51eab0c8782bfbedb37c9f0edcef6">ACAPI::Library::LibraryTreePath::GetParent</a></div><div class="ttdeci">LibraryTreePath GetParent() const</div><div class="ttdoc">The parent of the represented node.</div></div>
-<div class="ttc" id="agroup___library_part_html_gada81f0b453c0e5ad4e3f00a0100fd7dd"><div class="ttname"><a href="group___library_part.html#gada81f0b453c0e5ad4e3f00a0100fd7dd">API_LockableStatus</a></div><div class="ttdeci">API_LockableStatus</div><div class="ttdoc">Possible Teamwork lockable status.</div><div class="ttdef"><b>Definition</b> APIdefs_Environment.h:644</div></div>
+<div class="ttc" id="agroup___library_part_html_gada81f0b453c0e5ad4e3f00a0100fd7dd"><div class="ttname"><a href="group___library_part.html#gada81f0b453c0e5ad4e3f00a0100fd7dd">API_LockableStatus</a></div><div class="ttdeci">API_LockableStatus</div><div class="ttdoc">Possible Teamwork lockable status.</div><div class="ttdef"><b>Definition</b> APIdefs_Environment.h:649</div></div>
+<div class="ttc" id="agroup___library_part_html_ggada81f0b453c0e5ad4e3f00a0100fd7dda6acf701d7d800609f09340622a62a179"><div class="ttname"><a href="group___library_part.html#ggada81f0b453c0e5ad4e3f00a0100fd7dda6acf701d7d800609f09340622a62a179">APILockableStatus_Free</a></div><div class="ttdeci">@ APILockableStatus_Free</div><div class="ttdef"><b>Definition</b> APIdefs_Environment.h:654</div></div>
 <div class="ttc" id="agroup___teamwork_html_ga2663c9f52125a8b59459fe1f48ebdadf"><div class="ttname"><a href="group___teamwork.html#ga2663c9f52125a8b59459fe1f48ebdadf">ACAPI_Teamwork_GetLockableStatus</a></div><div class="ttdeci">API_LockableStatus ACAPI_Teamwork_GetLockableStatus(const API_Guid &amp;objectId, GS::PagedArray&lt; short &gt; *conflicts=nullptr)</div><div class="ttdoc">Retrieves the reservation status of a lockable object set.</div></div>
 <div class="ttc" id="agroup___teamwork_html_ga9398b6e24d97acd7aa95727efba64417"><div class="ttname"><a href="group___teamwork.html#ga9398b6e24d97acd7aa95727efba64417">ACAPI_Teamwork_ReserveLockable</a></div><div class="ttdeci">GSErrCode ACAPI_Teamwork_ReserveLockable(const API_Guid &amp;objectId, GS::PagedArray&lt; short &gt; *conflicts=nullptr, bool enableDialogs=true)</div><div class="ttdoc">Reserves a lockable object set in Teamwork mode.</div></div>
 </div><!-- fragment --><p>For reserving the library list you don't need to use the LibraryManager instance:</p>
 <div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a> libListGuid = <a class="code hl_function" href="group___teamwork.html#ga4083bc8dc976a2a03b2036b80f94d721">ACAPI_Teamwork_FindLockableObjectSet</a> (<span class="stringliteral">&quot;ProjectLibraryList&quot;</span>);</div>
 <div class="line"><a class="code hl_enumeration" href="group___library_part.html#gada81f0b453c0e5ad4e3f00a0100fd7dd">API_LockableStatus</a>  lockableStatus = <a class="code hl_function" href="group___teamwork.html#ga2663c9f52125a8b59459fe1f48ebdadf">ACAPI_Teamwork_GetLockableStatus</a> (libListGuid);</div>
-<div class="line"><span class="keywordflow">if</span> (lockableStatus == APILockableStatus_Free) {</div>
+<div class="line"><span class="keywordflow">if</span> (lockableStatus == <a class="code hl_enumvalue" href="group___library_part.html#ggada81f0b453c0e5ad4e3f00a0100fd7dda6acf701d7d800609f09340622a62a179">APILockableStatus_Free</a>) {</div>
 <div class="line">    <a class="code hl_function" href="group___teamwork.html#ga9398b6e24d97acd7aa95727efba64417">ACAPI_Teamwork_ReserveLockable</a> (libListGuid);</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup___teamwork_html_ga4083bc8dc976a2a03b2036b80f94d721"><div class="ttname"><a href="group___teamwork.html#ga4083bc8dc976a2a03b2036b80f94d721">ACAPI_Teamwork_FindLockableObjectSet</a></div><div class="ttdeci">API_Guid ACAPI_Teamwork_FindLockableObjectSet(const GS::UniString &amp;objectSetName)</div><div class="ttdoc">Retrieves the unique identifier of a lockable object set with a string identifier.</div></div>
-<div class="ttc" id="astruct_a_p_i___guid_html"><div class="ttname"><a href="struct_a_p_i___guid.html">API_Guid</a></div><div class="ttdoc">Represents a GS::Guid in the API layer.</div><div class="ttdef"><b>Definition</b> API_Guid.hpp:46</div></div>
+<div class="ttc" id="astruct_a_p_i___guid_html"><div class="ttname"><a href="struct_a_p_i___guid.html">API_Guid</a></div><div class="ttdoc">Represents a GS::Guid in the API layer.</div><div class="ttdef"><b>Definition</b> API_Guid.hpp:42</div></div>
 </div><!-- fragment --> <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga6a8ab3fe3c9085e5d540b073979bd0f2" name="ga6a8ab3fe3c9085e5d540b073979bd0f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6a8ab3fe3c9085e5d540b073979bd0f2">&#9670;&#160;</a></span>API_LibraryTypeID</h2>
@@ -1046,12 +1047,12 @@ Teamwork functionalities</h1>
 <div class="line">    err = <a class="code hl_function" href="group___element.html#ga7e533b8b0bf71db0606e1ec7f71b4f35">ACAPI_Element_GetDescriptors</a> (&amp;elemHead, &amp;descRefs, &amp;nDesc);</div>
 <div class="line">    <span class="keywordflow">if</span> (err == NoError) {</div>
 <div class="line">        <span class="keywordflow">for</span> (i = 0; i &lt; nDesc; i++) {</div>
-<div class="line">            listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#af4c9f2ceaadd25ad994cf33018e9696b">header</a>.<a class="code hl_variable" href="struct_a_p_i___list_data___head.html#a928b4f54be4c21d1f50b50d0c1516ea6">typeID</a>      = API_Obsolete_ComponentID;</div>
+<div class="line">            listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#af4c9f2ceaadd25ad994cf33018e9696b">header</a>.<a class="code hl_variable" href="struct_a_p_i___list_data___head.html#a928b4f54be4c21d1f50b50d0c1516ea6">typeID</a>      = <a class="code hl_enumvalue" href="group___old_listing.html#ggad54fa78ba87e7fbf43ef1e2c65a8f546a5d46dfe9c261aecbf26715c2aae24eff">API_Obsolete_ComponentID</a>;</div>
 <div class="line">            listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#af4c9f2ceaadd25ad994cf33018e9696b">header</a>.<a class="code hl_variable" href="struct_a_p_i___list_data___head.html#af29c2f87ddc8c54e89e73cbc38f815b7">index</a>       = (*descRefs)[i].index;</div>
 <div class="line">            listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#af4c9f2ceaadd25ad994cf33018e9696b">header</a>.<a class="code hl_variable" href="struct_a_p_i___list_data___head.html#a538de7cd3c0687af045b47b5bfbefbc5">setIndex</a>    = (*descRefs)[i].setIndex;</div>
 <div class="line">            <span class="keywordflow">if</span> ((*descRefs)[i].status != APIDBRef_Deleted) {</div>
 <div class="line">                listdata = {};</div>
-<div class="line">                listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#af4c9f2ceaadd25ad994cf33018e9696b">header</a>.<a class="code hl_variable" href="struct_a_p_i___list_data___head.html#a928b4f54be4c21d1f50b50d0c1516ea6">typeID</a>      = API_DescriptorID;</div>
+<div class="line">                listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#af4c9f2ceaadd25ad994cf33018e9696b">header</a>.<a class="code hl_variable" href="struct_a_p_i___list_data___head.html#a928b4f54be4c21d1f50b50d0c1516ea6">typeID</a>      = <a class="code hl_enumvalue" href="group___old_listing.html#ggad54fa78ba87e7fbf43ef1e2c65a8f546a7e3dce97aa2a810512afc2bdd99d652e">API_DescriptorID</a>;</div>
 <div class="line">                listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#af4c9f2ceaadd25ad994cf33018e9696b">header</a>.<a class="code hl_variable" href="struct_a_p_i___list_data___head.html#a538de7cd3c0687af045b47b5bfbefbc5">setIndex</a>    = (*descRefs)[i].setIndex;</div>
 <div class="line">                listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#af4c9f2ceaadd25ad994cf33018e9696b">header</a>.<a class="code hl_variable" href="struct_a_p_i___list_data___head.html#af29c2f87ddc8c54e89e73cbc38f815b7">index</a>       = (*descRefs)[i].index;</div>
 <div class="line">                <span class="keywordflow">switch</span> ((*descRefs)[i].status) {</div>
@@ -1128,7 +1129,7 @@ Teamwork functionalities</h1>
 <p>Changes GDL environment date (GDL_PROJECT_DATE). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">date</td><td>[in] The new GDL environment date. It must be an Int32 array with 6 size. </td></tr>
+    <tr><td class="paramname">date</td><td>[in] The new GDL environment date. Must be an Int32 array of size 6. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1229,7 +1230,7 @@ Teamwork functionalities</h1>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>The function copies file from the passed locations into a folder in an existing library loaded in the current project. The target folder must be writable and, in Teamwork, must be reserved. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GS::Array&lt;IO::Location&gt; filesToCopy;</div>
-<div class="line"><a class="code hl_enumeration" href="group___view.html#ga722e36c7b1f8b7bbd4d096e5f4976c7a">API_SpecFolderID</a> specID = API_UserDocumentsFolderID;</div>
+<div class="line"><a class="code hl_enumeration" href="group___view.html#ga722e36c7b1f8b7bbd4d096e5f4976c7a">API_SpecFolderID</a> specID = <a class="code hl_enumvalue" href="group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aaf28ae5be847f8119a7128063b9d09ffd">API_UserDocumentsFolderID</a>;</div>
 <div class="line">IO::Location fileLocation;</div>
 <div class="line"><a class="code hl_function" href="group___project_setting.html#ga52c214863ff7af9eee913d86791ea72f">ACAPI_ProjectSettings_GetSpecFolder</a> (&amp;specID, &amp;fileLocation);</div>
 <div class="line">filesToCopy.Push (IO::Location (fileLocation, IO::Name (<span class="stringliteral">&quot;Test1.JPG&quot;</span>)));</div>
@@ -1458,7 +1459,7 @@ Teamwork functionalities</h1>
 <p>Returns GDL environment date information (GDL_PROJECT_DATE). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">date</td><td>[out] GDL environment date. It must be an Int32 array with 6 size. </td></tr>
+    <tr><td class="paramname">date</td><td>[out] GDL environment date. Must be an Int32 array of size 6. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1689,7 +1690,7 @@ Teamwork functionalities</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - The passed library part information is incorrect. </li>
 </ul>
 </dd></dl>
@@ -1727,7 +1728,7 @@ Teamwork functionalities</h1>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a> libPart {};</div>
 <div class="line">GSErrCode   err;</div>
 <div class="line"> </div>
-<div class="line">libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#abf9a8fff84165e22b67c1a1f95c0c99b">typeID</a> = APILib_ObjectID;</div>
+<div class="line">libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#abf9a8fff84165e22b67c1a1f95c0c99b">typeID</a> = <a class="code hl_enumvalue" href="group___library_part.html#ggacd655f5dbf61af0671962cbbe65ed59fa16822964d4a29ea70445c9a7995b7ede">APILib_ObjectID</a>;</div>
 <div class="line">libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#aab6141c69a91882481655b02e6dd05ae">ownerID</a> = APIOwnerID_ArchiCAD;</div>
 <div class="line">GS::ucscpy (libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#a7188ede45f613116ba5237aa56177ddf">docu_UName</a>, L(<span class="stringliteral">&quot;Toilet P Dispenser 15&quot;</span>));</div>
 <div class="line"> </div>
@@ -1813,8 +1814,8 @@ Teamwork functionalities</h1>
 
 </div>
 </div>
-<a id="gab646aa37d5ef25d6a1de28b4a4400ace" name="gab646aa37d5ef25d6a1de28b4a4400ace"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab646aa37d5ef25d6a1de28b4a4400ace">&#9670;&#160;</a></span>ACAPI_LibraryManagement_UsableGDLString()</h2>
+<a id="ga62ce745eb766b9bae04087aec8b7f1da" name="ga62ce745eb766b9bae04087aec8b7f1da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga62ce745eb766b9bae04087aec8b7f1da">&#9670;&#160;</a></span>ACAPI_LibraryManagement_UsableGDLString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1822,7 +1823,7 @@ Teamwork functionalities</h1>
         <tr>
           <td class="memname">GSErrCode ACAPI_LibraryManagement_UsableGDLString </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>str</em></span></td><td>)</td>
+          <td class="paramtype">const GS::UniString &amp;</td>          <td class="paramname"><span class="paramname"><em>str</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1831,24 +1832,23 @@ Teamwork functionalities</h1>
 <p>Determines whether the string is a GDL keyword or reserved symbol. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">str</td><td>[in] a string to check as a GDL keyword or reserved symbol </td></tr>
+    <tr><td class="paramname">str</td><td>[in] String to check as a GDL keyword or reserved symbol. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - str is nullptr</li>
-<li>APIERR_GENERAL - the string is a valid GDL keyword or reserved symbol </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_GENERAL - The string is a valid GDL keyword or reserved symbol. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to check whether the given string is a reserved GDL keyword or symbol; or fulfills or not certain requirements to become one. By general the function returns NoError if the passed string can be used in a GDL script as an own identifier. For example if your creates a LibraryPart with scripts installed, and some part of the script is generated on the fly, it is a good idea to check the components for usability. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function checks whether the given string is a reserved GDL keyword or symbol, or fulfills certain requirements to become one. In general, the function returns NoError if the passed string can be used in a GDL script as a custom identifier. For example, if you create a Library Part with scripts installed, and some part of the script is generated on the fly, it is a good idea to check the components for usability. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode   err;</div>
 <div class="line"> </div>
-<div class="line">err = <a class="code hl_function" href="#gab646aa37d5ef25d6a1de28b4a4400ace">ACAPI_LibraryManagement_UsableGDLString</a> (<span class="stringliteral">&quot;material&quot;</span>);</div>
+<div class="line">err = <a class="code hl_function" href="#ga62ce745eb766b9bae04087aec8b7f1da">ACAPI_LibraryManagement_UsableGDLString</a> (<span class="stringliteral">&quot;material&quot;</span>);</div>
 <div class="line"><span class="comment">/* returns APIERR_GENERAL, it is reserved keyword; */</span></div>
 <div class="line"><span class="comment">/* cannot be used as a script variable  */</span></div>
 <div class="line"> </div>
-<div class="line">err = <a class="code hl_function" href="#gab646aa37d5ef25d6a1de28b4a4400ace">ACAPI_LibraryManagement_UsableGDLString</a> (<span class="stringliteral">&quot;list&quot;</span>);</div>
+<div class="line">err = <a class="code hl_function" href="#ga62ce745eb766b9bae04087aec8b7f1da">ACAPI_LibraryManagement_UsableGDLString</a> (<span class="stringliteral">&quot;list&quot;</span>);</div>
 <div class="line"><span class="comment">/* OK; returns NoError */</span></div>
 <div class="line"><span class="comment">/* it can be used as a script variable */</span></div>
 </div><!-- fragment --> </dd></dl>
@@ -1919,17 +1919,17 @@ Teamwork functionalities</h1>
     <tr><td class="paramname">smallIconResID</td><td>[in] Resource ID of the small-sized toolbox (toolbar) item icon </td></tr>
     <tr><td class="paramname">largeIconResID</td><td>[in] Resource ID of the large-sized toolbox item icon </td></tr>
     <tr><td class="paramname">toolGroupId</td><td>[in] Toolbox item position </td></tr>
-    <tr><td class="paramname">enableFlags</td><td>[in] Enable or disable the subtype tool depending on the active window </td></tr>
+    <tr><td class="paramname">enableFlags</td><td>[in] Enable or turn off the subtype tool depending on the active window </td></tr>
     <tr><td class="paramname">defaultsResID</td><td>[in] ID of the 'ACP0' resource that contains the element default values for this subtype </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>APIERR_BADPARS - templateFileResID refers to an invalid 'FILE' resource or the built-in library part cannot be accepted as subtype template.</li>
-<li>NoError - The function has completed with success. </li>
+<li>APIERR_BADPARS - templateFileResID refers to an invalid 'FILE' resource, or the built-in library part cannot be accepted as a subtype template.</li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function registers a new library part subtype. In order to have an own element subtype the add-on must contain a built-in library part in its reource module. This library part will be loaded into the active libraries, and become a new node in the ancestry tree. The new element type will be identified with the signature identifier chosen by the add-on's writer. The signature should be unique in order to avoid collisions. You may pass 0 in the signature parameter if you do not need a new element type but a single subtype node. The subtype can appear in the toolbox as an external tool, and also on the Windows toolbar. In this case you must pass two valid icon resource IDs in the smallIconResID and the largeIconResID parameters. The size of the icons should be 16x16 and 30x21 pixels respectively. You can specify the position of the subtype item inserted into the toolbox with the toolGroupId parameter as follows: <table class="markdownTable">
+<dl class="section remark"><dt>Remarks</dt><dd>This function registers a new library part subtype. The add-on must contain a built-in library part in its resource module to have its element subtype. This library part will be loaded into the active libraries and becomes a new node in the ancestry tree. The new element type will be identified with the signature identifier chosen by the add-on's writer. The signature should be unique to avoid collisions. You may pass 0 in the signature parameter if you do not need a new element type but a single subtype node. The subtype can appear in the toolbox as an external tool and on the Windows toolbar. In this case, you must pass two valid icon resource IDs in the smallIconResID and the largeIconResID parameters. The size of the icons should be 16x16 and 30x21 pixels, respectively. You can specify the position of the subtype item inserted into the toolbox with the toolGroupId parameter as follows: <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">API_TBoxGroup   </th><th class="markdownTableHeadNone">Meaning    </th></tr>
 <tr class="markdownTableRowOdd">
@@ -1962,7 +1962,7 @@ Teamwork functionalities</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">API_TBoxEnabled_DrawingInteriorElevation   </td><td class="markdownTableBodyNone">on drawing type interior elevation windows   </td></tr>
 </table>
-<p>If you want to register your subtype tool without appearing in the toolbox, pass 0 for both the <code>smallIconResID</code> and the <code>largeIconResID</code> parameters. If you register a subtype tool you should define the factory default values for this element type in an 'ACP0' resource. The element default will be initialized with these parameters when no preferences data is stored. The structure of this resource is shown at the example below. The resource ID should be passed in the defaultsResID parameter. Learn more about this topic at the general description of Library Part Subtypes. </p><dl class="section user"><dt>Example</dt><dd>Resources in the .GRC file: <div class="fragment"><div class="line">&#39;FILE&#39; 132 &quot;Roof Opening.gsm&quot; {</div>
+<p>If you want to register your subtype tool without appearing in the toolbox, pass 0 for both the <code>smallIconResID</code> and the <code>largeIconResID</code> parameters. If you register a subtype tool, you should define the factory default values for this element type in an 'ACP0' resource. The element default will be initialized with these parameters when no preferences data is stored. The structure of this resource is shown in the example below. The resource ID should be passed in the defaultsResID parameter. Learn more about this topic at the general description of Library Part Subtypes. </p><dl class="section user"><dt>Example</dt><dd>Resources in the .GRC file: <div class="fragment"><div class="line">&#39;FILE&#39; 132 &quot;Roof Opening.gsm&quot; {</div>
 <div class="line">    &quot;Roof Opening.gsm&quot;</div>
 <div class="line">}</div>
 </div><!-- fragment --> <div class="fragment"><div class="line">&#39;STR#&#39; 32611 &quot;Skylight subtype&quot; {</div>
@@ -2071,7 +2071,7 @@ Teamwork functionalities</h1>
 
 <p>Resets and loads the active libraries. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function is used to perform a Reload Libraries command in the server application. All the active libraries (included the BIMcloud and BIM Server Libraries too) will be reloaded. </dd></dl>

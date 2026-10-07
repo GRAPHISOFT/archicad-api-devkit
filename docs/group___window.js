@@ -20,6 +20,9 @@ var group___window =
       [ "wTitle", "struct_a_p_i___new_window_pars.html#aa0df47e5fac38b5f88fb74be68b3e5fe", null ]
     ] ],
     [ "APICustomWindowHandlerProc", "group___window.html#ga2c0a47aaaf95e9f9b18330df14ce0d69", null ],
+    [ "API_ActionCenterItemID", "group___window.html#ga865537ca3bce5a5a0c485f09f1c230fd", [
+      [ "APIActionCenterItem_Hotlinks", "group___window.html#gga865537ca3bce5a5a0c485f09f1c230fda6dc305de1e81ed1596c4bf9fd8279695", null ]
+    ] ],
     [ "API_WindowTypeID", "group___window.html#ga22bf85c5f2e58820825ad9960c66a484", [
       [ "API_ZombieWindowID", "group___window.html#gga22bf85c5f2e58820825ad9960c66a484a424c4fe71420d9859357a46587ccfe5a", null ],
       [ "APIWind_FloorPlanID", "group___window.html#gga22bf85c5f2e58820825ad9960c66a484aaa467545a22d5d6c2afa4ac0825ee7c6", null ],

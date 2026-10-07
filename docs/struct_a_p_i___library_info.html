@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: API_LibraryInfo Struct Reference</title>
+<title>Archicad 30 C++ API: API_LibraryInfo Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -141,11 +141,11 @@ $(function(){initNavTree('struct_a_p_i___library_info.html',''); initResizable(t
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9ddf874b9caa3d024725172cc04b9801" id="r_a9ddf874b9caa3d024725172cc04b9801"><td class="memItemLeft" align="right" valign="top"><a id="a9ddf874b9caa3d024725172cc04b9801" name="a9ddf874b9caa3d024725172cc04b9801"></a>
 IO::Location&#160;</td><td class="memItemRight" valign="bottom"><b>location</b></td></tr>
-<tr class="memdesc:a9ddf874b9caa3d024725172cc04b9801"><td class="mdescLeft">&#160;</td><td class="mdescRight">the folder specification of the library <br /></td></tr>
+<tr class="memdesc:a9ddf874b9caa3d024725172cc04b9801"><td class="mdescLeft">&#160;</td><td class="mdescRight">The folder specification of the library. <br /></td></tr>
 <tr class="separator:a9ddf874b9caa3d024725172cc04b9801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad561c8d6813a576b9d048c28bcbf68ca" id="r_ad561c8d6813a576b9d048c28bcbf68ca"><td class="memItemLeft" align="right" valign="top"><a id="ad561c8d6813a576b9d048c28bcbf68ca" name="ad561c8d6813a576b9d048c28bcbf68ca"></a>
 GS::UniString&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
-<tr class="memdesc:ad561c8d6813a576b9d048c28bcbf68ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">the name of the library <br /></td></tr>
+<tr class="memdesc:ad561c8d6813a576b9d048c28bcbf68ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the library. <br /></td></tr>
 <tr class="separator:ad561c8d6813a576b9d048c28bcbf68ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acecd7b35749a6d663115e3be254c282b" id="r_acecd7b35749a6d663115e3be254c282b"><td class="memItemLeft" align="right" valign="top"><a id="acecd7b35749a6d663115e3be254c282b" name="acecd7b35749a6d663115e3be254c282b"></a>
 <a class="el" href="group___library_management.html#ga6a8ab3fe3c9085e5d540b073979bd0f2">API_LibraryTypeID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>libraryType</b></td></tr>
@@ -153,7 +153,7 @@ GS::UniString&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td
 <tr class="separator:acecd7b35749a6d663115e3be254c282b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70edd7c899f07548572642f5ae5dfcde" id="r_a70edd7c899f07548572642f5ae5dfcde"><td class="memItemLeft" align="right" valign="top"><a id="a70edd7c899f07548572642f5ae5dfcde" name="a70edd7c899f07548572642f5ae5dfcde"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>available</b></td></tr>
-<tr class="memdesc:a70edd7c899f07548572642f5ae5dfcde"><td class="mdescLeft">&#160;</td><td class="mdescRight">the library is available (e.g. not missing) <br /></td></tr>
+<tr class="memdesc:a70edd7c899f07548572642f5ae5dfcde"><td class="mdescLeft">&#160;</td><td class="mdescRight">The library is available (e.g. not missing). <br /></td></tr>
 <tr class="separator:a70edd7c899f07548572642f5ae5dfcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81338a34321c882e417ed2fa44c2ab16" id="r_a81338a34321c882e417ed2fa44c2ab16"><td class="memItemLeft" align="right" valign="top"><a id="a81338a34321c882e417ed2fa44c2ab16" name="a81338a34321c882e417ed2fa44c2ab16"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>readOnly</b></td></tr>
@@ -183,7 +183,7 @@ GS::UniString&#160;</td><td class="memItemRight" valign="bottom"><b>urlWebLibrar
 <div class="line">        IO::Path libPath;</div>
 <div class="line"> </div>
 <div class="line">        libInfo[ii].location.ToPath (&amp;libPath);</div>
-<div class="line">        DBPrintf (<span class="stringliteral">&quot;Environment Control :: Library #%-2d is %s\n&quot;</span>, ii, (<span class="keyword">const</span> <span class="keywordtype">char</span> *) libPath);</div>
+<div class="line">        DBPrintf (<span class="stringliteral">&quot;Environment Control :: Library #%-2d is %s\n&quot;</span>, ii, libPath.ToCStr ());</div>
 <div class="line">    }</div>
 <div class="line">}</div>
 </div><!-- fragment --> </dd></dl>

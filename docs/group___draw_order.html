@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Display Order</title>
+<title>Archicad 30 C++ API: Display Order</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -146,13 +146,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga89ca9361e9d113ae83e0785606816f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals the end of a draw order loop.  <br /></td></tr>
 <tr class="separator:ga89ca9361e9d113ae83e0785606816f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga840ebf69df24a1e07528bf472cfd7eaa" id="r_ga840ebf69df24a1e07528bf472cfd7eaa"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga840ebf69df24a1e07528bf472cfd7eaa">ACAPI_DrawOrder_InitCreationOrderTable</a> (<a class="el" href="group___element.html#gaa932508c20dc3cefe73c0c02050520e4">API_ElemFilter</a> *elemFilter)</td></tr>
-<tr class="memdesc:ga840ebf69df24a1e07528bf472cfd7eaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an internal table for fast access of the next element in creation order.  <br /></td></tr>
+<tr class="memdesc:ga840ebf69df24a1e07528bf472cfd7eaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an internal table for fast access to the next element in creation order.  <br /></td></tr>
 <tr class="separator:ga840ebf69df24a1e07528bf472cfd7eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaffde1a7ef313f027aabebddb4a7be795" id="r_gaffde1a7ef313f027aabebddb4a7be795"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaffde1a7ef313f027aabebddb4a7be795">ACAPI_DrawOrder_CreationOrderGetNext</a> (<a class="el" href="struct_a_p_i___guid.html">API_Guid</a> *guid)</td></tr>
-<tr class="memdesc:gaffde1a7ef313f027aabebddb4a7be795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next element's guid from the previously initialized creation order table.  <br /></td></tr>
+<tr class="memdesc:gaffde1a7ef313f027aabebddb4a7be795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next element's GUID from the previously initialized creation order table.  <br /></td></tr>
 <tr class="separator:gaffde1a7ef313f027aabebddb4a7be795"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga64089fc1eb49a396e96ecdcb92071d2e" id="r_ga64089fc1eb49a396e96ecdcb92071d2e"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga64089fc1eb49a396e96ecdcb92071d2e">ACAPI_DrawOrder_DisposeCreationOrderTable</a> ()</td></tr>
-<tr class="memdesc:ga64089fc1eb49a396e96ecdcb92071d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disposes the previously allocated creation order table.  <br /></td></tr>
+<tr class="memdesc:ga64089fc1eb49a396e96ecdcb92071d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disposes of the previously allocated creation order table.  <br /></td></tr>
 <tr class="separator:ga64089fc1eb49a396e96ecdcb92071d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -173,21 +173,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the next element's guid from the previously initialized creation order table. </p>
+<p>Returns the next element's GUID from the previously initialized creation order table. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">guid</td><td>[in/out] On input this is the guid of the element for which the following in creation order is sought. On output this is the guid of the following element. </td></tr>
+    <tr><td class="paramname">guid</td><td>[in/out] On input, this is the GUID of the element for which the next in creation order is sought. On output, this is the GUID of the following element. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - The guid parameter is nullptr.</li>
 <li>APIERR_GENERAL - The creation order table was not allocated beforehand.</li>
-<li>APIERR_NOMORE - The guid parameter is not in the table or it was the last elem. </li>
+<li>APIERR_NOMORE - The guid parameter is not in the table or it was the last element. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the next element's guid in element creation order. Input a value of APINULLGuid to get the first element; an output value of APINULLGuid means the last elem. The creation order table must be initialized beforehand with <a class="el" href="#ga840ebf69df24a1e07528bf472cfd7eaa">ACAPI_DrawOrder_InitCreationOrderTable</a>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function retrieves the next element's GUID in creation order. Input a value of APINULLGuid to get the first element; an output value of APINULLGuid means the last element. The creation order table must be initialized beforehand with <a class="el" href="#ga840ebf69df24a1e07528bf472cfd7eaa">ACAPI_DrawOrder_InitCreationOrderTable</a>. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">void</span> PrintGuidsInCreationOrder ()</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">if</span> (<a class="code hl_function" href="#ga840ebf69df24a1e07528bf472cfd7eaa">ACAPI_DrawOrder_InitCreationOrderTable</a> (<span class="keyword">nullptr</span>) == NoError) {</div>
@@ -220,13 +220,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Disposes the previously allocated creation order table. </p>
+<p>Disposes of the previously allocated creation order table. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_GENERAL - The creation order table was not allocated beforehand. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to dispose the creation order table allocated by <a class="el" href="#ga840ebf69df24a1e07528bf472cfd7eaa">ACAPI_DrawOrder_InitCreationOrderTable</a>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function disposes of the creation order table allocated by <a class="el" href="#ga840ebf69df24a1e07528bf472cfd7eaa">ACAPI_DrawOrder_InitCreationOrderTable</a>. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">void</span> PrintGuidsInCreationOrder ()</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">if</span> (<a class="code hl_function" href="#ga840ebf69df24a1e07528bf472cfd7eaa">ACAPI_DrawOrder_InitCreationOrderTable</a> (<span class="keyword">nullptr</span>) == NoError) {</div>
@@ -266,18 +266,18 @@ Functions</h2></td></tr>
 <p>Returns a reference to the next element of the current database in the order specified by the BTF/STB system. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filterBits</td><td>[in] element filter attributes (pass as VALUE) </td></tr>
-    <tr><td class="paramname">elemHead</td><td>[out] element reference </td></tr>
+    <tr><td class="paramname">filterBits</td><td>[in] Element filter attributes (pass as VALUE). </td></tr>
+    <tr><td class="paramname">elemHead</td><td>[out] Element reference. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - elemHead is nullptr</li>
-<li>APIERR_NOMORE - no more element in the list </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - elemHead is nullptr.</li>
+<li>APIERR_NOMORE - No more elements in the list. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the database elements in the order the server application would draw them onto the display. The loop should be initialized by the <a class="el" href="#gace3f0e03675ded439e00e2a90d83db1b">ACAPI_DrawOrder_DrawOrderInit</a> function. Pass filter bits (AS A VALUE) to skip elements with specific properties; as shown in the example. See more details on this topic at <a class="el" href="group___element.html#gae6b1be3842fc43fc42702c48a93f72e7">ACAPI_Element_Filter</a>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function retrieves the database elements in the order the server application would draw them onto the display. The loop should be initialized by the <a class="el" href="#gace3f0e03675ded439e00e2a90d83db1b">ACAPI_DrawOrder_DrawOrderInit</a> function. Pass filter bits (AS A VALUE) to skip elements with specific properties, as shown in the example. See more details on this topic at <a class="el" href="group___element.html#gae6b1be3842fc43fc42702c48a93f72e7">ACAPI_Element_Filter</a>. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">        <a class="code hl_struct" href="struct_a_p_i___elem___head.html">API_Elem_Head</a>   elem_head;</div>
 <div class="line">        GSErrCode       err;</div>
 <div class="line">        </div>
@@ -321,10 +321,10 @@ Functions</h2></td></tr>
 
 <p>Initializes a loop on the current database to get the elements in the order specified by the BTF/STB system. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to set up a loop to get element in the order the server application would draw them onto the display. Once the loop is initialized the <a class="el" href="#gaeed18befd2313202e42c0dc399553d9d">ACAPI_DrawOrder_DrawOrderGetNext</a> function can be called repeatedly to get the element references in order. The function can be called any time to reset the loop, it is not necessary to scan all the elements to restart the loop. The order of elements depends on the BTF / STB commands invoked by the user. Also the default ordering can be imported while opening an external file, which format give information on this issue. Don't forget to call <a class="el" href="#ga89ca9361e9d113ae83e0785606816f93">ACAPI_DrawOrder_DrawOrderTerm</a> to allow the server application to free its cached data. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function sets up a loop to retrieve elements in the order the server application would draw them onto the display. Once the loop is initialized, the <a class="el" href="#gaeed18befd2313202e42c0dc399553d9d">ACAPI_DrawOrder_DrawOrderGetNext</a> function can be called repeatedly to get the element references in order. The function can be called at any time to reset the loop; it is not necessary to scan all the elements to restart the loop. The order of elements depends on the BTF/STB commands invoked by the user. The default ordering can also be imported when opening an external file, if the format provides information on this. Don't forget to call <a class="el" href="#ga89ca9361e9d113ae83e0785606816f93">ACAPI_DrawOrder_DrawOrderTerm</a> to allow the server application to free its cached data. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">    <a class="code hl_struct" href="struct_a_p_i___elem___head.html">API_Elem_Head</a>   elem_head;</div>
 <div class="line">    GSErrCode       err;</div>
 <div class="line">    </div>
@@ -358,10 +358,10 @@ Functions</h2></td></tr>
 
 <p>Signals the end of a draw order loop. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to terminate a loop to get element in the order the server application would draw them onto the display. Once the loop is initialized with <a class="el" href="#gace3f0e03675ded439e00e2a90d83db1b">ACAPI_DrawOrder_DrawOrderInit</a>, then the <a class="el" href="#gaeed18befd2313202e42c0dc399553d9d">ACAPI_DrawOrder_DrawOrderGetNext</a> function can be called repeatedly to get the element references in order. You have to call this function at the end of each loop, so that the server application can free its cached data. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function terminates a loop that retrieves elements in the order the server application would draw them onto the display. Once the loop is initialized with <a class="el" href="#gace3f0e03675ded439e00e2a90d83db1b">ACAPI_DrawOrder_DrawOrderInit</a>, the <a class="el" href="#gaeed18befd2313202e42c0dc399553d9d">ACAPI_DrawOrder_DrawOrderGetNext</a> function can be called repeatedly to get the element references in order. You must call this function at the end of each loop so that the server application can free its cached data. </dd></dl>
 
 </div>
 </div>
@@ -380,20 +380,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes an internal table for fast access of the next element in creation order. </p>
+<p>Initializes an internal table for fast access to the next element in creation order. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">elemFilter</td><td>[in] Optional parameter, can be nullptr. Use this filter to leave out element types from the access table. </td></tr>
+    <tr><td class="paramname">elemFilter</td><td>[in] Optional parameter; can be nullptr. Use this filter to exclude element types from the access table. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_MEMFULL - The internal creation order table cannot be allocated.</li>
-<li>APIERR_NESTING - Internal access table initializations cannot be nested, i.e. you should dispose the previously allocated table before initializing a new one. </li>
+<li>APIERR_NESTING - Internal access table initializations cannot be nested; you should dispose of the previously allocated table before initializing a new one. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to set up an internal table which allows fast access to the next element in creation order (an ordering more or less equal to the unique ID ordering in previous versions). </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function sets up an internal table that allows fast access to the next element in creation order (an ordering more or less equal to the unique ID ordering in previous versions). </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">void</span> PrintGuidsInCreationOrder ()</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">if</span> (<a class="code hl_function" href="#ga840ebf69df24a1e07528bf472cfd7eaa">ACAPI_DrawOrder_InitCreationOrderTable</a> (<span class="keyword">nullptr</span>) == NoError) {</div>

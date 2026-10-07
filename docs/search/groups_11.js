@@ -6,5 +6,6 @@ var searchData=
   ['set_3',['Element Set',['../group___element_set.html',1,'']]],
   ['settings_4',['Settings',['../group___project_setting.html',1,'Project Settings'],['../group___rendering.html',1,'Rendering Scenes and Settings']]],
   ['sights_5',['Sights',['../group___sight.html',1,'']]],
-  ['survey_20points_6',['Survey Points',['../group___survey_point.html',1,'']]]
+  ['status_20flags_6',['Grid Status Flags',['../group___a_p_i___grid_status_flags.html',1,'']]],
+  ['survey_20points_7',['Survey Points',['../group___survey_point.html',1,'']]]
 ];

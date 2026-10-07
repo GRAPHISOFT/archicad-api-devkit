@@ -88,6 +88,12 @@ var annotated_dup =
         [ "Elbow", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow.html", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow" ],
         [ "ElbowDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_default.html", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_default" ],
         [ "ElbowUIManager", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_u_i_manager.html", "class_a_c_a_p_i_1_1_m_e_p_1_1_elbow_u_i_manager" ],
+        [ "ElectricalCircuit", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit.html", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_circuit" ],
+        [ "ElectricalDevice", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device.html", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device" ],
+        [ "ElectricalDeviceDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device_default.html", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_device_default" ],
+        [ "ElectricalPanel", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel.html", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel" ],
+        [ "ElectricalPanelDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_default.html", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_panel_default" ],
+        [ "ElectricalProjectSettings", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings.html", "class_a_c_a_p_i_1_1_m_e_p_1_1_electrical_project_settings" ],
         [ "Element", "class_a_c_a_p_i_1_1_m_e_p_1_1_element.html", null ],
         [ "ElementBase", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base" ],
         [ "ElementDefault", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_default" ],
@@ -203,7 +209,8 @@ var annotated_dup =
     [ "DG", null, [
       [ "AppearanceChangedEventArg", "class_d_g_1_1_appearance_changed_event_arg.html", "class_d_g_1_1_appearance_changed_event_arg" ],
       [ "AppearanceManager", "class_d_g_1_1_appearance_manager.html", "class_d_g_1_1_appearance_manager" ],
-      [ "ColorCatalog", "class_d_g_1_1_color_catalog.html", "class_d_g_1_1_color_catalog" ]
+      [ "ColorCatalog", "class_d_g_1_1_color_catalog.html", "class_d_g_1_1_color_catalog" ],
+      [ "RawAndDisplayText", "class_d_g_1_1_raw_and_display_text.html", "class_d_g_1_1_raw_and_display_text" ]
     ] ],
     [ "Geometry", "namespace_geometry.html", [
       [ "GJKResult", "class_geometry_1_1_g_j_k_result.html", "class_geometry_1_1_g_j_k_result" ]
@@ -295,6 +302,7 @@ var annotated_dup =
     [ "API_AssemblySegmentSchemeData", "struct_a_p_i___assembly_segment_scheme_data.html", "struct_a_p_i___assembly_segment_scheme_data" ],
     [ "API_Attr_Head", "struct_a_p_i___attr___head.html", "struct_a_p_i___attr___head" ],
     [ "API_Attribute", "union_a_p_i___attribute.html", "union_a_p_i___attribute" ],
+    [ "API_AttributeCreationInfo", "struct_a_p_i___attribute_creation_info.html", "struct_a_p_i___attribute_creation_info" ],
     [ "API_AttributeDef", "struct_a_p_i___attribute_def.html", "struct_a_p_i___attribute_def" ],
     [ "API_AttributeDefExt", "struct_a_p_i___attribute_def_ext.html", "struct_a_p_i___attribute_def_ext" ],
     [ "API_AttributeFolder", "struct_a_p_i___attribute_folder.html", "struct_a_p_i___attribute_folder" ],
@@ -481,6 +489,7 @@ var annotated_dup =
     [ "API_IOParams", "struct_a_p_i___i_o_params.html", "struct_a_p_i___i_o_params" ],
     [ "API_IPropertyDefinitionEventHandler", "class_a_p_i___i_property_definition_event_handler.html", "class_a_p_i___i_property_definition_event_handler" ],
     [ "API_IPropertyGroupEventHandler", "class_a_p_i___i_property_group_event_handler.html", "class_a_p_i___i_property_group_event_handler" ],
+    [ "API_IView3DSettingsEventHandler", "class_a_p_i___i_view3_d_settings_event_handler.html", "class_a_p_i___i_view3_d_settings_event_handler" ],
     [ "API_IWindowEventHandler", "class_a_p_i___i_window_event_handler.html", "class_a_p_i___i_window_event_handler" ],
     [ "API_KeyType", "struct_a_p_i___key_type.html", "struct_a_p_i___key_type" ],
     [ "API_LabelType", "struct_a_p_i___label_type.html", "struct_a_p_i___label_type" ],

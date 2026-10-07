@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Add-On Objects</title>
+<title>Archicad 30 C++ API: Add-On Objects</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -157,11 +157,11 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga806cd9b9d61f71e19dbe4e6541af3f5c" id="r_ga806cd9b9d61f71e19dbe4e6541af3f5c"><td class="memItemLeft" align="right" valign="top"><a id="ga806cd9b9d61f71e19dbe4e6541af3f5c" name="ga806cd9b9d61f71e19dbe4e6541af3f5c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga806cd9b9d61f71e19dbe4e6541af3f5c">API_AddonObjectType</a> { <b>GeneralAddOnObject</b>
-, <b>UniqueAddOnObject</b>
-, <b>ClientOnlyAddOnObject</b>
+<tr class="memitem:ga806cd9b9d61f71e19dbe4e6541af3f5c" id="r_ga806cd9b9d61f71e19dbe4e6541af3f5c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga806cd9b9d61f71e19dbe4e6541af3f5c">API_AddonObjectType</a> { <a class="el" href="#gga806cd9b9d61f71e19dbe4e6541af3f5ca09bfebb1aa6911ecaa464200bf2963fd">GeneralAddOnObject</a>
+, <a class="el" href="#gga806cd9b9d61f71e19dbe4e6541af3f5ca803c28204d9218a0597f4dd350fd387d">UniqueAddOnObject</a>
+, <a class="el" href="#gga806cd9b9d61f71e19dbe4e6541af3f5ca7e653c2220419ca14e4f684ab128bc5c">ClientOnlyAddOnObject</a>
  }</td></tr>
-<tr class="memdesc:ga806cd9b9d61f71e19dbe4e6541af3f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the two types of an AddOnObject: general (non-unique) and unique. <br /></td></tr>
+<tr class="memdesc:ga806cd9b9d61f71e19dbe4e6541af3f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the two types of an AddOnObject: general (non-unique) and unique.  <a href="#ga806cd9b9d61f71e19dbe4e6541af3f5c">More...</a><br /></td></tr>
 <tr class="separator:ga806cd9b9d61f71e19dbe4e6541af3f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -173,10 +173,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga6e4d7f8d3345a62a773624af71425334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback procedure for handling the AddOnObject merge operations.  <br /></td></tr>
 <tr class="separator:ga6e4d7f8d3345a62a773624af71425334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf98ed8a5d6ea2eb54ab51d23af1bb097" id="r_gaf98ed8a5d6ea2eb54ab51d23af1bb097"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf98ed8a5d6ea2eb54ab51d23af1bb097">ACAPI_AddOnObject_InstallAddOnObjectSaveOldFormatHandler</a> (<a class="el" href="#gae44aed8071f2f6001ba603a8abdb1cc6">APIAddonObjectSaveOldFormatHandlerProc</a> *saveOldFormatProc)</td></tr>
-<tr class="memdesc:gaf98ed8a5d6ea2eb54ab51d23af1bb097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback procedure for converting AddOnObject data into older format.  <br /></td></tr>
+<tr class="memdesc:gaf98ed8a5d6ea2eb54ab51d23af1bb097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback procedure for converting AddOnObject data into an older format.  <br /></td></tr>
 <tr class="separator:gaf98ed8a5d6ea2eb54ab51d23af1bb097"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae9aacf50e6bec4ec19f1f21929033493" id="r_gae9aacf50e6bec4ec19f1f21929033493"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae9aacf50e6bec4ec19f1f21929033493">ACAPI_AddOnObject_InstallAddOnObjectConvertNewFormatHandler</a> (<a class="el" href="#ga8010963c96d6661a8fbdd37a3dcf5804">APIAddonObjectConvertNewFormatHandlerProc</a> *convertNewFormatProc)</td></tr>
-<tr class="memdesc:gae9aacf50e6bec4ec19f1f21929033493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback procedure for converting old format AddOnObject data into current format.  <br /></td></tr>
+<tr class="memdesc:gae9aacf50e6bec4ec19f1f21929033493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback procedure for converting old-format AddOnObject data into the current format.  <br /></td></tr>
 <tr class="separator:gae9aacf50e6bec4ec19f1f21929033493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafaea4e5746457e8aa76bb203b5ceaba7" id="r_gafaea4e5746457e8aa76bb203b5ceaba7"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafaea4e5746457e8aa76bb203b5ceaba7">ACAPI_AddOnObject_CreateObject</a> (const GS::UniString &amp;objectName, const GSHandle &amp;content, <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> *objectGuid)</td></tr>
 <tr class="memdesc:gafaea4e5746457e8aa76bb203b5ceaba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an AddOnObject.  <br /></td></tr>
@@ -239,13 +239,13 @@ Functions</h2></td></tr>
 <p>It allows each add-on to store custom data in Archicad project database. No limitation is imposed on the structure or content, not even on the amount of saved bytes. Archicad knows nothing about its internal format, it just preserves a number of bytes in the project database and returns them upon requests.</p>
 <p>The container of the stored data is an object called AddOnObject. This data structure has a GUID and a name. The name is optional.</p>
 <p>AddOnobjects are identified uniquely by the GUID of the object.</p>
-<h1><a class="anchor" id="autotoc_md96"></a>
+<h1><a class="anchor" id="autotoc_md103"></a>
 Unique AddOnObjects</h1>
 <p>Unique AddOnObjects were introduced to support more restricted but safer TeamWork behaviour. Because multiple general (non-unique) AddOnObjects can exist with the same name, in TeamWork it could happen that two users created "the same" AddOnObject simultaneously, but at the end they ended up with two different AddOnObjects (with the same name). This led to a lot of confusion.</p>
 <p>With Unique AddOnObjects - like general AddOnObjects - you can store custom data in the project database. However - unlike general AddOnObjects - their names must be and will be unique among each other. Please note that names of a Unique AddOnObject and general AddOnObjects may still be equal.</p>
 <p>In a TeamWork project creating Unique AddOnObjects will result in a Full Send to ensure project consistency. Due to this inconvenience, it is possible to create more Unique AddOnObjects at once with the <a class="el" href="#ga0fa4df76c4d00c90e69fbb6f2fc91dc3">ACAPI_AddOnObject_CreateUniqueObjectMore</a> function.</p>
 <p>All functions that work for general AddOnObjects work for Unique AddOnObjects, too, except <a class="el" href="#gadb461934bcd1b65fdae2eefe93bfa599">ACAPI_AddOnObject_GetObjectGuidFromName</a> : to get the GUID of a Unique AddOnObject from its name use <a class="el" href="#gaa4976dfba6d525ed2a1f76888e0409f6">ACAPI_AddOnObject_GetUniqueObjectGuidFromName</a> instead.</p>
-<h1><a class="anchor" id="autotoc_md97"></a>
+<h1><a class="anchor" id="autotoc_md104"></a>
 Functions</h1>
 <p>All of the ModulData Manager functions begin with the <b>ACAPI_AddOnObject_</b> prefix. They are as follows:</p>
 <ul>
@@ -269,17 +269,17 @@ Functions</h1>
 <li><a class="el" href="#ga02caa4564303ee142721d174f130aa37">ACAPI_AddOnObject_SetUIProperties</a></li>
 </ul>
 <p>Refer to the <b>AddOnObject Manager</b> example project to see detailed examples on using these functions.</p>
-<h1><a class="anchor" id="autotoc_md98"></a>
+<h1><a class="anchor" id="autotoc_md105"></a>
 Merging AddOnObjects</h1>
 <p>When merging another plan into the project, it might be necessary to keep both the original and the incoming objects, and to combine them together. Since the host application does not know the content of the objects, the owner add-on is requested to resolve the conflict.</p>
 <p>For this purpose the add-on needs to implement an <code>APIAddOnObjectMergeHandlerProc</code> callback handler function, and pass the function pointer to Archicad with the For this purpose the add-on needs to implement an <code>APIAddOnObjectMergeHandlerProc</code> callback handler function, and pass the function pointer to Archicad with the <a class="el" href="#ga6e4d7f8d3345a62a773624af71425334">ACAPI_AddOnObject_InstallAddOnObjectMergeHandler</a> in the <a class="el" href="group___add_on_lifetime.html#gaa8f1f7d553305c1afe5de7e4dcb66e99">Initialize</a> routine. It is also necessary to inform Archicad that the add-on is prepared for merging custom data: this can be done with the <a class="el" href="#ga97e24e67ec25955d5e214e2b2f9b6c3a">ACAPI_AddOnObject_RegisterAddOnObjectHandler</a> function called from <a class="el" href="group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e">RegisterInterface</a>. <a class="el" href="#ga6e4d7f8d3345a62a773624af71425334">ACAPI_AddOnObject_InstallAddOnObjectMergeHandler</a> in the <a class="el" href="group___add_on_lifetime.html#gaa8f1f7d553305c1afe5de7e4dcb66e99">Initialize</a> routine. It is also necessary to inform Archicad that the add-on is prepared for merging custom data: this can be done with the <a class="el" href="#ga97e24e67ec25955d5e214e2b2f9b6c3a">ACAPI_AddOnObject_RegisterAddOnObjectHandler</a> function called from <a class="el" href="group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e">RegisterInterface</a>.</p>
 <p>In Teamwork mode the AddOnObject can only be modified by the owner of the object. The add-on can reserve or release one or more AddOnObject using <a class="el" href="#ga04e07012bf57649cef42b82237ab2bc3">ACAPI_AddOnObject_ReserveObjects</a> and <a class="el" href="#ga685ae0a4af791e1240c5c317bb2b71ec">ACAPI_AddOnObject_ReleaseObjects</a>. Only one user can modifiy an object at one time, so no conflict resolution is needed.</p>
-<h1><a class="anchor" id="autotoc_md99"></a>
+<h1><a class="anchor" id="autotoc_md106"></a>
 Saving data into old format project</h1>
 <p>If the structure of the custom data has changed since the previous version, you need to implement an <a class="el" href="#gae44aed8071f2f6001ba603a8abdb1cc6">APIAddonObjectSaveOldFormatHandlerProc</a> callback function to be able to convert your data when saving into an older format project. In order to be called this handler, the function pointer must be passed with <a class="el" href="#gaf98ed8a5d6ea2eb54ab51d23af1bb097">ACAPI_AddOnObject_InstallAddOnObjectSaveOldFormatHandler</a>, and the data handling feature must be registered with <a class="el" href="#ga97e24e67ec25955d5e214e2b2f9b6c3a">ACAPI_AddOnObject_RegisterAddOnObjectHandler</a>.</p>
 <p>When Archicad calls this function, the add-on should create the converted data according to the given plan file format, and pass it back to the application.</p>
 <p>If the add-on does not install this converter callback routine, the available current format data is saved into the old version project as well.</p>
-<h1><a class="anchor" id="autotoc_md100"></a>
+<h1><a class="anchor" id="autotoc_md107"></a>
 Converting data when reading an old format project</h1>
 <p>If the structure of the custom data has changed since the older versions, you need to implement an <code>APIAddonObjectConvertNewFormatHandlerProc</code> callback function to be able to convert your data when opening an older format project. In order to be called this handler, the function pointer must be passed with <a class="el" href="#gae9aacf50e6bec4ec19f1f21929033493">ACAPI_AddOnObject_InstallAddOnObjectConvertNewFormatHandler</a>, and registration with <a class="el" href="#ga97e24e67ec25955d5e214e2b2f9b6c3a">ACAPI_AddOnObject_RegisterAddOnObjectHandler</a> is also needed.</p>
 <p>When Archicad calls this function, the add-on should create the current version data, and pass it back to the application.</p>
@@ -370,6 +370,31 @@ Converting data when reading an old format project</h1>
 
 </div>
 </div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga806cd9b9d61f71e19dbe4e6541af3f5c" name="ga806cd9b9d61f71e19dbe4e6541af3f5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga806cd9b9d61f71e19dbe4e6541af3f5c">&#9670;&#160;</a></span>API_AddonObjectType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga806cd9b9d61f71e19dbe4e6541af3f5c">API_AddonObjectType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Represents the two types of an AddOnObject: general (non-unique) and unique. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga806cd9b9d61f71e19dbe4e6541af3f5ca09bfebb1aa6911ecaa464200bf2963fd" name="gga806cd9b9d61f71e19dbe4e6541af3f5ca09bfebb1aa6911ecaa464200bf2963fd"></a>GeneralAddOnObject&#160;</td><td class="fielddoc"><p>There can be more general (non-unique) AddOnObjects with the same name, so their name cannot be used for AddOnObject identification. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga806cd9b9d61f71e19dbe4e6541af3f5ca803c28204d9218a0597f4dd350fd387d" name="gga806cd9b9d61f71e19dbe4e6541af3f5ca803c28204d9218a0597f4dd350fd387d"></a>UniqueAddOnObject&#160;</td><td class="fielddoc"><p>The name of a Unique AddOnObject is unique, so their name can be used for AddOnObject identification. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga806cd9b9d61f71e19dbe4e6541af3f5ca7e653c2220419ca14e4f684ab128bc5c" name="gga806cd9b9d61f71e19dbe4e6541af3f5ca7e653c2220419ca14e4f684ab128bc5c"></a>ClientOnlyAddOnObject&#160;</td><td class="fielddoc"><p>There can be client only AddOnObjects, similarly to <code>GeneralAddOnObject</code>, with the difference that these objects won't be transferred to BimCloud. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gada03dc9c7216883c1d9288e93e92b6c5" name="gada03dc9c7216883c1d9288e93e92b6c5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gada03dc9c7216883c1d9288e93e92b6c5">&#9670;&#160;</a></span>ACAPI_AddOnObject_CreateClientOnlyObject()</h2>
@@ -405,10 +430,10 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to store custom data into project database. The custom data is represented by AddOnObject. This data is avaible in teamwork only in clinet side, it won't be send to the teamwork server. If you need to ensure that the AddOnObject send between users use <a class="el" href="#gafaea4e5746457e8aa76bb203b5ceaba7">ACAPI_AddOnObject_CreateObject</a>. The content handle will be copied inside the function so it has to be deleted after the function call. The stored data can be accessed using objectGuid parameter. The objectName parameter can also be used for identifying the custom data. It can be also emtpy. Archicad does not check if the name is unique. If you need to ensure that only one AddOnObject exists with the same name, then use Unique AddOnObjects. See more: <a class="el" href="#gaa4d960680dae4f2a32baaaadc83f3743">ACAPI_AddOnObject_CreateUniqueObject</a>. The content handle will be copied inside the function so it has to be deleted after the function call. The stored data can be accessed using objectGuid parameter. The objectName parameter can also be used for identifying the custom data. It can be also emtpy. Archicad does not check if the name is unique. If you need to ensure that only one AddOnObject exists with the same name, then use Unique AddOnObjects. See more: <a class="el" href="#gaa4d960680dae4f2a32baaaadc83f3743">ACAPI_AddOnObject_CreateUniqueObject</a>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to store custom data into project database. The custom data is represented by AddOnObject. This data is avaible in teamwork only in clinet side, it won't be send to the teamwork server. If you need to ensure that the AddOnObject send between users use <a class="el" href="#gafaea4e5746457e8aa76bb203b5ceaba7">ACAPI_AddOnObject_CreateObject</a>. The content handle will be copied inside the function so it has to be deleted after the function call. The stored data can be accessed using objectGuid parameter. The objectName parameter can also be used for identifying the custom data. It can be also empty. Archicad does not check if the name is unique. If you need to ensure that only one AddOnObject exists with the same name, then use Unique AddOnObjects. See more: <a class="el" href="#gaa4d960680dae4f2a32baaaadc83f3743">ACAPI_AddOnObject_CreateUniqueObject</a>. The content handle will be copied inside the function so it has to be deleted after the function call. </dd></dl>
 
 </div>
 </div>
@@ -446,10 +471,10 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to store custom data into project database. The custom data is represented by AddOnObject. This data is avaible in teamwork only in clinet side, it won't be send to the teamwork server. If you need to ensure that the AddOnObject send between users use <a class="el" href="#gafaea4e5746457e8aa76bb203b5ceaba7">ACAPI_AddOnObject_CreateObject</a>. The content handle will be copied inside the function so it has to be deleted after the function call. The stored data can be accessed using objectGuid parameter. The objectName parameter can also be used for identifying the custom data. It can be also emtpy. Archicad does not check if the name is unique. If you need to ensure that only one AddOnObject exists with the same name, then use Unique AddOnObjects. See more: <a class="el" href="#gaa4d960680dae4f2a32baaaadc83f3743">ACAPI_AddOnObject_CreateUniqueObject</a>. The content handle will be copied inside the function so it has to be deleted after the function call. The stored data can be accessed using objectGuid parameter. The objectName parameter can also be used for identifying the custom data. It can be also emtpy. Archicad does not check if the name is unique. If you need to ensure that only one AddOnObject exists with the same name, then use Unique AddOnObjects. See more: <a class="el" href="#gaa4d960680dae4f2a32baaaadc83f3743">ACAPI_AddOnObject_CreateUniqueObject</a>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to store custom data into project database. The custom data is represented by AddOnObject. This data is available in teamwork only in client side, it won't be sent to the teamwork server. If you need to ensure that the AddOnObject is sent between users use <a class="el" href="#gafaea4e5746457e8aa76bb203b5ceaba7">ACAPI_AddOnObject_CreateObject</a>. The content handle will be copied inside the function so it has to be deleted after the function call. The stored data can be accessed using objectGuid parameter. The objectName parameter can also be used for identifying the custom data. It can be also empty. Archicad does not check if the name is unique. If you need to ensure that only one AddOnObject exists with the same name, then use Unique AddOnObjects. See more: <a class="el" href="#gaa4d960680dae4f2a32baaaadc83f3743">ACAPI_AddOnObject_CreateUniqueObject</a>. </dd></dl>
 
 </div>
 </div>
@@ -481,14 +506,14 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_CANCEL - If the user refused to Send Receive all changes.</li>
 <li>APIERR_NAMEALREADYUSED - If there is already a Unique AddOnObject with the given objectName.</li>
 <li>APIERR_NOTEAMWORKPROJECT - Indicates that the project is an Offline TeamWork project. Due to possible conflicts, it is not allowed to create Unique AddOnObjects in an Offline Teamwork Project.</li>
 <li>APIERR_SERVICEFAILED - The created Unique AddOnObject could not be sent to the TeamWork server. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Unique AddOnObjects were introduced to support more restricted but safer TeamWork behaviour. Because multiple general (non-unique) AddOnObjects can exist with the same name, in TeamWork it could happen that two users created "the same" AddOnObject simultaneously, but at the end they ended up with two different AddOnObjects. This led to a lot of confusion. With Unique AddOnObjects - like general AddOnObjects - you can store custom data in the project database. However - unlike general AddOnObjects - their names must be and will be unique among each other. Please note that names of a Unique AddOnObject and general AddOnObjects may be equal. In a TeamWork project creating Unique AddOnObjects will result in a Full Receive and a Full Send to ensure project consistency. Due to this inconvenience, it is possible to create more Unique AddOnObjects at once with the <a class="el" href="#ga0fa4df76c4d00c90e69fbb6f2fc91dc3">ACAPI_AddOnObject_CreateUniqueObjectMore</a> function. Unlike general AddOnObjects - to ensure no data conflict occurs - it is not possible to give default content to a Unique AddOnObject. To do so, you must call <a class="el" href="#ga9fe6d5cd2f42b1f4b63d5f9a82f526d1">ACAPI_AddOnObject_ModifyObject</a> function. The stored data can be accessed using the returned objectGuid. All functions that work for general AddOnObjects work for Unique AddOnObjects, too, except <a class="el" href="#gadb461934bcd1b65fdae2eefe93bfa599">ACAPI_AddOnObject_GetObjectGuidFromName</a> : to get the GUID of a Unique AddOnObject from its name use <a class="el" href="#gaa4976dfba6d525ed2a1f76888e0409f6">ACAPI_AddOnObject_GetUniqueObjectGuidFromName</a> instead. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Unique AddOnObjects were introduced to support more restricted but safer TeamWork behavior. Because multiple general (non-unique) AddOnObjects can exist with the same name, in TeamWork it could happen that two users created "the same" AddOnObject simultaneously, but at the end they ended up with two different AddOnObjects. This led to a lot of confusion. With Unique AddOnObjects - like general AddOnObjects - you can store custom data in the project database. However - unlike general AddOnObjects - their names must be and will be unique among each other. Please note that names of a Unique AddOnObject and general AddOnObjects may be equal. In a TeamWork project creating Unique AddOnObjects will result in a Full Receive and a Full Send to ensure project consistency. Due to this inconvenience, it is possible to create more Unique AddOnObjects at once with the <a class="el" href="#ga0fa4df76c4d00c90e69fbb6f2fc91dc3">ACAPI_AddOnObject_CreateUniqueObjectMore</a> function. Unlike general AddOnObjects - to ensure no data conflict occurs - it is not possible to give default content to a Unique AddOnObject. To do so, you must call <a class="el" href="#ga9fe6d5cd2f42b1f4b63d5f9a82f526d1">ACAPI_AddOnObject_ModifyObject</a> function. The stored data can be accessed using the returned objectGuid. All functions that work for general AddOnObjects work for Unique AddOnObjects, too, except <a class="el" href="#gadb461934bcd1b65fdae2eefe93bfa599">ACAPI_AddOnObject_GetObjectGuidFromName</a> : to get the GUID of a Unique AddOnObject from its name use <a class="el" href="#gaa4976dfba6d525ed2a1f76888e0409f6">ACAPI_AddOnObject_GetUniqueObjectGuidFromName</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -520,7 +545,7 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - If the objectNames array is empty or the names in it are not unique among each other.</li>
 <li>APIERR_NAMEALREADYUSED - If there is already a Unique AddOnObject with one of the given objectNames.</li>
 <li>APIERR_NOTEAMWORKPROJECT - Indicates that the project is an Offline TeamWork project. Due to possible conflicts, it is not allowed to create Unique AddOnObjects in an Offline Teamwork Project.</li>
@@ -554,7 +579,7 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The object does not exist.</li>
 <li>APIERR_NOTMINE - The object is not owned by the current user in teamwork mode. </li>
 </ul>
@@ -585,14 +610,14 @@ Converting data when reading an old format project</h1>
 <p>Determines if the project database contains the specified AddOnObject or not. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">objectGuid</td><td>[in] The GUID of the specified object.. </td></tr>
+    <tr><td class="paramname">objectGuid</td><td>[in] The GUID of the specified object. </td></tr>
     <tr><td class="paramname">objectExists</td><td>[out] true if the object exists, otherwise false. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - The passed parameter objectGuid is APINULLGuid or objectExists is nullptr</li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADPARS - The passed parameter objectGuid is APINULLGuid or objectExists is nullptr.</li>
 <li>APIERR_BADID - The object specified by GUID exists, but its type is not AddOnObject. </li>
 </ul>
 </dd></dl>
@@ -627,7 +652,7 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter objectGuid is nullptr. </li>
 </ul>
 </dd></dl>
@@ -669,7 +694,7 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter objectGuid is APINULLGuid or either objectName or objectContent is nullptr.</li>
 <li>APIERR_BADID - No object with the specified GUID exists. </li>
 </ul>
@@ -706,11 +731,11 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter objectGuid is nullptr. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>If more AddOnObjects exist with the same name, it is not specified which GUID will be returned. Please note that this is a linear time function. This function cannot be used to get the GUID of a Unique AddOnObject or AddOnObject or the get GUID-s from other teamwork users. You can use Unique AddOnObjects if it is important to have only one AddOnObject with the same name. See AddOnObject Manager for more information. Please note that this is a linear time function. This function cannot be used to get the GUID of a Unique AddOnObject. You can use Unique AddOnObjects if it is important to have only one AddOnObject with the same name. See AddOnObject Manager for more information. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>If more AddOnObjects exist with the same name, it is not specified which GUID will be returned. Please note that this is a linear time function. This function cannot be used to get the GUID of a Unique AddOnObject or AddOnObject or to get GUIDs from other teamwork users. You can use Unique AddOnObjects if it is important to have only one AddOnObject with the same name. See AddOnObject Manager for more information. Please note that this is a linear time function. This function cannot be used to get the GUID of a Unique AddOnObject. You can use Unique AddOnObjects if it is important to have only one AddOnObject with the same name. See AddOnObject Manager for more information. </dd></dl>
 
 </div>
 </div>
@@ -737,7 +762,7 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter objects is nullptr </li>
 </ul>
 </dd></dl>
@@ -773,8 +798,8 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - The passed parameter objectGuid is APINULLGuid or ownerId is nullptr</li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADPARS - The passed parameter objectGuid is APINULLGuid or ownerId is nullptr.</li>
 <li>APIERR_BADID - AddOnObject does not exist. </li>
 </ul>
 </dd></dl>
@@ -809,8 +834,8 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - The passed parameter objectGuid is NULL. </li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADPARS - The passed parameter objectGuid is nullptr. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function cannot be used to get the GUID of a general (non-unique) AddOnObject. Please note that this is a linear time function. This function cannot be used to get the GUID of a general (non-unique) AddOnObject. </dd></dl>
@@ -845,12 +870,12 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter objectGuids is empty or contains APINULLGuid.</li>
 <li>APIERR_BADID - If any of the objectGuids is not an AddOnObject GUID. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>If the function has completed with success then the specified objects will be granted to the given user. The process runs in silent mode, no dialogs or messages will interrupt. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>If the function has completed successfully then the specified objects will be granted to the given user. The process runs in silent mode, no dialogs or messages will interrupt. </dd></dl>
 
 </div>
 </div>
@@ -869,7 +894,7 @@ Converting data when reading an old format project</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Installs a callback procedure for converting old format AddOnObject data into current format. </p>
+<p>Installs a callback procedure for converting old-format AddOnObject data into the current format. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">convertNewFormatProc</td><td>[in] The callback procedure to convert AddOnObject data. Passing nullptr in this parameter uninstalls the previously installed handler function. </td></tr>
@@ -877,10 +902,10 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>In order to convert the add-on's AddOnObject data into current format, you need to implement this callback function, and pass it to Archicad with <a class="el" href="#gae9aacf50e6bec4ec19f1f21929033493">ACAPI_AddOnObject_InstallAddOnObjectConvertNewFormatHandler</a> during the Initialize phase. It is also necessary to notify Archicad about this capability of the add-on by calling <a class="el" href="#ga97e24e67ec25955d5e214e2b2f9b6c3a">ACAPI_AddOnObject_RegisterAddOnObjectHandler</a> from the RegisterInterface function. This handler function is called whenever the user opens an old version project, and the add-on has any AddOnObject stored in the original project. The data should be constructed according to the current version into <code><a class="el" href="struct_a_p_i___addon_object.html" title="Control information of a custom data stored into the project database.">API_AddonObject</a></code> structures, and these structures should be pushed into the currentFormatAddOnObjectArray array. The memory allocated for the converted AddOnObject by the add-on's handler function will be released by the caller application. You must pay attention to not create more than one <a class="el" href="struct_a_p_i___addon_object.html">API_AddonObject</a> s with the same name if the AddOnObject is Unique. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>To convert the add-on's AddOnObject data into the current format, you need to implement this callback function and pass it to Archicad with <a class="el" href="#gae9aacf50e6bec4ec19f1f21929033493">ACAPI_AddOnObject_InstallAddOnObjectConvertNewFormatHandler</a> during the Initialize phase. It is also necessary to notify Archicad about this capability of the add-on by calling <a class="el" href="#ga97e24e67ec25955d5e214e2b2f9b6c3a">ACAPI_AddOnObject_RegisterAddOnObjectHandler</a> from the RegisterInterface function. This handler function is called whenever the user opens an old version of the project, and the add-on has any AddOnObject stored in the original project. The data should be constructed according to the current version into <code><a class="el" href="struct_a_p_i___addon_object.html" title="Control information of a custom data stored into the project database.">API_AddonObject</a></code> structures, and these structures should be pushed into the currentFormatAddOnObjectArray array. The caller application will release the memory allocated for the converted AddOnObject using the add-on's handler function. If the AddOnObject is unique, you must avoid creating more than one <a class="el" href="struct_a_p_i___addon_object.html">API_AddonObject</a> with the same name. </dd></dl>
 
 </div>
 </div>
@@ -902,15 +927,15 @@ Converting data when reading an old format project</h1>
 <p>Installs a callback procedure for handling the AddOnObject merge operations. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mergeHandlerProc</td><td>[in] The callback procedure which will handle the AddOnObject data merge. Can be nullptr ; this removes the installed callback. </td></tr>
+    <tr><td class="paramname">mergeHandlerProc</td><td>[in] The callback procedure will handle the merge of AddOnObject data. It can be nullptr, which removes the installed callback. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function should be called in the Initialize function of your add-on to pass the pointer of the APIAddOnObjectMergeHandlerProc callback routine implemented for resolving conflicts between two lists of the AddOnObjects of the add-on during a merge operation. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function should be called in your add-on's Initialize function to pass the pointer of the APIAddOnObjectMergeHandlerProc callback routine. During a merge operation, this routine resolves conflicts between two lists of the add-on's AddOnObjects. </dd></dl>
 
 </div>
 </div>
@@ -929,7 +954,7 @@ Converting data when reading an old format project</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Installs a callback procedure for converting AddOnObject data into older format. </p>
+<p>Installs a callback procedure for converting AddOnObject data into an older format. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">saveOldFormatProc</td><td>[in] The callback procedure to convert AddOnObject data. Passing nullptr in this parameter uninstalls the previously installed handler function. </td></tr>
@@ -937,10 +962,10 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>In order to save the add-on's AddOnObject data in the proper format into a previous version project file, you need to implement this callback function, and pass it to Archicad with <a class="el" href="#gaf98ed8a5d6ea2eb54ab51d23af1bb097">ACAPI_AddOnObject_InstallAddOnObjectSaveOldFormatHandler</a> during the Initialize phase. It is also necessary to notify Archicad about this capability of the add-on by calling <a class="el" href="#ga97e24e67ec25955d5e214e2b2f9b6c3a">ACAPI_AddOnObject_RegisterAddOnObjectHandler</a> from the <a class="el" href="group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e">RegisterInterface</a> function. This handler function is called whenever the user saves the project into an older format, and the add-on has any AddOnObject stored currently into the project. The data should be constructed according to the required version into <a class="el" href="struct_a_p_i___addon_object.html">API_AddonObject</a> structures, and these structures should be pushed into the <code>oldFormatAddOnObjectArray</code> array. The memory allocated for the converted AddOnObjects by the add-on's handler function will be released by the caller application. If you need to delete an AddOnObject (e.g. it cannot be read by a previous version) then simply don't push it into the array. Order of the converted <a class="el" href="struct_a_p_i___addon_object.html">API_AddonObject</a> s is irrelevant. You must pay attention to not create more than one <a class="el" href="struct_a_p_i___addon_object.html">API_AddonObject</a> s with the same name if the AddOnObject is Unique. Because Unique AddOnObjects is an API 21 () feature, please pay special attention to converting AddOnObjects with UniqueAddOnObject <a class="el" href="#ga806cd9b9d61f71e19dbe4e6541af3f5c">API_AddonObjectType</a> by either setting their type to GeneralAddOnObject or leaving them from <code>oldFormatAddOnObjectArray</code>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>To save the add-on's AddOnObject data in the proper format into a previous version of the project file, you need to implement this callback function and pass it to Archicad with <a class="el" href="#gaf98ed8a5d6ea2eb54ab51d23af1bb097">ACAPI_AddOnObject_InstallAddOnObjectSaveOldFormatHandler</a> during the Initialize phase. It is also necessary to notify Archicad about this add-on capability by calling <a class="el" href="#ga97e24e67ec25955d5e214e2b2f9b6c3a">ACAPI_AddOnObject_RegisterAddOnObjectHandler</a> from the <a class="el" href="group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e">RegisterInterface</a> function. This handler function is called whenever the user saves the project into an older format, and the add-on has any AddOnObject stored currently in the project. The data should be constructed according to the required version into <a class="el" href="struct_a_p_i___addon_object.html">API_AddonObject</a> structures, and these structures should be pushed into the <code>oldFormatAddOnObjectArray</code> array. The caller application will release the memory allocated for the converted AddOnObjects by the add-on's handler function. Don't push it into the array if you need to delete an AddOnObject (e.g., a previous version cannot read it). Order of the converted <a class="el" href="struct_a_p_i___addon_object.html">API_AddonObject</a> s is irrelevant. If the AddOnObject is unique, you must avoid creating more than one <a class="el" href="struct_a_p_i___addon_object.html">API_AddonObject</a> with the same name. Because Unique AddOnObjects is an API 21 () feature, please pay special attention to converting AddOnObjects with UniqueAddOnObject <a class="el" href="#ga806cd9b9d61f71e19dbe4e6541af3f5c">API_AddonObjectType</a> by either setting their type to GeneralAddOnObject or leaving them from <code>oldFormatAddOnObjectArray</code>. </dd></dl>
 
 </div>
 </div>
@@ -978,7 +1003,7 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - If the passed objectGuid parameter is NULLGuid, or if neither newObjectName nor newObjectContent is filled, or if modifying a Unique AddOnObject and either newObjectName is not nullptr (it must be) or newObjectContent is nullptr (it must not be).</li>
 <li>APIERR_BADID - The specified object does not exist.</li>
 <li>APIERR_NOTMINE - The object is not owned by the current user in teamwork mode. </li>
@@ -1005,10 +1030,10 @@ Converting data when reading an old format project</h1>
 
 <p>Registers the add-on to be called for merging and converting its custom data stored in AddOnObjects. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Call this function from RegisterInterface to let Archicad know that the add-on has APIAddOnObjectMergeHandlerProc and/or APIAddOnObjectSaveOldFormatHandlerProc and/or APIAddOnObjectConvertNewFormatHandlerProc callback function implemented for merging and converting its custom data. In order this functions to be called on the adequate event, the add-on needs to pass the function pointers to Archicad from Initialize with <a class="el" href="#ga6e4d7f8d3345a62a773624af71425334">ACAPI_AddOnObject_InstallAddOnObjectMergeHandler</a>, <a class="el" href="#gaf98ed8a5d6ea2eb54ab51d23af1bb097">ACAPI_AddOnObject_InstallAddOnObjectSaveOldFormatHandler</a> and <a class="el" href="#gae9aacf50e6bec4ec19f1f21929033493">ACAPI_AddOnObject_InstallAddOnObjectConvertNewFormatHandler</a>, respectively. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Call this function from RegisterInterface to let Archicad know that the add-on has APIAddOnObjectMergeHandlerProc and/or APIAddOnObjectSaveOldFormatHandlerProc and/or APIAddOnObjectConvertNewFormatHandlerProc callback functions implemented for merging and converting its custom data. For these functions to be called on the adequate event, the add-on needs to pass the function pointers to Archicad from Initialize with <a class="el" href="#ga6e4d7f8d3345a62a773624af71425334">ACAPI_AddOnObject_InstallAddOnObjectMergeHandler</a>, <a class="el" href="#gaf98ed8a5d6ea2eb54ab51d23af1bb097">ACAPI_AddOnObject_InstallAddOnObjectSaveOldFormatHandler</a>, and <a class="el" href="#gae9aacf50e6bec4ec19f1f21929033493">ACAPI_AddOnObject_InstallAddOnObjectConvertNewFormatHandler</a>, respectively. </dd></dl>
 
 </div>
 </div>
@@ -1035,7 +1060,7 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter objectGuids is empty or contains APINULLGuid.</li>
 <li>APIERR_BADID - If any of the objectGuids is not an AddOnObject GUID. </li>
 </ul>
@@ -1072,7 +1097,7 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter objectGuids is empty or contains APINULLGuid.</li>
 <li>APIERR_BADID - If any of the objectGuids is not an AddOnObject GUID. </li>
 </ul>
@@ -1108,7 +1133,7 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter objectGuids is empty or contains APINULLGuid.</li>
 <li>APIERR_BADID - If any of the objectGuids is not an AddOnObject GUID. </li>
 </ul>
@@ -1157,11 +1182,11 @@ Converting data when reading an old format project</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - Both objectGuid and name are NULL, or localisedName is empty string. </li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADPARS - Both objectGuid and name are nullptr, or localisedName is empty string. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to register UI properties for AddOnObject. UI properties are localised name and the menu command id. The registered properties will be used for all AddOnObjects which have the specified GUID or name. If Archicad looks for a UI property, first tries to find it by GUID. If the property is not found, Archicad also tries to find it by name. So the registration can be done even if no instance of AddOnObject exists: in this case objectGuid should be NULL. Please note that if only the name is given for a UI property, then all AddOnObjects (both general and unique) with this name will have the same UI property. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to register UI properties for AddOnObject. UI properties are localised name and the menu command id. The registered properties will be used for all AddOnObjects which have the specified GUID or name. If Archicad looks for a UI property, first tries to find it by GUID. If the property is not found, Archicad also tries to find it by name. So the registration can be done even if no instance of AddOnObject exists: in this case objectGuid should be nullptr. Please note that if only the name is given for a UI property, then all AddOnObjects (both general and unique) with this name will have the same UI property. </dd></dl>
 
 </div>
 </div>

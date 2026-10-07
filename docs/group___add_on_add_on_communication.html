@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Add-On - Add-On Communication</title>
+<title>Archicad 30 C++ API: Add-On - Add-On Communication</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -187,7 +187,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga919b9198e33b4011a82cdfd63cb0e04c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees the parameter list handle.  <br /></td></tr>
 <tr class="separator:ga919b9198e33b4011a82cdfd63cb0e04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga79ba0da441937d6cbbbf85e37ec81191" id="r_ga79ba0da441937d6cbbbf85e37ec81191"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga79ba0da441937d6cbbbf85e37ec81191">ACAPI_AddOnAddOnCommunication_RegisterSupportedService</a> (GSType cmdID, Int32 cmdVersion)</td></tr>
-<tr class="memdesc:ga79ba0da441937d6cbbbf85e37ec81191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a command which can be used by other add-ons.  <br /></td></tr>
+<tr class="memdesc:ga79ba0da441937d6cbbbf85e37ec81191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a command which other add-ons can use.  <br /></td></tr>
 <tr class="separator:ga79ba0da441937d6cbbbf85e37ec81191"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac25df37404cabb785e572a4d168b5d52" id="r_gac25df37404cabb785e572a4d168b5d52"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac25df37404cabb785e572a4d168b5d52">ACAPI_AddOnAddOnCommunication_InstallAddOnCommandHandler</a> (GS::Owner&lt; <a class="el" href="class_a_p_i___add_on_command.html">API_AddOnCommand</a> &gt; addOnCommand)</td></tr>
 <tr class="memdesc:gac25df37404cabb785e572a4d168b5d52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs the Add-On command handler object.  <br /></td></tr>
@@ -207,7 +207,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>These functions provide a way for Add-Ons to communicate (pass data, call exposed commands) with one another. </p>
-<h1><a class="anchor" id="autotoc_md86"></a>
+<h1><a class="anchor" id="autotoc_md93"></a>
 Communication Manager</h1>
 <p>The Communication Manager is a very powerful new service introduced in API v3.1.</p>
 <p>In the previous versions of the API add-ons could be called by Archicad only. There were two ways to do that. The add-on could be called because of a direct user interaction, or there was a need to post a notification to it. It was not possible to call one add-on from another.</p>
@@ -219,11 +219,11 @@ Communication Manager</h1>
 <blockquote class="doxtable">
 <p>&zwj;<a class="el" href="#ga862b6e8e2fb88b33f5976eff24f723a0">ACAPI_AddOnAddOnCommunication_InitMDCLParameterList</a> <a class="el" href="#gafd8fcf1a45586e3427e3214314d126ef">ACAPI_AddOnAddOnCommunication_GetMDCLParameterNum</a> <a class="el" href="#gacd86da0607eddde7e11d08bbd96ac4d1">ACAPI_AddOnAddOnCommunication_GetMDCLParameter</a> <a class="el" href="#ga5287685b215202bc4c4c3b04c5f07334">ACAPI_AddOnAddOnCommunication_AddMDCLParameter</a> <a class="el" href="#ga57e90015162cc16710939e4e3b16d43c">ACAPI_AddOnAddOnCommunication_ChangeMDCLParameter</a> <a class="el" href="#ga919b9198e33b4011a82cdfd63cb0e04c">ACAPI_AddOnAddOnCommunication_FreeMDCLParameterList</a> </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md87"></a>
+<h1><a class="anchor" id="autotoc_md94"></a>
 Entry points</h1>
 <p>What is an entry point of an add-on? It is a function or service which can be called from another add-on with the support of the Communication Manager.</p>
 <p>The entry points are interface independent. It means that there isn't any relationship between the commands put into the Archicad menu structure and the entry points. The first set is controlled by the <a class="el" href="group___menu_item.html#gaec79ce2178f5bb5482da171a49ba88ef">ACAPI_MenuItem_RegisterMenu</a> or <a class="el" href="group___add_on_integration.html#ga98bb66d70f3f8ba9ec38e3119795828c">ACAPI_AddOnIntegration_RegisterFileType</a> and the like, the second type entry points are given by <a class="el" href="#ga79ba0da441937d6cbbbf85e37ec81191">ACAPI_AddOnAddOnCommunication_RegisterSupportedService</a>.</p>
-<h1><a class="anchor" id="autotoc_md88"></a>
+<h1><a class="anchor" id="autotoc_md95"></a>
 Registration</h1>
 <p>An add-on can have as many entry points as it wants, and each of them has to be registered in the <a class="el" href="group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e">RegisterInterface</a> function of your add-on with <a class="el" href="#ga79ba0da441937d6cbbbf85e37ec81191">ACAPI_AddOnAddOnCommunication_RegisterSupportedService</a>. This function tells Archicad that the add-on can be called by another. The parameters of this function are the following:</p>
 <ul>
@@ -232,7 +232,7 @@ Registration</h1>
 </ul>
 <p>Refer to the function description for more details.</p>
 <p>Later in the Initialize function the add-on has to register callback function to handle the different supported commands. The <a class="el" href="group___add_on_integration.html#gaabb8b8b44c161fe3cb5572486060cf69">ACAPI_AddOnIntegration_InstallModulCommandHandler</a> function's parameters identify the command (with its ID and version number), and the last parameter supplies the module command handler callback function. This callback function then receives the parameters, may optionally pass back its results in a separate pointer, and is also informed whether it should run in silent mode.</p>
-<h1><a class="anchor" id="autotoc_md89"></a>
+<h1><a class="anchor" id="autotoc_md96"></a>
 Entry point identification</h1>
 <p>An entry point is identified by the following two components:</p>
 <ul>
@@ -242,7 +242,7 @@ Entry point identification</h1>
 </ul>
 <p>This means that entry point IDs must be unique in the world of an add-on. Different add-ons may have the same entry point IDs, but locally an add-on is not allowed to specify the same ID more than once.</p>
 <p>On the caller add-ons side, it may check for the existence of the necessary entry points of the target add-on in its own <a class="el" href="group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e">RegisterInterface</a> function, with <a class="el" href="group___add_on_integration.html#ga1d9af21aff689ca178ff46367ce2d62c">ACAPI_AddOnIntegration_RegisterRequiredService</a>.</p>
-<h1><a class="anchor" id="autotoc_md90"></a>
+<h1><a class="anchor" id="autotoc_md97"></a>
 Version control</h1>
 <p>The last issue is version control. The caller add-on must specify the required version of the entry point also. The API assumes backward compatibility. When an add-on tests for an entry point's availability, the following cases may occur (assuming the identification was successful):</p>
 <ul>
@@ -260,7 +260,7 @@ Version control</h1>
 <li>there are changes in the algorithm (the output will differ on the same parameters passed)</li>
 </ul>
 <p>In either cases keep the compatibility, if possible. Upon a call of an entry point, the Communication Manager first identifies the command. Ifit is available, it checks the entry point version. If there isn't any version problem, it calls the entry point by passing the required version number. Use this data to ensure the same environment and behavior.</p>
-<h1><a class="anchor" id="autotoc_md91"></a>
+<h1><a class="anchor" id="autotoc_md98"></a>
 Control of execution</h1>
 <p>It is very important to understand what happens in the background when the API calls an add-on.</p>
 <p>In general the API allocates a unique environment to each executed add-on. Normally only one add-on is executed by the API, only one add-on is in one of its callback functions. However there are cases when there are more add-ons in the call stack.</p>
@@ -293,7 +293,7 @@ Control of execution</h1>
 <p>What is <b>very important to know is</b>, that in this architecture client <b>B</b> is running under the API environment of client <b>A</b>. He can call any of the API services, but the API handles client <b>A</b> as the active one. The API will process these request in a way, as they would be called by client <b>A</b>. This critical session is shown by a zigzag type line on the picture.</p>
 <p>Please note that from Archicad 10 it is a possible to make an add-on command execute in an external Archicad instance to perform operation on a different project file. For more details refer to the <a class="el" href="#ga998c8c5e28f24f17970401f95fb8350f">ACAPI_AddOnAddOnCommunication_ExternalCall</a> function.</p>
 <p>Please note that from Archicad 19 you can execute add-on command forced from main event loop using <a class="el" href="#ga5ff39bd21de9f2e2a905495494a02304">ACAPI_AddOnAddOnCommunication_CallFromEventLoop</a> function.</p>
-<h1><a class="anchor" id="autotoc_md92"></a>
+<h1><a class="anchor" id="autotoc_md99"></a>
 Parameter passing</h1>
 <p>Parameters should be passed in the <code>params</code> argument to the <a class="el" href="#gac797d2bc036dba642c16c6c21848565a">ACAPI_AddOnAddOnCommunication_Call</a> function. This handle -whose internal format is not public- is owned by the API. The content is not checkedby the API, it just simply passed to the called entry point.</p>
 <p>The parameters should be listed in the public header file of the add-on. Each parameter is identified by its name. Each parameter has a value type, which can be either a string, integer or float type. The API does not check the passed parameters, it merely passes those onto the called add-on. Consistency must be validated by the called add-on's entry function.</p>
@@ -309,16 +309,16 @@ Parameter passing</h1>
 <p><b>The above rules ensure that the execution of the entry points will not be context sensitive.</b> No matter what the current defaults are (saved into the preferences), parameters are interpreted based on the factory defaults. It doesn't matter that some parameters are not passed to the client, as they have defaults.</p>
 <p>Let's take an example.</p>
 <p>The DXF/DWG add-on exports an entry point the open an AutoCAD drawing. Its options dialog also has a Default button to set and use the factory default parameters. The add-on emulates the behavior of this dialog while interpreting the passed parameters.</p>
-<h1><a class="anchor" id="autotoc_md93"></a>
+<h1><a class="anchor" id="autotoc_md100"></a>
 Interface control</h1>
 <p>The caller add-on can disable all interface elements of the called add-on with the <code>silentMode</code> parameter.</p>
 <p>If this parameter is set to <code>true</code>, the called add-on is not allowed to open its dialogs and alerts. In the case it is <code>false</code> the option dialog must appear; of course after processing the passed parameters. The user is allowed to modify any parameter. In the case the modifications may have an effect on the passed parameters, use the ACAPI_AddOnAddOnCommunication_ChangeMDCLParameter function to allow the caller add-on to track the changes.</p>
-<h1><a class="anchor" id="autotoc_md94"></a>
+<h1><a class="anchor" id="autotoc_md101"></a>
 Return values</h1>
 <p>There are two ways to return parameters to the caller.</p>
 <p>The default option is to use the return value of the <a class="el" href="#gac797d2bc036dba642c16c6c21848565a">ACAPI_AddOnAddOnCommunication_Call</a> call. The value returned by this function is the value returned by the client's module command handler function.</p>
 <p>The other way is to use the <code>resultData</code> parameter. This is a simple pointer, which can be used for any purpose. The specification must be given by the called add-on.</p>
-<h1><a class="anchor" id="autotoc_md95"></a>
+<h1><a class="anchor" id="autotoc_md102"></a>
 Documentation</h1>
 <p>It is absolutely necessary to provide developer documentation for each add-on which publishes its interface. This document should give details what the functionality of the entry point is, what parameters can be passed, how they are interpreted and what return vales are provided.</p>
 <p>By default put this document into the same folder where your add-on is installed. </p>
@@ -398,7 +398,6 @@ Documentation</h1>
 </div><div class="memdoc">
 
 <p>Execution policy of the Add-On commands. </p>
-<dl class="section since"><dt>Since</dt><dd>Archicad 25</dd></dl>
 <p>This enum defines the execution policy for Add-On commands in Archicad. It specifies whether the command should be executed on a parallel thread or scheduled for execution on the main thread.</p>
 <dl class="section remark"><dt>Remarks</dt><dd>The <code>InstantExecutionOnParallelThread</code> is faster than the <code>ScheduleForExecutionOnMainThread</code> mode, but it cannot modify the Archicad database and is useful for querying data. The <code>ScheduleForExecutionOnMainThread</code> has full access to the Archicad database via the ACAPI functions. </dd></dl>
 <table class="fieldtable">
@@ -902,7 +901,7 @@ Documentation</h1>
 <dl class="section remark"><dt>Remarks</dt><dd>This function is used to call an add-on implemented command on a different plan loaded into another instance of Archicad. The system provides that the requested project would be available for performing the command in the following way:<ul>
 <li>if there is already an Archicad application running with the specified plan, it attempts to reserve it for the external call (it waits for the application to be available if currently busy with some other operation)</li>
 <li>if there is an Archicad running with currently no plan opened in it (empty), it reserves that application and makes it load the project file</li>
-<li>if there is no available Archicad running, it launches a new application instance with loading the requested project file After the external Archicad instance is reserved for serving the add-on command call, the operation works similarly to the <a class="el" href="#gac797d2bc036dba642c16c6c21848565a">ACAPI_AddOnAddOnCommunication_Call</a> function. On the server side the callee add-on does not even realize that the command request comes from another application instance. The only difference is that the resultData parameter is always nullptr when calling its APIModulCommandProc handler, because this pointer cannot be passed between ARCHICADs. However you can change the content of the params handle modifying any parameters to communicate the result to the caller. The caller can decide the function to return immediately after sending the command request (asynchronous operation) or to wait for the external call to be finished (synchronous operation). You need to pass an APIExternalCallBackProc handler function to collect the responses asynchronously; if this parameter is nullptr, the function does not return until the external operation is finished. The advantage of the asynchronous way is that you can initiate more calls even with different project files at the same time, and the internal task scheduler will optimize the sequence of execution. Please note that if you use a loop for waiting for the asynchronous responses, do not reserve the processor time superfluously, let other threads run by calling the TIWait function of the GSRoot module. Refer to the Communication Manager for more detailed description on</li>
+<li>if there is no available Archicad running, it launches a new application instance with loading the requested project file After the external Archicad instance is reserved for serving the add-on command call, the operation works similarly to the <a class="el" href="#gac797d2bc036dba642c16c6c21848565a">ACAPI_AddOnAddOnCommunication_Call</a> function. On the server side the callee add-on does not even realize that the command request comes from another application instance. The only difference is that the resultData parameter is always nullptr when calling its APIModulCommandProc handler, because this pointer cannot be passed between Archicads. However you can change the content of the params handle modifying any parameters to communicate the result to the caller. The caller can decide the function to return immediately after sending the command request (asynchronous operation) or to wait for the external call to be finished (synchronous operation). You need to pass an APIExternalCallBackProc handler function to collect the responses asynchronously; if this parameter is nullptr, the function does not return until the external operation is finished. The advantage of the asynchronous way is that you can initiate more calls even with different project files at the same time, and the internal task scheduler will optimize the sequence of execution. Please note that if you use a loop for waiting for the asynchronous responses, do not reserve the processor time superfluously, let other threads run by calling the TIWait function of the GSRoot module. Refer to the Communication Manager for more detailed description on</li>
 <li>how to pass parameters</li>
 <li>how to get return values</li>
 <li>how the heaps and API environments are managed by the API </li>
@@ -911,19 +910,19 @@ Documentation</h1>
 <dl class="section user"><dt>Example</dt><dd>The following sample exports the elements of the example project into a specified DWG file by calling the standard DXF/DWG add-on synchronously in an external Archicad: <div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___modul_i_d.html">API_ModulID</a> mdid = { 1198731108, 1322668197 };  <span class="comment">// MDID of the DXF/DWG add-on</span></div>
 <div class="line"> </div>
 <div class="line">IO::Location projectFileLoc;</div>
-<div class="line"><a class="code hl_enumeration" href="group___view.html#ga722e36c7b1f8b7bbd4d096e5f4976c7a">API_SpecFolderID</a> specFolderID = API_ApplicationFolderID;</div>
+<div class="line"><a class="code hl_enumeration" href="group___view.html#ga722e36c7b1f8b7bbd4d096e5f4976c7a">API_SpecFolderID</a> specFolderID = <a class="code hl_enumvalue" href="group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aad71b7a392a0392eae2bca50ba8721cd5">API_ApplicationFolderID</a>;</div>
 <div class="line"><a class="code hl_function" href="group___project_setting.html#ga52c214863ff7af9eee913d86791ea72f">ACAPI_ProjectSettings_GetSpecFolder</a> (&amp;specFolderID, &amp;projectFileLoc);</div>
 <div class="line">projectFileLoc.AppendToLocal (IO::Name (<span class="stringliteral">&quot;Archicad Examples&quot;</span>));</div>
 <div class="line">projectFileLoc.AppendToLocal (IO::Name (<span class="stringliteral">&quot;Residential House&quot;</span>));</div>
 <div class="line">projectFileLoc.AppendToLocal (IO::Name (<span class="stringliteral">&quot;Residential House.pla&quot;</span>));</div>
 <div class="line"> </div>
 <div class="line">IO::Location outputLoc;</div>
-<div class="line">specFolderID = API_UserDocumentsFolderID;</div>
+<div class="line">specFolderID = <a class="code hl_enumvalue" href="group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aaf28ae5be847f8119a7128063b9d09ffd">API_UserDocumentsFolderID</a>;</div>
 <div class="line"><a class="code hl_function" href="group___project_setting.html#ga52c214863ff7af9eee913d86791ea72f">ACAPI_ProjectSettings_GetSpecFolder</a> (&amp;specFolderID, &amp;outputLoc);</div>
 <div class="line">outputLoc.AppendToLocal (IO::Name (<span class="stringliteral">&quot;Residential House.DWG&quot;</span>));</div>
 <div class="line"> </div>
 <div class="line">IO::Location configFile;                        <span class="comment">// translator to be applied for this output</span></div>
-<div class="line">specFolderID = API_DefaultsFolderID;</div>
+<div class="line">specFolderID = <a class="code hl_enumvalue" href="group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aa4e5df0d01790398c6162bbc1242c7c2b">API_DefaultsFolderID</a>;</div>
 <div class="line"><a class="code hl_function" href="group___project_setting.html#ga52c214863ff7af9eee913d86791ea72f">ACAPI_ProjectSettings_GetSpecFolder</a> (&amp;specFolderID, &amp;configFile);</div>
 <div class="line">configFile.AppendToLocal (IO::Name (<span class="stringliteral">&quot;DXF-DWG Translators&quot;</span>));</div>
 <div class="line">configFile.AppendToLocal (IO::Name (<span class="stringliteral">&quot;For as is output.Xml&quot;</span>));</div>
@@ -940,7 +939,7 @@ Documentation</h1>
 <div class="line">    par.<a class="code hl_variable" href="struct_a_p_i___m_d_c_l_parameter.html#a2cabf49c86a13b9d354048838d4207c4">name</a> = <span class="stringliteral">&quot;FileName&quot;</span>;</div>
 <div class="line">    par.<a class="code hl_variable" href="struct_a_p_i___m_d_c_l_parameter.html#a7936cb2ce449bac7a6fd45a65a757f75">type</a> = MDCLPar_string;</div>
 <div class="line">    outputLoc.ToURL (&amp;url);</div>
-<div class="line">    CHTruncate ((<span class="keyword">const</span> <span class="keywordtype">char</span>*) url, str, <span class="keyword">sizeof</span> (str));</div>
+<div class="line">    CHTruncate (url.ToCStr (), str, sizeof (str));</div>
 <div class="line">    par.<a class="code hl_variable" href="struct_a_p_i___m_d_c_l_parameter.html#aad04b632fce7d32aba58695b9e7f6e8e">string_par</a> = str;</div>
 <div class="line">    err = <a class="code hl_function" href="#ga5287685b215202bc4c4c3b04c5f07334">ACAPI_AddOnAddOnCommunication_AddMDCLParameter</a> (parHdl, &amp;par);</div>
 <div class="line"> </div>
@@ -949,7 +948,7 @@ Documentation</h1>
 <div class="line">        par.<a class="code hl_variable" href="struct_a_p_i___m_d_c_l_parameter.html#a2cabf49c86a13b9d354048838d4207c4">name</a> = <span class="stringliteral">&quot;ConfigFile&quot;</span>;</div>
 <div class="line">        par.<a class="code hl_variable" href="struct_a_p_i___m_d_c_l_parameter.html#a7936cb2ce449bac7a6fd45a65a757f75">type</a> = MDCLPar_string;</div>
 <div class="line">        configFile.ToURL (&amp;url);</div>
-<div class="line">        CHTruncate ((<span class="keyword">const</span> <span class="keywordtype">char</span>*) url, str, <span class="keyword">sizeof</span> (str));</div>
+<div class="line">        CHTruncate (url.ToCStr (), str, sizeof (str));</div>
 <div class="line">        par.<a class="code hl_variable" href="struct_a_p_i___m_d_c_l_parameter.html#aad04b632fce7d32aba58695b9e7f6e8e">string_par</a> = str;</div>
 <div class="line">        err = <a class="code hl_function" href="#ga5287685b215202bc4c4c3b04c5f07334">ACAPI_AddOnAddOnCommunication_AddMDCLParameter</a> (parHdl, &amp;par);</div>
 <div class="line">    }</div>
@@ -1170,18 +1169,18 @@ Documentation</h1>
 <p>Installs the Add-On command handler object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">addOnCommand</td><td>[in] The Add-On command handler object. After the <code>ACAPI_AddOnAddOnCommunication_InstallAddOnCommandHandler</code> is called, the ownership is passed and the object can not be used. </td></tr>
+    <tr><td class="paramname">addOnCommand</td><td>[in] The Add-On command handler object. After the <code>ACAPI_AddOnAddOnCommunication_InstallAddOnCommandHandler</code> is called, the ownership is passed, and the object can not be used. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>APIERR_REFUSEDPAR - The addOnCommand parameter is nullptr.</li>
 <li>APIERR_BADNAME - There is already an <a class="el" href="class_a_p_i___add_on_command.html">API_AddOnCommand</a> installed with the same name for this Add-On.</li>
-<li>APIERR_BADPARS - The input, output or schema definitions is not in a valid JSON format.</li>
-<li>NoError - The function has completed with success. </li>
+<li>APIERR_BADPARS - The input, output, or schema definitions are not in a valid JSON format.</li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function installs a handler object for the corresponding HTTP requests. The handler object is identified by the Add-On MDID and its name. The <code>ACAPI_AddOnAddOnCommunication_InstallAddOnCommandHandler</code> function should be called from Initialize. After a successful <code>ACAPI_AddOnAddOnCommunication_InstallAddOnCommandHandler</code> function call, the Add-On stays in the memory. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function installs a handler object for the corresponding HTTP requests. The add-on MDID and its name identify the handler object. The <code>ACAPI_AddOnAddOnCommunication_InstallAddOnCommandHandler</code> function should be called from Initialize. After a successful <code>ACAPI_AddOnAddOnCommunication_InstallAddOnCommandHandler</code> function call, the Add-On stays in the memory. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd>Refer to the AddOnCommand_Test example project of the API Development Kit. </dd></dl>
 
 </div>
@@ -1205,7 +1204,7 @@ Documentation</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Registers a command which can be used by other add-ons. </p>
+<p>Registers a command which other add-ons can use. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cmdID</td><td>[in] The command identifier of the supported service. </td></tr>
@@ -1214,10 +1213,10 @@ Documentation</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>The function registers one of your add-on's command, and makes it avaliable for other add-ons. This should be called from the RegisterInterface function of the add-on. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>The function registers one of your add-ons' commands and makes it available for other add-ons. It should be called from the add-on's RegisterInterface function. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">//------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Interface definitions</span></div>
 <div class="line"><span class="comment">//------------------------------------------------------</span></div>

@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Teamwork</title>
+<title>Archicad 30 C++ API: Teamwork</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -267,10 +267,24 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#gga19575766111f62796ee40e2c3c2aed66a515c8ea0e19831ff0a62b28c08910720">APIMEPPreferences</a>
 , <a class="el" href="#gga19575766111f62796ee40e2c3c2aed66ae5dd22c036d05a4478f63a1ee07bdd9c">APIKeynotesCreate</a>
 , <a class="el" href="#gga19575766111f62796ee40e2c3c2aed66a0f0da7ae5bb776be8c1820064ba93cc1">APIKeynotesDeleteModify</a>
+, <br />
+&#160;&#160;<a class="el" href="#gga19575766111f62796ee40e2c3c2aed66a4d99bc48747f6d565d289b6aedc71a47">APICreationInfoClear</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga19575766111f62796ee40e2c3c2aed66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents various access rights in Teamwork projects.  <a href="#ga19575766111f62796ee40e2c3c2aed66">More...</a><br /></td></tr>
 <tr class="separator:ga19575766111f62796ee40e2c3c2aed66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6663b06bb69ef47b17c910c77b0943bf" id="r_ga6663b06bb69ef47b17c910c77b0943bf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6663b06bb69ef47b17c910c77b0943bf">API_ReservationInterfaceStatus</a> { <br />
+&#160;&#160;<a class="el" href="#gga6663b06bb69ef47b17c910c77b0943bfacc0362b2249602e3076414df5a3f5ba3">APIReservationInterfaceStatus_Undefined</a>
+, <a class="el" href="#gga6663b06bb69ef47b17c910c77b0943bfae462804f211cef5afe3510805f31978c">APIReservationInterfaceStatus_Free</a>
+, <a class="el" href="#gga6663b06bb69ef47b17c910c77b0943bfa3827e3c086b27df5048bf5f2088c8e67">APIReservationInterfaceStatus_Editable</a>
+, <a class="el" href="#gga6663b06bb69ef47b17c910c77b0943bfa545a07189e5d665a720edc0341062a72">APIReservationInterfaceStatus_Reserved</a>
+, <br />
+&#160;&#160;<a class="el" href="#gga6663b06bb69ef47b17c910c77b0943bfad7388d67f82546cf6e11a7c01aefdbaa">APIReservationInterfaceStatus_NotAvailable</a>
+, <a class="el" href="#gga6663b06bb69ef47b17c910c77b0943bfaee101dbda6ac3864c30b450105bcdacd">APIReservationInterfaceStatus_EditableAfterReceive</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga6663b06bb69ef47b17c910c77b0943bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reservation interface status.  <a href="#ga6663b06bb69ef47b17c910c77b0943bf">More...</a><br /></td></tr>
+<tr class="separator:ga6663b06bb69ef47b17c910c77b0943bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -361,10 +375,10 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions exposing the Teamwork functionality of Archicad, including Teamwork project and connection management, rights and permissions management and release/reserve functionalities. </p>
-<h1><a class="anchor" id="autotoc_md165"></a>
+<h1><a class="anchor" id="autotoc_md172"></a>
 Teamwork Control</h1>
 <p>This bunch of functions lets your add-on operate in the new Teamwork environment introduced in Archicad 13.</p>
-<h1><a class="anchor" id="autotoc_md166"></a>
+<h1><a class="anchor" id="autotoc_md173"></a>
 Functions</h1>
 <p>for checking the project status and the online-offline mode:</p>
 <ul>
@@ -415,16 +429,46 @@ Functions</h1>
 <li><a class="el" href="#ga5ad5e48fa5eb80e33ede9c4aef02b869">ACAPI_Teamwork_SendChanges</a></li>
 <li><a class="el" href="#gabe38af717fa911cc6964a46afafc3f11">ACAPI_Teamwork_ReceiveChanges</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md167"></a>
+<h1><a class="anchor" id="autotoc_md174"></a>
 Lockable Object Sets</h1>
 <p>Lockable object sets are groups of objects (or may consist of a single object) which can be modified separately from the other part of the Teamwork project. Typically attribute containers are lockable object sets. These sets have a special reservation panel on their settings dialog in Teamwork mode to control the exclusive lock on that particular part of the project.</p>
 <p>On the API interface lockable object sets are referenced by their object guid. These guids can be obtained with the <a class="el" href="#ga4083bc8dc976a2a03b2036b80f94d721">ACAPI_Teamwork_FindLockableObjectSet</a> function using pre-defined identifiers.</p>
 <p>In some cases two or more lockable object sets need to be handled simultaneously, for example they can be locked only in the same user interface at the same time, like the Layers and Layer Combinations in the Layer Settings dialog. These sets are grouped under a special lockable object set, which is called compound lockable object set. Compounds are referenced by a pre-defined name, and their guid can also be retrieved by the <a class="el" href="#ga4083bc8dc976a2a03b2036b80f94d721">ACAPI_Teamwork_FindLockableObjectSet</a> function.</p>
 <p>The pre-defined identifier strings of lockable object sets are listed in the Remarks section of <a class="el" href="#ga4083bc8dc976a2a03b2036b80f94d721">ACAPI_Teamwork_FindLockableObjectSet</a>.</p>
-<h1><a class="anchor" id="autotoc_md168"></a>
+<h1><a class="anchor" id="autotoc_md175"></a>
 Example</h1>
 <p>The <b>Teamwork_Control</b> example project of the APIDevKit shows samples how to use these functions. </p>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga6663b06bb69ef47b17c910c77b0943bf" name="ga6663b06bb69ef47b17c910c77b0943bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6663b06bb69ef47b17c910c77b0943bf">&#9670;&#160;</a></span>API_ReservationInterfaceStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga6663b06bb69ef47b17c910c77b0943bf">API_ReservationInterfaceStatus</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reservation interface status. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga6663b06bb69ef47b17c910c77b0943bfacc0362b2249602e3076414df5a3f5ba3" name="gga6663b06bb69ef47b17c910c77b0943bfacc0362b2249602e3076414df5a3f5ba3"></a>APIReservationInterfaceStatus_Undefined&#160;</td><td class="fielddoc"><p>Undefined </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6663b06bb69ef47b17c910c77b0943bfae462804f211cef5afe3510805f31978c" name="gga6663b06bb69ef47b17c910c77b0943bfae462804f211cef5afe3510805f31978c"></a>APIReservationInterfaceStatus_Free&#160;</td><td class="fielddoc"><p>Free </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6663b06bb69ef47b17c910c77b0943bfa3827e3c086b27df5048bf5f2088c8e67" name="gga6663b06bb69ef47b17c910c77b0943bfa3827e3c086b27df5048bf5f2088c8e67"></a>APIReservationInterfaceStatus_Editable&#160;</td><td class="fielddoc"><p>Editable </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6663b06bb69ef47b17c910c77b0943bfa545a07189e5d665a720edc0341062a72" name="gga6663b06bb69ef47b17c910c77b0943bfa545a07189e5d665a720edc0341062a72"></a>APIReservationInterfaceStatus_Reserved&#160;</td><td class="fielddoc"><p>Reserved </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6663b06bb69ef47b17c910c77b0943bfad7388d67f82546cf6e11a7c01aefdbaa" name="gga6663b06bb69ef47b17c910c77b0943bfad7388d67f82546cf6e11a7c01aefdbaa"></a>APIReservationInterfaceStatus_NotAvailable&#160;</td><td class="fielddoc"><p>Not available </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6663b06bb69ef47b17c910c77b0943bfaee101dbda6ac3864c30b450105bcdacd" name="gga6663b06bb69ef47b17c910c77b0943bfaee101dbda6ac3864c30b450105bcdacd"></a>APIReservationInterfaceStatus_EditableAfterReceive&#160;</td><td class="fielddoc"><p>Editable after receive </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="ga19575766111f62796ee40e2c3c2aed66" name="ga19575766111f62796ee40e2c3c2aed66"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga19575766111f62796ee40e2c3c2aed66">&#9670;&#160;</a></span>API_TWAccessRights</h2>
 
@@ -647,6 +691,8 @@ Example</h1>
 </td></tr>
 <tr><td class="fieldname"><a id="gga19575766111f62796ee40e2c3c2aed66a0f0da7ae5bb776be8c1820064ba93cc1" name="gga19575766111f62796ee40e2c3c2aed66a0f0da7ae5bb776be8c1820064ba93cc1"></a>APIKeynotesDeleteModify&#160;</td><td class="fielddoc"><p>Permission to delete or modify keynotes. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga19575766111f62796ee40e2c3c2aed66a4d99bc48747f6d565d289b6aedc71a47" name="gga19575766111f62796ee40e2c3c2aed66a4d99bc48747f6d565d289b6aedc71a47"></a>APICreationInfoClear&#160;</td><td class="fielddoc"><p>Permission to clear attribute creation info. </p>
+</td></tr>
 </table>
 
 </div>
@@ -861,7 +907,7 @@ For more information on lockable object sets see the Teamwork Control page. </li
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a> objectSetGuid = <a class="code hl_function" href="#ga4083bc8dc976a2a03b2036b80f94d721">ACAPI_Teamwork_FindLockableObjectSet</a> (<span class="stringliteral">&quot;LayerSettingsDialog&quot;</span>);</div>
 <div class="line"><a class="code hl_enumeration" href="group___library_part.html#gada81f0b453c0e5ad4e3f00a0100fd7dd">API_LockableStatus</a> lockableStatus = <a class="code hl_function" href="#ga2663c9f52125a8b59459fe1f48ebdadf">ACAPI_Teamwork_GetLockableStatus</a> (objectSetGuid);</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordflow">if</span> (lockableStatus == APILockableStatus_Editable) {</div>
+<div class="line"><span class="keywordflow">if</span> (lockableStatus == <a class="code hl_enumvalue" href="group___library_part.html#ggada81f0b453c0e5ad4e3f00a0100fd7dda6e04c051c79ab0bcde7beaedf7a9a618">APILockableStatus_Editable</a>) {</div>
 <div class="line">    GSErrCode errCode = <a class="code hl_function" href="#ga7dbdcea74d053d1d27992c40a915c2c6">ACAPI_Teamwork_ReleaseLockable</a> (objectSetGuid);</div>
 <div class="line">    <span class="keywordflow">if</span> (errCode == NoError)</div>
 <div class="line">        <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;Layer Settings has been released succesfully&quot;</span>, <span class="keyword">true</span>);</div>
@@ -897,7 +943,7 @@ For more information on lockable object sets see the Teamwork Control page. </li
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The given parameter is nullptr.</li>
 <li>APIERR_NOPLAN - There is no open project.</li>
 <li>APIERR_NOTEAMWORKPROJECT - The current project is not a Teamwork project. </li>
@@ -956,13 +1002,13 @@ For more information on lockable object sets see the Teamwork Control page. </li
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a> objectSetGuid = <a class="code hl_function" href="#ga4083bc8dc976a2a03b2036b80f94d721">ACAPI_Teamwork_FindLockableObjectSet</a> (<span class="stringliteral">&quot;Profiles&quot;</span>);</div>
 <div class="line"><a class="code hl_enumeration" href="group___library_part.html#gada81f0b453c0e5ad4e3f00a0100fd7dd">API_LockableStatus</a> lockableStatus = <a class="code hl_function" href="#ga2663c9f52125a8b59459fe1f48ebdadf">ACAPI_Teamwork_GetLockableStatus</a> (objectSetGuid);</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordflow">if</span> (lockableStatus == APILockableStatus_Free) {</div>
+<div class="line"><span class="keywordflow">if</span> (lockableStatus == <a class="code hl_enumvalue" href="group___library_part.html#ggada81f0b453c0e5ad4e3f00a0100fd7dda6acf701d7d800609f09340622a62a179">APILockableStatus_Free</a>) {</div>
 <div class="line">    GSErrCode errCode = <a class="code hl_function" href="#ga9398b6e24d97acd7aa95727efba64417">ACAPI_Teamwork_ReserveLockable</a> (objectSetGuid);</div>
 <div class="line">    <span class="keywordflow">if</span> (errCode == NoError)</div>
 <div class="line">        <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;Profile attributes has been reserved succesfully&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line">    <span class="keywordflow">else</span></div>
 <div class="line">        <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;Reservation of Profile attributes has failed&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line">} <span class="keywordflow">else</span> <span class="keywordflow">if</span> (lockableStatus == APILockableStatus_Editable) {</div>
+<div class="line">} <span class="keywordflow">else</span> <span class="keywordflow">if</span> (lockableStatus == <a class="code hl_enumvalue" href="group___library_part.html#ggada81f0b453c0e5ad4e3f00a0100fd7dda6e04c051c79ab0bcde7beaedf7a9a618">APILockableStatus_Editable</a>) {</div>
 <div class="line">    <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;Profile attributes has already been reserved&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line">} <span class="keywordflow">else</span> {</div>
 <div class="line">    <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;Profile attributes cannot be reserved at the moment&quot;</span>, <span class="keyword">true</span>);</div>
@@ -1012,7 +1058,7 @@ For more information on lockable object sets see the Teamwork Control page. </li
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOTEAMWORKPROJECT - The given project is not Teamwork project. </li>
 </ul>
 </dd></dl>
@@ -1090,17 +1136,17 @@ For more information on lockable object sets see the Teamwork Control page. </li
 <p>Retrieves the TeamWork owner of a given database. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">databaseUnId</td><td>[in] The unique ID of the database </td></tr>
-    <tr><td class="paramname">userId</td><td>[out] The TeamWork user ID of the owner of the specified database </td></tr>
+    <tr><td class="paramname">databaseUnId</td><td>[in] The unique ID of the database. </td></tr>
+    <tr><td class="paramname">userId</td><td>[out] The TeamWork user ID of the owner of the specified database. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - The dbUnID or the userId parameter is nullptr, or dbUnID is not valid </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - The dbUnID or the userId parameter is nullptr, or dbUnID is not valid. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the user ID of the owner of a database. You can get the user ID of the current TeamWork client with <a class="el" href="group___project_operation.html#ga4206a95897630b18018bf196d3ce3159">ACAPI_ProjectOperation_Project</a>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function retrieves the user ID of the owner of a database. You can get the user ID of the current TeamWork client with <a class="el" href="group___project_operation.html#ga4206a95897630b18018bf196d3ce3159">ACAPI_ProjectOperation_Project</a>. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">short</span> userId = 0;</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___window_info.html">API_DatabaseInfo</a> databaseInfo {};</div>
 <div class="line"> </div>
@@ -1140,7 +1186,7 @@ For more information on lockable object sets see the Teamwork Control page. </li
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOPLAN - There is no open project.</li>
 <li>APIERR_NOTEAMWORKPROJECT - The current project is not Teamwork project. </li>
 </ul>
@@ -1177,12 +1223,12 @@ For more information on lockable object sets see the Teamwork Control page. </li
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter elemGuids is empty, contains APINULLGuid, or not all the elements are on the same floor.</li>
 <li>APIERR_BADID - If any of the elemGuids is not an AddOnObject GUID. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>If the function has completed with success then the specified elements will be granted to the given user. The process runs in silent mode, no dialogs or messages will interrupt. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>If the function has completed successfully then the specified elements will be granted to the given user. The process runs in silent mode, no dialogs or messages will interrupt. </dd></dl>
 
 </div>
 </div>
@@ -1416,7 +1462,7 @@ For more information on lockable object sets see the Teamwork Control page. </li
 <p>Receives changes from the BIMcloud server. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOPLAN - There is no open project.</li>
 <li>APIERR_NOTEAMWORKPROJECT - The current project is not a Teamwork project. </li>
 </ul>
@@ -1454,7 +1500,7 @@ For more information on lockable object sets see the Teamwork Control page. </li
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOPLAN - There is no open project.</li>
 <li>APIERR_NOTEAMWORKPROJECT - The current project is not Teamwork project. </li>
 </ul>
@@ -1486,7 +1532,7 @@ For more information on lockable object sets see the Teamwork Control page. </li
 
 <p>Releases the Hotlink/XRef Management in Teamwork mode. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>Error - The Hotlink/XRef Management is reserved by another team member.</li>
 <li>APIERR_NOPLAN - There is no open project.</li>
 <li>APIERR_NOTEAMWORKPROJECT - The current project is not a Teamwork project. </li>
@@ -1530,7 +1576,7 @@ For more information on lockable object sets see the Teamwork Control page. </li
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOPLAN - There is no open project.</li>
 <li>APIERR_NOTEAMWORKPROJECT - The current project is not Teamwork project.</li>
 <li>APIERR_BADID - The given objectId is not a valid lockable object set identifier.</li>
@@ -1541,7 +1587,7 @@ For more information on lockable object sets see the Teamwork Control page. </li
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a> objectSetGuid = <a class="code hl_function" href="#ga4083bc8dc976a2a03b2036b80f94d721">ACAPI_Teamwork_FindLockableObjectSet</a> (<span class="stringliteral">&quot;LayerSettingsDialog&quot;</span>);</div>
 <div class="line"><a class="code hl_enumeration" href="group___library_part.html#gada81f0b453c0e5ad4e3f00a0100fd7dd">API_LockableStatus</a> lockableStatus = <a class="code hl_function" href="#ga2663c9f52125a8b59459fe1f48ebdadf">ACAPI_Teamwork_GetLockableStatus</a> (objectSetGuid);</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordflow">if</span> (lockableStatus == APILockableStatus_Editable) {</div>
+<div class="line"><span class="keywordflow">if</span> (lockableStatus == <a class="code hl_enumvalue" href="group___library_part.html#ggada81f0b453c0e5ad4e3f00a0100fd7dda6e04c051c79ab0bcde7beaedf7a9a618">APILockableStatus_Editable</a>) {</div>
 <div class="line">    GSErrCode errCode = <a class="code hl_function" href="#ga7dbdcea74d053d1d27992c40a915c2c6">ACAPI_Teamwork_ReleaseLockable</a> (objectSetGuid);</div>
 <div class="line">    <span class="keywordflow">if</span> (errCode == NoError)</div>
 <div class="line">        <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;Layer Settings has been released succesfully&quot;</span>, <span class="keyword">true</span>);</div>
@@ -1595,7 +1641,7 @@ For more information on lockable object sets see the Teamwork Control page. </li
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOACCESSRIGHT - The current user does not have the right to remove libraries from the given BIMcloud server.</li>
 <li>APIERR_BADNAME - The given parentPath is invalid.</li>
 <li>APIERR_GENERAL - Some of the libraries could not be removed. Check the errorCodesByLibraries array for more information. </li>
@@ -1639,7 +1685,7 @@ For more information on lockable object sets see the Teamwork Control page. </li
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOPLAN - There is no open project.</li>
 <li>APIERR_NOTEAMWORKPROJECT - The current project is not Teamwork project. </li>
 </ul>
@@ -1680,7 +1726,7 @@ For more information on lockable object sets see the Teamwork Control page. </li
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>Error - The Hotlink/XRef Management is reserved by another team member.</li>
 <li>APIERR_NOPLAN - There is no open project.</li>
 <li>APIERR_NOTEAMWORKPROJECT - The current project is not a Teamwork project. </li>
@@ -1733,7 +1779,7 @@ For more information on lockable object sets see the Teamwork Control page. </li
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOPLAN - There is no open project.</li>
 <li>APIERR_NOTEAMWORKPROJECT - The current project is not Teamwork project.</li>
 <li>APIERR_BADID - The given objectId is not a valid lockable object set identifier.</li>
@@ -1744,13 +1790,13 @@ For more information on lockable object sets see the Teamwork Control page. </li
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a> objectSetGuid = <a class="code hl_function" href="#ga4083bc8dc976a2a03b2036b80f94d721">ACAPI_Teamwork_FindLockableObjectSet</a> (<span class="stringliteral">&quot;Profiles&quot;</span>);</div>
 <div class="line"><a class="code hl_enumeration" href="group___library_part.html#gada81f0b453c0e5ad4e3f00a0100fd7dd">API_LockableStatus</a> lockableStatus = <a class="code hl_function" href="#ga2663c9f52125a8b59459fe1f48ebdadf">ACAPI_Teamwork_GetLockableStatus</a> (objectSetGuid);</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordflow">if</span> (lockableStatus == APILockableStatus_Free) {</div>
+<div class="line"><span class="keywordflow">if</span> (lockableStatus == <a class="code hl_enumvalue" href="group___library_part.html#ggada81f0b453c0e5ad4e3f00a0100fd7dda6acf701d7d800609f09340622a62a179">APILockableStatus_Free</a>) {</div>
 <div class="line">    GSErrCode errCode = <a class="code hl_function" href="#ga9398b6e24d97acd7aa95727efba64417">ACAPI_Teamwork_ReserveLockable</a> (objectSetGuid);</div>
 <div class="line">    <span class="keywordflow">if</span> (errCode == NoError)</div>
 <div class="line">        <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;Profile attributes has been reserved succesfully&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line">    <span class="keywordflow">else</span></div>
 <div class="line">        <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;Reservation of Profile attributes has failed&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line">} <span class="keywordflow">else</span> <span class="keywordflow">if</span> (lockableStatus == APILockableStatus_Editable) {</div>
+<div class="line">} <span class="keywordflow">else</span> <span class="keywordflow">if</span> (lockableStatus == <a class="code hl_enumvalue" href="group___library_part.html#ggada81f0b453c0e5ad4e3f00a0100fd7dda6e04c051c79ab0bcde7beaedf7a9a618">APILockableStatus_Editable</a>) {</div>
 <div class="line">    <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;Profile attributes has already been reserved&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line">} <span class="keywordflow">else</span> {</div>
 <div class="line">    <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;Profile attributes cannot be reserved at the moment&quot;</span>, <span class="keyword">true</span>);</div>
@@ -1783,7 +1829,7 @@ For more information on lockable object sets see the Teamwork Control page. </li
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOPLAN - There is no open project.</li>
 <li>APIERR_NOTEAMWORKPROJECT - The current project is not a Teamwork project. </li>
 </ul>
@@ -1867,7 +1913,7 @@ For more information on lockable object sets see the Teamwork Control page. </li
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOACCESSRIGHT - The current user does not have the right to upload libraries to the given BIMcloud server.</li>
 <li>APIERR_BADNAME - The given parentPath is invalid.</li>
 <li>APIERR_GENERAL - Some of the libraries could not be uploaded. Check the errorCodesByLocations array for more information. </li>
@@ -1899,7 +1945,7 @@ For more information on lockable object sets see the Teamwork Control page. </li
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">objectId</td><td>[in] The unique identifier of this interface (that you passed during registration). </td></tr>
-    <tr><td class="paramname">dialogId</td><td>[out] The dialog ID you registered the interface for. </td></tr>
+    <tr><td class="paramname">dialogId</td><td>[in] The dialog ID you registered the interface for. </td></tr>
   </table>
   </dd>
 </dl>

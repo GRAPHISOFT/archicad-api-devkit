@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: ACAPI::UI::Menu::MenuItem Class Reference</title>
+<title>Archicad 30 C++ API: ACAPI::UI::Menu::MenuItem Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -133,7 +133,7 @@ $(function(){initNavTree('class_a_c_a_p_i_1_1_u_i_1_1_menu_1_1_menu_item.html','
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_a_c_a_p_i_1_1_u_i_1_1_menu_1_1_menu_item.html" title="MenuItem is a representation of one of this addon&#39;s menu item.">MenuItem</a> is a representation of one of this addon's menu item.  
+<p><a class="el" href="class_a_c_a_p_i_1_1_u_i_1_1_menu_1_1_menu_item.html" title="MenuItem is a representation of one of this add-on&#39;s menu items.">MenuItem</a> is a representation of one of this add-on's menu items.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;MenuItem.hpp&gt;</code></p>
@@ -149,12 +149,18 @@ Inheritance diagram for ACAPI::UI::Menu::MenuItem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0fea78bf15ab093b72d797a42d03c350" id="r_a0fea78bf15ab093b72d797a42d03c350"><td class="memItemLeft" align="right" valign="top">GS::UniString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fea78bf15ab093b72d797a42d03c350">GetText</a> () const</td></tr>
-<tr class="memdesc:a0fea78bf15ab093b72d797a42d03c350"><td class="mdescLeft">&#160;</td><td class="mdescRight">The text of the menu item.  <br /></td></tr>
-<tr class="separator:a0fea78bf15ab093b72d797a42d03c350"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0e7eafadd7af9cba473b5a8faef764f" id="r_ab0e7eafadd7af9cba473b5a8faef764f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0e7eafadd7af9cba473b5a8faef764f">SetText</a> (const GS::UniString &amp;text)</td></tr>
-<tr class="memdesc:ab0e7eafadd7af9cba473b5a8faef764f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the text of the menu item.  <br /></td></tr>
-<tr class="separator:ab0e7eafadd7af9cba473b5a8faef764f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a125e8d51c668e1c8e480d32d4818fb34" id="r_a125e8d51c668e1c8e480d32d4818fb34"><td class="memItemLeft" align="right" valign="top">GS::UniString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a125e8d51c668e1c8e480d32d4818fb34">GetRawText</a> () const</td></tr>
+<tr class="memdesc:a125e8d51c668e1c8e480d32d4818fb34"><td class="mdescLeft">&#160;</td><td class="mdescRight">The raw text of the menu item. Raw text contains &amp; to indicate accelerator keys, and double &amp;&amp; to indicate a single &amp;.  <br /></td></tr>
+<tr class="separator:a125e8d51c668e1c8e480d32d4818fb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec61e55ae1940fb6c24a8b0bb15f78a" id="r_a4ec61e55ae1940fb6c24a8b0bb15f78a"><td class="memItemLeft" align="right" valign="top">GS::UniString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ec61e55ae1940fb6c24a8b0bb15f78a">GetDisplayText</a> () const</td></tr>
+<tr class="memdesc:a4ec61e55ae1940fb6c24a8b0bb15f78a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The display text of the menu item. Display text contains only single &amp;.  <br /></td></tr>
+<tr class="separator:a4ec61e55ae1940fb6c24a8b0bb15f78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d5c9c73a1f5a49b7aedfe25725854ab" id="r_a2d5c9c73a1f5a49b7aedfe25725854ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d5c9c73a1f5a49b7aedfe25725854ab">SetRawText</a> (const GS::UniString &amp;rawText)</td></tr>
+<tr class="memdesc:a2d5c9c73a1f5a49b7aedfe25725854ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the text of the menu item. Raw text must be used, display text is derived from the raw text. Accelerator keys may be indicated with a preceeding ampersand.  <br /></td></tr>
+<tr class="separator:a2d5c9c73a1f5a49b7aedfe25725854ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a5cbfe8d63dfeaafb490997a5637228" id="r_a8a5cbfe8d63dfeaafb490997a5637228"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a5cbfe8d63dfeaafb490997a5637228">SetDisplayText</a> (const GS::UniString &amp;displayText)</td></tr>
+<tr class="memdesc:a8a5cbfe8d63dfeaafb490997a5637228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the text of the menu item. Display text must be used, and this is converted into raw text. There are no accelerator keys.  <br /></td></tr>
+<tr class="separator:a8a5cbfe8d63dfeaafb490997a5637228"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a948ab01b3c0391431981f46afb296cae" id="r_a948ab01b3c0391431981f46afb296cae"><td class="memItemLeft" align="right" valign="top">GS::UniString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a948ab01b3c0391431981f46afb296cae">GetWorkEnvironmentText</a> () const</td></tr>
 <tr class="memdesc:a948ab01b3c0391431981f46afb296cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">The text of the menu item, which appears in the Work Environment Dialog.  <br /></td></tr>
 <tr class="separator:a948ab01b3c0391431981f46afb296cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,7 +204,7 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <tr class="separator:a2a3667f58511daf210066ca2b44dd1e3 inherit pro_attribs_class_a_c_a_p_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_a_c_a_p_i_1_1_u_i_1_1_menu_1_1_menu_item.html" title="MenuItem is a representation of one of this addon&#39;s menu item.">MenuItem</a> is a representation of one of this addon's menu item. </p>
+<div class="textblock"><p><a class="el" href="class_a_c_a_p_i_1_1_u_i_1_1_menu_1_1_menu_item.html" title="MenuItem is a representation of one of this add-on&#39;s menu items.">MenuItem</a> is a representation of one of this add-on's menu items. </p>
 <dl class="section user"><dt>Example code snippets from DG_Test / Dump information about this menucommand</dt><dd><div class="fragment"><div class="line">    <a class="code hl_struct" href="struct_a_p_i___menu_item_ref.html">API_MenuItemRef</a> itemRef;</div>
 <div class="line">    itemRef.<a class="code hl_variable" href="struct_a_p_i___menu_item_ref.html#aef080cac7ebdcbc88b22c62839728d21">menuResID</a> = DGTEST_MENU_STRINGSID;</div>
 <div class="line">    itemRef.<a class="code hl_variable" href="struct_a_p_i___menu_item_ref.html#afe147f8c06bca2aa3c143d314b5ee962">itemIndex</a> = 21;</div>
@@ -209,7 +215,7 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <div class="line">        <span class="keywordflow">return</span>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (GS::UniString::Printf (<span class="stringliteral">&quot;Current menuCommand&#39;s text: %T&quot;</span>, menuItem-&gt;GetText ().ToPrintf ()), <span class="keyword">false</span>);</div>
+<div class="line">    <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (GS::UniString::Printf (<span class="stringliteral">&quot;Current menuCommand&#39;s text: %T&quot;</span>, menuItem-&gt;GetRawText ().ToPrintf ()), <span class="keyword">false</span>);</div>
 <div class="line">    <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (GS::UniString::Printf (<span class="stringliteral">&quot;Current menuCommand&#39;s work environment text: %T&quot;</span>, menuItem-&gt;GetWorkEnvironmentText ().ToPrintf ()), <span class="keyword">false</span>);</div>
 <div class="line">    <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (GS::UniString::Printf (<span class="stringliteral">&quot;Current menuCommand&#39;s flags: %d&quot;</span>, menuItem-&gt;GetFlags ()), <span class="keyword">false</span>);</div>
 <div class="line"> </div>
@@ -228,6 +234,26 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 </div><!-- fragment --> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>Archicad 29 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4ec61e55ae1940fb6c24a8b0bb15f78a" name="a4ec61e55ae1940fb6c24a8b0bb15f78a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ec61e55ae1940fb6c24a8b0bb15f78a">&#9670;&#160;</a></span>GetDisplayText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GS::UniString ACAPI::UI::Menu::MenuItem::GetDisplayText </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The display text of the menu item. Display text contains only single &amp;. </p>
+<dl class="section return"><dt>Returns</dt><dd>Menu item text. </dd></dl>
+
+</div>
+</div>
 <a id="a50bb674381007f36d21743618aa24435" name="a50bb674381007f36d21743618aa24435"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a50bb674381007f36d21743618aa24435">&#9670;&#160;</a></span>GetFlags()</h2>
 
@@ -245,6 +271,26 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 
 <p>The flags of the menu item command. </p>
 <dl class="section return"><dt>Returns</dt><dd>The flags of the menu item command. </dd></dl>
+
+</div>
+</div>
+<a id="a125e8d51c668e1c8e480d32d4818fb34" name="a125e8d51c668e1c8e480d32d4818fb34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a125e8d51c668e1c8e480d32d4818fb34">&#9670;&#160;</a></span>GetRawText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GS::UniString ACAPI::UI::Menu::MenuItem::GetRawText </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The raw text of the menu item. Raw text contains &amp; to indicate accelerator keys, and double &amp;&amp; to indicate a single &amp;. </p>
+<dl class="section return"><dt>Returns</dt><dd>Menu item text. </dd></dl>
 
 </div>
 </div>
@@ -268,26 +314,6 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 
 </div>
 </div>
-<a id="a0fea78bf15ab093b72d797a42d03c350" name="a0fea78bf15ab093b72d797a42d03c350"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fea78bf15ab093b72d797a42d03c350">&#9670;&#160;</a></span>GetText()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GS::UniString ACAPI::UI::Menu::MenuItem::GetText </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The text of the menu item. </p>
-<dl class="section return"><dt>Returns</dt><dd>Menu item text. </dd></dl>
-
-</div>
-</div>
 <a id="a948ab01b3c0391431981f46afb296cae" name="a948ab01b3c0391431981f46afb296cae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a948ab01b3c0391431981f46afb296cae">&#9670;&#160;</a></span>GetWorkEnvironmentText()</h2>
 
@@ -305,6 +331,31 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 
 <p>The text of the menu item, which appears in the Work Environment Dialog. </p>
 <dl class="section return"><dt>Returns</dt><dd>The text that appears as the name of the menu item in the menu customization part of the work environment dialog. </dd></dl>
+
+</div>
+</div>
+<a id="a8a5cbfe8d63dfeaafb490997a5637228" name="a8a5cbfe8d63dfeaafb490997a5637228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a5cbfe8d63dfeaafb490997a5637228">&#9670;&#160;</a></span>SetDisplayText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ACAPI::UI::Menu::MenuItem::SetDisplayText </td>
+          <td>(</td>
+          <td class="paramtype">const GS::UniString &amp;</td>          <td class="paramname"><span class="paramname"><em>displayText</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the text of the menu item. Display text must be used, and this is converted into raw text. There are no accelerator keys. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">displayText</td><td>Menu item text to set. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -333,25 +384,25 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 
 </div>
 </div>
-<a id="ab0e7eafadd7af9cba473b5a8faef764f" name="ab0e7eafadd7af9cba473b5a8faef764f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0e7eafadd7af9cba473b5a8faef764f">&#9670;&#160;</a></span>SetText()</h2>
+<a id="a2d5c9c73a1f5a49b7aedfe25725854ab" name="a2d5c9c73a1f5a49b7aedfe25725854ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d5c9c73a1f5a49b7aedfe25725854ab">&#9670;&#160;</a></span>SetRawText()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ACAPI::UI::Menu::MenuItem::SetText </td>
+          <td class="memname">void ACAPI::UI::Menu::MenuItem::SetRawText </td>
           <td>(</td>
-          <td class="paramtype">const GS::UniString &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span></td><td>)</td>
+          <td class="paramtype">const GS::UniString &amp;</td>          <td class="paramname"><span class="paramname"><em>rawText</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Changes the text of the menu item. </p>
+<p>Changes the text of the menu item. Raw text must be used, display text is derived from the raw text. Accelerator keys may be indicated with a preceeding ampersand. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">text</td><td>Menu item text to set. </td></tr>
+    <tr><td class="paramname">rawText</td><td>Menu item text to set. </td></tr>
   </table>
   </dd>
 </dl>
@@ -390,7 +441,7 @@ std::shared_ptr&lt; <a class="el" href="class_a_c_a_p_i_1_1_impl_1_1_object_impl
 <div class="line">        <span class="keywordflow">return</span>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    menuItem-&gt;SetWorkEnvironmentText (GS::UniString::Printf (<span class="stringliteral">&quot;CHANGED %T&quot;</span>, menuItem-&gt;GetText ().ToPrintf ()));</div>
+<div class="line">    menuItem-&gt;SetWorkEnvironmentText (GS::UniString::Printf (<span class="stringliteral">&quot;CHANGED %T&quot;</span>, menuItem-&gt;GetRawText ().ToPrintf ()));</div>
 </div><!-- fragment --> </dd></dl>
 
 </div>

@@ -1,7 +1,17 @@
 var group___auto_text =
 [
-    [ "API_AppearID", "group___auto_text.html#ga3c6900140b5bf8289594e96470adba02", null ],
-    [ "API_AutotextType", "group___auto_text.html#gac61663cb2990265f535984a12903750a", null ],
+    [ "API_AppearID", "group___auto_text.html#ga3c6900140b5bf8289594e96470adba02", [
+      [ "APIApp_Normal", "group___auto_text.html#gga3c6900140b5bf8289594e96470adba02a24e9b9a7fe448d7c4602f8cedb75f5cf", null ],
+      [ "APIApp_Cumu", "group___auto_text.html#gga3c6900140b5bf8289594e96470adba02ae1d3fc37ba8380a71c619fe270de07a8", null ],
+      [ "APIApp_CumuSv", "group___auto_text.html#gga3c6900140b5bf8289594e96470adba02ac9350091df1b527f4d9fd290de123fdf", null ],
+      [ "APIApp_Elev", "group___auto_text.html#gga3c6900140b5bf8289594e96470adba02aef0f90983679aaf1d2692a6b6a2ec80f", null ]
+    ] ],
+    [ "API_AutotextType", "group___auto_text.html#gac61663cb2990265f535984a12903750a", [
+      [ "APIAutoText_Fixed", "group___auto_text.html#ggac61663cb2990265f535984a12903750aa6c76d0fbed1e503b2be6308291d88207", null ],
+      [ "APIAutoText_Custom", "group___auto_text.html#ggac61663cb2990265f535984a12903750aa3a28ab439964244feff0879372087f0d", null ],
+      [ "APIAutoText_Other", "group___auto_text.html#ggac61663cb2990265f535984a12903750aa690cf6daddad7c2a78f84b7cf83c0cf4", null ],
+      [ "APIAutoText_All", "group___auto_text.html#ggac61663cb2990265f535984a12903750aa62c1da3f107f37d457947e66c5fe5b01", null ]
+    ] ],
     [ "API_NoteAutotextID", "group___auto_text.html#gafa2e69b7adbd55f4bb0d2b40c62d8f12", [
       [ "API_NoteAutotextID::MeasuredValue", "group___auto_text.html#ggafa2e69b7adbd55f4bb0d2b40c62d8f12a47a209f4884ce291075420bb29c3148f", null ],
       [ "API_NoteAutotextID::MeasuredValueToPZ", "group___auto_text.html#ggafa2e69b7adbd55f4bb0d2b40c62d8f12af8b2c2e9c39ae3d5294b0d6b7f0fc368", null ],
@@ -33,7 +43,7 @@ var group___auto_text =
       [ "API_NoteAutotextID::StoredOriginName", "group___auto_text.html#ggafa2e69b7adbd55f4bb0d2b40c62d8f12af0a03e13c12b69af447fa9d88b6432ea", null ]
     ] ],
     [ "ACAPI_AutoText_ChangeAutoTextFlag", "group___auto_text.html#ga1e0ea1250811842f7a217f90c8ba001c", null ],
-    [ "ACAPI_AutoText_CreateAnAutoText", "group___auto_text.html#gaa712651e627f6049e6152591983a1a58", null ],
+    [ "ACAPI_AutoText_CreateAnAutoText", "group___auto_text.html#ga50717ce283c352869a399ebee6543ffa", null ],
     [ "ACAPI_AutoText_DeleteAnAutoText", "group___auto_text.html#ga77cf0b172892ddb61741a812fc795878", null ],
     [ "ACAPI_AutoText_GetAutoTextFlag", "group___auto_text.html#gafc0d6630cb33368e1ea1712d0b44af42", null ],
     [ "ACAPI_AutoText_GetAutoTextKeys", "group___auto_text.html#ga4d9a5269d6cb1897c8d0b805cee00576", null ],

@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Hierarchical editing</title>
+<title>Archicad 30 C++ API: Hierarchical editing</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -126,6 +126,7 @@ $(function(){initNavTree('group___hierarchical_editing.html',''); initResizable(
 
 <div class="header">
   <div class="summary">
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Hierarchical editing</div></div>
 </div><!--header-->
@@ -134,6 +135,27 @@ $(function(){initNavTree('group___hierarchical_editing.html',''); initResizable(
 <p>Functions dealing with Hierarchical Element-specific information, such as Edit Mode, stair solving and so on.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga0a0e9ff830b65d4c1186b5028c1d1704" id="r_ga0a0e9ff830b65d4c1186b5028c1d1704"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0a0e9ff830b65d4c1186b5028c1d1704">API_StairSolutionID</a> { <a class="el" href="#gga0a0e9ff830b65d4c1186b5028c1d1704ad8216eb44fe8e4f422a39b2fee661ce3">APISS_Correct</a>
+, <a class="el" href="#gga0a0e9ff830b65d4c1186b5028c1d1704a378399ab39b9b39e563cfd56457b1a99">APISS_Solved</a>
+, <a class="el" href="#gga0a0e9ff830b65d4c1186b5028c1d1704ad08c568791a473733b3621711b0d18fd">APISS_NotSolved</a>
+ }</td></tr>
+<tr class="memdesc:ga0a0e9ff830b65d4c1186b5028c1d1704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum used by <a class="el" href="#ga0b3d350a66e940ac93518a5864f65c3d">ACAPI_HierarchicalEditing_SolveStair</a>.  <a href="#ga0a0e9ff830b65d4c1186b5028c1d1704">More...</a><br /></td></tr>
+<tr class="separator:ga0a0e9ff830b65d4c1186b5028c1d1704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab9c3cb936c9f2d72367495f3c85af3d3" id="r_gab9c3cb936c9f2d72367495f3c85af3d3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab9c3cb936c9f2d72367495f3c85af3d3">API_HierarchicalOwnerType</a> { <a class="el" href="#ggab9c3cb936c9f2d72367495f3c85af3d3a79f3b45c6144c7ba20be5b41a621f71d">API_RootHierarchicalOwner</a>
+, <a class="el" href="#ggab9c3cb936c9f2d72367495f3c85af3d3ab707e657d96376a3ae5b606afc01421d">API_ParentHierarchicalOwner</a>
+ }</td></tr>
+<tr class="memdesc:gab9c3cb936c9f2d72367495f3c85af3d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum used by <a class="el" href="#ga352ee45fd0f6fbb669349da1e50267f5">ACAPI_HierarchicalEditing_GetHierarchicalElementOwner</a>.  <a href="#gab9c3cb936c9f2d72367495f3c85af3d3">More...</a><br /></td></tr>
+<tr class="separator:gab9c3cb936c9f2d72367495f3c85af3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99d069d116e98792bc907773f7e29541" id="r_ga99d069d116e98792bc907773f7e29541"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga99d069d116e98792bc907773f7e29541">API_HierarchicalElemType</a> { <a class="el" href="#gga99d069d116e98792bc907773f7e29541a4e9d091c33c5a6df8e4151bdd135a208">API_MainElemInMultipleElem</a>
+, <a class="el" href="#gga99d069d116e98792bc907773f7e29541a8c6bb3e8ca2b3b2be3ad25a44565a9a6">API_ChildElemInMultipleElem</a>
+, <a class="el" href="#gga99d069d116e98792bc907773f7e29541a02822b7eb49b8eb2afa31b74cb08cf62">API_SingleElem</a>
+, <a class="el" href="#gga99d069d116e98792bc907773f7e29541afe58e74ac662b34fdcbe57864e01de0c">API_UnknownElemType</a>
+ }</td></tr>
+<tr class="memdesc:ga99d069d116e98792bc907773f7e29541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum used by <a class="el" href="#ga352ee45fd0f6fbb669349da1e50267f5">ACAPI_HierarchicalEditing_GetHierarchicalElementOwner</a>.  <a href="#ga99d069d116e98792bc907773f7e29541">More...</a><br /></td></tr>
+<tr class="separator:ga99d069d116e98792bc907773f7e29541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga7ed23b89f376fb293c8274da6da08a7d" id="r_ga7ed23b89f376fb293c8274da6da08a7d"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7ed23b89f376fb293c8274da6da08a7d">ACAPI_HierarchicalEditing_IsInEditMode</a> (bool &amp;isInEditMode)</td></tr>
@@ -151,10 +173,10 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf2077af04883056d12477b3636452cce" id="r_gaf2077af04883056d12477b3636452cce"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf2077af04883056d12477b3636452cce">ACAPI_HierarchicalEditing_IsInColumnEditMode</a> (bool &amp;isInEditMode, <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> *editedColumn=nullptr)</td></tr>
 <tr class="memdesc:gaf2077af04883056d12477b3636452cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if application is in column editing mode.  <br /></td></tr>
 <tr class="separator:gaf2077af04883056d12477b3636452cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0b3d350a66e940ac93518a5864f65c3d" id="r_ga0b3d350a66e940ac93518a5864f65c3d"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0b3d350a66e940ac93518a5864f65c3d">ACAPI_HierarchicalEditing_SolveStair</a> (<a class="el" href="struct_a_p_i___stair_type.html">API_StairType</a> *apiStair, <a class="el" href="struct_a_p_i___element_memo.html">API_ElementMemo</a> *apiMemo, API_StairSolutionID *solution)</td></tr>
+<tr class="memitem:ga0b3d350a66e940ac93518a5864f65c3d" id="r_ga0b3d350a66e940ac93518a5864f65c3d"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0b3d350a66e940ac93518a5864f65c3d">ACAPI_HierarchicalEditing_SolveStair</a> (<a class="el" href="struct_a_p_i___stair_type.html">API_StairType</a> *apiStair, <a class="el" href="struct_a_p_i___element_memo.html">API_ElementMemo</a> *apiMemo, <a class="el" href="#ga0a0e9ff830b65d4c1186b5028c1d1704">API_StairSolutionID</a> *solution)</td></tr>
 <tr class="memdesc:ga0b3d350a66e940ac93518a5864f65c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a valid stair baseline from invalid data.  <br /></td></tr>
 <tr class="separator:ga0b3d350a66e940ac93518a5864f65c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga352ee45fd0f6fbb669349da1e50267f5" id="r_ga352ee45fd0f6fbb669349da1e50267f5"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga352ee45fd0f6fbb669349da1e50267f5">ACAPI_HierarchicalEditing_GetHierarchicalElementOwner</a> (const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> *elemApiGuid, const API_HierarchicalOwnerType *hierarchicalOwnerType, API_HierarchicalElemType *hierarchicalElemType, <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> *ownerElemApiGuid)</td></tr>
+<tr class="memitem:ga352ee45fd0f6fbb669349da1e50267f5" id="r_ga352ee45fd0f6fbb669349da1e50267f5"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga352ee45fd0f6fbb669349da1e50267f5">ACAPI_HierarchicalEditing_GetHierarchicalElementOwner</a> (const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> *elemApiGuid, const <a class="el" href="#gab9c3cb936c9f2d72367495f3c85af3d3">API_HierarchicalOwnerType</a> *hierarchicalOwnerType, <a class="el" href="#ga99d069d116e98792bc907773f7e29541">API_HierarchicalElemType</a> *hierarchicalElemType, <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> *ownerElemApiGuid)</td></tr>
 <tr class="memdesc:ga352ee45fd0f6fbb669349da1e50267f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the owner of the child elem in hierarchical elem.  <br /></td></tr>
 <tr class="separator:ga352ee45fd0f6fbb669349da1e50267f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac84c76e7704d4428912f7cc4be577b70" id="r_gac84c76e7704d4428912f7cc4be577b70"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac84c76e7704d4428912f7cc4be577b70">ACAPI_HierarchicalEditing_EditHierarchicalElem</a> (const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> *guid)</td></tr>
@@ -170,6 +192,81 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions dealing with Hierarchical Element-specific information, such as Edit Mode, stair solving and so on. </p>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga99d069d116e98792bc907773f7e29541" name="ga99d069d116e98792bc907773f7e29541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga99d069d116e98792bc907773f7e29541">&#9670;&#160;</a></span>API_HierarchicalElemType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga99d069d116e98792bc907773f7e29541">API_HierarchicalElemType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enum used by <a class="el" href="#ga352ee45fd0f6fbb669349da1e50267f5">ACAPI_HierarchicalEditing_GetHierarchicalElementOwner</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga99d069d116e98792bc907773f7e29541a4e9d091c33c5a6df8e4151bdd135a208" name="gga99d069d116e98792bc907773f7e29541a4e9d091c33c5a6df8e4151bdd135a208"></a>API_MainElemInMultipleElem&#160;</td><td class="fielddoc"><p>The element is the main element of the hierarchical element. eg. Curtain Wall, Stair, Railing <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga99d069d116e98792bc907773f7e29541a8c6bb3e8ca2b3b2be3ad25a44565a9a6" name="gga99d069d116e98792bc907773f7e29541a8c6bb3e8ca2b3b2be3ad25a44565a9a6"></a>API_ChildElemInMultipleElem&#160;</td><td class="fielddoc"><p>The element is a child element in the hierarchical element. eg. Curtain Wall Frame, Tread, ... </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga99d069d116e98792bc907773f7e29541a02822b7eb49b8eb2afa31b74cb08cf62" name="gga99d069d116e98792bc907773f7e29541a02822b7eb49b8eb2afa31b74cb08cf62"></a>API_SingleElem&#160;</td><td class="fielddoc"><p>This element isn't part of a hierarchical element. eg. Wall, Slab, ... <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga99d069d116e98792bc907773f7e29541afe58e74ac662b34fdcbe57864e01de0c" name="gga99d069d116e98792bc907773f7e29541afe58e74ac662b34fdcbe57864e01de0c"></a>API_UnknownElemType&#160;</td><td class="fielddoc"><p>Occurs in case of error. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gab9c3cb936c9f2d72367495f3c85af3d3" name="gab9c3cb936c9f2d72367495f3c85af3d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab9c3cb936c9f2d72367495f3c85af3d3">&#9670;&#160;</a></span>API_HierarchicalOwnerType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#gab9c3cb936c9f2d72367495f3c85af3d3">API_HierarchicalOwnerType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enum used by <a class="el" href="#ga352ee45fd0f6fbb669349da1e50267f5">ACAPI_HierarchicalEditing_GetHierarchicalElementOwner</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab9c3cb936c9f2d72367495f3c85af3d3a79f3b45c6144c7ba20be5b41a621f71d" name="ggab9c3cb936c9f2d72367495f3c85af3d3a79f3b45c6144c7ba20be5b41a621f71d"></a>API_RootHierarchicalOwner&#160;</td><td class="fielddoc"><p>Owner means the root of the hierarchical tree, so the function will return the main element of the hierarchical element. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab9c3cb936c9f2d72367495f3c85af3d3ab707e657d96376a3ae5b606afc01421d" name="ggab9c3cb936c9f2d72367495f3c85af3d3ab707e657d96376a3ae5b606afc01421d"></a>API_ParentHierarchicalOwner&#160;</td><td class="fielddoc"><p>Owner means parent relationship in the hierarchical tree, so it's possible that the returned owner element is also a child. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga0a0e9ff830b65d4c1186b5028c1d1704" name="ga0a0e9ff830b65d4c1186b5028c1d1704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0a0e9ff830b65d4c1186b5028c1d1704">&#9670;&#160;</a></span>API_StairSolutionID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga0a0e9ff830b65d4c1186b5028c1d1704">API_StairSolutionID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enum used by <a class="el" href="#ga0b3d350a66e940ac93518a5864f65c3d">ACAPI_HierarchicalEditing_SolveStair</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga0a0e9ff830b65d4c1186b5028c1d1704ad8216eb44fe8e4f422a39b2fee661ce3" name="gga0a0e9ff830b65d4c1186b5028c1d1704ad8216eb44fe8e4f422a39b2fee661ce3"></a>APISS_Correct&#160;</td><td class="fielddoc"><p>The baseline was already correct, no operation was needed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0a0e9ff830b65d4c1186b5028c1d1704a378399ab39b9b39e563cfd56457b1a99" name="gga0a0e9ff830b65d4c1186b5028c1d1704a378399ab39b9b39e563cfd56457b1a99"></a>APISS_Solved&#160;</td><td class="fielddoc"><p>The baseline was successfully solved. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0a0e9ff830b65d4c1186b5028c1d1704ad08c568791a473733b3621711b0d18fd" name="gga0a0e9ff830b65d4c1186b5028c1d1704ad08c568791a473733b3621711b0d18fd"></a>APISS_NotSolved&#160;</td><td class="fielddoc"><p>The baseline could not be solved. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga3f98fa6c2c2082068fe983d1bba2ffa2" name="ga3f98fa6c2c2082068fe983d1bba2ffa2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3f98fa6c2c2082068fe983d1bba2ffa2">&#9670;&#160;</a></span>ACAPI_GetReleaseNumber()</h2>
@@ -189,11 +286,11 @@ Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>Archicad 26 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">serverApplicationInfo</td><td>[out] Contains the main and maintenance release number of the server application. The main version for the current release is equal to the ServerMainVers_2900 constant in ACAPinc.h. </td></tr>
+    <tr><td class="paramname">serverApplicationInfo</td><td>[out] Contains the main and maintenance release number of the server application. The main version for the current release is equal to the ServerMainVers_3000 constant in ACAPinc.h. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>If you have features or workarounds in your add-on that work only with special releases of the server application, you can obtain that version information during runtime with this function. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>If your add-on has features or workarounds that work only with special releases of the server application, you can obtain that version information during runtime with this function. </dd></dl>
 
 </div>
 </div>
@@ -267,12 +364,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const API_HierarchicalOwnerType *</td>          <td class="paramname"><span class="paramname"><em>hierarchicalOwnerType</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="#gab9c3cb936c9f2d72367495f3c85af3d3">API_HierarchicalOwnerType</a> *</td>          <td class="paramname"><span class="paramname"><em>hierarchicalOwnerType</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">API_HierarchicalElemType *</td>          <td class="paramname"><span class="paramname"><em>hierarchicalElemType</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#ga99d069d116e98792bc907773f7e29541">API_HierarchicalElemType</a> *</td>          <td class="paramname"><span class="paramname"><em>hierarchicalElemType</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -579,7 +676,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">API_StairSolutionID *</td>          <td class="paramname"><span class="paramname"><em>solution</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#ga0a0e9ff830b65d4c1186b5028c1d1704">API_StairSolutionID</a> *</td>          <td class="paramname"><span class="paramname"><em>solution</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

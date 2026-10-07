@@ -6,7 +6,7 @@ var searchData=
   ['hasactualrevision_3',['hasActualRevision',['../struct_a_p_i___layout_info.html#ae305880c6129338b37d6d76db444836e',1,'API_LayoutInfo']]],
   ['hasbodycollision_4',['hasBodyCollision',['../struct_a_p_i___collision_elem.html#a294a22e5b80dac435ff92f2f23d060b2',1,'API_CollisionElem']]],
   ['hasborderline_5',['hasBorderLine',['../struct_a_p_i___drawing_type.html#a31908ebabbfbe28d1b562a88fa25d0ea',1,'API_DrawingType']]],
-  ['hasclearencecollision_6',['hasClearenceCollision',['../struct_a_p_i___collision_elem.html#ac463c3d304b4a7be1fb1f371e886d643',1,'API_CollisionElem']]],
+  ['hasclearancecollision_6',['hasClearanceCollision',['../struct_a_p_i___collision_elem.html#a5c1b3962fc3193e8e565c5e956acc298',1,'API_CollisionElem']]],
   ['hascontour_7',['hasContour',['../struct_a_p_i___shell_type.html#aea91188627392fc2c95cc45843a2f344',1,'API_ShellType']]],
   ['hasdoor_8',['hasDoor',['../struct_a_p_i___wall_type.html#a47012b6f41b4a606b95c85030716f9d8',1,'API_WallType']]],
   ['hasexpression_9',['hasExpression',['../struct_a_p_i___property_default_value.html#a9cb218f0292d248beb3e3689b797afa1',1,'API_PropertyDefaultValue']]],

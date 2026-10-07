@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['on_20management_0',['Add-On Management',['../_tools__add_on_management.html',1,'']]],
-  ['ons_1',['Getting started with Archicad Add-Ons',['../_getting_started.html',1,'']]],
-  ['own_20data_20saved_20into_20the_20database_2',['Own Data Saved into the Database',['../_own_data.html',1,'']]]
+  ['new_20api_20features_20in_20archicad_2030_0',['New API features in Archicad 30',['../newfeatures.html',1,'']]],
+  ['notifications_5foverview_1',['Notifications_Overview',['../md__common_doxygen_files_2_group_overviews_2_notifications___overview.html',1,'']]]
 ];

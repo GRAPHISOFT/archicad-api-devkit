@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['teamwork_5foverview_0',['Teamwork_Overview',['../md__common_doxygen_files_2_group_overviews_2_teamwork___overview.html',1,'']]],
-  ['the_20database_1',['Own Data Saved into the Database',['../_own_data.html',1,'']]],
-  ['the_20load_20unload_20mechanism_2',['Control the Load/Unload Mechanism',['../_load_unload.html',1,'']]],
-  ['tracker_5foverview_3',['Tracker_Overview',['../md__common_doxygen_files_2_group_overviews_2_tracker___overview.html',1,'']]]
+  ['saved_20into_20the_20database_0',['Own Data Saved into the Database',['../_own_data.html',1,'']]],
+  ['settings_20dialogs_1',['Custom panels in settings dialogs',['../_custom_panels.html',1,'']]],
+  ['started_20with_20archicad_20add_20ons_2',['Getting started with Archicad Add-Ons',['../_getting_started.html',1,'']]],
+  ['string_20handling_3',['Unicode string handling',['../unicodestringhandling.html',1,'']]],
+  ['subtypes_4',['Library Part Subtypes',['../_subtypes.html',1,'']]]
 ];

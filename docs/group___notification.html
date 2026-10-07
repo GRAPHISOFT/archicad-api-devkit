@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Notifications Manager</title>
+<title>Archicad 30 C++ API: Notifications Manager</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -143,7 +143,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_c_a_p_i_1_1_edit_notification_interface.html" title="EditNotificationInterface is responsible for handling Edit Notifications through API....">EditNotificationInterface</a> is responsible for handling Edit Notifications through API. You can make your own notification implementation, which will be executed after element editings.  <a href="class_a_c_a_p_i_1_1_edit_notification_interface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_c_a_p_i_1_1_u_i_1_1_notification_1_1_notification_bubble.html">ACAPI::UI::Notification::NotificationBubble</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_c_a_p_i_1_1_u_i_1_1_notification_1_1_notification_bubble.html" title="NotificationBubble is a tooltip-like small window, which can display various informations for the use...">NotificationBubble</a> is a tooltip-like small window, which can display various informations for the user.  <a href="class_a_c_a_p_i_1_1_u_i_1_1_notification_1_1_notification_bubble.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_c_a_p_i_1_1_u_i_1_1_notification_1_1_notification_bubble.html" title="NotificationBubble is a tooltip-like small window, which can display various information for the user...">NotificationBubble</a> is a tooltip-like small window, which can display various information for the user.  <a href="class_a_c_a_p_i_1_1_u_i_1_1_notification_1_1_notification_bubble.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_c_a_p_i_1_1_u_i_1_1_notification_1_1_notification_bubble_manager.html">ACAPI::UI::Notification::NotificationBubbleManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that contains notification bubble related functions.  <a href="class_a_c_a_p_i_1_1_u_i_1_1_notification_1_1_notification_bubble_manager.html#details">More...</a><br /></td></tr>
@@ -205,6 +205,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_p_i___i_window_event_handler.html">API_IWindowEventHandler</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class you need to inherit from in case you want to handle window change events.  <a href="class_a_p_i___i_window_event_handler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_p_i___i_view3_d_settings_event_handler.html">API_IView3DSettingsEventHandler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base class you need to inherit from in case you want to handle view 3D settings events.  <a href="class_a_p_i___i_view3_d_settings_event_handler.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___act_tran_pars.html">API_ActTranPars</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for retrieving the transformation data of the actual editing operation.  <a href="struct_a_p_i___act_tran_pars.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,6 +247,78 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ga53738527de6fe0daccedd7f9cb9ff81c" id="r_ga53738527de6fe0daccedd7f9cb9ff81c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___project_operation.html#ga53738527de6fe0daccedd7f9cb9ff81c">API_NotifyEventID</a> { <br />
+&#160;&#160;<a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca947c3db4033fc235500de01bb255cea7">APINotify_New</a> = 0x00000001
+, <a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca80c64a432b3612723798505eafcba957">APINotify_NewAndReset</a> = 0x00000002
+, <a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca44bcad20b3de40164bd9609cfb407ad2">APINotify_Open</a> = 0x00000004
+, <a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca5061f4a73a860bc7cc6c785a363fac97">APINotify_PreSave</a> = 0x00000008
+, <br />
+&#160;&#160;<a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca1215bd22fe8cb03111c8495dd57688b5">APINotify_Save</a> = 0x00000010
+, <a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca29c0820cf7d6153d31d2e6a0bfab78b5">APINotify_Close</a> = 0x00000020
+, <a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca93f511732da8001bdda37bbbe94e018a">APINotify_Quit</a> = 0x00000040
+, <a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81cae2e026851ce5fc3b0bacff4de9d18371">APINotify_TempSave</a> = 0x00000080
+, <br />
+&#160;&#160;<a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca40ab233673c369fe683929fd980737a9">APINotify_SendChanges</a> = 0x00008000
+, <a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81cad0e01ad7e47a3d562e6ac7a9e5b80fc7">APINotify_ReceiveChanges</a> = 0x00010000
+, <a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81cafbf0bc4543fd9f8e55acd7c4f80b5012">APINotify_ChangeProjectDB</a> = 0x00040000
+, <a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca7c74d741ac3a6da2cf9d23b1bf60ca9c">APINotify_ChangeWindow</a> = 0x00080000
+, <br />
+&#160;&#160;<a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca86230c4059a918142236507a41da4d81">APINotify_ChangeFloor</a> = 0x00100000
+, <a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca1e3e99b9a6cf630a599633c2e79770fa">APINotify_ChangeLibrary</a> = 0x00200000
+, <a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca5dea68ad4bdb3fd723d42e7c7545d6fe">APINotify_AllInputFinished</a> = 0x00400000
+, <a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca91069c374e6d92491e13ea700211cdc8">APINotify_UnitChanged</a> = 0x00800000
+, <br />
+&#160;&#160;<a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca81a7bd9a4f4cf427457ed71f49bef1f2">APINotify_SideviewCreated</a> = 0x01000000
+, <a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca791dfede7118c34871cfd74209248ec8">APINotify_SideviewRebuilt</a> = 0x02000000
+, <a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca6a777ec39ffd151d4788ef4f0d7a2cfd">APINotify_PropertyVisibilityChanged</a> = 0x04000000
+, <a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca52bafea1c6ff6d070b266a2a5251c43a">APINotify_ClassificationVisibilityChanged</a> = 0x08000000
+, <br />
+&#160;&#160;<a class="el" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81cad83107916acdc97c498d55d6a1af7845">APINotify_ShowIn3DChanged</a> = 0x10000000
+<br />
+ }</td></tr>
+<tr class="memdesc:ga53738527de6fe0daccedd7f9cb9ff81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible values for notifications on project events.  <a href="group___project_operation.html#ga53738527de6fe0daccedd7f9cb9ff81c">More...</a><br /></td></tr>
+<tr class="separator:ga53738527de6fe0daccedd7f9cb9ff81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70f285687b4cdb6d2ba04490923234ff" id="r_ga70f285687b4cdb6d2ba04490923234ff"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___project_operation.html#ga70f285687b4cdb6d2ba04490923234ff">API_NotifyViewEventID</a> { <br />
+&#160;&#160;<a class="el" href="group___project_operation.html#gga70f285687b4cdb6d2ba04490923234ffa0c1105c08e7be65388c15d76260afede">APINotifyView_Inserted</a> = 0x00000001
+, <a class="el" href="group___project_operation.html#gga70f285687b4cdb6d2ba04490923234ffab147be5a969505828ef268e885b8ba6a">APINotifyView_Modified</a> = 0x00000002
+, <a class="el" href="group___project_operation.html#gga70f285687b4cdb6d2ba04490923234ffacb0c1fa45243f681bdfee6a98e18600e">APINotifyView_Deleted</a> = 0x00000004
+, <a class="el" href="group___project_operation.html#gga70f285687b4cdb6d2ba04490923234ffa3ed60b1de922d2f436397471bce7f1eb">APINotifyView_Opened</a> = 0x00000008
+, <br />
+&#160;&#160;<a class="el" href="group___project_operation.html#gga70f285687b4cdb6d2ba04490923234ffa71fd52543475fac151a5ab27dc79e9b2">APINotifyView_Begin</a> = 0x00000010
+, <a class="el" href="group___project_operation.html#gga70f285687b4cdb6d2ba04490923234ffa4335131f8aec79b18a2b70eea2340ea4">APINotifyView_End</a> = 0x00000020
+<br />
+ }</td></tr>
+<tr class="memdesc:ga70f285687b4cdb6d2ba04490923234ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible values for notifications on Project Navigator events.  <a href="group___project_operation.html#ga70f285687b4cdb6d2ba04490923234ff">More...</a><br /></td></tr>
+<tr class="separator:ga70f285687b4cdb6d2ba04490923234ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga364db38089d40f7818ae1ebf0eeab308" id="r_ga364db38089d40f7818ae1ebf0eeab308"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga364db38089d40f7818ae1ebf0eeab308">API_NotifyWindowEventID</a> { <a class="el" href="#gga364db38089d40f7818ae1ebf0eeab308a90b88837a58072d1a9db1bf2c321d881">APINotifyWindow_Rebuild</a> = 1
+, <a class="el" href="#gga364db38089d40f7818ae1ebf0eeab308a103838960cc13309db34f66419291485">APINotifyWindow_Activate</a> = 2
+, <a class="el" href="#gga364db38089d40f7818ae1ebf0eeab308a26c43ec94f3f61f73ea7073f93a2bf41">APINotifyWindow_Close</a> = 3
+ }</td></tr>
+<tr class="memdesc:ga364db38089d40f7818ae1ebf0eeab308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the cause of the window notification.  <a href="#ga364db38089d40f7818ae1ebf0eeab308">More...</a><br /></td></tr>
+<tr class="separator:ga364db38089d40f7818ae1ebf0eeab308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9675062b3ddbdebd35b12603913af9d4" id="r_ga9675062b3ddbdebd35b12603913af9d4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___element.html#ga9675062b3ddbdebd35b12603913af9d4">API_ElementDBEventID</a> { <br />
+&#160;&#160;<a class="el" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4a6b1f73c6107bc9254bf60f3538b09ddb">APINotifyElement_BeginEvents</a> = -1
+, <a class="el" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4a5b6f6aefbce1992414b8cf14b8eb9464">APINotifyElement_EndEvents</a> = -2
+, <a class="el" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4a1e289ad174e74064d477d24b4c1b68fc">APINotifyElement_New</a> = 1
+, <a class="el" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4a1dc2d278e3eca34ae1c1487a6feef7fd">APINotifyElement_Copy</a> = 2
+, <br />
+&#160;&#160;<a class="el" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4ad7e56013d70f0ca8a7368a5b5e7f412b">APINotifyElement_Change</a> = 3
+, <a class="el" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4ad62df67f4e4dc26e25c5083296a2d52d">APINotifyElement_Edit</a> = 4
+, <a class="el" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4a09b5a40fce03ec3d41676fdcc2cae11b">APINotifyElement_Delete</a> = 5
+, <a class="el" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4a3acc3e69091f8434147dc37df4786402">APINotifyElement_Undo_Created</a> = 11
+, <br />
+&#160;&#160;<a class="el" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4ad8826f5793f3a918ed097d6ca90243be">APINotifyElement_Undo_Modified</a> = 12
+, <a class="el" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4acd1f095b82b052fa69e70e50c32f8cff">APINotifyElement_Undo_Deleted</a> = 13
+, <a class="el" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4a379a625dbcee72d89931f8be9d5c64be">APINotifyElement_Redo_Created</a> = 14
+, <a class="el" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4ac9e2e5f7a25c5016d0b34425f734586b">APINotifyElement_Redo_Modified</a> = 15
+, <br />
+&#160;&#160;<a class="el" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4a5c7f2fa42cfa692ed33c42dba9dbbd9f">APINotifyElement_Redo_Deleted</a> = 16
+, <a class="el" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4ada38ed556b57b12448b45795c27783c3">APINotifyElement_PropertyValueChange</a> = 17
+, <a class="el" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4ac00e4b784c4d895180a57a73e23021e1">APINotifyElement_ClassificationChange</a> = 18
+<br />
+ }</td></tr>
+<tr class="memdesc:ga9675062b3ddbdebd35b12603913af9d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the cause of the element notification.  <a href="group___element.html#ga9675062b3ddbdebd35b12603913af9d4">More...</a><br /></td></tr>
+<tr class="separator:ga9675062b3ddbdebd35b12603913af9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga34db1cfa084cd90d24e4268e43e176fe" id="r_ga34db1cfa084cd90d24e4268e43e176fe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga34db1cfa084cd90d24e4268e43e176fe">API_NavigatorMapID</a> { <br />
 &#160;&#160;<a class="el" href="#gga34db1cfa084cd90d24e4268e43e176fea88c928007495f8695499da8b43f2f4e8">API_UndefinedMap</a> = 0
 , <a class="el" href="#gga34db1cfa084cd90d24e4268e43e176fea49829c71dcb435f3348b506c6f4e6017">API_ProjectMap</a> = 1
@@ -256,72 +331,6 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga34db1cfa084cd90d24e4268e43e176fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of Project Navigator maps.  <a href="#ga34db1cfa084cd90d24e4268e43e176fe">More...</a><br /></td></tr>
 <tr class="separator:ga34db1cfa084cd90d24e4268e43e176fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga53738527de6fe0daccedd7f9cb9ff81c" id="r_ga53738527de6fe0daccedd7f9cb9ff81c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___project_operation.html#ga53738527de6fe0daccedd7f9cb9ff81c">API_NotifyEventID</a> { <br />
-&#160;&#160;<b>APINotify_New</b> = 0x00000001
-, <b>APINotify_NewAndReset</b> = 0x00000002
-, <b>APINotify_Open</b> = 0x00000004
-, <b>APINotify_PreSave</b> = 0x00000008
-, <br />
-&#160;&#160;<b>APINotify_Save</b> = 0x00000010
-, <b>APINotify_Close</b> = 0x00000020
-, <b>APINotify_Quit</b> = 0x00000040
-, <b>APINotify_TempSave</b> = 0x00000080
-, <br />
-&#160;&#160;<b>APINotify_SendChanges</b> = 0x00008000
-, <b>APINotify_ReceiveChanges</b> = 0x00010000
-, <b>APINotify_ChangeProjectDB</b> = 0x00040000
-, <b>APINotify_ChangeWindow</b> = 0x00080000
-, <br />
-&#160;&#160;<b>APINotify_ChangeFloor</b> = 0x00100000
-, <b>APINotify_ChangeLibrary</b> = 0x00200000
-, <b>APINotify_AllInputFinished</b> = 0x00400000
-, <b>APINotify_UnitChanged</b> = 0x00800000
-, <br />
-&#160;&#160;<b>APINotify_SideviewCreated</b> = 0x01000000
-, <b>APINotify_SideviewRebuilt</b> = 0x02000000
-, <b>APINotify_PropertyVisibilityChanged</b> = 0x04000000
-, <b>APINotify_ClassificationVisibilityChanged</b> = 0x08000000
-, <br />
-&#160;&#160;<b>APINotify_ShowIn3DChanged</b> = 0x10000000
-<br />
- }</td></tr>
-<tr class="memdesc:ga53738527de6fe0daccedd7f9cb9ff81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible values for notifications on project events.  <a href="group___project_operation.html#ga53738527de6fe0daccedd7f9cb9ff81c">More...</a><br /></td></tr>
-<tr class="separator:ga53738527de6fe0daccedd7f9cb9ff81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga70f285687b4cdb6d2ba04490923234ff" id="r_ga70f285687b4cdb6d2ba04490923234ff"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___project_operation.html#ga70f285687b4cdb6d2ba04490923234ff">API_NotifyViewEventID</a> { <br />
-&#160;&#160;<b>APINotifyView_Inserted</b> = 0x00000001
-, <b>APINotifyView_Modified</b> = 0x00000002
-, <b>APINotifyView_Deleted</b> = 0x00000004
-, <b>APINotifyView_Opened</b> = 0x00000008
-, <br />
-&#160;&#160;<b>APINotifyView_Begin</b> = 0x00000010
-, <b>APINotifyView_End</b> = 0x00000020
-<br />
- }</td></tr>
-<tr class="memdesc:ga70f285687b4cdb6d2ba04490923234ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible values for notifications on Project Navigator events.  <a href="group___project_operation.html#ga70f285687b4cdb6d2ba04490923234ff">More...</a><br /></td></tr>
-<tr class="separator:ga70f285687b4cdb6d2ba04490923234ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9675062b3ddbdebd35b12603913af9d4" id="r_ga9675062b3ddbdebd35b12603913af9d4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___element.html#ga9675062b3ddbdebd35b12603913af9d4">API_ElementDBEventID</a> { <br />
-&#160;&#160;<b>APINotifyElement_BeginEvents</b> = -1
-, <b>APINotifyElement_EndEvents</b> = -2
-, <b>APINotifyElement_New</b> = 1
-, <b>APINotifyElement_Copy</b> = 2
-, <br />
-&#160;&#160;<b>APINotifyElement_Change</b> = 3
-, <b>APINotifyElement_Edit</b> = 4
-, <b>APINotifyElement_Delete</b> = 5
-, <b>APINotifyElement_Undo_Created</b> = 11
-, <br />
-&#160;&#160;<b>APINotifyElement_Undo_Modified</b> = 12
-, <b>APINotifyElement_Undo_Deleted</b> = 13
-, <b>APINotifyElement_Redo_Created</b> = 14
-, <b>APINotifyElement_Redo_Modified</b> = 15
-, <br />
-&#160;&#160;<b>APINotifyElement_Redo_Deleted</b> = 16
-, <b>APINotifyElement_PropertyValueChange</b> = 17
-, <b>APINotifyElement_ClassificationChange</b> = 18
-<br />
- }</td></tr>
-<tr class="memdesc:ga9675062b3ddbdebd35b12603913af9d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the cause of the element notification.  <a href="group___element.html#ga9675062b3ddbdebd35b12603913af9d4">More...</a><br /></td></tr>
-<tr class="separator:ga9675062b3ddbdebd35b12603913af9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -391,16 +400,16 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions related to the use of various notifications of Archicad. They can be used to automatically execute different tasks when a given trigger is executed in Archicad. </p>
-<h1><a class="anchor" id="autotoc_md153"></a>
+<h1><a class="anchor" id="autotoc_md160"></a>
 Notification Manager</h1>
 <p>The Notification Manager lets your add-on be integrated more into the Archicad environment.</p>
 <p>It is very important to understand the underlying ideas and technologies in order to be able to use the services in the right way. <br  />
  It is very easy to block Archicad using the Notification Manager in a wrong way; so be very careful!</p>
 <p>The key point that you have to keep in mind is that notifications are coming in the background, without any user interaction. Plan your system concentrating on this issue; <b>do not perform time consuming operations</b>, and also <b>do not make changes that have global effects</b>, although the Notification Manager tries to detect and refuse such operations, of course.</p>
-<h2><a class="anchor" id="autotoc_md154"></a>
+<h2><a class="anchor" id="autotoc_md161"></a>
 What kind of events can an add-on receive notification of?</h2>
 <p>An add-on can catch events occured to the actual project such as opening, saving, closing the plan file; can be notified of teamwork events, and several changes in the program environment. Furthermore the add-ons can get notification of events happened to the elements of the project database such as creation, modification and deletion. Also there can be notified of undoing and redoing element database changes.</p>
-<h3><a class="anchor" id="autotoc_md155"></a>
+<h3><a class="anchor" id="autotoc_md162"></a>
 Functions</h3>
 <p>All of the notification manager functions begin with the <b>ACAPI_Notify_</b> prefix. This function family gives support to register your add-on to receive notifications when the requested event(s) occured. Once a notification is posted you get the control and you are allowed to call almost all of the API functions to handle the event.</p>
 <p>In order to be notified of certain events you have to make a registration with the following functions:</p>
@@ -430,13 +439,13 @@ Functions</h3>
 </li>
 <li><a class="el" href="#gaedec9d6bd4dc73f5eac4aa1ef1b0ea03">ACAPI_Notification_GetTranParams</a></li>
 </ul>
-<h2><a class="anchor" id="autotoc_md156"></a>
+<h2><a class="anchor" id="autotoc_md163"></a>
 Element related notifications</h2>
-<h3><a class="anchor" id="autotoc_md157"></a>
+<h3><a class="anchor" id="autotoc_md164"></a>
 Monitoring elements</h3>
 <p>In order to be notified of events that happen to a specified element in the database you have to attach an observer to the element with the <a class="el" href="group___element.html#ga4e7696dc5135c83ca77fc0c076222adf">ACAPI_Element_AttachObserver</a> function. This information then will be saved into the project file, so next time you use that plan the notification system will notify your add-on about changes of elements you have marked for monitoring before.</p>
 <p>You can catch element creation events if your add-on installs an <a class="el" href="group___element.html#ga9e9c70a4b6e772cfab4b910175429033">APIElementEventHandlerProc</a> element event handler function with <a class="el" href="group___element.html#gaa640b4d073a2e78c2eb83fe351def4ae">ACAPI_Element_CatchNewElement</a>. You may specify a certain type of elements if you are interested in these new elements only. You can use the same callback function for more element types at the same time. If you want to follow up the modifications of the newly created element, you can attach an observer to it at once right from the new element callback.</p>
-<h3><a class="anchor" id="autotoc_md158"></a>
+<h3><a class="anchor" id="autotoc_md165"></a>
 How does it work?</h3>
 <p>The element related notification system is based on the undo list of Archicad, that is it processes the undo entries created by the last operation.</p>
 <p>Assume that there are three add-ons monitoring some set of elements in the current project. Add-on "A" has linked objects to walls, and watches if something happens to those walls to keep the objects aligned to the walls. Add-on "B" has a sort of autotext functionality, it is to be notified of word element creation. Finally Add-on "C" controls the length of walls, it may delete some walls and replace them with a note.</p>
@@ -461,7 +470,6 @@ How does it work?</h3>
 </div><div class="memdoc">
 
 <p>User supplied callback procedure for handling attribute replacements. </p>
-<dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">table</td><td>[in] List of attributes replaced. The hash key in the hash table is the type of attribute (material, profile etc.), the paired value is another hash table, which holds the old (deleted) attribute indices as keys, and the replacement attribute indices as values. </td></tr>
@@ -499,7 +507,7 @@ How does it work?</h3>
 <li>NoError - The function has completed with success. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This is the function which will be called when your add-on requested notifications on element default chnages with <a class="el" href="group___element.html#ga768940c37ff87f92dce41b8c138476dc">ACAPI_Element_CatchChangeDefaults</a>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This is the function which will be called when your add-on requested notifications on element default changes with <a class="el" href="group___element.html#ga768940c37ff87f92dce41b8c138476dc">ACAPI_Element_CatchChangeDefaults</a>. </dd></dl>
 
 </div>
 </div>
@@ -526,7 +534,7 @@ How does it work?</h3>
 <li>NoError - The function has completed with success. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This is the function which will be called when your add-on attached an observer to an element with <a class="el" href="group___element.html#ga4e7696dc5135c83ca77fc0c076222adf">ACAPI_Element_AttachObserver</a>, i.e. you are interested in changes to an element. This is a common entry point to your add-on for all observed elements; the element in question is passed in the elemType parameter. The meaning of the notification parameters are desrcribed at the <a class="el" href="struct_a_p_i___notify_element_type.html">API_NotifyElementType</a> structure. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This is the function which will be called when your add-on attached an observer to an element with <a class="el" href="group___element.html#ga4e7696dc5135c83ca77fc0c076222adf">ACAPI_Element_AttachObserver</a>, i.e. you are interested in changes to an element. This is a common entry point to your add-on for all observed elements; the element in question is passed in the elemType parameter. The meaning of the notification parameters are described at the <a class="el" href="struct_a_p_i___notify_element_type.html">API_NotifyElementType</a> structure. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="preprocessor">#define ELEMSTR_LEN 256</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">bool</span> GetElementTypeString (<span class="keyword">const</span> <a class="code hl_struct" href="struct_a_p_i___elem_type.html">API_ElemType</a>&amp; type, <span class="keywordtype">char</span> *elemStr)</div>
@@ -554,7 +562,7 @@ How does it work?</h3>
 <div class="line">    <a class="code hl_function" href="#ga04fae7d17b982c71d3e7b5caccf60bad">ACAPI_Notification_GetParentElement</a> (&amp;parentElement, <span class="keyword">nullptr</span>, 0, <span class="keyword">nullptr</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">switch</span> (elemType-&gt;<a class="code hl_variable" href="struct_a_p_i___notify_element_type.html#a09cced449ea23baeb44ac9fce9af9975">notifID</a>) {</div>
-<div class="line">        <span class="keywordflow">case</span> APINotifyElement_New:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4a1e289ad174e74064d477d24b4c1b68fc">APINotifyElement_New</a>:</div>
 <div class="line">            <span class="keywordflow">if</span> (GetElementTypeString (elemType-&gt;<a class="code hl_variable" href="struct_a_p_i___notify_element_type.html#a4f923612f83ac28f1ffb58a1a46ae44a">elemHead</a>.<a class="code hl_variable" href="struct_a_p_i___elem___head.html#a04205822a00b386df0875148b41835e3">type</a>, elemStr)) {</div>
 <div class="line">                <span class="keywordflow">if</span> (parentElement.header.guid != <a class="code hl_variable" href="group___a_p_i_infrastructure.html#ga29716e37ee11f9f3bbd3cbd2fda5adc3">APINULLGuid</a>)</div>
 <div class="line">                    sprintf (msgStr, <span class="stringliteral">&quot;### API Notify Test: %s #%s created as a copy of #%s&quot;</span>,</div>
@@ -646,7 +654,7 @@ How does it work?</h3>
 <li>NoError - The function has completed with success. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This callback function should be implemented and set with <a class="el" href="#ga7b14ad2e2c660dd6a44c34ed9a00286e">ACAPI_Notification_CatchLockableReservationChange</a> in order to receive notifications of reservation changes of lockable objects. You can retrieve information of the members with the <a class="el" href="group___teamwork.html#ga5ba47f76a2341a1522f6f820d558db87">ACAPI_Teamwork_ProjectSharing</a> environment function. Note that the handler receives reservation changes effected by the current team member as well. In the reservation change handler try to avoid calling functions that would modify the database. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This callback function should be implemented and set with <a class="el" href="#ga7b14ad2e2c660dd6a44c34ed9a00286e">ACAPI_Notification_CatchLockableReservationChange</a> in order to receive notifications of reservation changes of lockable objects. You can retrieve information of the members with the <a class="el" href="group___teamwork.html#ga5ba47f76a2341a1522f6f820d558db87">ACAPI_Teamwork_ProjectSharing</a> environment function. Note that the handler receives reservation changes affected by the current team member as well. In the reservation change handler try to avoid calling functions that would modify the database. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode LockableReservationChangeHandler (<span class="keyword">const</span> <a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a>&amp; objectId, <span class="keywordtype">short</span> ownerId)</div>
 <div class="line">{</div>
 <div class="line">    GS::UniString reportString;</div>
@@ -887,6 +895,38 @@ How does it work?</h3>
 
 <p>Describes the cause of the element notification. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>This enumeration type is used in the <a class="el" href="struct_a_p_i___notify_element_type.html">API_NotifyElementType</a> structure. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga9675062b3ddbdebd35b12603913af9d4a6b1f73c6107bc9254bf60f3538b09ddb" name="gga9675062b3ddbdebd35b12603913af9d4a6b1f73c6107bc9254bf60f3538b09ddb"></a>APINotifyElement_BeginEvents&#160;</td><td class="fielddoc"><p>Indicates the start of element notifications. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9675062b3ddbdebd35b12603913af9d4a5b6f6aefbce1992414b8cf14b8eb9464" name="gga9675062b3ddbdebd35b12603913af9d4a5b6f6aefbce1992414b8cf14b8eb9464"></a>APINotifyElement_EndEvents&#160;</td><td class="fielddoc"><p>End of element notifications (no more notifications are expected in this task). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9675062b3ddbdebd35b12603913af9d4a1e289ad174e74064d477d24b4c1b68fc" name="gga9675062b3ddbdebd35b12603913af9d4a1e289ad174e74064d477d24b4c1b68fc"></a>APINotifyElement_New&#160;</td><td class="fielddoc"><p>A new element was created. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9675062b3ddbdebd35b12603913af9d4a1dc2d278e3eca34ae1c1487a6feef7fd" name="gga9675062b3ddbdebd35b12603913af9d4a1dc2d278e3eca34ae1c1487a6feef7fd"></a>APINotifyElement_Copy&#160;</td><td class="fielddoc"><p>The element was copied; the notifications are coming for the copy of the original element. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9675062b3ddbdebd35b12603913af9d4ad7e56013d70f0ca8a7368a5b5e7f412b" name="gga9675062b3ddbdebd35b12603913af9d4ad7e56013d70f0ca8a7368a5b5e7f412b"></a>APINotifyElement_Change&#160;</td><td class="fielddoc"><p>The parameters of the element were changed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9675062b3ddbdebd35b12603913af9d4ad62df67f4e4dc26e25c5083296a2d52d" name="gga9675062b3ddbdebd35b12603913af9d4ad62df67f4e4dc26e25c5083296a2d52d"></a>APINotifyElement_Edit&#160;</td><td class="fielddoc"><p>The element was edited. The parameters of the editing transformation can be retrieved with <a class="el" href="#gaedec9d6bd4dc73f5eac4aa1ef1b0ea03">ACAPI_Notification_GetTranParams</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9675062b3ddbdebd35b12603913af9d4a09b5a40fce03ec3d41676fdcc2cae11b" name="gga9675062b3ddbdebd35b12603913af9d4a09b5a40fce03ec3d41676fdcc2cae11b"></a>APINotifyElement_Delete&#160;</td><td class="fielddoc"><p>The element was deleted. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9675062b3ddbdebd35b12603913af9d4a3acc3e69091f8434147dc37df4786402" name="gga9675062b3ddbdebd35b12603913af9d4a3acc3e69091f8434147dc37df4786402"></a>APINotifyElement_Undo_Created&#160;</td><td class="fielddoc"><p>The last creating operation performed on the element has been undone. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9675062b3ddbdebd35b12603913af9d4ad8826f5793f3a918ed097d6ca90243be" name="gga9675062b3ddbdebd35b12603913af9d4ad8826f5793f3a918ed097d6ca90243be"></a>APINotifyElement_Undo_Modified&#160;</td><td class="fielddoc"><p>The last modifying operation performed on the element has been undone. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9675062b3ddbdebd35b12603913af9d4acd1f095b82b052fa69e70e50c32f8cff" name="gga9675062b3ddbdebd35b12603913af9d4acd1f095b82b052fa69e70e50c32f8cff"></a>APINotifyElement_Undo_Deleted&#160;</td><td class="fielddoc"><p>The last deleting operation performed on the element has been undone. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9675062b3ddbdebd35b12603913af9d4a379a625dbcee72d89931f8be9d5c64be" name="gga9675062b3ddbdebd35b12603913af9d4a379a625dbcee72d89931f8be9d5c64be"></a>APINotifyElement_Redo_Created&#160;</td><td class="fielddoc"><p>The last undone creating operation on the element has been redone. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9675062b3ddbdebd35b12603913af9d4ac9e2e5f7a25c5016d0b34425f734586b" name="gga9675062b3ddbdebd35b12603913af9d4ac9e2e5f7a25c5016d0b34425f734586b"></a>APINotifyElement_Redo_Modified&#160;</td><td class="fielddoc"><p>The last undone modifying operation on the element has been redone. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9675062b3ddbdebd35b12603913af9d4a5c7f2fa42cfa692ed33c42dba9dbbd9f" name="gga9675062b3ddbdebd35b12603913af9d4a5c7f2fa42cfa692ed33c42dba9dbbd9f"></a>APINotifyElement_Redo_Deleted&#160;</td><td class="fielddoc"><p>The last undone deleting operation on the element has been redone. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9675062b3ddbdebd35b12603913af9d4ada38ed556b57b12448b45795c27783c3" name="gga9675062b3ddbdebd35b12603913af9d4ada38ed556b57b12448b45795c27783c3"></a>APINotifyElement_PropertyValueChange&#160;</td><td class="fielddoc"><p>A property value attached to the element has been changed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9675062b3ddbdebd35b12603913af9d4ac00e4b784c4d895180a57a73e23021e1" name="gga9675062b3ddbdebd35b12603913af9d4ac00e4b784c4d895180a57a73e23021e1"></a>APINotifyElement_ClassificationChange&#160;</td><td class="fielddoc"><p>An element's classification has changed. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -936,6 +976,50 @@ How does it work?</h3>
 <p>Possible values for notifications on project events. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 26 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>Refer to <a class="el" href="group___project_operation.html#gacc5ea19d38befe2e1da1d07f51ce2fef">ACAPI_ProjectOperation_CatchProjectEvent</a> function for further details. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca947c3db4033fc235500de01bb255cea7" name="gga53738527de6fe0daccedd7f9cb9ff81ca947c3db4033fc235500de01bb255cea7"></a>APINotify_New&#160;</td><td class="fielddoc"><p>The user chose <b>New</b> from the <b>File</b> menu. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca80c64a432b3612723798505eafcba957" name="gga53738527de6fe0daccedd7f9cb9ff81ca80c64a432b3612723798505eafcba957"></a>APINotify_NewAndReset&#160;</td><td class="fielddoc"><p>The user chose <b>New</b> &amp; Reset from the <b>File</b> menu. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca44bcad20b3de40164bd9609cfb407ad2" name="gga53738527de6fe0daccedd7f9cb9ff81ca44bcad20b3de40164bd9609cfb407ad2"></a>APINotify_Open&#160;</td><td class="fielddoc"><p>The user opened an existing project. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca5061f4a73a860bc7cc6c785a363fac97" name="gga53738527de6fe0daccedd7f9cb9ff81ca5061f4a73a860bc7cc6c785a363fac97"></a>APINotify_PreSave&#160;</td><td class="fielddoc"><p>The user has chosen <b>Save</b> from the <b>File</b> menu; this notification is coming before the actual save is performed, so that you could save some data into the project file. Please try to avoid using this method if not necessary, because it can significantly slow down the file saving process. Rather store the additional data into the project when they actually change. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca1215bd22fe8cb03111c8495dd57688b5" name="gga53738527de6fe0daccedd7f9cb9ff81ca1215bd22fe8cb03111c8495dd57688b5"></a>APINotify_Save&#160;</td><td class="fielddoc"><p>The user has chosen <b>Save</b> from the <b>File</b> menu; the project has already been saved. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca29c0820cf7d6153d31d2e6a0bfab78b5" name="gga53738527de6fe0daccedd7f9cb9ff81ca29c0820cf7d6153d31d2e6a0bfab78b5"></a>APINotify_Close&#160;</td><td class="fielddoc"><p>The user closed the current project. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca93f511732da8001bdda37bbbe94e018a" name="gga53738527de6fe0daccedd7f9cb9ff81ca93f511732da8001bdda37bbbe94e018a"></a>APINotify_Quit&#160;</td><td class="fielddoc"><p>The user chose <b>Quit</b> from the <b>File</b> menu. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81cae2e026851ce5fc3b0bacff4de9d18371" name="gga53738527de6fe0daccedd7f9cb9ff81cae2e026851ce5fc3b0bacff4de9d18371"></a>APINotify_TempSave&#160;</td><td class="fielddoc"><p>The project is about to be autosaved. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca40ab233673c369fe683929fd980737a9" name="gga53738527de6fe0daccedd7f9cb9ff81ca40ab233673c369fe683929fd980737a9"></a>APINotify_SendChanges&#160;</td><td class="fielddoc"><p>The user is about to send changes into the Teamwork project. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81cad0e01ad7e47a3d562e6ac7a9e5b80fc7" name="gga53738527de6fe0daccedd7f9cb9ff81cad0e01ad7e47a3d562e6ac7a9e5b80fc7"></a>APINotify_ReceiveChanges&#160;</td><td class="fielddoc"><p>The user has received the changes from the Teamwork project. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81cafbf0bc4543fd9f8e55acd7c4f80b5012" name="gga53738527de6fe0daccedd7f9cb9ff81cafbf0bc4543fd9f8e55acd7c4f80b5012"></a>APINotify_ChangeProjectDB&#160;</td><td class="fielddoc"><p>The project database changed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca7c74d741ac3a6da2cf9d23b1bf60ca9c" name="gga53738527de6fe0daccedd7f9cb9ff81ca7c74d741ac3a6da2cf9d23b1bf60ca9c"></a>APINotify_ChangeWindow&#160;</td><td class="fielddoc"><p>The current window changed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca86230c4059a918142236507a41da4d81" name="gga53738527de6fe0daccedd7f9cb9ff81ca86230c4059a918142236507a41da4d81"></a>APINotify_ChangeFloor&#160;</td><td class="fielddoc"><p>The user switched to an other floor. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca1e3e99b9a6cf630a599633c2e79770fa" name="gga53738527de6fe0daccedd7f9cb9ff81ca1e3e99b9a6cf630a599633c2e79770fa"></a>APINotify_ChangeLibrary&#160;</td><td class="fielddoc"><p>The loaded libraries were changed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca5dea68ad4bdb3fd723d42e7c7545d6fe" name="gga53738527de6fe0daccedd7f9cb9ff81ca5dea68ad4bdb3fd723d42e7c7545d6fe"></a>APINotify_AllInputFinished&#160;</td><td class="fielddoc"><p>Sent when an input process (open, merge, etc.) is finished. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca91069c374e6d92491e13ea700211cdc8" name="gga53738527de6fe0daccedd7f9cb9ff81ca91069c374e6d92491e13ea700211cdc8"></a>APINotify_UnitChanged&#160;</td><td class="fielddoc"><p>Notifies that the working units or calculation units have changed on Preferences dialogs. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca81a7bd9a4f4cf427457ed71f49bef1f2" name="gga53738527de6fe0daccedd7f9cb9ff81ca81a7bd9a4f4cf427457ed71f49bef1f2"></a>APINotify_SideviewCreated&#160;</td><td class="fielddoc"><p>The section/elevation/interior elevation was generated. The first time its window was opened. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca791dfede7118c34871cfd74209248ec8" name="gga53738527de6fe0daccedd7f9cb9ff81ca791dfede7118c34871cfd74209248ec8"></a>APINotify_SideviewRebuilt&#160;</td><td class="fielddoc"><p>The section/elevation/interior elevation was rebuilt. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca6a777ec39ffd151d4788ef4f0d7a2cfd" name="gga53738527de6fe0daccedd7f9cb9ff81ca6a777ec39ffd151d4788ef4f0d7a2cfd"></a>APINotify_PropertyVisibilityChanged&#160;</td><td class="fielddoc"><p>Notifies that Property visibility has changed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca52bafea1c6ff6d070b266a2a5251c43a" name="gga53738527de6fe0daccedd7f9cb9ff81ca52bafea1c6ff6d070b266a2a5251c43a"></a>APINotify_ClassificationVisibilityChanged&#160;</td><td class="fielddoc"><p>Notifies that Classification visibility has changed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81cad83107916acdc97c498d55d6a1af7845" name="gga53738527de6fe0daccedd7f9cb9ff81cad83107916acdc97c498d55d6a1af7845"></a>APINotify_ShowIn3DChanged&#160;</td><td class="fielddoc"><p>This notification is sent when the user has chosen Show Selection in 3D / Show All in 3D / Show stored selection in 3D. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -953,6 +1037,44 @@ How does it work?</h3>
 
 <p>Possible values for notifications on Project Navigator events. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>Refer to <a class="el" href="#gaa53eddef261e26c706f32519c939ad11">ACAPI_Notification_CatchViewEvent</a> function for further details. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga70f285687b4cdb6d2ba04490923234ffa0c1105c08e7be65388c15d76260afede" name="gga70f285687b4cdb6d2ba04490923234ffa0c1105c08e7be65388c15d76260afede"></a>APINotifyView_Inserted&#160;</td><td class="fielddoc"><p>A new Project Navigator item was inserted. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga70f285687b4cdb6d2ba04490923234ffab147be5a969505828ef268e885b8ba6a" name="gga70f285687b4cdb6d2ba04490923234ffab147be5a969505828ef268e885b8ba6a"></a>APINotifyView_Modified&#160;</td><td class="fielddoc"><p>A Project Navigator item was modified. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga70f285687b4cdb6d2ba04490923234ffacb0c1fa45243f681bdfee6a98e18600e" name="gga70f285687b4cdb6d2ba04490923234ffacb0c1fa45243f681bdfee6a98e18600e"></a>APINotifyView_Deleted&#160;</td><td class="fielddoc"><p>A Project Navigator item was deleted. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga70f285687b4cdb6d2ba04490923234ffa3ed60b1de922d2f436397471bce7f1eb" name="gga70f285687b4cdb6d2ba04490923234ffa3ed60b1de922d2f436397471bce7f1eb"></a>APINotifyView_Opened&#160;</td><td class="fielddoc"><p>A Project Navigator item was opened. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga70f285687b4cdb6d2ba04490923234ffa71fd52543475fac151a5ab27dc79e9b2" name="gga70f285687b4cdb6d2ba04490923234ffa71fd52543475fac151a5ab27dc79e9b2"></a>APINotifyView_Begin&#160;</td><td class="fielddoc"><p>The begin notification. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga70f285687b4cdb6d2ba04490923234ffa4335131f8aec79b18a2b70eea2340ea4" name="gga70f285687b4cdb6d2ba04490923234ffa4335131f8aec79b18a2b70eea2340ea4"></a>APINotifyView_End&#160;</td><td class="fielddoc"><p>The end notification. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga364db38089d40f7818ae1ebf0eeab308" name="ga364db38089d40f7818ae1ebf0eeab308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga364db38089d40f7818ae1ebf0eeab308">&#9670;&#160;</a></span>API_NotifyWindowEventID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga364db38089d40f7818ae1ebf0eeab308">API_NotifyWindowEventID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Describes the cause of the window notification. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga364db38089d40f7818ae1ebf0eeab308a90b88837a58072d1a9db1bf2c321d881" name="gga364db38089d40f7818ae1ebf0eeab308a90b88837a58072d1a9db1bf2c321d881"></a>APINotifyWindow_Rebuild&#160;</td><td class="fielddoc"><p>The user chose <b>Rebuild</b> from the menu. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga364db38089d40f7818ae1ebf0eeab308a103838960cc13309db34f66419291485" name="gga364db38089d40f7818ae1ebf0eeab308a103838960cc13309db34f66419291485"></a>APINotifyWindow_Activate&#160;</td><td class="fielddoc"><p>Your window was activated. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga364db38089d40f7818ae1ebf0eeab308a26c43ec94f3f61f73ea7073f93a2bf41" name="gga364db38089d40f7818ae1ebf0eeab308a26c43ec94f3f61f73ea7073f93a2bf41"></a>APINotifyWindow_Close&#160;</td><td class="fielddoc"><p>The user closed your window. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -985,7 +1107,7 @@ How does it work?</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The referenced element cannot be found in the database. </li>
 </ul>
 </dd></dl>
@@ -1131,7 +1253,7 @@ How does it work?</h3>
 <div class="line">    <a class="code hl_function" href="#ga04fae7d17b982c71d3e7b5caccf60bad">ACAPI_Notification_GetParentElement</a> (&amp;parentElement, <span class="keyword">nullptr</span>, 0, <span class="keyword">nullptr</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">switch</span> (elemType-&gt;<a class="code hl_variable" href="struct_a_p_i___notify_element_type.html#a09cced449ea23baeb44ac9fce9af9975">notifID</a>) {</div>
-<div class="line">        <span class="keywordflow">case</span> APINotifyElement_New:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4a1e289ad174e74064d477d24b4c1b68fc">APINotifyElement_New</a>:</div>
 <div class="line">            <span class="keywordflow">if</span> (GetElementTypeString (elemType-&gt;<a class="code hl_variable" href="struct_a_p_i___notify_element_type.html#a4f923612f83ac28f1ffb58a1a46ae44a">elemHead</a>.<a class="code hl_variable" href="struct_a_p_i___elem___head.html#a04205822a00b386df0875148b41835e3">type</a>, elemStr)) {</div>
 <div class="line">                <span class="keywordflow">if</span> (parentElement.header.guid != <a class="code hl_variable" href="group___a_p_i_infrastructure.html#ga29716e37ee11f9f3bbd3cbd2fda5adc3">APINULLGuid</a>)</div>
 <div class="line">                    sprintf (msgStr, <span class="stringliteral">&quot;### API Notify Test: %s #%s created as a copy of #%s&quot;</span>,</div>
@@ -1195,7 +1317,7 @@ How does it work?</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The referenced element cannot be found in the database. </li>
 </ul>
 </dd></dl>
@@ -1255,7 +1377,7 @@ How does it work?</h3>
 <div class="line">    <a class="code hl_function" href="#ga04fae7d17b982c71d3e7b5caccf60bad">ACAPI_Notification_GetParentElement</a> (&amp;parentElement, <span class="keyword">nullptr</span>, 0, <span class="keyword">nullptr</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">switch</span> (elemType-&gt;<a class="code hl_variable" href="struct_a_p_i___notify_element_type.html#a09cced449ea23baeb44ac9fce9af9975">notifID</a>) {</div>
-<div class="line">        <span class="keywordflow">case</span> APINotifyElement_Copy:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4a1dc2d278e3eca34ae1c1487a6feef7fd">APINotifyElement_Copy</a>:</div>
 <div class="line">            <span class="keywordflow">if</span> (parentElement.header.guid != <a class="code hl_variable" href="group___a_p_i_infrastructure.html#ga29716e37ee11f9f3bbd3cbd2fda5adc3">APINULLGuid</a> &amp;&amp; GetElementTypeString (elemType-&gt;<a class="code hl_variable" href="struct_a_p_i___notify_element_type.html#a4f923612f83ac28f1ffb58a1a46ae44a">elemHead</a>.<a class="code hl_variable" href="struct_a_p_i___elem___head.html#a04205822a00b386df0875148b41835e3">type</a>, elemStr)) {</div>
 <div class="line">                sprintf (msgStr, <span class="stringliteral">&quot;### Element_Manager: %s #%s copied from #%s&quot;</span>,</div>
 <div class="line">                            elemStr, <a class="code hl_function" href="group___conversion.html#ga2ef6fe00edf05c416a9c8fc589374dd6">APIGuidToString</a> (elemType-&gt;<a class="code hl_variable" href="struct_a_p_i___notify_element_type.html#a4f923612f83ac28f1ffb58a1a46ae44a">elemHead</a>.<a class="code hl_variable" href="struct_a_p_i___elem___head.html#ae1c055907c06039af552a4e42a9a4e84">guid</a>).ToCStr ().Get (),</div>
@@ -1312,7 +1434,7 @@ How does it work?</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function allows you to act on license borrowing and returning. </dd></dl>
@@ -1555,7 +1677,7 @@ How does it work?</h3>
 <div class="line">{</div>
 <div class="line">    <span class="keywordtype">char</span> msgStr[256];</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordflow">if</span> (selElemNeig-&gt;<a class="code hl_variable" href="struct_a_p_i___neig.html#a1a9ac7712106d86eb39c1888fc39e94f">neigID</a> != APINeig_None) {</div>
+<div class="line">    <span class="keywordflow">if</span> (selElemNeig-&gt;<a class="code hl_variable" href="struct_a_p_i___neig.html#a1a9ac7712106d86eb39c1888fc39e94f">neigID</a> != <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a698bd60d91dc6210606125c9eb288a50">APINeig_None</a>) {</div>
 <div class="line">        sprintf (msgStr, <span class="stringliteral">&quot;Last selected element: NeigID %d; index: %d, inIndex: %d&quot;</span>,</div>
 <div class="line">                 selElemNeig-&gt;<a class="code hl_variable" href="struct_a_p_i___neig.html#a1a9ac7712106d86eb39c1888fc39e94f">neigID</a>, <span class="keyword">static_cast&lt;</span>Int32<span class="keyword">&gt;</span> (selElemNeig-&gt;<a class="code hl_variable" href="struct_a_p_i___neig.html#a5593bc949924ff48d715b07c8e76145d">elemPartIndex</a>), selElemNeig-&gt;<a class="code hl_variable" href="struct_a_p_i___neig.html#a3be2b592ab2146b068e0a8bffa3e5096">inIndex</a>);</div>
 <div class="line">        <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (msgStr, <span class="keyword">false</span>);</div>
@@ -1689,7 +1811,7 @@ How does it work?</h3>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function enables the API tool add-on catch the changes of Project Navigator items in the specified map. Each time when a navigator item is inserted, modified, deleted or opened the server application calls the supplied handlerProc of your those add-ons which have been registered for this event previously. If you do not need to catch any project navigator event of the specified map any longer, please remember to unregister by calling <a class="el" href="#gaa53eddef261e26c706f32519c939ad11">ACAPI_Notification_CatchViewEvent</a> for the required map with nullptr in the handlerProc parameter. </dd></dl>
-<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_function" href="#gaa53eddef261e26c706f32519c939ad11">ACAPI_Notification_CatchViewEvent</a> (APINotifyView_Inserted | APINotifyView_Deleted | APINotifyView_Modified, <a class="code hl_enumvalue" href="#gga34db1cfa084cd90d24e4268e43e176fea8c650f08179222ebc4f03f2112b7276f">API_PublicViewMap</a>, ViewNotificationHandlerProc);</div>
+<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_function" href="#gaa53eddef261e26c706f32519c939ad11">ACAPI_Notification_CatchViewEvent</a> (<a class="code hl_enumvalue" href="group___project_operation.html#gga70f285687b4cdb6d2ba04490923234ffa0c1105c08e7be65388c15d76260afede">APINotifyView_Inserted</a> | <a class="code hl_enumvalue" href="group___project_operation.html#gga70f285687b4cdb6d2ba04490923234ffacb0c1fa45243f681bdfee6a98e18600e">APINotifyView_Deleted</a> | <a class="code hl_enumvalue" href="group___project_operation.html#gga70f285687b4cdb6d2ba04490923234ffab147be5a969505828ef268e885b8ba6a">APINotifyView_Modified</a>, <a class="code hl_enumvalue" href="#gga34db1cfa084cd90d24e4268e43e176fea8c650f08179222ebc4f03f2112b7276f">API_PublicViewMap</a>, ViewNotificationHandlerProc);</div>
 <div class="line"><a class="code hl_function" href="#gaa53eddef261e26c706f32519c939ad11">ACAPI_Notification_CatchViewEvent</a> (API_AllViewNotificationMask, <a class="code hl_enumvalue" href="#gga34db1cfa084cd90d24e4268e43e176feae02cad95fffbd234b0a9b6eab261fbf0">API_MyViewMap</a>, <span class="keyword">nullptr</span>);</div>
 </div><!-- fragment --> </dd></dl>
 
@@ -1741,7 +1863,7 @@ How does it work?</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 
@@ -1819,7 +1941,7 @@ How does it work?</h3>
 <div class="line">    <a class="code hl_function" href="#ga04fae7d17b982c71d3e7b5caccf60bad">ACAPI_Notification_GetParentElement</a> (&amp;parentElement, <span class="keyword">nullptr</span>, 0, <span class="keyword">nullptr</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">switch</span> (elemType-&gt;<a class="code hl_variable" href="struct_a_p_i___notify_element_type.html#a09cced449ea23baeb44ac9fce9af9975">notifID</a>) {</div>
-<div class="line">        <span class="keywordflow">case</span> APINotifyElement_New:</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4a1e289ad174e74064d477d24b4c1b68fc">APINotifyElement_New</a>:</div>
 <div class="line">            <span class="keywordflow">if</span> (GetElementTypeString (elemType-&gt;<a class="code hl_variable" href="struct_a_p_i___notify_element_type.html#a4f923612f83ac28f1ffb58a1a46ae44a">elemHead</a>.<a class="code hl_variable" href="struct_a_p_i___elem___head.html#a04205822a00b386df0875148b41835e3">type</a>, elemStr)) {</div>
 <div class="line">                <span class="keywordflow">if</span> (parentElement.header.guid != <a class="code hl_variable" href="group___a_p_i_infrastructure.html#ga29716e37ee11f9f3bbd3cbd2fda5adc3">APINULLGuid</a>)</div>
 <div class="line">                    sprintf (msgStr, <span class="stringliteral">&quot;### API Notify Test: %s #%s created as a copy of #%s&quot;</span>,</div>
@@ -1897,7 +2019,7 @@ How does it work?</h3>
 <div class="line">GSErrCode           err;                <span class="comment">// the last user edit parameters</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">switch</span> (eventID) {</div>
-<div class="line">    <span class="keywordflow">case</span> APINotifyElement_Edit:</div>
+<div class="line">    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___element.html#gga9675062b3ddbdebd35b12603913af9d4ad62df67f4e4dc26e25c5083296a2d52d">APINotifyElement_Edit</a>:</div>
 <div class="line">        <a class="code hl_function" href="#gaedec9d6bd4dc73f5eac4aa1ef1b0ea03">ACAPI_Notification_GetTranParams</a> (&amp;actTranPars);</div>
 <div class="line"> </div>
 <div class="line">        <span class="keywordflow">switch</span> (actTranPars.<a class="code hl_variable" href="struct_a_p_i___act_tran_pars.html#ae4b3a39765290f3333ec33a66ced525f">typeID</a>) {</div>
@@ -1939,7 +2061,7 @@ How does it work?</h3>
 <div class="line"> </div>
 <div class="line">        editPars.withDelete = <span class="keyword">true</span>;</div>
 <div class="line">        </div>
-<div class="line">        neig[0].neigID          = APINeig_CircOn;</div>
+<div class="line">        neig[0].neigID          = <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a47d29b202c37082b2f37364635422a0c">APINeig_CircOn</a>;</div>
 <div class="line">        neig[0].elemPartIndex   = elemIndex;</div>
 <div class="line">        neig[0].inIndex         = 1;</div>
 <div class="line"> </div>
@@ -2119,21 +2241,21 @@ How does it work?</h3>
 <div class="line">    <span class="keywordtype">char</span>    msgStr[256];</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">switch</span> (notifID) {</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_New:             CHCopyC (<span class="stringliteral">&quot;APINotify_New&quot;</span>, msgStr);          <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_NewAndReset:     CHCopyC (<span class="stringliteral">&quot;APINotify_NewAndReset&quot;</span>, msgStr);  <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_Open:            CHCopyC (<span class="stringliteral">&quot;APINotify_Open&quot;</span>, msgStr);         <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_PreSave:         CHCopyC (<span class="stringliteral">&quot;APINotify_PreSave&quot;</span>, msgStr);      <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_Save:            CHCopyC (<span class="stringliteral">&quot;APINotify_Save&quot;</span>, msgStr);         <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_Close:           CHCopyC (<span class="stringliteral">&quot;APINotify_Close&quot;</span>, msgStr);        <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_Quit:            CHCopyC (<span class="stringliteral">&quot;APINotify_Quit&quot;</span>, msgStr);         <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca947c3db4033fc235500de01bb255cea7">APINotify_New</a>:             CHCopyC (<span class="stringliteral">&quot;APINotify_New&quot;</span>, msgStr);          <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca80c64a432b3612723798505eafcba957">APINotify_NewAndReset</a>:     CHCopyC (<span class="stringliteral">&quot;APINotify_NewAndReset&quot;</span>, msgStr);  <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca44bcad20b3de40164bd9609cfb407ad2">APINotify_Open</a>:            CHCopyC (<span class="stringliteral">&quot;APINotify_Open&quot;</span>, msgStr);         <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca5061f4a73a860bc7cc6c785a363fac97">APINotify_PreSave</a>:         CHCopyC (<span class="stringliteral">&quot;APINotify_PreSave&quot;</span>, msgStr);      <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca1215bd22fe8cb03111c8495dd57688b5">APINotify_Save</a>:            CHCopyC (<span class="stringliteral">&quot;APINotify_Save&quot;</span>, msgStr);         <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca29c0820cf7d6153d31d2e6a0bfab78b5">APINotify_Close</a>:           CHCopyC (<span class="stringliteral">&quot;APINotify_Close&quot;</span>, msgStr);        <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca93f511732da8001bdda37bbbe94e018a">APINotify_Quit</a>:            CHCopyC (<span class="stringliteral">&quot;APINotify_Quit&quot;</span>, msgStr);         <span class="keywordflow">break</span>;</div>
 <div class="line"> </div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_SendChanges:     CHCopyC (<span class="stringliteral">&quot;APINotify_SendChanges&quot;</span>, msgStr);      <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_ReceiveChanges:  CHCopyC (<span class="stringliteral">&quot;APINotify_ReceiveChanges&quot;</span>, msgStr);   <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca40ab233673c369fe683929fd980737a9">APINotify_SendChanges</a>:     CHCopyC (<span class="stringliteral">&quot;APINotify_SendChanges&quot;</span>, msgStr);      <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81cad0e01ad7e47a3d562e6ac7a9e5b80fc7">APINotify_ReceiveChanges</a>:  CHCopyC (<span class="stringliteral">&quot;APINotify_ReceiveChanges&quot;</span>, msgStr);   <span class="keywordflow">break</span>;</div>
 <div class="line"> </div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_ChangeProjectDB: CHCopyC (<span class="stringliteral">&quot;APINotify_ChangeProjectDB&quot;</span>, msgStr);  <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_ChangeWindow:    CHCopyC (<span class="stringliteral">&quot;APINotify_ChangeWindow&quot;</span>, msgStr);     <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_ChangeFloor:     CHCopyC (<span class="stringliteral">&quot;APINotify_ChangeFloor&quot;</span>, msgStr);      <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_ChangeLibrary:   CHCopyC (<span class="stringliteral">&quot;APINotify_ChangeLibrary&quot;</span>, msgStr);    <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81cafbf0bc4543fd9f8e55acd7c4f80b5012">APINotify_ChangeProjectDB</a>: CHCopyC (<span class="stringliteral">&quot;APINotify_ChangeProjectDB&quot;</span>, msgStr);  <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca7c74d741ac3a6da2cf9d23b1bf60ca9c">APINotify_ChangeWindow</a>:    CHCopyC (<span class="stringliteral">&quot;APINotify_ChangeWindow&quot;</span>, msgStr);     <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca86230c4059a918142236507a41da4d81">APINotify_ChangeFloor</a>:     CHCopyC (<span class="stringliteral">&quot;APINotify_ChangeFloor&quot;</span>, msgStr);      <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group___project_operation.html#gga53738527de6fe0daccedd7f9cb9ff81ca1e3e99b9a6cf630a599633c2e79770fa">APINotify_ChangeLibrary</a>:   CHCopyC (<span class="stringliteral">&quot;APINotify_ChangeLibrary&quot;</span>, msgStr);    <span class="keywordflow">break</span>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (msgStr, <span class="keyword">false</span>);</div>

@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Project Settings</title>
+<title>Archicad 30 C++ API: Project Settings</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -126,6 +126,7 @@ $(function(){initNavTree('group___project_setting.html',''); initResizable(true)
 
 <div class="header">
   <div class="summary">
+<a href="#groups">Topics</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -136,6 +137,15 @@ $(function(){initNavTree('group___project_setting.html',''); initResizable(true)
 <p>Functions for managing project settings, such as Grid, Project Notes, tolerances, etc.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
+Topics</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_i___grid_gravity_modes.html">Grid Gravity Modes</a></td></tr>
+<tr class="memdesc:group___a_p_i___grid_gravity_modes"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible values describing the grid gravity, stored in the <a class="el" href="struct_a_p_i___grid_type.html">API_GridType</a> <code>gridMode</code> member. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_i___grid_status_flags.html">Grid Status Flags</a></td></tr>
+<tr class="memdesc:group___a_p_i___grid_status_flags"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit flags describing the status of the grid, stored in the <a class="el" href="struct_a_p_i___grid_type.html">API_GridType</a> <code>status</code> member. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___grid_type.html">API_GridType</a></td></tr>
@@ -217,26 +227,31 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga975d57ea13e7d919b5d33900833ac3ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible values for volume unit preferences.  <a href="#ga975d57ea13e7d919b5d33900833ac3ae">More...</a><br /></td></tr>
 <tr class="separator:ga975d57ea13e7d919b5d33900833ac3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad00d921b82b87217154b97332e048fe1" id="r_gad00d921b82b87217154b97332e048fe1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad00d921b82b87217154b97332e048fe1">API_ConditionalElementPropertyTypeID</a> { <b>APIConditionalElementPropertyType_Volume</b>
-, <b>APIConditionalElementPropertyType_Surface</b>
-, <b>APIConditionalElementPropertyType_Length</b>
+<tr class="memitem:gad00d921b82b87217154b97332e048fe1" id="r_gad00d921b82b87217154b97332e048fe1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad00d921b82b87217154b97332e048fe1">API_ConditionalElementPropertyTypeID</a> { <a class="el" href="#ggad00d921b82b87217154b97332e048fe1a743167f101f4c1fd3f54d39fb1174043">APIConditionalElementPropertyType_Volume</a>
+, <a class="el" href="#ggad00d921b82b87217154b97332e048fe1a6fc0b49ae9e748a40571d664b4ba08f0">APIConditionalElementPropertyType_Surface</a>
+, <a class="el" href="#ggad00d921b82b87217154b97332e048fe1a8a530e8751af4502a3dfd769e7fecc5a">APIConditionalElementPropertyType_Length</a>
  }</td></tr>
 <tr class="memdesc:gad00d921b82b87217154b97332e048fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Property type of an element used in conditional calculation element rules.  <a href="#gad00d921b82b87217154b97332e048fe1">More...</a><br /></td></tr>
 <tr class="separator:gad00d921b82b87217154b97332e048fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3318d299220e937fc11f225d02eaa6c" id="r_gab3318d299220e937fc11f225d02eaa6c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab3318d299220e937fc11f225d02eaa6c">API_RoofContourDisplay</a> { <a class="el" href="#ggab3318d299220e937fc11f225d02eaa6cab44bf4608383c353a19d6f9f940a2025">APIRoofDisplay_AllVisibleContours</a> = 1
+, <a class="el" href="#ggab3318d299220e937fc11f225d02eaa6ca05497e5e0290e6e8b1e9b3fb8b51dea5">APIRoofDisplay_OnlyTheTopSurfaceOldWay</a> = 2
+ }</td></tr>
+<tr class="memdesc:gab3318d299220e937fc11f225d02eaa6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Roof display setting.  <a href="#gab3318d299220e937fc11f225d02eaa6c">More...</a><br /></td></tr>
+<tr class="separator:gab3318d299220e937fc11f225d02eaa6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae460b1c2b9b8fc78f5ae3ede1932b63a" id="r_gae460b1c2b9b8fc78f5ae3ede1932b63a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae460b1c2b9b8fc78f5ae3ede1932b63a">API_PrefsTypeID</a> { <br />
-&#160;&#160;<b>APIPrefs_WorkingUnitsID</b>
-, <b>APIPrefs_ReferenceLevelsID</b>
-, <b>APIPrefs_DimensionsID</b>
-, <b>APIPrefs_CalcUnitsID</b>
+&#160;&#160;<a class="el" href="#ggae460b1c2b9b8fc78f5ae3ede1932b63aa0c6059e6ec6e49ac975e022dc6d8f437">APIPrefs_WorkingUnitsID</a>
+, <a class="el" href="#ggae460b1c2b9b8fc78f5ae3ede1932b63aa574af22cc2a899e1a7c3e96c95fc0c24">APIPrefs_ReferenceLevelsID</a>
+, <a class="el" href="#ggae460b1c2b9b8fc78f5ae3ede1932b63aa33de3de3b13a4a3b7920bd3874e25539">APIPrefs_DimensionsID</a>
+, <a class="el" href="#ggae460b1c2b9b8fc78f5ae3ede1932b63aa3752f97f92439ec15e885de6125857f6">APIPrefs_CalcUnitsID</a>
 , <br />
-&#160;&#160;<b>APIPrefs_CalcRulesID</b>
-, <b>APIPrefs_LegacyID</b>
-, <b>APIPrefs_ZonesID</b>
-, <b>APIPrefs_DataSafetyID</b>
+&#160;&#160;<a class="el" href="#ggae460b1c2b9b8fc78f5ae3ede1932b63aad6c30a7cb546932cc816ae8ad2e4d1ac">APIPrefs_CalcRulesID</a>
+, <a class="el" href="#ggae460b1c2b9b8fc78f5ae3ede1932b63aafe43c1b09719c9980b748edcf0803430">APIPrefs_LegacyID</a>
+, <a class="el" href="#ggae460b1c2b9b8fc78f5ae3ede1932b63aa137b9e1b4d9d49227c5eac770e8c9c5d">APIPrefs_ZonesID</a>
+, <a class="el" href="#ggae460b1c2b9b8fc78f5ae3ede1932b63aa6414f14514e0a2f791259bdaef0bc8df">APIPrefs_DataSafetyID</a>
 , <br />
-&#160;&#160;<b>APIPrefs_ImagingAndCalcID</b>
-, <b>APIPrefs_FloorPlanCutPlaneDef</b>
-, <b>APIPrefs_LayoutsID</b>
+&#160;&#160;<a class="el" href="#ggae460b1c2b9b8fc78f5ae3ede1932b63aa7ebe3df4331f9191aba9bb1c9c513614">APIPrefs_ImagingAndCalcID</a>
+, <a class="el" href="#ggae460b1c2b9b8fc78f5ae3ede1932b63aa1cdf1a6e29a4f57eccbeaf62457d9fab">APIPrefs_FloorPlanCutPlaneDef</a>
+, <a class="el" href="#ggae460b1c2b9b8fc78f5ae3ede1932b63aaf5b04e085c01f25c8034e212815eee58">APIPrefs_LayoutsID</a>
 <br />
  }</td></tr>
 <tr class="memdesc:gae460b1c2b9b8fc78f5ae3ede1932b63a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The enumeration of the available preferences tab page types.  <a href="#gae460b1c2b9b8fc78f5ae3ede1932b63a">More...</a><br /></td></tr>
@@ -245,7 +260,7 @@ Enumerations</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga108a2e2f3f9bfdde52935451c03cacd4" id="r_ga108a2e2f3f9bfdde52935451c03cacd4"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga108a2e2f3f9bfdde52935451c03cacd4">ACAPI_ProjectSetting_GetOffset</a> (<a class="el" href="struct_a_p_i___coord.html">API_Coord</a> *offset)</td></tr>
-<tr class="memdesc:ga108a2e2f3f9bfdde52935451c03cacd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the offset of origin of the virtual coordinate system.  <br /></td></tr>
+<tr class="memdesc:ga108a2e2f3f9bfdde52935451c03cacd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the offset of the origin of the virtual coordinate system.  <br /></td></tr>
 <tr class="separator:ga108a2e2f3f9bfdde52935451c03cacd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1630b0cc8526521da2aba007051888dc" id="r_ga1630b0cc8526521da2aba007051888dc"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1630b0cc8526521da2aba007051888dc">ACAPI_ProjectSetting_GetLast3DDefLevels</a> (const GS::Array&lt; <a class="el" href="struct_a_p_i___elem_type.html">API_ElemType</a> &gt; &amp;elemTypes, GS::Array&lt; double &gt; &amp;levels)</td></tr>
 <tr class="memdesc:ga1630b0cc8526521da2aba007051888dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the 3D default levels for the construction elems.  <br /></td></tr>
@@ -297,7 +312,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Property type of an element used in conditional calculation element rules. </p>
-<dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad00d921b82b87217154b97332e048fe1a743167f101f4c1fd3f54d39fb1174043" name="ggad00d921b82b87217154b97332e048fe1a743167f101f4c1fd3f54d39fb1174043"></a>APIConditionalElementPropertyType_Volume&#160;</td><td class="fielddoc"><p>Volume property type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad00d921b82b87217154b97332e048fe1a6fc0b49ae9e748a40571d664b4ba08f0" name="ggad00d921b82b87217154b97332e048fe1a6fc0b49ae9e748a40571d664b4ba08f0"></a>APIConditionalElementPropertyType_Surface&#160;</td><td class="fielddoc"><p>Surface property type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad00d921b82b87217154b97332e048fe1a8a530e8751af4502a3dfd769e7fecc5a" name="ggad00d921b82b87217154b97332e048fe1a8a530e8751af4502a3dfd769e7fecc5a"></a>APIConditionalElementPropertyType_Length&#160;</td><td class="fielddoc"><p>Length property type. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -315,6 +337,52 @@ Functions</h2></td></tr>
 
 <p>The enumeration of the available preferences tab page types. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>Use this enum as a selector to the <a class="el" href="#gaca216b16ccdaec006a08878aa26703a5">ACAPI_ProjectSetting_GetPreferences</a> function to get data of the different tab pages of the Preferences and the Work Environment dialog. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggae460b1c2b9b8fc78f5ae3ede1932b63aa0c6059e6ec6e49ac975e022dc6d8f437" name="ggae460b1c2b9b8fc78f5ae3ede1932b63aa0c6059e6ec6e49ac975e022dc6d8f437"></a>APIPrefs_WorkingUnitsID&#160;</td><td class="fielddoc"><p>Working Units &amp; Levels preferences tab page. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae460b1c2b9b8fc78f5ae3ede1932b63aa574af22cc2a899e1a7c3e96c95fc0c24" name="ggae460b1c2b9b8fc78f5ae3ede1932b63aa574af22cc2a899e1a7c3e96c95fc0c24"></a>APIPrefs_ReferenceLevelsID&#160;</td><td class="fielddoc"><p>Reference Levels part of Working Units &amp; Levels preferences tab page. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae460b1c2b9b8fc78f5ae3ede1932b63aa33de3de3b13a4a3b7920bd3874e25539" name="ggae460b1c2b9b8fc78f5ae3ede1932b63aa33de3de3b13a4a3b7920bd3874e25539"></a>APIPrefs_DimensionsID&#160;</td><td class="fielddoc"><p>Dimensions preferences tab page. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae460b1c2b9b8fc78f5ae3ede1932b63aa3752f97f92439ec15e885de6125857f6" name="ggae460b1c2b9b8fc78f5ae3ede1932b63aa3752f97f92439ec15e885de6125857f6"></a>APIPrefs_CalcUnitsID&#160;</td><td class="fielddoc"><p>Calculation Units &amp; Rules preferences tab page. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae460b1c2b9b8fc78f5ae3ede1932b63aad6c30a7cb546932cc816ae8ad2e4d1ac" name="ggae460b1c2b9b8fc78f5ae3ede1932b63aad6c30a7cb546932cc816ae8ad2e4d1ac"></a>APIPrefs_CalcRulesID&#160;</td><td class="fielddoc"><p>Calculation Rules part of Calculation Units &amp; Rules preferences tab page. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae460b1c2b9b8fc78f5ae3ede1932b63aafe43c1b09719c9980b748edcf0803430" name="ggae460b1c2b9b8fc78f5ae3ede1932b63aafe43c1b09719c9980b748edcf0803430"></a>APIPrefs_LegacyID&#160;</td><td class="fielddoc"><p>Legacy preferences tab page. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae460b1c2b9b8fc78f5ae3ede1932b63aa137b9e1b4d9d49227c5eac770e8c9c5d" name="ggae460b1c2b9b8fc78f5ae3ede1932b63aa137b9e1b4d9d49227c5eac770e8c9c5d"></a>APIPrefs_ZonesID&#160;</td><td class="fielddoc"><p>Zones preferences tab page. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae460b1c2b9b8fc78f5ae3ede1932b63aa6414f14514e0a2f791259bdaef0bc8df" name="ggae460b1c2b9b8fc78f5ae3ede1932b63aa6414f14514e0a2f791259bdaef0bc8df"></a>APIPrefs_DataSafetyID&#160;</td><td class="fielddoc"><p>Data Safety preferences tab page. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae460b1c2b9b8fc78f5ae3ede1932b63aa7ebe3df4331f9191aba9bb1c9c513614" name="ggae460b1c2b9b8fc78f5ae3ede1932b63aa7ebe3df4331f9191aba9bb1c9c513614"></a>APIPrefs_ImagingAndCalcID&#160;</td><td class="fielddoc"><p>Imaging and Calculation tab page in the Work Environment settings. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae460b1c2b9b8fc78f5ae3ede1932b63aa1cdf1a6e29a4f57eccbeaf62457d9fab" name="ggae460b1c2b9b8fc78f5ae3ede1932b63aa1cdf1a6e29a4f57eccbeaf62457d9fab"></a>APIPrefs_FloorPlanCutPlaneDef&#160;</td><td class="fielddoc"><p>Imaging and Calculation tab page in the Work Environment settings. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae460b1c2b9b8fc78f5ae3ede1932b63aaf5b04e085c01f25c8034e212815eee58" name="ggae460b1c2b9b8fc78f5ae3ede1932b63aaf5b04e085c01f25c8034e212815eee58"></a>APIPrefs_LayoutsID&#160;</td><td class="fielddoc"><p>Imaging and Calculation tab page in the Work Environment settings. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gab3318d299220e937fc11f225d02eaa6c" name="gab3318d299220e937fc11f225d02eaa6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab3318d299220e937fc11f225d02eaa6c">&#9670;&#160;</a></span>API_RoofContourDisplay</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#gab3318d299220e937fc11f225d02eaa6c">API_RoofContourDisplay</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Roof display setting. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab3318d299220e937fc11f225d02eaa6cab44bf4608383c353a19d6f9f940a2025" name="ggab3318d299220e937fc11f225d02eaa6cab44bf4608383c353a19d6f9f940a2025"></a>APIRoofDisplay_AllVisibleContours&#160;</td><td class="fielddoc"><p>Display the roof with all visible contours </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab3318d299220e937fc11f225d02eaa6ca05497e5e0290e6e8b1e9b3fb8b51dea5" name="ggab3318d299220e937fc11f225d02eaa6ca05497e5e0290e6e8b1e9b3fb8b51dea5"></a>APIRoofDisplay_OnlyTheTopSurfaceOldWay&#160;</td><td class="fielddoc"><p>Display the roof with only the top surface (old way) </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -391,7 +459,7 @@ Functions</h2></td></tr>
 <li>APIERR_NOPLAN - There are no project loaded. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to change the project info parameters. It can be set in the 'Project Info...' dialog box in the File/Info menu. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to change the project info parameters. It can be set in the 'Project Info...' dialog box in the File/Info menu. The same behavior can be achieved with the Project Info functions <a class="el" href="group___project_info.html#ga1919090e6bdfeab43cbd0646d2b20dee">ACAPI_ProjectInfo_GetField</a>, <a class="el" href="group___project_info.html#gafe28a6465136a43ec9ba9dd0d4a7cad0">ACAPI_ProjectInfo_SetFieldValue</a>. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___project_note_info.html">API_ProjectNoteInfo</a> noteInfo;</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="#ga3c0960ebe29b33b6b6368b7d1e6eb356">ACAPI_ProjectSetting_GetProjectNotes</a> (&amp;noteInfo);</div>
@@ -501,7 +569,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>Retrieves the 3D default levels for the types passed in the elemIDs array. Possible elem types: Wall, Column, Beam, Symbol, Light, Slab, Roof, Mesh. </dd></dl>
@@ -523,20 +591,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the offset of origin of the virtual coordinate system. </p>
+<p>Returns the offset of the origin of the virtual coordinate system. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">offset</td><td>the offset of the origin of the virtual coordinate system </td></tr>
+    <tr><td class="paramname">offset</td><td>[out] The offset of the origin of the virtual coordinate system. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - offset is nullptr</li>
-<li>APIERR_BADDATABASE - the command was called for a non-2D window </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - offset is nullptr.</li>
+<li>APIERR_BADDATABASE - The command was called for a non-2D window. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the offset of the origin of the virtual coordinate system from the origin of the world coordinate system. This origin was introduced in Archicad 9 to reduce the inaccuracies, which could happen if the model was far away from the origin of the world coordinate system. This offset is set after a file is opened, if the so called 'weight point' of the model is far enough from the origin of the world coordinate system. After that all coordinates coming from the API are measured from this origin. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function retrieves the offset of the origin of the virtual coordinate system from the origin of the world coordinate system. This origin was introduced in Archicad 9 to reduce inaccuracies that could occur if the model was far away from the origin of the world coordinate system. This offset is set after a file is opened, if the so-called 'weight point' of the model is far enough from the origin of the world coordinate system. After that, all coordinates coming from the API are measured from this origin. </dd></dl>
 
 </div>
 </div>
@@ -607,7 +675,7 @@ Functions</h2></td></tr>
 <li>APIERR_NOPLAN - There are no project loaded. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the project info parameters. It can be set in the 'Project Info...' dialog box in the File/Info menu. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the project info parameters. It can be set in the 'Project Info...' dialog box in the File/Info menu. The same behavior can be achieved with the Project Info function <a class="el" href="group___project_info.html#ga1919090e6bdfeab43cbd0646d2b20dee">ACAPI_ProjectInfo_GetField</a>. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___project_note_info.html">API_ProjectNoteInfo</a> noteInfo;</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="#ga3c0960ebe29b33b6b6368b7d1e6eb356">ACAPI_ProjectSetting_GetProjectNotes</a> (&amp;noteInfo);</div>
@@ -720,7 +788,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - The size of elemTypes differes from the size of levels. </li>
 </ul>
 </dd></dl>

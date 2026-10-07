@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Add-On Integration</title>
+<title>Archicad 30 C++ API: Add-On Integration</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -211,18 +211,34 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga7eb6ddb06710661764ded697a3b0a513" id="r_ga7eb6ddb06710661764ded697a3b0a513"><td class="memItemLeft" align="right" valign="top">typedef GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7eb6ddb06710661764ded697a3b0a513">APINavigatorAddOnViewPointDataConvertNewFormatHandlerProc</a>(<a class="el" href="group___project_operation.html#gaf7e72c240d18c9af9200eada2ef2944b">API_FTypeID</a> planFileType, const GS::Array&lt; <a class="el" href="struct_a_p_i___navigator_add_on_view_point_data.html">API_NavigatorAddOnViewPointData</a> &gt; &amp;oldFormatVPDataArray, GS::Array&lt; <a class="el" href="struct_a_p_i___navigator_add_on_view_point_data.html">API_NavigatorAddOnViewPointData</a> &gt; &amp;currentFormatVPDataArray)</td></tr>
 <tr class="memdesc:ga7eb6ddb06710661764ded697a3b0a513"><td class="mdescLeft">&#160;</td><td class="mdescRight">User supplied callback procedure for converting Navigator AddOn viewpoints into current format.  <br /></td></tr>
 <tr class="separator:ga7eb6ddb06710661764ded697a3b0a513"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8a8dc577f5f8eceab9bd49ee9d19b3b0" id="r_ga8a8dc577f5f8eceab9bd49ee9d19b3b0"><td class="memItemLeft" align="right" valign="top">typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8a8dc577f5f8eceab9bd49ee9d19b3b0">APIClassificationVisibilityHandlerProc</a>(API_ClassificationVisibilityMode visibilityMode, const GS::Array&lt; <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &gt; &amp;classificationGuids, const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;classificationItemGuid)</td></tr>
+<tr class="memitem:ga8a8dc577f5f8eceab9bd49ee9d19b3b0" id="r_ga8a8dc577f5f8eceab9bd49ee9d19b3b0"><td class="memItemLeft" align="right" valign="top">typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8a8dc577f5f8eceab9bd49ee9d19b3b0">APIClassificationVisibilityHandlerProc</a>(<a class="el" href="#ga38aac5f2e8bba8514055cc93d7547e12">API_ClassificationVisibilityMode</a> visibilityMode, const GS::Array&lt; <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &gt; &amp;classificationGuids, const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;classificationItemGuid)</td></tr>
 <tr class="memdesc:ga8a8dc577f5f8eceab9bd49ee9d19b3b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to handle the visibility of a classification.  <br /></td></tr>
 <tr class="separator:ga8a8dc577f5f8eceab9bd49ee9d19b3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga77ac7401f68d736477c763fd0281e13b" id="r_ga77ac7401f68d736477c763fd0281e13b"><td class="memItemLeft" align="right" valign="top">typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___property.html#ga77ac7401f68d736477c763fd0281e13b">APIPropertyVisibilityHandlerProc</a>(API_PropertyVisibilityMode visibilityMode, const GS::Array&lt; <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &gt; &amp;classificationGuids, const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;propertyDefinitionGuid)</td></tr>
+<tr class="memitem:ga77ac7401f68d736477c763fd0281e13b" id="r_ga77ac7401f68d736477c763fd0281e13b"><td class="memItemLeft" align="right" valign="top">typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___property.html#ga77ac7401f68d736477c763fd0281e13b">APIPropertyVisibilityHandlerProc</a>(<a class="el" href="group___property.html#ga0bfe013771c05f775821dee649ecad97">API_PropertyVisibilityMode</a> visibilityMode, const GS::Array&lt; <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &gt; &amp;classificationGuids, const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;propertyDefinitionGuid)</td></tr>
 <tr class="memdesc:ga77ac7401f68d736477c763fd0281e13b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to handle the visibility of a property.  <br /></td></tr>
 <tr class="separator:ga77ac7401f68d736477c763fd0281e13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c471431541446a74c57720a0e8e31af" id="r_ga5c471431541446a74c57720a0e8e31af"><td class="memItemLeft" align="right" valign="top">typedef GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5c471431541446a74c57720a0e8e31af">APIPaletteControlCallBackProc</a>(Int32 referenceID, API_PaletteMessageID messageID, GS::IntPtr param)</td></tr>
+<tr class="memitem:ga5c471431541446a74c57720a0e8e31af" id="r_ga5c471431541446a74c57720a0e8e31af"><td class="memItemLeft" align="right" valign="top">typedef GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5c471431541446a74c57720a0e8e31af">APIPaletteControlCallBackProc</a>(Int32 referenceID, <a class="el" href="group___dialog.html#ga9eec4199288e4b1817de263ce2d28000">API_PaletteMessageID</a> messageID, GS::IntPtr param)</td></tr>
 <tr class="memdesc:ga5c471431541446a74c57720a0e8e31af"><td class="mdescLeft">&#160;</td><td class="mdescRight">User supplied callback function for handling special messages for modeless palettes.  <br /></td></tr>
 <tr class="separator:ga5c471431541446a74c57720a0e8e31af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ga9a102dc92f724dd7dca3eca0572cb915" id="r_ga9a102dc92f724dd7dca3eca0572cb915"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9a102dc92f724dd7dca3eca0572cb915">API_PropertyObjectCmdID</a> { <a class="el" href="#gga9a102dc92f724dd7dca3eca0572cb915a83832fb6be6c3124401fe655abe7cb60">APIPropObj_None</a> = 0
+, <a class="el" href="#gga9a102dc92f724dd7dca3eca0572cb915a27bcc7788a40c6bef83ac1d501e036b0">APIPropObj_AssignProperty</a> = 1
+, <a class="el" href="#gga9a102dc92f724dd7dca3eca0572cb915a76b1947d46105328c7ce40432c96eeb0">APIPropObj_DisableProperty</a> = 2
+ }</td></tr>
+<tr class="memdesc:ga9a102dc92f724dd7dca3eca0572cb915"><td class="mdescLeft">&#160;</td><td class="mdescRight">The identifier of the command the handler was called for.  <a href="#ga9a102dc92f724dd7dca3eca0572cb915">More...</a><br /></td></tr>
+<tr class="separator:ga9a102dc92f724dd7dca3eca0572cb915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38aac5f2e8bba8514055cc93d7547e12" id="r_ga38aac5f2e8bba8514055cc93d7547e12"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga38aac5f2e8bba8514055cc93d7547e12">API_ClassificationVisibilityMode</a> { <a class="el" href="#gga38aac5f2e8bba8514055cc93d7547e12aed24c84a229edc541944bd4e7b41b04d">APIClassVis_IsEnabled</a> = 0
+, <a class="el" href="#gga38aac5f2e8bba8514055cc93d7547e12acc8ed11e1afc8dd720d6339ba70a6bb6">APIClassVis_IsClassificationVisible</a> = 1
+ }</td></tr>
+<tr class="memdesc:ga38aac5f2e8bba8514055cc93d7547e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies what should the callback function return.  <a href="#ga38aac5f2e8bba8514055cc93d7547e12">More...</a><br /></td></tr>
+<tr class="separator:ga38aac5f2e8bba8514055cc93d7547e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0bfe013771c05f775821dee649ecad97" id="r_ga0bfe013771c05f775821dee649ecad97"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___property.html#ga0bfe013771c05f775821dee649ecad97">API_PropertyVisibilityMode</a> { <a class="el" href="group___property.html#gga0bfe013771c05f775821dee649ecad97aff49304f9e5a11d23dfd729f43892cc1">APIPropVis_IsEnabled</a> = 0
+, <a class="el" href="group___property.html#gga0bfe013771c05f775821dee649ecad97adc8a75eb71fbd9439900fbe1f532ec4f">APIPropVis_IsPropertyVisible</a> = 1
+ }</td></tr>
+<tr class="memdesc:ga0bfe013771c05f775821dee649ecad97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies what should the callback function return.  <a href="group___property.html#ga0bfe013771c05f775821dee649ecad97">More...</a><br /></td></tr>
+<tr class="separator:ga0bfe013771c05f775821dee649ecad97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae7782179a03e5a2f34a4940b46b86623" id="r_gae7782179a03e5a2f34a4940b46b86623"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae7782179a03e5a2f34a4940b46b86623">APIMenuCodeID</a> { <br />
 &#160;&#160;<a class="el" href="#ggae7782179a03e5a2f34a4940b46b86623ae12864dedfac94a3757780311667dec2">MenuCode_UserDef</a> = 0
 , <a class="el" href="#ggae7782179a03e5a2f34a4940b46b86623aa7869a67baaab6dc11235ced783027dd">MenuCode_File</a> = 1
@@ -268,10 +284,10 @@ Enumerations</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga79ba0da441937d6cbbbf85e37ec81191" id="r_ga79ba0da441937d6cbbbf85e37ec81191"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___add_on_add_on_communication.html#ga79ba0da441937d6cbbbf85e37ec81191">ACAPI_AddOnAddOnCommunication_RegisterSupportedService</a> (GSType cmdID, Int32 cmdVersion)</td></tr>
-<tr class="memdesc:ga79ba0da441937d6cbbbf85e37ec81191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a command which can be used by other add-ons.  <br /></td></tr>
+<tr class="memdesc:ga79ba0da441937d6cbbbf85e37ec81191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a command which other add-ons can use.  <br /></td></tr>
 <tr class="separator:ga79ba0da441937d6cbbbf85e37ec81191"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d9af21aff689ca178ff46367ce2d62c" id="r_ga1d9af21aff689ca178ff46367ce2d62c"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1d9af21aff689ca178ff46367ce2d62c">ACAPI_AddOnIntegration_RegisterRequiredService</a> (const <a class="el" href="struct_a_p_i___modul_i_d.html">API_ModulID</a> *modulID, GSType cmdID, Int32 cmdVersion)</td></tr>
-<tr class="memdesc:ga1d9af21aff689ca178ff46367ce2d62c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the availability of an other add-on's command.  <br /></td></tr>
+<tr class="memdesc:ga1d9af21aff689ca178ff46367ce2d62c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the availability of another add-on's command.  <br /></td></tr>
 <tr class="separator:ga1d9af21aff689ca178ff46367ce2d62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaec79ce2178f5bb5482da171a49ba88ef" id="r_gaec79ce2178f5bb5482da171a49ba88ef"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___menu_item.html#gaec79ce2178f5bb5482da171a49ba88ef">ACAPI_MenuItem_RegisterMenu</a> (short menuStrResID, short promptStrResID, <a class="el" href="#gae7782179a03e5a2f34a4940b46b86623">APIMenuCodeID</a> menuPosCode, GSFlags menuFlags)</td></tr>
 <tr class="memdesc:gaec79ce2178f5bb5482da171a49ba88ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the menu items of the add-on.  <br /></td></tr>
@@ -301,7 +317,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga971703b8ea845703fcc9c14401f2ea55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers built-in library parts to be loaded.  <br /></td></tr>
 <tr class="separator:ga971703b8ea845703fcc9c14401f2ea55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4a452fd8f0d8a64bff225c6ee72984de" id="r_ga4a452fd8f0d8a64bff225c6ee72984de"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4a452fd8f0d8a64bff225c6ee72984de">ACAPI_AddOnIntegration_RegisterModulDataHandler</a> (void)</td></tr>
-<tr class="memdesc:ga4a452fd8f0d8a64bff225c6ee72984de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the add-on to be called for merging and converting its moduldata.  <br /></td></tr>
+<tr class="memdesc:ga4a452fd8f0d8a64bff225c6ee72984de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the add-on to be called for merging and converting its module data.  <br /></td></tr>
 <tr class="separator:ga4a452fd8f0d8a64bff225c6ee72984de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0782ee15d37f3e6b56f7c7061c30b651" id="r_ga0782ee15d37f3e6b56f7c7061c30b651"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0782ee15d37f3e6b56f7c7061c30b651">ACAPI_AddOnIntegration_RegisterClassificationVisibilityHandler</a> (void)</td></tr>
 <tr class="memdesc:ga0782ee15d37f3e6b56f7c7061c30b651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells Archicad that your add-on wants to modify classification visibility.  <br /></td></tr>
@@ -310,16 +326,16 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga994fe3b6fe1eb64f770efce956e94256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells Archicad that your add-on wants to modify property visibility.  <br /></td></tr>
 <tr class="separator:ga994fe3b6fe1eb64f770efce956e94256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3ce3a2abce9e91557d9fadf427b1036d" id="r_ga3ce3a2abce9e91557d9fadf427b1036d"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3ce3a2abce9e91557d9fadf427b1036d">ACAPI_AddOnIntegration_RegisterNavigatorAddOnViewPointDataHandler</a> (void)</td></tr>
-<tr class="memdesc:ga3ce3a2abce9e91557d9fadf427b1036d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the add-on to be called when Navigator AddOn viewpoints are merged, saved to older format, or converted from older format to current format.  <br /></td></tr>
+<tr class="memdesc:ga3ce3a2abce9e91557d9fadf427b1036d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers the add-on to be called when Navigator AddOn viewpoints are merged, saved to an older format, or converted from an older format to the current format.  <br /></td></tr>
 <tr class="separator:ga3ce3a2abce9e91557d9fadf427b1036d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeb02e79b3830a375b4722790bdcdb3b1" id="r_gaeb02e79b3830a375b4722790bdcdb3b1"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaeb02e79b3830a375b4722790bdcdb3b1">ACAPI_AddOnIntegration_RegisterSettingsObserver</a> (const <a class="el" href="struct_a_p_i___elem_type.html">API_ElemType</a> &amp;tool)</td></tr>
-<tr class="memdesc:gaeb02e79b3830a375b4722790bdcdb3b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an observer to an element settings dialog.  <br /></td></tr>
+<tr class="memdesc:gaeb02e79b3830a375b4722790bdcdb3b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an observer for an element settings dialog.  <br /></td></tr>
 <tr class="separator:gaeb02e79b3830a375b4722790bdcdb3b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga602823d17871775ffa937b477515b4f0" id="r_ga602823d17871775ffa937b477515b4f0"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga602823d17871775ffa937b477515b4f0">ACAPI_AddOnIntegration_RegisterPublishFormat</a> (const <a class="el" href="struct_a_p_i___publish_format_data.html">API_PublishFormatData</a> &amp;formatData)</td></tr>
-<tr class="memdesc:ga602823d17871775ffa937b477515b4f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a publish format which can be used in publisher tree.  <br /></td></tr>
+<tr class="memdesc:ga602823d17871775ffa937b477515b4f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a publish format which can be used in the publisher tree.  <br /></td></tr>
 <tr class="separator:ga602823d17871775ffa937b477515b4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaabb8b8b44c161fe3cb5572486060cf69" id="r_gaabb8b8b44c161fe3cb5572486060cf69"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaabb8b8b44c161fe3cb5572486060cf69">ACAPI_AddOnIntegration_InstallModulCommandHandler</a> (GSType cmdID, Int32 cmdVersion, <a class="el" href="#ga680fb21d3499cefccf3c2770e4ecba5d">APIModulCommandProc</a> *handlerProc)</td></tr>
-<tr class="memdesc:gaabb8b8b44c161fe3cb5572486060cf69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback for handling command calls from other add-ons.  <br /></td></tr>
+<tr class="memdesc:gaabb8b8b44c161fe3cb5572486060cf69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback to handle command calls from other add-ons.  <br /></td></tr>
 <tr class="separator:gaabb8b8b44c161fe3cb5572486060cf69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf40884810b9a156a9dbded23168dbde8" id="r_gaf40884810b9a156a9dbded23168dbde8"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___menu_item.html#gaf40884810b9a156a9dbded23168dbde8">ACAPI_MenuItem_InstallMenuHandler</a> (short menuStrResID, <a class="el" href="#gaf33eed12f860176434ca3d617e0af978">APIMenuCommandProc</a> *handlerProc)</td></tr>
 <tr class="memdesc:gaf40884810b9a156a9dbded23168dbde8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback procedure for handling the add-on's menu commands.  <br /></td></tr>
@@ -331,7 +347,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga0f14aff2aa9ab1c8b993280c36529ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback procedure for handling file operations.  <br /></td></tr>
 <tr class="separator:ga0f14aff2aa9ab1c8b993280c36529ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga29fa171b94724463b999dcbfb3abae27" id="r_ga29fa171b94724463b999dcbfb3abae27"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga29fa171b94724463b999dcbfb3abae27">ACAPI_AddOnIntegration_InstallPanelHandler</a> (Int32 refCon, <a class="el" href="#gafdc162d4dfa6f37018cdaf355a9b13cd">APIPanelCreateProc</a> *handlerCreateProc, <a class="el" href="#ga5f18cfb0fd48427380b832d480476097">APIPanelDestroyProc</a> *handlerDestroyProc)</td></tr>
-<tr class="memdesc:ga29fa171b94724463b999dcbfb3abae27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs the creation and destroy handlers for the registered custom settings panel.  <br /></td></tr>
+<tr class="memdesc:ga29fa171b94724463b999dcbfb3abae27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs the creation and destruction handlers for the registered custom settings panel.  <br /></td></tr>
 <tr class="separator:ga29fa171b94724463b999dcbfb3abae27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac30c1599068af440052e5ecc4a68fb03" id="r_gac30c1599068af440052e5ecc4a68fb03"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___library_part.html#gac30c1599068af440052e5ecc4a68fb03">ACAPI_LibraryPart_InstallESYMHandler</a> (GSType signature, <a class="el" href="group___library_part.html#ga13721e6f355feace411ad3a8d4ddfe33">APIESYMCommandProc</a> *handlerProc)</td></tr>
 <tr class="memdesc:gac30c1599068af440052e5ecc4a68fb03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback for handling external symbols.  <br /></td></tr>
@@ -343,19 +359,19 @@ Functions</h2></td></tr>
 <tr class="memdesc:gac45d970d2cf214a87a4cebab0ecfdd87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback procedure for handling the module data merge operations.  <br /></td></tr>
 <tr class="separator:gac45d970d2cf214a87a4cebab0ecfdd87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga041102e50bca18c84149123a09ca6c70" id="r_ga041102e50bca18c84149123a09ca6c70"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga041102e50bca18c84149123a09ca6c70">ACAPI_AddOnIntegration_InstallModulDataSaveOldFormatHandler</a> (<a class="el" href="#ga22b82672ec91a2c30ce0e40f69e89305">APIModulDataSaveOldFormatHandlerProc</a> *modulDataSaveOldFormatProc)</td></tr>
-<tr class="memdesc:ga041102e50bca18c84149123a09ca6c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback procedure for converting module data into older format.  <br /></td></tr>
+<tr class="memdesc:ga041102e50bca18c84149123a09ca6c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback procedure for converting module data into an older format.  <br /></td></tr>
 <tr class="separator:ga041102e50bca18c84149123a09ca6c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ac39146e90adba1b645579337b3d558" id="r_ga8ac39146e90adba1b645579337b3d558"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8ac39146e90adba1b645579337b3d558">ACAPI_AddOnIntegration_InstallElemSetSaveOldFormatHandler</a> (<a class="el" href="#ga12ba3ad452063a287bbc4ba8c5a2d923">APIElemSetSaveOldFormatHandlerProc</a> *elemSetSaveOldFormatProc)</td></tr>
-<tr class="memdesc:ga8ac39146e90adba1b645579337b3d558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback procedure for handling the converison of the user data, the addOn attached to an elemeset.  <br /></td></tr>
+<tr class="memdesc:ga8ac39146e90adba1b645579337b3d558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback procedure for handling the conversion of the user data, the add-on attached to an element set.  <br /></td></tr>
 <tr class="separator:ga8ac39146e90adba1b645579337b3d558"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4d1d2f19659ed6d5d57134150d1148bd" id="r_ga4d1d2f19659ed6d5d57134150d1148bd"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4d1d2f19659ed6d5d57134150d1148bd">ACAPI_AddOnIntegration_InstallNavigatorAddOnViewPointDataMergeHandler</a> (<a class="el" href="#gac49eb69d983904e43358408670c6b272">APINavigatorAddOnViewPointDataMergeHandlerProc</a> *mergeHandlerProc)</td></tr>
 <tr class="memdesc:ga4d1d2f19659ed6d5d57134150d1148bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback procedure for handling the Navigator AddOn viewpoint merge operations.  <br /></td></tr>
 <tr class="separator:ga4d1d2f19659ed6d5d57134150d1148bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga00fabea30650539088de435243bd37b8" id="r_ga00fabea30650539088de435243bd37b8"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga00fabea30650539088de435243bd37b8">ACAPI_AddOnIntegration_InstallNavigatorAddOnViewPointDataSaveOldFormatHandler</a> (<a class="el" href="#gaf743787e39e3242c6092c1a02fadf698">APINavigatorAddOnViewPointDataSaveOldFormatHandlerProc</a> *saveOldFormatProc)</td></tr>
-<tr class="memdesc:ga00fabea30650539088de435243bd37b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback procedure for converting Navigator AddOn viewpoints into older format.  <br /></td></tr>
+<tr class="memdesc:ga00fabea30650539088de435243bd37b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback procedure for converting Navigator AddOn viewpoints into an older format.  <br /></td></tr>
 <tr class="separator:ga00fabea30650539088de435243bd37b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9e8f3fafcf4612c75508a2b6bad9fd24" id="r_ga9e8f3fafcf4612c75508a2b6bad9fd24"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9e8f3fafcf4612c75508a2b6bad9fd24">ACAPI_AddOnIntegration_InstallNavigatorAddOnViewPointDataConvertNewFormatHandler</a> (<a class="el" href="#ga7eb6ddb06710661764ded697a3b0a513">APINavigatorAddOnViewPointDataConvertNewFormatHandlerProc</a> *convertNewFormatProc)</td></tr>
-<tr class="memdesc:ga9e8f3fafcf4612c75508a2b6bad9fd24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback procedure for converting Navigator AddOn viewpoints into current format.  <br /></td></tr>
+<tr class="memdesc:ga9e8f3fafcf4612c75508a2b6bad9fd24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a callback procedure for converting Navigator AddOn viewpoints into the current format.  <br /></td></tr>
 <tr class="separator:ga9e8f3fafcf4612c75508a2b6bad9fd24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4179e7dc48195aaef5aba15b776e29de" id="r_ga4179e7dc48195aaef5aba15b776e29de"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4179e7dc48195aaef5aba15b776e29de">ACAPI_AddOnIntegration_InstallSettingsHandler</a> (const <a class="el" href="struct_a_p_i___elem_type.html">API_ElemType</a> &amp;tool, <a class="el" href="#ga332e425afa5bbd65848e3efe6d733140">APISettingsCreateProc</a> *handlerCreateProc, <a class="el" href="#ga06d67080b2fb1a466c99ba808496e203">APISettingsDestroyProc</a> *handlerDestroyProc)</td></tr>
 <tr class="memdesc:ga4179e7dc48195aaef5aba15b776e29de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs the create and destroy handlers for the registered settings observer.  <br /></td></tr>
@@ -366,23 +382,31 @@ Functions</h2></td></tr>
 <tr class="memitem:gaeb2df27487dae7eea1062d07d0aeb0ee" id="r_gaeb2df27487dae7eea1062d07d0aeb0ee"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___property.html#gaeb2df27487dae7eea1062d07d0aeb0ee">ACAPI_Property_InstallPropertyVisibilityHandler</a> (<a class="el" href="group___property.html#ga77ac7401f68d736477c763fd0281e13b">APIPropertyVisibilityHandlerProc</a> *handlerProc)</td></tr>
 <tr class="memdesc:gaeb2df27487dae7eea1062d07d0aeb0ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs the property visibility handler function.  <br /></td></tr>
 <tr class="separator:gaeb2df27487dae7eea1062d07d0aeb0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa224c17de80cd55f8111e45dc5f005fc" id="r_gaa224c17de80cd55f8111e45dc5f005fc"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa224c17de80cd55f8111e45dc5f005fc">ACAPI_AddOnIntegration_InstallPublisherSaveMethod</a> (const char *mimeType, <a class="el" href="group___publisher.html#ga930943e85800de0cdc60481156b0a9da">SaveProc</a> *saveProc)</td></tr>
-<tr class="memdesc:gaa224c17de80cd55f8111e45dc5f005fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs the save methods for the Publisher.  <br /></td></tr>
-<tr class="separator:gaa224c17de80cd55f8111e45dc5f005fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7cc973ef3037b2a04e838543fd858754" id="r_ga7cc973ef3037b2a04e838543fd858754"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7cc973ef3037b2a04e838543fd858754">ACAPI_AddOnIntegration_InstallPublisherSaveWithOptionMethod</a> (const char *mimeType, <a class="el" href="group___publisher.html#ga4450a3dc9f76c354bec74caa18841053">SaveWithOptionProc</a> *saveWithOptionProc)</td></tr>
+<tr class="memdesc:ga7cc973ef3037b2a04e838543fd858754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs the save methods for the Publisher with the set options.  <br /></td></tr>
+<tr class="separator:ga7cc973ef3037b2a04e838543fd858754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga199db38e28460c6f13212693a48d3b02" id="r_ga199db38e28460c6f13212693a48d3b02"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga199db38e28460c6f13212693a48d3b02">ACAPI_AddOnIntegration_InstallPublisherSaveWithTranslatorMethod</a> (const char *mimeType, <a class="el" href="group___publisher.html#gae87a2542cff98790f46986ff630b3f1b">SaveWithTranslatorProc</a> *saveWithTranslatorProc)</td></tr>
+<tr class="memdesc:ga199db38e28460c6f13212693a48d3b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs the save methods for the Publisher with a selected translator.  <br /></td></tr>
+<tr class="separator:ga199db38e28460c6f13212693a48d3b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae294cfd674fde1cbd0c4884b940cef9e" id="r_gae294cfd674fde1cbd0c4884b940cef9e"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae294cfd674fde1cbd0c4884b940cef9e">ACAPI_AddOnIntegration_InstallPublisherSaveOption</a> (const char *mimeType, <a class="el" href="group___publisher.html#gabafc3b6d7b76e4add0615d95457caa81">SaveOptionProc</a> *saveOptionProc)</td></tr>
 <tr class="memdesc:gae294cfd674fde1cbd0c4884b940cef9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs the option methods for the Publisher.  <br /></td></tr>
 <tr class="separator:gae294cfd674fde1cbd0c4884b940cef9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga056ff4c8c66549c6b9b8f544b0940c2c" id="r_ga056ff4c8c66549c6b9b8f544b0940c2c"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga056ff4c8c66549c6b9b8f544b0940c2c">ACAPI_AddOnIntegration_InstallPublisherSaveTranslator</a> (const char *mimeType, <a class="el" href="group___publisher.html#ga8e6b1826209da658eb06285e03d34b1c">SaveTranslatorProc</a> *saveTranslatorProc)</td></tr>
+<tr class="memdesc:ga056ff4c8c66549c6b9b8f544b0940c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs the translator methods for the Publisher.  <br /></td></tr>
+<tr class="separator:ga056ff4c8c66549c6b9b8f544b0940c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ff6b59dc81d7647324722b07c4b58e8" id="r_ga0ff6b59dc81d7647324722b07c4b58e8"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0ff6b59dc81d7647324722b07c4b58e8">ACAPI_AddOnIntegration_InstallPublisherSaveInitialOption</a> (const char *mimeType, <a class="el" href="group___publisher.html#ga1751acd5fd15211543cd551677202dc5">SaveInitialOptionProc</a> *saveInitialOptionProc)</td></tr>
+<tr class="memdesc:ga0ff6b59dc81d7647324722b07c4b58e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs the option initializer methods for the Publisher.  <br /></td></tr>
+<tr class="separator:ga0ff6b59dc81d7647324722b07c4b58e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ede7ae0a5b26d2c991b29f20f6e0df8" id="r_ga8ede7ae0a5b26d2c991b29f20f6e0df8"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8ede7ae0a5b26d2c991b29f20f6e0df8">ACAPI_AddOnIntegration_InstallPublisherTranslatorGetter</a> (const char *mimeType, <a class="el" href="group___publisher.html#gab8ac9e0bc5b7471fcd60cf182a1f86ae">TranslatorGetterProc</a> *translatorGetterProc)</td></tr>
-<tr class="memdesc:ga8ede7ae0a5b26d2c991b29f20f6e0df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs the translator getter function for the Publisher.  <br /></td></tr>
 <tr class="separator:ga8ede7ae0a5b26d2c991b29f20f6e0df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6819fec71eef6b7ad1508c877e9dd288" id="r_ga6819fec71eef6b7ad1508c877e9dd288"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6819fec71eef6b7ad1508c877e9dd288">ACAPI_AddOnIntegration_InstallPublisherDefaultTranslatorGetter</a> (const char *mimeType, <a class="el" href="group___publisher.html#gac6a0406b42e34e61ae1a898c5829d9f2">DefaultTranslatorGetterProc</a> *defaultTranslatorGetterProc)</td></tr>
+<tr class="memitem:ga6819fec71eef6b7ad1508c877e9dd288" id="r_ga6819fec71eef6b7ad1508c877e9dd288"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6819fec71eef6b7ad1508c877e9dd288">ACAPI_AddOnIntegration_InstallPublisherDefaultTranslatorGetter</a> (const char *mimeType, <a class="el" href="group___publisher.html#ga5f382b2f9036044cf1c0cd49559c0675">DefaultTranslatorGetterProc</a> *defaultTranslatorGetterProc)</td></tr>
 <tr class="memdesc:ga6819fec71eef6b7ad1508c877e9dd288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs the default translator getter function for the Publisher.  <br /></td></tr>
 <tr class="separator:ga6819fec71eef6b7ad1508c877e9dd288"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d044cfe8709de048b8598b8c1dfd2ac" id="r_ga1d044cfe8709de048b8598b8c1dfd2ac"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1d044cfe8709de048b8598b8c1dfd2ac">ACAPI_AddOnIntegration_InstallPublisherFormatInfoGetter</a> (const char *mimeType, <a class="el" href="group___publisher.html#ga4219a052ce771d35b855db27c74066cb">InfoGetterProc</a> *infoGetterProc)</td></tr>
 <tr class="memdesc:ga1d044cfe8709de048b8598b8c1dfd2ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs the format info getter function for the Publisher.  <br /></td></tr>
 <tr class="separator:ga1d044cfe8709de048b8598b8c1dfd2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga94e03de5747d369df034c790ea8c2513" id="r_ga94e03de5747d369df034c790ea8c2513"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___add_on_lifetime.html#ga94e03de5747d369df034c790ea8c2513">ACAPI_KeepInMemory</a> (bool keepIn)</td></tr>
-<tr class="memdesc:ga94e03de5747d369df034c790ea8c2513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructs the host application to keep the add-on in the memory after execution.  <br /></td></tr>
+<tr class="memdesc:ga94e03de5747d369df034c790ea8c2513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructs the host application to keep the add-on in memory after execution.  <br /></td></tr>
 <tr class="separator:ga94e03de5747d369df034c790ea8c2513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf369c24c2bcc0f87f6bc35947c8aba5b" id="r_gaf369c24c2bcc0f87f6bc35947c8aba5b"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf369c24c2bcc0f87f6bc35947c8aba5b">ACAPI_RegisterModelessWindow</a> (Int32 referenceID, <a class="el" href="#ga5c471431541446a74c57720a0e8e31af">APIPaletteControlCallBackProc</a> *callBackProc, GSFlags controlFlags, const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;paletteGuid=<a class="el" href="group___a_p_i_infrastructure.html#ga29716e37ee11f9f3bbd3cbd2fda5adc3">APINULLGuid</a>)</td></tr>
 <tr class="memdesc:gaf369c24c2bcc0f87f6bc35947c8aba5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a modeless palette in the API.  <br /></td></tr>
@@ -401,7 +425,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef bool APIClassificationVisibilityHandlerProc(API_ClassificationVisibilityMode visibilityMode, const GS::Array&lt; <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &gt; &amp;classificationGuids, const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;classificationItemGuid)</td>
+          <td class="memname">typedef bool APIClassificationVisibilityHandlerProc(<a class="el" href="#ga38aac5f2e8bba8514055cc93d7547e12">API_ClassificationVisibilityMode</a> visibilityMode, const GS::Array&lt; <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &gt; &amp;classificationGuids, const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;classificationItemGuid)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -537,7 +561,7 @@ Functions</h2></td></tr>
 <li>NoError - The function has completed with success. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This is the function which will be called when your add-on installed it with <a class="el" href="#gac2fd5329ecac6a58b03f910ad8e5c7d0">ACAPI_AddOnIntegration_InstallFileTypeHandler</a>. From Archicad 19 you have to enclose the element creation creating in an undoable command scope during a merge file operation. In case you pass empty string parameter to <a class="el" href="group___command.html#gab7bf9e1351986b4bb6c69dab76766f1a">ACAPI_CallUndoableCommand</a>, Archicad replaces it with the default "Paste" undo string. From Archicad 9 merge and open operations can be initiated also with drag drop:<ul>
+<dl class="section remark"><dt>Remarks</dt><dd>This is the function which will be called when your add-on installed it with <a class="el" href="#gac2fd5329ecac6a58b03f910ad8e5c7d0">ACAPI_AddOnIntegration_InstallFileTypeHandler</a>. From Archicad 19 you have to enclose the element creation in an undoable command scope during a merge file operation. In case you pass empty string parameter to <a class="el" href="group___command.html#gab7bf9e1351986b4bb6c69dab76766f1a">ACAPI_CallUndoableCommand</a>, Archicad replaces it with the default "Paste" undo string. From Archicad 9 merge and open operations can be initiated also with drag drop:<ul>
 <li>dropping a file of a registered type onto the frame window (on Windows) results an IO_OPEN method call</li>
 <li>dropping a file of a registered type onto the visible client area of a drawing (floorplan, section, detail) window generates an IO_MERGE operation. In this case the fromDragDrop flag of <a class="el" href="struct_a_p_i___i_o_params.html">API_IOParams</a> is set, and the dropOffset field contains the vector that points to the dropping position from the origin. The false value in the noDialog parameter means that the drag drop operation was performed with the right mouse button or with pressing a modifier key (Ctrl on Windows, Alt on the Macintosh). </li>
 </ul>
@@ -656,7 +680,7 @@ Functions</h2></td></tr>
 <li>NoError - The function has completed with success. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>In order to save the add-on's moduldata in the proper format into a previous version project file, you need to implement this callback function, and pass it to Archicad with <a class="el" href="#ga041102e50bca18c84149123a09ca6c70">ACAPI_AddOnIntegration_InstallModulDataSaveOldFormatHandler</a> during the Initialize phase. It is also necessary to notify Archicad about this capability of the add-on by calling <a class="el" href="#ga4a452fd8f0d8a64bff225c6ee72984de">ACAPI_AddOnIntegration_RegisterModulDataHandler</a> from the <a class="el" href="group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e">RegisterInterface</a> function. This handler function is called whenever the user saves the project into an older format, and tha add-on has any moduldata stored currently into the project. The data should be constructed according to the required version into a dynamically allocated <a class="el" href="struct_a_p_i___modul_data.html">API_ModulData</a> structure, and the pointer of this structure should be pushed into the modulesToSave table. Notice that more modules can be added, should be identified with different names. In Archicad versions prior to 13 were able to store only one moduldata per add-on, this moduldata should be stored with empty string identifier (""). The memory allocated for the converted moduldata by the add-on's handler function will be released by the caller application. For further details of the notification process refer to the ModulData Manager section. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>In order to save the add-on's moduldata in the proper format into a previous version project file, you need to implement this callback function, and pass it to Archicad with <a class="el" href="#ga041102e50bca18c84149123a09ca6c70">ACAPI_AddOnIntegration_InstallModulDataSaveOldFormatHandler</a> during the Initialize phase. It is also necessary to notify Archicad about this capability of the add-on by calling <a class="el" href="#ga4a452fd8f0d8a64bff225c6ee72984de">ACAPI_AddOnIntegration_RegisterModulDataHandler</a> from the <a class="el" href="group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e">RegisterInterface</a> function. This handler function is called whenever the user saves the project into an older format, and the add-on has any moduldata stored currently into the project. The data should be constructed according to the required version into a dynamically allocated <a class="el" href="struct_a_p_i___modul_data.html">API_ModulData</a> structure, and the pointer of this structure should be pushed into the modulesToSave table. Notice that more modules can be added, should be identified with different names. In Archicad versions prior to 13 were able to store only one moduldata per add-on, this moduldata should be stored with empty string identifier (""). The memory allocated for the converted moduldata by the add-on's handler function will be released by the caller application. For further details of the notification process refer to the ModulData Manager section. </dd></dl>
 
 </div>
 </div>
@@ -752,7 +776,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef GSErrCode APIPaletteControlCallBackProc(Int32 referenceID, API_PaletteMessageID messageID, GS::IntPtr param)</td>
+          <td class="memname">typedef GSErrCode APIPaletteControlCallBackProc(Int32 referenceID, <a class="el" href="group___dialog.html#ga9eec4199288e4b1817de263ce2d28000">API_PaletteMessageID</a> messageID, GS::IntPtr param)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -896,7 +920,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef bool APIPropertyVisibilityHandlerProc(API_PropertyVisibilityMode visibilityMode, const GS::Array&lt; <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &gt; &amp;classificationGuids, const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;propertyDefinitionGuid)</td>
+          <td class="memname">typedef bool APIPropertyVisibilityHandlerProc(<a class="el" href="group___property.html#ga0bfe013771c05f775821dee649ecad97">API_PropertyVisibilityMode</a> visibilityMode, const GS::Array&lt; <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &gt; &amp;classificationGuids, const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;propertyDefinitionGuid)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1007,6 +1031,28 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga38aac5f2e8bba8514055cc93d7547e12" name="ga38aac5f2e8bba8514055cc93d7547e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga38aac5f2e8bba8514055cc93d7547e12">&#9670;&#160;</a></span>API_ClassificationVisibilityMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga38aac5f2e8bba8514055cc93d7547e12">API_ClassificationVisibilityMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies what should the callback function return. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga38aac5f2e8bba8514055cc93d7547e12aed24c84a229edc541944bd4e7b41b04d" name="gga38aac5f2e8bba8514055cc93d7547e12aed24c84a229edc541944bd4e7b41b04d"></a>APIClassVis_IsEnabled&#160;</td><td class="fielddoc"><p>The callback function should return true if the visibility handling is enabled. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga38aac5f2e8bba8514055cc93d7547e12acc8ed11e1afc8dd720d6339ba70a6bb6" name="gga38aac5f2e8bba8514055cc93d7547e12acc8ed11e1afc8dd720d6339ba70a6bb6"></a>APIClassVis_IsClassificationVisible&#160;</td><td class="fielddoc"><p>The callback function should return true if the given classification is visible. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="ga2e8d1e122ba55aa64d55f78a255a9122" name="ga2e8d1e122ba55aa64d55f78a255a9122"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2e8d1e122ba55aa64d55f78a255a9122">&#9670;&#160;</a></span>API_PanelType</h2>
 
@@ -1029,6 +1075,52 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="gga2e8d1e122ba55aa64d55f78a255a9122a0c5c50b605991620cd343d94eaafd65b" name="gga2e8d1e122ba55aa64d55f78a255a9122a0c5c50b605991620cd343d94eaafd65b"></a>APIPanel_Attribute&#160;</td><td class="fielddoc"><p>Represents the attribute panel, which handles project attributes such as layers, line types, and materials. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga2e8d1e122ba55aa64d55f78a255a9122a2449d3206717bfc9559073eca3bcba9d" name="gga2e8d1e122ba55aa64d55f78a255a9122a2449d3206717bfc9559073eca3bcba9d"></a>APIPanel_InfoBox&#160;</td><td class="fielddoc"><p>Represents the infobox panel, a contextual toolbar that provides quick access to settings based on the active tool. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga9a102dc92f724dd7dca3eca0572cb915" name="ga9a102dc92f724dd7dca3eca0572cb915"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9a102dc92f724dd7dca3eca0572cb915">&#9670;&#160;</a></span>API_PropertyObjectCmdID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga9a102dc92f724dd7dca3eca0572cb915">API_PropertyObjectCmdID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The identifier of the command the handler was called for. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga9a102dc92f724dd7dca3eca0572cb915a83832fb6be6c3124401fe655abe7cb60" name="gga9a102dc92f724dd7dca3eca0572cb915a83832fb6be6c3124401fe655abe7cb60"></a>APIPropObj_None&#160;</td><td class="fielddoc"><p>None </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9a102dc92f724dd7dca3eca0572cb915a27bcc7788a40c6bef83ac1d501e036b0" name="gga9a102dc92f724dd7dca3eca0572cb915a27bcc7788a40c6bef83ac1d501e036b0"></a>APIPropObj_AssignProperty&#160;</td><td class="fielddoc"><p>Assign Property </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9a102dc92f724dd7dca3eca0572cb915a76b1947d46105328c7ce40432c96eeb0" name="gga9a102dc92f724dd7dca3eca0572cb915a76b1947d46105328c7ce40432c96eeb0"></a>APIPropObj_DisableProperty&#160;</td><td class="fielddoc"><p>Disable Property </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga0bfe013771c05f775821dee649ecad97" name="ga0bfe013771c05f775821dee649ecad97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0bfe013771c05f775821dee649ecad97">&#9670;&#160;</a></span>API_PropertyVisibilityMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___property.html#ga0bfe013771c05f775821dee649ecad97">API_PropertyVisibilityMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies what should the callback function return. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga0bfe013771c05f775821dee649ecad97aff49304f9e5a11d23dfd729f43892cc1" name="gga0bfe013771c05f775821dee649ecad97aff49304f9e5a11d23dfd729f43892cc1"></a>APIPropVis_IsEnabled&#160;</td><td class="fielddoc"><p>The callback function should return true if the visibility handling is enabled. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0bfe013771c05f775821dee649ecad97adc8a75eb71fbd9439900fbe1f532ec4f" name="gga0bfe013771c05f775821dee649ecad97adc8a75eb71fbd9439900fbe1f532ec4f"></a>APIPropVis_IsPropertyVisible&#160;</td><td class="fielddoc"><p>The callback function should return true if the given property is visible. </p>
 </td></tr>
 </table>
 
@@ -1131,7 +1223,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>Only one property handler can be active in Archicad at a time. The return value of this functions depends on the user, as a dialog pops up when you issue this command. When the function returns, you should adjust your menu items accordingly. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
@@ -1175,7 +1267,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Registers a command which can be used by other add-ons. </p>
+<p>Registers a command which other add-ons can use. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cmdID</td><td>[in] The command identifier of the supported service. </td></tr>
@@ -1184,10 +1276,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>The function registers one of your add-on's command, and makes it avaliable for other add-ons. This should be called from the RegisterInterface function of the add-on. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>The function registers one of your add-ons' commands and makes it available for other add-ons. It should be called from the add-on's RegisterInterface function. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">//------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Interface definitions</span></div>
 <div class="line"><span class="comment">//------------------------------------------------------</span></div>
@@ -1229,15 +1321,15 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function should be called from the Initialize function of the add-on, after registering the classification handler with <a class="el" href="#ga0782ee15d37f3e6b56f7c7061c30b651">ACAPI_AddOnIntegration_RegisterClassificationVisibilityHandler</a>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function should be called from the add-on's Initialize function after registering the classification handler with <a class="el" href="#ga0782ee15d37f3e6b56f7c7061c30b651">ACAPI_AddOnIntegration_RegisterClassificationVisibilityHandler</a>. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">//------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Called after the add-on has been loaded into memory</span></div>
 <div class="line"><span class="comment">//------------------------------------------------------</span></div>
 <div class="line">GSErrCode APIMenuCommandProc_Main   (<span class="keyword">const</span> <a class="code hl_struct" href="struct_a_p_i___menu_params.html">API_MenuParams</a> *menuParams);</div>
-<div class="line"><span class="keywordtype">bool</span> ClassificationVisibilityHandler (API_ClassificationVisibilityMode visibilityMode, <span class="keyword">const</span> GS::Array&lt;API_Guid&gt;&amp; classificationGuids, <span class="keyword">const</span> <a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a>&amp; classificationItemGuid);</div>
+<div class="line"><span class="keywordtype">bool</span> ClassificationVisibilityHandler (<a class="code hl_enumeration" href="#ga38aac5f2e8bba8514055cc93d7547e12">API_ClassificationVisibilityMode</a> visibilityMode, <span class="keyword">const</span> GS::Array&lt;API_Guid&gt;&amp; classificationGuids, <span class="keyword">const</span> <a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a>&amp; classificationItemGuid);</div>
 <div class="line"> </div>
 <div class="line">GSErrCode <a class="code hl_function" href="group___add_on_lifetime.html#gaa8f1f7d553305c1afe5de7e4dcb66e99">Initialize</a> (<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
@@ -1273,7 +1365,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Installs a callback procedure for handling the converison of the user data, the addOn attached to an elemeset. </p>
+<p>Installs a callback procedure for handling the conversion of the user data, the add-on attached to an element set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">elemSetSaveOldFormatProc</td><td>[in] The callback function to handle the backward conversion </td></tr>
@@ -1281,10 +1373,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>The installed callback is called when the plan is saved back to an earlier version of Archicad. You can handle any change in the user data's here, to make it readable for previous version. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>The installed callback is called when the plan is saved back to an earlier version of Archicad. You can handle any change in the user data here to make it readable for the previous version. </dd></dl>
 
 </div>
 </div>
@@ -1310,16 +1402,16 @@ Functions</h2></td></tr>
 <p>Installs a callback procedure for handling file operations. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cmdID</td><td>[in] An identifier of the file type to install the callback procedure for. This should be the same what you used in the <a class="el" href="#ga98bb66d70f3f8ba9ec38e3119795828c">ACAPI_AddOnIntegration_RegisterFileType</a> as a reference number in the RegisterInterface function. </td></tr>
-    <tr><td class="paramname">handlerProc</td><td>[in] The callback function to handle the different file operations. </td></tr>
+    <tr><td class="paramname">cmdID</td><td>[in] An identifier of the file type for which to install the callback procedure. This should be the same as what you used in the <a class="el" href="#ga98bb66d70f3f8ba9ec38e3119795828c">ACAPI_AddOnIntegration_RegisterFileType</a> as a reference number in the RegisterInterface function. </td></tr>
+    <tr><td class="paramname">handlerProc</td><td>[in] The callback function that handles the different file operations. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function should be called in the Initialize function of your add-on. It installs the callback function which is called when the user chooses your registered file format in one of the Open/Save/Merge dialogs. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function should be called in your add-on's Initialize function. It installs the callback function, which is called when the user chooses your registered file format in one of the Open/Save/Merge dialogs. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">// -----------------------------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Called when the add-on has been loaded into memory</span></div>
 <div class="line"><span class="comment">// -----------------------------------------------------------------------------</span></div>
@@ -1358,16 +1450,16 @@ Functions</h2></td></tr>
 <p>Installs a callback procedure for handling file operations. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cmdID</td><td>[in] An identifier of the file type to install the callback procedure for. This should be the same what you used in the <a class="el" href="#ga98bb66d70f3f8ba9ec38e3119795828c">ACAPI_AddOnIntegration_RegisterFileType</a> as a reference number in the RegisterInterface function. </td></tr>
-    <tr><td class="paramname">handlerProc</td><td>[in] The callback function to handle the different file operations. </td></tr>
+    <tr><td class="paramname">cmdID</td><td>[in] An identifier of the file type for which to install the callback procedure. This should be what you used in the <a class="el" href="#ga98bb66d70f3f8ba9ec38e3119795828c">ACAPI_AddOnIntegration_RegisterFileType</a> as a reference number in the RegisterInterface function. </td></tr>
+    <tr><td class="paramname">handlerProc</td><td>[in] The callback function that handles the different file operations. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function should be called in the Initialize function of your add-on. It installs the callback function which is called when the user chooses your registered file format in one of the Open/Save dialogs. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function should be called in your add-on's Initialize function. It installs the callback function, which is called when the user chooses your registered file format in one of the Open/Save dialogs. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">// -----------------------------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Called when the add-on has been loaded into memory</span></div>
 <div class="line"><span class="comment">// -----------------------------------------------------------------------------</span></div>
@@ -1408,20 +1500,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Installs a callback for handling command calls from other add-ons. </p>
+<p>Installs a callback to handle command calls from other add-ons. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cmdID</td><td>[in] An identifier of the command to install the callback procedure for. This should be the same what you used in the <a class="el" href="group___add_on_add_on_communication.html#ga79ba0da441937d6cbbbf85e37ec81191">ACAPI_AddOnAddOnCommunication_RegisterSupportedService</a> as the command identifier in the RegisterInterface function. </td></tr>
-    <tr><td class="paramname">cmdVersion</td><td>[in] An identifier of the command to install the callback procedure for. This should be the same what you used in the <a class="el" href="group___add_on_add_on_communication.html#ga79ba0da441937d6cbbbf85e37ec81191">ACAPI_AddOnAddOnCommunication_RegisterSupportedService</a> as the command version number in the RegisterInterface function. </td></tr>
-    <tr><td class="paramname">handlerProc</td><td>[in] The callback function to handle the command calls. </td></tr>
+    <tr><td class="paramname">cmdID</td><td>[in] An identifier of the command for which to install the callback procedure. You should use this in the <a class="el" href="group___add_on_add_on_communication.html#ga79ba0da441937d6cbbbf85e37ec81191">ACAPI_AddOnAddOnCommunication_RegisterSupportedService</a> as the command identifier in the RegisterInterface function. </td></tr>
+    <tr><td class="paramname">cmdVersion</td><td>[in] An identifier of the command to install the callback procedure for. You should use this in the <a class="el" href="group___add_on_add_on_communication.html#ga79ba0da441937d6cbbbf85e37ec81191">ACAPI_AddOnAddOnCommunication_RegisterSupportedService</a> as the command version number in the RegisterInterface function. </td></tr>
+    <tr><td class="paramname">handlerProc</td><td>[in] The callback function handles the command calls. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function should be called in the Initialize function of your add-on. It installs the callback function which is called when the other add-ons would like to use the supported services of your add-on. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function should be called in your add-on's initialize function. It installs the callback function, which is called when other add-ons want to use your add-on's supported services. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">// -----------------------------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Called when the add-on has been loaded into memory</span></div>
 <div class="line"><span class="comment">// -----------------------------------------------------------------------------</span></div>
@@ -1456,15 +1548,15 @@ Functions</h2></td></tr>
 <p>Installs a callback procedure for handling the module data merge operations. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mergeHandlerProc</td><td>[in] The callback procedure which will handle the module data merge. Can be nullptr ; this removes the installed callback. </td></tr>
+    <tr><td class="paramname">mergeHandlerProc</td><td>[in] The callback procedure that will handle the module data merge. It can be nullptr, which removes the installed callback. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function should be called in the Initialize function of your add-on to pass the pointer of the APIModulDataMergeHandlerProc callback routine implemented for resolving conflicts between two instances of the same custom data section of the add-on during a merge operation. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function should be called in the Initialize function of your add-on to pass the pointer of the APIModulDataMergeHandlerProc callback routine, which is implemented to resolve conflicts between two instances of the same custom data section of the add-on during a merge operation. </dd></dl>
 
 </div>
 </div>
@@ -1483,7 +1575,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Installs a callback procedure for converting module data into older format. </p>
+<p>Installs a callback procedure for converting module data into an older format. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">modulDataSaveOldFormatProc</td><td>[in] The callback procedure to convert module data. Passing nullptr in this parameter uninstalls the previously installed handler function. </td></tr>
@@ -1491,10 +1583,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function should be called in the Initialize function of your add-on to pass the pointer of the APIModulDataSaveOldFormatHandlerProc callback routine implemented for converting modules of the add-on into previous format. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function should be called in your add-on's Initialize function to pass the pointer of the APIModulDataSaveOldFormatHandlerProc callback routine implemented for converting the add-on's modules into the previous format. </dd></dl>
 
 </div>
 </div>
@@ -1513,15 +1605,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Installs a callback procedure for converting Navigator AddOn viewpoints into current format. </p>
+<p>Installs a callback procedure for converting Navigator AddOn viewpoints into the current format. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">convertNewFormatProc</td><td>[in] The callback procedure which will handle the Navigator AddOn viewpoints' conversion into current format. If nullptr is passed, an installed callback function is removed. </td></tr>
+    <tr><td class="paramname">convertNewFormatProc</td><td>[in] The callback procedure will convert the Navigator AddOn viewpoints into the current format. If nullptr is passed, an installed callback function is removed. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function should be called in the Initialize function of your AddOn. </dd></dl>
@@ -1546,12 +1638,12 @@ Functions</h2></td></tr>
 <p>Installs a callback procedure for handling the Navigator AddOn viewpoint merge operations. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mergeHandlerProc</td><td>[in] The callback procedure which will handle the Navigator AddOn viewpoint data merge. If nullptr is passed, an installed callback function is removed. </td></tr>
+    <tr><td class="paramname">mergeHandlerProc</td><td>[in] The callback procedure will handle the Navigator AddOn viewpoint data merge. If nullptr is passed, an installed callback function is removed. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function should be called in the Initialize function of your AddOn. </dd></dl>
@@ -1573,15 +1665,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Installs a callback procedure for converting Navigator AddOn viewpoints into older format. </p>
+<p>Installs a callback procedure for converting Navigator AddOn viewpoints into an older format. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">saveOldFormatProc</td><td>[in] The callback procedure which will handle the Navigator AddOn viewpoints' conversion into older format. If nullptr is passed, an installed callback function is removed. </td></tr>
+    <tr><td class="paramname">saveOldFormatProc</td><td>[in] The callback procedure will convert the Navigator AddOn viewpoints into the older format. If nullptr is passed, an installed callback function is removed. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function should be called in the Initialize function of your AddOn. </dd></dl>
@@ -1612,21 +1704,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Installs the creation and destroy handlers for the registered custom settings panel. </p>
+<p>Installs the creation and destruction handlers for the registered custom settings panel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">refCon</td><td>[in] Panel reference number </td></tr>
-    <tr><td class="paramname">handlerCreateProc</td><td>[in] Callback function, called when the panel is created. </td></tr>
-    <tr><td class="paramname">handlerDestroyProc</td><td>[in] Callback function, called when the panel is destroyed. </td></tr>
+    <tr><td class="paramname">handlerCreateProc</td><td>[in] The callback function, called when the panel is created. </td></tr>
+    <tr><td class="paramname">handlerDestroyProc</td><td>[in] The callback function, called when the panel is destroyed. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>APIERR_REFUSEDPAR - There is no panel registered with refcon by the add-on.</li>
-<li>NoError - The function has completed with success. </li>
+<li>APIERR_REFUSEDPAR - No panel registered with refcon by the add-on.</li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function installs the callback functions for handling create/delete events of the dialog panel registered by <a class="el" href="#ga21fdf6041a8880779b349d2a8ce685c2">ACAPI_AddOnIntegration_RegisterSettingsPanel</a>, <a class="el" href="#ga3ff255f04b61d4e618c3d3000ef4a9c9">ACAPI_AddOnIntegration_RegisterInfoBoxPanel</a> or <a class="el" href="#ga9069a54766487ef3e1c2c8c1ba99f97a">ACAPI_AddOnIntegration_RegisterAttributePanel</a>. The <a class="el" href="#ga29fa171b94724463b999dcbfb3abae27">ACAPI_AddOnIntegration_InstallPanelHandler</a> function should be called from Initialize. The 'create' handler is called when the panel is created. The handler must create the tabpage and the observer. The 'destroy' handler is called when the panel is destroyed. The handler must destroy the tabpage and the observer. For more details refer to the general description of Custom Panels in Settings Dialogs. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function installs the callback functions for handling create/delete events of the dialog panel registered by <a class="el" href="#ga21fdf6041a8880779b349d2a8ce685c2">ACAPI_AddOnIntegration_RegisterSettingsPanel</a>, <a class="el" href="#ga3ff255f04b61d4e618c3d3000ef4a9c9">ACAPI_AddOnIntegration_RegisterInfoBoxPanel</a>, or <a class="el" href="#ga9069a54766487ef3e1c2c8c1ba99f97a">ACAPI_AddOnIntegration_RegisterAttributePanel</a>. The <a class="el" href="#ga29fa171b94724463b999dcbfb3abae27">ACAPI_AddOnIntegration_InstallPanelHandler</a> function should be called from Initialize. The 'create' handler is called when the panel is created. The handler must create the tabpage and the observer. The 'destroy' handler is called when the panel is destroyed. The handler must destroy the tabpage and the observer. For more details, refer to the general description of Custom Panels in Settings Dialogs. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd>Refer to the Panel_Test example project of the API Development Kit. </dd></dl>
 
 </div>
@@ -1645,7 +1737,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group___publisher.html#gac6a0406b42e34e61ae1a898c5829d9f2">DefaultTranslatorGetterProc</a> *</td>          <td class="paramname"><span class="paramname"><em>defaultTranslatorGetterProc</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="group___publisher.html#ga5f382b2f9036044cf1c0cd49559c0675">DefaultTranslatorGetterProc</a> *</td>          <td class="paramname"><span class="paramname"><em>defaultTranslatorGetterProc</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1660,10 +1752,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function installs the callback functions for the new publish formats. The publisher will call the registered function, during the setup of the formats in the Organizer. Example Refer to the Format Register Test example project of the API Development Kit. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function installs the callback functions for the new publish formats. The Publisher will call the registered function during the format setup in the Organizer. Example: Refer to the Format Register Test example project of the API Development Kit. </dd></dl>
 
 </div>
 </div>
@@ -1696,37 +1788,37 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function installs the callback functions for the new publish formats. The publisher will call the registered function, during the setup of the formats in the Organizer. Example Refer to the Format Register Test example project of the API Development Kit. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function installs the callback functions for the new publish formats. The Publisher will call the registered function during the format setup in the Organizer. Example: Refer to the Format Register Test example project of the API Development Kit. </dd></dl>
 
 </div>
 </div>
-<a id="gaa224c17de80cd55f8111e45dc5f005fc" name="gaa224c17de80cd55f8111e45dc5f005fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa224c17de80cd55f8111e45dc5f005fc">&#9670;&#160;</a></span>ACAPI_AddOnIntegration_InstallPublisherSaveMethod()</h2>
+<a id="ga0ff6b59dc81d7647324722b07c4b58e8" name="ga0ff6b59dc81d7647324722b07c4b58e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ff6b59dc81d7647324722b07c4b58e8">&#9670;&#160;</a></span>ACAPI_AddOnIntegration_InstallPublisherSaveInitialOption()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">GSErrCode ACAPI_AddOnIntegration_InstallPublisherSaveMethod </td>
+          <td class="memname">GSErrCode ACAPI_AddOnIntegration_InstallPublisherSaveInitialOption </td>
           <td>(</td>
           <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>mimeType</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group___publisher.html#ga930943e85800de0cdc60481156b0a9da">SaveProc</a> *</td>          <td class="paramname"><span class="paramname"><em>saveProc</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="group___publisher.html#ga1751acd5fd15211543cd551677202dc5">SaveInitialOptionProc</a> *</td>          <td class="paramname"><span class="paramname"><em>saveInitialOptionProc</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Installs the save methods for the Publisher. </p>
+<p>Installs the option initializer methods for the Publisher. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mimeType</td><td>The unique mimeType which identifies the new publish format </td></tr>
-    <tr><td class="paramname">saveProc</td><td>Callback function, called in case of publishing </td></tr>
+    <tr><td class="paramname">saveInitialOptionProc</td><td>Callback function, called when initializing a new format </td></tr>
   </table>
   </dd>
 </dl>
@@ -1734,7 +1826,7 @@ Functions</h2></td></tr>
 <li>NoError - The function has completed with success. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function installs the callback functions for the new publish formats. The publisher will call the registered function, during the publishing command. Example Refer to the Format Register Test example project of the API Development Kit. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function installs the callback functions for initializing the options of the new publish formats. The options are stored in <code>API_Userdata</code> structures. Example Refer to the Format Register Test example project of the API Development Kit. </dd></dl>
 
 </div>
 </div>
@@ -1766,10 +1858,115 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NoError - The function has completed successfully. </li>
+</ul>
+</dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function installs the callback functions for the new publish formats. The Add-on can create its own option dialog; the settings are stored in <code>API_Userdata</code> structures. Example: Refer to the Format Register Test example project of the API Development Kit. </dd></dl>
+
+</div>
+</div>
+<a id="ga056ff4c8c66549c6b9b8f544b0940c2c" name="ga056ff4c8c66549c6b9b8f544b0940c2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga056ff4c8c66549c6b9b8f544b0940c2c">&#9670;&#160;</a></span>ACAPI_AddOnIntegration_InstallPublisherSaveTranslator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GSErrCode ACAPI_AddOnIntegration_InstallPublisherSaveTranslator </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>mimeType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___publisher.html#ga8e6b1826209da658eb06285e03d34b1c">SaveTranslatorProc</a> *</td>          <td class="paramname"><span class="paramname"><em>saveTranslatorProc</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Installs the translator methods for the Publisher. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mimeType</td><td>The unique mimeType which identifies the new publish format </td></tr>
+    <tr><td class="paramname">saveTranslatorProc</td><td>Callback function, called in case of publishing </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
 <li>NoError - The function has completed with success. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function installs the callback functions for the new publish formats. The Add-on can create his own option dialog, the settings are stored in <code>API_Userdata</code> structures. Example Refer to the Format Register Test example project of the API Development Kit. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function installs the callback functions for the new publish formats. The Add-on can create his own translator dialog, the selected translator is stored in a <code><a class="el" href="struct_a_p_i___translator_name_config.html" title="Represents a translator by its GUID and its name.">API_TranslatorNameConfig</a></code> structure. Example Refer to the Format Register Test example project of the API Development Kit. </dd></dl>
+
+</div>
+</div>
+<a id="ga7cc973ef3037b2a04e838543fd858754" name="ga7cc973ef3037b2a04e838543fd858754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7cc973ef3037b2a04e838543fd858754">&#9670;&#160;</a></span>ACAPI_AddOnIntegration_InstallPublisherSaveWithOptionMethod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GSErrCode ACAPI_AddOnIntegration_InstallPublisherSaveWithOptionMethod </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>mimeType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___publisher.html#ga4450a3dc9f76c354bec74caa18841053">SaveWithOptionProc</a> *</td>          <td class="paramname"><span class="paramname"><em>saveWithOptionProc</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Installs the save methods for the Publisher with the set options. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mimeType</td><td>The unique mimeType which identifies the new publish format </td></tr>
+    <tr><td class="paramname">saveWithOptionProc</td><td>Callback function, called in case of publishing </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NoError - The function has completed with success. </li>
+</ul>
+</dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function installs the callback functions for the new publish formats. The publisher will call the registered function, during the publishing command. Example Refer to the Format Register Test example project of the API Development Kit. </dd></dl>
+
+</div>
+</div>
+<a id="ga199db38e28460c6f13212693a48d3b02" name="ga199db38e28460c6f13212693a48d3b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga199db38e28460c6f13212693a48d3b02">&#9670;&#160;</a></span>ACAPI_AddOnIntegration_InstallPublisherSaveWithTranslatorMethod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GSErrCode ACAPI_AddOnIntegration_InstallPublisherSaveWithTranslatorMethod </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>mimeType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___publisher.html#gae87a2542cff98790f46986ff630b3f1b">SaveWithTranslatorProc</a> *</td>          <td class="paramname"><span class="paramname"><em>saveWithTranslatorProc</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Installs the save methods for the Publisher with a selected translator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mimeType</td><td>The unique mimeType which identifies the new publish format </td></tr>
+    <tr><td class="paramname">saveWithTranslatorProc</td><td>Callback function, called in case of publishing </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NoError - The function has completed successfully. </li>
+</ul>
+</dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function installs the callback functions for the new publish formats. The Publisher will call the registered function during the publishing command. Example: Refer to the Format Register Test example project of the API Development Kit. </dd></dl>
 
 </div>
 </div>
@@ -1791,8 +1988,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Installs the translator getter function for the Publisher. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 26 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1802,10 +1997,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function installs the callback functions for the new publish formats. The publisher will call the registered function, during the setup of the formats in the Organizer. Example Refer to the Format Register Test example project of the API Development Kit. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function installs the callback functions for the new publish formats. The Publisher will call the registered function during the format setup in the Organizer. Example: Refer to the Format Register Test example project of the API Development Kit. </dd></dl>
 
 </div>
 </div>
@@ -1838,17 +2033,17 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tool</td><td>[in] The element type that identifies the settings dialog </td></tr>
-    <tr><td class="paramname">handlerCreateProc</td><td>[in] Callback function, called when the settings dialog is created. </td></tr>
-    <tr><td class="paramname">handlerDestroyProc</td><td>[in] Callback function, called when the settings dialog is destroyed. </td></tr>
+    <tr><td class="paramname">handlerCreateProc</td><td>[in] This callback function is called when the settings dialog is created. </td></tr>
+    <tr><td class="paramname">handlerDestroyProc</td><td>[in] This callback function is called when the settings dialog is destroyed. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>APIERR_BADPARS - No settings observer was registered for the settings dialog specified by tool and variaton.</li>
-<li>NoError - The function has completed with success. </li>
+<li>APIERR_BADPARS - No settings observer was registered for the settings dialog specified by the tool and variation.</li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function installs the callback functions for handling create/destroy events of the settings dialog observer registered by <a class="el" href="#gaeb02e79b3830a375b4722790bdcdb3b1">ACAPI_AddOnIntegration_RegisterSettingsObserver</a>. The <code>ACAPI_AddOnIntegration_InstallSettingsHandler</code> function should be called from Initialize. The 'create' handler is called when the settings dialog is created. The 'destroy' handler is called when the settings dialog is destroyed. From version 26 the tool and variation parameters were merged into a single <a class="el" href="struct_a_p_i___elem_type.html">API_ElemType</a> parameter. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function installs the callback functions for handling create/destroy events of the settings dialog observer registered by <a class="el" href="#gaeb02e79b3830a375b4722790bdcdb3b1">ACAPI_AddOnIntegration_RegisterSettingsObserver</a>. The <code>ACAPI_AddOnIntegration_InstallSettingsHandler</code> function should be called from Initialize. The 'create' handler is called when the settings dialog is created. The 'destroy' handler is called when the settings dialog is destroyed. From version 26, the tool and variation parameters were merged into a single <a class="el" href="struct_a_p_i___elem_type.html">API_ElemType</a> parameter. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd>Refer to the Panel_Test example project of the API Development Kit. </dd></dl>
 
 </div>
@@ -1900,17 +2095,17 @@ Functions</h2></td></tr>
     <tr><td class="paramname">iconId</td><td>[in] Panel icon resource ID </td></tr>
     <tr><td class="paramname">stringId</td><td>[in] Title text to appear in the handler area of the panel </td></tr>
     <tr><td class="paramname">pageId</td><td>[in] Dialog resource ID of the tabpage </td></tr>
-    <tr><td class="paramname">growType</td><td>[in] Grow type of the tab page: can be DG_DLG_NOGROW, DG_DLG_HGROW, DG_DLG_VGROW, or DG_DLG_HGROW | DG_DLG_VGROW. This parameter is optional, the default is DG_DLG_NOGROW. </td></tr>
+    <tr><td class="paramname">growType</td><td>[in] Grow type of the tab page: can be DG_DLG_NOGROW, DG_DLG_HGROW, DG_DLG_VGROW, or DG_DLG_HGROW | DG_DLG_VGROW. This parameter is optional; the default is DG_DLG_NOGROW. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>APIERR_BADPARS - The attr parameter is invalid.</li>
 <li>APIERR_NOTSUPPORTED - The attribute type does not support custom panels.</li>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function appends a new panel into an attribute settings dialog. For more details refer to the general description of Custom Panels in Settings Dialogs. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function appends a new panel to an attribute settings dialog. For more details, refer to the general description of Custom Panels in Settings Dialogs. </dd></dl>
 
 </div>
 </div>
@@ -1931,11 +2126,11 @@ Functions</h2></td></tr>
 
 <p>Registers built-in library parts to be loaded. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function notifies the host application that your add-on has library parts compiled into the add-on as 'FILE' resources. The application will add the add-on module to the active libraries and the library parts will be available as read only objects. You can retrieve the unique ID of a built-in library part with the <a class="el" href="group___library_part.html#ga5a94b36164aa40df9ddd75c75a590643">ACAPI_LibraryPart_GetBuiltInLibpartUnId</a> goodie function. </dd></dl>
-<dl class="section user"><dt>Example</dt><dd>The StairMaker add-on has its own subtype template library part derived from the General Stair subtype. In order to compile the library part into the add-on module, the library part should be copied among the localized resource files of the add-on, and there must be a reference to it in the .GRC file: <div class="fragment"><div class="line">&#39;FILE&#39; 133 &quot;StairMaker Stair.gsm&quot; {</div>
+<dl class="section remark"><dt>Remarks</dt><dd>This function notifies the host application that your add-on has library parts compiled into it as 'FILE' resources. The application will add the add-on module to the active libraries, and the library parts will be available as read-only objects. You can retrieve the unique ID of a built-in library part with the <a class="el" href="group___library_part.html#ga5a94b36164aa40df9ddd75c75a590643">ACAPI_LibraryPart_GetBuiltInLibpartUnId</a> goodie function. </dd></dl>
+<dl class="section user"><dt>Example</dt><dd>The Grid Tool add-on has its library part subtype. To compile the library part into the add-on module, the library part should be copied into the localized resource files of the add-on. and there must be a reference to it in the .GRC file: <div class="fragment"><div class="line">&#39;FILE&#39; 133 &quot;StairMaker Stair.gsm&quot; {</div>
 <div class="line">    &quot;StairMaker Stair.gsm&quot;</div>
 <div class="line">}</div>
 </div><!-- fragment --> Registration in the <a class="el" href="group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e">RegisterInterface</a> function: <div class="fragment"><div class="line"><span class="comment">//------------------------------------------------------</span></div>
@@ -1966,7 +2161,7 @@ Functions</h2></td></tr>
 
 <p>Tells Archicad that your add-on wants to modify classification visibility. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function should be called from the RegisterInterface routine in your add-on. </dd></dl>
@@ -2043,10 +2238,10 @@ Functions</h2></td></tr>
 <p>Registers a file type for I/O type add-ons. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">refCon</td><td>[in] An arbitrary number which identifies this file type within the add-on. </td></tr>
+    <tr><td class="paramname">refCon</td><td>[in] An arbitrary number identifying this file type within the add-on. </td></tr>
     <tr><td class="paramname">ftype</td><td>[in] Macintosh file type (e.g. 'TEXT'). </td></tr>
-    <tr><td class="paramname">fcreator</td><td>[in] Creator on Macintosh (e.g. 'GSAC' for Archicad). </td></tr>
-    <tr><td class="paramname">extname</td><td>[in] The extension used on Windows (e.g. "txt"). </td></tr>
+    <tr><td class="paramname">fcreator</td><td>[in] Creator on Macintosh (e.g., 'GSAC' for Archicad). </td></tr>
+    <tr><td class="paramname">extname</td><td>[in] The extension used on Windows (e.g., "txt"). </td></tr>
     <tr><td class="paramname">iconResID</td><td>[in] An optional icon resource ID. This icon appears in the Open/Save dialogs on the Macintosh. </td></tr>
     <tr><td class="paramname">descStrResID</td><td>[in] The resource ID of the resource containing the description of the file type. </td></tr>
     <tr><td class="paramname">descStrResItemID</td><td>[in] The item ID within the resource of the item containing the description of the file type, or 0 when specifying MIME type as well (see Remarks). </td></tr>
@@ -2055,10 +2250,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function should be called from the RegisterInterface routine in your add-on. You can register more than one file type from the same add-on, appearing in different menus of the server application. The supplied refCon parameter should be the same in the <a class="el" href="#gac2fd5329ecac6a58b03f910ad8e5c7d0">ACAPI_AddOnIntegration_InstallFileTypeHandler</a> function, which you have to call from your Initialize routine. The methodFlags parameter defines which dialogs' file type popup should contain the registered file type: <table class="markdownTable">
+<dl class="section remark"><dt>Remarks</dt><dd>This function should be called from the RegisterInterface routine in your add-on. You can register more than one file type from the same add-on, appearing in different menus of the server application. The supplied refCon parameter should be the same in the <a class="el" href="#gac2fd5329ecac6a58b03f910ad8e5c7d0">ACAPI_AddOnIntegration_InstallFileTypeHandler</a> function, which you must call from your Initialize routine. The methodFlags parameter defines which dialog's file type popup should contain the registered file type: <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Flag   </th><th class="markdownTableHeadNone">File Dialog    </th></tr>
 <tr class="markdownTableRowOdd">
@@ -2077,9 +2272,9 @@ Functions</h2></td></tr>
 <td class="markdownTableBodyNone">Import2DDrawingSupported   </td><td class="markdownTableBodyNone">Import as Drawing   </td></tr>
 </table>
 </dd></dl>
-<p>From API v4.2 you have the possibility to register the MIME type for the file as well. MIME (Multipurpose Internet Mail Extension) types are commonly accepted identifiers for certain media types. Specifying the MIME type makes the file format identification more accurate in the File Type Manager. If you decide to use this feature, you can do this in the following way:</p><ul>
-<li>in the GRC file the string resource that describes the file format must contain two items: the descriptive name of the file format (e.g. "DWF File") the assigned MIME type (e.g. "model/vnd.dwf")</li>
-<li>the descriptive name of the file format (e.g. "DWF File")</li>
+<p>From API v4.2, you can also register the MIME type for the file. MIME (Multipurpose Internet Mail Extension) types are commonly accepted identifiers for certain media types. Specifying the MIME type makes the file format identification more accurate in the File Type Manager. If you decide to use this feature, you can do this in the following way:</p><ul>
+<li>In the GRC file, the string resource that describes the file format must contain two items: the descriptive name of the file format (e.g., "DWF File"), and the assigned MIME type (e.g., "model/vnd.dwf")</li>
+<li>the descriptive name of the file format (e.g., "DWF File")</li>
 <li>the assigned MIME type (e.g. "model/vnd.dwf")</li>
 <li>in the <code>descStrResItemID</code> parameter of the <a class="el" href="#ga98bb66d70f3f8ba9ec38e3119795828c">ACAPI_AddOnIntegration_RegisterFileType</a> function you must pass 0</li>
 </ul>
@@ -2148,10 +2343,10 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>APIERR_BADPARS - The passed element type is invalid.</li>
 <li>APIERR_BADID - The passed tool / variation parameter pair does not identify a valid toolbox item (including invisible tools).</li>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function appends a new panel into an element settings dialog specified by tool. In order to get panel create/destroy events you must install the panel handler callback functions with <a class="el" href="#ga29fa171b94724463b999dcbfb3abae27">ACAPI_AddOnIntegration_InstallPanelHandler</a>. Compared to the <a class="el" href="#ga21fdf6041a8880779b349d2a8ce685c2">ACAPI_AddOnIntegration_RegisterSettingsPanel</a> function there is no need to specify icon resource ID. For more details refer to the general description of Custom Panels in Settings Dialogs. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function appends a new panel to an element settings dialog specified by the tool. To get panel create/destroy events, you must install the panel handler callback functions with <a class="el" href="#ga29fa171b94724463b999dcbfb3abae27">ACAPI_AddOnIntegration_InstallPanelHandler</a>. Compared to the <a class="el" href="#ga21fdf6041a8880779b349d2a8ce685c2">ACAPI_AddOnIntegration_RegisterSettingsPanel</a> function, there is no need to specify the icon resource ID. For more details, refer to the general description of Custom Panels in Settings Dialogs. </dd></dl>
 
 </div>
 </div>
@@ -2170,12 +2365,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Registers the add-on to be called for merging and converting its moduldata. </p>
+<p>Registers the add-on to be called for merging and converting its module data. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Call this function from RegisterInterface to let Archicad know that the add-on has <a class="el" href="#ga9b7fba0e005a47c8125dbfb2a2fe22b5">APIModulDataMergeHandlerProc</a> and/or <a class="el" href="#ga22b82672ec91a2c30ce0e40f69e89305">APIModulDataSaveOldFormatHandlerProc</a> callback function implemented for merging and converting its modules. In order this functions to be called on the adequate event, the add-on needs to pass the function pointers to Archicad from Initialize with <a class="el" href="#gac45d970d2cf214a87a4cebab0ecfdd87">ACAPI_AddOnIntegration_InstallModulDataMergeHandler</a> and <a class="el" href="#ga041102e50bca18c84149123a09ca6c70">ACAPI_AddOnIntegration_InstallModulDataSaveOldFormatHandler</a>, respectively. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Call this function from RegisterInterface to let Archicad know that the add-on has <a class="el" href="#ga9b7fba0e005a47c8125dbfb2a2fe22b5">APIModulDataMergeHandlerProc</a> and/or <a class="el" href="#ga22b82672ec91a2c30ce0e40f69e89305">APIModulDataSaveOldFormatHandlerProc</a> callback functions implemented for merging and converting its modules. For these functions to be called on the adequate event, the add-on needs to pass the function pointers to Archicad from Initialize with <a class="el" href="#gac45d970d2cf214a87a4cebab0ecfdd87">ACAPI_AddOnIntegration_InstallModulDataMergeHandler</a> and <a class="el" href="#ga041102e50bca18c84149123a09ca6c70">ACAPI_AddOnIntegration_InstallModulDataSaveOldFormatHandler</a>, respectively. </dd></dl>
 
 </div>
 </div>
@@ -2194,12 +2389,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Registers the add-on to be called when Navigator AddOn viewpoints are merged, saved to older format, or converted from older format to current format. </p>
+<p>Registers the add-on to be called when Navigator AddOn viewpoints are merged, saved to an older format, or converted from an older format to the current format. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Call this function from RegisterInterface to let Archicad know that the AddOn has <a class="el" href="#gac49eb69d983904e43358408670c6b272">APINavigatorAddOnViewPointDataMergeHandlerProc</a>, <a class="el" href="#gaf743787e39e3242c6092c1a02fadf698">APINavigatorAddOnViewPointDataSaveOldFormatHandlerProc</a> or <a class="el" href="#ga7eb6ddb06710661764ded697a3b0a513">APINavigatorAddOnViewPointDataConvertNewFormatHandlerProc</a> callback function implemented for merging and converting its Navigator AddOn viewpoint data. In order these functions to be called on the adequate event, the AddOn needs to pass the function pointers to <a class="el" href="#ga4d1d2f19659ed6d5d57134150d1148bd">ACAPI_AddOnIntegration_InstallNavigatorAddOnViewPointDataMergeHandler</a>, <a class="el" href="#ga00fabea30650539088de435243bd37b8">ACAPI_AddOnIntegration_InstallNavigatorAddOnViewPointDataSaveOldFormatHandler</a> and <a class="el" href="#ga9e8f3fafcf4612c75508a2b6bad9fd24">ACAPI_AddOnIntegration_InstallNavigatorAddOnViewPointDataConvertNewFormatHandler</a> respectively. Call these install functions in the AddOn's Initialize function. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Call this function from RegisterInterface to let Archicad know that the AddOn has <a class="el" href="#gac49eb69d983904e43358408670c6b272">APINavigatorAddOnViewPointDataMergeHandlerProc</a>, <a class="el" href="#gaf743787e39e3242c6092c1a02fadf698">APINavigatorAddOnViewPointDataSaveOldFormatHandlerProc</a>, or <a class="el" href="#ga7eb6ddb06710661764ded697a3b0a513">APINavigatorAddOnViewPointDataConvertNewFormatHandlerProc</a> callback function implemented for merging and converting its Navigator AddOn viewpoint data. For these functions to be called on the adequate event, the AddOn needs to pass the function pointers to <a class="el" href="#ga4d1d2f19659ed6d5d57134150d1148bd">ACAPI_AddOnIntegration_InstallNavigatorAddOnViewPointDataMergeHandler</a>, <a class="el" href="#ga00fabea30650539088de435243bd37b8">ACAPI_AddOnIntegration_InstallNavigatorAddOnViewPointDataSaveOldFormatHandler</a>, and <a class="el" href="#ga9e8f3fafcf4612c75508a2b6bad9fd24">ACAPI_AddOnIntegration_InstallNavigatorAddOnViewPointDataConvertNewFormatHandler</a>, respectively. Call these install functions in the AddOn's Initialize function. </dd></dl>
 
 </div>
 </div>
@@ -2218,7 +2413,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Registers a publish format which can be used in publisher tree. </p>
+<p>Registers a publish format which can be used in the publisher tree. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">formatData</td><td>[in] Stores parameters of the new publish format </td></tr>
@@ -2226,10 +2421,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>For further informations read the documentation of <a class="el" href="struct_a_p_i___publish_format_data.html">API_PublishFormatData</a> structure. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>For further information, read the documentation for the <a class="el" href="struct_a_p_i___publish_format_data.html">API_PublishFormatData</a> structure. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">//------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Interface definitions</span></div>
 <div class="line"><span class="comment">//------------------------------------------------------</span></div>
@@ -2274,7 +2469,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check the availability of an other add-on's command. </p>
+<p>Check the availability of another add-on's command. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">modulID</td><td>[in] The modul ID of the add-on containing the required service. </td></tr>
@@ -2284,11 +2479,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_GENERAL - The command isn't supported service. </li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_GENERAL - The service doesn't support the command. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function checks for the availability of an other add-on's command, without which it cannot run. The other add-on should provide all the necessary information. The function should be called from the RegisterInterface function of the add-on. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function checks for the availability of another add-on's command, without which it cannot run. The other add-on should provide all the necessary information. The function should be called from the add-on's RegisterInterface function. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_struct" href="struct_a_p_i___modul_i_d.html">API_ModulID</a> otherAddonMDID = {0000000000, 000000000};</div>
 <div class="line"><span class="comment">//------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Interface definitions</span></div>
@@ -2323,7 +2518,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create an observer to an element settings dialog. </p>
+<p>Create an observer for an element settings dialog. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 26 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2334,10 +2529,10 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>APIERR_BADPARS - The passed element type is invalid.</li>
 <li>APIERR_BADID - The passed tool does not identify a valid toolbox item (including invisible tools).</li>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function creates an observer for an element settings dialog specified by tool. In order to get settings dialog create or destroy events you must install the settings handler callback functions with <a class="el" href="#ga4179e7dc48195aaef5aba15b776e29de">ACAPI_AddOnIntegration_InstallSettingsHandler</a>. This function should be called from your add-on's <a class="el" href="group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e">RegisterInterface</a> routine. You can register more than one observers from the same add-on for different settings dialogs. From version 26 the tool and variation parameters were merged into a single <code><a class="el" href="struct_a_p_i___elem_type.html" title="The type of an element.">API_ElemType</a></code> parameter. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function creates an observer for an element settings dialog specified by the tool. To get the settings dialog create or destroy events, you must install the settings handler callback functions with <a class="el" href="#ga4179e7dc48195aaef5aba15b776e29de">ACAPI_AddOnIntegration_InstallSettingsHandler</a>. This function should be called from your add-on's <a class="el" href="group___add_on_lifetime.html#ga3d5b6a23422e44dce66728b0f4eb943e">RegisterInterface</a> routine. You can register multiple observers from the same add-on for different settings dialogs. From version 26, the tool and variation parameters were merged into a single <code><a class="el" href="struct_a_p_i___elem_type.html" title="The type of an element.">API_ElemType</a></code> parameter. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd>Refer to the Panel_Test example project of the API Development Kit. </dd></dl>
 
 </div>
@@ -2395,7 +2590,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">iconId</td><td>[in] Panel icon resource ID </td></tr>
     <tr><td class="paramname">stringId</td><td>[in] Title text to appear in the handler area of the panel </td></tr>
     <tr><td class="paramname">pageId</td><td>[in] Dialog resource ID of the tabpage </td></tr>
-    <tr><td class="paramname">growType</td><td>[in] Grow type of the tab page: can be DG_DLG_NOGROW, DG_DLG_HGROW, DG_DLG_VGROW, or DG_DLG_HGROW | DG_DLG_VGROW. This parameter is optional, the default is DG_DLG_NOGROW. </td></tr>
+    <tr><td class="paramname">growType</td><td>[in] Grow type of the tab page: can be DG_DLG_NOGROW, DG_DLG_HGROW, DG_DLG_VGROW, or DG_DLG_HGROW | DG_DLG_VGROW. This parameter is optional; the default is DG_DLG_NOGROW. </td></tr>
     <tr><td class="paramname">visibleByDefault</td><td>[in] Show or hide the panel by default (optional parameter, false if omitted) </td></tr>
   </table>
   </dd>
@@ -2403,10 +2598,10 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>APIERR_BADPARS - The passed element type is invalid.</li>
 <li>APIERR_BADID - The passed tool / variation parameter pair does not identify a valid toolbox item (including invisible tools).</li>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function appends a new panel into an element settings dialog specified by tool and variation. In order to get panel create/destroy events you must install the panel handler callback functions with <a class="el" href="#ga29fa171b94724463b999dcbfb3abae27">ACAPI_AddOnIntegration_InstallPanelHandler</a>. For more details refer to the general description of Custom Panels in Settings Dialogs. From version 26 the tool and variation parameters were merged into a single <code><a class="el" href="struct_a_p_i___elem_type.html" title="The type of an element.">API_ElemType</a></code> parameter. Please note that this function works only for non-hierarchical and MEP elements. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function appends a new panel to an element settings dialog specified by tool and variation. To get panel create/destroy events, you must install the panel handler callback functions with <a class="el" href="#ga29fa171b94724463b999dcbfb3abae27">ACAPI_AddOnIntegration_InstallPanelHandler</a>. For more details, refer to the general description of Custom Panels in Settings Dialogs. From version 26, the tool and variation parameters were merged into a single <code><a class="el" href="struct_a_p_i___elem_type.html" title="The type of an element.">API_ElemType</a></code> parameter. Please note that this function works only for non-hierarchical and MEP elements. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd>Resources in the GRC file: <div class="fragment"><div class="line">&#39;STR#&#39; 32550 &quot;Panel test settings page&quot; {</div>
 <div class="line">/* [  1] */ &quot;Panel test settings page&quot;</div>
 <div class="line">}</div>
@@ -2462,14 +2657,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Instructs the host application to keep the add-on in the memory after execution. </p>
+<p>Instructs the host application to keep the add-on in memory after execution. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">keepIn</td><td>[in] If true the add-on will stay in the memory. </td></tr>
+    <tr><td class="paramname">keepIn</td><td>[in] the add-on will stay in the memory if true. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to keep the add-on in the memory. You should call this function with true each time your add-on is called to stay in memory. The values of all your global variables stay the same between the calls to your add-on. Also, when in memory, the Initialize and the FreeData functions of your add-on are not called. See more about this topic at the Control the Load/Unload Mechanism part of the Tips and Tricks. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to keep the add-on in the memory. You should call this function with true each time your add-on is called to stay in memory. The values of all your global variables stay the same between the calls to your add-on. Also, when in memory, your add-on's Initialize and FreeData functions are not called. See more about this topic in the Tips and Tricks' Control the Load/Unload Mechanism section. </dd></dl>
 
 </div>
 </div>
@@ -2496,12 +2691,12 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">signature</td><td>[in] A four-character identifier of the external symbol. </td></tr>
-    <tr><td class="paramname">handlerProc</td><td>[in] The callback function to handle the creation and the editing of the external symbol. </td></tr>
+    <tr><td class="paramname">handlerProc</td><td>[in] The callback function handles the creation and editing of the external symbol. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function should be called in the Initialize function of your add-on. </dd></dl>
@@ -2555,11 +2750,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - Invalid symbol type. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function should be called from your add-on's RegisterInterface routine. More than one external symbol can be registered from one add-on. After registration you should also install a callback function with <a class="el" href="group___library_part.html#gac30c1599068af440052e5ecc4a68fb03">ACAPI_LibraryPart_InstallESYMHandler</a> in your Initialize function, which will handle the events coming from Archicad. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function should be called from your add-on's RegisterInterface routine. More than one external symbol can be registered from one add-on. After registration, you should also install a callback function with <a class="el" href="group___library_part.html#gac30c1599068af440052e5ecc4a68fb03">ACAPI_LibraryPart_InstallESYMHandler</a> in your Initialize function, which will handle the events coming from Archicad. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">//------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Interface definitions</span></div>
 <div class="line"><span class="comment">//------------------------------------------------------</span></div>
@@ -2568,7 +2763,7 @@ Functions</h2></td></tr>
 <div class="line">    GSErrCode   err;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Register ESYM</span></div>
-<div class="line">    err = <a class="code hl_function" href="group___library_part.html#gae23b7da84d51acbc4a698534684ba6e1">ACAPI_LibraryPart_RegisterESYM</a> (<span class="stringliteral">&#39;GRPH&#39;</span>, APILib_LampID, 32611);</div>
+<div class="line">    err = <a class="code hl_function" href="group___library_part.html#gae23b7da84d51acbc4a698534684ba6e1">ACAPI_LibraryPart_RegisterESYM</a> (<span class="stringliteral">&#39;GRPH&#39;</span>, <a class="code hl_enumvalue" href="group___library_part.html#ggacd655f5dbf61af0671962cbbe65ed59fa4dba6f085f0c203560d597f233831a93">APILib_LampID</a>, 32611);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> err;</div>
 <div class="line">}</div>
@@ -2640,17 +2835,17 @@ Functions</h2></td></tr>
     <tr><td class="paramname">smallIconResID</td><td>[in] Resource ID of the small-sized toolbox (toolbar) item icon </td></tr>
     <tr><td class="paramname">largeIconResID</td><td>[in] Resource ID of the large-sized toolbox item icon </td></tr>
     <tr><td class="paramname">toolGroupId</td><td>[in] Toolbox item position </td></tr>
-    <tr><td class="paramname">enableFlags</td><td>[in] Enable or disable the subtype tool depending on the active window </td></tr>
+    <tr><td class="paramname">enableFlags</td><td>[in] Enable or turn off the subtype tool depending on the active window </td></tr>
     <tr><td class="paramname">defaultsResID</td><td>[in] ID of the 'ACP0' resource that contains the element default values for this subtype </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>APIERR_BADPARS - templateFileResID refers to an invalid 'FILE' resource or the built-in library part cannot be accepted as subtype template.</li>
-<li>NoError - The function has completed with success. </li>
+<li>APIERR_BADPARS - templateFileResID refers to an invalid 'FILE' resource, or the built-in library part cannot be accepted as a subtype template.</li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function registers a new library part subtype. In order to have an own element subtype the add-on must contain a built-in library part in its reource module. This library part will be loaded into the active libraries, and become a new node in the ancestry tree. The new element type will be identified with the signature identifier chosen by the add-on's writer. The signature should be unique in order to avoid collisions. You may pass 0 in the signature parameter if you do not need a new element type but a single subtype node. The subtype can appear in the toolbox as an external tool, and also on the Windows toolbar. In this case you must pass two valid icon resource IDs in the smallIconResID and the largeIconResID parameters. The size of the icons should be 16x16 and 30x21 pixels respectively. You can specify the position of the subtype item inserted into the toolbox with the toolGroupId parameter as follows: <table class="markdownTable">
+<dl class="section remark"><dt>Remarks</dt><dd>This function registers a new library part subtype. The add-on must contain a built-in library part in its resource module to have its element subtype. This library part will be loaded into the active libraries and becomes a new node in the ancestry tree. The new element type will be identified with the signature identifier chosen by the add-on's writer. The signature should be unique to avoid collisions. You may pass 0 in the signature parameter if you do not need a new element type but a single subtype node. The subtype can appear in the toolbox as an external tool and on the Windows toolbar. In this case, you must pass two valid icon resource IDs in the smallIconResID and the largeIconResID parameters. The size of the icons should be 16x16 and 30x21 pixels, respectively. You can specify the position of the subtype item inserted into the toolbox with the toolGroupId parameter as follows: <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">API_TBoxGroup   </th><th class="markdownTableHeadNone">Meaning    </th></tr>
 <tr class="markdownTableRowOdd">
@@ -2683,7 +2878,7 @@ Functions</h2></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">API_TBoxEnabled_DrawingInteriorElevation   </td><td class="markdownTableBodyNone">on drawing type interior elevation windows   </td></tr>
 </table>
-<p>If you want to register your subtype tool without appearing in the toolbox, pass 0 for both the <code>smallIconResID</code> and the <code>largeIconResID</code> parameters. If you register a subtype tool you should define the factory default values for this element type in an 'ACP0' resource. The element default will be initialized with these parameters when no preferences data is stored. The structure of this resource is shown at the example below. The resource ID should be passed in the defaultsResID parameter. Learn more about this topic at the general description of Library Part Subtypes. </p><dl class="section user"><dt>Example</dt><dd>Resources in the .GRC file: <div class="fragment"><div class="line">&#39;FILE&#39; 132 &quot;Roof Opening.gsm&quot; {</div>
+<p>If you want to register your subtype tool without appearing in the toolbox, pass 0 for both the <code>smallIconResID</code> and the <code>largeIconResID</code> parameters. If you register a subtype tool, you should define the factory default values for this element type in an 'ACP0' resource. The element default will be initialized with these parameters when no preferences data is stored. The structure of this resource is shown in the example below. The resource ID should be passed in the defaultsResID parameter. Learn more about this topic at the general description of Library Part Subtypes. </p><dl class="section user"><dt>Example</dt><dd>Resources in the .GRC file: <div class="fragment"><div class="line">&#39;FILE&#39; 132 &quot;Roof Opening.gsm&quot; {</div>
 <div class="line">    &quot;Roof Opening.gsm&quot;</div>
 <div class="line">}</div>
 </div><!-- fragment --> <div class="fragment"><div class="line">&#39;STR#&#39; 32611 &quot;Skylight subtype&quot; {</div>
@@ -2797,16 +2992,16 @@ Functions</h2></td></tr>
 <p>Installs a callback procedure for handling the add-on's menu commands. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">menuStrResID</td><td>[in] An identifier of the menu to install the callback procedure for. This should be the same what you used in the <a class="el" href="group___menu_item.html#gaec79ce2178f5bb5482da171a49ba88ef">ACAPI_MenuItem_RegisterMenu</a> as a menu string resource number in the RegisterInterface function. </td></tr>
-    <tr><td class="paramname">handlerProc</td><td>[in] The callback function to handle the menu commands. </td></tr>
+    <tr><td class="paramname">menuStrResID</td><td>[in] A menu identifier for which to install the callback procedure. You should use this in the <a class="el" href="group___menu_item.html#gaec79ce2178f5bb5482da171a49ba88ef">ACAPI_MenuItem_RegisterMenu</a> as a menu string resource number in the RegisterInterface function. </td></tr>
+    <tr><td class="paramname">handlerProc</td><td>[in] The callback function handles the menu commands. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function should be called in the Initialize function of your add-on. It installs the callback function which is called when the user chooses one of your menu commands. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function should be called in your add-on's initialize function. It installs the callback function, which is called when the user chooses one of your menu commands. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">// -----------------------------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Called when the add-on has been loaded into memory</span></div>
 <div class="line"><span class="comment">// -----------------------------------------------------------------------------</span></div>
@@ -2855,18 +3050,18 @@ Functions</h2></td></tr>
 <p>Registers the menu items of the add-on. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">menuStrResID</td><td>[in] The resource ID of the menu resource, which should be in the resource fork of the add-on. </td></tr>
-    <tr><td class="paramname">promptStrResID</td><td>[in] The resource ID of the propmt string resource, which should be in the resource fork of the add-on. These strings appear in the status bar. </td></tr>
-    <tr><td class="paramname">menuPosCode</td><td>[in] Defines the server application's menu to insert the command into. </td></tr>
-    <tr><td class="paramname">menuFlags</td><td>[in] Flags describing whether you would like to see any separator item in the menu before or after the registered menu item. Its possible values are: MenuFlag_Default, MenuFlag_SeparatorBefore, and MenuFlag_SeparatorAfter </td></tr>
+    <tr><td class="paramname">menuStrResID</td><td>[in] The resource ID of the menu resource should be in the resource fork of the add-on. </td></tr>
+    <tr><td class="paramname">promptStrResID</td><td>[in] The resource ID of the prompt string resource should be in the resource fork of the add-on. These strings appear in the status bar. </td></tr>
+    <tr><td class="paramname">menuPosCode</td><td>[in] Defines the server application's menu to insert the command. </td></tr>
+    <tr><td class="paramname">menuFlags</td><td>[in] Flags describing whether you want to see any separator item in the menu before or after the registered menu item. Its possible values are: MenuFlag_Default, MenuFlag_SeparatorBefore, and MenuFlag_SeparatorAfter </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function should be called from the RegisterInterface routine in your add-on. You can register more than one menu from the same add-on, even appearing in different menus of the server application. The supplied menuStrResID parameter should be the same in the <a class="el" href="group___menu_item.html#gaf40884810b9a156a9dbded23168dbde8">ACAPI_MenuItem_InstallMenuHandler</a> function, which you have to call from your Initialize routine. The following scenarios are possible:<ul>
+<dl class="section remark"><dt>Remarks</dt><dd>This function should be called from the RegisterInterface routine in your add-on. You can register more than one menu from the same add-on, even appearing in different menus of the server application. The supplied menuStrResID parameter should be the same in the <a class="el" href="group___menu_item.html#gaf40884810b9a156a9dbded23168dbde8">ACAPI_MenuItem_InstallMenuHandler</a> function, which you must call from your Initialize routine. The following scenarios are possible:<ul>
 <li>the add-on inserts one menu item at the position defined by <code>menuPosCode</code> <div class="fragment"><div class="line">&#39;STR#&#39; 32500 &quot;Menu Description&quot; {</div>
 <div class="line">/* [ 1] */ &quot;My add-on&#39;s solo menuitem&quot;</div>
 <div class="line">}</div>
@@ -2877,12 +3072,12 @@ Functions</h2></td></tr>
 <div class="line">/* [ 3] */          &quot;My add-on&#39;s menuitem #2&quot;</div>
 <div class="line">}</div>
 </div><!-- fragment --></li>
-<li>the add-on inserts its own main menu; menuPosCode should be MenuCode_UserDef <div class="fragment"><div class="line">&#39;STR#&#39; 32502 &quot;Menu Description&quot; {</div>
+<li>the add-on inserts its main menu; menuPosCode should be MenuCode_UserDef <div class="fragment"><div class="line">&#39;STR#&#39; 32502 &quot;Menu Description&quot; {</div>
 <div class="line">/* [ 1] */      &quot;My add-on&#39;s main menu&quot;</div>
 <div class="line">/* [ 2] */          &quot;My add-on&#39;s solo menuitem&quot;</div>
 <div class="line">}</div>
 </div><!-- fragment --></li>
-<li>the add-on inserts its own main menu with a submenu; menuPosCode should be MenuCode_UserDef <div class="fragment"><div class="line">&#39;STR#&#39; 32503 &quot;Menu Description&quot; {</div>
+<li>the add-on inserts its main menu with a submenu; menuPosCode should be MenuCode_UserDef <div class="fragment"><div class="line">&#39;STR#&#39; 32503 &quot;Menu Description&quot; {</div>
 <div class="line">/* [ 1] */      &quot;My add-on&#39;s main menu&quot;</div>
 <div class="line">/* [ 2] */          &quot;My add-on&#39;s submenu&quot;</div>
 <div class="line">/* [ 3] */              &quot;My add-on&#39;s menuitem #1&quot;</div>
@@ -2891,7 +3086,7 @@ Functions</h2></td></tr>
 </div><!-- fragment --></li>
 </ul>
 </dd></dl>
-<p>As you see, the add-on may define its own main menu, if it uses MenuCode_UserDef and the menu position. In this case the first item in the STR# resource will be the title of the main menu, and the other items correspond to the menu items in the non-main menu case. If this first item is the same as one of the server application's main menu titles, then the API won't open a new main menu, rather it inserts the add-on's menu into the original main menu, as defined by the rules for that menu. This also means if you use an already existing menu title (e.g. Window) which doesn't have an insertion place for add-ons, your add-on's menu won't appear. This implies that the location of the add-on within the Add-Ons folder doesn't have any impact on the menu position of your add-on's commands. The appearance of menu items can be controlled by control codes appended to the menu item string resource as described in the Required Resources section. </p><dl class="section user"><dt>Example</dt><dd>In the GRC file: <div class="fragment"><div class="line">&#39;STR#&#39; 32800 &quot;Menu strings&quot; {</div>
+<p>The add-on may define its main menu if it uses MenuCode_UserDef and the menu position. In this case, the first item in the STR# resource will be the title of the main menu, and the other items correspond to the menu items in the non-main menu case. If this first item is the same as one of the server application's main menu titles, then the API won't open a new main menu; instead, it inserts the add-on's menu into the original main menu, as defined by the rules for that menu. This also means if you use an existing menu title (e.g., Window) that doesn't have an insertion place for add-ons, your add-on's menu won't appear. This implies that the location of the add-on within the Add-Ons folder doesn't impact the menu position of your add-on's commands. The appearance of menu items can be controlled by control codes appended to the menu item string resource as described in the Required Resources section. </p><dl class="section user"><dt>Example</dt><dd>In the GRC file: <div class="fragment"><div class="line">&#39;STR#&#39; 32800 &quot;Menu strings&quot; {</div>
 <div class="line">/* [  1] */ &quot;Show Selections^ES^E3^ED^32800&quot;</div>
 <div class="line">}</div>
 <div class="line"> </div>
@@ -2942,10 +3137,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>The string resource will appear in Archicad's dialogs. This function should be called from the Initialize function of the add-on, after registering the property handler with <a class="el" href="group___property.html#ga9881c061fe05a6ece98cd75c05f80dbe">ACAPI_Property_RegisterPropertyObjectHandler</a>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>The string resource will appear in Archicad's dialogs. This function should be called from the add-on's Initialize function after registering the property handler with <a class="el" href="group___property.html#ga9881c061fe05a6ece98cd75c05f80dbe">ACAPI_Property_RegisterPropertyObjectHandler</a>. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">//------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Called after the add-on has been loaded into memory</span></div>
 <div class="line"><span class="comment">//------------------------------------------------------</span></div>
@@ -2983,7 +3178,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function should be called from the Initialize function of the add-on, after registering the property handler with <a class="el" href="group___property.html#ga994fe3b6fe1eb64f770efce956e94256">ACAPI_Property_RegisterPropertyVisibilityHandler</a>. </dd></dl>
@@ -2991,7 +3186,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="comment">// Called after the add-on has been loaded into memory</span></div>
 <div class="line"><span class="comment">//------------------------------------------------------</span></div>
 <div class="line">GSErrCode APIMenuCommandProc_Main   (<span class="keyword">const</span> <a class="code hl_struct" href="struct_a_p_i___menu_params.html">API_MenuParams</a> *menuParams);</div>
-<div class="line"><span class="keywordtype">bool</span> PropertyVisibilityHandler (API_PropertyVisibilityMode visibilityMode, <span class="keyword">const</span> GS::Array&lt;API_Guid&gt;&amp; classificationGuids, <span class="keyword">const</span> <a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a>&amp; propertyDefinitionGuid);</div>
+<div class="line"><span class="keywordtype">bool</span> PropertyVisibilityHandler (<a class="code hl_enumeration" href="group___property.html#ga0bfe013771c05f775821dee649ecad97">API_PropertyVisibilityMode</a> visibilityMode, <span class="keyword">const</span> GS::Array&lt;API_Guid&gt;&amp; classificationGuids, <span class="keyword">const</span> <a class="code hl_struct" href="struct_a_p_i___guid.html">API_Guid</a>&amp; propertyDefinitionGuid);</div>
 <div class="line"> </div>
 <div class="line">GSErrCode <a class="code hl_function" href="group___add_on_lifetime.html#gaa8f1f7d553305c1afe5de7e4dcb66e99">Initialize</a> (<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
@@ -3030,12 +3225,12 @@ Functions</h2></td></tr>
 <p>Registers a property handler. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">assignStrResID</td><td>[in] The string resource ID, which will be used in Archicad's dialogs. </td></tr>
+    <tr><td class="paramname">assignStrResID</td><td>[in] The string resource ID will be used in Archicad's dialogs. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function should be called from the RegisterInterface routine in your add-on. </dd></dl>
@@ -3070,7 +3265,7 @@ Functions</h2></td></tr>
 
 <p>Tells Archicad that your add-on wants to modify property visibility. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function should be called from the RegisterInterface routine in your add-on. </dd></dl>
@@ -3135,12 +3330,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - The passed referenceID has already been used.</li>
 <li>APIERR_MEMFULL - No free memory was available for the new entry. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Modeless palettes now can be opened with the normal DG functions (either DGModelessInit, or DG::Palette). However, the API should know about the existence of an add-on's palette, so that it could send special messages to the palette (see APIPaletteControlCallBackProc). This function registers the add-on's modeless window with the API; call it from the Initialize function. API 11 introduced new values for the controlFlags parameter: <code>API_PalEnabled_Worksheet</code>, <code>API_PalEnabled_Elevation</code>, and <code>API_PalEnabled_InteriorElevation</code>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Modeless palettes now can be opened with the normal DG functions (either DGModelessInit or DG::Palette). However, the API should know about the existence of an add-on's palette, so that it could send special messages to the palette (see APIPaletteControlCallBackProc). This function registers the add-on's modeless window with the API; call it from the Initialize function. API 11 introduced new values for the controlFlags parameter: <code>API_PalEnabled_Worksheet</code>, <code>API_PalEnabled_Elevation</code>, and <code>API_PalEnabled_InteriorElevation</code>. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode <a class="code hl_function" href="group___add_on_lifetime.html#gaa8f1f7d553305c1afe5de7e4dcb66e99">Initialize</a>    (<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
 <div class="line">    GSErrCode err = <a class="code hl_function" href="group___menu_item.html#gaf40884810b9a156a9dbded23168dbde8">ACAPI_MenuItem_InstallMenuHandler</a> (DGTEST_MENU_STRINGSID, MenuCommandHandler);</div>

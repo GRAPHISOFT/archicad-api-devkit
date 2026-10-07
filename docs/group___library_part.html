@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Library Part Management</title>
+<title>Archicad 30 C++ API: Library Part Management</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -134,13 +134,13 @@ $(function(){initNavTree('group___library_part.html',''); initResizable(true); }
 </div><!--header-->
 <div class="contents">
 
-<p>Old functionalities to iterate and manipulate Library Parts. Most of these structures and functions are deprecated since AC 28. It's recommended to use <a class="el" href="group___library_management.html">Library Management components</a> instead.  
+<p>Old functionalities to iterate and manipulate Library Parts. Most of these structures and functions are deprecated since Archicad 28. It's recommended to use <a class="el" href="group___library_management.html">Library Management components</a> instead.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___open_lib_part_info.html">API_OpenLibPartInfo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The information of a library part required for opening the library part with <a class="el" href="group___library_management.html#gabba21ae31e3a680deb18e3506912bc26">ACAPI_LibraryManagement_OpenLibraryPart</a>.  <a href="struct_a_p_i___open_lib_part_info.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The information of a library part required for opening it with <a class="el" href="group___library_management.html#gabba21ae31e3a680deb18e3506912bc26">ACAPI_LibraryManagement_OpenLibraryPart</a>.  <a href="struct_a_p_i___open_lib_part_info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___e_s_y_m_params.html">API_ESYMParams</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the current external symbol your add-on can work on.  <a href="struct_a_p_i___e_s_y_m_params.html#details">More...</a><br /></td></tr>
@@ -233,35 +233,35 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:ga4bb639c931b1e4f27b42b6415db128f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Various primitive element types and control codes.  <a href="#ga4bb639c931b1e4f27b42b6415db128f0">More...</a><br /></td></tr>
 <tr class="separator:ga4bb639c931b1e4f27b42b6415db128f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada81f0b453c0e5ad4e3f00a0100fd7dd" id="r_gada81f0b453c0e5ad4e3f00a0100fd7dd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gada81f0b453c0e5ad4e3f00a0100fd7dd">API_LockableStatus</a> { <br />
-&#160;&#160;<b>APILockableStatus_NotExist</b>
-, <b>APILockableStatus_Free</b>
-, <b>APILockableStatus_Editable</b>
-, <b>APILockableStatus_Locked</b>
+&#160;&#160;<a class="el" href="#ggada81f0b453c0e5ad4e3f00a0100fd7ddab41e70fb80f0ef8cf5fb8e028a904e84">APILockableStatus_NotExist</a>
+, <a class="el" href="#ggada81f0b453c0e5ad4e3f00a0100fd7dda6acf701d7d800609f09340622a62a179">APILockableStatus_Free</a>
+, <a class="el" href="#ggada81f0b453c0e5ad4e3f00a0100fd7dda6e04c051c79ab0bcde7beaedf7a9a618">APILockableStatus_Editable</a>
+, <a class="el" href="#ggada81f0b453c0e5ad4e3f00a0100fd7ddae5da0a9ca0f7d817b2d4f9234ae30fd8">APILockableStatus_Locked</a>
 , <br />
-&#160;&#160;<b>APILockableStatus_NotAvailable</b>
+&#160;&#160;<a class="el" href="#ggada81f0b453c0e5ad4e3f00a0100fd7dda5931a2a14417ab7a1b9059ae6041a08c">APILockableStatus_NotAvailable</a>
 <br />
  }</td></tr>
 <tr class="memdesc:gada81f0b453c0e5ad4e3f00a0100fd7dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible Teamwork lockable status.  <a href="#gada81f0b453c0e5ad4e3f00a0100fd7dd">More...</a><br /></td></tr>
 <tr class="separator:gada81f0b453c0e5ad4e3f00a0100fd7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacd655f5dbf61af0671962cbbe65ed59f" id="r_gacd655f5dbf61af0671962cbbe65ed59f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacd655f5dbf61af0671962cbbe65ed59f">API_LibTypeID</a> { <br />
-&#160;&#160;<b>API_ZombieLibID</b> = 0
-, <b>APILib_SpecID</b> = 1
-, <b>APILib_WindowID</b> = 2
-, <b>APILib_DoorID</b> = 3
+&#160;&#160;<a class="el" href="#ggacd655f5dbf61af0671962cbbe65ed59faa858638ecbf3d1763b55616fa51d4363">API_ZombieLibID</a> = 0
+, <a class="el" href="#ggacd655f5dbf61af0671962cbbe65ed59fac77c465f99c623e8f7b82e6f3000207c">APILib_SpecID</a> = 1
+, <a class="el" href="#ggacd655f5dbf61af0671962cbbe65ed59fac3bc130ba7fb74992be7747316399095">APILib_WindowID</a> = 2
+, <a class="el" href="#ggacd655f5dbf61af0671962cbbe65ed59facd13cdc760d3524429c43c400916dfed">APILib_DoorID</a> = 3
 , <br />
-&#160;&#160;<b>APILib_ObjectID</b> = 4
-, <b>APILib_LampID</b> = 5
-, <b>APILib_RoomID</b> = 6
-, <b>APILib_PropertyID</b> = 7
+&#160;&#160;<a class="el" href="#ggacd655f5dbf61af0671962cbbe65ed59fa16822964d4a29ea70445c9a7995b7ede">APILib_ObjectID</a> = 4
+, <a class="el" href="#ggacd655f5dbf61af0671962cbbe65ed59fa4dba6f085f0c203560d597f233831a93">APILib_LampID</a> = 5
+, <a class="el" href="#ggacd655f5dbf61af0671962cbbe65ed59fa781a305dd1692b23eaaaba5f791d997e">APILib_RoomID</a> = 6
+, <a class="el" href="#ggacd655f5dbf61af0671962cbbe65ed59fac4149fe6c9dd946545a98ffe1cc84f74">APILib_PropertyID</a> = 7
 , <br />
-&#160;&#160;<b>APILib_PlanSignID</b> = 8
-, <b>APILib_LabelID</b> = 9
-, <b>APILib_MacroID</b> = 10
-, <b>APILib_PictID</b> = 11
+&#160;&#160;<a class="el" href="#ggacd655f5dbf61af0671962cbbe65ed59fa25feb403894e2a164b9c3ee74b16fb37">APILib_PlanSignID</a> = 8
+, <a class="el" href="#ggacd655f5dbf61af0671962cbbe65ed59fa7b4dcb6a99a77b81e0b91118e9c48002">APILib_LabelID</a> = 9
+, <a class="el" href="#ggacd655f5dbf61af0671962cbbe65ed59fa415346a66b099604de379edeacdddcfc">APILib_MacroID</a> = 10
+, <a class="el" href="#ggacd655f5dbf61af0671962cbbe65ed59fafc929c19165671d6c035eb6cb4a425a3">APILib_PictID</a> = 11
 , <br />
-&#160;&#160;<b>APILib_ListSchemeID</b> = 12
-, <b>APILib_SkylightID</b> = 13
-, <b>APILib_OpeningSymbolID</b> = 14
+&#160;&#160;<a class="el" href="#ggacd655f5dbf61af0671962cbbe65ed59fa882083c9495e1baf9176a5796bbb645d">APILib_ListSchemeID</a> = 12
+, <a class="el" href="#ggacd655f5dbf61af0671962cbbe65ed59fa086275e45cfeb6b77aafe60c5bc194e8">APILib_SkylightID</a> = 13
+, <a class="el" href="#ggacd655f5dbf61af0671962cbbe65ed59fada0966bcf8c07d3bb7383cfd8267089e">APILib_OpeningSymbolID</a> = 14
 <br />
  }</td></tr>
 <tr class="memdesc:gacd655f5dbf61af0671962cbbe65ed59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Library Part types. From Archicad 8 these categories are obsolete due to the introduction of library part subtypes.  <a href="#gacd655f5dbf61af0671962cbbe65ed59f">More...</a><br /></td></tr>
@@ -285,7 +285,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gada10bfcc55c27e74f76e9b13772555fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete embeded lib items.  <br /></td></tr>
 <tr class="separator:gada10bfcc55c27e74f76e9b13772555fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacacd08acb7d5a1325838036d04d9929e" id="r_gacacd08acb7d5a1325838036d04d9929e"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacacd08acb7d5a1325838036d04d9929e">ACAPI_LibraryPart_OpenParameters</a> (<a class="el" href="struct_a_p_i___param_owner_type.html">API_ParamOwnerType</a> *paramOwner)</td></tr>
-<tr class="memdesc:gacacd08acb7d5a1325838036d04d9929e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a Library Part parameter list to edit.  <br /></td></tr>
+<tr class="memdesc:gacacd08acb7d5a1325838036d04d9929e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a Library Part parameter list for editing.  <br /></td></tr>
 <tr class="separator:gacacd08acb7d5a1325838036d04d9929e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6389bfb68f8dbe4f05cd188aba6eec3d" id="r_ga6389bfb68f8dbe4f05cd188aba6eec3d"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6389bfb68f8dbe4f05cd188aba6eec3d">ACAPI_LibraryPart_GetParamValues</a> (<a class="el" href="struct_a_p_i___get_param_values_type.html">API_GetParamValuesType</a> *getValues)</td></tr>
 <tr class="memdesc:ga6389bfb68f8dbe4f05cd188aba6eec3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the possible values defined for a Library Part parameter.  <br /></td></tr>
@@ -345,7 +345,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gae4a1d3792d94fe56428db50640cce4d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for registered Library Parts in the loaded libraries.  <br /></td></tr>
 <tr class="separator:gae4a1d3792d94fe56428db50640cce4d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga26a6f5f7d4ffeedc841aad3f0e0489a3" id="r_ga26a6f5f7d4ffeedc841aad3f0e0489a3"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga26a6f5f7d4ffeedc841aad3f0e0489a3">ACAPI_LibraryPart_Get</a> (<a class="el" href="struct_a_p_i___lib_part.html">API_LibPart</a> *libPart)</td></tr>
-<tr class="memdesc:ga26a6f5f7d4ffeedc841aad3f0e0489a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data of a registered Library Part.  <br /></td></tr>
+<tr class="memdesc:ga26a6f5f7d4ffeedc841aad3f0e0489a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data for a registered library part.  <br /></td></tr>
 <tr class="separator:ga26a6f5f7d4ffeedc841aad3f0e0489a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6d7899a481a91b3a7e58186b78e6ba8e" id="r_ga6d7899a481a91b3a7e58186b78e6ba8e"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6d7899a481a91b3a7e58186b78e6ba8e">ACAPI_LibraryPart_GetParams</a> (Int32 libInd, double *a, double *b, Int32 *addParNum, <a class="el" href="struct_a_p_i___add_par_type.html">API_AddParType</a> ***addPars)</td></tr>
 <tr class="memdesc:ga6d7899a481a91b3a7e58186b78e6ba8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default parameters of a registered Library Part.  <br /></td></tr>
@@ -381,7 +381,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga211ce70f28550ef25f08b2d1979f7b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the last opened section of the Library Part under creation.  <br /></td></tr>
 <tr class="separator:ga211ce70f28550ef25f08b2d1979f7b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9d6ed5258ccb9669ce890e73f3ff22bb" id="r_ga9d6ed5258ccb9669ce890e73f3ff22bb"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9d6ed5258ccb9669ce890e73f3ff22bb">ACAPI_LibraryPart_Save</a> (<a class="el" href="struct_a_p_i___lib_part.html">API_LibPart</a> *libPart)</td></tr>
-<tr class="memdesc:ga9d6ed5258ccb9669ce890e73f3ff22bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the Library Part has been created and registers it.  <br /></td></tr>
+<tr class="memdesc:ga9d6ed5258ccb9669ce890e73f3ff22bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the Library Part that has been created and registers it.  <br /></td></tr>
 <tr class="separator:ga9d6ed5258ccb9669ce890e73f3ff22bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga44b49790fde80e887d79c8c9156681f7" id="r_ga44b49790fde80e887d79c8c9156681f7"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga44b49790fde80e887d79c8c9156681f7">ACAPI_LibraryPart_ShapePrims</a> (Int32 libInd, const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> &amp;instanceElemGuid, short gdlContext, <a class="el" href="group___drawing_primitive.html#ga1a5653415090468c3f5a646304ca5c8a">ShapePrimsProc</a> *shapePrimsProc)</td></tr>
 <tr class="memdesc:ga44b49790fde80e887d79c8c9156681f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtually draws the shape of a registered Library Part.  <br /></td></tr>
@@ -399,31 +399,31 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga9fab22a9a79ebea5b3c33de7f7857f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of sections contained by a registered Library.  <br /></td></tr>
 <tr class="separator:ga9fab22a9a79ebea5b3c33de7f7857f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaae5e09c743f5d683bdaab7a5a6c84fca" id="r_gaae5e09c743f5d683bdaab7a5a6c84fca"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaae5e09c743f5d683bdaab7a5a6c84fca">ACAPI_LibraryPart_GetDetails</a> (Int32 libInd, <a class="el" href="union_a_p_i___lib_part_details.html">API_LibPartDetails</a> *details)</td></tr>
-<tr class="memdesc:gaae5e09c743f5d683bdaab7a5a6c84fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the detail parameters of a registered Library Part.  <br /></td></tr>
+<tr class="memdesc:gaae5e09c743f5d683bdaab7a5a6c84fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the detailed parameters of a registered Library Part.  <br /></td></tr>
 <tr class="separator:gaae5e09c743f5d683bdaab7a5a6c84fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga97ae93f71a0cf23682af56f08fab10e1" id="r_ga97ae93f71a0cf23682af56f08fab10e1"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga97ae93f71a0cf23682af56f08fab10e1">ACAPI_LibraryPart_SetDetails_ParamDef</a> (const <a class="el" href="struct_a_p_i___lib_part.html">API_LibPart</a> *libPart, GSHandle paramHdl, const <a class="el" href="union_a_p_i___lib_part_details.html">API_LibPartDetails</a> *details)</td></tr>
 <tr class="memdesc:ga97ae93f71a0cf23682af56f08fab10e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the detail parameters of a Library Part parameter section handle.  <br /></td></tr>
 <tr class="separator:ga97ae93f71a0cf23682af56f08fab10e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Old functionalities to iterate and manipulate Library Parts. Most of these structures and functions are deprecated since AC 28. It's recommended to use <a class="el" href="group___library_management.html">Library Management components</a> instead. </p>
-<h1><a class="anchor" id="autotoc_md127"></a>
+<p>Old functionalities to iterate and manipulate Library Parts. Most of these structures and functions are deprecated since Archicad 28. It's recommended to use <a class="el" href="group___library_management.html">Library Management components</a> instead. </p>
+<h1><a class="anchor" id="autotoc_md134"></a>
 Library Part Overview</h1>
 <p>Library Parts are collected into library folders, like the default Archicad Library. The active library folders themselves can be manipulated. With the <a class="el" href="group___dialog.html#ga05e5cfe254491de63f53f3e1976ad5a3">ACAPI_LibraryManagement_ResetLibraries</a> function you can reset the installed libraries, also you can add a new folder, or even to give a complete list of folders.</p>
 <p>From Archicad 8 libraries can be packed in and loaded from archive files and module resources as well. This capability lets the add-ons store their library parts in their own resources and use them as a read-only library added to the active libraries (<a class="el" href="group___add_on_integration.html#ga971703b8ea845703fcc9c14401f2ea55">ACAPI_AddOnIntegration_RegisterBuiltInLibrary</a>).</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md128"></a>
+<h1><a class="anchor" id="autotoc_md135"></a>
 References to Library Part</h1>
 <p>The active library folders are enumerated and the Library Part files are registered in Archicad. The <a class="el" href="group___library_part.html">Library Part Manager</a> functions can work only on registered Library Parts.</p>
 <p>The drawing elements (objects, doors, windows, lamps, and zone definitions) which require a Library Part to reference, do it with indices. The index is the index of the Library Part in the library part pool, which contains the parts from all the active libraries.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md129"></a>
+<h1><a class="anchor" id="autotoc_md136"></a>
 Library Part types</h1>
 <p>Up to Archicad 8 applicable types of Library Parts were enumerated in the <a class="el" href="#gacd655f5dbf61af0671962cbbe65ed59f">API_LibTypeID</a> structure. From Archicad 8 a new kind of library part hierarchy was introduced: every library part is derived from a subtype parent library part. This tree structure gives much more flexible classification of library parts. For a detailed description see the <a class="el" href="_subtypes.html">Library Part Subtypes</a> section.</p>
 <p>The definition of a Library Part is described in the <a class="el" href="struct_a_p_i___lib_part.html">API_LibPart</a> structure.</p>
 <p>Some kind of Library Parts do not contain any Archicad specific information. For example macros are simple text files, pictures are standard TIFF, GIF etc. files. They become Library Parts, just because they are located in the active library folders. There are no any API functions to give support to work on their content.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md130"></a>
+<h1><a class="anchor" id="autotoc_md137"></a>
 Internal Structure</h1>
 <p>A real Library Part is built from several sections, as you can see and also edit in the Library Part dialog of Archicad. Each section has an identifier and a subcode which allows implementation of more than one section with the very same type, as can be seen in the <a class="el" href="struct_a_p_i___lib_part_section.html">API_LibPartSection</a> structure.</p>
 <p>The sectType field is the identifier of the section, which is implemented as a four byte code. Predefined identifiers are also listed, and Archicad can work on these sections only. Of course you can insert sections with custom identifiers to save your own data into the Library Part. Archicad never modifies or deletes custom sections.</p>
@@ -439,7 +439,7 @@ Internal Structure</h1>
 <p>The list of sections of a Library Part can be get by the <a class="el" href="#ga9fab22a9a79ebea5b3c33de7f7857f92">ACAPI_LibraryPart_GetSectionList</a> function.</p>
 <p>If you are interested in the data of any section, you can get it by simply calling the <a class="el" href="#gaae018dc09a7a62607fa4d87bfef9b6c3">ACAPI_LibraryPart_GetSection</a> function. In case of binary sections, you will get binary data which does not correspond to any API structure. For textual sections, the returned sectionHdl contains the required text.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md131"></a>
+<h1><a class="anchor" id="autotoc_md138"></a>
 The 2D drawing section</h1>
 <p>The 2D drawing section describes the shape of the Library Part which can be drawn with the applicable 2D toolbar elements.</p>
 <p>At this time, the only way to get this data in API form is to use the <a class="el" href="#ga44b49790fde80e887d79c8c9156681f7">ACAPI_LibraryPart_ShapePrims</a> function. This function call explodes the shape of the library part into drawing primitives.</p>
@@ -458,13 +458,13 @@ The 2D drawing section</h1>
 <div class="line">err = <a class="code hl_function" href="#ga578d93dff7f9b47ed5a67fae34b83df6">ACAPI_LibraryPart_AddSection</a> (&amp;section, bin2DHdl, <span class="keyword">nullptr</span>);</div>
 <div class="line"> </div>
 <div class="line">BMKillHandle (&amp;bin2DHdl);</div>
-<div class="ttc" id="agroup___element_html_gad4ba2707aac702e651c6b1ec9e212baf"><div class="ttname"><a href="group___element.html#gad4ba2707aac702e651c6b1ec9e212baf">ACAPI_Element_Create</a></div><div class="ttdeci">GSErrCode ACAPI_Element_Create(API_Element *element, API_ElementMemo *memo)</div><div class="ttdoc">Places a new element into current database.</div></div>
+<div class="ttc" id="agroup___element_html_gad4ba2707aac702e651c6b1ec9e212baf"><div class="ttname"><a href="group___element.html#gad4ba2707aac702e651c6b1ec9e212baf">ACAPI_Element_Create</a></div><div class="ttdeci">GSErrCode ACAPI_Element_Create(API_Element *element, API_ElementMemo *memo)</div><div class="ttdoc">Places a new element into the current database.</div></div>
 <div class="ttc" id="agroup___library_part_html_ga2134f93241d52866031aeb775905529b"><div class="ttname"><a href="#ga2134f93241d52866031aeb775905529b">ACAPI_LibraryPart_GetSect_2DDrawHdl</a></div><div class="ttdeci">GSErrCode ACAPI_LibraryPart_GetSect_2DDrawHdl(GSHandle *sectionHdl)</div><div class="ttdoc">Returns the 2D binary (drawing) section data created from API elements.</div></div>
 <div class="ttc" id="agroup___library_part_html_ga578d93dff7f9b47ed5a67fae34b83df6"><div class="ttname"><a href="#ga578d93dff7f9b47ed5a67fae34b83df6">ACAPI_LibraryPart_AddSection</a></div><div class="ttdeci">GSErrCode ACAPI_LibraryPart_AddSection(const API_LibPartSection *section, GSHandle sectionHdl, GS::UniString *sectionStr)</div><div class="ttdoc">Adds a new section to the Library Part under creation.</div></div>
 <div class="ttc" id="agroup___library_part_html_gaa7898650203f0d5ce0d79d7ee3938b82"><div class="ttname"><a href="#gaa7898650203f0d5ce0d79d7ee3938b82">ACAPI_LibraryPart_SetUpSect_2DDrawHdl</a></div><div class="ttdeci">GSErrCode ACAPI_LibraryPart_SetUpSect_2DDrawHdl(void)</div><div class="ttdoc">Sets up an empty 2D binary (drawing) section to fill up from API elements.</div></div>
-<div class="ttc" id="astruct_a_p_i___selection_info_html"><div class="ttname"><a href="struct_a_p_i___selection_info.html">API_SelectionInfo</a></div><div class="ttdoc">Information about the current selection.</div><div class="ttdef"><b>Definition</b> APIdefs_Elements.h:23717</div></div>
+<div class="ttc" id="astruct_a_p_i___selection_info_html"><div class="ttname"><a href="struct_a_p_i___selection_info.html">API_SelectionInfo</a></div><div class="ttdoc">Information about the current selection.</div><div class="ttdef"><b>Definition</b> APIdefs_Elements.h:24422</div></div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md132"></a>
+<h1><a class="anchor" id="autotoc_md139"></a>
 The parameters section</h1>
 <p>The parameters section describes the default parameters of the Library Part.</p>
 <p>All real Library Parts contain two predefined parameters; named A and B. The different kind of Library Parts may contain additional required parameters. You can check these by creating a new library part of that kind in Archicad. The parameters appearing in the dialog are the required ones. Beside these, you may define or retrieve additional parameters (maximum 64). The parameter manipulating functions all refer to these additional (required and/or optional) parameters, but not to the A and B parameters, which are separate parameters where needed.</p>
@@ -475,14 +475,14 @@ The parameters section</h1>
 <div class="line"><span class="keywordtype">double</span>           a, b;</div>
 <div class="line">err = <a class="code hl_function" href="#ga6d7899a481a91b3a7e58186b78e6ba8e">ACAPI_LibraryPart_GetParams</a> (libIndex, &amp;a, &amp;b, &amp;addParNum, &amp;addParHdl);</div>
 <div class="ttc" id="agroup___library_part_html_ga6d7899a481a91b3a7e58186b78e6ba8e"><div class="ttname"><a href="#ga6d7899a481a91b3a7e58186b78e6ba8e">ACAPI_LibraryPart_GetParams</a></div><div class="ttdeci">GSErrCode ACAPI_LibraryPart_GetParams(Int32 libInd, double *a, double *b, Int32 *addParNum, API_AddParType ***addPars)</div><div class="ttdoc">Returns the default parameters of a registered Library Part.</div></div>
-<div class="ttc" id="astruct_a_p_i___add_par_type_html"><div class="ttname"><a href="struct_a_p_i___add_par_type.html">API_AddParType</a></div><div class="ttdoc">Describes a parameter of a Library Part.</div><div class="ttdef"><b>Definition</b> APIdefs_LibraryParts.h:607</div></div>
+<div class="ttc" id="astruct_a_p_i___add_par_type_html"><div class="ttname"><a href="struct_a_p_i___add_par_type.html">API_AddParType</a></div><div class="ttdoc">Describes a parameter of a Library Part.</div><div class="ttdef"><b>Definition</b> APIdefs_LibraryParts.h:661</div></div>
 </div><!-- fragment --><p>In this case, Archicad translates the binary data into an array of <a class="el" href="struct_a_p_i___add_par_type.html">API_AddParType</a> structure. This function also returns the a and b parameter in separate variables, because the addParHdl will contain the additional parameters only.</p>
 <p>The creation of the parameter section is also very simple. First you have to allocate the required size of array based on the <a class="el" href="struct_a_p_i___add_par_type.html">API_AddParType</a> structure and fill with the data of the parameters. In the next step, this API data should be converted to binary data. To do that you also need the 2D binary section data, because the binary parameter handle is a full description which owns the a and b parameters. These parameters are calculated automatically and the built binary section is returned to you through the paramsHdl argument. You also get back the calculated a and b parameter.</p>
 <div class="fragment"><div class="line">GSHandle            paramsHdl;</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___selection_info.html">API_SelectionInfo</a>   section = {};</div>
 <div class="line">GSErrCode           err;</div>
 <div class="line"> </div>
-<div class="line">err = <a class="code hl_function" href="#ga5bcb188a56f624bfd1e819632542bc7b">ACAPI_LibraryPart_GetSect_ParamDef</a> (APILib_ObjectID, addParHdl,</div>
+<div class="line">err = <a class="code hl_function" href="#ga5bcb188a56f624bfd1e819632542bc7b">ACAPI_LibraryPart_GetSect_ParamDef</a> (<a class="code hl_enumvalue" href="#ggacd655f5dbf61af0671962cbbe65ed59fa16822964d4a29ea70445c9a7995b7ede">APILib_ObjectID</a>, addParHdl,</div>
 <div class="line">                                      &amp;a, &amp;b, bin2DHdl,</div>
 <div class="line">                                      &amp;paramsHdl);</div>
 <div class="line"> </div>
@@ -491,13 +491,14 @@ The parameters section</h1>
 <div class="line"> </div>
 <div class="line">BMKillHandle (&amp;paramsHdl);</div>
 <div class="ttc" id="agroup___library_part_html_ga5bcb188a56f624bfd1e819632542bc7b"><div class="ttname"><a href="#ga5bcb188a56f624bfd1e819632542bc7b">ACAPI_LibraryPart_GetSect_ParamDef</a></div><div class="ttdeci">GSErrCode ACAPI_LibraryPart_GetSect_ParamDef(const API_LibPart *libPart, API_AddParType **addPars, double *a, double *b, GSHandle sect2DDrawHdl, GSHandle *sectionHdl, GS::UniString *password=nullptr)</div><div class="ttdoc">Prepares the parameter section data to save into a Library Part.</div></div>
+<div class="ttc" id="agroup___library_part_html_ggacd655f5dbf61af0671962cbbe65ed59fa16822964d4a29ea70445c9a7995b7ede"><div class="ttname"><a href="#ggacd655f5dbf61af0671962cbbe65ed59fa16822964d4a29ea70445c9a7995b7ede">APILib_ObjectID</a></div><div class="ttdeci">@ APILib_ObjectID</div><div class="ttdef"><b>Definition</b> APIdefs_LibraryParts.h:56</div></div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md133"></a>
+<h1><a class="anchor" id="autotoc_md140"></a>
 The 3D binary sections</h1>
 <p>In the present version of the API, there is no support to process the internal data of the 3D binary sections. If you are interested to work with these sections please contact Graphisoft to get the necessary documentation on the binary format.</p>
 <p>A Library Part can own more than one 3D binary section up to 16 fragments. In order to get the right fragment, you need to set up the subIdent field of the <a class="el" href="struct_a_p_i___lib_part_section.html">API_LibPartSection</a> structure correctly.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md134"></a>
+<h1><a class="anchor" id="autotoc_md141"></a>
 The Preview picture</h1>
 <p>A preview picture can be embedded into Library Parts either in PICT or GIF format. They are public formats, so they do not need any explanation. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -543,6 +544,38 @@ The Preview picture</h1>
 
 <p>Library Part types. From Archicad 8 these categories are obsolete due to the introduction of library part subtypes. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>The values correspond to a given type of Library Part. Generally this value is referenced from the <a class="el" href="struct_a_p_i___lib_part.html">API_LibPart</a> structure. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggacd655f5dbf61af0671962cbbe65ed59faa858638ecbf3d1763b55616fa51d4363" name="ggacd655f5dbf61af0671962cbbe65ed59faa858638ecbf3d1763b55616fa51d4363"></a>API_ZombieLibID&#160;</td><td class="fielddoc"><p>References a zombie Library Part </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacd655f5dbf61af0671962cbbe65ed59fac77c465f99c623e8f7b82e6f3000207c" name="ggacd655f5dbf61af0671962cbbe65ed59fac77c465f99c623e8f7b82e6f3000207c"></a>APILib_SpecID&#160;</td><td class="fielddoc"><p>References a special Library Part </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacd655f5dbf61af0671962cbbe65ed59fac3bc130ba7fb74992be7747316399095" name="ggacd655f5dbf61af0671962cbbe65ed59fac3bc130ba7fb74992be7747316399095"></a>APILib_WindowID&#160;</td><td class="fielddoc"><p>References a window Library Part </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacd655f5dbf61af0671962cbbe65ed59facd13cdc760d3524429c43c400916dfed" name="ggacd655f5dbf61af0671962cbbe65ed59facd13cdc760d3524429c43c400916dfed"></a>APILib_DoorID&#160;</td><td class="fielddoc"><p>References a door Library Part </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacd655f5dbf61af0671962cbbe65ed59fa16822964d4a29ea70445c9a7995b7ede" name="ggacd655f5dbf61af0671962cbbe65ed59fa16822964d4a29ea70445c9a7995b7ede"></a>APILib_ObjectID&#160;</td><td class="fielddoc"><p>References a object Library Part </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacd655f5dbf61af0671962cbbe65ed59fa4dba6f085f0c203560d597f233831a93" name="ggacd655f5dbf61af0671962cbbe65ed59fa4dba6f085f0c203560d597f233831a93"></a>APILib_LampID&#160;</td><td class="fielddoc"><p>References a lamp Library Part </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacd655f5dbf61af0671962cbbe65ed59fa781a305dd1692b23eaaaba5f791d997e" name="ggacd655f5dbf61af0671962cbbe65ed59fa781a305dd1692b23eaaaba5f791d997e"></a>APILib_RoomID&#160;</td><td class="fielddoc"><p>References a room Library Part </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacd655f5dbf61af0671962cbbe65ed59fac4149fe6c9dd946545a98ffe1cc84f74" name="ggacd655f5dbf61af0671962cbbe65ed59fac4149fe6c9dd946545a98ffe1cc84f74"></a>APILib_PropertyID&#160;</td><td class="fielddoc"><p>References a property Library Part </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacd655f5dbf61af0671962cbbe65ed59fa25feb403894e2a164b9c3ee74b16fb37" name="ggacd655f5dbf61af0671962cbbe65ed59fa25feb403894e2a164b9c3ee74b16fb37"></a>APILib_PlanSignID&#160;</td><td class="fielddoc"><p>References a planSign Library Part </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacd655f5dbf61af0671962cbbe65ed59fa7b4dcb6a99a77b81e0b91118e9c48002" name="ggacd655f5dbf61af0671962cbbe65ed59fa7b4dcb6a99a77b81e0b91118e9c48002"></a>APILib_LabelID&#160;</td><td class="fielddoc"><p>References a label Library Part </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacd655f5dbf61af0671962cbbe65ed59fa415346a66b099604de379edeacdddcfc" name="ggacd655f5dbf61af0671962cbbe65ed59fa415346a66b099604de379edeacdddcfc"></a>APILib_MacroID&#160;</td><td class="fielddoc"><p>References a macro Library Part </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacd655f5dbf61af0671962cbbe65ed59fafc929c19165671d6c035eb6cb4a425a3" name="ggacd655f5dbf61af0671962cbbe65ed59fafc929c19165671d6c035eb6cb4a425a3"></a>APILib_PictID&#160;</td><td class="fielddoc"><p>References a pict Library Part </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacd655f5dbf61af0671962cbbe65ed59fa882083c9495e1baf9176a5796bbb645d" name="ggacd655f5dbf61af0671962cbbe65ed59fa882083c9495e1baf9176a5796bbb645d"></a>APILib_ListSchemeID&#160;</td><td class="fielddoc"><p>References a listScheme Library Part </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacd655f5dbf61af0671962cbbe65ed59fa086275e45cfeb6b77aafe60c5bc194e8" name="ggacd655f5dbf61af0671962cbbe65ed59fa086275e45cfeb6b77aafe60c5bc194e8"></a>APILib_SkylightID&#160;</td><td class="fielddoc"><p>References a skylight Library Part </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggacd655f5dbf61af0671962cbbe65ed59fada0966bcf8c07d3bb7383cfd8267089e" name="ggacd655f5dbf61af0671962cbbe65ed59fada0966bcf8c07d3bb7383cfd8267089e"></a>APILib_OpeningSymbolID&#160;</td><td class="fielddoc"><p>References an opening Symbol Library Part </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -560,6 +593,18 @@ The Preview picture</h1>
 
 <p>Possible Teamwork lockable status. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>This enum is the return type of the <a class="el" href="group___teamwork.html#ga2663c9f52125a8b59459fe1f48ebdadf">ACAPI_Teamwork_GetLockableStatus</a> function. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggada81f0b453c0e5ad4e3f00a0100fd7ddab41e70fb80f0ef8cf5fb8e028a904e84" name="ggada81f0b453c0e5ad4e3f00a0100fd7ddab41e70fb80f0ef8cf5fb8e028a904e84"></a>APILockableStatus_NotExist&#160;</td><td class="fielddoc"><p>Not Exists. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggada81f0b453c0e5ad4e3f00a0100fd7dda6acf701d7d800609f09340622a62a179" name="ggada81f0b453c0e5ad4e3f00a0100fd7dda6acf701d7d800609f09340622a62a179"></a>APILockableStatus_Free&#160;</td><td class="fielddoc"><p>Free to reserve. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggada81f0b453c0e5ad4e3f00a0100fd7dda6e04c051c79ab0bcde7beaedf7a9a618" name="ggada81f0b453c0e5ad4e3f00a0100fd7dda6e04c051c79ab0bcde7beaedf7a9a618"></a>APILockableStatus_Editable&#160;</td><td class="fielddoc"><p>Editable. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggada81f0b453c0e5ad4e3f00a0100fd7ddae5da0a9ca0f7d817b2d4f9234ae30fd8" name="ggada81f0b453c0e5ad4e3f00a0100fd7ddae5da0a9ca0f7d817b2d4f9234ae30fd8"></a>APILockableStatus_Locked&#160;</td><td class="fielddoc"><p>Locked. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggada81f0b453c0e5ad4e3f00a0100fd7dda5931a2a14417ab7a1b9059ae6041a08c" name="ggada81f0b453c0e5ad4e3f00a0100fd7dda5931a2a14417ab7a1b9059ae6041a08c"></a>APILockableStatus_NotAvailable&#160;</td><td class="fielddoc"><p>Not available. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -665,7 +710,7 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This is the recommended way of disposing the parameter description handles for compatibility reasons, as in a later version of the API the <a class="el" href="struct_a_p_i___add_par_type.html">API_AddParType</a> structure might change. Also, you might have array-type parameters among the additional parameters; this function also takes care of those. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This is the recommended way of disposing of the parameter description handles for compatibility reasons, as in a later version of the API, the <a class="el" href="struct_a_p_i___add_par_type.html">API_AddParType</a> structure might change. Also, you might have array-type parameters among the additional parameters; this function also takes care of those. </dd></dl>
 
 </div>
 </div>
@@ -786,11 +831,11 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_GENERAL - No scratch file has been opened by the <a class="el" href="#ga994b54879d6ca52fd828604434efc978">ACAPI_LibraryPart_Create</a> function. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to add a whole section to the Library Part opened to create. This function is allowed to call between the <a class="el" href="#ga994b54879d6ca52fd828604434efc978">ACAPI_LibraryPart_Create</a> and <a class="el" href="#ga9d6ed5258ccb9669ce890e73f3ff22bb">ACAPI_LibraryPart_Save</a> functions only, while creating a Library Part from scratch. The identifier of the section must be defined in the <a class="el" href="struct_a_p_i___lib_part_section.html">API_LibPartSection</a> parameter. The section data is passed through the sectionHdl parameter. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to add a whole section to the Library Part opened to create. You can call this function between the <a class="el" href="#ga994b54879d6ca52fd828604434efc978">ACAPI_LibraryPart_Create</a> and <a class="el" href="#ga9d6ed5258ccb9669ce890e73f3ff22bb">ACAPI_LibraryPart_Save</a> functions only, while creating a Library Part from scratch. The identifier of the section must be defined in the <a class="el" href="struct_a_p_i___lib_part_section.html">API_LibPartSection</a> parameter. The section data is passed through the sectionHdl parameter. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___lib_part_details.html">API_LibPartDetails</a>  details {};</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a>         libPart {};</div>
 <div class="line">GSHandle            paramsHdl, draw2DHdl;</div>
@@ -886,17 +931,17 @@ The Preview picture</h1>
 <p>Changes a value in an opened Library Part parameter list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">changeParamType</td><td>[in] The Library Part parameter (variable) to change the value of it. </td></tr>
+    <tr><td class="paramname">changeParamType</td><td>[in] The Library Part parameter (variable) to change the value of. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - chgParam is nullptr or the variable reference is invalid</li>
-<li>APIERR_NOTINIT - there is no parameter list opened </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - changeParamType is nullptr or the variable reference is invalid.</li>
+<li>APIERR_NOTINIT - There is no parameter list opened. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to change a Library Part parameter. Refer to the <a class="el" href="struct_a_p_i___change_param_type.html">API_ChangeParamType</a> structure to get details on the parametrization possibilities. Use this function after a parameter list has been opened by the <a class="el" href="#gacacd08acb7d5a1325838036d04d9929e">ACAPI_LibraryPart_OpenParameters</a> function. Refer to that function to get more details on this topics. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function changes a Library Part parameter. Refer to the <a class="el" href="struct_a_p_i___change_param_type.html">API_ChangeParamType</a> structure for details on the parameterization possibilities. Use this function after a parameter list has been opened by the <a class="el" href="#gacacd08acb7d5a1325838036d04d9929e">ACAPI_LibraryPart_OpenParameters</a> function. Refer to that function for more details on this topic. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">/* change parameter &#39;zzyzx&#39; of the default object */</span></div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___param_owner_type.html">API_ParamOwnerType</a>  paramOwner {};</div>
@@ -1139,17 +1184,17 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NESTING - Recursive call, <a class="el" href="#ga9d6ed5258ccb9669ce890e73f3ff22bb">ACAPI_LibraryPart_Save</a> was not called after the previous call</li>
 <li>APIERR_BADPARS - The libPart parameter is nullptr, or holds invalid data</li>
 <li>APIERR_BADID - No match found with the passed parentUnID</li>
-<li>APIERR_NOLIB - No valid location was passed, and there is no active library also</li>
+<li>APIERR_NOLIB - No valid location was passed, and there is no active library.</li>
 <li>APIERR_READONLY - The specified location is read-only </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to create a new empty Library Part from scratch. You have to specify the subtype of the Library Part in order to place it under the proper node in the ancestry hierarchy. For more information about subtypes see the Library Part Subtypes passage. By default, all new Library Parts are created into the active library folder, however you can specify any directory you want. If the location field describes a valid folder in the file system, the Library Part will be created there. Note that the name of the Library Part is determined by the docu_UName, so the file name itself is ignored both in the file_Name and location fields. This function creates an empty Library Part. The sections should be defined with subsequent function calls; basically there are two ways to create a section:<ul>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to create a new empty Library Part from scratch. You have to specify the subtype of the Library Part in order to place it under the proper node in the ancestry hierarchy. For more information about subtypes, see the Library Part Subtypes passage. By default, all new Library Parts are created in the active library folder; however, you can specify any directory you want. If the location field describes a valid folder in the file system, the Library Part will be created there. Note that the name of the Library Part is determined by the docu_UName, so the file name itself is ignored both in the file_Name and location fields. This function creates an empty Library Part. The sections should be defined with subsequent function calls; basically, there are two ways to create a section:<ul>
 <li>Write the section as a stream with the functions <a class="el" href="#ga0d2a58548a7a7dba3919f4a5bc2d3dd6">ACAPI_LibraryPart_NewSection</a>, <a class="el" href="#ga6001965f6d3254da84559daf64ddb18f">ACAPI_LibraryPart_WriteSection</a>, and <a class="el" href="#ga211ce70f28550ef25f08b2d1979f7b54">ACAPI_LibraryPart_EndSection</a></li>
-<li>Create the section in one step by calling the <a class="el" href="#ga578d93dff7f9b47ed5a67fae34b83df6">ACAPI_LibraryPart_AddSection</a> function. The Library Part itself will be created and registered upon the <a class="el" href="#ga9d6ed5258ccb9669ce890e73f3ff22bb">ACAPI_LibraryPart_Save</a> function call. Do not forget to call this function in order to close the scratch file; even in case of any error encountered in the other function calls. Macros and pictures cannot be created in this way. Refer to the function <a class="el" href="#ga989358f044893949c8cc0c2f97c27785">ACAPI_LibraryPart_Register</a> for more details. If the function has completed with success the index of the newly created library part is given by the index field of the <a class="el" href="struct_a_p_i___lib_part.html">API_LibPart</a> structure. Do not forget to dispose of the used section handles. </li>
+<li>Create the section in one step by calling the <a class="el" href="#ga578d93dff7f9b47ed5a67fae34b83df6">ACAPI_LibraryPart_AddSection</a> function. The Library Part itself will be created and registered upon the <a class="el" href="#ga9d6ed5258ccb9669ce890e73f3ff22bb">ACAPI_LibraryPart_Save</a> function call. Do not forget to call this function in order to close the scratch file, even in case of any error encountered in the other function calls. Macros and pictures cannot be created in this way. Refer to the function <a class="el" href="#ga989358f044893949c8cc0c2f97c27785">ACAPI_LibraryPart_Register</a> for more details. If the function has completed successfully, the index of the newly created library part is given by the index field of the <a class="el" href="struct_a_p_i___lib_part.html">API_LibPart</a> structure. Do not forget to dispose of the used section handles. </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___lib_part_details.html">API_LibPartDetails</a>  details {};</div>
@@ -1246,7 +1291,7 @@ The Preview picture</h1>
 
 <p>Closes the last opened section of the Library Part under creation. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_GENERAL - No scratch file has been opened by the <a class="el" href="#ga994b54879d6ca52fd828604434efc978">ACAPI_LibraryPart_Create</a> function. </li>
 </ul>
 </dd></dl>
@@ -1343,7 +1388,7 @@ The Preview picture</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the data of a registered Library Part. </p>
+<p>Returns the data for a registered library part. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">libPart</td><td>[in/out] Definition of the library part. </td></tr>
@@ -1351,13 +1396,13 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_MISSINGDEF - The originating library part file is missing. The document name is still filled.</li>
 <li>APIERR_BADPARS - libPart is nullptr or the index is invalid.</li>
 <li>APIERR_BADINDEX - libPart.index is not correct for the given typeID. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the data of the requested Library Part defined by the index field. The other fields of the structure are returned by Archicad. You cannot use names here; first you have to find the library part with <a class="el" href="#ga9e49cd1689140705c08d1c7d6f9ec816">ACAPI_LibraryPart_Search</a> function. After calling <a class="el" href="#ga26a6f5f7d4ffeedc841aad3f0e0489a3">ACAPI_LibraryPart_Get</a> please remember to free the location pointer allocated by the function if you do not need it any more. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the data for the requested library part defined by the index field. Archicad returns the other fields of the structure. You cannot use names here; first you have to find the library part with <a class="el" href="#ga9e49cd1689140705c08d1c7d6f9ec816">ACAPI_LibraryPart_Search</a> function. After calling <a class="el" href="#ga26a6f5f7d4ffeedc841aad3f0e0489a3">ACAPI_LibraryPart_Get</a> please remember to free the location pointer allocated by the function if you do not need it any more. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a> libPart;</div>
 <div class="line">Int32       i, count;</div>
 <div class="line">GSErrCode   err;</div>
@@ -1507,7 +1552,7 @@ The Preview picture</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the detail parameters of a registered Library Part. </p>
+<p>Returns the detailed parameters of a registered Library Part. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">libInd</td><td>[in] Index of the Library Part </td></tr>
@@ -1516,24 +1561,24 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - any of the parameters are nullptr, or the addressed Library Part is a macro, picture file etc. </li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADPARS - any of the parameters are nullptr, or the addressed Library Part is a macro, picture file, etc. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the detail parameters of a Library Part. These parameters can be edited in Archicad by clicking the Details button on the parameter list editor dialog box. The function works only on real Library Parts. In the case the type of the target Library Part is not listed below, the function returns an error code. This is since other type of Library Parts are just simple picture or text files which are enumerated and registered from the active library folders; such a picture or macro. Applicable type of Library Parts are:<ul>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the detailed parameters of a Library Part. These parameters can be edited in Archicad by clicking the Details button on the parameter list editor dialog box. The function works only on real Library Parts. In the case that the type of the target Library Part is not listed below, the function returns an error code. This is because other types of Library Parts are just simple pictures or text files, which are enumerated and registered from the active library folders, such as a picture or macro. Applicable types of Library Parts are:<ul>
 <li><code>APILib_WindowID</code> </li>
 <li><code>APILib_DoorID</code> </li>
 <li><code>APILib_ObjectID</code> </li>
 <li><code>APILib_LampID</code> </li>
 <li><code>APILib_RoomID</code> </li>
-<li><code>APILib_LabelID</code> To change the parameters refer to the <a class="el" href="#ga97ae93f71a0cf23682af56f08fab10e1">ACAPI_LibraryPart_SetDetails_ParamDef</a> function. </li>
+<li><code>APILib_LabelID</code> To change the parameters, refer to the <a class="el" href="#ga97ae93f71a0cf23682af56f08fab10e1">ACAPI_LibraryPart_SetDetails_ParamDef</a> function. </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___lib_part_details.html">API_LibPartDetails</a>  details;</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a>         libPart {};</div>
 <div class="line">GSErrCode           err;</div>
 <div class="line"> </div>
-<div class="line">libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#abf9a8fff84165e22b67c1a1f95c0c99b">typeID</a> = APILib_ObjectID;</div>
+<div class="line">libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#abf9a8fff84165e22b67c1a1f95c0c99b">typeID</a> = <a class="code hl_enumvalue" href="#ggacd655f5dbf61af0671962cbbe65ed59fa16822964d4a29ea70445c9a7995b7ede">APILib_ObjectID</a>;</div>
 <div class="line">GS::ucscpy (libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#a7188ede45f613116ba5237aa56177ddf">docu_UName</a>, L(<span class="stringliteral">&quot;Test LibPart&quot;</span>));</div>
 <div class="line">err = <a class="code hl_function" href="#ga9e49cd1689140705c08d1c7d6f9ec816">ACAPI_LibraryPart_Search</a> (&amp;libPart, <span class="keyword">false</span>);</div>
 <div class="line"><span class="keywordflow">if</span> (libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#ae2c5c2b3b16b5b857d35932a5be868f7">index</a> != 0) {</div>
@@ -1615,18 +1660,18 @@ The Preview picture</h1>
   <table class="params">
     <tr><td class="paramname">libInd</td><td>[in] Index of the library part </td></tr>
     <tr><td class="paramname">instanceElemGuid</td><td>[in] Instance element GUID; if APINULLGuid, then the drawing parameters will be the default parameters of the library part (with no transformation, etc.), otherwise they are taken from the instance of the library part defined by this GUID. </td></tr>
-    <tr><td class="paramname">nHotspots</td><td>[out] Numbers of hotspots. </td></tr>
+    <tr><td class="paramname">nHotspots</td><td>[out] Number of hotspots. </td></tr>
     <tr><td class="paramname">hotspots</td><td>[out] Handle that contains the hotspot data on return. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - nHotspots or hotspots parameter is nullptr, or invalid libInd has been passed</li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADPARS - nHotspots or hotspots parameter is nullptr, or an invalid libInd has been passed</li>
 <li>APIERR_BADINDEX - Invalid instanceElemGuid for the element type that libInd implies </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to retrieve the hotspots of the Libpart Part. The library part is identified the same way as <a class="el" href="#ga44b49790fde80e887d79c8c9156681f7">ACAPI_LibraryPart_ShapePrims</a> does. The hotspots return in an array of <a class="el" href="struct_a_p_i___prim_hotspot.html">API_PrimHotspot</a> structures. The coordinate values in the loc field are interpreted in the local coordinate system of the library part, however if the referred element instance has been resized, the coordinates follow the scale. If you would like to get the actual position of a hotspot of the specified element instance, use the neig field to convert the coordinates. Do not forget to dispose the hotspots handle after the operation. The function works only on Library Parts that can be placed onto the floor plan. Applicable type of Library Parts are:<ul>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to retrieve the hotspots of the Libpart Part. The library part is identified the same way as <a class="el" href="#ga44b49790fde80e887d79c8c9156681f7">ACAPI_LibraryPart_ShapePrims</a> does. The hotspots return in an array of <a class="el" href="struct_a_p_i___prim_hotspot.html">API_PrimHotspot</a> structures. The coordinate values in the loc field are interpreted in the local coordinate system of the library part; however, if the referred element instance has been resized, the coordinates follow the scale. If you would like to get the actual position of a hotspot of the specified element instance, use the neig field to convert the coordinates. Do not forget to dispose of the hotspots handle after the operation. The function works only on library parts that can be placed on the floor plan. Applicable types of Library Parts are:<ul>
 <li><code>APILib_WindowID</code> </li>
 <li><code>APILib_DoorID</code> </li>
 <li><code>APILib_ObjectID</code> </li>
@@ -1699,7 +1744,7 @@ The Preview picture</h1>
 <li>NoError - The function has completed with success. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This fuction is used to retrieve the last valid embedded library part location identified by its name. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to retrieve the last valid embedded library part location identified by its name. </dd></dl>
 
 </div>
 </div>
@@ -1912,11 +1957,11 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - count is nullptr </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the number of currently available library parts. The number of the different type of library parts can not be obtained with this function; you have to walk through all the library parts to get e.g. the number of windows in the library. Library Parts are referenced by indices. This function returns the maximal value such a reference; valid indices are in the [1? count ] range. The special value zero used some time to reference to an empty Library Part, as in case of an empty opening. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the number of currently available library parts. The number of different types of library parts can not be obtained with this function; you have to walk through all the library parts to get, e.g., the number of windows in the library. Library Parts are referenced by indices. This function returns the maximal value of such a reference; valid index are in the [1? count ] range. The special value zero is sometimes used to reference an empty Library Part, as in the case of an empty opening. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a> libPart;</div>
 <div class="line">Int32       i, count;</div>
 <div class="line">GSErrCode   err;</div>
@@ -1977,20 +2022,20 @@ The Preview picture</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">libInd</td><td>Index of the library part. </td></tr>
-    <tr><td class="paramname">a</td><td>The A parameter of the the Library Part </td></tr>
-    <tr><td class="paramname">b</td><td>The B parameter of the the Library Part </td></tr>
+    <tr><td class="paramname">a</td><td>The A parameter of the Library Part </td></tr>
+    <tr><td class="paramname">b</td><td>The B parameter of the Library Part </td></tr>
     <tr><td class="paramname">addParNum</td><td>The number of additive parameters; others than A and B </td></tr>
     <tr><td class="paramname">addPars</td><td>The additive parameters </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - Invalid libInd, or any of the parameters are nullptr, or the addressed Library Part is a macro, picture file etc.</li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADPARS - Invalid libInd, or any of the parameters are nullptr, or the addressed Library Part is a macro, picture file, etc.</li>
 <li>APIERR_MEMFULL - not enough memory to complete the operation </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the default parameters of the requested Library Part defined by libInd. In the a and b parameters, the values of the A and B variables are returned; in the addParNum and addPars parameters the additive parameter list is returned, the number of the parameters and the actual values, respectively. Refer to the <a class="el" href="struct_a_p_i___add_par_type.html">API_AddParType</a> to get more information on a Library Part parameter. It is absolutely important that the function returns a formalized data handle to describe the parameter list. The content is not equal to the section handle returned by the <a class="el" href="#gaae018dc09a7a62607fa4d87bfef9b6c3">ACAPI_LibraryPart_GetSection</a> function called with the <code>API_SectParamDef</code> argument. The function works only on real Library Parts. In the case the type of the target Library Part is not listed below, the function returns an error code. This is since other type of Library Parts are just simple picture or text files which are enumerated and registered from the active library folders; such a picture or macro. Applicable type of Library Parts which have parameter list are:<ul>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the default parameters of the requested Library Part defined by libInd. In the a and b parameters, the values of the A and B variables are returned; in the addParNum and addPars parameters, the additive parameter list is returned, as well as the number of parameters and the actual values, respectively. Refer to the <a class="el" href="struct_a_p_i___add_par_type.html">API_AddParType</a> to get more information on a Library Part parameter. It is critical that the function returns a formalized data handle to describe the parameter list. The content is not equal to the section handle returned by the <a class="el" href="#gaae018dc09a7a62607fa4d87bfef9b6c3">ACAPI_LibraryPart_GetSection</a> function called with the <code>API_SectParamDef</code> argument. The function works only on real Library Parts. In the case that the type of the target Library Part is not listed below, the function returns an error code. This is because other types of Library Parts are just simple pictures or text files, which are enumerated and registered from the active library folders, such as a picture or macro. Applicable types of Library Parts that have a parameter list are:<ul>
 <li><code>APILib_WindowID</code>,</li>
 <li><code>APILib_DoorID</code>,</li>
 <li><code>APILib_ObjectID</code>,</li>
@@ -1998,7 +2043,7 @@ The Preview picture</h1>
 <li><code>APILib_RoomID</code>,</li>
 <li><code>APILib_LabelID</code>,</li>
 <li><code>APILib_MacroObjID</code>,</li>
-<li><code>APILib_PropertyID</code> Do not forget to dispose the additive parameter handle if it is not needed any more. Use the <a class="el" href="#ga21b8497c7a12be3732cbb21abfacaa03">ACAPI_DisposeAddParHdl</a> function for this purpose. </li>
+<li><code>APILib_PropertyID</code> Do not forget to dispose of the additive parameter handle if it is not needed anymore. Use the <a class="el" href="#ga21b8497c7a12be3732cbb21abfacaa03">ACAPI_DisposeAddParHdl</a> function for this purpose. </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">// -----------------------------------------------------------------------------</span></div>
@@ -2021,7 +2066,7 @@ The Preview picture</h1>
 <div class="line">                WriteParameter ((*params)[i].typeID, GS::UniString((*params)[i].name),</div>
 <div class="line">                                    (*params)[i].value.real, valueStr,0,0);</div>
 <div class="line">        } <span class="keywordflow">else</span> {</div>
-<div class="line">            <span class="keywordflow">if</span> ((*params)[i].typeID == APIParT_Dictionary) {</div>
+<div class="line">            <span class="keywordflow">if</span> ((*params)[i].typeID == <a class="code hl_enumvalue" href="group___dialog.html#gga06dffb8774ffc6a426f5304eaf0bb720a2d672122cadcee2b98aab12b5efd107a">APIParT_Dictionary</a>) {</div>
 <div class="line">                DBBREAK_STR (<span class="stringliteral">&quot;Dictionaries are not allowed in arrays.&quot;</span>);</div>
 <div class="line">                <span class="keywordflow">continue</span>;</div>
 <div class="line">            }</div>
@@ -2033,7 +2078,7 @@ The Preview picture</h1>
 <div class="line">            <span class="keywordflow">for</span> (i1 = 1; i1 &lt;= (*params)[i].dim1; i1++) {</div>
 <div class="line"> </div>
 <div class="line">                <span class="keywordflow">for</span> (i2 = 1; i2 &lt;= (*params)[i].dim2; i2++) {</div>
-<div class="line">                    <span class="keywordflow">if</span> ((*params)[i].typeID != APIParT_CString) {</div>
+<div class="line">                    <span class="keywordflow">if</span> ((*params)[i].typeID != <a class="code hl_enumvalue" href="group___dialog.html#gga06dffb8774ffc6a426f5304eaf0bb720af05e499a13576c5ff1f515940850ea88">APIParT_CString</a>) {</div>
 <div class="line">                        value = (Int32) ((<span class="keywordtype">double</span> *)</div>
 <div class="line">                                    *(*params)[i].value.array) [ind];</div>
 <div class="line">                        ind++;</div>
@@ -2103,19 +2148,19 @@ The Preview picture</h1>
 <p>Returns the possible values defined for a Library Part parameter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">getValues</td><td>[out] the value list for the given parameter </td></tr>
+    <tr><td class="paramname">getValues</td><td>[out] The value list for the given parameter. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - theParams is nullptr</li>
-<li>APIERR_BADNAME - The parameter specified by its name was not found in the open library part</li>
-<li>APIERR_BADINDEX - The parameter specified by its index was not found in the open library part</li>
-<li>APIERR_NOTINIT - No open parameter list </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - getValues is nullptr.</li>
+<li>APIERR_BADNAME - The parameter specified by its name was not found in the open library part.</li>
+<li>APIERR_BADINDEX - The parameter specified by its index was not found in the open library part.</li>
+<li>APIERR_NOTINIT - No open parameter list. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the possible values for a given parameter. Refer to the <a class="el" href="struct_a_p_i___get_param_values_type.html">API_GetParamValuesType</a> structure to get further details. Do not forget to dispose the strValues and the realValues handles when they are not needed any more. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function gets the possible values for a given parameter. Refer to the <a class="el" href="struct_a_p_i___get_param_values_type.html">API_GetParamValuesType</a> structure for further details. Do not forget to dispose the strValues and realValues handles when they are no longer needed. </dd></dl>
 
 </div>
 </div>
@@ -2142,12 +2187,12 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - sectionHdl is nullptr</li>
 <li>APIERR_GENERAL - No 2D drawing section has been opened with the <a class="el" href="#gaa7898650203f0d5ce0d79d7ee3938b82">ACAPI_LibraryPart_SetUpSect_2DDrawHdl</a> function. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to close and return the 2D binary (drawing) section of the library part, prepared to be used with <a class="el" href="#ga578d93dff7f9b47ed5a67fae34b83df6">ACAPI_LibraryPart_AddSection</a> function. This function must be called to close the 2D binary section if the <a class="el" href="#gaa7898650203f0d5ce0d79d7ee3938b82">ACAPI_LibraryPart_SetUpSect_2DDrawHdl</a> function has succeeded; even if any of the in-between function calls to <a class="el" href="group___element.html#gad4ba2707aac702e651c6b1ec9e212baf">ACAPI_Element_Create</a> has failed. Refer to the <a class="el" href="#gaa7898650203f0d5ce0d79d7ee3938b82">ACAPI_LibraryPart_SetUpSect_2DDrawHdl</a> function to get more details on this topics. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to close and return the 2D binary (drawing) section of the library part, prepared to be used with <a class="el" href="#ga578d93dff7f9b47ed5a67fae34b83df6">ACAPI_LibraryPart_AddSection</a> function. This function must be called to close the 2D binary section if the <a class="el" href="#gaa7898650203f0d5ce0d79d7ee3938b82">ACAPI_LibraryPart_SetUpSect_2DDrawHdl</a> function has succeeded, even if any of the in-between function calls to <a class="el" href="group___element.html#gad4ba2707aac702e651c6b1ec9e212baf">ACAPI_Element_Create</a> have failed. Refer to the <a class="el" href="#gaa7898650203f0d5ce0d79d7ee3938b82">ACAPI_LibraryPart_SetUpSect_2DDrawHdl</a> function to get more details on this topic. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___lib_part_details.html">API_LibPartDetails</a>  details {};</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a>         libPart {};</div>
 <div class="line">GSHandle            paramsHdl, draw2DHdl;</div>
@@ -2282,12 +2327,12 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The libPart or the sectionHdl parameter is nullptr</li>
-<li>APIERR_BADID - The function cannot work with library parts of type specified by libPart-&gt;typeID </li>
+<li>APIERR_BADID - The function cannot work with library parts of the type specified by libPart-&gt;typeID </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to prepare the parameter section of the Library Part, and return the prepared section handle in sectionHdl. The returned handle than can be supplied to the <a class="el" href="#ga578d93dff7f9b47ed5a67fae34b83df6">ACAPI_LibraryPart_AddSection</a> or the <a class="el" href="#gaa3e1b5b7060632966e0e006e10b2e556">ACAPI_LibraryPart_UpdateSection</a> functions to put it into the Library Part. The a/b and sect2DDrawHdl parameters are exclusive, they are both used to calculate the bounding box of the symbol of the Library Part. Specifically, a and b should be defined only if sect2DDrawHdl is nullptr, otherwise their value will be calculated and returned. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to prepare the parameter section of the Library Part, and return the prepared section handle in sectionHdl. The returned handle can be supplied to the <a class="el" href="#ga578d93dff7f9b47ed5a67fae34b83df6">ACAPI_LibraryPart_AddSection</a> or the <a class="el" href="#gaa3e1b5b7060632966e0e006e10b2e556">ACAPI_LibraryPart_UpdateSection</a> functions to put it into the Library Part. The a/b and sect2DDrawHdl parameters are exclusive; they are both used to calculate the bounding box of the symbol of the Library Part. Specifically, a and b should be defined only if sect2DDrawHdl is nullptr; otherwise, their value will be calculated and returned. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___lib_part_details.html">API_LibPartDetails</a>  details {};</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a>         libPart {};</div>
 <div class="line">GSHandle            paramsHdl, draw2DHdl;</div>
@@ -2403,7 +2448,7 @@ The Preview picture</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">libInd</td><td>[in] Index of the library part </td></tr>
-    <tr><td class="paramname">section</td><td>[in/out] Definition of the section. The section is defined by the sectType an the subIdent fields of the <a class="el" href="struct_a_p_i___lib_part_section.html">API_LibPartSection</a> structure. </td></tr>
+    <tr><td class="paramname">section</td><td>[in/out] Definition of the section. The section is defined by the sectType and the subIdent fields of the <a class="el" href="struct_a_p_i___lib_part_section.html">API_LibPartSection</a> structure. </td></tr>
     <tr><td class="paramname">sectionHdl</td><td>[out] Section data. </td></tr>
     <tr><td class="paramname">sectionStr</td><td>[out] The content of textual sections as a Unicode string. Pass the address of an existing Unicode string if you need this data. </td></tr>
     <tr><td class="paramname">password</td><td>[in] The (optional) password that encrypted the section. </td></tr>
@@ -2411,12 +2456,12 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - Invalid libInd, or any of the parameters are nullptr, or the addressed Library Part is a macro, picture file etc.</li>
-<li>APIERR_NOLIBSECT - no such a section in the Library Part </li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADPARS - Invalid libInd, or any of the parameters are nullptr, or the addressed Library Part is a macro, picture file, etc.</li>
+<li>APIERR_NOLIBSECT - no such section in the Library Part </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the data of the requested section from the Library Part. It returns the requested section of the Library Part defined by libInd in the sectionHdl. The section is defined by the sectType field of the <a class="el" href="struct_a_p_i___lib_part_section.html">API_LibPartSection</a> structure. If it (a four-character case-sensitive identifier) is not any of the standard types, it is interpreted as a custom type. In this case you are responsible for the content and the management of this section. The description of the standard sections can be found in the Archicad Reference Manual. The function works only on real Library Parts. In the case the type of the target Library Part is not listed below, the function returns an error code. This is since other type of Library Parts are just simple picture or text files which are enumerated and registered from the active library folders; such a picture or macro. Applicable type of Library Parts are:<ul>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the data of the requested section from the Library Part. It returns the requested section of the Library Part defined by libInd in the sectionHdl. The section is determined by the sectType field of the <a class="el" href="struct_a_p_i___lib_part_section.html">API_LibPartSection</a> structure. If it (a four-character case-sensitive identifier) is not any of the standard types, it is interpreted as a custom type. In this case, you are responsible for managing the content and this section. The description of the standard sections can be found in the Archicad Reference Manual. The function works only on real Library Parts. In the case that the type of the target Library Part is not listed below, the function returns an error code. This is because other types of Library Parts are just simple pictures or text files, which are enumerated and registered from the active library folders,s such as a picture or macro. Applicable types of Library Parts are:<ul>
 <li><code>APILib_WindowID</code>,</li>
 <li><code>APILib_DoorID</code>,</li>
 <li><code>APILib_ObjectID</code>,</li>
@@ -2424,7 +2469,7 @@ The Preview picture</h1>
 <li><code>APILib_RoomID</code>,</li>
 <li><code>APILib_LabelID</code>,</li>
 <li><code>APILib_MacroObjID</code>,</li>
-<li><code>APILib_PropertyID</code> Do not forget to dispose the data if it is not needed any more. From API 11, the textual section data is now stored as a GS::UniString in the library parts. You can also obtain the text in this format in the sectionStr parameter. </li>
+<li><code>APILib_PropertyID</code> Do not forget to dispose of the data if it is not needed anymore. From API 11, the textual section data is now stored as a GS::UniString in the library parts. You can also obtain the text in this format in the sectionStr parameter. </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">    Int32               nSection = 0;</div>
@@ -2482,11 +2527,11 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - Invalid libInd, or any of the parameters are nullptr, or the addressed Library Part is a macro, picture file etc. </li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADPARS - Invalid libInd, or any of the parameters are nullptr, or the addressed Library Part is a macro, picture file, etc. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the headers of the sections the library part is built from. The function works only on real Library Parts. In the case the type of the target Library Part is not listed below, the function returns an error code. This is since other type of Library Parts are just simple picture or text files which are enumerated and registered from the active library folders; such a picture or macro. Applicable type of Library Parts are: <code>APILib_WindowID</code>, <code>APILib_DoorID</code>, <code>APILib_ObjectID</code>, <code>APILib_LampID</code>, <code>APILib_RoomID</code>, <code>APILib_LabelID</code>, <code>APILib_MacroObjID</code>, <code>APILib_PropertyID</code> Do not forget to dispose the returned handle if it is not needed any more. Note, that it cannot be used between <a class="el" href="#ga994b54879d6ca52fd828604434efc978">ACAPI_LibraryPart_Create</a> and <a class="el" href="#ga9d6ed5258ccb9669ce890e73f3ff22bb">ACAPI_LibraryPart_Save</a> functions. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the headers of the sections from which the library part is built. The function works only on real Library Parts. In the case that the type of the target Library Part is not listed below, the function returns an error code. This is because other types of Library Parts are just simple pictures or text files, which are enumerated and registered from the active library folders, such as a picture or macro. Applicable type of Library Parts are: <code>APILib_WindowID</code>, <code>APILib_DoorID</code>, <code>APILib_ObjectID</code>, <code>APILib_LampID</code>, <code>APILib_RoomID</code>, <code>APILib_LabelID</code>, <code>APILib_MacroObjID</code>, <code>APILib_PropertyID</code> Do not forget to dispose of the returned handle if it is not needed anymore. Note that it cannot be used between <a class="el" href="#ga994b54879d6ca52fd828604434efc978">ACAPI_LibraryPart_Create</a> and <a class="el" href="#ga9d6ed5258ccb9669ce890e73f3ff22bb">ACAPI_LibraryPart_Save</a> functions. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">    Int32               nSection = 0;</div>
 <div class="line">    <a class="code hl_struct" href="struct_a_p_i___lib_part_section.html">API_LibPartSection</a>  **sectList;</div>
 <div class="line">    GSHandle            sectionHdl;</div>
@@ -2566,12 +2611,12 @@ The Preview picture</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">signature</td><td>[in] A four-character identifier of the external symbol. </td></tr>
-    <tr><td class="paramname">handlerProc</td><td>[in] The callback function to handle the creation and the editing of the external symbol. </td></tr>
+    <tr><td class="paramname">handlerProc</td><td>[in] The callback function handles the creation and editing of the external symbol. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function should be called in the Initialize function of your add-on. </dd></dl>
@@ -2614,11 +2659,11 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_GENERAL - No scratch file has been opened by the <a class="el" href="#ga994b54879d6ca52fd828604434efc978">ACAPI_LibraryPart_Create</a> function. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to open a new section to write into the Library Part opened to create. This function is allowed to call between the <a class="el" href="#ga994b54879d6ca52fd828604434efc978">ACAPI_LibraryPart_Create</a> and <a class="el" href="#ga9d6ed5258ccb9669ce890e73f3ff22bb">ACAPI_LibraryPart_Save</a> functions only, while creating a Library Part from scratch. The identifier of the section must be defined in the <a class="el" href="struct_a_p_i___lib_part_section.html">API_LibPartSection</a> parameter. The section data is passed through the sectionHandle parameter. This is the other way to add sections to the library part, where the section is opened, then data is added with repetitive calls to the <a class="el" href="#ga6001965f6d3254da84559daf64ddb18f">ACAPI_LibraryPart_WriteSection</a> function, and finally it is closed with the <a class="el" href="#ga211ce70f28550ef25f08b2d1979f7b54">ACAPI_LibraryPart_EndSection</a> function call. Refer to the <a class="el" href="#ga578d93dff7f9b47ed5a67fae34b83df6">ACAPI_LibraryPart_AddSection</a> to add a section in one step. Do not nest these function calls. Always close the opened section with <a class="el" href="#ga211ce70f28550ef25f08b2d1979f7b54">ACAPI_LibraryPart_EndSection</a> before you open an other. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to open a new section to write into the Library Part opened to create. This function is allowed to be called between the <a class="el" href="#ga994b54879d6ca52fd828604434efc978">ACAPI_LibraryPart_Create</a> and <a class="el" href="#ga9d6ed5258ccb9669ce890e73f3ff22bb">ACAPI_LibraryPart_Save</a> functions only, while creating a Library Part from scratch. The identifier of the section must be defined in the <a class="el" href="struct_a_p_i___lib_part_section.html">API_LibPartSection</a> parameter. The section data is passed through the sectionHandle parameter. This is the other way to add sections to the library part, where the section is opened, then data is added with repetitive calls to the <a class="el" href="#ga6001965f6d3254da84559daf64ddb18f">ACAPI_LibraryPart_WriteSection</a> function, and finally it is closed with the <a class="el" href="#ga211ce70f28550ef25f08b2d1979f7b54">ACAPI_LibraryPart_EndSection</a> function call. Refer to the <a class="el" href="#ga578d93dff7f9b47ed5a67fae34b83df6">ACAPI_LibraryPart_AddSection</a> to add a section in one step. Do not nest these function calls. Always close the opened section with <a class="el" href="#ga211ce70f28550ef25f08b2d1979f7b54">ACAPI_LibraryPart_EndSection</a> before you open another. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___lib_part_details.html">API_LibPartDetails</a>  details {};</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a>         libPart {};</div>
 <div class="line">GSHandle            paramsHdl, draw2DHdl;</div>
@@ -2711,28 +2756,28 @@ The Preview picture</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Opens a Library Part parameter list to edit. </p>
+<p>Opens a Library Part parameter list for editing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">paramOwner</td><td>[in] Reference to the owner of the parameter handle which should be edited </td></tr>
+    <tr><td class="paramname">paramOwner</td><td>[in] Reference to the owner of the parameter handle to be edited. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - paramOwner is nullptr or invalid parameters are passed</li>
-<li>APIERR_GENERAL - the library part do not has parameters </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - paramOwner is nullptr or invalid parameters are passed.</li>
+<li>APIERR_GENERAL - The library part does not have parameters. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to prepare a parameter list to edit. Generally to change a parameter of a parameter list is a very complex task. It is because the <a class="el" href="struct_a_p_i___add_par_type.html">API_AddParType</a> structure is quite complex, especially in case of array parameters, however this problem can be handled. Another issue is the parameter script. This script sets up rules and links which must be followed to provide a consistent parameter set, while editing it. There is no possibility to handle this issue in an addon. The only way to ensure full parameter consistency while changing a value of a Library Part parameter is to use the functions provided for this operation. If you manipulate the <a class="el" href="struct_a_p_i___add_par_type.html">API_AddParType</a> handle directly, the parameter list may become invalid. The function set is:<ul>
+<dl class="section remark"><dt>Remarks</dt><dd>This function prepares a parameter list for editing. Generally, changing a parameter of a parameter list is a complex task. The <a class="el" href="struct_a_p_i___add_par_type.html">API_AddParType</a> structure is quite complex, especially for array parameters, but this can be handled. Another issue is the parameter script, which sets up rules and links that must be followed to provide a consistent parameter set while editing. There is no possibility to handle this issue in an add-on. The only way to ensure full parameter consistency while changing a value of a Library Part parameter is to use the functions provided for this operation. If you manipulate the <a class="el" href="struct_a_p_i___add_par_type.html">API_AddParType</a> handle directly, the parameter list may become invalid. The function set is:<ul>
 <li><a class="el" href="#gacacd08acb7d5a1325838036d04d9929e">ACAPI_LibraryPart_OpenParameters</a></li>
 <li><a class="el" href="#ga463778c6753dca1de002cd8300599b7b">ACAPI_LibraryPart_ChangeAParameter</a></li>
 <li><a class="el" href="#ga7ce8dccc4f66244e51c0fc3b17d986f2">ACAPI_LibraryPart_GetActParameters</a></li>
 <li><a class="el" href="#ga6389bfb68f8dbe4f05cd188aba6eec3d">ACAPI_LibraryPart_GetParamValues</a></li>
-<li><a class="el" href="#ga746191e66b43a1ae0ec0af0db2692d64">ACAPI_LibraryPart_CloseParameters</a> Once you want to change a parameter you should open the parameter list with the <a class="el" href="#gacacd08acb7d5a1325838036d04d9929e">ACAPI_LibraryPart_OpenParameters</a> function. You can specify here various targets to work on:</li>
+<li><a class="el" href="#ga746191e66b43a1ae0ec0af0db2692d64">ACAPI_LibraryPart_CloseParameters</a> Once you want to change a parameter, you should open the parameter list with the <a class="el" href="#gacacd08acb7d5a1325838036d04d9929e">ACAPI_LibraryPart_OpenParameters</a> function. You can specify various targets to work on:</li>
 <li>the parameters of a placed element (Library Part instance)</li>
 <li>the default parameters of an element (default tool settings)</li>
-<li>the default parameters of a Library Part itself Refer to the <a class="el" href="struct_a_p_i___param_owner_type.html">API_ParamOwnerType</a> structure how to specify the required target of operation. After you opened the the parameter list to edit you can use the <a class="el" href="#ga463778c6753dca1de002cd8300599b7b">ACAPI_LibraryPart_ChangeAParameter</a> function to change a value of a parameter. The reference to a variable can be either the name of the variable or its index. You can get the current (modified) parameter list in API form (<a class="el" href="struct_a_p_i___add_par_type.html" title="Describes a parameter of a Library Part.">API_AddParType</a> handle) any time by calling the <a class="el" href="#ga7ce8dccc4f66244e51c0fc3b17d986f2">ACAPI_LibraryPart_GetActParameters</a> function. You can check the possible values of a parameter (as defined in the Parameter Script of the Library Part) in API form (<a class="el" href="struct_a_p_i___get_param_values_type.html" title="The possible parameter values of a non-array Library Part parameter.">API_GetParamValuesType</a> handle) any time by calling the <a class="el" href="#ga6389bfb68f8dbe4f05cd188aba6eec3d">ACAPI_LibraryPart_GetParamValues</a> function. When you have finished working on a parameter list you should call the <a class="el" href="#ga746191e66b43a1ae0ec0af0db2692d64">ACAPI_LibraryPart_CloseParameters</a> function to free any associated resources allocated by the server application. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </li>
+<li>the default parameters of a Library Part itself Refer to the <a class="el" href="struct_a_p_i___param_owner_type.html">API_ParamOwnerType</a> structure for how to specify the required target of operation. After you have opened the parameter list to edit, you can use the <a class="el" href="#ga463778c6753dca1de002cd8300599b7b">ACAPI_LibraryPart_ChangeAParameter</a> function to change a value of a parameter. The reference to a variable can be either the name of the variable or its index. You can get the current (modified) parameter list in API form (<a class="el" href="struct_a_p_i___add_par_type.html" title="Describes a parameter of a Library Part.">API_AddParType</a> handle) at any time by calling the <a class="el" href="#ga7ce8dccc4f66244e51c0fc3b17d986f2">ACAPI_LibraryPart_GetActParameters</a> function. You can check the possible values of a parameter (as defined in the Parameter Script of the Library Part) in API form (<a class="el" href="struct_a_p_i___get_param_values_type.html" title="The possible parameter values of a non-array Library Part parameter.">API_GetParamValuesType</a> handle) at any time by calling the <a class="el" href="#ga6389bfb68f8dbe4f05cd188aba6eec3d">ACAPI_LibraryPart_GetParamValues</a> function. When you have finished working on a parameter list, you should call the <a class="el" href="#ga746191e66b43a1ae0ec0af0db2692d64">ACAPI_LibraryPart_CloseParameters</a> function to free any associated resources allocated by the server application. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">/* change parameter &#39;zzyzx&#39; of the default object */</span></div>
@@ -2811,19 +2856,19 @@ The Preview picture</h1>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ancestor</td><td>[in] The library part type to search for </td></tr>
-    <tr><td class="paramname">pattern</td><td>[in] Pattern to search for in the loaded librairies. </td></tr>
+    <tr><td class="paramname">pattern</td><td>[in] Pattern to search for in the loaded libraries. </td></tr>
     <tr><td class="paramname">result</td><td>[out] Array to store the first 50 found library parts. </td></tr>
     <tr><td class="paramname">numFound</td><td>[out] Number of found library parts. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success, the Library Part has been found (or reference created successfully if createIfMissing is true)</li>
-<li>APIERR_BADPARS - ancestor is nullptr, numFound is nullptr or pattern is empty</li>
+<li>NoError - The function has completed successfully, the Library Part has been found (or reference created successfully if createIfMissing is true)</li>
+<li>APIERR_BADPARS - ancestor is nullptr, numFound is nullptr, or pattern is empty</li>
 <li>APIERR_BADID - no library part is found according to the given typeID or ownUnID as ancestor </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to search a Library Parts in the loaded libraries. The search pattern can be one or more words or expression(s) in quotes. Please remember that library parts are classified according to the subtype hierarchy as it is explained in the Library Part Subtypes chapter of this documentation. The expandable subtype system made the typeID based distinction of library parts obsolete, though you may use this field for searching by subtype instead of parentUnID for internal ancestor nodes (note that in this case <code>APILib_ObjectID</code> corresponds to Model Elements, and <code>API_ZombieLibID</code> marks the General Object subtype). </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to search for Library Parts in the loaded libraries. The search pattern can be one or more words or expressions in quotes. Please remember that library parts are classified according to the subtype hierarchy, as explained in the Library Part Subtypes chapter of this documentation. The expandable subtype system made the typeID-based distinction of library parts obsolete, though you may use this field for searching by subtype instead of parentUnID for internal ancestor nodes (note that in this case, <code>APILib_ObjectID</code> corresponds to Model Elements, and <code>API_ZombieLibID</code> marks the General Object subtype). </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd><em>Legacy function - to be deleted in future versions, use ACAPI::LM::LibraryManager::FindLibParts instead</em> </dd></dl>
 
 </div>
@@ -2851,15 +2896,15 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - libPart is nullptr, or refers to invalid data </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to register a new Library Part. You can register any kind of Library Part, however this function basically implemented for handling macros and pictures. These type of Library Parts are simple text and picture files which can be created without any help of the API. If you want to create a new macro, you just have to create a simple text file somewhere in the file system, and register it as a macro. If the function has completed with success, the reference index is returned by Archicad in the libPart-&gt;index parameter. Use this value to reference to the registered Library Part in any subsequent operation. Creating real Archicad library parts are much more complicated. Although the file format is public, it is strongly recommended to use the API functions while creating an object, lamp, door etc. kind library part. In this case you do not have to register it, because the <a class="el" href="#ga9d6ed5258ccb9669ce890e73f3ff22bb">ACAPI_LibraryPart_Save</a> function does it. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to register a new Library Part. You can register any kind of Library Part, however this function basically implemented for handling macros and pictures. These type of Library Parts are simple text and picture files which can be created without any help of the API. If you want to create a new macro, you just have to create a simple text file somewhere in the file system, and register it as a macro. If the function is completed successfully, Archicad returns the reference index in the libPart-&gt;index parameter. Use this value to reference the registered Library Part in any subsequent operation. Creating real Archicad library parts is much more complicated. Although the file format is public, it is strongly recommended to use the API functions while creating an object, lamp, door, etc., kind of library part. In this case, you do not have to register it, because the <a class="el" href="#ga9d6ed5258ccb9669ce890e73f3ff22bb">ACAPI_LibraryPart_Save</a> function does it. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">IO::Location    fileLoc (<span class="stringliteral">&quot;C:\\temp\\MyLibpart.gsm&quot;</span>);</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a>     libPart {};</div>
 <div class="line"> </div>
-<div class="line">libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#abf9a8fff84165e22b67c1a1f95c0c99b">typeID</a>   = APILib_ObjectID;</div>
+<div class="line">libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#abf9a8fff84165e22b67c1a1f95c0c99b">typeID</a>   = <a class="code hl_enumvalue" href="#ggacd655f5dbf61af0671962cbbe65ed59fa16822964d4a29ea70445c9a7995b7ede">APILib_ObjectID</a>;</div>
 <div class="line">libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#aacfa9a2e90e2ca539d71e3338056c700">location</a> = &amp;fileLoc;</div>
 <div class="line"><a class="code hl_function" href="#ga989358f044893949c8cc0c2f97c27785">ACAPI_LibraryPart_Register</a> (&amp;libPart);</div>
 </div><!-- fragment --> </dd></dl>
@@ -2884,12 +2929,12 @@ The Preview picture</h1>
 <p>Registers an array of Library Parts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">libParts</td><td>[in/out] Parameters of the library parts; the type, the owner signature and the location of the library parts must be initialized, by setting the typeID, ownerID and the location fields respectively. Other values will be filled and returned by Archicad. </td></tr>
+    <tr><td class="paramname">libParts</td><td>[in/out] Parameters of the library parts; the type, the owner signature, and the location of the library parts must be initialized by setting the typeID, ownerID, and the location fields, respectively. Archicad will fill out and return other values. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - libParts is nullptr, or any of its members refer to invalid data. </li>
 </ul>
 </dd></dl>
@@ -2943,11 +2988,11 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - Invalid symbol type. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function should be called from your add-on's RegisterInterface routine. More than one external symbol can be registered from one add-on. After registration you should also install a callback function with <a class="el" href="#gac30c1599068af440052e5ecc4a68fb03">ACAPI_LibraryPart_InstallESYMHandler</a> in your Initialize function, which will handle the events coming from Archicad. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function should be called from your add-on's RegisterInterface routine. More than one external symbol can be registered from one add-on. After registration, you should also install a callback function with <a class="el" href="#gac30c1599068af440052e5ecc4a68fb03">ACAPI_LibraryPart_InstallESYMHandler</a> in your Initialize function, which will handle the events coming from Archicad. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">//------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Interface definitions</span></div>
 <div class="line"><span class="comment">//------------------------------------------------------</span></div>
@@ -2956,7 +3001,7 @@ The Preview picture</h1>
 <div class="line">    GSErrCode   err;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Register ESYM</span></div>
-<div class="line">    err = <a class="code hl_function" href="#gae23b7da84d51acbc4a698534684ba6e1">ACAPI_LibraryPart_RegisterESYM</a> (<span class="stringliteral">&#39;GRPH&#39;</span>, APILib_LampID, 32611);</div>
+<div class="line">    err = <a class="code hl_function" href="#gae23b7da84d51acbc4a698534684ba6e1">ACAPI_LibraryPart_RegisterESYM</a> (<span class="stringliteral">&#39;GRPH&#39;</span>, <a class="code hl_enumvalue" href="#ggacd655f5dbf61af0671962cbbe65ed59fa4dba6f085f0c203560d597f233831a93">APILib_LampID</a>, 32611);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> err;</div>
 <div class="line">}</div>
@@ -2979,7 +3024,7 @@ The Preview picture</h1>
       </table>
 </div><div class="memdoc">
 
-<p>Saves the Library Part has been created and registers it. </p>
+<p>Saves the Library Part that has been created and registers it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">libPart</td><td>[in/out] Parameters of the library part to create </td></tr>
@@ -2987,12 +3032,12 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The libPart parameter is nullptr</li>
 <li>APIERR_GENERAL - No scratch file has been opened with the <a class="el" href="#ga994b54879d6ca52fd828604434efc978">ACAPI_LibraryPart_Create</a> function. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to save the recently created library part by the <a class="el" href="#ga994b54879d6ca52fd828604434efc978">ACAPI_LibraryPart_Create</a> function. The same parameters should be passed in the <a class="el" href="struct_a_p_i___lib_part.html">API_LibPart</a> structure as it was pass to the <a class="el" href="#ga994b54879d6ca52fd828604434efc978">ACAPI_LibraryPart_Create</a> function. In the index field, the library index of the currently created library part is returned, which you can use in subsequent operations. This function must be called to close the scratch if the <a class="el" href="#ga994b54879d6ca52fd828604434efc978">ACAPI_LibraryPart_Create</a> function has succeed; even if any of the in-between function calls have failed. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to save the recently created library part by the <a class="el" href="#ga994b54879d6ca52fd828604434efc978">ACAPI_LibraryPart_Create</a> function. The same parameters should be passed in the <a class="el" href="struct_a_p_i___lib_part.html">API_LibPart</a> structure as they were passed to the <a class="el" href="#ga994b54879d6ca52fd828604434efc978">ACAPI_LibraryPart_Create</a> function. In the index field, the library index of the currently created library part is returned, which you can use in subsequent operations. This function must be called to close the scratch if the <a class="el" href="#ga994b54879d6ca52fd828604434efc978">ACAPI_LibraryPart_Create</a> function has succeeded; even if any of the in-between function calls have failed. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___lib_part_details.html">API_LibPartDetails</a>  details {};</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a>         libPart {};</div>
 <div class="line">GSHandle            paramsHdl, draw2DHdl;</div>
@@ -3104,20 +3149,20 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success, the Library Part has been found (or reference created successfully if createIfMissing is true)</li>
+<li>NoError - The function has completed successfully, the Library Part has been found (or reference created successfully if createIfMissing is true)</li>
 <li>APIERR_MISSINGDEF - The originating library part file is missing. The document name is still filled.</li>
 <li>APIERR_BADPARS - ancestor is nullptr</li>
-<li>APIERR_BADID - no library part is found according to the given ownUnID, parentUnID or typeID parameters</li>
+<li>APIERR_BADID - no library part is found according to the given ownUnID, parentUnID, or typeID parameters</li>
 <li>APIERR_BADNAME - no library part is found with the given document or file name</li>
 <li>APIERR_MEMFULL - the reference cannot be created; only when createIfMissing is true </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to search a Library Part in the loaded libraries. The Library Part can be referenced by the following criteria:<ul>
-<li>the most exact identification of a library part is the global unique ID. You can copy the unique ID string of the requested library part into the ownUnID field of the <a class="el" href="struct_a_p_i___lib_part.html">API_LibPart</a> structure. Since the revision part of the unique ID can be changed by minor modifications (see Library Part Subtypes for more details), only main GUID match can meet the condition. If you search by ownUnID, set the docu_Name and file_Name fields to empty string</li>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to search for a library part in the loaded libraries. The Library Part can be referenced by the following criteria:<ul>
+<li>The most exact identification of a library part is the globally unique ID. You can copy the unique ID string of the requested library part into the ownUnID field in the <a class="el" href="struct_a_p_i___lib_part.html">API_LibPart</a> structure. Since the revision part of the unique ID can be changed by minor modifications (see Library Part Subtypes for more details), only the main GUID match can meet the condition. If you search by ownUnID, set the docu_Name and file_Name fields to an empty string</li>
 <li>if you leave the ownUnID and docu_Name fields blank, but file_Name is given, the function will search by the name of the library part file</li>
-<li>if ownUnID and file_Name are not specified, or docu_Name is not an empty string if docu_Name is given, <a class="el" href="#ga9e49cd1689140705c08d1c7d6f9ec816">ACAPI_LibraryPart_Search</a> tries to find a library part with that document name. Note that document names are not unique. You may reduce the chance of mismatch if you also specify the subtype parentUnID if parentUnID is given, but docu_UName is empty, the function retrieves the first library part in the enumerated libraries which is a descendant of the specified parent subtype</li>
-<li>if docu_Name is given, <a class="el" href="#ga9e49cd1689140705c08d1c7d6f9ec816">ACAPI_LibraryPart_Search</a> tries to find a library part with that document name. Note that document names are not unique. You may reduce the chance of mismatch if you also specify the subtype parentUnID</li>
-<li>if parentUnID is given, but docu_UName is empty, the function retrieves the first library part in the enumerated libraries which is a descendant of the specified parent subtype Library Part Subtypes typeID parentUnID <code>APILib_ObjectID</code> <code>API_ZombieLibID</code> <a class="el" href="#ga9e49cd1689140705c08d1c7d6f9ec816">ACAPI_LibraryPart_Search</a> can also create a virtual reference to a none existing library part (i.e. an index which can be referred to) if the library part has not found in the active libraries and createIfMissing was set true). Same effect appears when an opened plan refers to a library part which is not in the active libraries. In this case Archicad places a filled circle on the plan where a missing library part is referenced. On success <a class="el" href="#ga9e49cd1689140705c08d1c7d6f9ec816">ACAPI_LibraryPart_Search</a> fills out all the fields of the <a class="el" href="struct_a_p_i___lib_part.html">API_LibPart</a> structure, therefore remember to free the location pointer allocated by the function if you do not not need it any more. </li>
+<li>if ownUnID and file_Name are not specified, or docu_Name is not an empty string if docu_Name is given, <a class="el" href="#ga9e49cd1689140705c08d1c7d6f9ec816">ACAPI_LibraryPart_Search</a> tries to find a library part with that document name. Note that document names are not unique. You may reduce the chance of a mismatch if you also specify the subtype parentUnID. If parentUnID is given, but docu_UName is empty, the function retrieves the first library part in the enumerated libraries that is a descendant of the specified parent subtype</li>
+<li>if docu_Name is given, <a class="el" href="#ga9e49cd1689140705c08d1c7d6f9ec816">ACAPI_LibraryPart_Search</a> tries to find a library part with that document name. Note that document names are not unique. You may reduce the chance of a mismatch if you also specify the subtype parentUnID</li>
+<li>if parentUnID is given, but docu_UName is empty, the function retrieves the first library part in the enumerated libraries that is a descendant of the specified parent subtype Library Part Subtypes typeID parentUnID <code>APILib_ObjectID</code> <code>API_ZombieLibID</code> <a class="el" href="#ga9e49cd1689140705c08d1c7d6f9ec816">ACAPI_LibraryPart_Search</a> can also create a virtual reference to a non-existing library part (i.e., an index which can be referred to) if the library part has not been found in the active libraries and createIfMissing was set to true. The same effect appears when an open plan refers to a library part that is not in the active libraries. In this case, Archicad places a filled circle on the plan where a missing library part is referenced. On success, <a class="el" href="#ga9e49cd1689140705c08d1c7d6f9ec816">ACAPI_LibraryPart_Search</a> fills out all the fields of the <a class="el" href="struct_a_p_i___lib_part.html">API_LibPart</a> structure; therefore, remember to free the location pointer allocated by the function if you do not need it anymore. </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___lib_part_details.html">API_LibPartDetails</a>  details {};</div>
@@ -3231,17 +3276,17 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - any of the parameters are nullptr </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to store detail parameters in the parameter section handle. These parameters can be edited in Archicad by clicking the Details button on the parameter list editor dialog box. Applicable type of Library Parts are:<ul>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to store detail parameters in the parameter section handle. These parameters can be edited in Archicad by clicking the Details button on the parameter list editor dialog box. Applicable types of Library Parts are:<ul>
 <li><code>APILib_WindowID</code> </li>
 <li><code>APILib_DoorID</code> </li>
 <li><code>APILib_ObjectID</code> </li>
 <li><code>APILib_LampID</code> </li>
 <li><code>APILib_RoomID</code> </li>
-<li><code>APILib_LabelID</code> To get the detail parameters of a registered Library Part refer to the <a class="el" href="#gaae5e09c743f5d683bdaab7a5a6c84fca">ACAPI_LibraryPart_GetDetails</a> function. Note, that the <a class="el" href="#gaae5e09c743f5d683bdaab7a5a6c84fca">ACAPI_LibraryPart_GetDetails</a> and <a class="el" href="#ga97ae93f71a0cf23682af56f08fab10e1">ACAPI_LibraryPart_SetDetails_ParamDef</a> functions are not symmetrical; it is shown in the function names too. Since the detail parameters are stored in the parameter section of the Library Part, this implementation interface is the most effective. </li>
+<li><code>APILib_LabelID</code> To get the detailed parameters of a registered Library Part, refer to the <a class="el" href="#gaae5e09c743f5d683bdaab7a5a6c84fca">ACAPI_LibraryPart_GetDetails</a> function. Note, that the <a class="el" href="#gaae5e09c743f5d683bdaab7a5a6c84fca">ACAPI_LibraryPart_GetDetails</a> and <a class="el" href="#ga97ae93f71a0cf23682af56f08fab10e1">ACAPI_LibraryPart_SetDetails_ParamDef</a> functions are not symmetrical; it is shown in the function names too. Since the detailed parameters are stored in the parameter section of the Library Part, this implementation interface is the most effective. </li>
 </ul>
 </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___lib_part_details.html">API_LibPartDetails</a>  details {};</div>
@@ -3337,12 +3382,12 @@ The Preview picture</h1>
 
 <p>Sets up an empty 2D binary (drawing) section to fill up from API elements. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NESTING - recursive call, <a class="el" href="#ga2134f93241d52866031aeb775905529b">ACAPI_LibraryPart_GetSect_2DDrawHdl</a> was not called after the previous call</li>
 <li>APIERR_MEMFULL - not enough memory </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to initialize the 2D binary (drawing) section of the library part. The subsequent calls to the element creation function <a class="el" href="group___element.html#gad4ba2707aac702e651c6b1ec9e212baf">ACAPI_Element_Create</a> will be redirected. Instead of putting the created elements into the current database it will put them into the opened 2D symbol drawing, until the <a class="el" href="#ga2134f93241d52866031aeb775905529b">ACAPI_LibraryPart_GetSect_2DDrawHdl</a> function is called. This is the only way to add a 2D binary drawing section to a Library Part. However the internal format of the section handle is public, it is a quite hard job to provide a full solution without this functionality. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to initialize the 2D binary (drawing) section of the library part. The subsequent calls to the element creation function <a class="el" href="group___element.html#gad4ba2707aac702e651c6b1ec9e212baf">ACAPI_Element_Create</a> will be redirected. Instead of putting the created elements into the current database, it will put them into the opened 2D symbol drawing until the <a class="el" href="#ga2134f93241d52866031aeb775905529b">ACAPI_LibraryPart_GetSect_2DDrawHdl</a> function is called. This is the only way to add a 2D binary drawing section to a Library Part. However the internal format of the section handle is public, it is a quite challenging job to provide a complete solution without this functionality. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___lib_part_details.html">API_LibPartDetails</a>  details {};</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a>         libPart {};</div>
 <div class="line">GSHandle            paramsHdl, draw2DHdl;</div>
@@ -3481,13 +3526,13 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - shapePrimsProc is nullptr, or invalid libInd parameter has been passed.</li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADPARS - shapePrimsProc is nullptr, or an invalid libInd parameter has been passed.</li>
 <li>APIERR_BADINDEX - Invalid instanceElemGuid for the element type that libInd implies.</li>
 <li>APIERR_NESTING - The function was called from a ShapePrimsProc; recursion is not allowed. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to draw the shape of the Libpart Part; as it would appear on the floor plan. The key point is the parameter values to use, since it absolutely determines how a Library Part looks like when it is placed. That's why the instanceElemGuid parameter should be passed; if it is zero the default parameter set, otherwise the parameter set of an already placed instance will be used. The shape will be passed to the callback function with the same drawing primitives would be drawn onto the display. Refer to he ShapePrimsProc to get further details. These drawing procedures cannot be nested. From the callback function it is not allowed to call the <code>ACAPI_LibraryPart_ShapePrims</code> function again. The function works only on Library Parts can be placed onto the floor plan. Applicable type of Library Parts are: <code>APILib_WindowID</code>, <code>APILib_DoorID</code>, <code>APILib_ObjectID</code>, <code>APILib_LampID</code>, <code>APILib_RoomID</code> (zone stamp), <code>APILib_LabelID</code> (symbol label). In order to get the hotspots of a library part or an object instance use the <a class="el" href="#ga431a68af8113831bb35503079efb30ab">ACAPI_LibraryPart_GetHotspots</a> function. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to draw the shape of the Libpart Part, as it would appear on the floor plan. The key point is the parameter values to use, since they absolutely determine how a Library Part looks when it is placed. That's why the instanceElemGuid parameter should be passed; if it is zero, the default parameter set will be used, otherwise, the parameter set of an already placed instance will be used. The shape will be passed to the callback function, and the same drawing primitives will be drawn onto the display. Refer to the ShapePrimsProc to get further details. These drawing procedures cannot be nested. From the callback function, it is not allowed to call the <code>ACAPI_LibraryPart_ShapePrims</code> function again. The function works only on library parts that can be placed on the floor plan. Applicable type of Library Parts are: <code>APILib_WindowID</code>, <code>APILib_DoorID</code>, <code>APILib_ObjectID</code>, <code>APILib_LampID</code>, <code>APILib_RoomID</code> (zone stamp), <code>APILib_LabelID</code> (symbol label). In order to get the hotspots of a library part or an object instance, use the <a class="el" href="#ga431a68af8113831bb35503079efb30ab">ACAPI_LibraryPart_GetHotspots</a> function. </dd></dl>
 
 </div>
 </div>
@@ -3537,8 +3582,8 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - Invalid libInd, or any of the parameters are nullptr, or the addressed Library Part is a macro, picture file etc. </li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADPARS - Invalid libInd, or any of the parameters are nullptr, or the addressed Library Part is a macro, picture file, etc. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function is used to update the requested section of the library part defined by libInd with the data in the supplied handle. In the case the identified section exists in the Library Part it will be updated; if the section is not found it will be created. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
@@ -3574,11 +3619,11 @@ The Preview picture</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_GENERAL - No section has been opened with the <a class="el" href="#ga0d2a58548a7a7dba3919f4a5bc2d3dd6">ACAPI_LibraryPart_NewSection</a> function. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to write data into the section recently opened with <a class="el" href="#ga0d2a58548a7a7dba3919f4a5bc2d3dd6">ACAPI_LibraryPart_NewSection</a> function. It writes the given data (nByte number of bytes addressed by data) to the section recently opened with <a class="el" href="#ga0d2a58548a7a7dba3919f4a5bc2d3dd6">ACAPI_LibraryPart_NewSection</a> function. If you write the data to a textual section, don't forget to include the newline (+linefeed for Windows) character(s) in data. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to write data into the section recently opened with the <a class="el" href="#ga0d2a58548a7a7dba3919f4a5bc2d3dd6">ACAPI_LibraryPart_NewSection</a> function. It writes the given data (nByte number of bytes addressed by data) to the section recently opened with <a class="el" href="#ga0d2a58548a7a7dba3919f4a5bc2d3dd6">ACAPI_LibraryPart_NewSection</a> function. If you write the data to a textual section, don't forget to include the newline (+linefeed for Windows) character(s) in the data. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___lib_part_details.html">API_LibPartDetails</a>  details {};</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___lib_part.html">API_LibPart</a>         libPart {};</div>
 <div class="line">GSHandle            paramsHdl, draw2DHdl;</div>

@@ -66,6 +66,12 @@ var group___favorite =
       [ "properties", "struct_a_p_i___favorite.html#a4bde91fbbd1da7871ca7f1261a45b757", null ],
       [ "subElements", "struct_a_p_i___favorite.html#a818aab5201a00af0dcacc3d8f916682d", null ]
     ] ],
+    [ "API_FavoriteNameConflictResolutionPolicy", "group___favorite.html#ga7585680508137e915875ceea5a5e2fa4", [
+      [ "API_FavoriteError", "group___favorite.html#gga7585680508137e915875ceea5a5e2fa4a2fd94d088ce64b11bb4091e3fac0ff30", null ],
+      [ "API_FavoriteSkip", "group___favorite.html#gga7585680508137e915875ceea5a5e2fa4ab3dd5d1345d934c1e78f6b4ecd0392df", null ],
+      [ "API_FavoriteOverwrite", "group___favorite.html#gga7585680508137e915875ceea5a5e2fa4abe45876b8e7eb678b079db94f9344068", null ],
+      [ "API_FavoriteAppend", "group___favorite.html#gga7585680508137e915875ceea5a5e2fa4a99f4da131569775027182ff89d27dd5b", null ]
+    ] ],
     [ "ACAPI::Favorite::FavoriteManager::ConflictPolicy", "group___favorite.html#gac26f03c54ddc3aaec14b8ef5cbd40767", [
       [ "ACAPI::Favorite::FavoriteManager::ConflictPolicy::Error", "group___favorite.html#ggac26f03c54ddc3aaec14b8ef5cbd40767a902b0d55fddef6f8d651fe1035b7d4bd", null ],
       [ "ACAPI::Favorite::FavoriteManager::ConflictPolicy::Skip", "group___favorite.html#ggac26f03c54ddc3aaec14b8ef5cbd40767a72ef2b9b6965d078e3c7f95487a82d1c", null ],

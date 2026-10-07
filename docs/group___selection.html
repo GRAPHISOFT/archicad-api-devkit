@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Selection handling</title>
+<title>Archicad 30 C++ API: Selection handling</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -323,7 +323,7 @@ Functions</h2></td></tr>
 <div class="line">{</div>
 <div class="line">    <span class="keywordtype">char</span> msgStr[256];</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordflow">if</span> (selElemNeig-&gt;<a class="code hl_variable" href="struct_a_p_i___neig.html#a1a9ac7712106d86eb39c1888fc39e94f">neigID</a> != APINeig_None) {</div>
+<div class="line">    <span class="keywordflow">if</span> (selElemNeig-&gt;<a class="code hl_variable" href="struct_a_p_i___neig.html#a1a9ac7712106d86eb39c1888fc39e94f">neigID</a> != <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272a698bd60d91dc6210606125c9eb288a50">APINeig_None</a>) {</div>
 <div class="line">        sprintf (msgStr, <span class="stringliteral">&quot;Last selected element: NeigID %d; index: %d, inIndex: %d&quot;</span>,</div>
 <div class="line">                 selElemNeig-&gt;<a class="code hl_variable" href="struct_a_p_i___neig.html#a1a9ac7712106d86eb39c1888fc39e94f">neigID</a>, <span class="keyword">static_cast&lt;</span>Int32<span class="keyword">&gt;</span> (selElemNeig-&gt;<a class="code hl_variable" href="struct_a_p_i___neig.html#a5593bc949924ff48d715b07c8e76145d">elemPartIndex</a>), selElemNeig-&gt;<a class="code hl_variable" href="struct_a_p_i___neig.html#a3be2b592ab2146b068e0a8bffa3e5096">inIndex</a>);</div>
 <div class="line">        <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (msgStr, <span class="keyword">false</span>);</div>
@@ -364,7 +364,7 @@ Functions</h2></td></tr>
 
 <p>Adds/removes a number of elements to/from the current selection. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADDATABASE - The current database is not proper for the operation. </li>
 </ul>
 </dd></dl>
@@ -436,7 +436,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOPLAN - There is no open project.</li>
 <li>APIERR_NOSEL - There is no selection. Note that this is not a real error! </li>
 </ul>
@@ -542,18 +542,18 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">selNeigs</td><td>[in] The elements to be added/removed (array of <a class="el" href="struct_a_p_i___neig.html">API_Neig</a> objects); </td></tr>
-    <tr><td class="paramname">add</td><td>[in] If true, adds the elements to the current selection, otherwise removes them from the selection. </td></tr>
+    <tr><td class="paramname">add</td><td>[in] If true, adds the elements to the current selection; otherwise, removes them from the selection. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADDATABASE - The current database is not proper for the operation.</li>
-<li>APIERR_BADID - The element unique ID is invalid. The element type is invalid, or the element type is not supported by the server application.</li>
+<li>APIERR_BADID - The element’s unique ID is invalid. The element type is invalid, or the element type is not supported by the server application.</li>
 <li>APIERR_BADPARS - The passed parameter contains invalid data; selNeigs. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>You can use this function to add/remove (add flag) a number of (nItem) elements to/from the current selection. The elements are defined by the selNeigs array of type <a class="el" href="struct_a_p_i___neig.html">API_Neig</a>. Use <a class="el" href="#ga6119d4d286e53921d7714bdcbcaec888">ACAPI_Selection_DeselectAll</a> function to remove all elements from the selection. The neigID and the guid fields are required (inIndex and/or holeSel only where applicable). The <a class="el" href="group___element.html#ga58ee0e482d4747dc7bf3302cd7551272">API_NeigID</a> is differs from the <a class="el" href="group___element.html#ga2502601bf26ffc7abc608f6988da4d91">API_ElemTypeID</a>, because it refers to the selectable parts of the elements, not the elements themselves. You can select not only whole elements but element parts, such as vertices, edges and faces, specified in the <code>elemPartType</code> and <code>elemPartIndex</code> fields of <a class="el" href="struct_a_p_i___neig.html">API_Neig</a>. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>You can use this function to add/remove (add flag) a number of (nItem) elements to/from the current selection. The elements are defined by the selNeigs array of type <a class="el" href="struct_a_p_i___neig.html">API_Neig</a>. Use <a class="el" href="#ga6119d4d286e53921d7714bdcbcaec888">ACAPI_Selection_DeselectAll</a> function to remove all elements from the selection. The neigID and the guid fields are required (inIndex and/or holeSel only where applicable). The <a class="el" href="group___element.html#ga58ee0e482d4747dc7bf3302cd7551272">API_NeigID</a> differs from the <a class="el" href="group___element.html#ga2502601bf26ffc7abc608f6988da4d91">API_ElemTypeID</a>, because it refers to the selectable parts of the elements, not the elements themselves. You can select not only whole elements but element parts, such as vertices, edges, and faces, specified in the <code>elemPartType</code> and <code>elemPartIndex</code> fields of <a class="el" href="struct_a_p_i___neig.html">API_Neig</a>. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode Do_SelectAllWalls (<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_function" href="#ga6119d4d286e53921d7714bdcbcaec888">ACAPI_Selection_DeselectAll</a> ();</div>
@@ -598,7 +598,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The selectionInfo parameter is nullptr</li>
 <li>APIERR_BADDATABASE - The active database is neither the floorplan, nor a section database </li>
 </ul>

@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: API_AttributeIndex Class Reference</title>
+<title>Archicad 30 C++ API: API_AttributeIndex Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -149,7 +149,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4a85e1ebbd9c2cd99c3bd48d746ff496" id="r_a4a85e1ebbd9c2cd99c3bd48d746ff496"><td class="memItemLeft" align="right" valign="top">Int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a85e1ebbd9c2cd99c3bd48d746ff496">ToInt32_Deprecated</a> () const</td></tr>
 <tr class="separator:a4a85e1ebbd9c2cd99c3bd48d746ff496"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0635e2f25741860e4bfd2042958a19df" id="r_a0635e2f25741860e4bfd2042958a19df"><td class="memItemLeft" align="right" valign="top">ULong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0635e2f25741860e4bfd2042958a19df">GenerateHashValue</a> () const</td></tr>
-<tr class="memdesc:a0635e2f25741860e4bfd2042958a19df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a hash value that's why <a class="el" href="class_a_p_i___attribute_index.html" title="Index reference to an attribute.">API_AttributeIndex</a> can be used with GS::HashTable.  <br /></td></tr>
+<tr class="memdesc:a0635e2f25741860e4bfd2042958a19df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a hash value so that <a class="el" href="class_a_p_i___attribute_index.html" title="Index reference to an attribute.">API_AttributeIndex</a> can be used with GS::HashTable.  <br /></td></tr>
 <tr class="separator:a0635e2f25741860e4bfd2042958a19df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab061498ce9188bf92a9d21fb7908e2d" id="r_aab061498ce9188bf92a9d21fb7908e2d"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab061498ce9188bf92a9d21fb7908e2d">ReadAsInt32</a> (GS::IChannel &amp;ic)</td></tr>
 <tr class="memdesc:aab061498ce9188bf92a9d21fb7908e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the attribute index from the given channel.  <br /></td></tr>
@@ -172,7 +172,7 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Index reference to an attribute. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>&#160;In version 23, the short type attribute index references are replaced with this new type definition. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>In version 23, the short type attribute index references are replaced with this new type definition. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0635e2f25741860e4bfd2042958a19df" name="a0635e2f25741860e4bfd2042958a19df"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0635e2f25741860e4bfd2042958a19df">&#9670;&#160;</a></span>GenerateHashValue()</h2>
@@ -197,7 +197,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Generate a hash value that's why <a class="el" href="class_a_p_i___attribute_index.html" title="Index reference to an attribute.">API_AttributeIndex</a> can be used with GS::HashTable. </p>
+<p>Generate a hash value so that <a class="el" href="class_a_p_i___attribute_index.html" title="Index reference to an attribute.">API_AttributeIndex</a> can be used with GS::HashTable. </p>
 <dl class="section return"><dt>Returns</dt><dd>Generated hash value. </dd></dl>
 
 </div>
@@ -250,7 +250,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Returns true if the attribute index is more than zero. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if the attribute index is greater than zero. </dd></dl>
 
 </div>
 </div>
@@ -352,7 +352,7 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns NoError if the reading was successful, otherwise with error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns NoError if the reading was successful, otherwise returns an error. </dd></dl>
 
 </div>
 </div>
@@ -378,7 +378,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Returns the attribute index as Int32 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the attribute index as Int32. </dd></dl>
 
 </div>
 </div>
@@ -404,7 +404,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Returns the attribute index as GS::UniString. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the attribute index as a GS::UniString. </dd></dl>
 
 </div>
 </div>
@@ -438,7 +438,7 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns NoError if the writing was successful, otherwise with error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns NoError if the writing was successful, otherwise returns an error. </dd></dl>
 
 </div>
 </div>

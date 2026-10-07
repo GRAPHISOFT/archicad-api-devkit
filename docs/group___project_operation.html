@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Project Operations</title>
+<title>Archicad 30 C++ API: Project Operations</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -209,171 +209,173 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:gaf7e72c240d18c9af9200eada2ef2944b" id="r_gaf7e72c240d18c9af9200eada2ef2944b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf7e72c240d18c9af9200eada2ef2944b">API_FTypeID</a> { <br />
-&#160;&#160;<b>APIFType_None</b>
-, <b>APIFType_PlanFile</b>
-, <b>APIFType_A_PlanFile</b>
-, <b>APIFType_Bak_PlanFile</b>
+&#160;&#160;<a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba315dc061452d57f811fc1f483d5f0c62">APIFType_None</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944babb6df10ce68a1ce3151c5d1a1b8a84e1">APIFType_PlanFile</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba1d212e69229ec147235e1a390f8e43d8">APIFType_A_PlanFile</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba75a6b4b4f4f6f064aa609b17da2f3783">APIFType_Bak_PlanFile</a>
 , <br />
-&#160;&#160;<b>APIFType_PlanFile600</b>
-, <b>APIFType_A_PlanFile600</b>
-, <b>APIFType_PlanFile650</b>
-, <b>APIFType_A_PlanFile650</b>
+&#160;&#160;<a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba2b2be65743412661c8fd80c960582e72">APIFType_PlanFile600</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba914e6f3ab44f9d76b9ef836556c6a07d">APIFType_A_PlanFile600</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944bab80a5b997bf4189d653b5f3e689e7fb3">APIFType_PlanFile650</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba4abf6a7e1657bac7cdd1df82a4648136">APIFType_A_PlanFile650</a>
 , <br />
-&#160;&#160;<b>APIFType_PlanFile700</b>
-, <b>APIFType_A_PlanFile700</b>
-, <b>APIFType_TabListFile</b>
-, <b>APIFType_ObjectFile</b>
+&#160;&#160;<a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba3ab42dc33693dd21b0bf5dd3a6fdef2a">APIFType_PlanFile700</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba87ad38459a8a1d65444ffbc868d01275">APIFType_A_PlanFile700</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944baa50bef72d24052b31e5d75b680d60ceb">APIFType_TabListFile</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944badc7978f2e7f10eb7f870256d54b71504">APIFType_ObjectFile</a>
 , <br />
-&#160;&#160;<b>APIFType_DoorFile</b>
-, <b>APIFType_WindowFile</b>
-, <b>APIFType_GDLFile</b>
-, <b>APIFType_2DLinesFile</b>
+&#160;&#160;<a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba0eab4fe08f4b4d68057699e662551dd8">APIFType_DoorFile</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba1b098b87bb9af143a14392422610b7f9">APIFType_WindowFile</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944bad6df420ddcf2c929eec3e9bb073733af">APIFType_GDLFile</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944baf3694e67e2057d383b8b44f0176decc6">APIFType_2DLinesFile</a>
 , <br />
-&#160;&#160;<b>APIFType_PNGFile</b>
-, <b>APIFType_BMPFile</b>
-, <b>APIFType_TIFFFile</b>
-, <b>APIFType_JPEGFile</b>
+&#160;&#160;<a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba9f475a06f84239ea8a537b6986dc1099">APIFType_PNGFile</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944baa972bb3266f76781bb82c6af934efbf3">APIFType_BMPFile</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba877bc545cd47dcf9197e8cd483176987">APIFType_TIFFFile</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944bac18cf7b83f06a0b6598d65d6fd62997b">APIFType_JPEGFile</a>
 , <br />
-&#160;&#160;<b>APIFType_GIFFile</b>
-, <b>APIFType_EMFFile</b>
-, <b>APIFType_WMFFile</b>
-, <b>APIFType_PlanFile800</b>
+&#160;&#160;<a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba590221153663bde9c752ab465ff674f3">APIFType_GIFFile</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944bae77c07ecca019f141cb8ac6254647d5a">APIFType_EMFFile</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba675458cf1ee89b57f992ac1188ce8084">APIFType_WMFFile</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944baac6db0a25f846f8203cde89bad791173">APIFType_PlanFile800</a>
 , <br />
-&#160;&#160;<b>APIFType_A_PlanFile800</b>
-, <b>APIFType_PlanFile810</b>
-, <b>APIFType_A_PlanFile810</b>
-, <b>APIFType_PlanFile900</b>
+&#160;&#160;<a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba12fc76ce5f5ee24c98750f0c4514e210">APIFType_A_PlanFile800</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba14ecc9aa398777a0338ff79b9a01e5a4">APIFType_PlanFile810</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba43ef3a636886690e8ddfbbf7523b28ff">APIFType_A_PlanFile810</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba2d5245093fcf1ffecc3add5acb187444">APIFType_PlanFile900</a>
 , <br />
-&#160;&#160;<b>APIFType_A_PlanFile900</b>
-, <b>APIFType_PlanFile1000</b>
-, <b>APIFType_A_PlanFile1000</b>
-, <b>APIFType_PlanFile1100</b>
+&#160;&#160;<a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba27c8278334d09d2c40edd49f5a04c072">APIFType_A_PlanFile900</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba558fd849a5cf1e23874fa719f29daf49">APIFType_PlanFile1000</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba52569489fcd1955c435d05fc6b44274d">APIFType_A_PlanFile1000</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba3bb8f1264c35241237824fa628893bc4">APIFType_PlanFile1100</a>
 , <br />
-&#160;&#160;<b>APIFType_A_PlanFile1100</b>
-, <b>APIFType_PlanFile1200</b>
-, <b>APIFType_A_PlanFile1200</b>
-, <b>APIFType_IfcFile</b>
+&#160;&#160;<a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba9f88ab6b311b0ebd5281e47ae5262edc">APIFType_A_PlanFile1100</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba1467db0328ac16a4c1f94daae934a3ff">APIFType_PlanFile1200</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944baf86ae1813a7f7e899da18a2227c038a5">APIFType_A_PlanFile1200</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944baa3f3ca908eb4c11c381bab542c0c376f">APIFType_IfcFile</a>
 , <br />
-&#160;&#160;<b>APIFType_PlanFile1300</b>
-, <b>APIFType_A_PlanFile1300</b>
-, <b>APIFType_PlanFile1400</b>
-, <b>APIFType_A_PlanFile1400</b>
+&#160;&#160;<a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba8b28fadac42663bd8aaa0776ac82ae38">APIFType_PlanFile1300</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba6e5b6a1065ba7aeb14e6588d7fb40bd0">APIFType_A_PlanFile1300</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba40de47ddd68d1609afab71afb06c2c42">APIFType_PlanFile1400</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba329748132348f9b2eb538fe819d4a31c">APIFType_A_PlanFile1400</a>
 , <br />
-&#160;&#160;<b>APIFType_PlanFile1500</b>
-, <b>APIFType_A_PlanFile1500</b>
-, <b>APIFType_PlanFile1600</b>
-, <b>APIFType_A_PlanFile1600</b>
+&#160;&#160;<a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba4e54093b644e805c4cd316c69f5a1143">APIFType_PlanFile1500</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944baeabf78687b1d376d1fcbfe9d9039d17c">APIFType_A_PlanFile1500</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944baf6a4b640394943b1d2cfa01c4d69bf94">APIFType_PlanFile1600</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba0d9eb86a7519c1ad5611a67778056f1f">APIFType_A_PlanFile1600</a>
 , <br />
-&#160;&#160;<b>APIFType_PlanFile1700</b>
-, <b>APIFType_A_PlanFile1700</b>
-, <b>APIFType_PlanFile1800</b>
-, <b>APIFType_A_PlanFile1800</b>
+&#160;&#160;<a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba29b5bb2e9aa30b68e010948c2029b67d">APIFType_PlanFile1700</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba08c6abc7cce93c0bc4f6530541aa7e34">APIFType_A_PlanFile1700</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944bab20fed809f3baa421d2a10f54346b1d6">APIFType_PlanFile1800</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944baaf1eaadc4840c62d54eb04c6c05134b5">APIFType_A_PlanFile1800</a>
 , <br />
-&#160;&#160;<b>APIFType_PdfFile</b>
-, <b>APIFType_PlanFile1900</b>
-, <b>APIFType_A_PlanFile1900</b>
-, <b>APIFType_PlanFile2000</b>
+&#160;&#160;<a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944bab5668c1fc859ed7091e447e5bbc56010">APIFType_PdfFile</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba264ba8477732d832cbd4e7949dc58db9">APIFType_PlanFile1900</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944baf859eb26a7bca3145d0857c10813acd1">APIFType_A_PlanFile1900</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944bac8ef5b3685fa9077c1af803d889afe46">APIFType_PlanFile2000</a>
 , <br />
-&#160;&#160;<b>APIFType_A_PlanFile2000</b>
-, <b>APIFType_PlanFile2100</b>
-, <b>APIFType_A_PlanFile2100</b>
-, <b>APIFType_PlanFile2200</b>
+&#160;&#160;<a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944baea62ddfae8e88816403b972439121f4e">APIFType_A_PlanFile2000</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba84d591ca9e1a09dfd555f239a3c1abfe">APIFType_PlanFile2100</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba3a23059ff397d0b9dc323fdc389de493">APIFType_A_PlanFile2100</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba7076a700f133486aa846f208ef09d6a5">APIFType_PlanFile2200</a>
 , <br />
-&#160;&#160;<b>APIFType_A_PlanFile2200</b>
-, <b>APIFType_PlanFile2300</b>
-, <b>APIFType_A_PlanFile2300</b>
-, <b>APIFType_PlanFile2400</b>
+&#160;&#160;<a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba3b91047cc5e01be14170faaf687a5c3d">APIFType_A_PlanFile2200</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944bae0a5338d910c515fa37d8ece57f99449">APIFType_PlanFile2300</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba30fd75717df1e84ff560c2a5cacf8537">APIFType_A_PlanFile2300</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944bafde0ca5a4d218b101521f2c0edb949bb">APIFType_PlanFile2400</a>
 , <br />
-&#160;&#160;<b>APIFType_A_PlanFile2400</b>
-, <b>APIFType_PlanFile2500</b>
-, <b>APIFType_A_PlanFile2500</b>
-, <b>APIFType_PlanFile2600</b>
+&#160;&#160;<a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944bafe46be9c1f9676e98054e75b43c46f09">APIFType_A_PlanFile2400</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944bafc77bc48ae036b8c13b091291461240f">APIFType_PlanFile2500</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba502ff05e3127ae60bcc9fa7cac185a41">APIFType_A_PlanFile2500</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba92625d403fb56e09c4c6a6d11453f901">APIFType_PlanFile2600</a>
 , <br />
-&#160;&#160;<b>APIFType_A_PlanFile2600</b>
-, <b>APIFType_PlanFile2700</b>
-, <b>APIFType_A_PlanFile2700</b>
-, <b>APIFType_PlanFile2800</b>
+&#160;&#160;<a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba9d66f5db4378c10602fd6d8390936533">APIFType_A_PlanFile2600</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba2c739b2ef5ca8bc12867dd232876303c">APIFType_PlanFile2700</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba0870c6a43390e95b83edff8cc4e716f7">APIFType_A_PlanFile2700</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944bac1cdc873971c25797bc016b3d4bde4e3">APIFType_PlanFile2800</a>
 , <br />
-&#160;&#160;<b>APIFType_A_PlanFile2800</b>
-, <b>APIFType_SafFile</b>
+&#160;&#160;<a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba9524c2cc71830148b080ec45e10b5917">APIFType_A_PlanFile2800</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944baab91644eeaf13af334c6ee13d302aa1b">APIFType_PlanFile2900</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944ba54db939739a44d07a1812e894b8b8f36">APIFType_A_PlanFile2900</a>
+, <a class="el" href="#ggaf7e72c240d18c9af9200eada2ef2944baa54314825c65116b2c26d9fd81d29f3c">APIFType_SafFile</a>
 <br />
  }</td></tr>
 <tr class="memdesc:gaf7e72c240d18c9af9200eada2ef2944b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available file format identifiers for automated functions.  <a href="#gaf7e72c240d18c9af9200eada2ef2944b">More...</a><br /></td></tr>
 <tr class="separator:gaf7e72c240d18c9af9200eada2ef2944b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3a2de40fad928b938f9e42a325c24ae0" id="r_ga3a2de40fad928b938f9e42a325c24ae0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3a2de40fad928b938f9e42a325c24ae0">API_ConvModID</a> { <br />
-&#160;&#160;<b>APIConvMod_TextGDL</b>
-, <b>APIConvMod_MemGDL</b>
-, <b>APIConvMod_SymTxtGDL</b>
-, <b>APIConvMod_SymBinGDL</b>
+&#160;&#160;<a class="el" href="#gga3a2de40fad928b938f9e42a325c24ae0af865d6a657ebc9ea4c82fae1de5fff3e">APIConvMod_TextGDL</a>
+, <a class="el" href="#gga3a2de40fad928b938f9e42a325c24ae0a62df25b00d5f76125cefd7e18730ddd9">APIConvMod_MemGDL</a>
+, <a class="el" href="#gga3a2de40fad928b938f9e42a325c24ae0a15cbc29d9af29e9a028c3384f684d4c4">APIConvMod_SymTxtGDL</a>
+, <a class="el" href="#gga3a2de40fad928b938f9e42a325c24ae0ad74fb0a5362617da794602175ed26bed">APIConvMod_SymBinGDL</a>
 , <br />
-&#160;&#160;<b>APIConvMod_SideGDL</b>
-, <b>APIConvMod_DragGDL</b>
+&#160;&#160;<a class="el" href="#gga3a2de40fad928b938f9e42a325c24ae0a7fbb8805cfc25e46019c1d90ae7e814c">APIConvMod_SideGDL</a>
+, <a class="el" href="#gga3a2de40fad928b938f9e42a325c24ae0ab97528ffff9ae3f416e091b5d76f0f56">APIConvMod_DragGDL</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga3a2de40fad928b938f9e42a325c24ae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the type of the Archicad object to be saved.  <a href="#ga3a2de40fad928b938f9e42a325c24ae0">More...</a><br /></td></tr>
 <tr class="separator:ga3a2de40fad928b938f9e42a325c24ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5f72b045cb3e15c122360326c3f094c8" id="r_ga5f72b045cb3e15c122360326c3f094c8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5f72b045cb3e15c122360326c3f094c8">API_IfcTypeID</a> { <b>API_IFC</b>
-, <b>API_IFCZIP</b>
+<tr class="memitem:ga5f72b045cb3e15c122360326c3f094c8" id="r_ga5f72b045cb3e15c122360326c3f094c8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5f72b045cb3e15c122360326c3f094c8">API_IfcTypeID</a> { <a class="el" href="#gga5f72b045cb3e15c122360326c3f094c8ad8efe364944fd1320ef968fc6e7a012b">API_IFC</a>
+, <a class="el" href="#gga5f72b045cb3e15c122360326c3f094c8a57d85a944d60c585f06ffafce89dde22">API_IFCZIP</a>
  }</td></tr>
 <tr class="memdesc:ga5f72b045cb3e15c122360326c3f094c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines type of file format for IFC Export.  <a href="#ga5f72b045cb3e15c122360326c3f094c8">More...</a><br /></td></tr>
 <tr class="separator:ga5f72b045cb3e15c122360326c3f094c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga57775bdce25fa9f05db88665b4a2f7e0" id="r_ga57775bdce25fa9f05db88665b4a2f7e0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga57775bdce25fa9f05db88665b4a2f7e0">API_ElementsToIfcExportID</a> { <br />
-&#160;&#160;<b>API_EntireProject</b> = 1
-, <b>API_VisibleElementsOnAllStories</b>
-, <b>API_AllElementsOnCurrentStorey</b>
-, <b>API_VisibleElementsOnCurrentStorey</b>
+&#160;&#160;<a class="el" href="#gga57775bdce25fa9f05db88665b4a2f7e0a11995ddfe6d305eba805c06bda0a59c8">API_EntireProject</a> = 1
+, <a class="el" href="#gga57775bdce25fa9f05db88665b4a2f7e0a6c94fc9d38213ab0e4dc59c29545eda1">API_VisibleElementsOnAllStories</a>
+, <a class="el" href="#gga57775bdce25fa9f05db88665b4a2f7e0aad41bb52cf90e42f814652222dd67e8d">API_AllElementsOnCurrentStorey</a>
+, <a class="el" href="#gga57775bdce25fa9f05db88665b4a2f7e0a14d03e8698e1cd839ae650976f62ef66">API_VisibleElementsOnCurrentStorey</a>
 , <br />
-&#160;&#160;<b>API_SelectedElementsOnly</b>
-, <b>API_FilteredElements</b>
+&#160;&#160;<a class="el" href="#gga57775bdce25fa9f05db88665b4a2f7e0ac5d41c8a47a90a0a2a5a2c842c46b5b1">API_SelectedElementsOnly</a>
+, <a class="el" href="#gga57775bdce25fa9f05db88665b4a2f7e0a7da315a14bc1c20fa98db094b1241973">API_FilteredElements</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga57775bdce25fa9f05db88665b4a2f7e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selected elements for IFC export.  <a href="#ga57775bdce25fa9f05db88665b4a2f7e0">More...</a><br /></td></tr>
 <tr class="separator:ga57775bdce25fa9f05db88665b4a2f7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6860107a1b396170f47a355181462c50" id="r_ga6860107a1b396170f47a355181462c50"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6860107a1b396170f47a355181462c50">API_ElementsToSAFExportID</a> { <b>API_SAFSelectedElementsOnly</b> = 1
-, <b>API_SAFEntireProject</b>
-, <b>API_SAFVisibleElements</b>
+<tr class="memitem:ga6860107a1b396170f47a355181462c50" id="r_ga6860107a1b396170f47a355181462c50"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6860107a1b396170f47a355181462c50">API_ElementsToSAFExportID</a> { <a class="el" href="#gga6860107a1b396170f47a355181462c50a971571e3a48ff4a1bf50cdf4f533112b">API_SAFSelectedElementsOnly</a> = 1
+, <a class="el" href="#gga6860107a1b396170f47a355181462c50a3d7b77cc80a04727891ec500ee9a39c9">API_SAFEntireProject</a>
+, <a class="el" href="#gga6860107a1b396170f47a355181462c50af1ab85c3c3b3148d145b4703d3b36ae0">API_SAFVisibleElements</a>
  }</td></tr>
 <tr class="memdesc:ga6860107a1b396170f47a355181462c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selected elements for SAF export.  <a href="#ga6860107a1b396170f47a355181462c50">More...</a><br /></td></tr>
 <tr class="separator:ga6860107a1b396170f47a355181462c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga53738527de6fe0daccedd7f9cb9ff81c" id="r_ga53738527de6fe0daccedd7f9cb9ff81c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga53738527de6fe0daccedd7f9cb9ff81c">API_NotifyEventID</a> { <br />
-&#160;&#160;<b>APINotify_New</b> = 0x00000001
-, <b>APINotify_NewAndReset</b> = 0x00000002
-, <b>APINotify_Open</b> = 0x00000004
-, <b>APINotify_PreSave</b> = 0x00000008
+&#160;&#160;<a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81ca947c3db4033fc235500de01bb255cea7">APINotify_New</a> = 0x00000001
+, <a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81ca80c64a432b3612723798505eafcba957">APINotify_NewAndReset</a> = 0x00000002
+, <a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81ca44bcad20b3de40164bd9609cfb407ad2">APINotify_Open</a> = 0x00000004
+, <a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81ca5061f4a73a860bc7cc6c785a363fac97">APINotify_PreSave</a> = 0x00000008
 , <br />
-&#160;&#160;<b>APINotify_Save</b> = 0x00000010
-, <b>APINotify_Close</b> = 0x00000020
-, <b>APINotify_Quit</b> = 0x00000040
-, <b>APINotify_TempSave</b> = 0x00000080
+&#160;&#160;<a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81ca1215bd22fe8cb03111c8495dd57688b5">APINotify_Save</a> = 0x00000010
+, <a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81ca29c0820cf7d6153d31d2e6a0bfab78b5">APINotify_Close</a> = 0x00000020
+, <a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81ca93f511732da8001bdda37bbbe94e018a">APINotify_Quit</a> = 0x00000040
+, <a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81cae2e026851ce5fc3b0bacff4de9d18371">APINotify_TempSave</a> = 0x00000080
 , <br />
-&#160;&#160;<b>APINotify_SendChanges</b> = 0x00008000
-, <b>APINotify_ReceiveChanges</b> = 0x00010000
-, <b>APINotify_ChangeProjectDB</b> = 0x00040000
-, <b>APINotify_ChangeWindow</b> = 0x00080000
+&#160;&#160;<a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81ca40ab233673c369fe683929fd980737a9">APINotify_SendChanges</a> = 0x00008000
+, <a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81cad0e01ad7e47a3d562e6ac7a9e5b80fc7">APINotify_ReceiveChanges</a> = 0x00010000
+, <a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81cafbf0bc4543fd9f8e55acd7c4f80b5012">APINotify_ChangeProjectDB</a> = 0x00040000
+, <a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81ca7c74d741ac3a6da2cf9d23b1bf60ca9c">APINotify_ChangeWindow</a> = 0x00080000
 , <br />
-&#160;&#160;<b>APINotify_ChangeFloor</b> = 0x00100000
-, <b>APINotify_ChangeLibrary</b> = 0x00200000
-, <b>APINotify_AllInputFinished</b> = 0x00400000
-, <b>APINotify_UnitChanged</b> = 0x00800000
+&#160;&#160;<a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81ca86230c4059a918142236507a41da4d81">APINotify_ChangeFloor</a> = 0x00100000
+, <a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81ca1e3e99b9a6cf630a599633c2e79770fa">APINotify_ChangeLibrary</a> = 0x00200000
+, <a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81ca5dea68ad4bdb3fd723d42e7c7545d6fe">APINotify_AllInputFinished</a> = 0x00400000
+, <a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81ca91069c374e6d92491e13ea700211cdc8">APINotify_UnitChanged</a> = 0x00800000
 , <br />
-&#160;&#160;<b>APINotify_SideviewCreated</b> = 0x01000000
-, <b>APINotify_SideviewRebuilt</b> = 0x02000000
-, <b>APINotify_PropertyVisibilityChanged</b> = 0x04000000
-, <b>APINotify_ClassificationVisibilityChanged</b> = 0x08000000
+&#160;&#160;<a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81ca81a7bd9a4f4cf427457ed71f49bef1f2">APINotify_SideviewCreated</a> = 0x01000000
+, <a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81ca791dfede7118c34871cfd74209248ec8">APINotify_SideviewRebuilt</a> = 0x02000000
+, <a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81ca6a777ec39ffd151d4788ef4f0d7a2cfd">APINotify_PropertyVisibilityChanged</a> = 0x04000000
+, <a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81ca52bafea1c6ff6d070b266a2a5251c43a">APINotify_ClassificationVisibilityChanged</a> = 0x08000000
 , <br />
-&#160;&#160;<b>APINotify_ShowIn3DChanged</b> = 0x10000000
+&#160;&#160;<a class="el" href="#gga53738527de6fe0daccedd7f9cb9ff81cad83107916acdc97c498d55d6a1af7845">APINotify_ShowIn3DChanged</a> = 0x10000000
 <br />
  }</td></tr>
 <tr class="memdesc:ga53738527de6fe0daccedd7f9cb9ff81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible values for notifications on project events.  <a href="#ga53738527de6fe0daccedd7f9cb9ff81c">More...</a><br /></td></tr>
 <tr class="separator:ga53738527de6fe0daccedd7f9cb9ff81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga70f285687b4cdb6d2ba04490923234ff" id="r_ga70f285687b4cdb6d2ba04490923234ff"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga70f285687b4cdb6d2ba04490923234ff">API_NotifyViewEventID</a> { <br />
-&#160;&#160;<b>APINotifyView_Inserted</b> = 0x00000001
-, <b>APINotifyView_Modified</b> = 0x00000002
-, <b>APINotifyView_Deleted</b> = 0x00000004
-, <b>APINotifyView_Opened</b> = 0x00000008
+&#160;&#160;<a class="el" href="#gga70f285687b4cdb6d2ba04490923234ffa0c1105c08e7be65388c15d76260afede">APINotifyView_Inserted</a> = 0x00000001
+, <a class="el" href="#gga70f285687b4cdb6d2ba04490923234ffab147be5a969505828ef268e885b8ba6a">APINotifyView_Modified</a> = 0x00000002
+, <a class="el" href="#gga70f285687b4cdb6d2ba04490923234ffacb0c1fa45243f681bdfee6a98e18600e">APINotifyView_Deleted</a> = 0x00000004
+, <a class="el" href="#gga70f285687b4cdb6d2ba04490923234ffa3ed60b1de922d2f436397471bce7f1eb">APINotifyView_Opened</a> = 0x00000008
 , <br />
-&#160;&#160;<b>APINotifyView_Begin</b> = 0x00000010
-, <b>APINotifyView_End</b> = 0x00000020
+&#160;&#160;<a class="el" href="#gga70f285687b4cdb6d2ba04490923234ffa71fd52543475fac151a5ab27dc79e9b2">APINotifyView_Begin</a> = 0x00000010
+, <a class="el" href="#gga70f285687b4cdb6d2ba04490923234ffa4335131f8aec79b18a2b70eea2340ea4">APINotifyView_End</a> = 0x00000020
 <br />
  }</td></tr>
 <tr class="memdesc:ga70f285687b4cdb6d2ba04490923234ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible values for notifications on Project Navigator events.  <a href="#ga70f285687b4cdb6d2ba04490923234ff">More...</a><br /></td></tr>
@@ -451,7 +453,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga6f991a717b8b64d5d80326c3feaf1c55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current printer settings.  <br /></td></tr>
 <tr class="separator:ga6f991a717b8b64d5d80326c3feaf1c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga87e388150de9075b511ad1abd30ea079" id="r_ga87e388150de9075b511ad1abd30ea079"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga87e388150de9075b511ad1abd30ea079">ACAPI_ProjectOperation_AdditionalFileWasCreated</a> (const IO::Location &amp;path)</td></tr>
-<tr class="memdesc:ga87e388150de9075b511ad1abd30ea079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs Archicad about the additionally created file during exporting or publishing. Required for handling them with the target file. (E.g. uploading to BIMcloud together.)  <br /></td></tr>
+<tr class="memdesc:ga87e388150de9075b511ad1abd30ea079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs Archicad about the additional file created during exporting or publishing. Required for handling them with the target file. (E.g., uploading to BIMcloud together.)  <br /></td></tr>
 <tr class="separator:ga87e388150de9075b511ad1abd30ea079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacc5ea19d38befe2e1da1d07f51ce2fef" id="r_gacc5ea19d38befe2e1da1d07f51ce2fef"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacc5ea19d38befe2e1da1d07f51ce2fef">ACAPI_ProjectOperation_CatchProjectEvent</a> (GSFlags eventTypes, <a class="el" href="#ga0d88e6e0f13a0b1223db20e4bdac4432">APIProjectEventHandlerProc</a> *handlerProc)</td></tr>
 <tr class="memdesc:gacc5ea19d38befe2e1da1d07f51ce2fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register or unregister your add-on to be notified of application and project events.  <br /></td></tr>
@@ -513,6 +515,20 @@ Functions</h2></td></tr>
 
 <p>Represents the type of the Archicad object to be saved. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>These options correspond to the formats you can choose while saving something as an Archicad object, both from the plan and the 3D window. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga3a2de40fad928b938f9e42a325c24ae0af865d6a657ebc9ea4c82fae1de5fff3e" name="gga3a2de40fad928b938f9e42a325c24ae0af865d6a657ebc9ea4c82fae1de5fff3e"></a>APIConvMod_TextGDL&#160;</td><td class="fielddoc"><p>Write GDL Text in file (as a macro). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3a2de40fad928b938f9e42a325c24ae0a62df25b00d5f76125cefd7e18730ddd9" name="gga3a2de40fad928b938f9e42a325c24ae0a62df25b00d5f76125cefd7e18730ddd9"></a>APIConvMod_MemGDL&#160;</td><td class="fielddoc"><p>Convert into 3D model. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3a2de40fad928b938f9e42a325c24ae0a15cbc29d9af29e9a028c3384f684d4c4" name="gga3a2de40fad928b938f9e42a325c24ae0a15cbc29d9af29e9a028c3384f684d4c4"></a>APIConvMod_SymTxtGDL&#160;</td><td class="fielddoc"><p>Write as GDL Text in a symbol file. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3a2de40fad928b938f9e42a325c24ae0ad74fb0a5362617da794602175ed26bed" name="gga3a2de40fad928b938f9e42a325c24ae0ad74fb0a5362617da794602175ed26bed"></a>APIConvMod_SymBinGDL&#160;</td><td class="fielddoc"><p>Write as BINARY in a symbol file. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3a2de40fad928b938f9e42a325c24ae0a7fbb8805cfc25e46019c1d90ae7e814c" name="gga3a2de40fad928b938f9e42a325c24ae0a7fbb8805cfc25e46019c1d90ae7e814c"></a>APIConvMod_SideGDL&#160;</td><td class="fielddoc"><p>Convert to side view. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3a2de40fad928b938f9e42a325c24ae0ab97528ffff9ae3f416e091b5d76f0f56" name="gga3a2de40fad928b938f9e42a325c24ae0ab97528ffff9ae3f416e091b5d76f0f56"></a>APIConvMod_DragGDL&#160;</td><td class="fielddoc"><p>Create GDL script to drag-and-drop. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -530,6 +546,20 @@ Functions</h2></td></tr>
 
 <p>Selected elements for IFC export. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>This type specifies in <a class="el" href="struct_a_p_i___save_pars___ifc.html">API_SavePars_Ifc</a>. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga57775bdce25fa9f05db88665b4a2f7e0a11995ddfe6d305eba805c06bda0a59c8" name="gga57775bdce25fa9f05db88665b4a2f7e0a11995ddfe6d305eba805c06bda0a59c8"></a>API_EntireProject&#160;</td><td class="fielddoc"><p>All elements in the current project. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga57775bdce25fa9f05db88665b4a2f7e0a6c94fc9d38213ab0e4dc59c29545eda1" name="gga57775bdce25fa9f05db88665b4a2f7e0a6c94fc9d38213ab0e4dc59c29545eda1"></a>API_VisibleElementsOnAllStories&#160;</td><td class="fielddoc"><p>Visible elements on all stories </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga57775bdce25fa9f05db88665b4a2f7e0aad41bb52cf90e42f814652222dd67e8d" name="gga57775bdce25fa9f05db88665b4a2f7e0aad41bb52cf90e42f814652222dd67e8d"></a>API_AllElementsOnCurrentStorey&#160;</td><td class="fielddoc"><p>All elements on current storey </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga57775bdce25fa9f05db88665b4a2f7e0a14d03e8698e1cd839ae650976f62ef66" name="gga57775bdce25fa9f05db88665b4a2f7e0a14d03e8698e1cd839ae650976f62ef66"></a>API_VisibleElementsOnCurrentStorey&#160;</td><td class="fielddoc"><p>Visible elements on current storey </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga57775bdce25fa9f05db88665b4a2f7e0ac5d41c8a47a90a0a2a5a2c842c46b5b1" name="gga57775bdce25fa9f05db88665b4a2f7e0ac5d41c8a47a90a0a2a5a2c842c46b5b1"></a>API_SelectedElementsOnly&#160;</td><td class="fielddoc"><p>Selected elements only </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga57775bdce25fa9f05db88665b4a2f7e0a7da315a14bc1c20fa98db094b1241973" name="gga57775bdce25fa9f05db88665b4a2f7e0a7da315a14bc1c20fa98db094b1241973"></a>API_FilteredElements&#160;</td><td class="fielddoc"><p>Filtered elements </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -546,8 +576,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Selected elements for SAF export. </p>
-<dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This type specifies in <code><a class="el" href="struct_a_p_i___save_pars___saf.html" title="Contains the export filter type for the SAF file.">API_SavePars_Saf</a></code>. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga6860107a1b396170f47a355181462c50a971571e3a48ff4a1bf50cdf4f533112b" name="gga6860107a1b396170f47a355181462c50a971571e3a48ff4a1bf50cdf4f533112b"></a>API_SAFSelectedElementsOnly&#160;</td><td class="fielddoc"><p>Selected elements only. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6860107a1b396170f47a355181462c50a3d7b77cc80a04727891ec500ee9a39c9" name="gga6860107a1b396170f47a355181462c50a3d7b77cc80a04727891ec500ee9a39c9"></a>API_SAFEntireProject&#160;</td><td class="fielddoc"><p>Entire project. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6860107a1b396170f47a355181462c50af1ab85c3c3b3148d145b4703d3b36ae0" name="gga6860107a1b396170f47a355181462c50af1ab85c3c3b3148d145b4703d3b36ae0"></a>API_SAFVisibleElements&#160;</td><td class="fielddoc"><p>Visible elements. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -564,8 +601,153 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Available file format identifiers for automated functions. </p>
-<dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>For the utilization of this structure see the <a class="el" href="#ga76185a40ae6b64e25d4f3fa16a26dd00">ACAPI_ProjectOperation_Open</a> and <a class="el" href="#ga96c54887dae51bfeef2e4895bb72dbc3">ACAPI_ProjectOperation_Save</a> automation functions. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba315dc061452d57f811fc1f483d5f0c62" name="ggaf7e72c240d18c9af9200eada2ef2944ba315dc061452d57f811fc1f483d5f0c62"></a>APIFType_None&#160;</td><td class="fielddoc"><p>unknown file type </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944babb6df10ce68a1ce3151c5d1a1b8a84e1" name="ggaf7e72c240d18c9af9200eada2ef2944babb6df10ce68a1ce3151c5d1a1b8a84e1"></a>APIFType_PlanFile&#160;</td><td class="fielddoc"><p>Archicad Solo Project File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba1d212e69229ec147235e1a390f8e43d8" name="ggaf7e72c240d18c9af9200eada2ef2944ba1d212e69229ec147235e1a390f8e43d8"></a>APIFType_A_PlanFile&#160;</td><td class="fielddoc"><p>Archicad Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba75a6b4b4f4f6f064aa609b17da2f3783" name="ggaf7e72c240d18c9af9200eada2ef2944ba75a6b4b4f4f6f064aa609b17da2f3783"></a>APIFType_Bak_PlanFile&#160;</td><td class="fielddoc"><p>Archicad Backup File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba2b2be65743412661c8fd80c960582e72" name="ggaf7e72c240d18c9af9200eada2ef2944ba2b2be65743412661c8fd80c960582e72"></a>APIFType_PlanFile600&#160;</td><td class="fielddoc"><p>Archicad 6.0 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba914e6f3ab44f9d76b9ef836556c6a07d" name="ggaf7e72c240d18c9af9200eada2ef2944ba914e6f3ab44f9d76b9ef836556c6a07d"></a>APIFType_A_PlanFile600&#160;</td><td class="fielddoc"><p>Archicad 6.0 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944bab80a5b997bf4189d653b5f3e689e7fb3" name="ggaf7e72c240d18c9af9200eada2ef2944bab80a5b997bf4189d653b5f3e689e7fb3"></a>APIFType_PlanFile650&#160;</td><td class="fielddoc"><p>Archicad 6.5 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba4abf6a7e1657bac7cdd1df82a4648136" name="ggaf7e72c240d18c9af9200eada2ef2944ba4abf6a7e1657bac7cdd1df82a4648136"></a>APIFType_A_PlanFile650&#160;</td><td class="fielddoc"><p>Archicad 6.5 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba3ab42dc33693dd21b0bf5dd3a6fdef2a" name="ggaf7e72c240d18c9af9200eada2ef2944ba3ab42dc33693dd21b0bf5dd3a6fdef2a"></a>APIFType_PlanFile700&#160;</td><td class="fielddoc"><p>Archicad 7.0 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba87ad38459a8a1d65444ffbc868d01275" name="ggaf7e72c240d18c9af9200eada2ef2944ba87ad38459a8a1d65444ffbc868d01275"></a>APIFType_A_PlanFile700&#160;</td><td class="fielddoc"><p>Archicad 7.0 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944baa50bef72d24052b31e5d75b680d60ceb" name="ggaf7e72c240d18c9af9200eada2ef2944baa50bef72d24052b31e5d75b680d60ceb"></a>APIFType_TabListFile&#160;</td><td class="fielddoc"><p>Archicad List File with Tabs </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944badc7978f2e7f10eb7f870256d54b71504" name="ggaf7e72c240d18c9af9200eada2ef2944badc7978f2e7f10eb7f870256d54b71504"></a>APIFType_ObjectFile&#160;</td><td class="fielddoc"><p>Archicad Object File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba0eab4fe08f4b4d68057699e662551dd8" name="ggaf7e72c240d18c9af9200eada2ef2944ba0eab4fe08f4b4d68057699e662551dd8"></a>APIFType_DoorFile&#160;</td><td class="fielddoc"><p>Archicad Door File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba1b098b87bb9af143a14392422610b7f9" name="ggaf7e72c240d18c9af9200eada2ef2944ba1b098b87bb9af143a14392422610b7f9"></a>APIFType_WindowFile&#160;</td><td class="fielddoc"><p>Archicad Window File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944bad6df420ddcf2c929eec3e9bb073733af" name="ggaf7e72c240d18c9af9200eada2ef2944bad6df420ddcf2c929eec3e9bb073733af"></a>APIFType_GDLFile&#160;</td><td class="fielddoc"><p>Archicad GDL File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944baf3694e67e2057d383b8b44f0176decc6" name="ggaf7e72c240d18c9af9200eada2ef2944baf3694e67e2057d383b8b44f0176decc6"></a>APIFType_2DLinesFile&#160;</td><td class="fielddoc"><p>2D Lines File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba9f475a06f84239ea8a537b6986dc1099" name="ggaf7e72c240d18c9af9200eada2ef2944ba9f475a06f84239ea8a537b6986dc1099"></a>APIFType_PNGFile&#160;</td><td class="fielddoc"><p>PNG File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944baa972bb3266f76781bb82c6af934efbf3" name="ggaf7e72c240d18c9af9200eada2ef2944baa972bb3266f76781bb82c6af934efbf3"></a>APIFType_BMPFile&#160;</td><td class="fielddoc"><p>Bitmap File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba877bc545cd47dcf9197e8cd483176987" name="ggaf7e72c240d18c9af9200eada2ef2944ba877bc545cd47dcf9197e8cd483176987"></a>APIFType_TIFFFile&#160;</td><td class="fielddoc"><p>TIFF File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944bac18cf7b83f06a0b6598d65d6fd62997b" name="ggaf7e72c240d18c9af9200eada2ef2944bac18cf7b83f06a0b6598d65d6fd62997b"></a>APIFType_JPEGFile&#160;</td><td class="fielddoc"><p>JPEG File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba590221153663bde9c752ab465ff674f3" name="ggaf7e72c240d18c9af9200eada2ef2944ba590221153663bde9c752ab465ff674f3"></a>APIFType_GIFFile&#160;</td><td class="fielddoc"><p>GIF File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944bae77c07ecca019f141cb8ac6254647d5a" name="ggaf7e72c240d18c9af9200eada2ef2944bae77c07ecca019f141cb8ac6254647d5a"></a>APIFType_EMFFile&#160;</td><td class="fielddoc"><p>Windows Enhanced Metafile </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba675458cf1ee89b57f992ac1188ce8084" name="ggaf7e72c240d18c9af9200eada2ef2944ba675458cf1ee89b57f992ac1188ce8084"></a>APIFType_WMFFile&#160;</td><td class="fielddoc"><p>Windows Metafile </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944baac6db0a25f846f8203cde89bad791173" name="ggaf7e72c240d18c9af9200eada2ef2944baac6db0a25f846f8203cde89bad791173"></a>APIFType_PlanFile800&#160;</td><td class="fielddoc"><p>Archicad 8 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba12fc76ce5f5ee24c98750f0c4514e210" name="ggaf7e72c240d18c9af9200eada2ef2944ba12fc76ce5f5ee24c98750f0c4514e210"></a>APIFType_A_PlanFile800&#160;</td><td class="fielddoc"><p>Archicad 8 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba14ecc9aa398777a0338ff79b9a01e5a4" name="ggaf7e72c240d18c9af9200eada2ef2944ba14ecc9aa398777a0338ff79b9a01e5a4"></a>APIFType_PlanFile810&#160;</td><td class="fielddoc"><p>Archicad 8.1 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba43ef3a636886690e8ddfbbf7523b28ff" name="ggaf7e72c240d18c9af9200eada2ef2944ba43ef3a636886690e8ddfbbf7523b28ff"></a>APIFType_A_PlanFile810&#160;</td><td class="fielddoc"><p>Archicad 8.1 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba2d5245093fcf1ffecc3add5acb187444" name="ggaf7e72c240d18c9af9200eada2ef2944ba2d5245093fcf1ffecc3add5acb187444"></a>APIFType_PlanFile900&#160;</td><td class="fielddoc"><p>Archicad 9.0 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba27c8278334d09d2c40edd49f5a04c072" name="ggaf7e72c240d18c9af9200eada2ef2944ba27c8278334d09d2c40edd49f5a04c072"></a>APIFType_A_PlanFile900&#160;</td><td class="fielddoc"><p>Archicad 9.0 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba558fd849a5cf1e23874fa719f29daf49" name="ggaf7e72c240d18c9af9200eada2ef2944ba558fd849a5cf1e23874fa719f29daf49"></a>APIFType_PlanFile1000&#160;</td><td class="fielddoc"><p>Archicad 10.0 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba52569489fcd1955c435d05fc6b44274d" name="ggaf7e72c240d18c9af9200eada2ef2944ba52569489fcd1955c435d05fc6b44274d"></a>APIFType_A_PlanFile1000&#160;</td><td class="fielddoc"><p>Archicad 10.0 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba3bb8f1264c35241237824fa628893bc4" name="ggaf7e72c240d18c9af9200eada2ef2944ba3bb8f1264c35241237824fa628893bc4"></a>APIFType_PlanFile1100&#160;</td><td class="fielddoc"><p>Archicad 11.0 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba9f88ab6b311b0ebd5281e47ae5262edc" name="ggaf7e72c240d18c9af9200eada2ef2944ba9f88ab6b311b0ebd5281e47ae5262edc"></a>APIFType_A_PlanFile1100&#160;</td><td class="fielddoc"><p>Archicad 11.0 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba1467db0328ac16a4c1f94daae934a3ff" name="ggaf7e72c240d18c9af9200eada2ef2944ba1467db0328ac16a4c1f94daae934a3ff"></a>APIFType_PlanFile1200&#160;</td><td class="fielddoc"><p>Archicad 12.0 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944baf86ae1813a7f7e899da18a2227c038a5" name="ggaf7e72c240d18c9af9200eada2ef2944baf86ae1813a7f7e899da18a2227c038a5"></a>APIFType_A_PlanFile1200&#160;</td><td class="fielddoc"><p>Archicad 12.0 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944baa3f3ca908eb4c11c381bab542c0c376f" name="ggaf7e72c240d18c9af9200eada2ef2944baa3f3ca908eb4c11c381bab542c0c376f"></a>APIFType_IfcFile&#160;</td><td class="fielddoc"><p>IFC File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba8b28fadac42663bd8aaa0776ac82ae38" name="ggaf7e72c240d18c9af9200eada2ef2944ba8b28fadac42663bd8aaa0776ac82ae38"></a>APIFType_PlanFile1300&#160;</td><td class="fielddoc"><p>Archicad 13 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba6e5b6a1065ba7aeb14e6588d7fb40bd0" name="ggaf7e72c240d18c9af9200eada2ef2944ba6e5b6a1065ba7aeb14e6588d7fb40bd0"></a>APIFType_A_PlanFile1300&#160;</td><td class="fielddoc"><p>Archicad 13 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba40de47ddd68d1609afab71afb06c2c42" name="ggaf7e72c240d18c9af9200eada2ef2944ba40de47ddd68d1609afab71afb06c2c42"></a>APIFType_PlanFile1400&#160;</td><td class="fielddoc"><p>Archicad 14 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba329748132348f9b2eb538fe819d4a31c" name="ggaf7e72c240d18c9af9200eada2ef2944ba329748132348f9b2eb538fe819d4a31c"></a>APIFType_A_PlanFile1400&#160;</td><td class="fielddoc"><p>Archicad 14 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba4e54093b644e805c4cd316c69f5a1143" name="ggaf7e72c240d18c9af9200eada2ef2944ba4e54093b644e805c4cd316c69f5a1143"></a>APIFType_PlanFile1500&#160;</td><td class="fielddoc"><p>Archicad 15 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944baeabf78687b1d376d1fcbfe9d9039d17c" name="ggaf7e72c240d18c9af9200eada2ef2944baeabf78687b1d376d1fcbfe9d9039d17c"></a>APIFType_A_PlanFile1500&#160;</td><td class="fielddoc"><p>Archicad 15 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944baf6a4b640394943b1d2cfa01c4d69bf94" name="ggaf7e72c240d18c9af9200eada2ef2944baf6a4b640394943b1d2cfa01c4d69bf94"></a>APIFType_PlanFile1600&#160;</td><td class="fielddoc"><p>Archicad 16 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba0d9eb86a7519c1ad5611a67778056f1f" name="ggaf7e72c240d18c9af9200eada2ef2944ba0d9eb86a7519c1ad5611a67778056f1f"></a>APIFType_A_PlanFile1600&#160;</td><td class="fielddoc"><p>Archicad 16 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba29b5bb2e9aa30b68e010948c2029b67d" name="ggaf7e72c240d18c9af9200eada2ef2944ba29b5bb2e9aa30b68e010948c2029b67d"></a>APIFType_PlanFile1700&#160;</td><td class="fielddoc"><p>Archicad 17 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba08c6abc7cce93c0bc4f6530541aa7e34" name="ggaf7e72c240d18c9af9200eada2ef2944ba08c6abc7cce93c0bc4f6530541aa7e34"></a>APIFType_A_PlanFile1700&#160;</td><td class="fielddoc"><p>Archicad 17 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944bab20fed809f3baa421d2a10f54346b1d6" name="ggaf7e72c240d18c9af9200eada2ef2944bab20fed809f3baa421d2a10f54346b1d6"></a>APIFType_PlanFile1800&#160;</td><td class="fielddoc"><p>Archicad 18 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944baaf1eaadc4840c62d54eb04c6c05134b5" name="ggaf7e72c240d18c9af9200eada2ef2944baaf1eaadc4840c62d54eb04c6c05134b5"></a>APIFType_A_PlanFile1800&#160;</td><td class="fielddoc"><p>Archicad 18 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944bab5668c1fc859ed7091e447e5bbc56010" name="ggaf7e72c240d18c9af9200eada2ef2944bab5668c1fc859ed7091e447e5bbc56010"></a>APIFType_PdfFile&#160;</td><td class="fielddoc"><p>PDF File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba264ba8477732d832cbd4e7949dc58db9" name="ggaf7e72c240d18c9af9200eada2ef2944ba264ba8477732d832cbd4e7949dc58db9"></a>APIFType_PlanFile1900&#160;</td><td class="fielddoc"><p>Archicad 19 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944baf859eb26a7bca3145d0857c10813acd1" name="ggaf7e72c240d18c9af9200eada2ef2944baf859eb26a7bca3145d0857c10813acd1"></a>APIFType_A_PlanFile1900&#160;</td><td class="fielddoc"><p>Archicad 19 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944bac8ef5b3685fa9077c1af803d889afe46" name="ggaf7e72c240d18c9af9200eada2ef2944bac8ef5b3685fa9077c1af803d889afe46"></a>APIFType_PlanFile2000&#160;</td><td class="fielddoc"><p>Archicad 20 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944baea62ddfae8e88816403b972439121f4e" name="ggaf7e72c240d18c9af9200eada2ef2944baea62ddfae8e88816403b972439121f4e"></a>APIFType_A_PlanFile2000&#160;</td><td class="fielddoc"><p>Archicad 20 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba84d591ca9e1a09dfd555f239a3c1abfe" name="ggaf7e72c240d18c9af9200eada2ef2944ba84d591ca9e1a09dfd555f239a3c1abfe"></a>APIFType_PlanFile2100&#160;</td><td class="fielddoc"><p>Archicad 21 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba3a23059ff397d0b9dc323fdc389de493" name="ggaf7e72c240d18c9af9200eada2ef2944ba3a23059ff397d0b9dc323fdc389de493"></a>APIFType_A_PlanFile2100&#160;</td><td class="fielddoc"><p>Archicad 21 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba7076a700f133486aa846f208ef09d6a5" name="ggaf7e72c240d18c9af9200eada2ef2944ba7076a700f133486aa846f208ef09d6a5"></a>APIFType_PlanFile2200&#160;</td><td class="fielddoc"><p>Archicad 22 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba3b91047cc5e01be14170faaf687a5c3d" name="ggaf7e72c240d18c9af9200eada2ef2944ba3b91047cc5e01be14170faaf687a5c3d"></a>APIFType_A_PlanFile2200&#160;</td><td class="fielddoc"><p>Archicad 22 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944bae0a5338d910c515fa37d8ece57f99449" name="ggaf7e72c240d18c9af9200eada2ef2944bae0a5338d910c515fa37d8ece57f99449"></a>APIFType_PlanFile2300&#160;</td><td class="fielddoc"><p>Archicad 23 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba30fd75717df1e84ff560c2a5cacf8537" name="ggaf7e72c240d18c9af9200eada2ef2944ba30fd75717df1e84ff560c2a5cacf8537"></a>APIFType_A_PlanFile2300&#160;</td><td class="fielddoc"><p>Archicad 23 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944bafde0ca5a4d218b101521f2c0edb949bb" name="ggaf7e72c240d18c9af9200eada2ef2944bafde0ca5a4d218b101521f2c0edb949bb"></a>APIFType_PlanFile2400&#160;</td><td class="fielddoc"><p>Archicad 24 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944bafe46be9c1f9676e98054e75b43c46f09" name="ggaf7e72c240d18c9af9200eada2ef2944bafe46be9c1f9676e98054e75b43c46f09"></a>APIFType_A_PlanFile2400&#160;</td><td class="fielddoc"><p>Archicad 24 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944bafc77bc48ae036b8c13b091291461240f" name="ggaf7e72c240d18c9af9200eada2ef2944bafc77bc48ae036b8c13b091291461240f"></a>APIFType_PlanFile2500&#160;</td><td class="fielddoc"><p>Archicad 25 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba502ff05e3127ae60bcc9fa7cac185a41" name="ggaf7e72c240d18c9af9200eada2ef2944ba502ff05e3127ae60bcc9fa7cac185a41"></a>APIFType_A_PlanFile2500&#160;</td><td class="fielddoc"><p>Archicad 25 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba92625d403fb56e09c4c6a6d11453f901" name="ggaf7e72c240d18c9af9200eada2ef2944ba92625d403fb56e09c4c6a6d11453f901"></a>APIFType_PlanFile2600&#160;</td><td class="fielddoc"><p>Archicad 26 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba9d66f5db4378c10602fd6d8390936533" name="ggaf7e72c240d18c9af9200eada2ef2944ba9d66f5db4378c10602fd6d8390936533"></a>APIFType_A_PlanFile2600&#160;</td><td class="fielddoc"><p>Archicad 26 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba2c739b2ef5ca8bc12867dd232876303c" name="ggaf7e72c240d18c9af9200eada2ef2944ba2c739b2ef5ca8bc12867dd232876303c"></a>APIFType_PlanFile2700&#160;</td><td class="fielddoc"><p>Archicad 27 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba0870c6a43390e95b83edff8cc4e716f7" name="ggaf7e72c240d18c9af9200eada2ef2944ba0870c6a43390e95b83edff8cc4e716f7"></a>APIFType_A_PlanFile2700&#160;</td><td class="fielddoc"><p>Archicad 27 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944bac1cdc873971c25797bc016b3d4bde4e3" name="ggaf7e72c240d18c9af9200eada2ef2944bac1cdc873971c25797bc016b3d4bde4e3"></a>APIFType_PlanFile2800&#160;</td><td class="fielddoc"><p>Archicad 28 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba9524c2cc71830148b080ec45e10b5917" name="ggaf7e72c240d18c9af9200eada2ef2944ba9524c2cc71830148b080ec45e10b5917"></a>APIFType_A_PlanFile2800&#160;</td><td class="fielddoc"><p>Archicad 28 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944baab91644eeaf13af334c6ee13d302aa1b" name="ggaf7e72c240d18c9af9200eada2ef2944baab91644eeaf13af334c6ee13d302aa1b"></a>APIFType_PlanFile2900&#160;</td><td class="fielddoc"><p>Archicad 29 Plan File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944ba54db939739a44d07a1812e894b8b8f36" name="ggaf7e72c240d18c9af9200eada2ef2944ba54db939739a44d07a1812e894b8b8f36"></a>APIFType_A_PlanFile2900&#160;</td><td class="fielddoc"><p>Archicad 29 Archive File </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf7e72c240d18c9af9200eada2ef2944baa54314825c65116b2c26d9fd81d29f3c" name="ggaf7e72c240d18c9af9200eada2ef2944baa54314825c65116b2c26d9fd81d29f3c"></a>APIFType_SafFile&#160;</td><td class="fielddoc"><p>SAF File </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -584,6 +766,12 @@ Functions</h2></td></tr>
 <p>Defines type of file format for IFC Export. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 26 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This structure is used only by <a class="el" href="struct_a_p_i___save_pars___ifc.html">API_SavePars_Ifc</a>. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga5f72b045cb3e15c122360326c3f094c8ad8efe364944fd1320ef968fc6e7a012b" name="gga5f72b045cb3e15c122360326c3f094c8ad8efe364944fd1320ef968fc6e7a012b"></a>API_IFC&#160;</td><td class="fielddoc"><p>Defines IFC file format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga5f72b045cb3e15c122360326c3f094c8a57d85a944d60c585f06ffafce89dde22" name="gga5f72b045cb3e15c122360326c3f094c8a57d85a944d60c585f06ffafce89dde22"></a>API_IFCZIP&#160;</td><td class="fielddoc"><p>Defines IFC ZIP file format. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -602,6 +790,50 @@ Functions</h2></td></tr>
 <p>Possible values for notifications on project events. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 26 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>Refer to <a class="el" href="#gacc5ea19d38befe2e1da1d07f51ce2fef">ACAPI_ProjectOperation_CatchProjectEvent</a> function for further details. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca947c3db4033fc235500de01bb255cea7" name="gga53738527de6fe0daccedd7f9cb9ff81ca947c3db4033fc235500de01bb255cea7"></a>APINotify_New&#160;</td><td class="fielddoc"><p>The user chose <b>New</b> from the <b>File</b> menu. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca80c64a432b3612723798505eafcba957" name="gga53738527de6fe0daccedd7f9cb9ff81ca80c64a432b3612723798505eafcba957"></a>APINotify_NewAndReset&#160;</td><td class="fielddoc"><p>The user chose <b>New</b> &amp; Reset from the <b>File</b> menu. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca44bcad20b3de40164bd9609cfb407ad2" name="gga53738527de6fe0daccedd7f9cb9ff81ca44bcad20b3de40164bd9609cfb407ad2"></a>APINotify_Open&#160;</td><td class="fielddoc"><p>The user opened an existing project. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca5061f4a73a860bc7cc6c785a363fac97" name="gga53738527de6fe0daccedd7f9cb9ff81ca5061f4a73a860bc7cc6c785a363fac97"></a>APINotify_PreSave&#160;</td><td class="fielddoc"><p>The user has chosen <b>Save</b> from the <b>File</b> menu; this notification is coming before the actual save is performed, so that you could save some data into the project file. Please try to avoid using this method if not necessary, because it can significantly slow down the file saving process. Rather store the additional data into the project when they actually change. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca1215bd22fe8cb03111c8495dd57688b5" name="gga53738527de6fe0daccedd7f9cb9ff81ca1215bd22fe8cb03111c8495dd57688b5"></a>APINotify_Save&#160;</td><td class="fielddoc"><p>The user has chosen <b>Save</b> from the <b>File</b> menu; the project has already been saved. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca29c0820cf7d6153d31d2e6a0bfab78b5" name="gga53738527de6fe0daccedd7f9cb9ff81ca29c0820cf7d6153d31d2e6a0bfab78b5"></a>APINotify_Close&#160;</td><td class="fielddoc"><p>The user closed the current project. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca93f511732da8001bdda37bbbe94e018a" name="gga53738527de6fe0daccedd7f9cb9ff81ca93f511732da8001bdda37bbbe94e018a"></a>APINotify_Quit&#160;</td><td class="fielddoc"><p>The user chose <b>Quit</b> from the <b>File</b> menu. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81cae2e026851ce5fc3b0bacff4de9d18371" name="gga53738527de6fe0daccedd7f9cb9ff81cae2e026851ce5fc3b0bacff4de9d18371"></a>APINotify_TempSave&#160;</td><td class="fielddoc"><p>The project is about to be autosaved. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca40ab233673c369fe683929fd980737a9" name="gga53738527de6fe0daccedd7f9cb9ff81ca40ab233673c369fe683929fd980737a9"></a>APINotify_SendChanges&#160;</td><td class="fielddoc"><p>The user is about to send changes into the Teamwork project. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81cad0e01ad7e47a3d562e6ac7a9e5b80fc7" name="gga53738527de6fe0daccedd7f9cb9ff81cad0e01ad7e47a3d562e6ac7a9e5b80fc7"></a>APINotify_ReceiveChanges&#160;</td><td class="fielddoc"><p>The user has received the changes from the Teamwork project. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81cafbf0bc4543fd9f8e55acd7c4f80b5012" name="gga53738527de6fe0daccedd7f9cb9ff81cafbf0bc4543fd9f8e55acd7c4f80b5012"></a>APINotify_ChangeProjectDB&#160;</td><td class="fielddoc"><p>The project database changed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca7c74d741ac3a6da2cf9d23b1bf60ca9c" name="gga53738527de6fe0daccedd7f9cb9ff81ca7c74d741ac3a6da2cf9d23b1bf60ca9c"></a>APINotify_ChangeWindow&#160;</td><td class="fielddoc"><p>The current window changed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca86230c4059a918142236507a41da4d81" name="gga53738527de6fe0daccedd7f9cb9ff81ca86230c4059a918142236507a41da4d81"></a>APINotify_ChangeFloor&#160;</td><td class="fielddoc"><p>The user switched to an other floor. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca1e3e99b9a6cf630a599633c2e79770fa" name="gga53738527de6fe0daccedd7f9cb9ff81ca1e3e99b9a6cf630a599633c2e79770fa"></a>APINotify_ChangeLibrary&#160;</td><td class="fielddoc"><p>The loaded libraries were changed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca5dea68ad4bdb3fd723d42e7c7545d6fe" name="gga53738527de6fe0daccedd7f9cb9ff81ca5dea68ad4bdb3fd723d42e7c7545d6fe"></a>APINotify_AllInputFinished&#160;</td><td class="fielddoc"><p>Sent when an input process (open, merge, etc.) is finished. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca91069c374e6d92491e13ea700211cdc8" name="gga53738527de6fe0daccedd7f9cb9ff81ca91069c374e6d92491e13ea700211cdc8"></a>APINotify_UnitChanged&#160;</td><td class="fielddoc"><p>Notifies that the working units or calculation units have changed on Preferences dialogs. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca81a7bd9a4f4cf427457ed71f49bef1f2" name="gga53738527de6fe0daccedd7f9cb9ff81ca81a7bd9a4f4cf427457ed71f49bef1f2"></a>APINotify_SideviewCreated&#160;</td><td class="fielddoc"><p>The section/elevation/interior elevation was generated. The first time its window was opened. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca791dfede7118c34871cfd74209248ec8" name="gga53738527de6fe0daccedd7f9cb9ff81ca791dfede7118c34871cfd74209248ec8"></a>APINotify_SideviewRebuilt&#160;</td><td class="fielddoc"><p>The section/elevation/interior elevation was rebuilt. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca6a777ec39ffd151d4788ef4f0d7a2cfd" name="gga53738527de6fe0daccedd7f9cb9ff81ca6a777ec39ffd151d4788ef4f0d7a2cfd"></a>APINotify_PropertyVisibilityChanged&#160;</td><td class="fielddoc"><p>Notifies that Property visibility has changed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81ca52bafea1c6ff6d070b266a2a5251c43a" name="gga53738527de6fe0daccedd7f9cb9ff81ca52bafea1c6ff6d070b266a2a5251c43a"></a>APINotify_ClassificationVisibilityChanged&#160;</td><td class="fielddoc"><p>Notifies that Classification visibility has changed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga53738527de6fe0daccedd7f9cb9ff81cad83107916acdc97c498d55d6a1af7845" name="gga53738527de6fe0daccedd7f9cb9ff81cad83107916acdc97c498d55d6a1af7845"></a>APINotify_ShowIn3DChanged&#160;</td><td class="fielddoc"><p>This notification is sent when the user has chosen Show Selection in 3D / Show All in 3D / Show stored selection in 3D. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -619,6 +851,20 @@ Functions</h2></td></tr>
 
 <p>Possible values for notifications on Project Navigator events. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>Refer to <a class="el" href="group___notification.html#gaa53eddef261e26c706f32519c939ad11">ACAPI_Notification_CatchViewEvent</a> function for further details. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga70f285687b4cdb6d2ba04490923234ffa0c1105c08e7be65388c15d76260afede" name="gga70f285687b4cdb6d2ba04490923234ffa0c1105c08e7be65388c15d76260afede"></a>APINotifyView_Inserted&#160;</td><td class="fielddoc"><p>A new Project Navigator item was inserted. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga70f285687b4cdb6d2ba04490923234ffab147be5a969505828ef268e885b8ba6a" name="gga70f285687b4cdb6d2ba04490923234ffab147be5a969505828ef268e885b8ba6a"></a>APINotifyView_Modified&#160;</td><td class="fielddoc"><p>A Project Navigator item was modified. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga70f285687b4cdb6d2ba04490923234ffacb0c1fa45243f681bdfee6a98e18600e" name="gga70f285687b4cdb6d2ba04490923234ffacb0c1fa45243f681bdfee6a98e18600e"></a>APINotifyView_Deleted&#160;</td><td class="fielddoc"><p>A Project Navigator item was deleted. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga70f285687b4cdb6d2ba04490923234ffa3ed60b1de922d2f436397471bce7f1eb" name="gga70f285687b4cdb6d2ba04490923234ffa3ed60b1de922d2f436397471bce7f1eb"></a>APINotifyView_Opened&#160;</td><td class="fielddoc"><p>A Project Navigator item was opened. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga70f285687b4cdb6d2ba04490923234ffa71fd52543475fac151a5ab27dc79e9b2" name="gga70f285687b4cdb6d2ba04490923234ffa71fd52543475fac151a5ab27dc79e9b2"></a>APINotifyView_Begin&#160;</td><td class="fielddoc"><p>The begin notification. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga70f285687b4cdb6d2ba04490923234ffa4335131f8aec79b18a2b70eea2340ea4" name="gga70f285687b4cdb6d2ba04490923234ffa4335131f8aec79b18a2b70eea2340ea4"></a>APINotifyView_End&#160;</td><td class="fielddoc"><p>The end notification. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -638,7 +884,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Informs Archicad about the additionally created file during exporting or publishing. Required for handling them with the target file. (E.g. uploading to BIMcloud together.) </p>
+<p>Informs Archicad about the additional file created during exporting or publishing. Required for handling them with the target file. (E.g., uploading to BIMcloud together.) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>[in] The path to the created file. </td></tr>
@@ -646,7 +892,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
 
@@ -692,21 +938,21 @@ Functions</h2></td></tr>
 <div class="line">    <span class="keywordtype">char</span>    msgStr[256];</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">switch</span> (notifID) {</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_New:             CHCopyC (<span class="stringliteral">&quot;APINotify_New&quot;</span>, msgStr);          <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_NewAndReset:     CHCopyC (<span class="stringliteral">&quot;APINotify_NewAndReset&quot;</span>, msgStr);  <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_Open:            CHCopyC (<span class="stringliteral">&quot;APINotify_Open&quot;</span>, msgStr);         <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_PreSave:         CHCopyC (<span class="stringliteral">&quot;APINotify_PreSave&quot;</span>, msgStr);      <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_Save:            CHCopyC (<span class="stringliteral">&quot;APINotify_Save&quot;</span>, msgStr);         <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_Close:           CHCopyC (<span class="stringliteral">&quot;APINotify_Close&quot;</span>, msgStr);        <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_Quit:            CHCopyC (<span class="stringliteral">&quot;APINotify_Quit&quot;</span>, msgStr);         <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#gga53738527de6fe0daccedd7f9cb9ff81ca947c3db4033fc235500de01bb255cea7">APINotify_New</a>:             CHCopyC (<span class="stringliteral">&quot;APINotify_New&quot;</span>, msgStr);          <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#gga53738527de6fe0daccedd7f9cb9ff81ca80c64a432b3612723798505eafcba957">APINotify_NewAndReset</a>:     CHCopyC (<span class="stringliteral">&quot;APINotify_NewAndReset&quot;</span>, msgStr);  <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#gga53738527de6fe0daccedd7f9cb9ff81ca44bcad20b3de40164bd9609cfb407ad2">APINotify_Open</a>:            CHCopyC (<span class="stringliteral">&quot;APINotify_Open&quot;</span>, msgStr);         <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#gga53738527de6fe0daccedd7f9cb9ff81ca5061f4a73a860bc7cc6c785a363fac97">APINotify_PreSave</a>:         CHCopyC (<span class="stringliteral">&quot;APINotify_PreSave&quot;</span>, msgStr);      <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#gga53738527de6fe0daccedd7f9cb9ff81ca1215bd22fe8cb03111c8495dd57688b5">APINotify_Save</a>:            CHCopyC (<span class="stringliteral">&quot;APINotify_Save&quot;</span>, msgStr);         <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#gga53738527de6fe0daccedd7f9cb9ff81ca29c0820cf7d6153d31d2e6a0bfab78b5">APINotify_Close</a>:           CHCopyC (<span class="stringliteral">&quot;APINotify_Close&quot;</span>, msgStr);        <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#gga53738527de6fe0daccedd7f9cb9ff81ca93f511732da8001bdda37bbbe94e018a">APINotify_Quit</a>:            CHCopyC (<span class="stringliteral">&quot;APINotify_Quit&quot;</span>, msgStr);         <span class="keywordflow">break</span>;</div>
 <div class="line"> </div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_SendChanges:     CHCopyC (<span class="stringliteral">&quot;APINotify_SendChanges&quot;</span>, msgStr);      <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_ReceiveChanges:  CHCopyC (<span class="stringliteral">&quot;APINotify_ReceiveChanges&quot;</span>, msgStr);   <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#gga53738527de6fe0daccedd7f9cb9ff81ca40ab233673c369fe683929fd980737a9">APINotify_SendChanges</a>:     CHCopyC (<span class="stringliteral">&quot;APINotify_SendChanges&quot;</span>, msgStr);      <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#gga53738527de6fe0daccedd7f9cb9ff81cad0e01ad7e47a3d562e6ac7a9e5b80fc7">APINotify_ReceiveChanges</a>:  CHCopyC (<span class="stringliteral">&quot;APINotify_ReceiveChanges&quot;</span>, msgStr);   <span class="keywordflow">break</span>;</div>
 <div class="line"> </div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_ChangeProjectDB: CHCopyC (<span class="stringliteral">&quot;APINotify_ChangeProjectDB&quot;</span>, msgStr);  <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_ChangeWindow:    CHCopyC (<span class="stringliteral">&quot;APINotify_ChangeWindow&quot;</span>, msgStr);     <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_ChangeFloor:     CHCopyC (<span class="stringliteral">&quot;APINotify_ChangeFloor&quot;</span>, msgStr);      <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> APINotify_ChangeLibrary:   CHCopyC (<span class="stringliteral">&quot;APINotify_ChangeLibrary&quot;</span>, msgStr);    <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#gga53738527de6fe0daccedd7f9cb9ff81cafbf0bc4543fd9f8e55acd7c4f80b5012">APINotify_ChangeProjectDB</a>: CHCopyC (<span class="stringliteral">&quot;APINotify_ChangeProjectDB&quot;</span>, msgStr);  <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#gga53738527de6fe0daccedd7f9cb9ff81ca7c74d741ac3a6da2cf9d23b1bf60ca9c">APINotify_ChangeWindow</a>:    CHCopyC (<span class="stringliteral">&quot;APINotify_ChangeWindow&quot;</span>, msgStr);     <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#gga53738527de6fe0daccedd7f9cb9ff81ca86230c4059a918142236507a41da4d81">APINotify_ChangeFloor</a>:     CHCopyC (<span class="stringliteral">&quot;APINotify_ChangeFloor&quot;</span>, msgStr);      <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#gga53738527de6fe0daccedd7f9cb9ff81ca1e3e99b9a6cf630a599633c2e79770fa">APINotify_ChangeLibrary</a>:   CHCopyC (<span class="stringliteral">&quot;APINotify_ChangeLibrary&quot;</span>, msgStr);    <span class="keywordflow">break</span>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (msgStr, <span class="keyword">false</span>);</div>
@@ -747,12 +993,12 @@ Functions</h2></td></tr>
 
 <p>Closes the current project window. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_REFUSEDCMD - The command is not allowed to call.</li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_REFUSEDCMD - The command is not allowed to be called.</li>
 <li>APIERR_NOPLAN - No open project. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to perform a Close command in the server application. It cannot be called from notification level; the command is refused if other addons are running. Calling this function may notify other addons on the event. The caller addon does not get any notification. See the Notification Manager for further details. This function performs complete operations, so it cannot be called neither during undoable operations nor during non-undoable commands. See more details on this topic at Command Overview. Not for public usage. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to perform a Close command in the server application. It cannot be called from notification level; the command is refused if other add-ons are running. Calling this function may notify other add-ons of the event. The caller add-on does not get any notification. See the Notification Manager for further details. This function performs complete operations, so it cannot be called during undoable operations or non-undoable commands. See more details on this topic at Command Overview. Not for public use. </dd></dl>
 
 </div>
 </div>
@@ -921,12 +1167,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - newplanPars is nullptr</li>
-<li>APIERR_REFUSEDCMD - the function is called from notification level </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - newProjectPars is nullptr.</li>
+<li>APIERR_REFUSEDCMD - The function is called from notification level. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to perform a New or a New and reset command in the server application. It cannot be called from notification level; the command is refused if other addons are running. Calling this function may notify other addons on the event. The caller addon does not get any notification. See the Notification Manager for further details. This function performs complete operations, so it cannot be called neither during undoable operations nor during non-undoable commands. See more details on this topic at Command Overview. If the plan is not saved, any modifications made will be lost. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to perform a New or New and Reset command in the server application. It cannot be called from notification level; the command is refused if other add-ons are running. Calling this function may notify other add-ons of the event. The caller add-on does not get any notification. See the Notification Manager for further details. This function performs complete operations, so it cannot be called during undoable operations or non-undoable commands. See more details on this topic at Command Overview. If the plan is not saved, any modifications made will be lost. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___new_project_pars.html">API_NewProjectPars</a> newPlanPars {};</div>
 <div class="line">newPlanPars.<a class="code hl_variable" href="struct_a_p_i___new_project_pars.html#ae4bb44927bcc618b8cc2d745654df3df">newAndReset</a> = <span class="keyword">true</span>;</div>
 <div class="line"> </div>
@@ -958,19 +1204,19 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - openPars or openPars-&gt;file is nullptr, or openPars-&gt;file is not a valid location, or openPars-&gt;archiveLib is nullptr if openPars-&gt;libGiven is true</li>
-<li>APIERR_BADID - openPars-&gt;fileTypeID is unknown file type </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - fileOpenPars or fileOpenPars-&gt;file is nullptr, or fileOpenPars-&gt;file is not a valid location, or fileOpenPars-&gt;archiveLib is nullptr if fileOpenPars-&gt;libGiven is true.</li>
+<li>APIERR_BADID - fileOpenPars-&gt;fileTypeID is an unknown file type. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to open an existing project file. It cannot be called from notification level; the command is refused if other addons are running. Calling this function may notify other addons on the event. The caller addon does not get any notification. See the Notification Manager for further details. This function performs complete operations, so it cannot be called neither during undoable operations nor during non-undoable commands. See more details on this topic at Command Overview. If the plan is not saved, any modifications made will be lost. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to open an existing project file. It cannot be called from notification level; the command is refused if other add-ons are running. Calling this function may notify other add-ons of the event. The caller add-on does not get any notification. See the Notification Manager for further details. This function performs complete operations, so it cannot be called during undoable operations or non-undoable commands. See more details on this topic at Command Overview. If the plan is not saved, any modifications made will be lost. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___file_open_pars.html">API_FileOpenPars</a> openPars {};</div>
 <div class="line"> </div>
-<div class="line">openPars.<a class="code hl_variable" href="struct_a_p_i___file_open_pars.html#ab0f9ccb3914755e7831a647f428ff953">fileTypeID</a>     = APIFType_PlanFile;</div>
+<div class="line">openPars.<a class="code hl_variable" href="struct_a_p_i___file_open_pars.html#ab0f9ccb3914755e7831a647f428ff953">fileTypeID</a>     = <a class="code hl_enumvalue" href="#ggaf7e72c240d18c9af9200eada2ef2944babb6df10ce68a1ce3151c5d1a1b8a84e1">APIFType_PlanFile</a>;</div>
 <div class="line">openPars.useStoredLib   = <span class="keyword">true</span>;</div>
 <div class="line"> </div>
 <div class="line">IO::Location folderLoc;</div>
-<div class="line"><a class="code hl_enumeration" href="group___view.html#ga722e36c7b1f8b7bbd4d096e5f4976c7a">API_SpecFolderID</a> specID = API_ApplicationFolderID;</div>
+<div class="line"><a class="code hl_enumeration" href="group___view.html#ga722e36c7b1f8b7bbd4d096e5f4976c7a">API_SpecFolderID</a> specID = <a class="code hl_enumvalue" href="group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aad71b7a392a0392eae2bca50ba8721cd5">API_ApplicationFolderID</a>;</div>
 <div class="line"><a class="code hl_function" href="group___project_setting.html#ga52c214863ff7af9eee913d86791ea72f">ACAPI_ProjectSettings_GetSpecFolder</a> (&amp;specID, &amp;folderLoc);</div>
 <div class="line">folderLoc.AppendToLocal (IO::Name (<span class="stringliteral">&quot;Archicad Examples&quot;</span>));</div>
 <div class="line">folderLoc.AppendToLocal (IO::Name (<span class="stringliteral">&quot;Residential House&quot;</span>));</div>
@@ -1008,7 +1254,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_REFUSEDCMD - The function is called from notification level</li>
 <li>APIERR_NOPLAN - No open project</li>
 <li>APIERR_BADPARS - printPars contains invalid data </li>
@@ -1093,7 +1339,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_REFUSEDCMD - The function is called from notification level.</li>
 <li>APIERR_BADINDEX - The guid in publishPars is invalid.</li>
 <li>APIERR_BADPARS - publishPars is nullptr, or no open project. </li>
@@ -1121,7 +1367,7 @@ Functions</h2></td></tr>
 
 <p>Terminates the server application. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_REFUSEDCMD - the function is called from notification level </li>
 </ul>
 </dd></dl>
@@ -1146,7 +1392,7 @@ Functions</h2></td></tr>
 
 <p>Resets and loads the active libraries. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function is used to perform a Reload Libraries command in the server application. All the active libraries (included the BIMcloud and BIM Server Libraries too) will be reloaded. </dd></dl>
@@ -1171,7 +1417,7 @@ Functions</h2></td></tr>
 <p>Saves the content of the current window in different file formats. </p>
 <dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_REFUSEDCMD - The function is called from notification level, or you are running a demo version of Archicad</li>
 <li>APIERR_READONLY - The plan could not be saved either because it's open in read-only mode, or has never been saved to a file and the fileSavePars is nullptr. </li>
 </ul>
@@ -1204,7 +1450,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_REFUSEDCMD - The function is called from notification level, or you are running a demo version of Archicad</li>
 <li>APIERR_READONLY - The plan could not be saved either because it's open in read-only mode, or has never been saved to a file and the fileSavePars is nullptr. </li>
 </ul>
@@ -1236,18 +1482,18 @@ Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileSavePars</td><td>[in] Parameters of the saved file; optional, if not passed default settings will be used </td></tr>
-    <tr><td class="paramname">formatPars</td><td>[in] Parameters of the requested format. It can be either <a class="el" href="struct_a_p_i___save_pars___archive.html">API_SavePars_Archive</a>, <a class="el" href="struct_a_p_i___save_pars___ifc.html">API_SavePars_Ifc</a>, <code>API_SavePars_Plandump</code>, <a class="el" href="struct_a_p_i___save_pars___object.html">API_SavePars_Object</a>, <a class="el" href="struct_a_p_i___save_pars___picture.html">API_SavePars_Picture</a>, <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a> or an <a class="el" href="struct_a_p_i___save_pars___saf.html">API_SavePars_Saf</a> record. </td></tr>
+    <tr><td class="paramname">fileSavePars</td><td>[in] Parameters of the saved file; optional, if not passed, default settings will be used. </td></tr>
+    <tr><td class="paramname">formatPars</td><td>[in] Parameters of the requested format. It can be either <a class="el" href="struct_a_p_i___save_pars___archive.html">API_SavePars_Archive</a>, <a class="el" href="struct_a_p_i___save_pars___ifc.html">API_SavePars_Ifc</a>, <code>API_SavePars_Plandump</code>, <a class="el" href="struct_a_p_i___save_pars___object.html">API_SavePars_Object</a>, <a class="el" href="struct_a_p_i___save_pars___picture.html">API_SavePars_Picture</a>, <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a>, or an <a class="el" href="struct_a_p_i___save_pars___saf.html">API_SavePars_Saf</a> record. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success</li>
-<li>APIERR_REFUSEDCMD - The function is called from notification level, or you are running a demo version of Archicad</li>
-<li>APIERR_READONLY - The plan could not be saved either because it's open in read-only mode, or has never been saved to a file and the fileSavePars is nullptr. </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_REFUSEDCMD - The function is called from notification level, or you are running a demo version of Archicad.</li>
+<li>APIERR_READONLY - The plan could not be saved either because it's open in read-only mode, or has never been saved to a file and fileSavePars is nullptr. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to save the content of the current window in different file formats. This may change in case of <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a>&gt;. It cannot be called from notification level; the command is refused if other addons are running. Calling this function may notify other addons on the event. The caller addon does not get any notification. See the Notification Manager for further details. It cannot be called in the demo version of Archicad either, because the API tries to mimic the behavior of the host system. This function performs complete operations, so it cannot be called neither during undoable operations nor during non-undoable commands. See more details on this topic at Command Overview. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to save the content of the current window in different file formats. This may change in the case of <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a>. It cannot be called from notification level; the command is refused if other add-ons are running. Calling this function may notify other add-ons of the event. The caller add-on does not get any notification. See the Notification Manager for further details. It cannot be called in the demo version of Archicad either, because the API tries to mimic the behavior of the host system. This function performs complete operations, so it cannot be called during undoable or non-undoable commands. See more details on this topic at Command Overview. </dd></dl>
 
 </div>
 </div>
@@ -1279,14 +1525,14 @@ Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileSavePars</td><td>[in] Parameters of the saved file; optional, if not passed default settings will be used </td></tr>
-    <tr><td class="paramname">formatPars</td><td>[in] Parameters of the requested format. It can be either <a class="el" href="struct_a_p_i___save_pars___archive.html">API_SavePars_Archive</a>, <a class="el" href="struct_a_p_i___save_pars___ifc.html">API_SavePars_Ifc</a>, <code>API_SavePars_Plandump</code>, <a class="el" href="struct_a_p_i___save_pars___object.html">API_SavePars_Object</a>, <a class="el" href="struct_a_p_i___save_pars___picture.html">API_SavePars_Picture</a>, <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a> or an <a class="el" href="struct_a_p_i___save_pars___saf.html">API_SavePars_Saf</a> record. </td></tr>
+    <tr><td class="paramname">fileSavePars</td><td>[in] Parameters of the saved file; optional, if not passed, default settings will be used. </td></tr>
+    <tr><td class="paramname">formatPars</td><td>[in] Parameters of the requested format. It can be either <a class="el" href="struct_a_p_i___save_pars___archive.html">API_SavePars_Archive</a>, <a class="el" href="struct_a_p_i___save_pars___ifc.html">API_SavePars_Ifc</a>, <code>API_SavePars_Plandump</code>, <a class="el" href="struct_a_p_i___save_pars___object.html">API_SavePars_Object</a>, <a class="el" href="struct_a_p_i___save_pars___picture.html">API_SavePars_Picture</a>, <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a>, or an <a class="el" href="struct_a_p_i___save_pars___saf.html">API_SavePars_Saf</a> record. </td></tr>
     <tr><td class="paramname">resultData</td><td>[out] Parameter for output data. Optionally it can be an <a class="el" href="struct_a_p_i___i_f_c_relationship_data.html">API_IFCRelationshipData</a> pointer while saving IFC. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_REFUSEDCMD - The function is called from notification level, or you are running a demo version of Archicad</li>
 <li>APIERR_READONLY - The plan could not be saved either because it's open in read-only mode, or has never been saved to a file and the fileSavePars is nullptr. </li>
 </ul>
@@ -1318,18 +1564,18 @@ Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileSavePars</td><td>[in] Parameters of the saved file; optional, if not passed default settings will be used </td></tr>
-    <tr><td class="paramname">formatPars</td><td>[in] Parameters of the requested format. It can be either <a class="el" href="struct_a_p_i___save_pars___archive.html">API_SavePars_Archive</a>, <a class="el" href="struct_a_p_i___save_pars___ifc.html">API_SavePars_Ifc</a>, <code>API_SavePars_Plandump</code>, <a class="el" href="struct_a_p_i___save_pars___object.html">API_SavePars_Object</a>, <a class="el" href="struct_a_p_i___save_pars___picture.html">API_SavePars_Picture</a>, <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a> or an <a class="el" href="struct_a_p_i___save_pars___saf.html">API_SavePars_Saf</a> record. </td></tr>
+    <tr><td class="paramname">fileSavePars</td><td>[in] Parameters of the saved file; optional, if not passed, default settings will be used. </td></tr>
+    <tr><td class="paramname">formatPars</td><td>[in] Parameters of the requested format. It can be either <a class="el" href="struct_a_p_i___save_pars___archive.html">API_SavePars_Archive</a>, <a class="el" href="struct_a_p_i___save_pars___ifc.html">API_SavePars_Ifc</a>, <code>API_SavePars_Plandump</code>, <a class="el" href="struct_a_p_i___save_pars___object.html">API_SavePars_Object</a>, <a class="el" href="struct_a_p_i___save_pars___picture.html">API_SavePars_Picture</a>, <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a>, or an <a class="el" href="struct_a_p_i___save_pars___saf.html">API_SavePars_Saf</a> record. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success</li>
-<li>APIERR_REFUSEDCMD - The function is called from notification level, or you are running a demo version of Archicad</li>
-<li>APIERR_READONLY - The plan could not be saved either because it's open in read-only mode, or has never been saved to a file and the fileSavePars is nullptr. </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_REFUSEDCMD - The function is called from notification level, or you are running a demo version of Archicad.</li>
+<li>APIERR_READONLY - The plan could not be saved either because it's open in read-only mode, or has never been saved to a file and fileSavePars is nullptr. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to save the content of the current window in different file formats. This may change in case of <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a>&gt;. It cannot be called from notification level; the command is refused if other addons are running. Calling this function may notify other addons on the event. The caller addon does not get any notification. See the Notification Manager for further details. It cannot be called in the demo version of Archicad either, because the API tries to mimic the behavior of the host system. This function performs complete operations, so it cannot be called neither during undoable operations nor during non-undoable commands. See more details on this topic at Command Overview. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to save the content of the current window in different file formats. This may change in the case of <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a>. It cannot be called from notification level; the command is refused if other add-ons are running. Calling this function may notify other add-ons of the event. The caller add-on does not get any notification. See the Notification Manager for further details. It cannot be called in the demo version of Archicad either, because the API tries to mimic the behavior of the host system. This function performs complete operations, so it cannot be called during undoable or non-undoable commands. See more details on this topic at Command Overview. </dd></dl>
 
 </div>
 </div>
@@ -1356,13 +1602,13 @@ Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileSavePars</td><td>[in] Parameters of the saved file; optional, if not passed default settings will be used </td></tr>
-    <tr><td class="paramname">formatPars</td><td>[in] Parameters of the requested format. It can be either <a class="el" href="struct_a_p_i___save_pars___archive.html">API_SavePars_Archive</a>, <a class="el" href="struct_a_p_i___save_pars___ifc.html">API_SavePars_Ifc</a>, <code>API_SavePars_Plandump</code>, <a class="el" href="struct_a_p_i___save_pars___object.html">API_SavePars_Object</a>, <a class="el" href="struct_a_p_i___save_pars___picture.html">API_SavePars_Picture</a>, <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a> or an <a class="el" href="struct_a_p_i___save_pars___saf.html">API_SavePars_Saf</a> record. </td></tr>
+    <tr><td class="paramname">fileSavePars</td><td>[in] Parameters of the saved file; optional, if not passed, default settings will be used. </td></tr>
+    <tr><td class="paramname">formatPars</td><td>[in] Parameters of the requested format. It can be either <a class="el" href="struct_a_p_i___save_pars___archive.html">API_SavePars_Archive</a>, <a class="el" href="struct_a_p_i___save_pars___ifc.html">API_SavePars_Ifc</a>, <code>API_SavePars_Plandump</code>, <a class="el" href="struct_a_p_i___save_pars___object.html">API_SavePars_Object</a>, <a class="el" href="struct_a_p_i___save_pars___picture.html">API_SavePars_Picture</a>, <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a>, or an <a class="el" href="struct_a_p_i___save_pars___saf.html">API_SavePars_Saf</a> record. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_REFUSEDCMD - The function is called from notification level, or you are running a demo version of Archicad</li>
 <li>APIERR_READONLY - The plan could not be saved either because it's open in read-only mode, or has never been saved to a file and the fileSavePars is nullptr. </li>
 </ul>
@@ -1394,13 +1640,13 @@ Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileSavePars</td><td>[in] Parameters of the saved file; optional, if not passed default settings will be used </td></tr>
-    <tr><td class="paramname">formatPars</td><td>[in] Parameters of the requested format. It can be either <a class="el" href="struct_a_p_i___save_pars___archive.html">API_SavePars_Archive</a>, <a class="el" href="struct_a_p_i___save_pars___ifc.html">API_SavePars_Ifc</a>, <code>API_SavePars_Plandump</code>, <a class="el" href="struct_a_p_i___save_pars___object.html">API_SavePars_Object</a>, <a class="el" href="struct_a_p_i___save_pars___picture.html">API_SavePars_Picture</a>, <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a> or an <a class="el" href="struct_a_p_i___save_pars___saf.html">API_SavePars_Saf</a> record. </td></tr>
+    <tr><td class="paramname">fileSavePars</td><td>[in] Parameters of the saved file; optional, if not passed, default settings will be used. </td></tr>
+    <tr><td class="paramname">formatPars</td><td>[in] Parameters of the requested format. It can be either <a class="el" href="struct_a_p_i___save_pars___archive.html">API_SavePars_Archive</a>, <a class="el" href="struct_a_p_i___save_pars___ifc.html">API_SavePars_Ifc</a>, <code>API_SavePars_Plandump</code>, <a class="el" href="struct_a_p_i___save_pars___object.html">API_SavePars_Object</a>, <a class="el" href="struct_a_p_i___save_pars___picture.html">API_SavePars_Picture</a>, <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a>, or an <a class="el" href="struct_a_p_i___save_pars___saf.html">API_SavePars_Saf</a> record. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success</li>
+<li>NoError - The function has completed successfully</li>
 <li>APIERR_REFUSEDCMD - The function is called from notification level, or you are running a demo version of Archicad</li>
 <li>APIERR_READONLY - The plan could not be saved either because it's open in read-only mode, or has never been saved to a file and the fileSavePars is nullptr. </li>
 </ul>
@@ -1410,10 +1656,10 @@ Functions</h2></td></tr>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___save_pars___picture.html">API_SavePars_Picture</a>    pars_pict {};</div>
 <div class="line">GSErrCode               err;</div>
 <div class="line"> </div>
-<div class="line">fsp.fileTypeID = APIFType_TIFFFile;</div>
+<div class="line">fsp.fileTypeID = <a class="code hl_enumvalue" href="#ggaf7e72c240d18c9af9200eada2ef2944ba877bc545cd47dcf9197e8cd483176987">APIFType_TIFFFile</a>;</div>
 <div class="line"> </div>
 <div class="line">IO::Location folderLoc;</div>
-<div class="line"><a class="code hl_enumeration" href="group___view.html#ga722e36c7b1f8b7bbd4d096e5f4976c7a">API_SpecFolderID</a> specID = API_UserDocumentsFolderID;</div>
+<div class="line"><a class="code hl_enumeration" href="group___view.html#ga722e36c7b1f8b7bbd4d096e5f4976c7a">API_SpecFolderID</a> specID = <a class="code hl_enumvalue" href="group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aaf28ae5be847f8119a7128063b9d09ffd">API_UserDocumentsFolderID</a>;</div>
 <div class="line"><a class="code hl_function" href="group___project_setting.html#ga52c214863ff7af9eee913d86791ea72f">ACAPI_ProjectSettings_GetSpecFolder</a> (&amp;specID, &amp;folderLoc);</div>
 <div class="line">fsp.file = <span class="keyword">new</span> IO::Location (folderLoc, IO::Name (<span class="stringliteral">&quot;PictTest.tif&quot;</span>));</div>
 <div class="line"> </div>
@@ -1457,18 +1703,18 @@ Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileSavePars</td><td>[in] Parameters of the saved file; optional, if not passed default settings will be used </td></tr>
-    <tr><td class="paramname">formatPars</td><td>[in] Parameters of the requested format. It can be either <a class="el" href="struct_a_p_i___save_pars___archive.html">API_SavePars_Archive</a>, <a class="el" href="struct_a_p_i___save_pars___ifc.html">API_SavePars_Ifc</a>, <code>API_SavePars_Plandump</code>, <a class="el" href="struct_a_p_i___save_pars___object.html">API_SavePars_Object</a>, <a class="el" href="struct_a_p_i___save_pars___picture.html">API_SavePars_Picture</a>, <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a> or an <a class="el" href="struct_a_p_i___save_pars___saf.html">API_SavePars_Saf</a> record. </td></tr>
+    <tr><td class="paramname">fileSavePars</td><td>[in] Parameters of the saved file; optional, if not passed, default settings will be used. </td></tr>
+    <tr><td class="paramname">formatPars</td><td>[in] Parameters of the requested format. It can be either <a class="el" href="struct_a_p_i___save_pars___archive.html">API_SavePars_Archive</a>, <a class="el" href="struct_a_p_i___save_pars___ifc.html">API_SavePars_Ifc</a>, <code>API_SavePars_Plandump</code>, <a class="el" href="struct_a_p_i___save_pars___object.html">API_SavePars_Object</a>, <a class="el" href="struct_a_p_i___save_pars___picture.html">API_SavePars_Picture</a>, <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a>, or an <a class="el" href="struct_a_p_i___save_pars___saf.html">API_SavePars_Saf</a> record. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success</li>
-<li>APIERR_REFUSEDCMD - The function is called from notification level, or you are running a demo version of Archicad</li>
-<li>APIERR_READONLY - The plan could not be saved either because it's open in read-only mode, or has never been saved to a file and the fileSavePars is nullptr. </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_REFUSEDCMD - The function is called from notification level, or you are running a demo version of Archicad.</li>
+<li>APIERR_READONLY - The plan could not be saved either because it's open in read-only mode, or has never been saved to a file and fileSavePars is nullptr. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to save the content of the current window in different file formats. This may change in case of <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a>&gt;. It cannot be called from notification level; the command is refused if other addons are running. Calling this function may notify other addons on the event. The caller addon does not get any notification. See the Notification Manager for further details. It cannot be called in the demo version of Archicad either, because the API tries to mimic the behavior of the host system. This function performs complete operations, so it cannot be called neither during undoable operations nor during non-undoable commands. See more details on this topic at Command Overview. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to save the content of the current window in different file formats. This may change in the case of <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a>. It cannot be called from notification level; the command is refused if other add-ons are running. Calling this function may notify other add-ons of the event. The caller add-on does not get any notification. See the Notification Manager for further details. It cannot be called in the demo version of Archicad either, because the API tries to mimic the behavior of the host system. This function performs complete operations, so it cannot be called during undoable or non-undoable commands. See more details on this topic at Command Overview. </dd></dl>
 
 </div>
 </div>
@@ -1495,13 +1741,13 @@ Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileSavePars</td><td>[in] Parameters of the saved file; optional, if not passed default settings will be used </td></tr>
-    <tr><td class="paramname">formatPars</td><td>[in] Parameters of the requested format. It can be either <a class="el" href="struct_a_p_i___save_pars___archive.html">API_SavePars_Archive</a>, <a class="el" href="struct_a_p_i___save_pars___ifc.html">API_SavePars_Ifc</a>, <code>API_SavePars_Plandump</code>, <a class="el" href="struct_a_p_i___save_pars___object.html">API_SavePars_Object</a>, <a class="el" href="struct_a_p_i___save_pars___picture.html">API_SavePars_Picture</a>, <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a> or an <a class="el" href="struct_a_p_i___save_pars___saf.html">API_SavePars_Saf</a> record. </td></tr>
+    <tr><td class="paramname">fileSavePars</td><td>[in] Parameters of the saved file; optional, if not passed, default settings will be used. </td></tr>
+    <tr><td class="paramname">formatPars</td><td>[in] Parameters of the requested format. It can be either <a class="el" href="struct_a_p_i___save_pars___archive.html">API_SavePars_Archive</a>, <a class="el" href="struct_a_p_i___save_pars___ifc.html">API_SavePars_Ifc</a>, <code>API_SavePars_Plandump</code>, <a class="el" href="struct_a_p_i___save_pars___object.html">API_SavePars_Object</a>, <a class="el" href="struct_a_p_i___save_pars___picture.html">API_SavePars_Picture</a>, <a class="el" href="struct_a_p_i___save_pars___pdf.html">API_SavePars_Pdf</a>, or an <a class="el" href="struct_a_p_i___save_pars___saf.html">API_SavePars_Saf</a> record. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_REFUSEDCMD - The function is called from notification level, or you are running a demo version of Archicad</li>
 <li>APIERR_READONLY - The plan could not be saved either because it's open in read-only mode, or has never been saved to a file and the fileSavePars is nullptr. </li>
 </ul>
@@ -1538,7 +1784,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADDATABASE - The current database must be floor plan, section/elevation or detail type</li>
 <li>APIERR_BADPARS - The fileSpec parameter is nullptr or the file specified by fileSpec cannot be registered</li>
 <li>APIERR_BADINDEX - There were no valid elements passed in the elemHead parameter</li>

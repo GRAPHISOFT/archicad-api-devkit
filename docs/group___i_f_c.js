@@ -31,7 +31,9 @@ var group___i_f_c =
       [ "AssignObjects", "group___i_f_c.html#gafdb96db02d28c6444bf2da10c4361a5a", null ],
       [ "CreateIfcGroup", "group___i_f_c.html#gaff7d136650438089f3bbf0f2af984311", null ],
       [ "GetIfcRelAssignsToGroup", "group___i_f_c.html#ga0c7e67a8ffd3d521acb2dc84f4a2f006", null ],
+      [ "GetIfcRelReferencedInSpatialStructure", "group___i_f_c.html#ga1c688ee1109f9f854b66731e62b2516d", null ],
       [ "GetIfcRelServicesBuildings", "group___i_f_c.html#ga231d2d22fd1dd18fd9dfdf02cf8d19f5", null ],
+      [ "ReferenceObjects", "group___i_f_c.html#gaa93abfd154dcc12ad7d1a3dc1257eb65", null ],
       [ "ServiceBuildings", "group___i_f_c.html#ga8827c5c383b7e1dafd4cd49660a04093", null ]
     ] ],
     [ "IFCAPI::HookManager", "class_i_f_c_a_p_i_1_1_hook_manager.html", [
@@ -189,6 +191,7 @@ var group___i_f_c =
     [ "IFCAPI::ClassificationReference::GetIdentification", "group___i_f_c.html#ga39ef34370419b086ada632a0de63543e", null ],
     [ "IFCAPI::HookAssignments::GetIfcRelAssignsToGroup", "group___i_f_c.html#ga0c7e67a8ffd3d521acb2dc84f4a2f006", null ],
     [ "IFCAPI::ClassificationReference::GetIfcRelAssociatesClassificationName", "group___i_f_c.html#ga4ced102cd796ea879d5eb1c9f7f5c71d", null ],
+    [ "IFCAPI::HookAssignments::GetIfcRelReferencedInSpatialStructure", "group___i_f_c.html#ga1c688ee1109f9f854b66731e62b2516d", null ],
     [ "IFCAPI::HookAssignments::GetIfcRelServicesBuildings", "group___i_f_c.html#ga231d2d22fd1dd18fd9dfdf02cf8d19f5", null ],
     [ "IFCAPI::ObjectAccessor::GetIFCType", "group___i_f_c.html#gab151065bb6333a1375b9a8b3abec8d35", null ],
     [ "IFCAPI::PropertyListValue::GetListValues", "group___i_f_c.html#ga8dc1d0d0671947d803b098764260509d", null ],
@@ -223,6 +226,7 @@ var group___i_f_c =
     [ "IFCAPI::ObjectID::operator!=", "group___i_f_c.html#gaba029bb2b63d1f74498fb2197cc88722", null ],
     [ "IFCAPI::ObjectID::operator==", "group___i_f_c.html#ga6ad96b07123ded8cc97628cc2cd1ec84", null ],
     [ "IFCAPI::PropertyAccessor::PropertyAccessor", "group___i_f_c.html#ga48fee2e65a3e18c7ba28b3e8c857a678", null ],
+    [ "IFCAPI::HookAssignments::ReferenceObjects", "group___i_f_c.html#gaa93abfd154dcc12ad7d1a3dc1257eb65", null ],
     [ "IFCAPI::HookManager::RegisterAssignmentsHook", "group___i_f_c.html#ga55f126c2fd601225229f07d1bcd63c0f", null ],
     [ "IFCAPI::HookManager::RegisterAttributeHook", "group___i_f_c.html#gaf0e8e482bd4abe1046e95ff5a83f9a8e", null ],
     [ "IFCAPI::HookManager::RegisterClassificationReferenceHook", "group___i_f_c.html#ga38306506e5a1466d3f03a3c3320ccf1d", null ],

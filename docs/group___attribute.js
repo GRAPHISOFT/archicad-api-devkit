@@ -242,6 +242,13 @@ var group___attribute =
       [ "attributeIds", "struct_a_p_i___attribute_folder_content.html#af0d3ca3badd3c49c6550ee994d03cf9a", null ],
       [ "subFolders", "struct_a_p_i___attribute_folder_content.html#adc3f7a33966a431a2569c3321fc732cf", null ]
     ] ],
+    [ "API_AttributeCreationInfo", "struct_a_p_i___attribute_creation_info.html", [
+      [ "creationTime", "struct_a_p_i___attribute_creation_info.html#a8521cf5811a25f0d67f6c64c6d6809f0", null ],
+      [ "creatorUserName", "struct_a_p_i___attribute_creation_info.html#abcc8bcb2a166ede2a80d64a04e02bad4", null ],
+      [ "methodDescription", "struct_a_p_i___attribute_creation_info.html#ad1d1cc63b31e8ebbf60042845858c975", null ],
+      [ "methodID", "struct_a_p_i___attribute_creation_info.html#af5f7ff39588887d2af53a1a4b1520ac3", null ],
+      [ "source", "struct_a_p_i___attribute_creation_info.html#a6584997a532a63a7c90761d1aee43f9f", null ]
+    ] ],
     [ "API_Pen", "struct_a_p_i___pen.html", [
       [ "description", "struct_a_p_i___pen.html#a2665218b7d989aa279ef091cfb74c606", null ],
       [ "index", "struct_a_p_i___pen.html#a824237f13b5083379c64d0e9f5753b9d", null ],
@@ -332,9 +339,9 @@ var group___attribute =
     ] ],
     [ "AC2API_AttrIndex", "group___attribute.html#ga081d684acad3dad4cbefee3b2a258108", null ],
     [ "ACAPI_Attribute_AddClassificationItem", "group___attribute.html#gaaa76f3c67145292c2f2712e33a160714", null ],
-    [ "ACAPI_Attribute_Create", "group___attribute.html#gabff99a54b27c3879c6eb71c15a004391", null ],
+    [ "ACAPI_Attribute_Create", "group___attribute.html#gaef3e440cfe08948765a0f6da87937c6d", null ],
     [ "ACAPI_Attribute_CreateAttributeFolderPicker", "group___attribute.html#gad215ed2646a6981faff2b50612efbdf3", null ],
-    [ "ACAPI_Attribute_CreateExt", "group___attribute.html#gaefcc1320aa6d7c1aafc0db4557a7eebe", null ],
+    [ "ACAPI_Attribute_CreateExt", "group___attribute.html#ga76520929693304344bc348908d45a463", null ],
     [ "ACAPI_Attribute_CreateFolder", "group___attribute.html#gaed5c2a09b6ee66872978a23703a36f64", null ],
     [ "ACAPI_Attribute_Delete", "group___attribute.html#ga9b0bf8d01a22b70620626db460ec40c0", null ],
     [ "ACAPI_Attribute_DeleteFolder", "group___attribute.html#gae380c4969696420d94e098386c2cceb3", null ],
@@ -345,6 +352,7 @@ var group___attribute =
     [ "ACAPI_Attribute_GetAttributesFromProject", "group___attribute.html#gad5a4b7d8eddaa9130bf4767d257ceb55", null ],
     [ "ACAPI_Attribute_GetClassificationInSystem", "group___attribute.html#ga0f30f7383182e00134162e1302def41a", null ],
     [ "ACAPI_Attribute_GetClassificationItems", "group___attribute.html#gab96e96de421d45b5a13ef56bfb5e42bf", null ],
+    [ "ACAPI_Attribute_GetCreationInfo", "group___attribute.html#ga301958ef7f58e945ec38ccd4ebbb1bac", null ],
     [ "ACAPI_Attribute_GetCurrentAttributeSetReader", "group___attribute.html#gad5c8fb97be21472a4d79dd5f8656da9c", null ],
     [ "ACAPI_Attribute_GetCurrPenSet", "group___attribute.html#ga1432b6e4f006fb929d7cbdd1ab91a413", null ],
     [ "ACAPI_Attribute_GetDef", "group___attribute.html#ga103f20d2f6e99293efb0647eff656942", null ],

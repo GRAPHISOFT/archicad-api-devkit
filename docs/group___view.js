@@ -218,19 +218,90 @@ var group___view =
       [ "transparency", "struct_a_p_i___document_from3_d_type.html#a5f9894cee2b2a1e6bc1939b54b6cef09", null ],
       [ "window3DInfo", "struct_a_p_i___document_from3_d_type.html#a2883644e819da287b32970372778a3e1", null ]
     ] ],
-    [ "API_3DCutSurfFills", "group___view.html#ga9c7fa6bd8c037e58c8654f083e8dd1c7", null ],
-    [ "API_3DFilterModeID", "group___view.html#gad396f4d9c8461ca6fca1393977a38af8", null ],
-    [ "API_3DHiddenEdgeVisibility", "group___view.html#ga6c0b2e955b38169d112b06da9122e140", null ],
-    [ "API_3DModelTypeID", "group___view.html#ga66805f1cd199a1f630f1f257ba70d124", null ],
-    [ "API_3DOnCutPlaneVisibility", "group___view.html#ga0b581aa84cc382370a508cb30c7039a1", null ],
-    [ "API_3DUncutSurfaceFillType", "group___view.html#ga1809e9e0b49d0ba2c687e8b6f3dbd548", null ],
-    [ "API_DocumentSourceID", "group___view.html#ga03674898b293de2a24d5eeb57684a02e", null ],
-    [ "API_ShadingContoursID", "group___view.html#gaa6a7b6723827a0babddca16ee17b5a9e", null ],
-    [ "API_ShowGhostType", "group___view.html#ga15f3953f8cf8650eb244aeea51934d74", null ],
-    [ "API_SpecFolderID", "group___view.html#ga722e36c7b1f8b7bbd4d096e5f4976c7a", null ],
-    [ "API_StoryCmdID", "group___view.html#ga573fffee384349f3628b29a607ef30eb", null ],
-    [ "API_VectorShadowID", "group___view.html#ga427cae8932af9393a5f6a1e53c8ad8ca", null ],
-    [ "API_ViewSourceID", "group___view.html#ga970ca11ac90d452ec12352618676223a", null ],
+    [ "API_3DCutSurfFills", "group___view.html#ga9c7fa6bd8c037e58c8654f083e8dd1c7", [
+      [ "API_3DDocumentVectorFilles", "group___view.html#gga9c7fa6bd8c037e58c8654f083e8dd1c7a814b949a9df56e63f56ed6d85e1a4b10", null ],
+      [ "API_3DDocumentUniformMaterial", "group___view.html#gga9c7fa6bd8c037e58c8654f083e8dd1c7a15e3f2c0650334d3195d465a9d20ab78", null ],
+      [ "API_3DDocumentOwnMaterial", "group___view.html#gga9c7fa6bd8c037e58c8654f083e8dd1c7abd05e832d51012fc6b2fe05ce117ffc3", null ],
+      [ "API_3DDocumentOwnShadedMaterial", "group___view.html#gga9c7fa6bd8c037e58c8654f083e8dd1c7a2626c284300c957bcfe505f4f631ace1", null ]
+    ] ],
+    [ "API_3DFilterModeID", "group___view.html#gad396f4d9c8461ca6fca1393977a38af8", [
+      [ "API_FilterByRules", "group___view.html#ggad396f4d9c8461ca6fca1393977a38af8a884f55ed38afb68520ebf2ecfe0c8473", null ],
+      [ "API_FilterBySelection", "group___view.html#ggad396f4d9c8461ca6fca1393977a38af8ad2590b199478dd7fc46956f6023f5ecb", null ],
+      [ "API_FilterByMarqueeAndRules", "group___view.html#ggad396f4d9c8461ca6fca1393977a38af8a431c60af7c41d345546e68f3f2828a77", null ]
+    ] ],
+    [ "API_3DHiddenEdgeVisibility", "group___view.html#ga6c0b2e955b38169d112b06da9122e140", [
+      [ "API_3DDocumentHideHiddenEdges", "group___view.html#gga6c0b2e955b38169d112b06da9122e140a4898e3f3eadd25897a0d068712b48325", null ],
+      [ "API_3DDocumentShowHiddenEdges", "group___view.html#gga6c0b2e955b38169d112b06da9122e140a145574ee67c56130c9e456e76affb34b", null ]
+    ] ],
+    [ "API_3DModelTypeID", "group___view.html#ga66805f1cd199a1f630f1f257ba70d124", [
+      [ "API3DModel_Block", "group___view.html#gga66805f1cd199a1f630f1f257ba70d124a95e0ffdf166048161ec7ffe100ef3aea", null ],
+      [ "API3DModel_WireFrame", "group___view.html#gga66805f1cd199a1f630f1f257ba70d124adfa5cbee6b945c3c0c9eda4d9ab311c5", null ],
+      [ "API3DModel_Hiddenline", "group___view.html#gga66805f1cd199a1f630f1f257ba70d124aa5591a8d4b5e7b718e9b9f6f96aab6b8", null ],
+      [ "API3DModel_Shading", "group___view.html#gga66805f1cd199a1f630f1f257ba70d124a64e7964773985c1299915c82bfa0c6ce", null ]
+    ] ],
+    [ "API_3DOnCutPlaneVisibility", "group___view.html#ga0b581aa84cc382370a508cb30c7039a1", [
+      [ "API_3DDocumentDontShowOnCutPlanes", "group___view.html#gga0b581aa84cc382370a508cb30c7039a1a3632a7ace2e50ac0a4dbf190f40b0dfa", null ],
+      [ "API_3DDocumentShowOnCutPlanes", "group___view.html#gga0b581aa84cc382370a508cb30c7039a1abef6161606562d9ea8fbc9a3d7605954", null ]
+    ] ],
+    [ "API_3DUncutSurfaceFillType", "group___view.html#ga1809e9e0b49d0ba2c687e8b6f3dbd548", [
+      [ "API_3DDocumentPenColor", "group___view.html#gga1809e9e0b49d0ba2c687e8b6f3dbd548a1b71c1986b684f9c64246d420654e85f", null ],
+      [ "API_3DDocumentMaterialColorShaded", "group___view.html#gga1809e9e0b49d0ba2c687e8b6f3dbd548ab2d2cc2b508ad9442e112fa534719459", null ],
+      [ "API_3DDocumentMaterialColorNonShaded", "group___view.html#gga1809e9e0b49d0ba2c687e8b6f3dbd548adbd1936590cf2054f24fae4c33725234", null ]
+    ] ],
+    [ "API_DocumentSourceID", "group___view.html#ga03674898b293de2a24d5eeb57684a02e", [
+      [ "API_DDD", "group___view.html#gga03674898b293de2a24d5eeb57684a02ea8c5cc3cb9c48dd7b2275ad3347efa4fe", null ],
+      [ "API_FloorPlan", "group___view.html#gga03674898b293de2a24d5eeb57684a02ea9ec42d729bcdb518537c410766fdeda7", null ]
+    ] ],
+    [ "API_ShadingContoursID", "group___view.html#gaa6a7b6723827a0babddca16ee17b5a9e", [
+      [ "APIShadContours_Draft", "group___view.html#ggaa6a7b6723827a0babddca16ee17b5a9ea19cbdddf86e45eb33ea0930bd55e003b", null ],
+      [ "APIShadContours_Off", "group___view.html#ggaa6a7b6723827a0babddca16ee17b5a9ea1914d4c845ce5ffb97113fc45fa99202", null ],
+      [ "APIShadContours_Best", "group___view.html#ggaa6a7b6723827a0babddca16ee17b5a9ea2895dc42faaeaccc3ebf4b88476e6ed2", null ]
+    ] ],
+    [ "API_ShowGhostType", "group___view.html#ga15f3953f8cf8650eb244aeea51934d74", [
+      [ "APIGhost_NoFloor", "group___view.html#gga15f3953f8cf8650eb244aeea51934d74a5e99d4451a51dc535f170364e5b5af34", null ],
+      [ "APIGhost_ShowOneFloor", "group___view.html#gga15f3953f8cf8650eb244aeea51934d74a330cce7d738a694f7fc2ec4026da46ba", null ],
+      [ "APIGhost_ShowAboveFloor", "group___view.html#gga15f3953f8cf8650eb244aeea51934d74a121052656af32399adb2b6e47fd42077", null ],
+      [ "APIGhost_ShowBelowFloor", "group___view.html#gga15f3953f8cf8650eb244aeea51934d74ac55a4260dac4e0ca78e64fd6a4d15194", null ],
+      [ "APIGhost_ShowPreviousFloor", "group___view.html#gga15f3953f8cf8650eb244aeea51934d74a639f3729bd088ee7550f4f10d2aa4c80", null ],
+      [ "APIGhost_ShowAllStructure", "group___view.html#gga15f3953f8cf8650eb244aeea51934d74a348f1f43d647897cfe70f47b74ead7ca", null ]
+    ] ],
+    [ "API_SpecFolderID", "group___view.html#ga722e36c7b1f8b7bbd4d096e5f4976c7a", [
+      [ "API_ApplicationPrefsFolderID", "group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aa9fb3be3a99304a9dc7d76f3dec3f03ce", null ],
+      [ "API_GraphisoftPrefsFolderID", "group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aabce80c7b6a121104a81b047a06074a02", null ],
+      [ "API_GraphisoftHomeFolderID", "group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aa5ff88290871e0b25511f491b52b30402", null ],
+      [ "API_CacheFolderID", "group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aab6c1367bcc7b5e3da5e74435ebd33a66", null ],
+      [ "API_DataFolderID", "group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aa1a4209a4cd69de8a4529e9df04424583", null ],
+      [ "API_UserDocumentsFolderID", "group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aaf28ae5be847f8119a7128063b9d09ffd", null ],
+      [ "API_TemporaryFolderID", "group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aaa07852da31a4fed328a9154bc8356ae5", null ],
+      [ "API_ApplicationFolderID", "group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aad71b7a392a0392eae2bca50ba8721cd5", null ],
+      [ "API_DefaultsFolderID", "group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aa4e5df0d01790398c6162bbc1242c7c2b", null ],
+      [ "API_WebObjectsFolderID", "group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aac5f2dd41f895b74ca0d20355fc890d59", null ],
+      [ "API_TemplatesFolderID", "group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aabe70a83a6a4ffed9967b0a090d56406c", null ],
+      [ "API_HelpFolderID", "group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aae33a36537d94a3aec3412a680514be75", null ],
+      [ "API_EmbeddedProjectLibraryFolderID", "group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aa546eb75905b7fa506674cf2d55481b00", null ],
+      [ "API_EmbeddedProjectLibraryHotlinkFolderID", "group___view.html#gga722e36c7b1f8b7bbd4d096e5f4976c7aafb42fe42887b848fdafb7bbc796503e1", null ]
+    ] ],
+    [ "API_StoryCmdID", "group___view.html#ga573fffee384349f3628b29a607ef30eb", [
+      [ "APIStory_GoTo", "group___view.html#gga573fffee384349f3628b29a607ef30ebaf88692d93d4ef5820d9f8af294f6a3a5", null ],
+      [ "APIStory_Delete", "group___view.html#gga573fffee384349f3628b29a607ef30eba05b65faa525e5a5558c06d0a76d136cb", null ],
+      [ "APIStory_InsAbove", "group___view.html#gga573fffee384349f3628b29a607ef30ebaa68d2517781f7cbf1fc5b19b5b580250", null ],
+      [ "APIStory_InsBelow", "group___view.html#gga573fffee384349f3628b29a607ef30eba54b4c1b4394d9ba12fbc27277214e267", null ],
+      [ "APIStory_SetHeight", "group___view.html#gga573fffee384349f3628b29a607ef30eba65c4ef7d53c1049b111b26dbf02e751a", null ],
+      [ "APIStory_Rename", "group___view.html#gga573fffee384349f3628b29a607ef30eba4a9a71baca87975268df10d5e4220bf3", null ],
+      [ "APIStory_SetElevation", "group___view.html#gga573fffee384349f3628b29a607ef30eba367aa598d1dc22e92dd421439c910bb4", null ],
+      [ "APIStory_SetDispOnSections", "group___view.html#gga573fffee384349f3628b29a607ef30eba70c78237faf4bb5553a86f5d41b2e14c", null ]
+    ] ],
+    [ "API_VectorShadowID", "group___view.html#ga427cae8932af9393a5f6a1e53c8ad8ca", [
+      [ "APIVectShad_Off", "group___view.html#gga427cae8932af9393a5f6a1e53c8ad8caaf0061922e6299c4802ffe5ab4bc4fc09", null ],
+      [ "APIVectShad_ContOff_AllSurf", "group___view.html#gga427cae8932af9393a5f6a1e53c8ad8caa6a233dd334026c544237654d0b3ad2f3", null ],
+      [ "APIVectShad_ContOn_AllSurf", "group___view.html#gga427cae8932af9393a5f6a1e53c8ad8caad3598dbd1ca69b42cfd95d95ea4c26f3", null ],
+      [ "APIVectShad_ContOff_OneLevel", "group___view.html#gga427cae8932af9393a5f6a1e53c8ad8caa719e48004e797c20a57cfd7f5d365e4c", null ],
+      [ "APIVectShad_ContOn_OneLevel", "group___view.html#gga427cae8932af9393a5f6a1e53c8ad8caa3b1ae337a2d07ce6b8902d5dddf3dc5b", null ]
+    ] ],
+    [ "API_ViewSourceID", "group___view.html#ga970ca11ac90d452ec12352618676223a", [
+      [ "API_Top", "group___view.html#gga970ca11ac90d452ec12352618676223aaf229c7434af1150476319a4bf3427b0f", null ],
+      [ "API_Bottom", "group___view.html#gga970ca11ac90d452ec12352618676223aaafbb9edf14944dac917373f95c29d528", null ]
+    ] ],
     [ "ACAPI_UserInput_ClearElementHighlight", "group___view.html#gaf30782fd9ce69d04621b9b4dfc0263b8", null ],
     [ "ACAPI_View_Change3DCuttingPlanes", "group___view.html#gaa1d37b8cab2ed6bbe84ad87057b7fa00", null ],
     [ "ACAPI_View_Change3DImageSets", "group___view.html#ga8b502f4efc158f548cd87de5973bf81b", null ],
@@ -252,6 +323,7 @@ var group___view =
     [ "ACAPI_View_Get3DStyle", "group___view.html#gaba811bcdb44b4fd736e131426e92a34f", null ],
     [ "ACAPI_View_Get3DStyleList", "group___view.html#gab864542869e3c7ffd84c7a9030e35fd6", null ],
     [ "ACAPI_View_Get3DWindowSets", "group___view.html#ga60120178a32200b3980b341f38008014", null ],
+    [ "ACAPI_View_GetCurrentImage", "group___view.html#gad421c05baa1d35d77a957dd4ef7a0314", null ],
     [ "ACAPI_View_GetDocumentFrom3DDefaults", "group___view.html#gaa18df99e0451414b90cd69ce905f553c", null ],
     [ "ACAPI_View_GetDocumentFrom3DSettings", "group___view.html#ga6f8688ce42a56fb834d291352c448db6", null ],
     [ "ACAPI_View_GetGhostRecord", "group___view.html#gaf9de9309a78ba74dc422fc9d5bd921de", null ],

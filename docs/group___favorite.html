@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Favorite Management</title>
+<title>Archicad 30 C++ API: Favorite Management</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -160,6 +160,13 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:gac26f03c54ddc3aaec14b8ef5cbd40767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options for handling conflicts while creating and importing favorites.  <a href="#gac26f03c54ddc3aaec14b8ef5cbd40767">More...</a><br /></td></tr>
 <tr class="separator:gac26f03c54ddc3aaec14b8ef5cbd40767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7585680508137e915875ceea5a5e2fa4" id="r_ga7585680508137e915875ceea5a5e2fa4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7585680508137e915875ceea5a5e2fa4">API_FavoriteNameConflictResolutionPolicy</a> { <a class="el" href="#gga7585680508137e915875ceea5a5e2fa4a2fd94d088ce64b11bb4091e3fac0ff30">API_FavoriteError</a>
+, <a class="el" href="#gga7585680508137e915875ceea5a5e2fa4ab3dd5d1345d934c1e78f6b4ecd0392df">API_FavoriteSkip</a>
+, <a class="el" href="#gga7585680508137e915875ceea5a5e2fa4abe45876b8e7eb678b079db94f9344068">API_FavoriteOverwrite</a>
+, <a class="el" href="#gga7585680508137e915875ceea5a5e2fa4a99f4da131569775027182ff89d27dd5b">API_FavoriteAppend</a>
+ }</td></tr>
+<tr class="memdesc:ga7585680508137e915875ceea5a5e2fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolution policy for favorite name conflicts.  <a href="#ga7585680508137e915875ceea5a5e2fa4">More...</a><br /></td></tr>
+<tr class="separator:ga7585680508137e915875ceea5a5e2fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -187,7 +194,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gab2f03072c4cc3e44994c135be57c1759" id="r_gab2f03072c4cc3e44994c135be57c1759"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab2f03072c4cc3e44994c135be57c1759">ACAPI_Favorite_GetPreviewImage</a> (const GS::UniString &amp;name, <a class="el" href="group___element.html#ga25c7f8949218bdc8d17d02075cef2a5a">API_ImageViewID</a> viewType, NewDisplay::NativeImage *nativeImagePtr)</td></tr>
 <tr class="memdesc:gab2f03072c4cc3e44994c135be57c1759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the favorite preview image.  <br /></td></tr>
 <tr class="separator:gab2f03072c4cc3e44994c135be57c1759"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7c3b3bed00d03045742ceebd065d44fd" id="r_ga7c3b3bed00d03045742ceebd065d44fd"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7c3b3bed00d03045742ceebd065d44fd">ACAPI_Favorite_Import</a> (const IO::Location &amp;location, const API_FavoriteFolderHierarchy &amp;targetFolder, bool importFolders, API_FavoriteNameConflictResolutionPolicy conflictPolicy, GS::UniString *firstConflictName=nullptr)</td></tr>
+<tr class="memitem:ga7c3b3bed00d03045742ceebd065d44fd" id="r_ga7c3b3bed00d03045742ceebd065d44fd"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7c3b3bed00d03045742ceebd065d44fd">ACAPI_Favorite_Import</a> (const IO::Location &amp;location, const API_FavoriteFolderHierarchy &amp;targetFolder, bool importFolders, <a class="el" href="#ga7585680508137e915875ceea5a5e2fa4">API_FavoriteNameConflictResolutionPolicy</a> conflictPolicy, GS::UniString *firstConflictName=nullptr)</td></tr>
 <tr class="memdesc:ga7c3b3bed00d03045742ceebd065d44fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imports the contents of a Favorites file or folder into the plan.  <br /></td></tr>
 <tr class="separator:ga7c3b3bed00d03045742ceebd065d44fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga103c8253498ad0385394e7a5941bd725" id="r_ga103c8253498ad0385394e7a5941bd725"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga103c8253498ad0385394e7a5941bd725">ACAPI_Favorite_Read</a> (const IO::Location &amp;location, GS::Array&lt; <a class="el" href="struct_a_p_i___favorite.html">API_Favorite</a> &gt; *favorites)</td></tr>
@@ -200,6 +207,32 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions related to accessing and manipulating the Favorites. </p>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga7585680508137e915875ceea5a5e2fa4" name="ga7585680508137e915875ceea5a5e2fa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7585680508137e915875ceea5a5e2fa4">&#9670;&#160;</a></span>API_FavoriteNameConflictResolutionPolicy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga7585680508137e915875ceea5a5e2fa4">API_FavoriteNameConflictResolutionPolicy</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolution policy for favorite name conflicts. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga7585680508137e915875ceea5a5e2fa4a2fd94d088ce64b11bb4091e3fac0ff30" name="gga7585680508137e915875ceea5a5e2fa4a2fd94d088ce64b11bb4091e3fac0ff30"></a>API_FavoriteError&#160;</td><td class="fielddoc"><p>If one of the imported Favorites already exists in the plan, return with <code>APIERR_NAMEALREADYUSED</code> and set the <b>firstConflictName</b> parameter to the conflicting name </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7585680508137e915875ceea5a5e2fa4ab3dd5d1345d934c1e78f6b4ecd0392df" name="gga7585680508137e915875ceea5a5e2fa4ab3dd5d1345d934c1e78f6b4ecd0392df"></a>API_FavoriteSkip&#160;</td><td class="fielddoc"><p>If an imported Favorite already exists in the plan, keep the old one in the plan, and ignore the imported one. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7585680508137e915875ceea5a5e2fa4abe45876b8e7eb678b079db94f9344068" name="gga7585680508137e915875ceea5a5e2fa4abe45876b8e7eb678b079db94f9344068"></a>API_FavoriteOverwrite&#160;</td><td class="fielddoc"><p>If an imported Favorite already exists in the plan, keep the imported one and delete the old one in the plan. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7585680508137e915875ceea5a5e2fa4a99f4da131569775027182ff89d27dd5b" name="gga7585680508137e915875ceea5a5e2fa4a99f4da131569775027182ff89d27dd5b"></a>API_FavoriteAppend&#160;</td><td class="fielddoc"><p>If an imported Favorite already exists in the plan, generate a new name for the imported one and keep both Favorites. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="gac26f03c54ddc3aaec14b8ef5cbd40767" name="gac26f03c54ddc3aaec14b8ef5cbd40767"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac26f03c54ddc3aaec14b8ef5cbd40767">&#9670;&#160;</a></span>ConflictPolicy</h2>
 
@@ -269,7 +302,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADNAME - Invalid name given (there is no Favorite with the given favorite.name).</li>
 <li>APIERR_GENERAL - The Favorites list entry could not be changed.</li>
 <li>APIERR_BADPARS - Invalid element given (invalid library part ID), or a marker was given with an element that is not an object.</li>
@@ -335,7 +368,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADNAME - Invalid name given.</li>
 <li>APIERR_GENERAL - The new Favorites list entry could not be created.</li>
 <li>APIERR_BADPARS - Invalid element given (invalid library part ID), or a marker was given with an element that is not an object.</li>
@@ -368,7 +401,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADNAME - Invalid name given.</li>
 <li>APIERR_NOTMINE - In Teamwork mode, the given Favorites entry is owned by someone else. </li>
 </ul>
@@ -404,7 +437,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOACCESSRIGHT - The location file or folder couldn't be opened for write. </li>
 </ul>
 </dd></dl>
@@ -434,7 +467,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_GENERAL - The Favorites list could not be retrieved.</li>
 <li>APIERR_BADPARS - The favorite parameter is nullptr.</li>
 <li>APIERR_BADNAME - Invalid name given (there is no Favorite with the given favorite.name). </li>
@@ -485,7 +518,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_GENERAL - The Favorites list could not be retrieved. </li>
 </ul>
 </dd></dl>
@@ -527,7 +560,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - If the given nativeImagePtr is nullptr.</li>
 <li>APIERR_BADNAME - If there is no favorite with the given name. </li>
 </ul>
@@ -559,7 +592,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">API_FavoriteNameConflictResolutionPolicy</td>          <td class="paramname"><span class="paramname"><em>conflictPolicy</em></span>, </td>
+          <td class="paramtype"><a class="el" href="#ga7585680508137e915875ceea5a5e2fa4">API_FavoriteNameConflictResolutionPolicy</a></td>          <td class="paramname"><span class="paramname"><em>conflictPolicy</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -593,7 +626,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_NOACCESSRIGHT - The Favorites list is not editable in a teamwork project.</li>
 <li>APIERR_BADPARS - The location isn't a valid Favorite file or folder path.</li>
 <li>APIERR_NAMEALREADYUSED - The conflictPolicy parameter is <code>API_FavoriteError</code>, and there was a name conflict. </li>
@@ -631,7 +664,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The location isn't a valid Favorite file or folder path. </li>
 </ul>
 </dd></dl>
@@ -667,7 +700,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADNAME - Invalid name given (empty name is invalid, or there is no Favorite with the given oldName).</li>
 <li>APIERR_GENERAL - The Favorites list entry could not be changed.</li>
 <li>APIERR_NAMEALREADYUSED - newName is already used as a Favorite name. </li>

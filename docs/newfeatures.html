@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: New API features in Archicad 29</title>
+<title>Archicad 30 C++ API: New API features in Archicad 30</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -125,141 +125,150 @@ $(function(){initNavTree('newfeatures.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">New API features in Archicad 29</div></div>
+  <div class="headertitle"><div class="title">New API features in Archicad 30</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md55"></a>
-New API features in Archicad 29.0.1</h1>
-<p>This outline summarizes the major new features and changes in the API available with Archicad 29.0.1 (3100).</p>
-<h2><a class="anchor" id="autotoc_md56"></a>
-System requirements changes</h2>
-<ul>
-<li>None</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md57"></a>
-Technical changes</h2>
-<ul>
-<li>Fix ResConv crash when -sc parameter is missing.</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md58"></a>
-New functionality</h2>
-<ul>
-<li>The <code><a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html">ACAPI::MEP::ElementBase</a></code> class includes getters and <code><a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_modifiable_element_base_1_1_modifier.html" title="Modifier of the ModifiableElementBase.">ACAPI::MEP::ModifiableElementBase::Modifier</a></code> includes setters for rotation, reflection, and the A and B parameters of the library (sizes along the X and Y axis).</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md59"></a>
-Modified/new structures</h2>
-<ul>
-<li>None</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md60"></a>
-Modified/new functions</h2>
-<ul>
-<li>None</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md61"></a>
-Deprecated functions and structures</h2>
-<p>These functions and structures are currently available, but they are intended to be removed in the future. They will not receive bug fixes and support.</p>
-<ul>
-<li>None</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md62"></a>
-Deleted functions and structures</h2>
-<ul>
-<li>None</li>
-</ul>
-<hr  />
-<h1><a class="anchor" id="autotoc_md64"></a>
-New API features in Archicad 29.0.0</h1>
-<p>This outline summarizes the major new features and changes in the API available with Archicad 29.0.0 (3000).</p>
-<h2><a class="anchor" id="autotoc_md65"></a>
-System requirements changes</h2>
-<ul>
-<li>None</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md66"></a>
-Technical changes</h2>
-<ul>
-<li>On Windows, we updated the required toolchain version to V143.</li>
-<li>C++20 is required for the compilation.</li>
-</ul>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md66"></a>
+New API features in Archicad 30</h1>
+<p>This outline summarizes the major new features and changes in the API available with Archicad 30.</p>
 <h2><a class="anchor" id="autotoc_md67"></a>
+System requirements changes</h2>
+<h2><a class="anchor" id="autotoc_md68"></a>
+Technical changes</h2>
+<h2><a class="anchor" id="autotoc_md69"></a>
 New functionality</h2>
 <ul>
-<li>Shortcut mechanism for Expand/Collapse operation of the TreeView control has been enhanced.</li>
-<li>Extensive support for <a class="el" href="group___design_options.html">Design Options</a> has been added.</li>
-<li>Enhanced menu integration with <code><a class="el" href="class_a_c_a_p_i_1_1_u_i_1_1_menu_1_1_menu_manager.html" title="A class that contains menu item related functions.">ACAPI::UI::Menu::MenuManager</a></code> and <code><a class="el" href="class_a_c_a_p_i_1_1_u_i_1_1_menu_1_1_menu_item.html" title="MenuItem is a representation of one of this addon&#39;s menu item.">ACAPI::UI::Menu::MenuItem</a></code>, which allows AddOns to read shortcut information and the command's text.</li>
-<li>AddOns can receive notifications of element editings via the <code><a class="el" href="class_a_c_a_p_i_1_1_edit_notification_interface.html" title="EditNotificationInterface is responsible for handling Edit Notifications through API....">ACAPI::EditNotificationInterface</a></code>.</li>
-<li>Notification bubbles can be created with <code><a class="el" href="class_a_c_a_p_i_1_1_u_i_1_1_notification_1_1_notification_bubble_manager.html" title="A class that contains notification bubble related functions.">ACAPI::UI::Notification::NotificationBubbleManager</a></code>.</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md68"></a>
-Modified/new structures</h2>
-<ul>
-<li><code>API_OpeningType</code> and related structures have been removed. You should use <code><a class="el" href="class_a_c_a_p_i_1_1_element_1_1_opening.html">ACAPI::Element::Opening</a></code> and <code><a class="el" href="class_a_c_a_p_i_1_1_element_1_1_opening_default.html" title="The ElementDefault contains the necessary non-geometric data for creating a MEP element.">ACAPI::Element::OpeningDefault</a></code> instead.</li>
-<li>New data member <code>isAutoOnStoryVisibility</code> has been added to <code><a class="el" href="struct_a_p_i___slab_type.html" title="Represents a slab element.">API_SlabType</a></code>.</li>
-<li>New enum values were introduced to <code>APIMenuCodeID</code>: <code>MenuCode_RoofExtras</code>, <code>MenuCode_Design</code>.</li>
-<li><code><a class="el" href="struct_a_p_i___arrow_data.html" title="Describes the arrows at line ends.">API_ArrowData</a></code> structure has been changed to contain only the data of one arrow. The <code>begArrow</code> and <code>endArrow</code> boolean values have been replaced by an <code>arrowVisibility</code> boolean.</li>
-<li>Structures that can have two arrowheads (<code><a class="el" href="struct_a_p_i___line_type.html" title="Represents a 2D line.">API_LineType</a></code>, <code><a class="el" href="struct_a_p_i___poly_line_type.html" title="Represents a 2D polyline.">API_PolyLineType</a></code>, <code><a class="el" href="struct_a_p_i___arc_type.html" title="Represents an elliptical or circular arc.">API_ArcType</a></code> and <code><a class="el" href="struct_a_p_i___spline_type.html" title="Represents a cubic or Bezier-spline.">API_SplineType</a></code>) now contain two <code><a class="el" href="struct_a_p_i___arrow_data.html" title="Describes the arrows at line ends.">API_ArrowData</a></code> attributes (one for each end of the line).</li>
-<li>Structures that can have two arrowheads (<code><a class="el" href="struct_a_p_i___line_type.html" title="Represents a 2D line.">API_LineType</a></code>, <code><a class="el" href="struct_a_p_i___poly_line_type.html" title="Represents a 2D polyline.">API_PolyLineType</a></code>, <code><a class="el" href="struct_a_p_i___arc_type.html" title="Represents an elliptical or circular arc.">API_ArcType</a></code> and <code><a class="el" href="struct_a_p_i___spline_type.html" title="Represents a cubic or Bezier-spline.">API_SplineType</a></code>) contain a new boolean <code>linkedArrowAttributes</code> variable. Setting this to true links the size and pen attributes of the two arrowheads. When set to true, the size and pen of the <code>endArrowData</code> must be equal to the size and pen of <code>startArrowData</code>, otherwise <code>APIERR_BADPARS</code> will be thrown.</li>
-<li>New enum value was introduced to <code>API_ApplicationTypeID</code>: <code>APIAppl_MEPDesignerID</code>.</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md69"></a>
-Modified/new functions</h2>
-<ul>
-<li><code><a class="el" href="group___i_f_c.html#ga5462946de58e3496373a9b0a348e9e36" title="Create a default IFC value based on the IFC type.">IFCAPI::PropertyBuilder::CreateDefaultValue</a></code> can create a default <code><a class="el" href="class_i_f_c_a_p_i_1_1_value.html" title="Represent an IFC value.">IFCAPI::Value</a></code> based on a sole <code><a class="el" href="group___i_f_c.html#ga89bcf030e278a09e9f6754bbd5191ed2" title="Type definition for IFC type.">IFCAPI::IFCType</a></code>. With this you can also query the corresponding data type to use in an <code><a class="el" href="group___i_f_c.html#ga000ae17f480b51df392af63737b551d7" title="Type definition to represent a value.">IFCAPI::AnyValue</a></code> for that IFCType.</li>
-<li><code><a class="el" href="class_a_c_a_p_i_1_1_license_info_1_1_product_version_info.html" title="ProductVersionInfo is the central point of the product-related informations.">ACAPI::LicenseInfo::ProductVersionInfo</a></code> changes:<ul>
-<li>New function named <code>GetProductName</code></li>
-<li>New function named <code>GetGSProductType</code></li>
-<li><code>GetVersionString</code> renamed to <code>GetAppVersionString</code></li>
-<li><code>GetVersionNum1</code> renamed to <code>GetMainVersionString</code></li>
-<li><code>GetVersionNum2</code> renamed to <code>GetUpdateVersionString</code></li>
-<li><code>GetVersionNum3</code> renamed to <code>GetHotfixVersionString</code></li>
+<li>The witness extension lines of dimensions can now have different pen and line type from the dimension line. These attributes are stored in the <code><a class="el" href="struct_a_p_i___dim_elem.html" title="Describes a dimension element.">API_DimElem</a></code> structure, and can be set through the following variables:<ul>
+<li><code>witnessOverrideExtension</code>: enable the use of overridden attributes</li>
+<li><code>witnessExtensionLinePen</code>: the pen of the witness extension line</li>
+<li><code>witnessExtensionLineType</code>: the line type of the witness extension line</li>
 </ul>
 </li>
-<li><code>ACAPI_View_ModelToScreen</code> for 3D to 2D coordinate conversion.</li>
-<li>Two different arrowheads can be set for line types (<code><a class="el" href="struct_a_p_i___line_type.html" title="Represents a 2D line.">API_LineType</a></code>, <code><a class="el" href="struct_a_p_i___poly_line_type.html" title="Represents a 2D polyline.">API_PolyLineType</a></code>, <code><a class="el" href="struct_a_p_i___arc_type.html" title="Represents an elliptical or circular arc.">API_ArcType</a></code> and <code><a class="el" href="struct_a_p_i___spline_type.html" title="Represents a cubic or Bezier-spline.">API_SplineType</a></code>) with t- Two different arrowheads can be set for line types (<code><a class="el" href="struct_a_p_i___line_type.html" title="Represents a 2D line.">API_LineType</a></code>, <code><a class="el" href="struct_a_p_i___poly_line_type.html" title="Represents a 2D polyline.">API_PolyLineType</a></code>, <code><a class="el" href="struct_a_p_i___arc_type.html" title="Represents an elliptical or circular arc.">API_ArcType</a></code> and <code><a class="el" href="struct_a_p_i___spline_type.html" title="Represents a cubic or Bezier-spline.">API_SplineType</a></code>) with the help of their <code><a class="el" href="struct_a_p_i___arrow_data.html" title="Describes the arrows at line ends.">API_ArrowData</a></code> structure attributes (<code>startArrowData</code> and <code>endArrowData</code>).</li>
-<li><code>ACAPI_Element_ChangeMorphEdgeType</code> can be used to change the edge type of all edges of a morph element.</li>
-<li>Favorite based element creation for MEP Elements</li>
-<li>Possibility to check for available domains (<code><a class="el" href="group___a_p_i_infrastructure.html#ga76a7915df6ec2bb273b1eda0e300e6cf" title="Checks whether the domain is available for the running application.">ACAPI::IsDomainAvailable</a></code>) in the running product. Available means that it is fully supported and usable. For ex. Archicad with a Studio license does not support MEP.</li>
-<li>New markup-related function: <code>ACAPI_Markup_ImportFromPDF</code>, and the possible options: <code>ACAPI_Markup_PDFImportOptions</code></li>
-<li>Hierarchical editing function has been split it into individual checks, and added generic <code>ACAPI_HierarchicalEditing_IsInEditMode</code></li>
-<li>Changed all edit mode functions to use references: CurtainWall, Stair, Beam, Column editing now use <code>bool&amp;</code> instead of <code>bool*</code></li>
-<li>Added <code>ACAPI_Command_ExecuteJSONRequest</code> for JSON-based command execution</li>
-<li><code><a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element.html" title="The RoutingElement can contain Routing Segments and Routing Nodes.">ACAPI::MEP::RoutingElement</a></code> and <code><a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default.html" title="The RoutingElementDefault contains the necessary non-geometric data for creating a Routing element.">ACAPI::MEP::RoutingElementDefault</a></code> changes:<ul>
-<li>New function name <code>GetFloorPlanDisplayOption</code></li>
-<li>New function name <code>GetCutPlanePosition</code></li>
-<li>New function name <code>GetShowProjection</code></li>
-<li>New function name <code>GetOnStoryVisibility</code></li>
+<li>The default values of these attributes are stored in the <code><a class="el" href="struct_a_p_i___dimension_type.html" title="Describes a (linear) dimension.">API_DimensionType</a></code> structure, in the <code>defWitnessOverrideExtension</code>, <code>defWitnessExtensionLinePen</code>, and <code>defWitnessExtensionLineType</code> variables.</li>
+<li>A gap can now be inserted between witness lines and their extension lines. This can be set using the following variables found in the <code><a class="el" href="struct_a_p_i___dim_elem.html" title="Describes a dimension element.">API_DimElem</a></code> structure:<ul>
+<li><code>witnessExtensionGap</code>: enable the use of gap</li>
+<li><code>witnessExtensionGapSize</code>: the size of the gap between the witness line and the extension line</li>
 </ul>
 </li>
-<li><code><a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_1_1_modifier.html" title="Modifier of the RoutingElement.">ACAPI::MEP::RoutingElement::Modifier</a></code> and <code><a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_routing_element_default_1_1_modifier.html" title="Modifier of the RoutingElementDefault.">ACAPI::MEP::RoutingElementDefault::Modifier</a></code> changes:<ul>
-<li>New function name <code>SetFloorPlanDisplayOption</code></li>
-<li>New function name <code>SetCutPlanePosition</code></li>
-<li>New function name <code>SetShowProjection</code></li>
-<li>New function name <code>SetOnStoryVisibility</code></li>
+<li>The default values of these attributes are stored in the <code><a class="el" href="struct_a_p_i___dimension_type.html" title="Describes a (linear) dimension.">API_DimensionType</a></code> structure, in the <code>defWitnessExtensionGap</code> and <code>defWitnessExtensionGapSize</code> variables.</li>
+<li>A new <a class="el" href="httpclientmodule.html">HTTPClient module</a> has been released for efficient and compact coding HTTP requests.</li>
+<li>A new view image export API has been added:<ul>
+<li><code>ACAPI_View_GetCurrentImage (NewDisplay::NativeImage&amp;, const API_ImageSource&amp;)</code> can retrieve image data from the current 3D or rendering view.</li>
+<li><code>API_ImageSource</code> enum has been introduced with image source options for 3D window and rendering window.</li>
+</ul>
+</li>
+<li>The <code>ACAPI.hpp</code> umbrella header now includes the MEP electrical API headers for electrical circuits, devices, device defaults, panels, panel defaults, and project settings.</li>
+<li>A new Project Info management API has been added, allowing add-ons to manage Project Info groups and fields:<ul>
+<li>Groups can be created, renamed, deleted, reordered, and enumerated.</li>
+<li>Fields can be created, renamed, deleted, moved between groups, and their values can be read and written.</li>
+<li>Some fields are fixed (built-in) and cannot be renamed or deleted. Some fields have subfields whose values contribute to a parent field's calculated value; subfields cannot be moved independently, and the parent field's value cannot be set directly.</li>
+<li>All modification functions respect Teamwork permissions for Project Info.</li>
 </ul>
 </li>
 </ul>
 <h2><a class="anchor" id="autotoc_md70"></a>
+Modified/new structures</h2>
+<ul>
+<li><code><a class="el" href="struct_a_p_i___dimension_type.html" title="Describes a (linear) dimension.">API_DimensionType</a></code> structure now has two new boolean variables: <code>clipDimensionLine</code> and <code>clipWitnessLine</code>, which replace the old <code>clipOtherSide</code> variable, and allow for separate line ending settings for the dimension line and witness lines.</li>
+<li><code><a class="el" href="struct_a_p_i___add_on_info.html" title="Textual description of the add-on.">API_AddOnInfo</a></code> structure now has a new <code>version</code> member, which can be used for displaying add-on version string on the info panel of the Add-On Manager dialog.</li>
+<li><code>API_PropertyMeasureType</code> enum now has been extended with additional types, such as attribute index references, for better distinction of built-in properties.</li>
+<li><code>API_TextFrameShapeTypeID</code> enum now has additional shape options: <code>API_TextFrameShapeType_Diamond</code>, <code>API_TextFrameShapeType_Pointed_Rectangle90</code>, <code>API_TextFrameShapeType_Pointed_Rectangle120</code>, <code>API_TextFrameShapeType_Hexagon</code>, and <code>API_TextFrameShapeType_Hexagon_Rotated</code>.</li>
+<li><code>API_CollisionElemResult</code> member has been renamed from <code>hasClearenceCollision</code> to <code>hasClearanceCollision</code>.</li>
+<li>New <code><a class="el" href="struct_a_p_i___attribute_creation_info.html" title="Creation metadata attached to an attribute.">API_AttributeCreationInfo</a></code> structure holds creation metadata for an attribute: <code>methodID</code> (<code>API_AttrCreationMethod</code> enum), <code>methodDescription</code>, <code>source</code>, <code>creatorUserName</code>, and creation timestamp.</li>
+<li>New <code>API_AttrCreationMethod</code> enum identifies how an attribute was created (e.g. <code>APIAttrCreationMethod_AddOn</code>, <code>APIAttrCreationMethod_Merge</code>, <code>APIAttrCreationMethod_Import</code>, etc.).</li>
+<li><code>API_TWAccessRights</code> enum has a new <code>APICreationInfoClear</code> value, which identifies the Teamwork permission to clear attribute creation information.</li>
+<li>New <code>API_MenuItemDisabledByHostApplication</code> flag (<code>0x00000004</code>) distinguishes menu items disabled by the host application from those disabled by an add-on.</li>
+<li><code>API_SurfaceTypeID</code> enum value <code>APISurfaceType_ColumnFisrt</code> has been renamed to <code>APISurfaceType_ColumnFirst</code> to correct a typo.</li>
+<li>Publisher callback types and the <code>PublishFormatMethods</code> structure have changed:<ul>
+<li><code>SaveProc</code> has been replaced by <code>SaveWithOptionProc</code>, and the <code>saveProc</code> member has been replaced by <code>saveWithOptionProc</code>.</li>
+<li>New callback types <code>SaveWithTranslatorProc</code>, <code>SaveTranslatorProc</code>, and <code>SaveInitialOptionProc</code> support translator-based saving, translator selection, and initial save options.</li>
+<li>New members <code>saveWithTranslatorProc</code>, <code>saveTranslatorProc</code>, and <code>saveInitialOptionProc</code> store these callbacks.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md71"></a>
+Modified/new functions</h2>
+<ul>
+<li><code><a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_port_base.html" title="The Port is associated to an element and it represents a point between elements.">ACAPI::MEP::PortBase</a></code> changes:<ul>
+<li>New function named <code>GetElemId</code>: returns the Unique identifier of the PortBase object.</li>
+</ul>
+</li>
+<li><code><a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html">ACAPI::MEP::ElementBase</a></code> changes:<ul>
+<li>New function named <code>GetPorts</code>: queries MEP Elements' ports without having to get the ID first.</li>
+</ul>
+</li>
+<li><code><a class="el" href="class_a_c_a_p_i_1_1_m_e_p_1_1_element_default.html" title="The ElementDefault contains the necessary non-geometric data for creating a MEP element.">ACAPI::MEP::ElementDefault</a></code> changes:<ul>
+<li>New function named <code>GetVentilationPortDefaults</code>: collects every ventilation port default for a given element default.</li>
+<li>New function named <code>GetPipingPortDefaults</code>: collects every piping port default for a given element default.</li>
+<li>New function named <code>GetCableCarrierPortDefaults</code>: collects every cable carrier port default for a given element default.</li>
+<li>New function named <code>GetPortDefaults</code>: collects every port default for a given element default, useful when you don't care about the domains of the ports.</li>
+</ul>
+</li>
+<li><code>ACAPI_Element_GetPropertyObjects</code> parameter changes: now using references and <code>std::vector&amp;</code> instead of pointers and C arrays, the <code>Int32*</code> was removed, the new signature is <code>const <a class="el" href="struct_a_p_i___elem___head.html" title="General element header for element types.">API_Elem_Head</a>&amp; , std::vector&lt;<a class="el" href="struct_a_p_i___property_object_ref_type.html" title="The property object reference record.">API_PropertyObjectRefType</a>&gt;&amp;</code>.</li>
+<li><code>ACAPI_ElementLink_GetLinkedPropertyObjects</code> parameter changes: now using references and <code>std::vector&amp;</code> instead of pointers and C arrays, the new signature is <code>const <a class="el" href="struct_a_p_i___elem___head.html" title="General element header for element types.">API_Elem_Head</a>&amp;, bool&amp;, Int32&amp;, std::vector&lt;Int32&gt;&amp;</code> (the last <code>Int32*</code> was removed).</li>
+<li><code>ACAPI_ElementLink_GetLinkedPropertyObjects</code> and <code>ACAPI_ElementLink_SetLinkedPropertyObjects</code> functions: the parameter <code>inviduallyLibInd</code> (typo) has been renamed to <code>individuallyLibInd</code> in both the pointer-based overload and the new reference-based overload.</li>
+<li><code>ACAPI_LibraryManagement_UsableGDLString</code> function: the <code>str</code> parameter type has been changed from <code>const char*</code> to <code>const GS::UniString&amp;</code>.</li>
+<li><code>ACAPI_GeoLocation_CalcSunOnPlace</code> function: the <code>placeInfo</code> parameter type has been changed from <code>API_PlaceInfo*</code> to <code><a class="el" href="struct_a_p_i___place_info.html" title="The current location, date and sun parameters.">API_PlaceInfo</a>&amp;</code>.</li>
+<li><code>ACAPI_Element_GetElemTypeName</code> returns the name of element type variation in case of subtype tools, rather than the parent element type.</li>
+<li><code><a class="el" href="class_a_p_i___i_view3_d_settings_event_handler.html" title="The base class you need to inherit from in case you want to handle view 3D settings events.">API_IView3DSettingsEventHandler</a></code> has been introduced for being able to get notified on 3D view settings changes:<ul>
+<li><code>View3DSettingsChanged</code> is called when 3D projection, filter and cut, or window settings change.</li>
+<li><code>View3DSettingsChangedInNavigation</code> is called during 3D navigation to track camera setting changes.</li>
+<li>Avoid complex operations in these callbacks, as they can cause significant slowdowns.</li>
+<li><code>API_IACEventNotifier</code> has a new pure virtual function, <code>NotifyView3DSettingsEvent</code>, for dispatching these notifications. Implementations of this interface must implement the new function.</li>
+</ul>
+</li>
+<li><code>ACAPI_Attribute_GetCreationInfo</code> function: new function that retrieves creation metadata (<code><a class="el" href="struct_a_p_i___attribute_creation_info.html" title="Creation metadata attached to an attribute.">API_AttributeCreationInfo</a></code>) for an attribute identified by <code>API_AttrTypeID</code> and <code><a class="el" href="class_a_p_i___attribute_index.html" title="Index reference to an attribute.">API_AttributeIndex</a></code>, returned via <code>std::optional&lt;<a class="el" href="struct_a_p_i___attribute_creation_info.html" title="Creation metadata attached to an attribute.">API_AttributeCreationInfo</a>&gt;&amp;</code>.</li>
+<li><code>ACAPI_Attribute_Create</code> and <code>ACAPI_Attribute_CreateExt</code> functions: two new optional parameters have been added: <code>API_AttrCreationMethod creationMethod</code> (defaults to <code>APIAttrCreationMethod_AddOn</code>) and <code>const GS::UniString&amp; source</code> (defaults to empty), allowing callers to specify how and from where the attribute originates.</li>
+<li><code>ACAPI_AutoText_CreateAnAutoText</code> function: the second parameter has been renamed from <code>uiKey</code> to <code>name</code>.</li>
+<li>Publisher API changes:<ul>
+<li><code>ACAPI_AddOnIntegration_InstallPublisherSaveMethod</code> has been replaced by separate save registration functions.</li>
+<li>New <code>ACAPI_AddOnIntegration_InstallPublisherSaveWithOptionMethod</code> function can register save callback with options.</li>
+<li>New <code>ACAPI_AddOnIntegration_InstallPublisherSaveWithTranslatorMethod</code> function can register save callback with selected translator.</li>
+<li>New <code>ACAPI_AddOnIntegration_InstallPublisherSaveTranslator</code> function can register translator dialog callback.</li>
+<li>New <code>ACAPI_AddOnIntegration_InstallPublisherSaveInitialOption</code> function can register initial options callback.</li>
+<li>The <code>DefaultTranslatorGetterProc</code> callback parameter has been renamed from <code>def</code> to <code>translator</code>, without changing its type.</li>
+</ul>
+</li>
+<li>New Graphical Override API functions for querying and applying the actually applied, visible override combination:<ul>
+<li>New function named <code>ACAPI_GraphicalOverride_GetActualOverrideCombination</code>: retrieves the override combination currently applied to the active window.</li>
+<li>New function named <code>ACAPI_GraphicalOverride_SetActualOverrideCombination</code>: applies an override combination to the active window.</li>
+</ul>
+</li>
+<li>New Project Info API functions:<ul>
+<li>New function named <code>ACAPI_ProjectInfo_GetGroups</code>: retrieves the GUIDs of all ProjectInfo groups in order.</li>
+<li>New function named <code>ACAPI_ProjectInfo_GetGroupName</code>: retrieves the name of a ProjectInfo group by its GUID.</li>
+<li>New function named <code>ACAPI_ProjectInfo_CreateGroup</code>: creates a new ProjectInfo group with the given name. Returns <code>APIERR_NAMEALREADYUSED</code> if the name is taken, <code>APIERR_NOACCESSRIGHT</code> if the user lacks Teamwork permission.</li>
+<li>New function named <code>ACAPI_ProjectInfo_RenameGroup</code>: renames an existing ProjectInfo group. Returns <code>APIERR_NAMEALREADYUSED</code> if the new name is taken.</li>
+<li>New function named <code>ACAPI_ProjectInfo_DeleteGroup</code>: deletes a ProjectInfo group. Returns <code>APIERR_REFUSEDPAR</code> if the group contains fixed fields.</li>
+<li>New function named <code>ACAPI_ProjectInfo_MoveGroup</code>: moves a group to a new position. Pass <code>std::nullopt</code> for <code>beforeGroupGuid</code> to move to the end.</li>
+<li>New function named <code>ACAPI_ProjectInfo_GetFields</code>: retrieves the GUIDs of all fields in a group, including subfields.</li>
+<li>New function named <code>ACAPI_ProjectInfo_GetField</code>: retrieves the name and value of a field.</li>
+<li>New function named <code>ACAPI_ProjectInfo_CreateField</code>: creates a new custom field in a group. Returns <code>APIERR_NAMEALREADYUSED</code> if the name is taken.</li>
+<li>New function named <code>ACAPI_ProjectInfo_RenameField</code>: renames a custom field. Returns <code>APIERR_REFUSEDPAR</code> for fixed (built-in) fields.</li>
+<li>New function named <code>ACAPI_ProjectInfo_SetFieldValue</code>: sets the value of a field. Returns <code>APIERR_REFUSEDPAR</code> if the field has subfields (its value is calculated automatically).</li>
+<li>New function named <code>ACAPI_ProjectInfo_DeleteField</code>: deletes a custom field. Returns <code>APIERR_REFUSEDPAR</code> for fixed (built-in) fields.</li>
+<li>New function named <code>ACAPI_ProjectInfo_MoveField</code>: moves a field to a new position, possibly in a different group. Returns <code>APIERR_REFUSEDPAR</code> for subfields. Pass <code>std::nullopt</code> for <code>beforeFieldGuid</code> to move to the end.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md72"></a>
 Deprecated functions and structures</h2>
 <p>These functions and structures are currently available, but they are intended to be removed in the future. They will not receive bug fixes and support.</p>
 <ul>
-<li>None</li>
+<li>The CommunicationClient, CommunicationCommon and HTTP modules are not supported, considered as deprecated. Use the <a class="el" href="httpclientmodule.html">HTTPClient module</a> module instead.</li>
+<li><code>ACAPI_GeoLocation_CalcSunOnPlace (API_PlaceInfo*)</code> is deprecated, use <code>ACAPI_GeoLocation_CalcSunOnPlace (<a class="el" href="struct_a_p_i___place_info.html" title="The current location, date and sun parameters.">API_PlaceInfo</a>&amp;)</code>.</li>
+<li>Pointer-based overloads of <code>ACAPI_Element_GetPropertyObjects</code> and <code>ACAPI_ElementLink_GetLinkedPropertyObjects</code> are deprecated, use the new reference + <code>std::vector</code> overloads.</li>
+<li><code>ACAPI_AutoText_CreateAnAutoText</code> is deprecated, use <code>ACAPI_ProjectInfo_CreateField</code> instead.</li>
+<li><code>ACAPI_AutoText_DeleteAnAutoText</code> is deprecated, use <code>ACAPI_ProjectInfo_DeleteField</code> instead.</li>
+<li><code>ACAPI_AutoText_SetAnAutoText</code> is deprecated, use <code>ACAPI_ProjectInfo_SetFieldValue</code> instead. The new function identifies Project Info fields by their GUID rather than the legacy <code>dbKey</code> string. Field GUIDs can be queried via <code>ACAPI_ProjectInfo_GetFields</code>, and their current name and value can be retrieved using <code>ACAPI_ProjectInfo_GetField</code>. Starting from the next version, fields will no longer be accessible using the old <code>dbKey</code>-based identification.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md71"></a>
+<h2><a class="anchor" id="autotoc_md73"></a>
 Deleted functions and structures</h2>
 <ul>
-<li>Removed the MeasurementSystem from the RegisteredColumn used in the GraphCalculationInterface in the MEPAPI. The AddOns should use the ACAPI_ProjectSetting_GetPreferences with <a class="el" href="struct_a_p_i___working_unit_prefs.html" title="The representation of the Preferences / Units tab page.">API_WorkingUnitPrefs</a> instead.</li>
-<li>Legacy IFC API functions and structures. You should use the <code>IFCAPI</code> namespace and functions instead to query and manipulate IFC data. <br  />
- For more information see <a class="el" href="group___i_f_c.html">IFC Data Access</a>.<ul>
-<li><code>ACAPI_Element_GetIFCIdentifier</code>, <code>ACAPI_Element_GetElemListByIFCIdentifier</code></li>
-<li><code>ACAPI_Element_GetIFCProperties</code>, <code>ACAPI_Element_SetIFCProperty</code>, <code>ACAPI_Element_RemoveIFCProperty</code></li>
-<li><code>ACAPI_Element_GetIFCAttributes</code>, <code>ACAPI_Element_SetIFCAttribute</code></li>
-<li><code>ACAPI_Element_GetIFCClassificationReferences</code>, <code>ACAPI_Element_SetIFCClassificationReference</code>, <code>ACAPI_Element_RemoveIFCClassificationReference</code></li>
-<li><code>API_IFCPropertyHead</code>, <code>API_IFCPropertyType</code>, <code>API_IFCPropertyValuePrimitiveType</code>, <code>API_IFCPropertyAnyValue</code>, <code>API_IFCPropertyAnyValue</code>, <code>API_IFCPropertyValue</code></li>
-<li><code>API_IFCPropertySingleValue</code>, <code>API_IFCPropertyBoundedValue</code>, <code>API_IFCPropertyListValue</code>, <code>API_IFCPropertyEnumeratedValue</code>, <code>API_IFCPropertyTableValue</code>, <code>API_IFCProperty</code></li>
-<li><code>API_IFCAttribute</code>, <code>API_IFCClassification</code>, <code>API_IFCClassificationReference</code> </li>
-</ul>
-</li>
+<li><code>ACAPI_AddOnIntegration_InstallPublisherSaveMethod</code> has been removed.</li>
+<li><code>SaveProc</code> and <code>PublishFormatMethods::saveProc</code> have been removed. Use <code>SaveWithOptionProc</code> and <code>PublishFormatMethods::saveWithOptionProc</code> instead.</li>
+<li>The explicit <code>API_ElemPartId::operator!=</code> overload has been removed. The <code>operator==</code> overload remains available.</li>
+<li>Legacy Goodies identifiers <code>APIAny_UsableGDLStringID</code> and <code>APIAny_CalcSunOnPlaceID</code> have been removed. Use <code>ACAPI_LibraryManagement_UsableGDLString</code> and <code>ACAPI_GeoLocation_CalcSunOnPlace</code> directly instead.</li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

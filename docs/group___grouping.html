@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Element Grouping</title>
+<title>Archicad 30 C++ API: Element Grouping</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -305,13 +305,13 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success, a new element group has created.</li>
+<li>NoError - The function has completed successfully, a new element group has created.</li>
 <li>APIERR_NEEDSUNDOSCOPE - The function must be undoable, it wasn't called from an undoable command scope.</li>
 <li>APIERR_BADID - One or more of the passed IDs are invalid.</li>
 <li>APIERR_BADPARS - Invalid value passed in the parameters (nullptr pointer, empty ID list, etc.). </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function create a simple element group, it becomes only a container of some elements. Passed elements have to be on the same floor. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function creates a simple element group, it becomes only a container of some elements. Passed elements have to be on the same floor. </dd></dl>
 
 </div>
 </div>
@@ -343,7 +343,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - Passed group ID is invalid.</li>
 <li>APIERR_BADPARS - Invalid value passed in the parameters. </li>
 </ul>
@@ -391,7 +391,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">guid</td><td>[in] Identifier of the element having other elements connected to it. </td></tr>
-    <tr><td class="paramname">connectedElemType</td><td>[in] The type of the connected elements to be retrieved. Currently applicable types: <code>API_WindowID</code>, <code>API_DoorID</code> (with Wall elements), <code>API_SkylightID</code> (with Roof and Shell elements), <code>API_LabelID</code> (with all labelable elements, i.e. modeling elements, Curtain Wall subelements, and Fill elements), <code>API_OpeningID</code> </td></tr>
+    <tr><td class="paramname">connectedElemType</td><td>[in] The type of the connected elements to be retrieved. Currently applicable types: <code>API_WindowID</code>, <code>API_DoorID</code> (with Wall elements), <code>API_SkylightID</code> (with Roof and Shell elements), <code>API_LabelID</code> (with all labelable elements, i.e., modeling elements, Curtain Wall subelements, and Fill elements), <code>API_OpeningID</code> </td></tr>
     <tr><td class="paramname">connectedElements</td><td>[out] Guid list of the connected elements retrieved. </td></tr>
     <tr><td class="paramname">filterBits</td><td>[in] The flags used for filtering (see <a class="el" href="group___element.html#gae6b1be3842fc43fc42702c48a93f72e7">ACAPI_Element_Filter</a>). The default value is <code>APIFilt_None</code>. </td></tr>
     <tr><td class="paramname">renovationFilterGuid</td><td>[in] Optional global unique identifier of the renovation filter. This parameter is currently ignored. </td></tr>
@@ -399,7 +399,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The connectedElements pointer is nullptr.</li>
 <li>APIERR_BADID - The guid parameter does not identify a valid element. Or the given element type cannot be in connection with elements of the requested type. </li>
 </ul>
@@ -416,7 +416,7 @@ Functions</h2></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><code>API_OpeningID</code>   </td><td class="markdownTableBodyNone"><code>API_WallID</code>, <code>API_SlabID</code>, <code>API_MeshID</code>, <code>API_BeamID</code>   </td></tr>
 </table>
-The windows and doors of a given wall element can also be retrieved with the <a class="el" href="group___element.html#ga02360e91fe578c4d9a714fb6c64ed7c3">ACAPI_Element_GetMemo</a> function (wallWindows, wallDoors members of <a class="el" href="struct_a_p_i___element_memo.html">API_ElementMemo</a>). When querying the Labels of an element, if the returned GUID array is not empty, the first GUID will be the GUID of the "Listing Label". It is the Label, which can be listed in Interactive Schedule. From version 26 the connectedElemTypeID and variationID parameters were merged into a single <a class="el" href="struct_a_p_i___elem_type.html">API_ElemType</a> parameter. </dd></dl>
+The windows and doors of a given wall element can also be retrieved with the <a class="el" href="group___element.html#ga02360e91fe578c4d9a714fb6c64ed7c3">ACAPI_Element_GetMemo</a> function (wallWindows, wallDoors members of <a class="el" href="struct_a_p_i___element_memo.html">API_ElementMemo</a>). When querying the Labels of an element, if the returned GUID array is not empty, the first GUID will be the GUID of the "Listing Label". It is the Label, which can be listed in the Interactive Schedule. From version 26, the connectedElemTypeID and variationID parameters were merged into a single <a class="el" href="struct_a_p_i___elem_type.html">API_ElemType</a> parameter. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">// list Skylights of the Shell elements</span></div>
 <div class="line"> </div>
 <div class="line">GS::Array&lt;API_Guid&gt; shells;</div>
@@ -486,7 +486,7 @@ The windows and doors of a given wall element can also be retrieved with the <a 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - Passed element ID is invalid.</li>
 <li>APIERR_BADPARS - Invalid value passed in the parameters. </li>
 </ul>
@@ -523,7 +523,7 @@ The windows and doors of a given wall element can also be retrieved with the <a 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - Passed group ID is invalid.</li>
 <li>APIERR_BADPARS - Invalid value passed in the parameters. </li>
 </ul>
@@ -616,7 +616,7 @@ The windows and doors of a given wall element can also be retrieved with the <a 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - Passed element ID is invalid.</li>
 <li>APIERR_BADPARS - Invalid value passed in the parameters. </li>
 </ul>
@@ -653,15 +653,15 @@ The windows and doors of a given wall element can also be retrieved with the <a 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success, a new user data has attached to the element group.</li>
+<li>NoError - The function has completed successfully, a new user data has attached to the element group.</li>
 <li>APIERR_NEEDSUNDOSCOPE - The function must be undoable, it wasn't called from an undoable command scope.</li>
 <li>APIERR_BADID - Passed groupGuid ID is invalid.</li>
 <li>APIERR_BADPARS - One or more passed parameters are nullptr.</li>
-<li>APIERR_NOUSERDATA - No user data attached with the gived signature.</li>
+<li>APIERR_NOUSERDATA - No user data attached with the given signature.</li>
 <li>APIERR_MEMFULL - Out of memory. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the user attached data from an element group. Use the <a class="el" href="#gae19fc9361d0162de9fbc225b41051117">ACAPI_Grouping_SetUserData</a> functions to push data into the element group. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the user-attached data from an element group. Use the <a class="el" href="#gae19fc9361d0162de9fbc225b41051117">ACAPI_Grouping_SetUserData</a> functions to push data into the element group. </dd></dl>
 
 </div>
 </div>
@@ -693,7 +693,7 @@ The windows and doors of a given wall element can also be retrieved with the <a 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success, a new user data has attached to the element group.</li>
+<li>NoError - The function has completed successfully, a new user data has attached to the element group.</li>
 <li>APIERR_NEEDSUNDOSCOPE - The function must be undoable, it wasn't called from an undoable command scope.</li>
 <li>APIERR_BADID - Passed groupGuid ID is invalid.</li>
 <li>APIERR_BADPARS - Passed groupGuid parameter is nullptr.</li>
@@ -739,13 +739,13 @@ The windows and doors of a given wall element can also be retrieved with the <a 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADDATABASE - The current database is not proper for the operation</li>
 <li>APIERR_BADPARS - The passed parameter is incorrect; typeID</li>
 <li>APIERR_MEMFULL - not enough memory to complete the operation </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to execute tool commands on a set of elements. The elements are specified in the elemGuids array or if this parameter is an empty array, the function operates on the current selection. The functionality of each tool is equivalent to the corresponding commands of the Tools menu. The following tool commands are available: <table class="markdownTable">
+<dl class="section remark"><dt>Remarks</dt><dd>This function executes tool commands on a set of elements. The elements are specified in the elemGuids array, or if this parameter is an empty array, the function operates on the current selection. The functionality of each tool is equivalent to the corresponding commands of the Tools menu. The following tool commands are available: <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone"><a class="el" href="#gafd0da7c77b7776a8e780882c715e78ec">API_ToolCmdID</a>   </th><th class="markdownTableHeadNone">Meaning    </th></tr>
 <tr class="markdownTableRowOdd">

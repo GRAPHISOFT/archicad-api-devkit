@@ -54,6 +54,7 @@ var topics =
     [ "Old Listing", "group___old_listing.html", "group___old_listing" ],
     [ "Polygons", "group___polygon.html", "group___polygon" ],
     [ "Process Windows", "group___process_window.html", "group___process_window" ],
+    [ "Project Info", "group___project_info.html", "group___project_info" ],
     [ "Project Navigator", "group___navigator.html", "group___navigator" ],
     [ "Project Operations", "group___project_operation.html", "group___project_operation" ],
     [ "Project Settings", "group___project_setting.html", "group___project_setting" ],

@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Geolocation</title>
+<title>Archicad 30 C++ API: Geolocation</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -159,21 +159,21 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ga8eba2f88c72e8a2947832029b01e1a15" id="r_ga8eba2f88c72e8a2947832029b01e1a15"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8eba2f88c72e8a2947832029b01e1a15">API_NorthUnitID</a> { <a class="el" href="#gga8eba2f88c72e8a2947832029b01e1a15a67b2657213f6edc8169329bcd5bd34b4">APINorthUnit_DecimalDegree</a>
+, <a class="el" href="#gga8eba2f88c72e8a2947832029b01e1a15a82811cfb64acc2d41bd7520a512d36b9">APINorthUnit_DegreeMinSec</a>
+ }</td></tr>
+<tr class="memdesc:ga8eba2f88c72e8a2947832029b01e1a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible values for project's north direction unit preferences.  <a href="#ga8eba2f88c72e8a2947832029b01e1a15">More...</a><br /></td></tr>
+<tr class="separator:ga8eba2f88c72e8a2947832029b01e1a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga796cf9d60cd28041ff91c7b53f9bfe70" id="r_ga796cf9d60cd28041ff91c7b53f9bfe70"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga796cf9d60cd28041ff91c7b53f9bfe70">API_AltitudeUnitID</a> { <a class="el" href="#gga796cf9d60cd28041ff91c7b53f9bfe70a914d56b4a9640a6f5657eb184366351a">APIAltitudeUnit_Meter</a>
+, <a class="el" href="#gga796cf9d60cd28041ff91c7b53f9bfe70ab9d075b2754fceb7eac03719441d6ac4">APIAltitudeUnit_DecFoot</a>
+ }</td></tr>
+<tr class="memdesc:ga796cf9d60cd28041ff91c7b53f9bfe70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible values for project's altitude unit preferences.  <a href="#ga796cf9d60cd28041ff91c7b53f9bfe70">More...</a><br /></td></tr>
+<tr class="separator:ga796cf9d60cd28041ff91c7b53f9bfe70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5ebe841edd8e3f5407110f3acc14ce71" id="r_ga5ebe841edd8e3f5407110f3acc14ce71"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5ebe841edd8e3f5407110f3acc14ce71">API_LongLatUnitID</a> { <a class="el" href="#gga5ebe841edd8e3f5407110f3acc14ce71a8fbedf2ac735795fb81fa75a6c398863">API_LongLatUnitID::APILongLatUnit_DecimalDegree</a>
 , <a class="el" href="#gga5ebe841edd8e3f5407110f3acc14ce71a596f652517f80a9a68e46e12fa273759">API_LongLatUnitID::APILongLatUnit_DegreeMinSec</a>
  }</td></tr>
 <tr class="memdesc:ga5ebe841edd8e3f5407110f3acc14ce71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible values for longitude and latitude unit preferences.  <a href="#ga5ebe841edd8e3f5407110f3acc14ce71">More...</a><br /></td></tr>
 <tr class="separator:ga5ebe841edd8e3f5407110f3acc14ce71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8eba2f88c72e8a2947832029b01e1a15" id="r_ga8eba2f88c72e8a2947832029b01e1a15"><td class="memItemLeft" align="right" valign="top"><a id="ga8eba2f88c72e8a2947832029b01e1a15" name="ga8eba2f88c72e8a2947832029b01e1a15"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8eba2f88c72e8a2947832029b01e1a15">API_NorthUnitID</a> { <b>APINorthUnit_DecimalDegree</b>
-, <b>APINorthUnit_DegreeMinSec</b>
- }</td></tr>
-<tr class="memdesc:ga8eba2f88c72e8a2947832029b01e1a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">typedef enum { APINorthUnit_DecimalDegree, <code>APINorthUnit_DegreeMinSec</code> } <a class="el" href="#ga8eba2f88c72e8a2947832029b01e1a15">API_NorthUnitID</a> ; <br /></td></tr>
-<tr class="separator:ga8eba2f88c72e8a2947832029b01e1a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga796cf9d60cd28041ff91c7b53f9bfe70" id="r_ga796cf9d60cd28041ff91c7b53f9bfe70"><td class="memItemLeft" align="right" valign="top"><a id="ga796cf9d60cd28041ff91c7b53f9bfe70" name="ga796cf9d60cd28041ff91c7b53f9bfe70"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga796cf9d60cd28041ff91c7b53f9bfe70">API_AltitudeUnitID</a> { <b>APIAltitudeUnit_Meter</b>
-, <b>APIAltitudeUnit_DecFoot</b>
- }</td></tr>
-<tr class="memdesc:ga796cf9d60cd28041ff91c7b53f9bfe70"><td class="mdescLeft">&#160;</td><td class="mdescRight">typedef enum { APIAltitudeUnit_Meter, <code>APIAltitudeUnit_DecFoot</code> } <a class="el" href="#ga796cf9d60cd28041ff91c7b53f9bfe70">API_AltitudeUnitID</a> ; <br /></td></tr>
-<tr class="separator:ga796cf9d60cd28041ff91c7b53f9bfe70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -196,12 +196,37 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga2937aa00156dc58474f5ec1752356d02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies the Location settings of the project.  <br /></td></tr>
 <tr class="separator:ga2937aa00156dc58474f5ec1752356d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3bddfc82bdbfe5a609b44eff58aac8c8" id="r_ga3bddfc82bdbfe5a609b44eff58aac8c8"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3bddfc82bdbfe5a609b44eff58aac8c8">ACAPI_GeoLocation_CalcSunOnPlace</a> (<a class="el" href="struct_a_p_i___place_info.html">API_PlaceInfo</a> *placeInfo)</td></tr>
-<tr class="memdesc:ga3bddfc82bdbfe5a609b44eff58aac8c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the sun position in a given place.  <br /></td></tr>
+<tr class="memdesc:ga3bddfc82bdbfe5a609b44eff58aac8c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the sun position at a given location.  <br /></td></tr>
 <tr class="separator:ga3bddfc82bdbfe5a609b44eff58aac8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37cc01fbecf48f9356ed660fcdbd2289" id="r_ga37cc01fbecf48f9356ed660fcdbd2289"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga37cc01fbecf48f9356ed660fcdbd2289">ACAPI_GeoLocation_CalcSunOnPlace</a> (<a class="el" href="struct_a_p_i___place_info.html">API_PlaceInfo</a> &amp;placeInfo)</td></tr>
+<tr class="memdesc:ga37cc01fbecf48f9356ed660fcdbd2289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the sun position at a given location.  <br /></td></tr>
+<tr class="separator:ga37cc01fbecf48f9356ed660fcdbd2289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions related to the manipulation of and accessing the Project Location data and Archicad's related functionalities. </p>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga796cf9d60cd28041ff91c7b53f9bfe70" name="ga796cf9d60cd28041ff91c7b53f9bfe70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga796cf9d60cd28041ff91c7b53f9bfe70">&#9670;&#160;</a></span>API_AltitudeUnitID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga796cf9d60cd28041ff91c7b53f9bfe70">API_AltitudeUnitID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Possible values for project's altitude unit preferences. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga796cf9d60cd28041ff91c7b53f9bfe70a914d56b4a9640a6f5657eb184366351a" name="gga796cf9d60cd28041ff91c7b53f9bfe70a914d56b4a9640a6f5657eb184366351a"></a>APIAltitudeUnit_Meter&#160;</td><td class="fielddoc"><p>Show altitude in meters </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga796cf9d60cd28041ff91c7b53f9bfe70ab9d075b2754fceb7eac03719441d6ac4" name="gga796cf9d60cd28041ff91c7b53f9bfe70ab9d075b2754fceb7eac03719441d6ac4"></a>APIAltitudeUnit_DecFoot&#160;</td><td class="fielddoc"><p>Show altitude in decimal feet </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="ga5ebe841edd8e3f5407110f3acc14ce71" name="ga5ebe841edd8e3f5407110f3acc14ce71"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5ebe841edd8e3f5407110f3acc14ce71">&#9670;&#160;</a></span>API_LongLatUnitID</h2>
 
@@ -233,9 +258,31 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga8eba2f88c72e8a2947832029b01e1a15" name="ga8eba2f88c72e8a2947832029b01e1a15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8eba2f88c72e8a2947832029b01e1a15">&#9670;&#160;</a></span>API_NorthUnitID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga8eba2f88c72e8a2947832029b01e1a15">API_NorthUnitID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Possible values for project's north direction unit preferences. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga8eba2f88c72e8a2947832029b01e1a15a67b2657213f6edc8169329bcd5bd34b4" name="gga8eba2f88c72e8a2947832029b01e1a15a67b2657213f6edc8169329bcd5bd34b4"></a>APINorthUnit_DecimalDegree&#160;</td><td class="fielddoc"><p>Show project north direction in decimal degrees </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8eba2f88c72e8a2947832029b01e1a15a82811cfb64acc2d41bd7520a512d36b9" name="gga8eba2f88c72e8a2947832029b01e1a15a82811cfb64acc2d41bd7520a512d36b9"></a>APINorthUnit_DegreeMinSec&#160;</td><td class="fielddoc"><p>Show project north direction in degrees, minutes, seconds </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga3bddfc82bdbfe5a609b44eff58aac8c8" name="ga3bddfc82bdbfe5a609b44eff58aac8c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3bddfc82bdbfe5a609b44eff58aac8c8">&#9670;&#160;</a></span>ACAPI_GeoLocation_CalcSunOnPlace()</h2>
+<a id="ga37cc01fbecf48f9356ed660fcdbd2289" name="ga37cc01fbecf48f9356ed660fcdbd2289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga37cc01fbecf48f9356ed660fcdbd2289">&#9670;&#160;</a></span>ACAPI_GeoLocation_CalcSunOnPlace() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,17 +290,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">GSErrCode ACAPI_GeoLocation_CalcSunOnPlace </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_a_p_i___place_info.html">API_PlaceInfo</a> *</td>          <td class="paramname"><span class="paramname"><em>placeInfo</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="struct_a_p_i___place_info.html">API_PlaceInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>placeInfo</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Calculates the sun position in a given place. </p>
-<dl class="section since"><dt>Since</dt><dd>Archicad 26 </dd></dl>
+<p>Calculates the sun position at a given location. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">placeInfo</td><td>[in/out] Parameters of the sun place. <table class="markdownTable">
+    <tr><td class="paramname">placeInfo</td><td>[in/out] Parameters of the sun's location.<br  />
+<table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone" colspan="2"><a class="el" href="struct_a_p_i___place_info.html" title="The current location, date and sun parameters.">API_PlaceInfo</a>    </th></tr>
 <tr class="markdownTableRowOdd">
@@ -288,12 +335,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_NOPLAN - no open project</li>
-<li>APIERR_BADPARS - placeInfo is <code>nullptr</code> or contains invalid data </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_NOPLAN - No open project. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used get the sun angles to in a custom place. The sun angles are calculated in a given place and on a certain day and time. The calculated angles are returned in the <code>sunAngXY</code> and <code>sunAngZ</code> fields of the structure. Refer to the <a class="el" href="#gaa6c0cfad060cdaf6e2e2f56cc93f05e4">ACAPI_GeoLocation_GetPlaceSets</a> function to get the actual location and date parameters. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the sun angles at a custom location. The sun angles are calculated for a given place and on a certain day and time. The calculated angles are returned in the <code>sunAngXY</code> and <code>sunAngZ</code> fields of the structure. Refer to the <a class="el" href="#gaa6c0cfad060cdaf6e2e2f56cc93f05e4">ACAPI_GeoLocation_GetPlaceSets</a> function to get the actual location and date parameters. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___place_info.html">API_PlaceInfo</a>   placeInfo {};</div>
 <div class="line">GSErrCode       err;</div>
 <div class="line"> </div>
@@ -309,8 +355,72 @@ Functions</h2></td></tr>
 <div class="line">placeInfo.timeZoneInMinutes = 60;</div>
 <div class="line">placeInfo.north = PI / 2;    <span class="comment">/* up direction */</span></div>
 <div class="line"> </div>
-<div class="line">err = <a class="code hl_function" href="#ga3bddfc82bdbfe5a609b44eff58aac8c8">ACAPI_GeoLocation_CalcSunOnPlace</a> (&amp;placeInfo);</div>
+<div class="line">err = <a class="code hl_function" href="#ga3bddfc82bdbfe5a609b44eff58aac8c8">ACAPI_GeoLocation_CalcSunOnPlace</a> (placeInfo);</div>
 </div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a id="ga3bddfc82bdbfe5a609b44eff58aac8c8" name="ga3bddfc82bdbfe5a609b44eff58aac8c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3bddfc82bdbfe5a609b44eff58aac8c8">&#9670;&#160;</a></span>ACAPI_GeoLocation_CalcSunOnPlace() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GSErrCode ACAPI_GeoLocation_CalcSunOnPlace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_a_p_i___place_info.html">API_PlaceInfo</a> *</td>          <td class="paramname"><span class="paramname"><em>placeInfo</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the sun position at a given location. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated</a></b></dt><dd>This function is deprecated and will be removed in future versions. Use ACAPI_GeoLocation_CalcSunOnPlace (<a class="el" href="struct_a_p_i___place_info.html" title="The current location, date and sun parameters.">API_PlaceInfo</a>&amp;) instead. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">placeInfo</td><td>[in/out] Parameters of the sun's location.<br  />
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone" colspan="2"><a class="el" href="struct_a_p_i___place_info.html" title="The current location, date and sun parameters.">API_PlaceInfo</a>    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">longitude   </td><td class="markdownTableBodyNone">required, longitude    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">latitude   </td><td class="markdownTableBodyNone">required, latitude    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">sumTime   </td><td class="markdownTableBodyNone">required, daylight saving on/off    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">year   </td><td class="markdownTableBodyNone">required, year    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">month   </td><td class="markdownTableBodyNone">required, month    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">day   </td><td class="markdownTableBodyNone">required, day    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">hour   </td><td class="markdownTableBodyNone">required, hour    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">minute   </td><td class="markdownTableBodyNone">required, minute    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">second   </td><td class="markdownTableBodyNone">required, second    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">time zone   </td><td class="markdownTableBodyNone">required, time zone in minutes    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">north   </td><td class="markdownTableBodyNone">required, north direction    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">sunAngXY   </td><td class="markdownTableBodyNone">out, the sun angle    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">sunAngZ   </td><td class="markdownTableBodyNone">out, the sun angle   </td></tr>
+</table>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_NOPLAN - No open project.</li>
+<li>APIERR_BADPARS - placeInfo is nullptr or contains invalid data. </li>
+</ul>
+</dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the sun angles at a custom location. The sun angles are calculated for a given place and on a certain day and time. The calculated angles are returned in the <code>sunAngXY</code> and <code>sunAngZ</code> fields of the structure. Refer to the <a class="el" href="#gaa6c0cfad060cdaf6e2e2f56cc93f05e4">ACAPI_GeoLocation_GetPlaceSets</a> function to get the actual location and date parameters. </dd></dl>
 
 </div>
 </div>
@@ -332,7 +442,7 @@ Functions</h2></td></tr>
 <p>May the current user change the place settings now? </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">withDialog</td><td>[in] If the user don't have permisson to change the place settings now, then the Location Dialog will open if this parameter is true, otherwise it will just return whether the user can or can not change the place settings now. This parameter is optional; if you pass nullptr, it defaults to true. </td></tr>
+    <tr><td class="paramname">withDialog</td><td>[in] If the user doesn't have permission to change the place settings now, then the Location Dialog will open if this parameter is true; otherwise, it will just return whether the user can or cannot change the place settings now. This parameter is optional; if you pass nullptr, it defaults to true. </td></tr>
   </table>
   </dd>
 </dl>
@@ -376,7 +486,7 @@ Functions</h2></td></tr>
 <li>APIERR_NOPLAN - No open project. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to set/change the current place, date, time and north direction parameters of the plan. The sun angles are calculated in the given place and on the given day and time. The calculated angles are returned in the sunAngXY and sunAngZ fields of the <a class="el" href="struct_a_p_i___place_info.html">API_PlaceInfo</a> structure. Please refer to the <a class="el" href="#gaa6c0cfad060cdaf6e2e2f56cc93f05e4">ACAPI_GeoLocation_GetPlaceSets</a> function for calculating the sun parameters at a custom place on a certain date. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Sets or changes the current place, date, time, and north direction parameters of the plan. The sun angles are calculated for the specified place, date, and time. The calculated angles are returned in the sunAngXY and sunAngZ fields of the <a class="el" href="struct_a_p_i___place_info.html">API_PlaceInfo</a> structure. Refer to the <a class="el" href="#gaa6c0cfad060cdaf6e2e2f56cc93f05e4">ACAPI_GeoLocation_GetPlaceSets</a> function for calculating sun parameters at a custom place on a specific date. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___place_info.html">API_PlaceInfo</a>   placeInfo {};</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="#gaa6c0cfad060cdaf6e2e2f56cc93f05e4">ACAPI_GeoLocation_GetPlaceSets</a> (&amp;placeInfo);</div>
@@ -405,7 +515,7 @@ Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">apiGeoLocation</td><td>[out] Location data associated with the project </td></tr>
+    <tr><td class="paramname">apiGeoLocation</td><td>[out] Location data associated with the project. </td></tr>
   </table>
   </dd>
 </dl>
@@ -414,7 +524,7 @@ Functions</h2></td></tr>
 <li>APIERR_BADPARS - apiGeoLocation is nullptr </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function returns the Location settings of the project. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Returns the Location settings of the project. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___geo_location.html">API_GeoLocation</a> geoLocation;</div>
 <div class="line"><a class="code hl_function" href="#ga6f66d2eeeea9ca1dd09329f4b1049123">ACAPI_GeoLocation_GetGeoLocation</a> (&amp;geoLocation);</div>
 <div class="line">geoLocation.<a class="code hl_variable" href="struct_a_p_i___geo_location.html#a1c399527480d0ebcde2472c63c703e31">surveyPointPosition</a>.<a class="code hl_variable" href="struct_a_p_i___coord3_d.html#aec328ff015601f2a8a561de965566b9f">x</a> = -300000;</div>
@@ -517,7 +627,7 @@ Functions</h2></td></tr>
 <dl class="section since"><dt>Since</dt><dd>Archicad 25 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">apiGeoLocation</td><td>[in] the Location settings associated with the project </td></tr>
+    <tr><td class="paramname">apiGeoLocation</td><td>[in] The Location settings associated with the project. </td></tr>
   </table>
   </dd>
 </dl>
@@ -527,7 +637,7 @@ Functions</h2></td></tr>
 <li>APIERR_NOTEDITABLE - The Location settings cannot be modified in Teamwork unless it is reserved by the current user. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function sets the Location settings of the project. The <code>ACAPI_GeoLocation_SetGeoLocation</code> function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Sets the Location settings of the project. The <code>ACAPI_GeoLocation_SetGeoLocation</code> function is a non-undoable data structure modifier. See Command Overview for more details. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___geo_location.html">API_GeoLocation</a> geoLocation;</div>
 <div class="line"><a class="code hl_function" href="#ga6f66d2eeeea9ca1dd09329f4b1049123">ACAPI_GeoLocation_GetGeoLocation</a> (&amp;geoLocation);</div>
 <div class="line">geoLocation.<a class="code hl_variable" href="struct_a_p_i___geo_location.html#a1c399527480d0ebcde2472c63c703e31">surveyPointPosition</a>.<a class="code hl_variable" href="struct_a_p_i___coord3_d.html#aec328ff015601f2a8a561de965566b9f">x</a> = -300000;</div>

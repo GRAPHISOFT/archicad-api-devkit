@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Bodies</title>
+<title>Archicad 30 C++ API: Bodies</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -201,7 +201,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter is nullptr for bodyData. The index is out of range for vertex1, vertex2. </li>
 </ul>
 </dd></dl>
@@ -338,12 +338,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed bodyData parameter is nullptr. There are less than 3 edges passed. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function is used to add a polygon to a body data object. The edges list contains edge indices returned by the <a class="el" href="#ga1f6292639663f57a72ba9ad1c1d8cdbd">ACAPI_Body_AddEdge</a> function. The list shall look like the following:<ul>
-<li>First pass the indices of contour edges as they sorruond the polygon counterclockwise. (An edge can be used backwards with a negative index)</li>
+<li>First pass the indices of contour edges as they surround the polygon counterclockwise. (An edge can be used backwards with a negative index)</li>
 <li>For each hole pass a 0, then the indices of hole contour edges clockwise. polyNormal is the index of a normal vector returned by the <a class="el" href="#ga381cd3412672dc2eb2227f76b066bc42">ACAPI_Body_AddPolyNormal</a> function.</li>
 <li>A negative value indicates, that the vector is used in the opposite direction. (So a cube can be created making 3 normal vectors instead of 6)</li>
 <li>If you pass 0, the normal vector is calculated automatically, but doing so, the same vector may be created multiple times, as duplicates are not detected. (A plane containing many polygons generates the same normal for each polygon) </li>
@@ -469,7 +469,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed bodyData parameter is nullptr. The normal vector length is 0; </li>
 </ul>
 </dd></dl>
@@ -594,7 +594,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed bodyData parameter is nullptr. </li>
 </ul>
 </dd></dl>
@@ -719,7 +719,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed bodyData parameter is nullptr. </li>
 </ul>
 </dd></dl>
@@ -766,7 +766,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter in bodyData is nullptr. </li>
 </ul>
 </dd></dl>
@@ -891,7 +891,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed bodyData parameter is nullptr. </li>
 </ul>
 </dd></dl>

@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Project Navigator</title>
+<title>Archicad 30 C++ API: Project Navigator</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -181,10 +181,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the model view options of Curtain Walls made with the Curtain Wall Tool. The entire structure is Archicad only.  <a href="struct_a_p_i___curtain_wall_model_view_options.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___stair_model_view_options.html">API_StairModelViewOptions</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the model view options of Stairs made with Stair Tool. The entire structure is Archicad only.  <a href="struct_a_p_i___stair_model_view_options.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the model view options of Stairs made with the Stair Tool. The entire structure is Archicad only.  <a href="struct_a_p_i___stair_model_view_options.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___railing_model_view_options.html">API_RailingModelViewOptions</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the model view options of Railings made with Railing Tool. The entire structure is Archicad only.  <a href="struct_a_p_i___railing_model_view_options.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the model view options of Railings made with the Railing Tool. The entire structure is Archicad only.  <a href="struct_a_p_i___railing_model_view_options.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___model_view_options.html">API_ModelViewOptions</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the model view options.  <a href="struct_a_p_i___model_view_options.html#details">More...</a><br /></td></tr>
@@ -293,6 +293,18 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga707ed658b505648c783e817c6d73e5f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible values for angle unit preferences.  <a href="#ga707ed658b505648c783e817c6d73e5f5">More...</a><br /></td></tr>
 <tr class="separator:ga707ed658b505648c783e817c6d73e5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga897eb1598d6e884f3f8e66afc3ffdc16" id="r_ga897eb1598d6e884f3f8e66afc3ffdc16"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga897eb1598d6e884f3f8e66afc3ffdc16">API_ExtraAccuracyID</a> { <br />
+&#160;&#160;<a class="el" href="#gga897eb1598d6e884f3f8e66afc3ffdc16a514feae82b38e8f8dfb47daf68fdbe7b">APIExtAc_Off</a> = 0
+, <a class="el" href="#gga897eb1598d6e884f3f8e66afc3ffdc16a329e2afc077407f57e63dc564a11af6c">APIExtAc_Small5</a> = 1
+, <a class="el" href="#gga897eb1598d6e884f3f8e66afc3ffdc16acc1f72a78cc00a4712da561d8a018a7c">APIExtAc_Small25</a> = 2
+, <a class="el" href="#gga897eb1598d6e884f3f8e66afc3ffdc16a957519376f4aa18dcea1658c9ea691b8">APIExtAc_Small1</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#gga897eb1598d6e884f3f8e66afc3ffdc16a622eba3f2d254816b1e9b633bc723c9b">APIExtAc_Small01</a> = 4
+, <a class="el" href="#gga897eb1598d6e884f3f8e66afc3ffdc16a7181d65d54dd7dceeedebdaab7d6ee5b">APIExtAc_Fractions</a> = 10
+<br />
+ }</td></tr>
+<tr class="memdesc:ga897eb1598d6e884f3f8e66afc3ffdc16"><td class="mdescLeft">&#160;</td><td class="mdescRight">European methods for rounding decimal values.  <a href="#ga897eb1598d6e884f3f8e66afc3ffdc16">More...</a><br /></td></tr>
+<tr class="separator:ga897eb1598d6e884f3f8e66afc3ffdc16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga53ff84db5a9e795c66c7139b3c75a3a5" id="r_ga53ff84db5a9e795c66c7139b3c75a3a5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga53ff84db5a9e795c66c7139b3c75a3a5">API_NavigatorItemTypeID</a> { <br />
 &#160;&#160;<a class="el" href="#gga53ff84db5a9e795c66c7139b3c75a3a5a7ebaf33e493382a3803868cb398da346">API_UndefinedNavItem</a> = 0
 , <a class="el" href="#gga53ff84db5a9e795c66c7139b3c75a3a5aec087b910789df1aeed765ad7465909f">API_ProjectNavItem</a> = 1
@@ -354,18 +366,6 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:gaeda68e327a768853b417d7d45409a852"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines which view settings to enable in an <a class="el" href="struct_a_p_i___navigator_add_on_view_point_data.html">API_NavigatorAddOnViewPointData</a>.  <a href="#gaeda68e327a768853b417d7d45409a852">More...</a><br /></td></tr>
 <tr class="separator:gaeda68e327a768853b417d7d45409a852"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga897eb1598d6e884f3f8e66afc3ffdc16" id="r_ga897eb1598d6e884f3f8e66afc3ffdc16"><td class="memItemLeft" align="right" valign="top"><a id="ga897eb1598d6e884f3f8e66afc3ffdc16" name="ga897eb1598d6e884f3f8e66afc3ffdc16"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga897eb1598d6e884f3f8e66afc3ffdc16">API_ExtraAccuracyID</a> { <br />
-&#160;&#160;<b>APIExtAc_Off</b> = 0
-, <b>APIExtAc_Small5</b> = 1
-, <b>APIExtAc_Small25</b> = 2
-, <b>APIExtAc_Small1</b> = 3
-, <br />
-&#160;&#160;<b>APIExtAc_Small01</b> = 4
-, <b>APIExtAc_Fractions</b> = 10
-<br />
- }</td></tr>
-<tr class="memdesc:ga897eb1598d6e884f3f8e66afc3ffdc16"><td class="mdescLeft">&#160;</td><td class="mdescRight">European methods for rounding decimal values. <br /></td></tr>
-<tr class="separator:ga897eb1598d6e884f3f8e66afc3ffdc16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -415,7 +415,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga14b9af1817891f466c7b5ed165723fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the number of Publisher Sets.  <br /></td></tr>
 <tr class="separator:ga14b9af1817891f466c7b5ed165723fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab79b9d7ecad281b2ff06f439deae5b42" id="r_gab79b9d7ecad281b2ff06f439deae5b42"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab79b9d7ecad281b2ff06f439deae5b42">ACAPI_Navigator_GetNavigatorSet</a> (<a class="el" href="struct_a_p_i___navigator_set.html">API_NavigatorSet</a> *navigatorSet, Int32 *index=nullptr)</td></tr>
-<tr class="memdesc:gab79b9d7ecad281b2ff06f439deae5b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves information of a Project Navigator Map or Publisher Set.  <br /></td></tr>
+<tr class="memdesc:gab79b9d7ecad281b2ff06f439deae5b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves information about a Project Navigator Map or Publisher Set.  <br /></td></tr>
 <tr class="separator:gab79b9d7ecad281b2ff06f439deae5b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga884927918b41a9817771d730b27917d1" id="r_ga884927918b41a9817771d730b27917d1"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga884927918b41a9817771d730b27917d1">ACAPI_Navigator_GetNavigatorItem</a> (const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> *guid, <a class="el" href="struct_a_p_i___navigator_item.html">API_NavigatorItem</a> *navigatorItem)</td></tr>
 <tr class="memdesc:ga884927918b41a9817771d730b27917d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a navigator item.  <br /></td></tr>
@@ -430,7 +430,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gafd9a90e9f6fe6b8be43d12797e3afd95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the child items of a navigator item.  <br /></td></tr>
 <tr class="separator:gafd9a90e9f6fe6b8be43d12797e3afd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga140ff44a7fba0d960c996a9044b44501" id="r_ga140ff44a7fba0d960c996a9044b44501"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga140ff44a7fba0d960c996a9044b44501">ACAPI_Navigator_GetNavigatorView</a> (<a class="el" href="struct_a_p_i___navigator_item.html">API_NavigatorItem</a> *navigatorItem, <a class="el" href="struct_a_p_i___navigator_view.html">API_NavigatorView</a> *navigatorView)</td></tr>
-<tr class="memdesc:ga140ff44a7fba0d960c996a9044b44501"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrives a navigator view.  <br /></td></tr>
+<tr class="memdesc:ga140ff44a7fba0d960c996a9044b44501"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a navigator view.  <br /></td></tr>
 <tr class="separator:ga140ff44a7fba0d960c996a9044b44501"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga318b1d6ad16928a8d70638888a3881e5" id="r_ga318b1d6ad16928a8d70638888a3881e5"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga318b1d6ad16928a8d70638888a3881e5">ACAPI_Navigator_SearchNavigatorItem</a> (<a class="el" href="struct_a_p_i___navigator_item.html">API_NavigatorItem</a> *item, GS::Array&lt; <a class="el" href="struct_a_p_i___navigator_item.html">API_NavigatorItem</a> &gt; *items)</td></tr>
 <tr class="memdesc:ga318b1d6ad16928a8d70638888a3881e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches the navigator items of the requested database.  <br /></td></tr>
@@ -448,7 +448,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gacff681a3ad977e4443a1e8b0d11cda61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies the given Project Navigator item.  <br /></td></tr>
 <tr class="separator:gacff681a3ad977e4443a1e8b0d11cda61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafe0880ac9bd427b5ac34eaad1321cfa1" id="r_gafe0880ac9bd427b5ac34eaad1321cfa1"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafe0880ac9bd427b5ac34eaad1321cfa1">ACAPI_Navigator_SetNavigatorItemPosition</a> (const GS::Guid *source, const GS::Guid *parent, const GS::Guid *child)</td></tr>
-<tr class="memdesc:gafe0880ac9bd427b5ac34eaad1321cfa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">With this function a navigator item can be moved to an other place. It can be used with items on the layout map and on the view maps (in case of teamworking on the public and on the users' own view map as well.  <br /></td></tr>
+<tr class="memdesc:gafe0880ac9bd427b5ac34eaad1321cfa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">With this function a navigator item can be moved to another place. It can be used with items on the layout map and on the view maps (in case of teamworking on the public and on the users' own view map as well.  <br /></td></tr>
 <tr class="separator:gafe0880ac9bd427b5ac34eaad1321cfa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga39783586c340fcb985ca2108040a24dc" id="r_ga39783586c340fcb985ca2108040a24dc"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga39783586c340fcb985ca2108040a24dc">ACAPI_Navigator_CloneProjectMapItemToViewMap</a> (const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> *sourceItemId, const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> *parentItemId, <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> *createdItemId)</td></tr>
 <tr class="memdesc:ga39783586c340fcb985ca2108040a24dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clones a Navigator item from the project map to view map.  <br /></td></tr>
@@ -623,6 +623,36 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="gga1ced849eced2cac8366a288bccabb874a656b69aa6acd357a86404bcbd2eb719f" name="gga1ced849eced2cac8366a288bccabb874a656b69aa6acd357a86404bcbd2eb719f"></a>API_BuildingMaterialID&#160;</td><td class="fielddoc"><p>Denotes a building material attribute. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga1ced849eced2cac8366a288bccabb874afe026833695a1db4ec7f1b1eb59c4a30" name="gga1ced849eced2cac8366a288bccabb874afe026833695a1db4ec7f1b1eb59c4a30"></a>API_LastAttributeID&#160;</td><td class="fielddoc"><p>Ending attribute ID. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga897eb1598d6e884f3f8e66afc3ffdc16" name="ga897eb1598d6e884f3f8e66afc3ffdc16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga897eb1598d6e884f3f8e66afc3ffdc16">&#9670;&#160;</a></span>API_ExtraAccuracyID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga897eb1598d6e884f3f8e66afc3ffdc16">API_ExtraAccuracyID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>European methods for rounding decimal values. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga897eb1598d6e884f3f8e66afc3ffdc16a514feae82b38e8f8dfb47daf68fdbe7b" name="gga897eb1598d6e884f3f8e66afc3ffdc16a514feae82b38e8f8dfb47daf68fdbe7b"></a>APIExtAc_Off&#160;</td><td class="fielddoc"><p>extra accuracy off </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga897eb1598d6e884f3f8e66afc3ffdc16a329e2afc077407f57e63dc564a11af6c" name="gga897eb1598d6e884f3f8e66afc3ffdc16a329e2afc077407f57e63dc564a11af6c"></a>APIExtAc_Small5&#160;</td><td class="fielddoc"><p>show small 5 after decimals </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga897eb1598d6e884f3f8e66afc3ffdc16acc1f72a78cc00a4712da561d8a018a7c" name="gga897eb1598d6e884f3f8e66afc3ffdc16acc1f72a78cc00a4712da561d8a018a7c"></a>APIExtAc_Small25&#160;</td><td class="fielddoc"><p>show small 25/75 after decimals </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga897eb1598d6e884f3f8e66afc3ffdc16a957519376f4aa18dcea1658c9ea691b8" name="gga897eb1598d6e884f3f8e66afc3ffdc16a957519376f4aa18dcea1658c9ea691b8"></a>APIExtAc_Small1&#160;</td><td class="fielddoc"><p>show small 1 after decimals </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga897eb1598d6e884f3f8e66afc3ffdc16a622eba3f2d254816b1e9b633bc723c9b" name="gga897eb1598d6e884f3f8e66afc3ffdc16a622eba3f2d254816b1e9b633bc723c9b"></a>APIExtAc_Small01&#160;</td><td class="fielddoc"><p>show small 01 after decimals </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga897eb1598d6e884f3f8e66afc3ffdc16a7181d65d54dd7dceeedebdaab7d6ee5b" name="gga897eb1598d6e884f3f8e66afc3ffdc16a7181d65d54dd7dceeedebdaab7d6ee5b"></a>APIExtAc_Fractions&#160;</td><td class="fielddoc"><p>show small fractions </p>
 </td></tr>
 </table>
 
@@ -870,7 +900,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This is the recommended way of disposing the gdlOptions member of <a class="el" href="struct_a_p_i___model_view_options.html">API_ModelViewOptions</a> structure. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This is the recommended way of disposing of the gdlOptions member of the <a class="el" href="struct_a_p_i___model_view_options.html">API_ModelViewOptions</a> structure. </dd></dl>
 
 </div>
 </div>
@@ -1194,19 +1224,19 @@ Functions</h2></td></tr>
 <p>Changes the actual model view options. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">viewOptions</td><td>[in] the settings of the 'Model View Options' dialog, and the View/On-Screen View Options menu. </td></tr>
+    <tr><td class="paramname">viewOptions</td><td>[in] Optional parameter; settings of the 'Model View Options' dialog, and the View/On-Screen View Options menu. If this parameter is nullptr and modelViewOptionAttributeIndex is not nullptr, only the current on-screen view options combination is switched by index. </td></tr>
     <tr><td class="paramname">modelViewOptionAttributeIndex</td><td>[in] Optional parameter; if not nullptr, then switch to the model view options attribute identified by this index. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - viewOptions is nullptr.</li>
+<li>APIERR_BADPARS - both viewOptions and modelViewOptionAttributeIndex are nullptr.</li>
 <li>APIERR_NOPLAN - There is no plan window currently opened.</li>
-<li>APIERR_BADINDEX - attrIndex is invalid. </li>
+<li>APIERR_BADINDEX - modelViewOptionAttributeIndex is invalid. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to change the on-screen and model view options. The first part of the passed structure corresponds to the parameters in the 'Model View Options' dialog; the other fields to the elements of the View/On-Screen View Options submenu. For more information see the <a class="el" href="struct_a_p_i___view_options.html">API_ViewOptions</a> structure. The actual settings can be retrieved with the <a class="el" href="#gac5fa65289d683b71d8725665612e6d2b">ACAPI_Navigator_GetViewOptions</a> environment function. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to change the on-screen and model view options. The first part of the passed structure corresponds to the parameters in the 'Model View Options' dialog; the other fields to the elements of the View/On-Screen View Options submenu. For more information see the <a class="el" href="struct_a_p_i___view_options.html">API_ViewOptions</a> structure. If viewOptions is nullptr and modelViewOptionAttributeIndex is valid, only the current on-screen view options combination is changed. The actual settings can be retrieved with the <a class="el" href="#gac5fa65289d683b71d8725665612e6d2b">ACAPI_Navigator_GetViewOptions</a> environment function. This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>
 
 </div>
 </div>
@@ -1395,13 +1425,13 @@ Functions</h2></td></tr>
 <p>Creates the Subset in the Layout Book. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">subSet</td><td>The Subset. </td></tr>
-    <tr><td class="paramname">parentGuid</td><td>The guid of parent node in the Navigator's Layout Map </td></tr>
+    <tr><td class="paramname">subSet</td><td>[in] The Subset. </td></tr>
+    <tr><td class="paramname">parentGuid</td><td>[in] The guid of parent node in the Navigator's Layout Map </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADID - parentGuid is nullptr</li>
 <li>APIERR_MEMFULL - Not enough memory to complete the operation. </li>
 </ul>
@@ -1649,12 +1679,12 @@ Functions</h2></td></tr>
 <p>Retrieves the Book Settings. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">book</td><td>The Book settings. </td></tr>
+    <tr><td class="paramname">book</td><td>[in/out] The Book settings. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - book is nullptr </li>
 </ul>
 </dd></dl>
@@ -1850,18 +1880,18 @@ Functions</h2></td></tr>
 <p>Retrieves a navigator item. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">guid</td><td>[in] The GUID of the navigator item </td></tr>
+    <tr><td class="paramname">guid</td><td>[in] The GUID of the navigator item. </td></tr>
     <tr><td class="paramname">navigatorItem</td><td>[in/out] Data of the navigator item (you should set mapId for performance). </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - The guid or the navigatorItem parameter is nullptr, or contains invalid data.</li>
 <li>APIERR_GENERAL - No open project. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get an item of the Project Navigator. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function retrieves an item of the Project Navigator. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd>Refer to the Navigator_Test example project of the API Development Kit. </dd></dl>
 
 </div>
@@ -1970,7 +2000,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves information of a Project Navigator Map or Publisher Set. </p>
+<p>Retrieves information about a Project Navigator Map or Publisher Set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">navigatorSet</td><td>[in/out] Data of the Project Navigator's Map. Identified with mapId. </td></tr>
@@ -1979,13 +2009,13 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - The navigatorSet or the index parameter is nullptr.</li>
 <li>APIERR_BADINDEX - The index parameter contains invalid data.</li>
 <li>APIERR_GENERAL - No open project. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to retrieve the name and GUID parameters of a given Project Navigator Map. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function retrieves the name and GUID parameters of a given Project Navigator Map. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___navigator_set.html">API_NavigatorSet</a> set;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//navigator maps</span></div>
@@ -2036,12 +2066,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - setNum is nullptr.</li>
-<li>APIERR_GENERAL - No open project </li>
+<li>APIERR_GENERAL - No open project. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to retrieve the number of Publisher Sets. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function retrieves the number of Publisher Sets. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___navigator_set.html">API_NavigatorSet</a> set;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">//navigator maps</span></div>
@@ -2088,7 +2118,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrives a navigator view. </p>
+<p>Retrieves a navigator view. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">navigatorItem</td><td>[in] The requested navigator item identified with GUID (you should set mapId for performance). </td></tr>
@@ -2179,7 +2209,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>NoError - The function has completed with success.</li>
 <li>APIERR_BADPARS - viewPointData was nullptr.</li>
-<li>APIERR_BADID - viewPointData.guid designetes an object which does not exist, or it is not a Navigator viewpoint root, group or leaf node of the current AddOn. </li>
+<li>APIERR_BADID - viewPointData.guid designates an object which does not exist, or it is not a Navigator viewpoint root, group or leaf node of the current AddOn. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>viewPointData.viewSettingsFlags is set to <code>API_NavgatorViewSettingsNoAttributeID</code>, if viewPointData.guid designates a root or a group. </dd></dl>
@@ -2419,13 +2449,13 @@ Functions</h2></td></tr>
 <p>Retrieves the Subset settings of the given Layout Subset. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">guid</td><td>The guid of the Layout Subset. </td></tr>
-    <tr><td class="paramname">subSet</td><td>The Subset. </td></tr>
+    <tr><td class="paramname">guid</td><td>[in] The guid of the Layout Subset. </td></tr>
+    <tr><td class="paramname">subSet</td><td>[out] The Subset. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - subSet is nullptr </li>
 </ul>
 </dd></dl>
@@ -2451,12 +2481,12 @@ Functions</h2></td></tr>
 <p>Retrieves the default Subset settings of the Layout Book. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">subSet</td><td>The default Subset. </td></tr>
+    <tr><td class="paramname">subSet</td><td>[out] The default Subset. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - subSet is nullptr </li>
 </ul>
 </dd></dl>
@@ -2628,7 +2658,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">navigatorItem</td><td>[in/out] The item used for creating the view; its guid member will be filled on output. </td></tr>
     <tr><td class="paramname">navigatorView</td><td>[out] The created view (unless the navigator item's type is <code>API_FolderNavItem</code>). </td></tr>
     <tr><td class="paramname">parent</td><td>These parameters are used, when one wants to create a new folder item on the view map, and in this case the first guid is the guid of the node whereunder the new navitem will be placed (the "parent"). </td></tr>
-    <tr><td class="paramname">previousSibling</td><td>These parameters are used, when one wants to create a new folder item on the view map, and in this case the navigatorView parameter can be nullptr. If you create an other type of element, then this parameter can be nullptr. </td></tr>
+    <tr><td class="paramname">previousSibling</td><td>These parameters are used, when one wants to create a new folder item on the view map, and in this case the navigatorView parameter can be nullptr. If you create another type of element, then this parameter can be nullptr. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2812,19 +2842,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>With this function a navigator item can be moved to an other place. It can be used with items on the layout map and on the view maps (in case of teamworking on the public and on the users' own view map as well. </p>
+<p>With this function a navigator item can be moved to another place. It can be used with items on the layout map and on the view maps (in case of teamworking on the public and on the users' own view map as well. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">source</td><td>The guid of the item, what you want to replace. </td></tr>
     <tr><td class="paramname">parent</td><td>The new parent of the replaced item. </td></tr>
-    <tr><td class="paramname">child</td><td>If it is nullptr, then the item will be inserted to the first place on the actual level, otherwise the it will be inserted after the child. </td></tr>
+    <tr><td class="paramname">child</td><td>If it is nullptr, then the item will be inserted to the first place on the actual level, otherwise it will be inserted after the child. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>NoError - Everything is OK.</li>
 <li>APIERR_BADPARS - This value can be returned in several cases: the source or the parent parameter is nullptr, or the source or the parent guid was not found in the layout map and neither in the view maps, or the source item cannot be moved to the desired destination.</li>
-<li>APIERR_NOACCESSRIGHT - In case of teamworking, if the user not owns (locked) the item which (s)he wants to move then the user has no access right... </li>
+<li>APIERR_NOACCESSRIGHT - In case of teamworking, if the user does not own (locked) the item which (s)he wants to move then the user has no access right... </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function is a non-undoable data structure modifier function. See more details on this topic at Command Overview. </dd></dl>

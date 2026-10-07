@@ -10,5 +10,6 @@ var class_a_c_a_p_i_1_1_m_e_p_1_1_element_base =
     [ "GetObjectYSize", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#ae3465fa0426285b1835bc1cf124d03c2", null ],
     [ "GetOrientation", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#a3314d300b7fd16a4e19f04fe51996980", null ],
     [ "GetPortIDs", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#a64e8bf1aded472f79dcf48c30c058446", null ],
+    [ "GetPorts", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#aa0fc62a23c9bc797a9891622996a8044", null ],
     [ "GetReflected", "class_a_c_a_p_i_1_1_m_e_p_1_1_element_base.html#aa666dd3c2256674d8795e12e5af660e2", null ]
 ];

@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Command Scopes</title>
+<title>Archicad 30 C++ API: Command Scopes</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -155,7 +155,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions related to the Command Scopes of Archicad. They provide a way to post Undoable and NotUndoable commands to the message loop. </p>
-<h1><a class="anchor" id="autotoc_md107"></a>
+<h1><a class="anchor" id="autotoc_md114"></a>
 Command Overview</h1>
 <p>Archicad uses the <b>command</b> concept to represent and execute a user operation. All data structure modifications (except IO processes) should be performed during command execution. In case of element change notifications, the command is started, executed and managed by Archicad. Add-ons also can start and execute commands.</p>
 <p>In case of undoable operations all modifications should be done in a lambda function which is executed by <a class="el" href="#gab7bf9e1351986b4bb6c69dab76766f1a">ACAPI_CallUndoableCommand</a>. <br  />
@@ -197,18 +197,18 @@ Command Overview</h1>
 <p>Performs an operation without opening an undoable session. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">commandName</td><td>[in] Reserved for further use, this string won't appear anywhere. </td></tr>
+    <tr><td class="paramname">commandName</td><td>[in] Reserved for further use; this string won't appear anywhere. </td></tr>
     <tr><td class="paramname">command</td><td>[in] The lambda function (C++11 function wrapper) that encapsulates all the operations. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_REFUSEDCMD - An operation has already opened, or the current command is undoable.</li>
 <li>APIERR_COMMANDFAILED - The current command threw an exception. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to execute more not-undoable data structure modifier functions in a single command. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to execute more non-undoable data structure modifier functions in a single command. </dd></dl>
 
 </div>
 </div>
@@ -234,20 +234,20 @@ Command Overview</h1>
 <p>Performs an undoable operation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">undoString</td><td>[in] This string will appear after "Undo " in the Edit menu. Should be localizable. When left empty: "Paste" appears for merging and drag'n'drop operations the name of the command will be shown after "Undo " when the user chooses normal menu driven commands </td></tr>
+    <tr><td class="paramname">undoString</td><td>[in] This string will appear after "Undo " in the Edit menu. Should be localizable. When left empty, "Paste" appears for merging and drag'n'drop operations, and the name of the command will be shown after "Undo " when the user chooses standard menu-driven commands </td></tr>
     <tr><td class="paramname">command</td><td>[in] The lambda function (C++11 function wrapper) that encapsulates the command to be called during the undoable operation. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_UNDOEMPTY - The current action is not undoable.</li>
 <li>APIERR_REFUSEDCMD - The current action is not undoable.</li>
 <li>APIERR_COMMANDFAILED - The current command threw an exception.</li>
 <li>APIERR_NOTMINE - Another add-on has already opened an undoable operation. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function encapsulates a (series of) undoable steps (e.g. element creation). All the database modification operations check whether they are performed within an undoable command scope (a database transaction). For some add-on types (e.g. I/O type add-ons) this function doesn't have to be called, as it doesn't make any sense to 'undo' opening a file. Add-ons may not call this function from their element database event handler callback, because those notifications are sent from within an existing database transaction. An add-on can perform more than one undoable command during one call. Just be aware that if the user completes an action in one step, it wouldn't be too convenient for her/him to restore the previous state (perform an "undo") in more than one step. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function encapsulates a (series of) undoable steps (e.g., element creation). All the database modification operations check whether they are performed within an undoable command scope (a database transaction). For some add-on types (e.g., I/O type add-ons), this function doesn't have to be called, as it doesn't make any sense to 'undo' opening a file. Add-ons may not call this function from their element database event handler callback, because those notifications are sent from within an existing database transaction. An add-on can perform more than one undoable command during one call. Just be aware that if the user completes an action in one step, it wouldn't be too convenient for them to restore the previous state (perform an "undo") in more than one step. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode err = <a class="code hl_function" href="#gab7bf9e1351986b4bb6c69dab76766f1a">ACAPI_CallUndoableCommand</a> (<span class="stringliteral">&quot;Create text&quot;</span>,</div>
 <div class="line">        [&amp;] () -&gt; GSErrCode {</div>
 <div class="line">            <span class="keywordflow">return</span> <a class="code hl_function" href="group___element.html#gad4ba2707aac702e651c6b1ec9e212baf">ACAPI_Element_Create</a> (&amp;element, &amp;memo);</div>

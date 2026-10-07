@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Drawing Manager</title>
+<title>Archicad 30 C++ API: Drawing Manager</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -219,7 +219,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gae70e25a182e63360f3aa05ed50e2f7f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalizes the direct creation of drawing elements.  <br /></td></tr>
 <tr class="separator:gae70e25a182e63360f3aa05ed50e2f7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga383f0d5418c2bf72547e8b336d2909b7" id="r_ga383f0d5418c2bf72547e8b336d2909b7"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga383f0d5418c2bf72547e8b336d2909b7">ACAPI_Drawing_GetDrawingLink</a> (const <a class="el" href="struct_a_p_i___guid.html">API_Guid</a> *guid, <a class="el" href="struct_a_p_i___drawing_link_info.html">API_DrawingLinkInfo</a> *drawingLinkInfo)</td></tr>
-<tr class="memdesc:ga383f0d5418c2bf72547e8b336d2909b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns various information on a drawing link.  <br /></td></tr>
+<tr class="memdesc:ga383f0d5418c2bf72547e8b336d2909b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns various information about a drawing link.  <br /></td></tr>
 <tr class="separator:ga383f0d5418c2bf72547e8b336d2909b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5c7eb4039cac7be7960f3be9f26df681" id="r_ga5c7eb4039cac7be7960f3be9f26df681"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5c7eb4039cac7be7960f3be9f26df681">ACAPI_Drawing_CheckDrawingStatus</a> (<a class="el" href="struct_a_p_i___guid.html">API_Guid</a> *guid, Int32 *status)</td></tr>
 <tr class="memdesc:ga5c7eb4039cac7be7960f3be9f26df681"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the given drawing is up-to-date.  <br /></td></tr>
@@ -433,7 +433,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - dScale is nullptr or contains wrong value. </li>
 </ul>
 </dd></dl>
@@ -501,18 +501,18 @@ Functions</h2></td></tr>
 <p>Checks whether the given drawing is up-to-date. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">guid</td><td>[in] The GUID of the drawing element </td></tr>
-    <tr><td class="paramname">status</td><td>[out] 1 if the drawing is up-to-date, 0 if modified, -1 otherwise </td></tr>
+    <tr><td class="paramname">guid</td><td>[in] The GUID of the drawing element. </td></tr>
+    <tr><td class="paramname">status</td><td>[out] 1 if the drawing is up-to-date, 0 if modified, -1 otherwise. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - The status parameter is nullptr, or the drawing contains invalid link ID.</li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - The status parameter is nullptr, or the drawing contains an invalid link ID.</li>
 <li>APIERR_BADINDEX - The guid is not valid, or the drawing comes from a master layout. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Call this function to check the status of a drawing quickly (as seen on the Drawing Link Manager palette). </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Call this function to quickly check the status of a drawing (as seen on the Drawing Link Manager palette). </dd></dl>
 
 </div>
 </div>
@@ -535,20 +535,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns various information on a drawing link. </p>
+<p>Returns various information about a drawing link. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">guid</td><td>[in] get information for drawing link identified with drawing's guid </td></tr>
-    <tr><td class="paramname">drawingLinkInfo</td><td>[out] the drawing link's type, guid, etc. </td></tr>
+    <tr><td class="paramname">guid</td><td>[in] Get information for the drawing link identified by the drawing's GUID. </td></tr>
+    <tr><td class="paramname">drawingLinkInfo</td><td>[out] The drawing link's type, GUID, etc. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - The drawing link is not valid. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get basic information about a drawing link identified by the linkUID parameter. Remember to release the linkPath location and the viewPath pointer dynamically allocated by the function, as it is shown in the example below. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function retrieves basic information about a drawing link identified by the linkUID parameter. Remember to release the linkPath location and the viewPath pointer dynamically allocated by the function, as shown in the example below. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">Int32 IsExternalView (<a class="code hl_struct" href="struct_a_p_i___drawing_type.html">API_DrawingType</a>* drawing)</div>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_struct" href="struct_a_p_i___drawing_link_info.html">API_DrawingLinkInfo</a> drawingLinkInfo {};</div>
@@ -593,7 +593,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - dScale is nullptr </li>
 </ul>
 </dd></dl>
@@ -629,7 +629,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADINDEX - The drawingGuid parameter is invalid. </li>
 </ul>
 </dd></dl>
@@ -744,17 +744,17 @@ Functions</h2></td></tr>
 <p>Redirects element creation into a temporary database for creating drawing data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dScale</td><td>[in] optional parameter (the default value is 1.0); defines the scaling from paper to model. For example, for 1:100 scaling, pass 100. </td></tr>
-    <tr><td class="paramname">api_pens</td><td>[in] optional parameter (the default pen table is coming from the current workspace (layout or model)); defines the pen table to use for this drawing data. </td></tr>
+    <tr><td class="paramname">dScale</td><td>[in] Optional parameter (default is 1.0); defines the scaling from paper to model. For example, for 1:100 scaling, pass 100. </td></tr>
+    <tr><td class="paramname">api_pens</td><td>[in] Optional parameter (the default pen table comes from the current workspace (layout or model)); defines the pen table to use for this drawing data. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_NESTING - Calls to this function cannot be nested; you have to finish the previous drawing data with <a class="el" href="#gae70e25a182e63360f3aa05ed50e2f7f2">ACAPI_Drawing_StopDrawingData</a>. </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_NESTING - Calls to this function cannot be nested; you must finish the previous drawing data with <a class="el" href="#gae70e25a182e63360f3aa05ed50e2f7f2">ACAPI_Drawing_StopDrawingData</a>. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function opens an internal store for the drawing data (the internal data of a drawing element). Further element creation functions will put the created elements into this store. Only 2D elements (including figures/pictures) are allowed. This drawing data can be passed later in the drawingData member of the <a class="el" href="struct_a_p_i___element_memo.html">API_ElementMemo</a> to <a class="el" href="group___element.html#gad4ba2707aac702e651c6b1ec9e212baf">ACAPI_Element_Create</a>. The pens have to be passed upfront in the api_pens parameter, and you cannot modify them later. This restriction is coming from the internal setup of the data store. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function opens an internal store for drawing data (the internal data of a drawing element). Further element creation functions will put the created elements into this store. Only 2D elements (including figures/pictures) are allowed. This drawing data can later be passed in the drawingData member of <a class="el" href="struct_a_p_i___element_memo.html">API_ElementMemo</a> to <a class="el" href="group___element.html#gad4ba2707aac702e651c6b1ec9e212baf">ACAPI_Element_Create</a>. The pens must be passed up front in the api_pens parameter, and you cannot modify them later. This restriction comes from the internal setup of the data store. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">// -----------------------------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Wraps importing data into IDF</span></div>
 <div class="line"><span class="comment">// -----------------------------------------------------------------------------</span></div>
@@ -836,13 +836,13 @@ Functions</h2></td></tr>
 <p>Finalizes the direct creation of drawing elements. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">idfMem</td><td>[out] an opaque data stream containing the drawing database in a serialized form </td></tr>
-    <tr><td class="paramname">api_boundBox</td><td>[out] optional parameter; if not nullptr then on return contains the bounding box of the created elements </td></tr>
+    <tr><td class="paramname">idfMem</td><td>[out] An opaque data stream containing the drawing database in a serialized form. </td></tr>
+    <tr><td class="paramname">api_boundBox</td><td>[out] Optional parameter; if not nullptr, on return contains the bounding box of the created elements. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function completed successfully. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function finalizes the database started with <a class="el" href="#ga8a127fc001dff3f5df3a147ed2e5720d">ACAPI_Drawing_StartDrawingData</a>. The returned database can be used to create a drawing element on the layout or in the model; pass the idfMem pointer in the drawingData member of <a class="el" href="struct_a_p_i___element_memo.html">API_ElementMemo</a>. </dd></dl>
@@ -929,7 +929,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has been completed with success. </li>
+<li>NoError - The function has been completed successfully. </li>
 </ul>
 </dd></dl>
 

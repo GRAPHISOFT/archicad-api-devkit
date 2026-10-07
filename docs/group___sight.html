@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Sights</title>
+<title>Archicad 30 C++ API: Sights</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -214,7 +214,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_GENERAL - The sight could not be created. </li>
 </ul>
 </dd></dl>
@@ -245,8 +245,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_GENERAL - The passed sightId was invalid. </li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_GENERAL - The passed sightPtr was invalid. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>Only pass sight pointers created with <a class="el" href="#gaeb0e14e30c3adf2e8f555a775a4257ee">ACAPI_Sight_CreateSight</a> to this function. </dd></dl>
@@ -276,7 +276,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. @ </li>
+<li>NoError - The function has completed successfully. @ </li>
 </ul>
 </dd></dl>
 
@@ -305,7 +305,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_REFUSEDCMD - The model is not available in the current context.</li>
 <li>APIERR_GENERAL - Could not construct ModelerAPI::Model. @ </li>
 </ul>
@@ -341,7 +341,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_GENERAL - The passed sightPtr was invalid. </li>
 </ul>
 </dd></dl>
@@ -375,16 +375,16 @@ Functions</h2></td></tr>
 <p>Switches between different 3D databases. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">newSight</td><td>The ID of the sight (as value!) </td></tr>
+    <tr><td class="paramname">newSight</td><td>[in] The ID of the sight (as value). </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - Incorrect sight ID was passed. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to switch between the 3D database behind the real 3D window and 3D database behind the API (the 3D information for an element is coming from the floor plan). The switch usually takes no time unless the database doesn't exist or was deleted; in these cases the database is rebuilt. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function switches between the 3D database behind the real 3D window and the 3D database behind the API (the 3D information for an element comes from the floor plan). The switch usually takes no time unless the database doesn't exist or was deleted; in these cases, the database is rebuilt. </dd></dl>
 
 </div>
 </div>

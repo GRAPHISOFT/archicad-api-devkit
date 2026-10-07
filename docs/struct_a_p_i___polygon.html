@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: API_Polygon Struct Reference</title>
+<title>Archicad 30 C++ API: API_Polygon Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -132,7 +132,7 @@ $(function(){initNavTree('struct_a_p_i___polygon.html',''); initResizable(true);
 </div><!--header-->
 <div class="contents">
 
-<p>Representation of a two dimensional polygon.  
+<p>Representation of a two-dimensional polygon.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;APIdefs_Base.h&gt;</code></p>
@@ -153,7 +153,7 @@ Int32&#160;</td><td class="memItemRight" valign="bottom"><b>nArcs</b></td></tr>
 <tr class="separator:a320a7e37114226dddf665cae9507f612"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Representation of a two dimensional polygon. </p>
+<div class="textblock"><p>Representation of a two-dimensional polygon. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>This structure holds the size of the corresponding geometry only, i.e. the number of nodes, number of subpolygons and number of arc segments in the polygon shape. The geometry data is always passed through an <a class="el" href="struct_a_p_i___element_memo.html">API_ElementMemo</a> structure. What are the components:<ul>
 <li>2D coordinates; represented by an <a class="el" href="struct_a_p_i___coord.html">API_Coord</a> array.</li>
 <li>subpolygons; represented by an index (Int32) array to the coordinates. Each index points to the last coordinate of a contour.</li>
@@ -171,7 +171,7 @@ API Polygon</div></div>
 <li>poly-&gt;nSubPolys = BMGetHandleSize ((GSHandle) memo-&gt;pends) / sizeof (Int32) - 1;</li>
 <li>the pends array contains indices to the coordinate array, indicating the vertices which close the subcontours</li>
 <li>the first element is always 0 Arc segments:</li>
-<li>poly-&gt;nArcs = BMGetHandleSize ((GSHandle) memo-&gt;parcs) / sizeof (<a class="el" href="struct_a_p_i___poly_arc.html" title="Representation of an arc segment of a two dimensional polygon.">API_PolyArc</a>);</li>
+<li>poly-&gt;nArcs = BMGetHandleSize ((GSHandle) memo-&gt;parcs) / sizeof (<a class="el" href="struct_a_p_i___poly_arc.html" title="Representation of an arc segment of a two-dimensional polygon.">API_PolyArc</a>);</li>
 <li>the parcs array is allocated only if there are any arc segments in the polygon,</li>
 <li>each record refers to two coordinate indices ( begIndex, endIndex) between which the polygon edge is an arc,</li>
 <li>each record gives the signed arc angle. The angle is positive, if the arc is on the right-hand side of the (begPoint, endPoint) segment,</li>
@@ -180,7 +180,7 @@ API Polygon</div></div>
 <li>vertexIDs can be called as node unique IDs (that's why c 1 and c 6 have the same vertex ID),</li>
 <li>the maximal vertexID value is stored in the 0. cell,</li>
 <li>there isn't any correspondence between the coordinate indices and the assigned vertexIDs; however they are often the same. (See that c 6 has the ID 1.),</li>
-<li>upon editing the polygon shape the maximal vertexID can be not be decremented, and the nodes must keep the vertexID values</li>
+<li>upon editing the polygon shape the maximal vertexID cannot be decremented, and the nodes must keep the vertexID values</li>
 <li>vertex IDs are useful in dimensioning and editing Editing the shape of a polygon covers many difficulties which must be handled. They are:</li>
 <li>vertex IDs must be maintained,</li>
 <li>arc references must be updated; partially,</li>

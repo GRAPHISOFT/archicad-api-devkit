@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Rendering Scenes and Settings</title>
+<title>Archicad 30 C++ API: Rendering Scenes and Settings</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -139,7 +139,7 @@ $(function(){initNavTree('group___rendering.html',''); initResizable(true); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___photo_render_pars.html">API_PhotoRenderPars</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters for saving photo rendered picture into an image file.  <a href="struct_a_p_i___photo_render_pars.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters for saving a photo-rendered picture into an image file.  <a href="struct_a_p_i___photo_render_pars.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___rend_effects.html">API_RendEffects</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The representation of the Rendering Settings / Effects tab page.  <a href="struct_a_p_i___rend_effects.html#details">More...</a><br /></td></tr>
@@ -150,8 +150,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:gad4f68e67737cf4c873cf249c2649e73c" id="r_gad4f68e67737cf4c873cf249c2649e73c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad4f68e67737cf4c873cf249c2649e73c">API_RendSetTypeID</a> { <b>APIRendSet_EffectsID</b>
-, <b>APIRendSet_ImageID</b>
+<tr class="memitem:gad4f68e67737cf4c873cf249c2649e73c" id="r_gad4f68e67737cf4c873cf249c2649e73c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad4f68e67737cf4c873cf249c2649e73c">API_RendSetTypeID</a> { <a class="el" href="#ggad4f68e67737cf4c873cf249c2649e73ca4556d654efa2ae68a8343153dfae437a">APIRendSet_EffectsID</a>
+, <a class="el" href="#ggad4f68e67737cf4c873cf249c2649e73cae0fbb91079b89aef09dbd6a590786ff6">APIRendSet_ImageID</a>
  }</td></tr>
 <tr class="memdesc:gad4f68e67737cf4c873cf249c2649e73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The enumeration of the available photorendering tab page types.  <a href="#gad4f68e67737cf4c873cf249c2649e73c">More...</a><br /></td></tr>
 <tr class="separator:gad4f68e67737cf4c873cf249c2649e73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,6 +191,12 @@ Functions</h2></td></tr>
 
 <p>The enumeration of the available photorendering tab page types. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>Use this enum as a selector to the <a class="el" href="#gaa9c720b4cff8d212fb4fe71f69e920cd">ACAPI_Rendering_GetRenderingSets</a> and <a class="el" href="#ga2352e2e2daa922d5d2723602070a37fe">ACAPI_Rendering_ChangeRenderingSets</a> environment functions to get data of the different tab pages of the "Rendering Settings..." dialog. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad4f68e67737cf4c873cf249c2649e73ca4556d654efa2ae68a8343153dfae437a" name="ggad4f68e67737cf4c873cf249c2649e73ca4556d654efa2ae68a8343153dfae437a"></a>APIRendSet_EffectsID&#160;</td><td class="fielddoc"><p>Effects rendering settings tab page. See the <a class="el" href="struct_a_p_i___rend_effects.html">API_RendEffects</a> structure. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad4f68e67737cf4c873cf249c2649e73cae0fbb91079b89aef09dbd6a590786ff6" name="ggad4f68e67737cf4c873cf249c2649e73cae0fbb91079b89aef09dbd6a590786ff6"></a>APIRendSet_ImageID&#160;</td><td class="fielddoc"><p>Size &amp; Background rendering settings tab page. See the <a class="el" href="struct_a_p_i___rend_image.html">API_RendImage</a> structure. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -236,18 +242,18 @@ Functions</h2></td></tr>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___rend_image.html">API_RendImage</a>   rendImage {};</div>
 <div class="line">GSErrCode       err;</div>
 <div class="line"> </div>
-<div class="line">err = <a class="code hl_function" href="#gaa9c720b4cff8d212fb4fe71f69e920cd">ACAPI_Rendering_GetRenderingSets</a> (&amp;rendEffects, APIRendSet_EffectsID);</div>
+<div class="line">err = <a class="code hl_function" href="#gaa9c720b4cff8d212fb4fe71f69e920cd">ACAPI_Rendering_GetRenderingSets</a> (&amp;rendEffects, <a class="code hl_enumvalue" href="#ggad4f68e67737cf4c873cf249c2649e73ca4556d654efa2ae68a8343153dfae437a">APIRendSet_EffectsID</a>);</div>
 <div class="line"><span class="keywordflow">if</span> (err == NoError) {</div>
 <div class="line">    rendEffects.useBkgAlpha = <span class="keyword">true</span>;</div>
-<div class="line">    err = <a class="code hl_function" href="#ga2352e2e2daa922d5d2723602070a37fe">ACAPI_Rendering_ChangeRenderingSets</a> (&amp;rendEffects, APIRendSet_EffectsID);</div>
+<div class="line">    err = <a class="code hl_function" href="#ga2352e2e2daa922d5d2723602070a37fe">ACAPI_Rendering_ChangeRenderingSets</a> (&amp;rendEffects, <a class="code hl_enumvalue" href="#ggad4f68e67737cf4c873cf249c2649e73ca4556d654efa2ae68a8343153dfae437a">APIRendSet_EffectsID</a>);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">err = <a class="code hl_function" href="#gaa9c720b4cff8d212fb4fe71f69e920cd">ACAPI_Rendering_GetRenderingSets</a> (&amp;rendImage, APIRendSet_ImageID);</div>
+<div class="line">err = <a class="code hl_function" href="#gaa9c720b4cff8d212fb4fe71f69e920cd">ACAPI_Rendering_GetRenderingSets</a> (&amp;rendImage, <a class="code hl_enumvalue" href="#ggad4f68e67737cf4c873cf249c2649e73cae0fbb91079b89aef09dbd6a590786ff6">APIRendSet_ImageID</a>);</div>
 <div class="line"><span class="keywordflow">if</span> (err == NoError) {</div>
 <div class="line">    rendImage.bkgSkyRGB.f_red   = 0.7;</div>
 <div class="line">    rendImage.bkgSkyRGB.f_green = 0.5;</div>
 <div class="line">    rendImage.bkgSkyRGB.f_blue  = 1.0;</div>
-<div class="line">    err = <a class="code hl_function" href="#ga2352e2e2daa922d5d2723602070a37fe">ACAPI_Rendering_ChangeRenderingSets</a> (&amp;rendImage, APIRendSet_ImageID);</div>
+<div class="line">    err = <a class="code hl_function" href="#ga2352e2e2daa922d5d2723602070a37fe">ACAPI_Rendering_ChangeRenderingSets</a> (&amp;rendImage, <a class="code hl_enumvalue" href="#ggad4f68e67737cf4c873cf249c2649e73cae0fbb91079b89aef09dbd6a590786ff6">APIRendSet_ImageID</a>);</div>
 <div class="line">}</div>
 <div class="line"><span class="keyword">delete</span> rendImage.bkgPictFile;</div>
 </div><!-- fragment --> </dd></dl>
@@ -360,7 +366,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADDATABASE - The current database does not match the current window</li>
 <li>APIERR_BADPARS - Either the rendPars parameter is nullptr </li>
 </ul>
@@ -372,7 +378,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="keywordflow">if</span> (fileLoc.GetStatus () != NoError)</div>
 <div class="line">    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="group___a_p_i_infrastructure.html#gga75cc225b8e9434d91621dd230c3013a2ab1eb22c857b581ec7efdb74abcc93006">APIERR_GENERAL</a>;</div>
 <div class="line"> </div>
-<div class="line">rendPars.fileTypeID = APIFType_JPEGFile;</div>
+<div class="line">rendPars.fileTypeID = <a class="code hl_enumvalue" href="group___project_operation.html#ggaf7e72c240d18c9af9200eada2ef2944bac18cf7b83f06a0b6598d65d6fd62997b">APIFType_JPEGFile</a>;</div>
 <div class="line">rendPars.file = &amp;fileLoc;</div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#if defined (macintosh)</span></div>

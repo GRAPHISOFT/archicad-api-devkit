@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Menu integration</title>
+<title>Archicad 30 C++ API: Menu integration</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -138,7 +138,7 @@ $(function(){initNavTree('group___menu_item.html',''); initResizable(true); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_c_a_p_i_1_1_u_i_1_1_menu_1_1_menu_item.html">ACAPI::UI::Menu::MenuItem</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_c_a_p_i_1_1_u_i_1_1_menu_1_1_menu_item.html" title="MenuItem is a representation of one of this addon&#39;s menu item.">MenuItem</a> is a representation of one of this addon's menu item.  <a href="class_a_c_a_p_i_1_1_u_i_1_1_menu_1_1_menu_item.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_c_a_p_i_1_1_u_i_1_1_menu_1_1_menu_item.html" title="MenuItem is a representation of one of this add-on&#39;s menu items.">MenuItem</a> is a representation of one of this add-on's menu items.  <a href="class_a_c_a_p_i_1_1_u_i_1_1_menu_1_1_menu_item.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_c_a_p_i_1_1_u_i_1_1_menu_1_1_menu_manager.html">ACAPI::UI::Menu::MenuManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that contains menu item related functions.  <a href="class_a_c_a_p_i_1_1_u_i_1_1_menu_1_1_menu_manager.html#details">More...</a><br /></td></tr>
@@ -153,7 +153,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga402799c9e60396b74abc1ac198087129"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to create menu manager instance, that lets you query and manipulate menu related data.  <br /></td></tr>
 <tr class="separator:ga402799c9e60396b74abc1ac198087129"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacff9a43fd610e397a29b26644fa7a84f" id="r_gacff9a43fd610e397a29b26644fa7a84f"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacff9a43fd610e397a29b26644fa7a84f">ACAPI_MenuItem_GetMenuItemFlags</a> (const <a class="el" href="struct_a_p_i___menu_item_ref.html">API_MenuItemRef</a> *menuItemRef, GSFlags *itemFlags, GS::UniString *menuItemText=nullptr)</td></tr>
-<tr class="memdesc:gacff9a43fd610e397a29b26644fa7a84f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the flag values of the specified menu item mounted by API tool add-on.  <br /></td></tr>
+<tr class="memdesc:gacff9a43fd610e397a29b26644fa7a84f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the flag values of the specified menu item mounted by an API tool add-on.  <br /></td></tr>
 <tr class="separator:gacff9a43fd610e397a29b26644fa7a84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7df00376bb4d09a4ca4c07760eac880f" id="r_ga7df00376bb4d09a4ca4c07760eac880f"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7df00376bb4d09a4ca4c07760eac880f">ACAPI_MenuItem_SetMenuItemFlags</a> (const <a class="el" href="struct_a_p_i___menu_item_ref.html">API_MenuItemRef</a> *menuItemRef, GSFlags *itemFlags, GS::UniString *menuItemText=nullptr)</td></tr>
 <tr class="memdesc:ga7df00376bb4d09a4ca4c07760eac880f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the flag values of the specified menu item.  <br /></td></tr>
@@ -205,17 +205,17 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">menuItemRef</td><td>[in] The referenced menu item. </td></tr>
-    <tr><td class="paramname">weText</td><td>[in] The text (if you don't pass weUniText) that will appear as the name of the menu item in the menu customization part of the work environment dialog. </td></tr>
-    <tr><td class="paramname">weUniText</td><td>[in] The Unicode text that will appear as the name of the menu item in the menu customization part of the work environment dialog. </td></tr>
+    <tr><td class="paramname">weText</td><td>[in] The text (if you don't pass weUniText) that will appear as the name of the menu item in the menu customization part of the Work Environment dialog. </td></tr>
+    <tr><td class="paramname">weUniText</td><td>[in] The Unicode text that will appear as the name of the menu item in the menu customization part of the Work Environment dialog. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - menuItemRef or both itemText and itemUniText are nullptr </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - menuItemRef or both weText and weUniText are nullptr. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>We use this function mainly for palettes. In the Palettes menu the item is usually the title of the palette (e.g. "Element Information"), whereas in the Work Environment dialog it reads "Show/Hide Element Information". </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is mainly used for palettes. In the Palettes menu, the item is usually the title of the palette (e.g. "Element Information"), whereas in the Work Environment dialog it reads "Show/Hide Element Information". </dd></dl>
 
 </div>
 </div>
@@ -243,7 +243,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the flag values of the specified menu item mounted by API tool add-on. </p>
+<p>Returns the flag values of the specified menu item mounted by an API tool add-on. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">menuItemRef</td><td>[in] Identifies the menu item. </td></tr>
@@ -261,12 +261,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - any of the parameters are nullptr</li>
-<li>APIERR_BADINDEX - the specified menu item does not belong to the caller add-on </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - Any of the parameters are nullptr.</li>
+<li>APIERR_BADINDEX - The specified menu item does not belong to the caller add-on. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the current status of a menu item which belongs to the caller API tool add-on. The menu item is referenced with the resource ID and the string number. To change the status of a menu item use the <a class="el" href="#ga7df00376bb4d09a4ca4c07760eac880f">ACAPI_MenuItem_SetMenuItemFlags</a> function. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the current status of a menu item which belongs to the caller API tool add-on. The menu item is referenced with the resource ID and the string number. To change the status of a menu item, use the <a class="el" href="#ga7df00376bb4d09a4ca4c07760eac880f">ACAPI_MenuItem_SetMenuItemFlags</a> function. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">void</span>    EnableACMenuItem (<span class="keywordtype">short</span> itemInd, <span class="keywordtype">bool</span> enable)</div>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_struct" href="struct_a_p_i___menu_item_ref.html">API_MenuItemRef</a> itemRef {};</div>
@@ -316,17 +316,17 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">menuItemRef</td><td>[in] Identifies the menu item. </td></tr>
     <tr><td class="paramname">itemText</td><td>[out] Menu item text (if you don't pass itemUniText). </td></tr>
-    <tr><td class="paramname">itemUniText</td><td>[out] Optional Unicode menu item text to set. </td></tr>
+    <tr><td class="paramname">itemUniText</td><td>[out] Optional Unicode menu item text to get. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - menuItemRef or both itemText and itemUniText are nullptr</li>
-<li>APIERR_BADINDEX - the specified menu item does not belong to the caller add-on </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - menuItemRef or both itemText and itemUniText are nullptr.</li>
+<li>APIERR_BADINDEX - The specified menu item does not belong to the caller add-on. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the text of a menu item which belongs to the caller API tool add-on. The menu item is referenced with the resource ID and the string number. To change the text of a menu item use the <a class="el" href="#gac4962fe26ac912d6b7d34644c510b3db">ACAPI_MenuItem_SetMenuItemText</a> function. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to get the text of a menu item which belongs to the caller API tool add-on. The menu item is referenced with the resource ID and the string number. To change the text of a menu item, use the <a class="el" href="#gac4962fe26ac912d6b7d34644c510b3db">ACAPI_MenuItem_SetMenuItemText</a> function. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">void</span> ReportChosenCommand (<span class="keywordtype">short</span> menuResID, <span class="keywordtype">short</span> itemInd)</div>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_struct" href="struct_a_p_i___menu_item_ref.html">API_MenuItemRef</a> itemRef {};</div>
@@ -365,16 +365,16 @@ Functions</h2></td></tr>
 <p>Installs a callback procedure for handling the add-on's menu commands. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">menuStrResID</td><td>[in] An identifier of the menu to install the callback procedure for. This should be the same what you used in the <a class="el" href="#gaec79ce2178f5bb5482da171a49ba88ef">ACAPI_MenuItem_RegisterMenu</a> as a menu string resource number in the RegisterInterface function. </td></tr>
-    <tr><td class="paramname">handlerProc</td><td>[in] The callback function to handle the menu commands. </td></tr>
+    <tr><td class="paramname">menuStrResID</td><td>[in] A menu identifier for which to install the callback procedure. You should use this in the <a class="el" href="#gaec79ce2178f5bb5482da171a49ba88ef">ACAPI_MenuItem_RegisterMenu</a> as a menu string resource number in the RegisterInterface function. </td></tr>
+    <tr><td class="paramname">handlerProc</td><td>[in] The callback function handles the menu commands. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function should be called in the Initialize function of your add-on. It installs the callback function which is called when the user chooses one of your menu commands. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function should be called in your add-on's initialize function. It installs the callback function, which is called when the user chooses one of your menu commands. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">// -----------------------------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Called when the add-on has been loaded into memory</span></div>
 <div class="line"><span class="comment">// -----------------------------------------------------------------------------</span></div>
@@ -423,18 +423,18 @@ Functions</h2></td></tr>
 <p>Registers the menu items of the add-on. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">menuStrResID</td><td>[in] The resource ID of the menu resource, which should be in the resource fork of the add-on. </td></tr>
-    <tr><td class="paramname">promptStrResID</td><td>[in] The resource ID of the propmt string resource, which should be in the resource fork of the add-on. These strings appear in the status bar. </td></tr>
-    <tr><td class="paramname">menuPosCode</td><td>[in] Defines the server application's menu to insert the command into. </td></tr>
-    <tr><td class="paramname">menuFlags</td><td>[in] Flags describing whether you would like to see any separator item in the menu before or after the registered menu item. Its possible values are: MenuFlag_Default, MenuFlag_SeparatorBefore, and MenuFlag_SeparatorAfter </td></tr>
+    <tr><td class="paramname">menuStrResID</td><td>[in] The resource ID of the menu resource should be in the resource fork of the add-on. </td></tr>
+    <tr><td class="paramname">promptStrResID</td><td>[in] The resource ID of the prompt string resource should be in the resource fork of the add-on. These strings appear in the status bar. </td></tr>
+    <tr><td class="paramname">menuPosCode</td><td>[in] Defines the server application's menu to insert the command. </td></tr>
+    <tr><td class="paramname">menuFlags</td><td>[in] Flags describing whether you want to see any separator item in the menu before or after the registered menu item. Its possible values are: MenuFlag_Default, MenuFlag_SeparatorBefore, and MenuFlag_SeparatorAfter </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function has completed successfully. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function should be called from the RegisterInterface routine in your add-on. You can register more than one menu from the same add-on, even appearing in different menus of the server application. The supplied menuStrResID parameter should be the same in the <a class="el" href="#gaf40884810b9a156a9dbded23168dbde8">ACAPI_MenuItem_InstallMenuHandler</a> function, which you have to call from your Initialize routine. The following scenarios are possible:<ul>
+<dl class="section remark"><dt>Remarks</dt><dd>This function should be called from the RegisterInterface routine in your add-on. You can register more than one menu from the same add-on, even appearing in different menus of the server application. The supplied menuStrResID parameter should be the same in the <a class="el" href="#gaf40884810b9a156a9dbded23168dbde8">ACAPI_MenuItem_InstallMenuHandler</a> function, which you must call from your Initialize routine. The following scenarios are possible:<ul>
 <li>the add-on inserts one menu item at the position defined by <code>menuPosCode</code> <div class="fragment"><div class="line">&#39;STR#&#39; 32500 &quot;Menu Description&quot; {</div>
 <div class="line">/* [ 1] */ &quot;My add-on&#39;s solo menuitem&quot;</div>
 <div class="line">}</div>
@@ -445,12 +445,12 @@ Functions</h2></td></tr>
 <div class="line">/* [ 3] */          &quot;My add-on&#39;s menuitem #2&quot;</div>
 <div class="line">}</div>
 </div><!-- fragment --></li>
-<li>the add-on inserts its own main menu; menuPosCode should be MenuCode_UserDef <div class="fragment"><div class="line">&#39;STR#&#39; 32502 &quot;Menu Description&quot; {</div>
+<li>the add-on inserts its main menu; menuPosCode should be MenuCode_UserDef <div class="fragment"><div class="line">&#39;STR#&#39; 32502 &quot;Menu Description&quot; {</div>
 <div class="line">/* [ 1] */      &quot;My add-on&#39;s main menu&quot;</div>
 <div class="line">/* [ 2] */          &quot;My add-on&#39;s solo menuitem&quot;</div>
 <div class="line">}</div>
 </div><!-- fragment --></li>
-<li>the add-on inserts its own main menu with a submenu; menuPosCode should be MenuCode_UserDef <div class="fragment"><div class="line">&#39;STR#&#39; 32503 &quot;Menu Description&quot; {</div>
+<li>the add-on inserts its main menu with a submenu; menuPosCode should be MenuCode_UserDef <div class="fragment"><div class="line">&#39;STR#&#39; 32503 &quot;Menu Description&quot; {</div>
 <div class="line">/* [ 1] */      &quot;My add-on&#39;s main menu&quot;</div>
 <div class="line">/* [ 2] */          &quot;My add-on&#39;s submenu&quot;</div>
 <div class="line">/* [ 3] */              &quot;My add-on&#39;s menuitem #1&quot;</div>
@@ -459,7 +459,7 @@ Functions</h2></td></tr>
 </div><!-- fragment --></li>
 </ul>
 </dd></dl>
-<p>As you see, the add-on may define its own main menu, if it uses MenuCode_UserDef and the menu position. In this case the first item in the STR# resource will be the title of the main menu, and the other items correspond to the menu items in the non-main menu case. If this first item is the same as one of the server application's main menu titles, then the API won't open a new main menu, rather it inserts the add-on's menu into the original main menu, as defined by the rules for that menu. This also means if you use an already existing menu title (e.g. Window) which doesn't have an insertion place for add-ons, your add-on's menu won't appear. This implies that the location of the add-on within the Add-Ons folder doesn't have any impact on the menu position of your add-on's commands. The appearance of menu items can be controlled by control codes appended to the menu item string resource as described in the Required Resources section. </p><dl class="section user"><dt>Example</dt><dd>In the GRC file: <div class="fragment"><div class="line">&#39;STR#&#39; 32800 &quot;Menu strings&quot; {</div>
+<p>The add-on may define its main menu if it uses MenuCode_UserDef and the menu position. In this case, the first item in the STR# resource will be the title of the main menu, and the other items correspond to the menu items in the non-main menu case. If this first item is the same as one of the server application's main menu titles, then the API won't open a new main menu; instead, it inserts the add-on's menu into the original main menu, as defined by the rules for that menu. This also means if you use an existing menu title (e.g., Window) that doesn't have an insertion place for add-ons, your add-on's menu won't appear. This implies that the location of the add-on within the Add-Ons folder doesn't impact the menu position of your add-on's commands. The appearance of menu items can be controlled by control codes appended to the menu item string resource as described in the Required Resources section. </p><dl class="section user"><dt>Example</dt><dd>In the GRC file: <div class="fragment"><div class="line">&#39;STR#&#39; 32800 &quot;Menu strings&quot; {</div>
 <div class="line">/* [  1] */ &quot;Show Selections^ES^E3^ED^32800&quot;</div>
 <div class="line">}</div>
 <div class="line"> </div>
@@ -524,12 +524,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - any of the parameters are nullptr</li>
-<li>APIERR_BADINDEX - the specified menu item does not belong to the caller add-on </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - Any of the parameters are nullptr.</li>
+<li>APIERR_BADINDEX - The specified menu item does not belong to the caller add-on. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to set the current status of a menu item which belongs to the caller API tool add-on. The menu item is referenced with the resource ID and the string number. To get the current status of a menu item use the <a class="el" href="#gacff9a43fd610e397a29b26644fa7a84f">ACAPI_MenuItem_GetMenuItemFlags</a> function. Note that the initial status of a menu item can also be set in the menu item string resources of the add-on. Refer to the STR# specification explained in the Required Resources paper in details. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to set the current status of a menu item which belongs to the caller API tool add-on. The menu item is referenced with the resource ID and the string number. To get the current status of a menu item, use the <a class="el" href="#gacff9a43fd610e397a29b26644fa7a84f">ACAPI_MenuItem_GetMenuItemFlags</a> function. Note that the initial status of a menu item can also be set in the menu item string resources of the add-on. Refer to the STR# specification explained in the Required Resources paper for details. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">// -----------------------------------------------------------------------------</span></div>
 <div class="line"><span class="comment">// Checkmark a menu item of the addon</span></div>
 <div class="line"><span class="comment">// -----------------------------------------------------------------------------</span></div>
@@ -588,12 +588,12 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - menuItemRef or both itemText and itemUniText are nullptr</li>
-<li>APIERR_BADINDEX - the specified menu item does not belong to the caller add-on </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - menuItemRef or both itemText and itemUniText are nullptr.</li>
+<li>APIERR_BADINDEX - The specified menu item does not belong to the caller add-on. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to set the text of a menu item which belongs to the caller API tool add-on. The menu item is referenced with the resource ID and the string number. To get the current text of a menu item use the <a class="el" href="#ga80a26b7053359a1b87b2fbe55656e84e">ACAPI_MenuItem_GetMenuItemText</a> function. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function is used to set the text of a menu item which belongs to the caller API tool add-on. The menu item is referenced with the resource ID and the string number. To get the current text of a menu item, use the <a class="el" href="#ga80a26b7053359a1b87b2fbe55656e84e">ACAPI_MenuItem_GetMenuItemText</a> function. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">void</span> SetPaletteMenuText (<span class="keywordtype">short</span> paletteItemInd, <span class="keywordtype">bool</span> paletteIsVisible)</div>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_struct" href="struct_a_p_i___menu_item_ref.html">API_MenuItemRef</a> itemRef {};</div>

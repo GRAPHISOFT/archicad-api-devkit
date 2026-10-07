@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: User input management</title>
+<title>Archicad 30 C++ API: User input management</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -143,7 +143,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class to handle input related operations, like manipulating the input position and starting an input.  <a href="class_a_c_a_p_i_1_1_input_handler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___poly_arc.html">API_PolyArc</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representation of an arc segment of a two dimensional polygon.  <a href="struct_a_p_i___poly_arc.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representation of an arc segment of a two-dimensional polygon.  <a href="struct_a_p_i___poly_arc.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___neig.html">API_Neig</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a neig point of an element.  <a href="struct_a_p_i___neig.html#details">More...</a><br /></td></tr>
@@ -211,81 +211,98 @@ Enumerations</h2></td></tr>
 <tr class="memdesc:gab9c39e438f2193d6f1cef8370b93c3d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the element part in case of partial selection (currently available with Morph only)  <a href="#gab9c39e438f2193d6f1cef8370b93c3d6">More...</a><br /></td></tr>
 <tr class="separator:gab9c39e438f2193d6f1cef8370b93c3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9d0418d3baeec8ff31071849d62bb6d8" id="r_ga9d0418d3baeec8ff31071849d62bb6d8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9d0418d3baeec8ff31071849d62bb6d8">API_CursorFormID</a> { <br />
-&#160;&#160;<b>APICursor_UserDefined</b>
-, <b>APICursor_Default</b>
-, <b>APICursor_Spin</b>
-, <b>APICursor_SystemArrow</b>
+&#160;&#160;<a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a34d576669b14661a1c617902c17a3a34">APICursor_UserDefined</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a37c17bacb6aaee1ca5d0a4fe2fd21d50">APICursor_Default</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8ae811539d29895b5760dd744d9cbc92cc">APICursor_Spin</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a6a62aca2dd4bc55ab66aeb536086faf4">APICursor_SystemArrow</a>
 , <br />
-&#160;&#160;<b>APICursor_SystemClock</b>
-, <b>APICursor_IBeam</b>
-, <b>APICursor_Drag</b>
-, <b>APICursor_Trident</b>
+&#160;&#160;<a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a9bdb6a040046efb8dda2947654b05097">APICursor_SystemClock</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a0e19d666057778896dd0a8b271370cc2">APICursor_IBeam</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a272bc1778c70c8cc4894fd23fd294340">APICursor_Drag</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8ac1083311bbcb6a49bb4a799acab19e02">APICursor_Trident</a>
 , <br />
-&#160;&#160;<b>APICursor_ZoomIn</b>
-, <b>APICursor_ZoomOut</b>
-, <b>APICursor_Hand</b>
-, <b>APICursor_MiniHand</b>
+&#160;&#160;<a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8aae34f7b5857d33a88b124ac0d14cb5b4">APICursor_ZoomIn</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a22878f230edfe0b75a4d86f42c88c6c1">APICursor_ZoomOut</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a9df99c9a53d12f26a3bae71ec37b0597">APICursor_Hand</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8ad2b84c2e5c48f6128e7cee0627481488">APICursor_MiniHand</a>
 , <br />
-&#160;&#160;<b>APICursor_Cross</b>
-, <b>APICursor_Check</b>
-, <b>APICursor_CheckRef</b>
-, <b>APICursor_Branch</b>
+&#160;&#160;<a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a1911da5cbe08499b67db7c816f99016f">APICursor_Cross</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a8b6edabe0c461b04b7f782bb6cc3203e">APICursor_Check</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8add55143b3d3128bea6c0947b1a85327c">APICursor_CheckRef</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8afcb422f45fd2c371c87aae9d26df752d">APICursor_Branch</a>
 , <br />
-&#160;&#160;<b>APICursor_BranchRef</b>
-, <b>APICursor_XPoint</b>
-, <b>APICursor_Normal</b>
-, <b>APICursor_Tangent</b>
+&#160;&#160;<a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8ab5a2feb414d3fafd468e2bd7ca44d032">APICursor_BranchRef</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a0e10a4d46ed67b25c7706cb991ebc964">APICursor_XPoint</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a30b98dc22545d95d8346ddd1624d576d">APICursor_Normal</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a5d28e67a68cc24a7db90ba609129780f">APICursor_Tangent</a>
 , <br />
-&#160;&#160;<b>APICursor_Arrow</b>
-, <b>APICursor_ArrowCheck</b>
-, <b>APICursor_ArrowCheckRef</b>
-, <b>APICursor_ArrowBranch</b>
+&#160;&#160;<a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a412db08d86277eda5023fd874c5f15bb">APICursor_Arrow</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a1fad2c1c8c7a3ed5175db65bf1750920">APICursor_ArrowCheck</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a75ad004c6196235314a4a215603bd918">APICursor_ArrowCheckRef</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8af2efb6b015ad0136a166a3ab1fbeccc6">APICursor_ArrowBranch</a>
 , <br />
-&#160;&#160;<b>APICursor_ArrowBranchRef</b>
-, <b>APICursor_ArrowXPoint</b>
-, <b>APICursor_ArrowNormal</b>
-, <b>APICursor_ArrowTangent</b>
+&#160;&#160;<a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a8fb958248ed4beacf7c8ab304321bdbc">APICursor_ArrowBranchRef</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a9d43f9940cad3e4583f86c767b8c3b6f">APICursor_ArrowXPoint</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8acf89dbc47bbcfdf9c983aec6b73d7019">APICursor_ArrowNormal</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a4c71352082252c50a8a13df1ce8d7dbc">APICursor_ArrowTangent</a>
 , <br />
-&#160;&#160;<b>APICursor_Pencil</b>
-, <b>APICursor_PencilCheck</b>
-, <b>APICursor_PencilCheckRef</b>
-, <b>APICursor_PencilBranch</b>
+&#160;&#160;<a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a6e113aea29985a2a37dd41841e302b64">APICursor_Pencil</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8abe77e6f079206a2868f92ebae21a7421">APICursor_PencilCheck</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8ad6f92d3cacd14da69f09269fddb1a75c">APICursor_PencilCheckRef</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a4e486373e33a69c99004ee7b2b4b6235">APICursor_PencilBranch</a>
 , <br />
-&#160;&#160;<b>APICursor_PencilBranchRef</b>
-, <b>APICursor_PencilXPoint</b>
-, <b>APICursor_PencilNormal</b>
-, <b>APICursor_PencilTangent</b>
+&#160;&#160;<a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a46085e3144f7e36dbb52895055996213">APICursor_PencilBranchRef</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8af48dc81cd867903fabfe5859df0f3c38">APICursor_PencilXPoint</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8aa765e19bd8d94c79b4b5b04bf90ae067">APICursor_PencilNormal</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8adb5ede3f3f341cd92950568c595fcdec">APICursor_PencilTangent</a>
 , <br />
-&#160;&#160;<b>APICursor_Eye</b>
-, <b>APICursor_DoubleEye</b>
-, <b>APICursor_Hammer</b>
-, <b>APICursor_MagicWand</b>
+&#160;&#160;<a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a7c280d6c01ef97ccea41e53e7dd39457">APICursor_Eye</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a9af48e5ff8d7c34db570786f0c615f15">APICursor_DoubleEye</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8ae2123da65d9a912b2f9a476604dd39ca">APICursor_Hammer</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a7a255edf826eef8492ab16b074dee5d9">APICursor_MagicWand</a>
 , <br />
-&#160;&#160;<b>APICursor_Trimmer</b>
-, <b>APICursor_TrimmerFull</b>
-, <b>APICursor_Picker</b>
-, <b>APICursor_PickerFull</b>
+&#160;&#160;<a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a0f35d90b8e5df8e61945976e56ca735d">APICursor_Trimmer</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8acf334f3be9d7f4232ba157598cf9fcd0">APICursor_TrimmerFull</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8aea5ad92725b49e4fdae4512ea83395c5">APICursor_Picker</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a571a542499dbd26eb489658332080df6">APICursor_PickerFull</a>
 , <br />
-&#160;&#160;<b>APICursor_Injection</b>
-, <b>APICursor_InjectionFull</b>
+&#160;&#160;<a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8afb7bfdc0e9febaf83f20916ef51af0f9">APICursor_Injection</a>
+, <a class="el" href="#gga9d0418d3baeec8ff31071849d62bb6d8a2388cbf5fea89bb7586c8bf868d69641">APICursor_InjectionFull</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga9d0418d3baeec8ff31071849d62bb6d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predefined cursor forms for customizing the user input.  <a href="#ga9d0418d3baeec8ff31071849d62bb6d8">More...</a><br /></td></tr>
 <tr class="separator:ga9d0418d3baeec8ff31071849d62bb6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2b09cbb30c8d8f80bf681b7c8aa3214c" id="r_ga2b09cbb30c8d8f80bf681b7c8aa3214c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2b09cbb30c8d8f80bf681b7c8aa3214c">API_InitNeigFilterID</a> { <b>APIInitNeigFilter_Full</b>
-, <b>APIInitNeigFilter_Empty</b>
-, <b>APIInitNeigFilter_On</b>
-, <b>APIInitNeigFilter_Node</b>
+<tr class="memitem:ga2b09cbb30c8d8f80bf681b7c8aa3214c" id="r_ga2b09cbb30c8d8f80bf681b7c8aa3214c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2b09cbb30c8d8f80bf681b7c8aa3214c">API_InitNeigFilterID</a> { <a class="el" href="#gga2b09cbb30c8d8f80bf681b7c8aa3214ca16f8a9d16dd9c837937bb35c67c0ebdb">APIInitNeigFilter_Full</a>
+, <a class="el" href="#gga2b09cbb30c8d8f80bf681b7c8aa3214ca440c3008a6de86bf7dffd7e72396a95d">APIInitNeigFilter_Empty</a>
+, <a class="el" href="#gga2b09cbb30c8d8f80bf681b7c8aa3214ca20a7f43edc3ecf80445c5c6c2bb1a576">APIInitNeigFilter_On</a>
+, <a class="el" href="#gga2b09cbb30c8d8f80bf681b7c8aa3214ca52958edd75e203c9ea1ed4f217c18a78">APIInitNeigFilter_Node</a>
  }</td></tr>
 <tr class="memdesc:ga2b09cbb30c8d8f80bf681b7c8aa3214c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the neig filter initialization.  <a href="#ga2b09cbb30c8d8f80bf681b7c8aa3214c">More...</a><br /></td></tr>
 <tr class="separator:ga2b09cbb30c8d8f80bf681b7c8aa3214c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88297e6356af5eb73e43ce156570a278" id="r_ga88297e6356af5eb73e43ce156570a278"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga88297e6356af5eb73e43ce156570a278">API_RubberLineThickness</a> { <a class="el" href="#gga88297e6356af5eb73e43ce156570a278afe3686c243b36c5e1d6482a50e98b591">APIRubberLine_Simple</a> = 1
+, <a class="el" href="#gga88297e6356af5eb73e43ce156570a278a9451cace17d148760342917b56bd5a50">APIRubberLine_Double</a> = 2
+ }</td></tr>
+<tr class="memdesc:ga88297e6356af5eb73e43ce156570a278"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rubber line thickness.  <a href="#ga88297e6356af5eb73e43ce156570a278">More...</a><br /></td></tr>
+<tr class="separator:ga88297e6356af5eb73e43ce156570a278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7bf41c925c25a0c78da165b82221ae37" id="r_ga7bf41c925c25a0c78da165b82221ae37"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7bf41c925c25a0c78da165b82221ae37">API_RubberArcTypeID</a> { <a class="el" href="#gga7bf41c925c25a0c78da165b82221ae37a3f51bf0c93d34e42c6e3b509451fc6b9">APIRubberArc_OrigoAngles</a> = 0
+, <a class="el" href="#gga7bf41c925c25a0c78da165b82221ae37a59b2e1e636cdc43161de67958a0b4639">APIRubberArc_ThreePoint</a> = 1
+ }</td></tr>
+<tr class="memdesc:ga7bf41c925c25a0c78da165b82221ae37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the modes for placing an arc.  <a href="#ga7bf41c925c25a0c78da165b82221ae37">More...</a><br /></td></tr>
+<tr class="separator:ga7bf41c925c25a0c78da165b82221ae37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac863e88666edf005b5901e0465ba274" id="r_gaac863e88666edf005b5901e0465ba274"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaac863e88666edf005b5901e0465ba274">API_PolyGetMethod</a> { <a class="el" href="#ggaac863e88666edf005b5901e0465ba274a05e98276d369b82560a4bcf4265daf76">APIPolyGetMethod_General</a>
+, <a class="el" href="#ggaac863e88666edf005b5901e0465ba274a2ef747b96c6f8f0b0b190653a155f4bd">APIPolyGetMethod_Rect</a>
+, <a class="el" href="#ggaac863e88666edf005b5901e0465ba274a0a8a0081b924ac219097db0b89a70dd1">APIPolyGetMethod_RotRect</a>
+, <a class="el" href="#ggaac863e88666edf005b5901e0465ba274a7639b77ef29b39ed2c8dd31808976fc0">APIPolyGetMethod_Polyline</a>
+ }</td></tr>
+<tr class="memdesc:gaac863e88666edf005b5901e0465ba274"><td class="mdescLeft">&#160;</td><td class="mdescRight">The polygon input method.  <a href="#gaac863e88666edf005b5901e0465ba274">More...</a><br /></td></tr>
+<tr class="separator:gaac863e88666edf005b5901e0465ba274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeff01fc2fe7c9610cfd7191df17ea8e1" id="r_gaeff01fc2fe7c9610cfd7191df17ea8e1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaeff01fc2fe7c9610cfd7191df17ea8e1">API_ConstraintType</a> { <br />
-&#160;&#160;<b>APIConst_X</b> = 1
-, <b>APIConst_Y</b> = 2
-, <b>APIConst_Z</b> = 3
-, <b>APIConst_A</b> = 4
+&#160;&#160;<a class="el" href="#ggaeff01fc2fe7c9610cfd7191df17ea8e1a459f864d195fb07f1cf6ccc0f583743a">APIConst_X</a> = 1
+, <a class="el" href="#ggaeff01fc2fe7c9610cfd7191df17ea8e1a65ba27f290be6094d524a88267cf8afe">APIConst_Y</a> = 2
+, <a class="el" href="#ggaeff01fc2fe7c9610cfd7191df17ea8e1af0ad9696d982845751f6bd71bc08c941">APIConst_Z</a> = 3
+, <a class="el" href="#ggaeff01fc2fe7c9610cfd7191df17ea8e1ac0b025de5f14d201d23f9e664ca7399b">APIConst_A</a> = 4
 , <br />
-&#160;&#160;<b>APIConst_R</b> = 5
+&#160;&#160;<a class="el" href="#ggaeff01fc2fe7c9610cfd7191df17ea8e1a368fb139a560d3c499b8546598bbc54c">APIConst_R</a> = 5
 <br />
  }</td></tr>
 <tr class="memdesc:gaeff01fc2fe7c9610cfd7191df17ea8e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the drawing constraint.  <a href="#gaeff01fc2fe7c9610cfd7191df17ea8e1">More...</a><br /></td></tr>
@@ -426,6 +443,18 @@ Functions</h2></td></tr>
 
 <p>Type of the drawing constraint. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>For the utilization of <code>API_ConstraintType</code> see the <a class="el" href="#ga0e8af0714a2ce62167bad41e29ea4fbe">ACAPI_UserInput_SetConstraint</a> function. When fixing the input angle (<code>APIConst_A</code>), <code>constValue</code> is defined in radian </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaeff01fc2fe7c9610cfd7191df17ea8e1a459f864d195fb07f1cf6ccc0f583743a" name="ggaeff01fc2fe7c9610cfd7191df17ea8e1a459f864d195fb07f1cf6ccc0f583743a"></a>APIConst_X&#160;</td><td class="fielddoc"><p>Constraint by X </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaeff01fc2fe7c9610cfd7191df17ea8e1a65ba27f290be6094d524a88267cf8afe" name="ggaeff01fc2fe7c9610cfd7191df17ea8e1a65ba27f290be6094d524a88267cf8afe"></a>APIConst_Y&#160;</td><td class="fielddoc"><p>Constraint by Y </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaeff01fc2fe7c9610cfd7191df17ea8e1af0ad9696d982845751f6bd71bc08c941" name="ggaeff01fc2fe7c9610cfd7191df17ea8e1af0ad9696d982845751f6bd71bc08c941"></a>APIConst_Z&#160;</td><td class="fielddoc"><p>Constraint by Z </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaeff01fc2fe7c9610cfd7191df17ea8e1ac0b025de5f14d201d23f9e664ca7399b" name="ggaeff01fc2fe7c9610cfd7191df17ea8e1ac0b025de5f14d201d23f9e664ca7399b"></a>APIConst_A&#160;</td><td class="fielddoc"><p>Constraint by angle </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaeff01fc2fe7c9610cfd7191df17ea8e1a368fb139a560d3c499b8546598bbc54c" name="ggaeff01fc2fe7c9610cfd7191df17ea8e1a368fb139a560d3c499b8546598bbc54c"></a>APIConst_R&#160;</td><td class="fielddoc"><p>Constraint by radian </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -442,188 +471,101 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Predefined cursor forms for customizing the user input. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>The <a class="el" href="#ga9d0418d3baeec8ff31071849d62bb6d8">API_CursorFormID</a> values are used to specify the cursor set for a user input process invoked from the API tool add-on. <table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Form   </th><th class="markdownTableHeadNone">Icon   </th><th class="markdownTableHeadNone">Description    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_UserDefined</code>   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Cursor defined by resource ID (NOT USED)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_Default</code>   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Default cursor shape    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_Spin</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_SpinCursor.png" alt="" class="inline" title="SpinCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Spin cursor (rotating beach balls)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_SystemArrow</code>   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">System arrow cursor    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_SystemClock</code>   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">System clock cursor    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_IBeam</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_IBeamCursor.png" alt="" class="inline" title="IBeamCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">I beam cursor for text editing    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_Drag</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_DragCursor.png" alt="" class="inline" title="DragCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Cursor for dragging windows    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_Trident</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_TridentCursor.png" alt="" class="inline" title="TridentCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Trident cursor for dragging rollrect    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_ZoomIn</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_ZoomInCursor.png" alt="" class="inline" title="ZoomInCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Zoom in cursor    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_ZoomOut</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_ZoomOutCursor.png" alt="" class="inline" title="ZoomOutCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Zoom out cursor    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_Hand</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_HandCursor.png" alt="" class="inline" title="HandCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Hand cursor    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_MiniHand</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_MiniHandCursor.png" alt="" class="inline" title="MiniHandCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Small hand cursor    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_Cross</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_CrossCursor.png" alt="" class="inline" title="CrossCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Cross cursor    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_Check</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_CheckCursor.png" alt="" class="inline" title="CheckCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Check cursor (indicates ...Neig)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_CheckRef</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_CheckRefCursor.png" alt="" class="inline" title="CheckRefCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Check cursor (thick)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_Branch</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_BranchCursor.png" alt="" class="inline" title="BranchCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Branch cursor (indicates ...OnNeig)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_BranchRef</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_BranchRefCursor.png" alt="" class="inline" title="BranchRefCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Branch cursor (thick)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_XPoint</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_XPointCursor.png" alt="" class="inline" title="XPointCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Cross point cursor    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_Normal</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_NormalCursor.png" alt="" class="inline" title="NormalCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Normal (perpendicular) cursor    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_Tangent</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_TangentCursor.png" alt="" class="inline" title="TangentCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Tangent (osculation) cursor    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_Arrow</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_ArrowCursor.png" alt="" class="inline" title="ArrowCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Arrow cursor (selection mode)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_ArrowCheck</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_ArrowCheckCursor.png" alt="" class="inline" title="ArrowCheckCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Check cursor in arrow mode    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_ArrowCheckRef</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_ArrowCheckRefCursor.png" alt="" class="inline" title="ArrowCheckRefCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Check cursor in arrow mode (thick)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_ArrowBranch</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_ArrowBranchCursor.png" alt="" class="inline" title="ArrowBranchCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Branch cursor in arrow mode    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_ArrowBranchRef</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_ArrowBranchRefCursor.png" alt="" class="inline" title="ArrowBranchRefCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Branch cursor in arrow mode (thick)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_ArrowXPoint</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_ArrowXPointCursor.png" alt="" class="inline" title="ArrowXPointCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Cross point cursor in arrow mode    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_ArrowNormal</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_ArrowNormalCursor.png" alt="" class="inline" title="ArrowNormalCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Normal cursor in arrow mode    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_ArrowTangent</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_ArrowTangentCursor.png" alt="" class="inline" title="ArrowTangentCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Tangent cursor in arrow mode    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_Pencil</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_PencilCursor.png" alt="" class="inline" title="PencilCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Pencil shaped cursor during input    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_PencilCheck</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_PencilCheckCursor.png" alt="" class="inline" title="PencilCheckCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Check cursor during input    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_PencilCheckRef</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_PencilCheckRefCursor.png" alt="" class="inline" title="PencilCheckRefCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Check cursor during input (thick)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_PencilBranch</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_PencilBranchCursor.png" alt="" class="inline" title="PencilBranchCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Branch cursor during input    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_PencilBranchRef</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_PencilBranchRefCursor.png" alt="" class="inline" title="PencilBranchRefCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Branch cursor during input (thick)    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_PencilXPoint</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_PencilXPointCursor.png" alt="" class="inline" title="PencilXPointCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Cross point cursor during input    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_PencilNormal</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_PencilNormalCursor.png" alt="" class="inline" title="PencilNormalCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Normal cursor during input    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_PencilTangent</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_PencilTangentCursor.png" alt="" class="inline" title="PencilTangentCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Tangent cursor during input    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_Eye</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_EyeCursor.png" alt="" class="inline" title="EyeCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Eye cursor for window/door opening    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_DoubleEye</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_DoubleEyeCursor.png" alt="" class="inline" title="DoubleEyeCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Double eye for window/door position    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_Hammer</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_HammerCursor.png" alt="" class="inline" title="HammerCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Hammer cursor for completing input    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_MagicWand</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_MagicWandCursor.png" alt="" class="inline" title="MagicWandCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Magic wand cursor    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_Trimmer</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_TrimmerCursor.png" alt="" class="inline" title="TrimmerCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Scissors shaped cursor    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_TrimmerFull</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_TrimmerFullCursor.png" alt="" class="inline" title="TrimmerFullCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Scissors shaped cursor (thick)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_Picker</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_PickerCursor.png" alt="" class="inline" title="PickerCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Dropper shaped cursor    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_PickerFull</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_PickerFullCursor.png" alt="" class="inline" title="PickerFullCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Dropper shaped cursor (thick)    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>APICursor_Injection</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_InjectionCursor.png" alt="" class="inline" title="InjectionCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Injection shaped cursor    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>APICursor_InjectionFull</code>   </td><td class="markdownTableBodyNone"><p class="starttd"><img src="cf_InjectionFullCursor.png" alt="" class="inline" title="InjectionFullCursor"/>    </p>
-<p class="endtd"></p>
-</td><td class="markdownTableBodyNone">Injection shaped cursor (thick)   </td></tr>
+<dl class="section remark"><dt>Remarks</dt><dd>The <a class="el" href="#ga9d0418d3baeec8ff31071849d62bb6d8">API_CursorFormID</a> values are used to specify the cursor set for a user input process invoked from the API tool add-on. For example of using custom cursor sets see <a class="el" href="#ga5e36ce7a162f52c6afc9617e46882595">ACAPI_UserInput_GetArc</a>. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a34d576669b14661a1c617902c17a3a34" name="gga9d0418d3baeec8ff31071849d62bb6d8a34d576669b14661a1c617902c17a3a34"></a>APICursor_UserDefined&#160;</td><td class="fielddoc"><p>Cursor defined by resource ID (NOT USED) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a37c17bacb6aaee1ca5d0a4fe2fd21d50" name="gga9d0418d3baeec8ff31071849d62bb6d8a37c17bacb6aaee1ca5d0a4fe2fd21d50"></a>APICursor_Default&#160;</td><td class="fielddoc"><p>Default cursor shape </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8ae811539d29895b5760dd744d9cbc92cc" name="gga9d0418d3baeec8ff31071849d62bb6d8ae811539d29895b5760dd744d9cbc92cc"></a>APICursor_Spin&#160;</td><td class="fielddoc"><p>Spin cursor (rotating beach balls) -<img src="cf_SpinCursor.png" alt="" class="inline" title="SpinCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a6a62aca2dd4bc55ab66aeb536086faf4" name="gga9d0418d3baeec8ff31071849d62bb6d8a6a62aca2dd4bc55ab66aeb536086faf4"></a>APICursor_SystemArrow&#160;</td><td class="fielddoc"><p>System arrow cursor </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a9bdb6a040046efb8dda2947654b05097" name="gga9d0418d3baeec8ff31071849d62bb6d8a9bdb6a040046efb8dda2947654b05097"></a>APICursor_SystemClock&#160;</td><td class="fielddoc"><p>System clock cursor </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a0e19d666057778896dd0a8b271370cc2" name="gga9d0418d3baeec8ff31071849d62bb6d8a0e19d666057778896dd0a8b271370cc2"></a>APICursor_IBeam&#160;</td><td class="fielddoc"><p>I beam cursor for text editing -<img src="cf_IBeamCursor.png" alt="" class="inline" title="IBeamCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a272bc1778c70c8cc4894fd23fd294340" name="gga9d0418d3baeec8ff31071849d62bb6d8a272bc1778c70c8cc4894fd23fd294340"></a>APICursor_Drag&#160;</td><td class="fielddoc"><p>Cursor for dragging windows -<img src="cf_DragCursor.png" alt="" class="inline" title="DragCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8ac1083311bbcb6a49bb4a799acab19e02" name="gga9d0418d3baeec8ff31071849d62bb6d8ac1083311bbcb6a49bb4a799acab19e02"></a>APICursor_Trident&#160;</td><td class="fielddoc"><p>Trident cursor for dragging rollrect -<img src="cf_TridentCursor.png" alt="" class="inline" title="TridentCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8aae34f7b5857d33a88b124ac0d14cb5b4" name="gga9d0418d3baeec8ff31071849d62bb6d8aae34f7b5857d33a88b124ac0d14cb5b4"></a>APICursor_ZoomIn&#160;</td><td class="fielddoc"><p>Zoom in cursor -<img src="cf_ZoomInCursor.png" alt="" class="inline" title="ZoomInCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a22878f230edfe0b75a4d86f42c88c6c1" name="gga9d0418d3baeec8ff31071849d62bb6d8a22878f230edfe0b75a4d86f42c88c6c1"></a>APICursor_ZoomOut&#160;</td><td class="fielddoc"><p>Zoom out cursor -<img src="cf_ZoomOutCursor.png" alt="" class="inline" title="ZoomOutCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a9df99c9a53d12f26a3bae71ec37b0597" name="gga9d0418d3baeec8ff31071849d62bb6d8a9df99c9a53d12f26a3bae71ec37b0597"></a>APICursor_Hand&#160;</td><td class="fielddoc"><p>Hand cursor -<img src="cf_HandCursor.png" alt="" class="inline" title="HandCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8ad2b84c2e5c48f6128e7cee0627481488" name="gga9d0418d3baeec8ff31071849d62bb6d8ad2b84c2e5c48f6128e7cee0627481488"></a>APICursor_MiniHand&#160;</td><td class="fielddoc"><p>Small hand cursor-<img src="cf_MiniHandCursor.png" alt="" class="inline" title="MiniHandCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a1911da5cbe08499b67db7c816f99016f" name="gga9d0418d3baeec8ff31071849d62bb6d8a1911da5cbe08499b67db7c816f99016f"></a>APICursor_Cross&#160;</td><td class="fielddoc"><p>Cross cursor -<img src="cf_CrossCursor.png" alt="" class="inline" title="CrossCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a8b6edabe0c461b04b7f782bb6cc3203e" name="gga9d0418d3baeec8ff31071849d62bb6d8a8b6edabe0c461b04b7f782bb6cc3203e"></a>APICursor_Check&#160;</td><td class="fielddoc"><p>Check cursor (indicates ...Neig) -<img src="cf_CheckCursor.png" alt="" class="inline" title="CheckCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8add55143b3d3128bea6c0947b1a85327c" name="gga9d0418d3baeec8ff31071849d62bb6d8add55143b3d3128bea6c0947b1a85327c"></a>APICursor_CheckRef&#160;</td><td class="fielddoc"><p>Check cursor (thick) -<img src="cf_CheckRefCursor.png" alt="" class="inline" title="CheckRefCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8afcb422f45fd2c371c87aae9d26df752d" name="gga9d0418d3baeec8ff31071849d62bb6d8afcb422f45fd2c371c87aae9d26df752d"></a>APICursor_Branch&#160;</td><td class="fielddoc"><p>Branch cursor (indicates ...OnNeig) -<img src="cf_BranchCursor.png" alt="" class="inline" title="BranchCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8ab5a2feb414d3fafd468e2bd7ca44d032" name="gga9d0418d3baeec8ff31071849d62bb6d8ab5a2feb414d3fafd468e2bd7ca44d032"></a>APICursor_BranchRef&#160;</td><td class="fielddoc"><p>Branch cursor (thick) -<img src="cf_BranchRefCursor.png" alt="" class="inline" title="BranchRefCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a0e10a4d46ed67b25c7706cb991ebc964" name="gga9d0418d3baeec8ff31071849d62bb6d8a0e10a4d46ed67b25c7706cb991ebc964"></a>APICursor_XPoint&#160;</td><td class="fielddoc"><p>Cross point cursor -<img src="cf_XPointCursor.png" alt="" class="inline" title="XPointCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a30b98dc22545d95d8346ddd1624d576d" name="gga9d0418d3baeec8ff31071849d62bb6d8a30b98dc22545d95d8346ddd1624d576d"></a>APICursor_Normal&#160;</td><td class="fielddoc"><p>Normal (perpendicular) cursor -<img src="cf_NormalCursor.png" alt="" class="inline" title="NormalCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a5d28e67a68cc24a7db90ba609129780f" name="gga9d0418d3baeec8ff31071849d62bb6d8a5d28e67a68cc24a7db90ba609129780f"></a>APICursor_Tangent&#160;</td><td class="fielddoc"><p>Tangent (osculation) cursor -<img src="cf_TangentCursor.png" alt="" class="inline" title="TangentCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a412db08d86277eda5023fd874c5f15bb" name="gga9d0418d3baeec8ff31071849d62bb6d8a412db08d86277eda5023fd874c5f15bb"></a>APICursor_Arrow&#160;</td><td class="fielddoc"><p>Arrow cursor (selection mode) - |<img src="cf_ArrowCursor.png" alt="" class="inline" title="ArrowCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a1fad2c1c8c7a3ed5175db65bf1750920" name="gga9d0418d3baeec8ff31071849d62bb6d8a1fad2c1c8c7a3ed5175db65bf1750920"></a>APICursor_ArrowCheck&#160;</td><td class="fielddoc"><p>Check cursor in arrow mode -<img src="cf_ArrowCheckCursor.png" alt="" class="inline" title="ArrowCheckCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a75ad004c6196235314a4a215603bd918" name="gga9d0418d3baeec8ff31071849d62bb6d8a75ad004c6196235314a4a215603bd918"></a>APICursor_ArrowCheckRef&#160;</td><td class="fielddoc"><p>Check cursor in arrow mode (thick) -<img src="cf_ArrowCheckRefCursor.png" alt="" class="inline" title="ArrowCheckRefCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8af2efb6b015ad0136a166a3ab1fbeccc6" name="gga9d0418d3baeec8ff31071849d62bb6d8af2efb6b015ad0136a166a3ab1fbeccc6"></a>APICursor_ArrowBranch&#160;</td><td class="fielddoc"><p>Branch cursor in arrow mode -<img src="cf_ArrowBranchCursor.png" alt="" class="inline" title="ArrowBranchCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a8fb958248ed4beacf7c8ab304321bdbc" name="gga9d0418d3baeec8ff31071849d62bb6d8a8fb958248ed4beacf7c8ab304321bdbc"></a>APICursor_ArrowBranchRef&#160;</td><td class="fielddoc"><p>Branch cursor in arrow mode (thick) -<img src="cf_ArrowBranchRefCursor.png" alt="" class="inline" title="ArrowBranchRefCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a9d43f9940cad3e4583f86c767b8c3b6f" name="gga9d0418d3baeec8ff31071849d62bb6d8a9d43f9940cad3e4583f86c767b8c3b6f"></a>APICursor_ArrowXPoint&#160;</td><td class="fielddoc"><p>Cross point cursor in arrow mode -<img src="cf_ArrowXPointCursor.png" alt="" class="inline" title="ArrowXPointCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8acf89dbc47bbcfdf9c983aec6b73d7019" name="gga9d0418d3baeec8ff31071849d62bb6d8acf89dbc47bbcfdf9c983aec6b73d7019"></a>APICursor_ArrowNormal&#160;</td><td class="fielddoc"><p>|Normal cursor in arrow mode -<img src="cf_ArrowNormalCursor.png" alt="" class="inline" title="ArrowNormalCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a4c71352082252c50a8a13df1ce8d7dbc" name="gga9d0418d3baeec8ff31071849d62bb6d8a4c71352082252c50a8a13df1ce8d7dbc"></a>APICursor_ArrowTangent&#160;</td><td class="fielddoc"><p>Tangent cursor in arrow mode -<img src="cf_ArrowTangentCursor.png" alt="" class="inline" title="ArrowTangentCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a6e113aea29985a2a37dd41841e302b64" name="gga9d0418d3baeec8ff31071849d62bb6d8a6e113aea29985a2a37dd41841e302b64"></a>APICursor_Pencil&#160;</td><td class="fielddoc"><p>Pencil shaped cursor during input -<img src="cf_PencilCursor.png" alt="" class="inline" title="PencilCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8abe77e6f079206a2868f92ebae21a7421" name="gga9d0418d3baeec8ff31071849d62bb6d8abe77e6f079206a2868f92ebae21a7421"></a>APICursor_PencilCheck&#160;</td><td class="fielddoc"><p>Check cursor during input -<img src="cf_PencilCheckCursor.png" alt="" class="inline" title="PencilCheckCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8ad6f92d3cacd14da69f09269fddb1a75c" name="gga9d0418d3baeec8ff31071849d62bb6d8ad6f92d3cacd14da69f09269fddb1a75c"></a>APICursor_PencilCheckRef&#160;</td><td class="fielddoc"><p>Check cursor during input (thick) -<img src="cf_PencilCheckRefCursor.png" alt="" class="inline" title="PencilCheckRefCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a4e486373e33a69c99004ee7b2b4b6235" name="gga9d0418d3baeec8ff31071849d62bb6d8a4e486373e33a69c99004ee7b2b4b6235"></a>APICursor_PencilBranch&#160;</td><td class="fielddoc"><p>Branch cursor during input -<img src="cf_PencilBranchCursor.png" alt="" class="inline" title="PencilBranchCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a46085e3144f7e36dbb52895055996213" name="gga9d0418d3baeec8ff31071849d62bb6d8a46085e3144f7e36dbb52895055996213"></a>APICursor_PencilBranchRef&#160;</td><td class="fielddoc"><p>Branch cursor during input (thick) -<img src="cf_PencilBranchRefCursor.png" alt="" class="inline" title="PencilBranchRefCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8af48dc81cd867903fabfe5859df0f3c38" name="gga9d0418d3baeec8ff31071849d62bb6d8af48dc81cd867903fabfe5859df0f3c38"></a>APICursor_PencilXPoint&#160;</td><td class="fielddoc"><p>Cross point cursor during input -<img src="cf_PencilXPointCursor.png" alt="" class="inline" title="PencilXPointCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8aa765e19bd8d94c79b4b5b04bf90ae067" name="gga9d0418d3baeec8ff31071849d62bb6d8aa765e19bd8d94c79b4b5b04bf90ae067"></a>APICursor_PencilNormal&#160;</td><td class="fielddoc"><p>Normal cursor during input -<img src="cf_PencilNormalCursor.png" alt="" class="inline" title="PencilNormalCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8adb5ede3f3f341cd92950568c595fcdec" name="gga9d0418d3baeec8ff31071849d62bb6d8adb5ede3f3f341cd92950568c595fcdec"></a>APICursor_PencilTangent&#160;</td><td class="fielddoc"><p>Tangent cursor during input -<img src="cf_PencilTangentCursor.png" alt="" class="inline" title="PencilTangentCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a7c280d6c01ef97ccea41e53e7dd39457" name="gga9d0418d3baeec8ff31071849d62bb6d8a7c280d6c01ef97ccea41e53e7dd39457"></a>APICursor_Eye&#160;</td><td class="fielddoc"><p>Eye cursor for window/door opening -<img src="cf_EyeCursor.png" alt="" class="inline" title="EyeCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a9af48e5ff8d7c34db570786f0c615f15" name="gga9d0418d3baeec8ff31071849d62bb6d8a9af48e5ff8d7c34db570786f0c615f15"></a>APICursor_DoubleEye&#160;</td><td class="fielddoc"><p>Double eye for window/door position -<img src="cf_DoubleEyeCursor.png" alt="" class="inline" title="DoubleEyeCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8ae2123da65d9a912b2f9a476604dd39ca" name="gga9d0418d3baeec8ff31071849d62bb6d8ae2123da65d9a912b2f9a476604dd39ca"></a>APICursor_Hammer&#160;</td><td class="fielddoc"><p>Hammer cursor for completing input -<img src="cf_HammerCursor.png" alt="" class="inline" title="HammerCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a7a255edf826eef8492ab16b074dee5d9" name="gga9d0418d3baeec8ff31071849d62bb6d8a7a255edf826eef8492ab16b074dee5d9"></a>APICursor_MagicWand&#160;</td><td class="fielddoc"><p>Magic wand cursor -<img src="cf_MagicWandCursor.png" alt="" class="inline" title="MagicWandCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a0f35d90b8e5df8e61945976e56ca735d" name="gga9d0418d3baeec8ff31071849d62bb6d8a0f35d90b8e5df8e61945976e56ca735d"></a>APICursor_Trimmer&#160;</td><td class="fielddoc"><p>Scissors shaped cursor -<img src="cf_TrimmerCursor.png" alt="" class="inline" title="TrimmerCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8acf334f3be9d7f4232ba157598cf9fcd0" name="gga9d0418d3baeec8ff31071849d62bb6d8acf334f3be9d7f4232ba157598cf9fcd0"></a>APICursor_TrimmerFull&#160;</td><td class="fielddoc"><p>Scissors shaped cursor (thick) -<img src="cf_TrimmerFullCursor.png" alt="" class="inline" title="TrimmerFullCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8aea5ad92725b49e4fdae4512ea83395c5" name="gga9d0418d3baeec8ff31071849d62bb6d8aea5ad92725b49e4fdae4512ea83395c5"></a>APICursor_Picker&#160;</td><td class="fielddoc"><p>Dropper shaped cursor -<img src="cf_PickerCursor.png" alt="" class="inline" title="PickerCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a571a542499dbd26eb489658332080df6" name="gga9d0418d3baeec8ff31071849d62bb6d8a571a542499dbd26eb489658332080df6"></a>APICursor_PickerFull&#160;</td><td class="fielddoc"><p>Dropper shaped cursor (thick) -<img src="cf_PickerFullCursor.png" alt="" class="inline" title="PickerFullCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8afb7bfdc0e9febaf83f20916ef51af0f9" name="gga9d0418d3baeec8ff31071849d62bb6d8afb7bfdc0e9febaf83f20916ef51af0f9"></a>APICursor_Injection&#160;</td><td class="fielddoc"><p>Injection shaped cursor -<img src="cf_InjectionCursor.png" alt="" class="inline" title="InjectionCursor"/>     </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9d0418d3baeec8ff31071849d62bb6d8a2388cbf5fea89bb7586c8bf868d69641" name="gga9d0418d3baeec8ff31071849d62bb6d8a2388cbf5fea89bb7586c8bf868d69641"></a>APICursor_InjectionFull&#160;</td><td class="fielddoc"><p>Injection shaped cursor (thick) -<img src="cf_InjectionFullCursor.png" alt="" class="inline" title="InjectionFullCursor"/>     </p>
+</td></tr>
 </table>
-</dd></dl>
-<p>For example of using custom cursor sets see <a class="el" href="#ga5e36ce7a162f52c6afc9617e46882595">ACAPI_UserInput_GetArc</a>. </p>
 
 </div>
 </div>
@@ -641,6 +583,16 @@ Functions</h2></td></tr>
 
 <p>Type of the neig filter initialization. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>For the utilization of <code>API_InitNeigFilterID</code> see the <a class="el" href="#gaab728c57046642d0cdb61bb503704b91">ACAPI_UserInput_InitNeigFilter</a> function. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga2b09cbb30c8d8f80bf681b7c8aa3214ca16f8a9d16dd9c837937bb35c67c0ebdb" name="gga2b09cbb30c8d8f80bf681b7c8aa3214ca16f8a9d16dd9c837937bb35c67c0ebdb"></a>APIInitNeigFilter_Full&#160;</td><td class="fielddoc"><p>Filter all neig types </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2b09cbb30c8d8f80bf681b7c8aa3214ca440c3008a6de86bf7dffd7e72396a95d" name="gga2b09cbb30c8d8f80bf681b7c8aa3214ca440c3008a6de86bf7dffd7e72396a95d"></a>APIInitNeigFilter_Empty&#160;</td><td class="fielddoc"><p>Filter nothing </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2b09cbb30c8d8f80bf681b7c8aa3214ca20a7f43edc3ecf80445c5c6c2bb1a576" name="gga2b09cbb30c8d8f80bf681b7c8aa3214ca20a7f43edc3ecf80445c5c6c2bb1a576"></a>APIInitNeigFilter_On&#160;</td><td class="fielddoc"><p>Filter line type neigs only </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2b09cbb30c8d8f80bf681b7c8aa3214ca52958edd75e203c9ea1ed4f217c18a78" name="gga2b09cbb30c8d8f80bf681b7c8aa3214ca52958edd75e203c9ea1ed4f217c18a78"></a>APIInitNeigFilter_Node&#160;</td><td class="fielddoc"><p>Filter node type neigs only </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -672,6 +624,76 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gaac863e88666edf005b5901e0465ba274" name="gaac863e88666edf005b5901e0465ba274"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac863e88666edf005b5901e0465ba274">&#9670;&#160;</a></span>API_PolyGetMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#gaac863e88666edf005b5901e0465ba274">API_PolyGetMethod</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The polygon input method. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaac863e88666edf005b5901e0465ba274a05e98276d369b82560a4bcf4265daf76" name="ggaac863e88666edf005b5901e0465ba274a05e98276d369b82560a4bcf4265daf76"></a>APIPolyGetMethod_General&#160;</td><td class="fielddoc"><p>Gets an arbitrary closed polygon </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaac863e88666edf005b5901e0465ba274a2ef747b96c6f8f0b0b190653a155f4bd" name="ggaac863e88666edf005b5901e0465ba274a2ef747b96c6f8f0b0b190653a155f4bd"></a>APIPolyGetMethod_Rect&#160;</td><td class="fielddoc"><p>Gets a rectangle </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaac863e88666edf005b5901e0465ba274a0a8a0081b924ac219097db0b89a70dd1" name="ggaac863e88666edf005b5901e0465ba274a0a8a0081b924ac219097db0b89a70dd1"></a>APIPolyGetMethod_RotRect&#160;</td><td class="fielddoc"><p>Gets a base vector then a rectangle perpendicular to it </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaac863e88666edf005b5901e0465ba274a7639b77ef29b39ed2c8dd31808976fc0" name="ggaac863e88666edf005b5901e0465ba274a7639b77ef29b39ed2c8dd31808976fc0"></a>APIPolyGetMethod_Polyline&#160;</td><td class="fielddoc"><p>Gets a polyline (can be open) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga7bf41c925c25a0c78da165b82221ae37" name="ga7bf41c925c25a0c78da165b82221ae37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7bf41c925c25a0c78da165b82221ae37">&#9670;&#160;</a></span>API_RubberArcTypeID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga7bf41c925c25a0c78da165b82221ae37">API_RubberArcTypeID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the modes for placing an arc. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga7bf41c925c25a0c78da165b82221ae37a3f51bf0c93d34e42c6e3b509451fc6b9" name="gga7bf41c925c25a0c78da165b82221ae37a3f51bf0c93d34e42c6e3b509451fc6b9"></a>APIRubberArc_OrigoAngles&#160;</td><td class="fielddoc"><p>Define arc by origo point and radius </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga7bf41c925c25a0c78da165b82221ae37a59b2e1e636cdc43161de67958a0b4639" name="gga7bf41c925c25a0c78da165b82221ae37a59b2e1e636cdc43161de67958a0b4639"></a>APIRubberArc_ThreePoint&#160;</td><td class="fielddoc"><p>Define arc by three points </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga88297e6356af5eb73e43ce156570a278" name="ga88297e6356af5eb73e43ce156570a278"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga88297e6356af5eb73e43ce156570a278">&#9670;&#160;</a></span>API_RubberLineThickness</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga88297e6356af5eb73e43ce156570a278">API_RubberLineThickness</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rubber line thickness. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga88297e6356af5eb73e43ce156570a278afe3686c243b36c5e1d6482a50e98b591" name="gga88297e6356af5eb73e43ce156570a278afe3686c243b36c5e1d6482a50e98b591"></a>APIRubberLine_Simple&#160;</td><td class="fielddoc"><p>Simple rubber line </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga88297e6356af5eb73e43ce156570a278a9451cace17d148760342917b56bd5a50" name="gga88297e6356af5eb73e43ce156570a278a9451cace17d148760342917b56bd5a50"></a>APIRubberLine_Double&#160;</td><td class="fielddoc"><p>Double rubber line </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga5108bb561616f8a30414bea69b22ddc2" name="ga5108bb561616f8a30414bea69b22ddc2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5108bb561616f8a30414bea69b22ddc2">&#9670;&#160;</a></span>ACAPI_Markup_PDFImportOptions()</h2>
@@ -696,11 +718,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 </ul>
 </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>Archicad 29 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>To create a separate “category” for the imported Issues, first create a new Issue in ARCHICAD, and give it a name (e.g. “Imported Issues from PDF”.) Then, pass this name as the parentName parameter. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>To create a separate "category" for the imported Issues, first create a new Issue in Archicad, and give it a name (e.g. "Imported Issues from PDF".) Then, pass this name as the parentName parameter. </dd></dl>
 
 </div>
 </div>
@@ -826,10 +848,10 @@ Functions</h2></td></tr>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_struct" href="struct_a_p_i___rubber_arc_type.html">API_RubberArcType</a>  rubberArc {};</div>
 <div class="line"> </div>
-<div class="line">    rubberArc.<a class="code hl_variable" href="struct_a_p_i___rubber_arc_type.html#a550a7dd97a8f93ce4a696c2a4e5cf9b0">lineThick</a> = APIRubberLine_Simple;</div>
+<div class="line">    rubberArc.<a class="code hl_variable" href="struct_a_p_i___rubber_arc_type.html#a550a7dd97a8f93ce4a696c2a4e5cf9b0">lineThick</a> = <a class="code hl_enumvalue" href="#gga88297e6356af5eb73e43ce156570a278afe3686c243b36c5e1d6482a50e98b591">APIRubberLine_Simple</a>;</div>
 <div class="line">    <span class="comment">/* draws a unit circle around the actual cursor position */</span></div>
 <div class="line"> </div>
-<div class="line">    rubberArc.arcType = APIRubberArc_OrigoAngles;</div>
+<div class="line">    rubberArc.arcType = <a class="code hl_enumvalue" href="#gga7bf41c925c25a0c78da165b82221ae37a3f51bf0c93d34e42c6e3b509451fc6b9">APIRubberArc_OrigoAngles</a>;</div>
 <div class="line">    rubberArc.arc2D.r = crossWidth;</div>
 <div class="line">    rubberArc.arc2D.angle = 0.0;</div>
 <div class="line">    rubberArc.arc2D.ratio = 1.0;</div>
@@ -853,8 +875,8 @@ Functions</h2></td></tr>
 <div class="line">    CHCopyC (<span class="stringliteral">&quot;Click onto a hotspot to create column&quot;</span>, pointInfo.prompt);</div>
 <div class="line"> </div>
 <div class="line">    pointInfo.changeFilter = <span class="keyword">true</span>;      <span class="comment">/* let the cursor gravitate to hotspot neigs only */</span></div>
-<div class="line">    <a class="code hl_function" href="#gaab728c57046642d0cdb61bb503704b91">ACAPI_UserInput_InitNeigFilter</a> (&amp;pointInfo.filter, APIInitNeigFilter_Empty);</div>
-<div class="line">    <a class="code hl_function" href="#gad0dfacb13a63d04b3b83a08b76c12926">ACAPI_UserInput_SetNeigFilter</a> (&amp;pointInfo.filter, APINeig_Hot);</div>
+<div class="line">    <a class="code hl_function" href="#gaab728c57046642d0cdb61bb503704b91">ACAPI_UserInput_InitNeigFilter</a> (&amp;pointInfo.filter, <a class="code hl_enumvalue" href="#gga2b09cbb30c8d8f80bf681b7c8aa3214ca440c3008a6de86bf7dffd7e72396a95d">APIInitNeigFilter_Empty</a>);</div>
+<div class="line">    <a class="code hl_function" href="#gad0dfacb13a63d04b3b83a08b76c12926">ACAPI_UserInput_SetNeigFilter</a> (&amp;pointInfo.filter, <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aeb55558ec6440660cf0dd30b260d6e5f">APINeig_Hot</a>);</div>
 <div class="line"> </div>
 <div class="line">    err = <a class="code hl_function" href="#gadc305bd667e3dfca73bd72ad0367970b">ACAPI_UserInput_GetPoint</a> (&amp;pointInfo, RubberLineCallBack);</div>
 <div class="line"> </div>
@@ -864,7 +886,7 @@ Functions</h2></td></tr>
 <div class="line">        <span class="keywordflow">else</span></div>
 <div class="line">            <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;Error in GetPoint&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line">    } <span class="keywordflow">else</span> {</div>
-<div class="line">        <span class="keywordflow">if</span> (pointInfo.neig.neigID != APINeig_Hot) {</div>
+<div class="line">        <span class="keywordflow">if</span> (pointInfo.neig.neigID != <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aeb55558ec6440660cf0dd30b260d6e5f">APINeig_Hot</a>) {</div>
 <div class="line">            <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;There is no hotspot at the clicked position&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line">        } <span class="keywordflow">else</span> {</div>
 <div class="line">            elem.header.type = <a class="code hl_enumvalue" href="group___element.html#gga2502601bf26ffc7abc608f6988da4d91a1371b65c26c45bf2e6024c420bc2d3e7">API_ColumnID</a>;</div>
@@ -919,7 +941,7 @@ Functions</h2></td></tr>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_struct" href="struct_a_p_i___rubber_line_type.html">API_RubberLineType</a> rubberLine {};</div>
 <div class="line"> </div>
-<div class="line">    rubberLine.<a class="code hl_variable" href="struct_a_p_i___rubber_line_type.html#a1712f5947a6bcbbaa9027323084403f7">lineThick</a> = APIRubberLine_Simple;</div>
+<div class="line">    rubberLine.<a class="code hl_variable" href="struct_a_p_i___rubber_line_type.html#a1712f5947a6bcbbaa9027323084403f7">lineThick</a> = <a class="code hl_enumvalue" href="#gga88297e6356af5eb73e43ce156570a278afe3686c243b36c5e1d6482a50e98b591">APIRubberLine_Simple</a>;</div>
 <div class="line">    <span class="comment">/* draws a unit square around the actual cursor position */</span></div>
 <div class="line"> </div>
 <div class="line">    rubberLine.c2.x = info-&gt;<a class="code hl_variable" href="struct_a_p_i___rubber_line_info.html#a115b0c6c1560a467c5b1782c4e0f9d18">actCoord</a>.<a class="code hl_variable" href="struct_a_p_i___coord3_d.html#aec328ff015601f2a8a561de965566b9f">x</a> - 0.5;</div>
@@ -957,8 +979,8 @@ Functions</h2></td></tr>
 <div class="line">    CHCopyC (<span class="stringliteral">&quot;Click onto a hotspot to create column&quot;</span>, pointInfo.prompt);</div>
 <div class="line"> </div>
 <div class="line">    pointInfo.changeFilter = <span class="keyword">true</span>;      <span class="comment">/* let the cursor gravitate to hotspot neigs only */</span></div>
-<div class="line">    <a class="code hl_function" href="#gaab728c57046642d0cdb61bb503704b91">ACAPI_UserInput_InitNeigFilter</a> (&amp;pointInfo.filter, APIInitNeigFilter_Empty);</div>
-<div class="line">    <a class="code hl_function" href="#gad0dfacb13a63d04b3b83a08b76c12926">ACAPI_UserInput_SetNeigFilter</a> (&amp;pointInfo.filter, APINeig_Hot);</div>
+<div class="line">    <a class="code hl_function" href="#gaab728c57046642d0cdb61bb503704b91">ACAPI_UserInput_InitNeigFilter</a> (&amp;pointInfo.filter, <a class="code hl_enumvalue" href="#gga2b09cbb30c8d8f80bf681b7c8aa3214ca440c3008a6de86bf7dffd7e72396a95d">APIInitNeigFilter_Empty</a>);</div>
+<div class="line">    <a class="code hl_function" href="#gad0dfacb13a63d04b3b83a08b76c12926">ACAPI_UserInput_SetNeigFilter</a> (&amp;pointInfo.filter, <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aeb55558ec6440660cf0dd30b260d6e5f">APINeig_Hot</a>);</div>
 <div class="line"> </div>
 <div class="line">    err = <a class="code hl_function" href="#gadc305bd667e3dfca73bd72ad0367970b">ACAPI_UserInput_GetPoint</a> (&amp;pointInfo, RubberLineCallBack);</div>
 <div class="line"> </div>
@@ -968,7 +990,7 @@ Functions</h2></td></tr>
 <div class="line">        <span class="keywordflow">else</span></div>
 <div class="line">            <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;Error in GetPoint&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line">    } <span class="keywordflow">else</span> {</div>
-<div class="line">        <span class="keywordflow">if</span> (pointInfo.neig.neigID != APINeig_Hot) {</div>
+<div class="line">        <span class="keywordflow">if</span> (pointInfo.neig.neigID != <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aeb55558ec6440660cf0dd30b260d6e5f">APINeig_Hot</a>) {</div>
 <div class="line">            <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;There is no hotspot at the clicked position&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line">        } <span class="keywordflow">else</span> {</div>
 <div class="line">            elem.header.type = <a class="code hl_enumvalue" href="group___element.html#gga2502601bf26ffc7abc608f6988da4d91a1371b65c26c45bf2e6024c420bc2d3e7">API_ColumnID</a>;</div>
@@ -1033,14 +1055,14 @@ Functions</h2></td></tr>
 <div class="line">pointInfo.changeCursorSet = <span class="keyword">true</span>;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/* show cross cursors suggesting the center point */</span></div>
-<div class="line">pointInfo.cursorSet.nothingOnCursor     = APICursor_XPoint;</div>
-<div class="line">pointInfo.cursorSet.pointOnCursor       = APICursor_ArrowXPoint;</div>
-<div class="line">pointInfo.cursorSet.lineOnCursor        = APICursor_PencilXPoint;</div>
-<div class="line">pointInfo.cursorSet.refPointOnCursor    = APICursor_ArrowXPoint;</div>
-<div class="line">pointInfo.cursorSet.refLineOnCursor     = APICursor_PencilXPoint;</div>
-<div class="line">pointInfo.cursorSet.crossOnCursor       = APICursor_ArrowXPoint;</div>
-<div class="line">pointInfo.cursorSet.normalOnCursor      = APICursor_PencilXPoint;</div>
-<div class="line">pointInfo.cursorSet.tangentOnCursor     = APICursor_ArrowXPoint;</div>
+<div class="line">pointInfo.cursorSet.nothingOnCursor     = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8a0e10a4d46ed67b25c7706cb991ebc964">APICursor_XPoint</a>;</div>
+<div class="line">pointInfo.cursorSet.pointOnCursor       = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8a9d43f9940cad3e4583f86c767b8c3b6f">APICursor_ArrowXPoint</a>;</div>
+<div class="line">pointInfo.cursorSet.lineOnCursor        = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8af48dc81cd867903fabfe5859df0f3c38">APICursor_PencilXPoint</a>;</div>
+<div class="line">pointInfo.cursorSet.refPointOnCursor    = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8a9d43f9940cad3e4583f86c767b8c3b6f">APICursor_ArrowXPoint</a>;</div>
+<div class="line">pointInfo.cursorSet.refLineOnCursor     = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8af48dc81cd867903fabfe5859df0f3c38">APICursor_PencilXPoint</a>;</div>
+<div class="line">pointInfo.cursorSet.crossOnCursor       = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8a9d43f9940cad3e4583f86c767b8c3b6f">APICursor_ArrowXPoint</a>;</div>
+<div class="line">pointInfo.cursorSet.normalOnCursor      = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8af48dc81cd867903fabfe5859df0f3c38">APICursor_PencilXPoint</a>;</div>
+<div class="line">pointInfo.cursorSet.tangentOnCursor     = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8a9d43f9940cad3e4583f86c767b8c3b6f">APICursor_ArrowXPoint</a>;</div>
 <div class="line"> </div>
 <div class="line">err = <a class="code hl_function" href="#gadc305bd667e3dfca73bd72ad0367970b">ACAPI_UserInput_GetPoint</a> (&amp;pointInfo, <span class="keyword">nullptr</span>);</div>
 <div class="line"> </div>
@@ -1050,14 +1072,14 @@ Functions</h2></td></tr>
 <div class="line">    lineInfo.changeCursorSet = <span class="keyword">true</span>;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* use hand cursors for drawing the radius of the arc */</span></div>
-<div class="line">    lineInfo.cursorSet.nothingOnCursor  = APICursor_Hand;</div>
-<div class="line">    lineInfo.cursorSet.pointOnCursor    = APICursor_MiniHand;</div>
-<div class="line">    lineInfo.cursorSet.lineOnCursor     = APICursor_MiniHand;</div>
-<div class="line">    lineInfo.cursorSet.refPointOnCursor = APICursor_MiniHand;</div>
-<div class="line">    lineInfo.cursorSet.refLineOnCursor  = APICursor_MiniHand;</div>
-<div class="line">    lineInfo.cursorSet.crossOnCursor    = APICursor_MiniHand;</div>
-<div class="line">    lineInfo.cursorSet.normalOnCursor   = APICursor_MiniHand;</div>
-<div class="line">    lineInfo.cursorSet.tangentOnCursor  = APICursor_MiniHand;</div>
+<div class="line">    lineInfo.cursorSet.nothingOnCursor  = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8a9df99c9a53d12f26a3bae71ec37b0597">APICursor_Hand</a>;</div>
+<div class="line">    lineInfo.cursorSet.pointOnCursor    = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8ad2b84c2e5c48f6128e7cee0627481488">APICursor_MiniHand</a>;</div>
+<div class="line">    lineInfo.cursorSet.lineOnCursor     = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8ad2b84c2e5c48f6128e7cee0627481488">APICursor_MiniHand</a>;</div>
+<div class="line">    lineInfo.cursorSet.refPointOnCursor = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8ad2b84c2e5c48f6128e7cee0627481488">APICursor_MiniHand</a>;</div>
+<div class="line">    lineInfo.cursorSet.refLineOnCursor  = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8ad2b84c2e5c48f6128e7cee0627481488">APICursor_MiniHand</a>;</div>
+<div class="line">    lineInfo.cursorSet.crossOnCursor    = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8ad2b84c2e5c48f6128e7cee0627481488">APICursor_MiniHand</a>;</div>
+<div class="line">    lineInfo.cursorSet.normalOnCursor   = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8ad2b84c2e5c48f6128e7cee0627481488">APICursor_MiniHand</a>;</div>
+<div class="line">    lineInfo.cursorSet.tangentOnCursor  = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8ad2b84c2e5c48f6128e7cee0627481488">APICursor_MiniHand</a>;</div>
 <div class="line"> </div>
 <div class="line">    err = <a class="code hl_function" href="#ga1b135d39fd6d45813cb2ee0df0898d90">ACAPI_UserInput_GetLine</a> (&amp;lineInfo, <span class="keyword">nullptr</span>);</div>
 <div class="line">}</div>
@@ -1070,14 +1092,14 @@ Functions</h2></td></tr>
 <div class="line">    arcInfo.changeCursorSet = <span class="keyword">true</span>;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* use eye cursors for getting the arc */</span></div>
-<div class="line">    arcInfo.cursorSet.nothingOnCursor   = APICursor_Eye;</div>
-<div class="line">    arcInfo.cursorSet.pointOnCursor     = APICursor_DoubleEye;</div>
-<div class="line">    arcInfo.cursorSet.lineOnCursor      = APICursor_DoubleEye;</div>
-<div class="line">    arcInfo.cursorSet.refPointOnCursor  = APICursor_DoubleEye;</div>
-<div class="line">    arcInfo.cursorSet.refLineOnCursor   = APICursor_DoubleEye;</div>
-<div class="line">    arcInfo.cursorSet.crossOnCursor     = APICursor_DoubleEye;</div>
-<div class="line">    arcInfo.cursorSet.normalOnCursor    = APICursor_DoubleEye;</div>
-<div class="line">    arcInfo.cursorSet.tangentOnCursor   = APICursor_DoubleEye;</div>
+<div class="line">    arcInfo.cursorSet.nothingOnCursor   = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8a7c280d6c01ef97ccea41e53e7dd39457">APICursor_Eye</a>;</div>
+<div class="line">    arcInfo.cursorSet.pointOnCursor     = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8a9af48e5ff8d7c34db570786f0c615f15">APICursor_DoubleEye</a>;</div>
+<div class="line">    arcInfo.cursorSet.lineOnCursor      = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8a9af48e5ff8d7c34db570786f0c615f15">APICursor_DoubleEye</a>;</div>
+<div class="line">    arcInfo.cursorSet.refPointOnCursor  = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8a9af48e5ff8d7c34db570786f0c615f15">APICursor_DoubleEye</a>;</div>
+<div class="line">    arcInfo.cursorSet.refLineOnCursor   = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8a9af48e5ff8d7c34db570786f0c615f15">APICursor_DoubleEye</a>;</div>
+<div class="line">    arcInfo.cursorSet.crossOnCursor     = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8a9af48e5ff8d7c34db570786f0c615f15">APICursor_DoubleEye</a>;</div>
+<div class="line">    arcInfo.cursorSet.normalOnCursor    = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8a9af48e5ff8d7c34db570786f0c615f15">APICursor_DoubleEye</a>;</div>
+<div class="line">    arcInfo.cursorSet.tangentOnCursor   = <a class="code hl_enumvalue" href="#gga9d0418d3baeec8ff31071849d62bb6d8a9af48e5ff8d7c34db570786f0c615f15">APICursor_DoubleEye</a>;</div>
 <div class="line"> </div>
 <div class="line">    err = <a class="code hl_function" href="#ga5e36ce7a162f52c6afc9617e46882595">ACAPI_UserInput_GetArc</a> (&amp;arcInfo, <span class="keyword">nullptr</span>);</div>
 <div class="line">}</div>
@@ -1142,7 +1164,7 @@ Functions</h2></td></tr>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_struct" href="struct_a_p_i___rubber_line_type.html">API_RubberLineType</a> rubberLine {};</div>
 <div class="line"> </div>
-<div class="line">    rubberLine.<a class="code hl_variable" href="struct_a_p_i___rubber_line_type.html#a1712f5947a6bcbbaa9027323084403f7">lineThick</a> = APIRubberLine_Simple;</div>
+<div class="line">    rubberLine.<a class="code hl_variable" href="struct_a_p_i___rubber_line_type.html#a1712f5947a6bcbbaa9027323084403f7">lineThick</a> = <a class="code hl_enumvalue" href="#gga88297e6356af5eb73e43ce156570a278afe3686c243b36c5e1d6482a50e98b591">APIRubberLine_Simple</a>;</div>
 <div class="line">    <span class="comment">/* draws a unit square around the actual cursor position */</span></div>
 <div class="line"> </div>
 <div class="line">    rubberLine.c2.x = info-&gt;<a class="code hl_variable" href="struct_a_p_i___rubber_line_info.html#a115b0c6c1560a467c5b1782c4e0f9d18">actCoord</a>.<a class="code hl_variable" href="struct_a_p_i___coord3_d.html#aec328ff015601f2a8a561de965566b9f">x</a> - 0.5;</div>
@@ -1180,8 +1202,8 @@ Functions</h2></td></tr>
 <div class="line">    CHCopyC (<span class="stringliteral">&quot;Click onto a hotspot to create column&quot;</span>, pointInfo.prompt);</div>
 <div class="line"> </div>
 <div class="line">    pointInfo.changeFilter = <span class="keyword">true</span>;      <span class="comment">/* let the cursor gravitate to hotspot neigs only */</span></div>
-<div class="line">    <a class="code hl_function" href="#gaab728c57046642d0cdb61bb503704b91">ACAPI_UserInput_InitNeigFilter</a> (&amp;pointInfo.filter, APIInitNeigFilter_Empty);</div>
-<div class="line">    <a class="code hl_function" href="#gad0dfacb13a63d04b3b83a08b76c12926">ACAPI_UserInput_SetNeigFilter</a> (&amp;pointInfo.filter, APINeig_Hot);</div>
+<div class="line">    <a class="code hl_function" href="#gaab728c57046642d0cdb61bb503704b91">ACAPI_UserInput_InitNeigFilter</a> (&amp;pointInfo.filter, <a class="code hl_enumvalue" href="#gga2b09cbb30c8d8f80bf681b7c8aa3214ca440c3008a6de86bf7dffd7e72396a95d">APIInitNeigFilter_Empty</a>);</div>
+<div class="line">    <a class="code hl_function" href="#gad0dfacb13a63d04b3b83a08b76c12926">ACAPI_UserInput_SetNeigFilter</a> (&amp;pointInfo.filter, <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aeb55558ec6440660cf0dd30b260d6e5f">APINeig_Hot</a>);</div>
 <div class="line"> </div>
 <div class="line">    err = <a class="code hl_function" href="#gadc305bd667e3dfca73bd72ad0367970b">ACAPI_UserInput_GetPoint</a> (&amp;pointInfo, RubberLineCallBack);</div>
 <div class="line"> </div>
@@ -1191,7 +1213,7 @@ Functions</h2></td></tr>
 <div class="line">        <span class="keywordflow">else</span></div>
 <div class="line">            <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;Error in GetPoint&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line">    } <span class="keywordflow">else</span> {</div>
-<div class="line">        <span class="keywordflow">if</span> (pointInfo.neig.neigID != APINeig_Hot) {</div>
+<div class="line">        <span class="keywordflow">if</span> (pointInfo.neig.neigID != <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aeb55558ec6440660cf0dd30b260d6e5f">APINeig_Hot</a>) {</div>
 <div class="line">            <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;There is no hotspot at the clicked position&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line">        } <span class="keywordflow">else</span> {</div>
 <div class="line">            elem.header.type = <a class="code hl_enumvalue" href="group___element.html#gga2502601bf26ffc7abc608f6988da4d91a1371b65c26c45bf2e6024c420bc2d3e7">API_ColumnID</a>;</div>
@@ -1296,7 +1318,7 @@ Functions</h2></td></tr>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_struct" href="struct_a_p_i___rubber_line_type.html">API_RubberLineType</a> rubberLine {};</div>
 <div class="line"> </div>
-<div class="line">    rubberLine.<a class="code hl_variable" href="struct_a_p_i___rubber_line_type.html#a1712f5947a6bcbbaa9027323084403f7">lineThick</a> = APIRubberLine_Simple;</div>
+<div class="line">    rubberLine.<a class="code hl_variable" href="struct_a_p_i___rubber_line_type.html#a1712f5947a6bcbbaa9027323084403f7">lineThick</a> = <a class="code hl_enumvalue" href="#gga88297e6356af5eb73e43ce156570a278afe3686c243b36c5e1d6482a50e98b591">APIRubberLine_Simple</a>;</div>
 <div class="line">    <span class="comment">/* draws a unit square around the actual cursor position */</span></div>
 <div class="line"> </div>
 <div class="line">    rubberLine.c2.x = info-&gt;<a class="code hl_variable" href="struct_a_p_i___rubber_line_info.html#a115b0c6c1560a467c5b1782c4e0f9d18">actCoord</a>.<a class="code hl_variable" href="struct_a_p_i___coord3_d.html#aec328ff015601f2a8a561de965566b9f">x</a> - 0.5;</div>
@@ -1334,8 +1356,8 @@ Functions</h2></td></tr>
 <div class="line">    CHCopyC (<span class="stringliteral">&quot;Click onto a hotspot to create column&quot;</span>, pointInfo.prompt);</div>
 <div class="line"> </div>
 <div class="line">    pointInfo.changeFilter = <span class="keyword">true</span>;      <span class="comment">/* let the cursor gravitate to hotspot neigs only */</span></div>
-<div class="line">    <a class="code hl_function" href="#gaab728c57046642d0cdb61bb503704b91">ACAPI_UserInput_InitNeigFilter</a> (&amp;pointInfo.filter, APIInitNeigFilter_Empty);</div>
-<div class="line">    <a class="code hl_function" href="#gad0dfacb13a63d04b3b83a08b76c12926">ACAPI_UserInput_SetNeigFilter</a> (&amp;pointInfo.filter, APINeig_Hot);</div>
+<div class="line">    <a class="code hl_function" href="#gaab728c57046642d0cdb61bb503704b91">ACAPI_UserInput_InitNeigFilter</a> (&amp;pointInfo.filter, <a class="code hl_enumvalue" href="#gga2b09cbb30c8d8f80bf681b7c8aa3214ca440c3008a6de86bf7dffd7e72396a95d">APIInitNeigFilter_Empty</a>);</div>
+<div class="line">    <a class="code hl_function" href="#gad0dfacb13a63d04b3b83a08b76c12926">ACAPI_UserInput_SetNeigFilter</a> (&amp;pointInfo.filter, <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aeb55558ec6440660cf0dd30b260d6e5f">APINeig_Hot</a>);</div>
 <div class="line"> </div>
 <div class="line">    err = <a class="code hl_function" href="#gadc305bd667e3dfca73bd72ad0367970b">ACAPI_UserInput_GetPoint</a> (&amp;pointInfo, RubberLineCallBack);</div>
 <div class="line"> </div>
@@ -1345,7 +1367,7 @@ Functions</h2></td></tr>
 <div class="line">        <span class="keywordflow">else</span></div>
 <div class="line">            <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;Error in GetPoint&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line">    } <span class="keywordflow">else</span> {</div>
-<div class="line">        <span class="keywordflow">if</span> (pointInfo.neig.neigID != APINeig_Hot) {</div>
+<div class="line">        <span class="keywordflow">if</span> (pointInfo.neig.neigID != <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aeb55558ec6440660cf0dd30b260d6e5f">APINeig_Hot</a>) {</div>
 <div class="line">            <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;There is no hotspot at the clicked position&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line">        } <span class="keywordflow">else</span> {</div>
 <div class="line">            elem.header.type = <a class="code hl_enumvalue" href="group___element.html#gga2502601bf26ffc7abc608f6988da4d91a1371b65c26c45bf2e6024c420bc2d3e7">API_ColumnID</a>;</div>
@@ -1423,10 +1445,10 @@ Functions</h2></td></tr>
 <div class="line"> </div>
 <div class="line">    <a class="code hl_struct" href="struct_a_p_i___get_point_type.html">API_GetPointType</a> pointInfo {};</div>
 <div class="line">    <a class="code hl_struct" href="struct_a_p_i___get_poly_type.html">API_GetPolyType</a>  polyInfo  {};</div>
-<div class="line">    strcpy (pointInfo.prompt, <span class="stringliteral">&quot;Click the first node of the hole&quot;</span>);</div>
+<div class="line">    GS::StrCpy (pointInfo.prompt, <span class="stringliteral">&quot;Click the first node of the hole&quot;</span>);</div>
 <div class="line">    err = <a class="code hl_function" href="#gadc305bd667e3dfca73bd72ad0367970b">ACAPI_UserInput_GetPoint</a> (&amp;pointInfo);</div>
 <div class="line">    <span class="keywordflow">if</span> (err == NoError) {</div>
-<div class="line">        strcpy (polyInfo.prompt, <span class="stringliteral">&quot;Enter the polygon nodes&quot;</span>);</div>
+<div class="line">        GS::StrCpy (polyInfo.prompt, <span class="stringliteral">&quot;Enter the polygon nodes&quot;</span>);</div>
 <div class="line">        polyInfo.startCoord = pointInfo.pos;</div>
 <div class="line">        err = <a class="code hl_function" href="#ga9709ba60095aef4a1fa0eabb9dbd696e">ACAPI_UserInput_GetPoly</a> (&amp;polyInfo);</div>
 <div class="line">    }</div>
@@ -1528,7 +1550,7 @@ Functions</h2></td></tr>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_struct" href="struct_a_p_i___rubber_line_type.html">API_RubberLineType</a> rubberLine {};</div>
 <div class="line"> </div>
-<div class="line">    rubberLine.<a class="code hl_variable" href="struct_a_p_i___rubber_line_type.html#a1712f5947a6bcbbaa9027323084403f7">lineThick</a> = APIRubberLine_Simple;</div>
+<div class="line">    rubberLine.<a class="code hl_variable" href="struct_a_p_i___rubber_line_type.html#a1712f5947a6bcbbaa9027323084403f7">lineThick</a> = <a class="code hl_enumvalue" href="#gga88297e6356af5eb73e43ce156570a278afe3686c243b36c5e1d6482a50e98b591">APIRubberLine_Simple</a>;</div>
 <div class="line">    <span class="comment">/* draws a unit square around the actual cursor position */</span></div>
 <div class="line"> </div>
 <div class="line">    rubberLine.c2.x = info-&gt;<a class="code hl_variable" href="struct_a_p_i___rubber_line_info.html#a115b0c6c1560a467c5b1782c4e0f9d18">actCoord</a>.<a class="code hl_variable" href="struct_a_p_i___coord3_d.html#aec328ff015601f2a8a561de965566b9f">x</a> - 0.5;</div>
@@ -1566,8 +1588,8 @@ Functions</h2></td></tr>
 <div class="line">    CHCopyC (<span class="stringliteral">&quot;Click onto a hotspot to create column&quot;</span>, pointInfo.prompt);</div>
 <div class="line"> </div>
 <div class="line">    pointInfo.changeFilter = <span class="keyword">true</span>;      <span class="comment">/* let the cursor gravitate to hotspot neigs only */</span></div>
-<div class="line">    <a class="code hl_function" href="#gaab728c57046642d0cdb61bb503704b91">ACAPI_UserInput_InitNeigFilter</a> (&amp;pointInfo.filter, APIInitNeigFilter_Empty);</div>
-<div class="line">    <a class="code hl_function" href="#gad0dfacb13a63d04b3b83a08b76c12926">ACAPI_UserInput_SetNeigFilter</a> (&amp;pointInfo.filter, APINeig_Hot);</div>
+<div class="line">    <a class="code hl_function" href="#gaab728c57046642d0cdb61bb503704b91">ACAPI_UserInput_InitNeigFilter</a> (&amp;pointInfo.filter, <a class="code hl_enumvalue" href="#gga2b09cbb30c8d8f80bf681b7c8aa3214ca440c3008a6de86bf7dffd7e72396a95d">APIInitNeigFilter_Empty</a>);</div>
+<div class="line">    <a class="code hl_function" href="#gad0dfacb13a63d04b3b83a08b76c12926">ACAPI_UserInput_SetNeigFilter</a> (&amp;pointInfo.filter, <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aeb55558ec6440660cf0dd30b260d6e5f">APINeig_Hot</a>);</div>
 <div class="line"> </div>
 <div class="line">    err = <a class="code hl_function" href="#gadc305bd667e3dfca73bd72ad0367970b">ACAPI_UserInput_GetPoint</a> (&amp;pointInfo, RubberLineCallBack);</div>
 <div class="line"> </div>
@@ -1577,7 +1599,7 @@ Functions</h2></td></tr>
 <div class="line">        <span class="keywordflow">else</span></div>
 <div class="line">            <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;Error in GetPoint&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line">    } <span class="keywordflow">else</span> {</div>
-<div class="line">        <span class="keywordflow">if</span> (pointInfo.neig.neigID != APINeig_Hot) {</div>
+<div class="line">        <span class="keywordflow">if</span> (pointInfo.neig.neigID != <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aeb55558ec6440660cf0dd30b260d6e5f">APINeig_Hot</a>) {</div>
 <div class="line">            <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;There is no hotspot at the clicked position&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line">        } <span class="keywordflow">else</span> {</div>
 <div class="line">            elem.header.type = <a class="code hl_enumvalue" href="group___element.html#gga2502601bf26ffc7abc608f6988da4d91a1371b65c26c45bf2e6024c420bc2d3e7">API_ColumnID</a>;</div>
@@ -1627,7 +1649,7 @@ Functions</h2></td></tr>
 <div class="line">err = <a class="code hl_function" href="#gadc305bd667e3dfca73bd72ad0367970b">ACAPI_UserInput_GetPoint</a> (&amp;pointInfo, <span class="keyword">nullptr</span>);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">if</span> (err == NoError) {</div>
-<div class="line">    constPars.constType = APIConst_X;</div>
+<div class="line">    constPars.constType = <a class="code hl_enumvalue" href="#ggaeff01fc2fe7c9610cfd7191df17ea8e1a459f864d195fb07f1cf6ccc0f583743a">APIConst_X</a>;</div>
 <div class="line">    constPars.constValue = 2.0;</div>
 <div class="line">    constPars.useLocOrigo = <span class="keyword">true</span>;</div>
 <div class="line">    err = <a class="code hl_function" href="#ga0e8af0714a2ce62167bad41e29ea4fbe">ACAPI_UserInput_SetConstraint</a> (&amp;constPars);</div>
@@ -1684,7 +1706,7 @@ Functions</h2></td></tr>
 <div class="line">err = <a class="code hl_function" href="#gadc305bd667e3dfca73bd72ad0367970b">ACAPI_UserInput_GetPoint</a> (&amp;pointInfo, <span class="keyword">nullptr</span>);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">if</span> (err == NoError) {</div>
-<div class="line">    constPars.constType = APIConst_X;</div>
+<div class="line">    constPars.constType = <a class="code hl_enumvalue" href="#ggaeff01fc2fe7c9610cfd7191df17ea8e1a459f864d195fb07f1cf6ccc0f583743a">APIConst_X</a>;</div>
 <div class="line">    constPars.constValue = 2.0;</div>
 <div class="line">    constPars.useLocOrigo = <span class="keyword">true</span>;</div>
 <div class="line">    err = <a class="code hl_function" href="#ga0e8af0714a2ce62167bad41e29ea4fbe">ACAPI_UserInput_SetConstraint</a> (&amp;constPars);</div>
@@ -1817,7 +1839,7 @@ Functions</h2></td></tr>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_struct" href="struct_a_p_i___rubber_line_type.html">API_RubberLineType</a> rubberLine {};</div>
 <div class="line"> </div>
-<div class="line">    rubberLine.<a class="code hl_variable" href="struct_a_p_i___rubber_line_type.html#a1712f5947a6bcbbaa9027323084403f7">lineThick</a> = APIRubberLine_Simple;</div>
+<div class="line">    rubberLine.<a class="code hl_variable" href="struct_a_p_i___rubber_line_type.html#a1712f5947a6bcbbaa9027323084403f7">lineThick</a> = <a class="code hl_enumvalue" href="#gga88297e6356af5eb73e43ce156570a278afe3686c243b36c5e1d6482a50e98b591">APIRubberLine_Simple</a>;</div>
 <div class="line">    <span class="comment">/* draws a unit square around the actual cursor position */</span></div>
 <div class="line"> </div>
 <div class="line">    rubberLine.c2.x = info-&gt;<a class="code hl_variable" href="struct_a_p_i___rubber_line_info.html#a115b0c6c1560a467c5b1782c4e0f9d18">actCoord</a>.<a class="code hl_variable" href="struct_a_p_i___coord3_d.html#aec328ff015601f2a8a561de965566b9f">x</a> - 0.5;</div>
@@ -1855,8 +1877,8 @@ Functions</h2></td></tr>
 <div class="line">    CHCopyC (<span class="stringliteral">&quot;Click onto a hotspot to create column&quot;</span>, pointInfo.prompt);</div>
 <div class="line"> </div>
 <div class="line">    pointInfo.changeFilter = <span class="keyword">true</span>;      <span class="comment">/* let the cursor gravitate to hotspot neigs only */</span></div>
-<div class="line">    <a class="code hl_function" href="#gaab728c57046642d0cdb61bb503704b91">ACAPI_UserInput_InitNeigFilter</a> (&amp;pointInfo.filter, APIInitNeigFilter_Empty);</div>
-<div class="line">    <a class="code hl_function" href="#gad0dfacb13a63d04b3b83a08b76c12926">ACAPI_UserInput_SetNeigFilter</a> (&amp;pointInfo.filter, APINeig_Hot);</div>
+<div class="line">    <a class="code hl_function" href="#gaab728c57046642d0cdb61bb503704b91">ACAPI_UserInput_InitNeigFilter</a> (&amp;pointInfo.filter, <a class="code hl_enumvalue" href="#gga2b09cbb30c8d8f80bf681b7c8aa3214ca440c3008a6de86bf7dffd7e72396a95d">APIInitNeigFilter_Empty</a>);</div>
+<div class="line">    <a class="code hl_function" href="#gad0dfacb13a63d04b3b83a08b76c12926">ACAPI_UserInput_SetNeigFilter</a> (&amp;pointInfo.filter, <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aeb55558ec6440660cf0dd30b260d6e5f">APINeig_Hot</a>);</div>
 <div class="line"> </div>
 <div class="line">    err = <a class="code hl_function" href="#gadc305bd667e3dfca73bd72ad0367970b">ACAPI_UserInput_GetPoint</a> (&amp;pointInfo, RubberLineCallBack);</div>
 <div class="line"> </div>
@@ -1866,7 +1888,7 @@ Functions</h2></td></tr>
 <div class="line">        <span class="keywordflow">else</span></div>
 <div class="line">            <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;Error in GetPoint&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line">    } <span class="keywordflow">else</span> {</div>
-<div class="line">        <span class="keywordflow">if</span> (pointInfo.neig.neigID != APINeig_Hot) {</div>
+<div class="line">        <span class="keywordflow">if</span> (pointInfo.neig.neigID != <a class="code hl_enumvalue" href="group___element.html#gga58ee0e482d4747dc7bf3302cd7551272aeb55558ec6440660cf0dd30b260d6e5f">APINeig_Hot</a>) {</div>
 <div class="line">            <a class="code hl_function" href="group___dialog.html#ga75bf1a5faae2194c165ee4fcaf6afa38">ACAPI_WriteReport</a> (<span class="stringliteral">&quot;There is no hotspot at the clicked position&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line">        } <span class="keywordflow">else</span> {</div>
 <div class="line">            elem.header.type = <a class="code hl_enumvalue" href="group___element.html#gga2502601bf26ffc7abc608f6988da4d91a1371b65c26c45bf2e6024c420bc2d3e7">API_ColumnID</a>;</div>

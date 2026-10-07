@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: Old Listing</title>
+<title>Archicad 30 C++ API: Old Listing</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -148,7 +148,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of a key.  <a href="struct_a_p_i___key_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___unit_type.html">API_UnitType</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of an unit.  <a href="struct_a_p_i___unit_type.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of a unit.  <a href="struct_a_p_i___unit_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___obsolete___component_type.html">API_Obsolete_ComponentType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of a component.  <a href="struct_a_p_i___obsolete___component_type.html#details">More...</a><br /></td></tr>
@@ -163,12 +163,12 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:gad54fa78ba87e7fbf43ef1e2c65a8f546" id="r_gad54fa78ba87e7fbf43ef1e2c65a8f546"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad54fa78ba87e7fbf43ef1e2c65a8f546">API_ListDataID</a> { <br />
-&#160;&#160;<b>API_ZombieListDataID</b>
-, <b>API_KeyID</b>
-, <b>API_UnitID</b>
-, <b>API_Obsolete_ComponentID</b>
+&#160;&#160;<a class="el" href="#ggad54fa78ba87e7fbf43ef1e2c65a8f546a12a67233ebd39b96a28118b62eb5f9d2">API_ZombieListDataID</a>
+, <a class="el" href="#ggad54fa78ba87e7fbf43ef1e2c65a8f546aebcbe0e2b003359bba1e9019db854c10">API_KeyID</a>
+, <a class="el" href="#ggad54fa78ba87e7fbf43ef1e2c65a8f546a9e066de48f0747e93e26437ef4a45a15">API_UnitID</a>
+, <a class="el" href="#ggad54fa78ba87e7fbf43ef1e2c65a8f546a5d46dfe9c261aecbf26715c2aae24eff">API_Obsolete_ComponentID</a>
 , <br />
-&#160;&#160;<b>API_DescriptorID</b>
+&#160;&#160;<a class="el" href="#ggad54fa78ba87e7fbf43ef1e2c65a8f546a7e3dce97aa2a810512afc2bdd99d652e">API_DescriptorID</a>
 <br />
  }</td></tr>
 <tr class="memdesc:gad54fa78ba87e7fbf43ef1e2c65a8f546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible types of a listdata item.  <a href="#gad54fa78ba87e7fbf43ef1e2c65a8f546">More...</a><br /></td></tr>
@@ -212,6 +212,18 @@ Functions</h2></td></tr>
 
 <p>Possible types of a listdata item. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>This enum is used when you get information about the listing database or use <code><a class="el" href="union_a_p_i___list_data.html" title="The representation of a listdata.">API_ListData</a></code>. See the <a class="el" href="#ga4ddba6888c22341e41a29fa7136c8316">ACAPI_OldListing_Get</a>, <a class="el" href="#ga6491d52b89966da95052718317da5d97">ACAPI_OldListing_GetLocal</a>, <a class="el" href="#ga02470017e678a9980ab08b6fc3b3ceb8">ACAPI_OldListing_Search</a>, <a class="el" href="#gaa65eb2d76332103065ab651a873888e5">ACAPI_OldListing_GetNum</a> functions. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad54fa78ba87e7fbf43ef1e2c65a8f546a12a67233ebd39b96a28118b62eb5f9d2" name="ggad54fa78ba87e7fbf43ef1e2c65a8f546a12a67233ebd39b96a28118b62eb5f9d2"></a>API_ZombieListDataID&#160;</td><td class="fielddoc"><p>A dummy value (0). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad54fa78ba87e7fbf43ef1e2c65a8f546aebcbe0e2b003359bba1e9019db854c10" name="ggad54fa78ba87e7fbf43ef1e2c65a8f546aebcbe0e2b003359bba1e9019db854c10"></a>API_KeyID&#160;</td><td class="fielddoc"><p>Denotes a key listdata. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad54fa78ba87e7fbf43ef1e2c65a8f546a9e066de48f0747e93e26437ef4a45a15" name="ggad54fa78ba87e7fbf43ef1e2c65a8f546a9e066de48f0747e93e26437ef4a45a15"></a>API_UnitID&#160;</td><td class="fielddoc"><p>Denotes an unit listdata. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad54fa78ba87e7fbf43ef1e2c65a8f546a5d46dfe9c261aecbf26715c2aae24eff" name="ggad54fa78ba87e7fbf43ef1e2c65a8f546a5d46dfe9c261aecbf26715c2aae24eff"></a>API_Obsolete_ComponentID&#160;</td><td class="fielddoc"><p>Denotes a component listdata. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad54fa78ba87e7fbf43ef1e2c65a8f546a7e3dce97aa2a810512afc2bdd99d652e" name="ggad54fa78ba87e7fbf43ef1e2c65a8f546a7e3dce97aa2a810512afc2bdd99d652e"></a>API_DescriptorID&#160;</td><td class="fielddoc"><p>Denotes a descriptor listdata. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -239,7 +251,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADINDEX - Invalid listdata index was passed.</li>
 <li>APIERR_BADID - Invalid listdata type was passed.</li>
 <li>APIERR_DELETED - Invalid listdata was deleted. </li>
@@ -259,7 +271,7 @@ If you are retrieving a descriptor, don't forget to dispose of the name handle w
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___list_data.html">API_ListData</a>  listdata {};</div>
 <div class="line"> </div>
 <div class="line">listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#af4c9f2ceaadd25ad994cf33018e9696b">header</a>.<a class="code hl_variable" href="struct_a_p_i___list_data___head.html#a538de7cd3c0687af045b47b5bfbefbc5">setIndex</a> = 1;</div>
-<div class="line">listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#af4c9f2ceaadd25ad994cf33018e9696b">header</a>.<a class="code hl_variable" href="struct_a_p_i___list_data___head.html#a928b4f54be4c21d1f50b50d0c1516ea6">typeID</a> = API_DescriptorID;</div>
+<div class="line">listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#af4c9f2ceaadd25ad994cf33018e9696b">header</a>.<a class="code hl_variable" href="struct_a_p_i___list_data___head.html#a928b4f54be4c21d1f50b50d0c1516ea6">typeID</a> = <a class="code hl_enumvalue" href="#ggad54fa78ba87e7fbf43ef1e2c65a8f546a7e3dce97aa2a810512afc2bdd99d652e">API_DescriptorID</a>;</div>
 <div class="line">listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#af4c9f2ceaadd25ad994cf33018e9696b">header</a>.<a class="code hl_variable" href="struct_a_p_i___list_data___head.html#af29c2f87ddc8c54e89e73cbc38f815b7">index</a> = 1;</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="#ga4ddba6888c22341e41a29fa7136c8316">ACAPI_OldListing_Get</a> (&amp;listdata);</div>
@@ -303,7 +315,7 @@ If you are retrieving a descriptor, don't forget to dispose of the name handle w
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - Invalid libIndex was passed.</li>
 <li>APIERR_BADID - Invalid listdata type was passed. </li>
 </ul>
@@ -325,7 +337,7 @@ If you are retrieving a descriptor, do not forget to dispose of the name handle 
 <div class="line">Int32           libIndex;</div>
 <div class="line">GSErrCode       err;</div>
 <div class="line"> </div>
-<div class="line">libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#abf9a8fff84165e22b67c1a1f95c0c99b">typeID</a> = APILib_PropertyID;</div>
+<div class="line">libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#abf9a8fff84165e22b67c1a1f95c0c99b">typeID</a> = <a class="code hl_enumvalue" href="group___library_part.html#ggacd655f5dbf61af0671962cbbe65ed59fac4149fe6c9dd946545a98ffe1cc84f74">APILib_PropertyID</a>;</div>
 <div class="line">GS::ucscpy (libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#a7188ede45f613116ba5237aa56177ddf">docu_UName</a>, L(<span class="stringliteral">&quot;Test property&quot;</span>));</div>
 <div class="line"> </div>
 <div class="line">err = <a class="code hl_function" href="group___library_part.html#ga9e49cd1689140705c08d1c7d6f9ec816">ACAPI_LibraryPart_Search</a> (&amp;libPart, <span class="keyword">false</span>);</div>
@@ -334,7 +346,7 @@ If you are retrieving a descriptor, do not forget to dispose of the name handle 
 <div class="line"><span class="keywordflow">if</span> (err == NoError &amp;&amp; libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#ae2c5c2b3b16b5b857d35932a5be868f7">index</a> != 0) {</div>
 <div class="line">    libIndex = libPart.<a class="code hl_variable" href="struct_a_p_i___lib_part.html#ae2c5c2b3b16b5b857d35932a5be868f7">index</a>;</div>
 <div class="line"> </div>
-<div class="line">    listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#af4c9f2ceaadd25ad994cf33018e9696b">header</a>.<a class="code hl_variable" href="struct_a_p_i___list_data___head.html#a928b4f54be4c21d1f50b50d0c1516ea6">typeID</a> = API_Obsolete_ComponentID;</div>
+<div class="line">    listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#af4c9f2ceaadd25ad994cf33018e9696b">header</a>.<a class="code hl_variable" href="struct_a_p_i___list_data___head.html#a928b4f54be4c21d1f50b50d0c1516ea6">typeID</a> = <a class="code hl_enumvalue" href="#ggad54fa78ba87e7fbf43ef1e2c65a8f546a5d46dfe9c261aecbf26715c2aae24eff">API_Obsolete_ComponentID</a>;</div>
 <div class="line">    listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#af4c9f2ceaadd25ad994cf33018e9696b">header</a>.<a class="code hl_variable" href="struct_a_p_i___list_data___head.html#af29c2f87ddc8c54e89e73cbc38f815b7">index</a>  = 1;</div>
 <div class="line"> </div>
 <div class="line">    err = <a class="code hl_function" href="#ga6491d52b89966da95052718317da5d97">ACAPI_OldListing_GetLocal</a> (libIndex, &amp;head, &amp;listdata);</div>
@@ -377,7 +389,7 @@ If you are retrieving a descriptor, do not forget to dispose of the name handle 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADID - Invalid listdata type or setIndex was passed. </li>
 </ul>
 </dd></dl>
@@ -385,7 +397,7 @@ If you are retrieving a descriptor, do not forget to dispose of the name handle 
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><span class="comment">/* How many keys are in the first database set? */</span></div>
 <div class="line"> </div>
 <div class="line">Int32   count;</div>
-<div class="line">GSErrCode err = <a class="code hl_function" href="#gaa65eb2d76332103065ab651a873888e5">ACAPI_OldListing_GetNum</a> (1, API_KeyID, &amp;count);</div>
+<div class="line">GSErrCode err = <a class="code hl_function" href="#gaa65eb2d76332103065ab651a873888e5">ACAPI_OldListing_GetNum</a> (1, <a class="code hl_enumvalue" href="#ggad54fa78ba87e7fbf43ef1e2c65a8f546aebcbe0e2b003359bba1e9019db854c10">API_KeyID</a>, &amp;count);</div>
 </div><!-- fragment --> </dd></dl>
 
 </div>
@@ -413,7 +425,7 @@ If you are retrieving a descriptor, do not forget to dispose of the name handle 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADINDEX - Invalid listdataSet setindex was passed. </li>
 </ul>
 </dd></dl>
@@ -475,7 +487,7 @@ If you are retrieving a descriptor, do not forget to dispose of the name handle 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADKEYCODE - Invalid code or keycode was passed. </li>
 </ul>
 </dd></dl>
@@ -501,7 +513,7 @@ If you are retrieving a descriptor, do not forget to dispose of the name handle 
 <div class="line">GSErrCode       err;</div>
 <div class="line"> </div>
 <div class="line">listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#af4c9f2ceaadd25ad994cf33018e9696b">header</a>.<a class="code hl_variable" href="struct_a_p_i___list_data___head.html#a538de7cd3c0687af045b47b5bfbefbc5">setIndex</a>    = 0;</div>
-<div class="line">listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#af4c9f2ceaadd25ad994cf33018e9696b">header</a>.<a class="code hl_variable" href="struct_a_p_i___list_data___head.html#a928b4f54be4c21d1f50b50d0c1516ea6">typeID</a>      = API_Obsolete_ComponentID;</div>
+<div class="line">listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#af4c9f2ceaadd25ad994cf33018e9696b">header</a>.<a class="code hl_variable" href="struct_a_p_i___list_data___head.html#a928b4f54be4c21d1f50b50d0c1516ea6">typeID</a>      = <a class="code hl_enumvalue" href="#ggad54fa78ba87e7fbf43ef1e2c65a8f546a5d46dfe9c261aecbf26715c2aae24eff">API_Obsolete_ComponentID</a>;</div>
 <div class="line">CHCopyC (<span class="stringliteral">&quot;003&quot;</span>, listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#a9d537eff72568a6a867b5b1819181a9b">component</a>.<a class="code hl_variable" href="struct_a_p_i___obsolete___component_type.html#a137c235845eae3462d8b044369a2ade8">keycode</a>);</div>
 <div class="line">CHCopyC (<span class="stringliteral">&quot;&quot;</span>, listdata.<a class="code hl_variable" href="union_a_p_i___list_data.html#a9d537eff72568a6a867b5b1819181a9b">component</a>.<a class="code hl_variable" href="struct_a_p_i___obsolete___component_type.html#ab0854ce00e594d059258fc7fa3381adc">code</a>);</div>
 <div class="line"> </div>

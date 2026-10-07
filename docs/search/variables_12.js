@@ -197,7 +197,7 @@ var searchData=
   ['solid_194',['solid',['../struct_a_p_i___prim_arc.html#a81ffb943c14efd6bf2dfc6c28165b37f',1,'API_PrimArc::solid'],['../struct_a_p_i___prim_tri.html#a22dbe63899797c8d07757e90e992eaaf',1,'API_PrimTri::solid'],['../struct_a_p_i___prim_poly.html#ac578e2798384cd6d2423b8610987838a',1,'API_PrimPoly::solid']]],
   ['solidoperationsonzones_195',['solidOperationsOnZones',['../struct_a_p_i___section_segment.html#a717b55489b4f63041fe6065b6c58502e',1,'API_SectionSegment']]],
   ['sortindex_196',['sortIndex',['../struct_a_p_i___drawing_type.html#a8efdb7d0f4e0d2dc1dffafd62f85a9a7',1,'API_DrawingType']]],
-  ['source_197',['source',['../struct_a_p_i___classification_system.html#ac7ee98e489d3beeea8b466c21977598e',1,'API_ClassificationSystem']]],
+  ['source_197',['source',['../struct_a_p_i___attribute_creation_info.html#a6584997a532a63a7c90761d1aee43f9f',1,'API_AttributeCreationInfo::source'],['../struct_a_p_i___classification_system.html#ac7ee98e489d3beeea8b466c21977598e',1,'API_ClassificationSystem::source']]],
   ['sourceguid_198',['sourceGuid',['../struct_a_p_i___navigator_item.html#af8338243b9435d357f156dba8bc97d61',1,'API_NavigatorItem']]],
   ['sourcelocation_199',['sourceLocation',['../struct_a_p_i___hotlink_node.html#aca43b393613b3ed974b69f7a0633c39c',1,'API_HotlinkNode']]],
   ['sourcemarker_200',['sourceMarker',['../struct_a_p_i___section_segment.html#ac56b9289b1f02d2a07d0a87853314f3f',1,'API_SectionSegment::sourceMarker'],['../struct_a_p_i___marker_link_data_type.html#a9879ff79987dbdda136438e818451787',1,'API_MarkerLinkDataType::sourceMarker']]],

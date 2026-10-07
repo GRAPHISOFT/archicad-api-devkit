@@ -3,7 +3,8 @@ var group___add_on_lifetime =
     [ "API_AddOnInfo", "struct_a_p_i___add_on_info.html", [
       [ "description", "struct_a_p_i___add_on_info.html#a7dc761071ee3297fbbbf2b893732bfee", null ],
       [ "name", "struct_a_p_i___add_on_info.html#afd2b35960456793cf413db587606a743", null ],
-      [ "requiredSSALevel", "struct_a_p_i___add_on_info.html#ab58f4d14565c788b1597a59dd04e5ef1", null ]
+      [ "requiredSSALevel", "struct_a_p_i___add_on_info.html#ab58f4d14565c788b1597a59dd04e5ef1", null ],
+      [ "version", "struct_a_p_i___add_on_info.html#ad74d118af2a284ecf895856175901ab4", null ]
     ] ],
     [ "API_ServerApplicationInfo", "struct_a_p_i___server_application_info.html", [
       [ "buildNum", "struct_a_p_i___server_application_info.html#a79b80c3c29d313c1f1fa6a37f356cf7c", null ],

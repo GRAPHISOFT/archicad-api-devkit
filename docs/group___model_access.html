@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: ModelAccess API</title>
+<title>Archicad 30 C++ API: ModelAccess API</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -183,6 +183,34 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:gab57a668e63c5452d92887a7021b3ec40" id="r_gab57a668e63c5452d92887a7021b3ec40"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab57a668e63c5452d92887a7021b3ec40">API_3DTypeID</a> { <br />
+&#160;&#160;<a class="el" href="#ggab57a668e63c5452d92887a7021b3ec40aa76fd7dba9be33f1254e8581456c4ce8">API_Zombie3DID</a> = 0
+, <a class="el" href="#ggab57a668e63c5452d92887a7021b3ec40a8bc8b7569d6c440dc45f8bdee645c74d">API_BodyID</a>
+, <a class="el" href="#ggab57a668e63c5452d92887a7021b3ec40a4cc85fd4f433b437b19fbc950329c0e2">API_PgonID</a>
+, <a class="el" href="#ggab57a668e63c5452d92887a7021b3ec40a88486e2b5daaa35ff84a1bcc2da52d7c">API_PedgID</a>
+, <br />
+&#160;&#160;<a class="el" href="#ggab57a668e63c5452d92887a7021b3ec40a6fb39acedd0682d78fe9fc340338b3ac">API_EdgeID</a>
+, <a class="el" href="#ggab57a668e63c5452d92887a7021b3ec40a0ebd0d0bc530b1810767141ea7368ae2">API_VertID</a>
+, <a class="el" href="#ggab57a668e63c5452d92887a7021b3ec40abec33a9e16a6f3c3da3e57479e258ccb">API_VectID</a>
+, <a class="el" href="#ggab57a668e63c5452d92887a7021b3ec40afbbc51511041b18f471a75ddc9d5ab38">API_UmatID</a>
+, <br />
+&#160;&#160;<a class="el" href="#ggab57a668e63c5452d92887a7021b3ec40a7521e99001e8bf9ca7f6dfdffd0d4fd4">API_LghtID</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:gab57a668e63c5452d92887a7021b3ec40"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the enumeration of the applicable types of 3D components.  <a href="#gab57a668e63c5452d92887a7021b3ec40">More...</a><br /></td></tr>
+<tr class="separator:gab57a668e63c5452d92887a7021b3ec40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3c414a53a631d2fbe5a5a95464ff888" id="r_gaa3c414a53a631d2fbe5a5a95464ff888"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa3c414a53a631d2fbe5a5a95464ff888">API_LghtSouID</a> { <br />
+&#160;&#160;<a class="el" href="#ggaa3c414a53a631d2fbe5a5a95464ff888afb31b7b6fe4285a5401d29ffe68574c3">APILght_DistantID</a>
+, <a class="el" href="#ggaa3c414a53a631d2fbe5a5a95464ff888ac5ed578d4d56c78cc6a8f1ed69953b1c">APILght_DirectionID</a>
+, <a class="el" href="#ggaa3c414a53a631d2fbe5a5a95464ff888a523dc0b45c1faf1557aa9eb1a8a8c78e">APILght_SpotID</a>
+, <a class="el" href="#ggaa3c414a53a631d2fbe5a5a95464ff888a6a97f1a3b6201bc61cd03e76af0665f5">APILght_PointID</a>
+, <br />
+&#160;&#160;<a class="el" href="#ggaa3c414a53a631d2fbe5a5a95464ff888acb8f5e597ef77924eac8e16c09046326">APILght_SunID</a>
+, <a class="el" href="#ggaa3c414a53a631d2fbe5a5a95464ff888a5549cfb1fb15675681053e094ef0d75c">APILght_EyeID</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:gaa3c414a53a631d2fbe5a5a95464ff888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible types of a 3D light source.  <a href="#gaa3c414a53a631d2fbe5a5a95464ff888">More...</a><br /></td></tr>
+<tr class="separator:gaa3c414a53a631d2fbe5a5a95464ff888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ca5f765869a7cd806e420ef451c8495" id="r_ga8ca5f765869a7cd806e420ef451c8495"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8ca5f765869a7cd806e420ef451c8495">API_MaterTypeID</a> { <br />
 &#160;&#160;<a class="el" href="#gga8ca5f765869a7cd806e420ef451c8495a3bc7e77094211f4997d9b01997bd9930">APIMater_GeneralID</a>
 , <a class="el" href="#gga8ca5f765869a7cd806e420ef451c8495acf68a335dfabebc052ffe8e92500e132">APIMater_SimpleID</a>
@@ -197,34 +225,6 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga8ca5f765869a7cd806e420ef451c8495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of material types.  <a href="#ga8ca5f765869a7cd806e420ef451c8495">More...</a><br /></td></tr>
 <tr class="separator:ga8ca5f765869a7cd806e420ef451c8495"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab57a668e63c5452d92887a7021b3ec40" id="r_gab57a668e63c5452d92887a7021b3ec40"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab57a668e63c5452d92887a7021b3ec40">API_3DTypeID</a> { <br />
-&#160;&#160;<b>API_Zombie3DID</b> = 0
-, <b>API_BodyID</b>
-, <b>API_PgonID</b>
-, <b>API_PedgID</b>
-, <br />
-&#160;&#160;<b>API_EdgeID</b>
-, <b>API_VertID</b>
-, <b>API_VectID</b>
-, <b>API_UmatID</b>
-, <br />
-&#160;&#160;<b>API_LghtID</b>
-<br />
- }</td></tr>
-<tr class="memdesc:gab57a668e63c5452d92887a7021b3ec40"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the enumeration of the applicable types of 3D components.  <a href="#gab57a668e63c5452d92887a7021b3ec40">More...</a><br /></td></tr>
-<tr class="separator:gab57a668e63c5452d92887a7021b3ec40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa3c414a53a631d2fbe5a5a95464ff888" id="r_gaa3c414a53a631d2fbe5a5a95464ff888"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa3c414a53a631d2fbe5a5a95464ff888">API_LghtSouID</a> { <br />
-&#160;&#160;<b>APILght_DistantID</b>
-, <b>APILght_DirectionID</b>
-, <b>APILght_SpotID</b>
-, <b>APILght_PointID</b>
-, <br />
-&#160;&#160;<b>APILght_SunID</b>
-, <b>APILght_EyeID</b>
-<br />
- }</td></tr>
-<tr class="memdesc:gaa3c414a53a631d2fbe5a5a95464ff888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible types of a 3D light source.  <a href="#gaa3c414a53a631d2fbe5a5a95464ff888">More...</a><br /></td></tr>
-<tr class="separator:gaa3c414a53a631d2fbe5a5a95464ff888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -254,13 +254,13 @@ Functions</h2></td></tr>
 <tr class="separator:ga5517ee8cb037f7413ad2adedfea2167b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<h1><a class="anchor" id="autotoc_md143"></a>
+<h1><a class="anchor" id="autotoc_md150"></a>
 Model Access API</h1>
 <p>The ModelAccess API provides geometry-level access to the 3D model of the Virtual Building.</p>
-<h2><a class="anchor" id="autotoc_md144"></a>
+<h2><a class="anchor" id="autotoc_md151"></a>
 3D Database</h2>
 <p>To have an overview what the 3D model is, and how it fits into the entire database please refer to the Element_Overview chapter.</p>
-<h2><a class="anchor" id="autotoc_md145"></a>
+<h2><a class="anchor" id="autotoc_md152"></a>
 3D Manager</h2>
 <p>To have an overview on the 3D model of Archicad, and how the 3D database fits into the entire database system please refer to the Element Overview chapter.</p>
 <p>All of the 3D handler function begin with the ACAPI_ModelAccess_ prefix. This function family gives support to query the 3D database. Modifications are not supported in this version of the API; you have no possibility to change the 3D model. </p>
@@ -279,6 +279,26 @@ Model Access API</h1>
 
 <p>This is the enumeration of the applicable types of 3D components. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>These component types are usable in the typeID field of <a class="el" href="struct_a_p_i__3_d___head.html">API_3D_Head</a> structure. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab57a668e63c5452d92887a7021b3ec40aa76fd7dba9be33f1254e8581456c4ce8" name="ggab57a668e63c5452d92887a7021b3ec40aa76fd7dba9be33f1254e8581456c4ce8"></a>API_Zombie3DID&#160;</td><td class="fielddoc"><p>Dummy type component </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab57a668e63c5452d92887a7021b3ec40a8bc8b7569d6c440dc45f8bdee645c74d" name="ggab57a668e63c5452d92887a7021b3ec40a8bc8b7569d6c440dc45f8bdee645c74d"></a>API_BodyID&#160;</td><td class="fielddoc"><p>Body type component </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab57a668e63c5452d92887a7021b3ec40a4cc85fd4f433b437b19fbc950329c0e2" name="ggab57a668e63c5452d92887a7021b3ec40a4cc85fd4f433b437b19fbc950329c0e2"></a>API_PgonID&#160;</td><td class="fielddoc"><p>Polygon type component </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab57a668e63c5452d92887a7021b3ec40a88486e2b5daaa35ff84a1bcc2da52d7c" name="ggab57a668e63c5452d92887a7021b3ec40a88486e2b5daaa35ff84a1bcc2da52d7c"></a>API_PedgID&#160;</td><td class="fielddoc"><p>Edge reference type component </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab57a668e63c5452d92887a7021b3ec40a6fb39acedd0682d78fe9fc340338b3ac" name="ggab57a668e63c5452d92887a7021b3ec40a6fb39acedd0682d78fe9fc340338b3ac"></a>API_EdgeID&#160;</td><td class="fielddoc"><p>Edge type component </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab57a668e63c5452d92887a7021b3ec40a0ebd0d0bc530b1810767141ea7368ae2" name="ggab57a668e63c5452d92887a7021b3ec40a0ebd0d0bc530b1810767141ea7368ae2"></a>API_VertID&#160;</td><td class="fielddoc"><p>Vertex Type component </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab57a668e63c5452d92887a7021b3ec40abec33a9e16a6f3c3da3e57479e258ccb" name="ggab57a668e63c5452d92887a7021b3ec40abec33a9e16a6f3c3da3e57479e258ccb"></a>API_VectID&#160;</td><td class="fielddoc"><p>Vector type component </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab57a668e63c5452d92887a7021b3ec40afbbc51511041b18f471a75ddc9d5ab38" name="ggab57a668e63c5452d92887a7021b3ec40afbbc51511041b18f471a75ddc9d5ab38"></a>API_UmatID&#160;</td><td class="fielddoc"><p>Surface material type component </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab57a668e63c5452d92887a7021b3ec40a7521e99001e8bf9ca7f6dfdffd0d4fd4" name="ggab57a668e63c5452d92887a7021b3ec40a7521e99001e8bf9ca7f6dfdffd0d4fd4"></a>API_LghtID&#160;</td><td class="fielddoc"><p>Light type component </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -295,7 +315,21 @@ Model Access API</h1>
 </div><div class="memdoc">
 
 <p>Possible types of a 3D light source. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>These identifiers are usable in <a class="el" href="struct_a_p_i___lght_type.html">API_LghtType</a> type field. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>These identifiers are usable in the <a class="el" href="struct_a_p_i___lght_type.html">API_LghtType</a> type field. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa3c414a53a631d2fbe5a5a95464ff888afb31b7b6fe4285a5401d29ffe68574c3" name="ggaa3c414a53a631d2fbe5a5a95464ff888afb31b7b6fe4285a5401d29ffe68574c3"></a>APILght_DistantID&#160;</td><td class="fielddoc"><p>distant light </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa3c414a53a631d2fbe5a5a95464ff888ac5ed578d4d56c78cc6a8f1ed69953b1c" name="ggaa3c414a53a631d2fbe5a5a95464ff888ac5ed578d4d56c78cc6a8f1ed69953b1c"></a>APILght_DirectionID&#160;</td><td class="fielddoc"><p>directional light </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa3c414a53a631d2fbe5a5a95464ff888a523dc0b45c1faf1557aa9eb1a8a8c78e" name="ggaa3c414a53a631d2fbe5a5a95464ff888a523dc0b45c1faf1557aa9eb1a8a8c78e"></a>APILght_SpotID&#160;</td><td class="fielddoc"><p>spot light </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa3c414a53a631d2fbe5a5a95464ff888a6a97f1a3b6201bc61cd03e76af0665f5" name="ggaa3c414a53a631d2fbe5a5a95464ff888a6a97f1a3b6201bc61cd03e76af0665f5"></a>APILght_PointID&#160;</td><td class="fielddoc"><p>radiates light in every direction </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa3c414a53a631d2fbe5a5a95464ff888acb8f5e597ef77924eac8e16c09046326" name="ggaa3c414a53a631d2fbe5a5a95464ff888acb8f5e597ef77924eac8e16c09046326"></a>APILght_SunID&#160;</td><td class="fielddoc"><p>parallel light </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa3c414a53a631d2fbe5a5a95464ff888a5549cfb1fb15675681053e094ef0d75c" name="ggaa3c414a53a631d2fbe5a5a95464ff888a5549cfb1fb15675681053e094ef0d75c"></a>APILght_EyeID&#160;</td><td class="fielddoc"><p>eye light </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -363,8 +397,8 @@ Model Access API</h1>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - The passed parameter is nullptr ; cpoly</li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADPARS - The passed parameter is nullptr; cpoly</li>
 <li>APIERR_REFUSEDCMD - The 3D model is not available in the current context, or The polygon type cannot be queried directly; no active body</li>
 <li>APIERR_BADINDEX - The polygon index is out of range</li>
 <li>APIERR_MEMFULL - Not enough memory </li>
@@ -411,7 +445,7 @@ Do not forget to dispose the returned handle if it is not needed any more. </li>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_REFUSEDCMD - The 3D model is not available in the current context.</li>
 <li>APIERR_BADID - One of the elements represented by a guid can not be found in the project.</li>
 <li>APIERR_GENERAL - The active sight is the sight of 3D Window. </li>
@@ -450,7 +484,7 @@ Do not forget to dispose the returned handle if it is not needed any more. </li>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>NoError - The operation was successful.</li>
-<li>APIERR_BADID - Incorrect elemHead.guid was specified. Incorrect type was specified, for example 0 or an element without 3D representation. such as <code>API_LineID</code>.</li>
+<li>APIERR_BADID - Incorrect elemHead.guid was specified. Incorrect type was specified, for example 0 or an element without 3D representation, such as <code>API_LineID</code>.</li>
 <li>APIERR_BADPARS - The info3D parameter was nullptr.</li>
 <li>APIERR_NOTMINE - The element was attempted to be accessed on a layer owned by someone else. Most likely to occur when working on documents in teamwork mode.</li>
 <li>APIERR_LOCKEDLAY - The element was attempted to be accessed on a locked layer.</li>
@@ -458,7 +492,7 @@ Do not forget to dispose the returned handle if it is not needed any more. </li>
 <li>APIERR_GENERAL - The element wasn't found in the 3D database. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function returns information on the 3D data of the element defined by elemHead. This function is defined only for those elements which have 3D representation: <code>API_WallID</code>, <code>API_ColumnID</code>, <code>API_BeamID</code>, <code>API_WindowID</code>, <code>API_DoorID</code>, <code>API_ObjectID</code>, <code>API_LampID</code>, <code>API_SlabID</code>, <code>API_RoofID</code>, and <code>API_RoomID</code>. The returned structure contains the first and last body (or, in case of <code>API_LampID</code>, the first and last light also) indices of the element's 3D data. This index is an index to the whole 3D data structure, where all the 3D data is stored in a continuous way. The 3D data of the element doesn't need to exist; Archicad will convert the element to 3D independently of any existing 3D window data. This also means that the 3D representation doesn't contain perspective cuts and 3D cut planes! Currently, this is the only way to obtain information on holes in walls. Look for polygons which have a horizontal normal vector perpendicular to the reference line of the wall. Similarly, you can get information on the intersection of walls by looking for polygons with a vertical normal vector. You can find more information on the 3D data in the 3D Manager and at the <a class="el" href="struct_a_p_i___elem_info3_d.html">API_ElemInfo3D</a> page of this help. You have to be familiar with the primitive element section of the GDL Reference Manual. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function returns information on the 3D data of the element defined by elemHead. This function is defined only for those elements which have 3D representation: <code>API_WallID</code>, <code>API_ColumnID</code>, <code>API_BeamID</code>, <code>API_WindowID</code>, <code>API_DoorID</code>, <code>API_ObjectID</code>, <code>API_LampID</code>, <code>API_SlabID</code>, <code>API_RoofID</code>, and <code>API_RoomID</code>. The returned structure contains the first and last body (or, in case of <code>API_LampID</code>, the first and last light also) indices of the element's 3D data. This index is an index to the whole 3D data structure, where all the 3D data is stored in a continuous way. The 3D data of the element doesn't need to exist; Archicad will convert the element to 3D independently of any existing 3D window data. This also means that the 3D representation doesn't contain perspective cuts and 3D cut planes! Currently, this is the only way to obtain information on holes in walls. Look for polygons which have a horizontal normal vector perpendicular to the reference line of the wall. Similarly, you can get information on the intersection of walls by looking for polygons with a vertical normal vector. You can find more information on 3D data in the 3D Manager and at the <a class="el" href="struct_a_p_i___elem_info3_d.html">API_ElemInfo3D</a> page of this help. You should be familiar with the primitive element section of the GDL Reference Manual. </dd></dl>
 
 </div>
 </div>
@@ -529,7 +563,7 @@ Do not forget to dispose the returned handle if it is not needed any more. </li>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function has completed successfully.</li>
 <li>APIERR_BADPARS - The passed parameter is nullptr; component</li>
 <li>APIERR_REFUSEDCMD - The 3D model is not available in the current context, or The component type cannot be queried directly; no active body</li>
 <li>APIERR_BADID - The component type is invalid</li>
@@ -546,8 +580,8 @@ Do not forget to dispose the returned handle if it is not needed any more. </li>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___component3_d.html">API_Component3D</a> comp3D {};</div>
 <div class="line">Int32           nBody, i;</div>
 <div class="line"> </div>
-<div class="line">GSErrCode err = <a class="code hl_function" href="#ga62651464f05d8aae236f3ae58cc70949">ACAPI_ModelAccess_GetNum</a> (API_BodyID, &amp;nBody);</div>
-<div class="line">comp3D.header.typeID = API_BodyID;</div>
+<div class="line">GSErrCode err = <a class="code hl_function" href="#ga62651464f05d8aae236f3ae58cc70949">ACAPI_ModelAccess_GetNum</a> (<a class="code hl_enumvalue" href="#ggab57a668e63c5452d92887a7021b3ec40a8bc8b7569d6c440dc45f8bdee645c74d">API_BodyID</a>, &amp;nBody);</div>
+<div class="line">comp3D.header.typeID = <a class="code hl_enumvalue" href="#ggab57a668e63c5452d92887a7021b3ec40a8bc8b7569d6c440dc45f8bdee645c74d">API_BodyID</a>;</div>
 <div class="line"><span class="keywordflow">for</span> (i = 1; i &lt;= nBody &amp;&amp; err == NoError; i++) {</div>
 <div class="line">    comp3D.header.index = i;</div>
 <div class="line">    err = <a class="code hl_function" href="#gab13567a056753ac91fb88df1ce160e59">ACAPI_ModelAccess_GetComponent</a> (&amp;comp3D);</div>
@@ -584,7 +618,7 @@ Do not forget to dispose the returned handle if it is not needed any more. </li>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">elementList</td><td>[in] List of API_Guids, referencing elements from the active sight. Archicad will search connections among these elements. </td></tr>
-    <tr><td class="paramname">connectionTable</td><td>[out] The returned table which consists of pairs of element ids as keys, and an array of polygons representing the connecting surface between the respective pair of elements. </td></tr>
+    <tr><td class="paramname">connectionTable</td><td>[out] The returned table consists of pairs of element IDs as keys and an array of polygons representing the connecting surface between the respective pair of elements. </td></tr>
   </table>
   </dd>
 </dl>
@@ -625,8 +659,8 @@ Do not forget to dispose the returned handle if it is not needed any more. </li>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - The passed parameter is nullptr ; count</li>
+<li>NoError - The function has completed successfully.</li>
+<li>APIERR_BADPARS - The passed parameter is nullptr; count</li>
 <li>APIERR_REFUSEDCMD - The 3D model is not available in the current context</li>
 <li>APIERR_BADID - The component type is invalid</li>
 <li>APIERR_REFUSEDPAR - The component type cannot be queried directly </li>
@@ -636,8 +670,8 @@ Do not forget to dispose the returned handle if it is not needed any more. </li>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_union" href="union_a_p_i___component3_d.html">API_Component3D</a> comp3D {};</div>
 <div class="line">Int32           nBody, i;</div>
 <div class="line"> </div>
-<div class="line">GSErrCode err = <a class="code hl_function" href="#ga62651464f05d8aae236f3ae58cc70949">ACAPI_ModelAccess_GetNum</a> (API_BodyID, &amp;nBody);</div>
-<div class="line">comp3D.header.typeID = API_BodyID;</div>
+<div class="line">GSErrCode err = <a class="code hl_function" href="#ga62651464f05d8aae236f3ae58cc70949">ACAPI_ModelAccess_GetNum</a> (<a class="code hl_enumvalue" href="#ggab57a668e63c5452d92887a7021b3ec40a8bc8b7569d6c440dc45f8bdee645c74d">API_BodyID</a>, &amp;nBody);</div>
+<div class="line">comp3D.header.typeID = <a class="code hl_enumvalue" href="#ggab57a668e63c5452d92887a7021b3ec40a8bc8b7569d6c440dc45f8bdee645c74d">API_BodyID</a>;</div>
 <div class="line"><span class="keywordflow">for</span> (i = 1; i &lt;= nBody &amp;&amp; err == NoError; i++) {</div>
 <div class="line">    comp3D.header.index = i;</div>
 <div class="line">    err = <a class="code hl_function" href="#gab13567a056753ac91fb88df1ce160e59">ACAPI_ModelAccess_GetComponent</a> (&amp;comp3D);</div>

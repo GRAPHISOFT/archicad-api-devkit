@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Archicad C++ API" />
 <meta name="twitter:description" content="Archicad Development Kit Documentation, best practices, example codes and information hub." />
 <!-- END twitter metadata -->
-<title>Archicad 29 C++ API: View Handling</title>
+<title>Archicad 30 C++ API: View Handling</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -56,7 +56,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Archicad 29 C++ API
+   <div id="projectname">Archicad 30 C++ API
    </div>
   </td>
  </tr>
@@ -145,13 +145,13 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rectangular region of the model.  <a href="struct_a_p_i___box.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___r_g_b_a_color.html">API_RGBAColor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RGB color reference with alpha (opacity) component.  <a href="struct_a_p_i___r_g_b_a_color.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RGB color reference with transparency.  <a href="struct_a_p_i___r_g_b_a_color.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___rect.html">API_Rect</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rectangle in pixel coordinates.  <a href="struct_a_p_i___rect.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___tranmat.html">API_Tranmat</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 3*4 transformation matrix.  <a href="struct_a_p_i___tranmat.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 3x4 transformation matrix.  <a href="struct_a_p_i___tranmat.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_p_i___story_type.html">API_StoryType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters of one story.  <a href="struct_a_p_i___story_type.html#details">More...</a><br /></td></tr>
@@ -204,116 +204,116 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga15f3953f8cf8650eb244aeea51934d74" id="r_ga15f3953f8cf8650eb244aeea51934d74"><td class="memItemLeft" align="right" valign="top"><a id="ga15f3953f8cf8650eb244aeea51934d74" name="ga15f3953f8cf8650eb244aeea51934d74"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga15f3953f8cf8650eb244aeea51934d74">API_ShowGhostType</a> { <br />
-&#160;&#160;<b>APIGhost_NoFloor</b> = 0
-, <b>APIGhost_ShowOneFloor</b>
-, <b>APIGhost_ShowAboveFloor</b>
-, <b>APIGhost_ShowBelowFloor</b>
+<tr class="memitem:ga15f3953f8cf8650eb244aeea51934d74" id="r_ga15f3953f8cf8650eb244aeea51934d74"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga15f3953f8cf8650eb244aeea51934d74">API_ShowGhostType</a> { <br />
+&#160;&#160;<a class="el" href="#gga15f3953f8cf8650eb244aeea51934d74a5e99d4451a51dc535f170364e5b5af34">APIGhost_NoFloor</a> = 0
+, <a class="el" href="#gga15f3953f8cf8650eb244aeea51934d74a330cce7d738a694f7fc2ec4026da46ba">APIGhost_ShowOneFloor</a>
+, <a class="el" href="#gga15f3953f8cf8650eb244aeea51934d74a121052656af32399adb2b6e47fd42077">APIGhost_ShowAboveFloor</a>
+, <a class="el" href="#gga15f3953f8cf8650eb244aeea51934d74ac55a4260dac4e0ca78e64fd6a4d15194">APIGhost_ShowBelowFloor</a>
 , <br />
-&#160;&#160;<b>APIGhost_ShowPreviousFloor</b>
-, <b>APIGhost_ShowAllStructure</b>
+&#160;&#160;<a class="el" href="#gga15f3953f8cf8650eb244aeea51934d74a639f3729bd088ee7550f4f10d2aa4c80">APIGhost_ShowPreviousFloor</a>
+, <a class="el" href="#gga15f3953f8cf8650eb244aeea51934d74a348f1f43d647897cfe70f47b74ead7ca">APIGhost_ShowAllStructure</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ga15f3953f8cf8650eb244aeea51934d74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the way of the ghost to be shown. <br /></td></tr>
+<tr class="memdesc:ga15f3953f8cf8650eb244aeea51934d74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the way of the ghost to be shown.  <a href="#ga15f3953f8cf8650eb244aeea51934d74">More...</a><br /></td></tr>
 <tr class="separator:ga15f3953f8cf8650eb244aeea51934d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga573fffee384349f3628b29a607ef30eb" id="r_ga573fffee384349f3628b29a607ef30eb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga573fffee384349f3628b29a607ef30eb">API_StoryCmdID</a> { <br />
-&#160;&#160;<b>APIStory_GoTo</b>
-, <b>APIStory_Delete</b>
-, <b>APIStory_InsAbove</b>
-, <b>APIStory_InsBelow</b>
+&#160;&#160;<a class="el" href="#gga573fffee384349f3628b29a607ef30ebaf88692d93d4ef5820d9f8af294f6a3a5">APIStory_GoTo</a>
+, <a class="el" href="#gga573fffee384349f3628b29a607ef30eba05b65faa525e5a5558c06d0a76d136cb">APIStory_Delete</a>
+, <a class="el" href="#gga573fffee384349f3628b29a607ef30ebaa68d2517781f7cbf1fc5b19b5b580250">APIStory_InsAbove</a>
+, <a class="el" href="#gga573fffee384349f3628b29a607ef30eba54b4c1b4394d9ba12fbc27277214e267">APIStory_InsBelow</a>
 , <br />
-&#160;&#160;<b>APIStory_SetHeight</b>
-, <b>APIStory_Rename</b>
-, <b>APIStory_SetElevation</b>
-, <b>APIStory_SetDispOnSections</b>
+&#160;&#160;<a class="el" href="#gga573fffee384349f3628b29a607ef30eba65c4ef7d53c1049b111b26dbf02e751a">APIStory_SetHeight</a>
+, <a class="el" href="#gga573fffee384349f3628b29a607ef30eba4a9a71baca87975268df10d5e4220bf3">APIStory_Rename</a>
+, <a class="el" href="#gga573fffee384349f3628b29a607ef30eba367aa598d1dc22e92dd421439c910bb4">APIStory_SetElevation</a>
+, <a class="el" href="#gga573fffee384349f3628b29a607ef30eba70c78237faf4bb5553a86f5d41b2e14c">APIStory_SetDispOnSections</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga573fffee384349f3628b29a607ef30eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action codes for the story settings command.  <a href="#ga573fffee384349f3628b29a607ef30eb">More...</a><br /></td></tr>
 <tr class="separator:ga573fffee384349f3628b29a607ef30eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad396f4d9c8461ca6fca1393977a38af8" id="r_gad396f4d9c8461ca6fca1393977a38af8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad396f4d9c8461ca6fca1393977a38af8">API_3DFilterModeID</a> { <b>API_FilterByRules</b>
-, <b>API_FilterBySelection</b>
-, <b>API_FilterByMarqueeAndRules</b>
+<tr class="memitem:gad396f4d9c8461ca6fca1393977a38af8" id="r_gad396f4d9c8461ca6fca1393977a38af8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad396f4d9c8461ca6fca1393977a38af8">API_3DFilterModeID</a> { <a class="el" href="#ggad396f4d9c8461ca6fca1393977a38af8a884f55ed38afb68520ebf2ecfe0c8473">API_FilterByRules</a>
+, <a class="el" href="#ggad396f4d9c8461ca6fca1393977a38af8ad2590b199478dd7fc46956f6023f5ecb">API_FilterBySelection</a>
+, <a class="el" href="#ggad396f4d9c8461ca6fca1393977a38af8a431c60af7c41d345546e68f3f2828a77">API_FilterByMarqueeAndRules</a>
  }</td></tr>
 <tr class="memdesc:gad396f4d9c8461ca6fca1393977a38af8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The enumeration of the available 3D filter modes.  <a href="#gad396f4d9c8461ca6fca1393977a38af8">More...</a><br /></td></tr>
 <tr class="separator:gad396f4d9c8461ca6fca1393977a38af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga66805f1cd199a1f630f1f257ba70d124" id="r_ga66805f1cd199a1f630f1f257ba70d124"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga66805f1cd199a1f630f1f257ba70d124">API_3DModelTypeID</a> { <b>API3DModel_Block</b> = 0
-, <b>API3DModel_WireFrame</b>
-, <b>API3DModel_Hiddenline</b>
-, <b>API3DModel_Shading</b>
+<tr class="memitem:ga66805f1cd199a1f630f1f257ba70d124" id="r_ga66805f1cd199a1f630f1f257ba70d124"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga66805f1cd199a1f630f1f257ba70d124">API_3DModelTypeID</a> { <a class="el" href="#gga66805f1cd199a1f630f1f257ba70d124a95e0ffdf166048161ec7ffe100ef3aea">API3DModel_Block</a> = 0
+, <a class="el" href="#gga66805f1cd199a1f630f1f257ba70d124adfa5cbee6b945c3c0c9eda4d9ab311c5">API3DModel_WireFrame</a>
+, <a class="el" href="#gga66805f1cd199a1f630f1f257ba70d124aa5591a8d4b5e7b718e9b9f6f96aab6b8">API3DModel_Hiddenline</a>
+, <a class="el" href="#gga66805f1cd199a1f630f1f257ba70d124a64e7964773985c1299915c82bfa0c6ce">API3DModel_Shading</a>
  }</td></tr>
 <tr class="memdesc:ga66805f1cd199a1f630f1f257ba70d124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Model image type in the 3D window.  <a href="#ga66805f1cd199a1f630f1f257ba70d124">More...</a><br /></td></tr>
 <tr class="separator:ga66805f1cd199a1f630f1f257ba70d124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa6a7b6723827a0babddca16ee17b5a9e" id="r_gaa6a7b6723827a0babddca16ee17b5a9e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa6a7b6723827a0babddca16ee17b5a9e">API_ShadingContoursID</a> { <b>APIShadContours_Draft</b> = 0
-, <b>APIShadContours_Off</b>
-, <b>APIShadContours_Best</b>
+<tr class="memitem:gaa6a7b6723827a0babddca16ee17b5a9e" id="r_gaa6a7b6723827a0babddca16ee17b5a9e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa6a7b6723827a0babddca16ee17b5a9e">API_ShadingContoursID</a> { <a class="el" href="#ggaa6a7b6723827a0babddca16ee17b5a9ea19cbdddf86e45eb33ea0930bd55e003b">APIShadContours_Draft</a> = 0
+, <a class="el" href="#ggaa6a7b6723827a0babddca16ee17b5a9ea1914d4c845ce5ffb97113fc45fa99202">APIShadContours_Off</a>
+, <a class="el" href="#ggaa6a7b6723827a0babddca16ee17b5a9ea2895dc42faaeaccc3ebf4b88476e6ed2">APIShadContours_Best</a>
  }</td></tr>
 <tr class="memdesc:gaa6a7b6723827a0babddca16ee17b5a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contour visibility options for shaded image mode in the 3D window.  <a href="#gaa6a7b6723827a0babddca16ee17b5a9e">More...</a><br /></td></tr>
 <tr class="separator:gaa6a7b6723827a0babddca16ee17b5a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga427cae8932af9393a5f6a1e53c8ad8ca" id="r_ga427cae8932af9393a5f6a1e53c8ad8ca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga427cae8932af9393a5f6a1e53c8ad8ca">API_VectorShadowID</a> { <br />
-&#160;&#160;<b>APIVectShad_Off</b> = 0
-, <b>APIVectShad_ContOff_AllSurf</b>
-, <b>APIVectShad_ContOn_AllSurf</b>
-, <b>APIVectShad_ContOff_OneLevel</b>
+&#160;&#160;<a class="el" href="#gga427cae8932af9393a5f6a1e53c8ad8caaf0061922e6299c4802ffe5ab4bc4fc09">APIVectShad_Off</a> = 0
+, <a class="el" href="#gga427cae8932af9393a5f6a1e53c8ad8caa6a233dd334026c544237654d0b3ad2f3">APIVectShad_ContOff_AllSurf</a>
+, <a class="el" href="#gga427cae8932af9393a5f6a1e53c8ad8caad3598dbd1ca69b42cfd95d95ea4c26f3">APIVectShad_ContOn_AllSurf</a>
+, <a class="el" href="#gga427cae8932af9393a5f6a1e53c8ad8caa719e48004e797c20a57cfd7f5d365e4c">APIVectShad_ContOff_OneLevel</a>
 , <br />
-&#160;&#160;<b>APIVectShad_ContOn_OneLevel</b>
+&#160;&#160;<a class="el" href="#gga427cae8932af9393a5f6a1e53c8ad8caa3b1ae337a2d07ce6b8902d5dddf3dc5b">APIVectShad_ContOn_OneLevel</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ga427cae8932af9393a5f6a1e53c8ad8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options for vectorial sun shadow generation in the 3D window.  <a href="#ga427cae8932af9393a5f6a1e53c8ad8ca">More...</a><br /></td></tr>
 <tr class="separator:ga427cae8932af9393a5f6a1e53c8ad8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga722e36c7b1f8b7bbd4d096e5f4976c7a" id="r_ga722e36c7b1f8b7bbd4d096e5f4976c7a"><td class="memItemLeft" align="right" valign="top"><a id="ga722e36c7b1f8b7bbd4d096e5f4976c7a" name="ga722e36c7b1f8b7bbd4d096e5f4976c7a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga722e36c7b1f8b7bbd4d096e5f4976c7a">API_SpecFolderID</a> { <br />
-&#160;&#160;<b>API_ApplicationPrefsFolderID</b> = 1
-, <b>API_GraphisoftPrefsFolderID</b>
-, <b>API_GraphisoftHomeFolderID</b>
-, <b>API_CacheFolderID</b>
+<tr class="memitem:ga722e36c7b1f8b7bbd4d096e5f4976c7a" id="r_ga722e36c7b1f8b7bbd4d096e5f4976c7a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga722e36c7b1f8b7bbd4d096e5f4976c7a">API_SpecFolderID</a> { <br />
+&#160;&#160;<a class="el" href="#gga722e36c7b1f8b7bbd4d096e5f4976c7aa9fb3be3a99304a9dc7d76f3dec3f03ce">API_ApplicationPrefsFolderID</a> = 1
+, <a class="el" href="#gga722e36c7b1f8b7bbd4d096e5f4976c7aabce80c7b6a121104a81b047a06074a02">API_GraphisoftPrefsFolderID</a>
+, <a class="el" href="#gga722e36c7b1f8b7bbd4d096e5f4976c7aa5ff88290871e0b25511f491b52b30402">API_GraphisoftHomeFolderID</a>
+, <a class="el" href="#gga722e36c7b1f8b7bbd4d096e5f4976c7aab6c1367bcc7b5e3da5e74435ebd33a66">API_CacheFolderID</a>
 , <br />
-&#160;&#160;<b>API_DataFolderID</b>
-, <b>API_UserDocumentsFolderID</b>
-, <b>API_TemporaryFolderID</b>
-, <b>API_ApplicationFolderID</b>
+&#160;&#160;<a class="el" href="#gga722e36c7b1f8b7bbd4d096e5f4976c7aa1a4209a4cd69de8a4529e9df04424583">API_DataFolderID</a>
+, <a class="el" href="#gga722e36c7b1f8b7bbd4d096e5f4976c7aaf28ae5be847f8119a7128063b9d09ffd">API_UserDocumentsFolderID</a>
+, <a class="el" href="#gga722e36c7b1f8b7bbd4d096e5f4976c7aaa07852da31a4fed328a9154bc8356ae5">API_TemporaryFolderID</a>
+, <a class="el" href="#gga722e36c7b1f8b7bbd4d096e5f4976c7aad71b7a392a0392eae2bca50ba8721cd5">API_ApplicationFolderID</a>
 , <br />
-&#160;&#160;<b>API_DefaultsFolderID</b>
-, <b>API_WebObjectsFolderID</b>
-, <b>API_TemplatesFolderID</b>
-, <b>API_HelpFolderID</b>
+&#160;&#160;<a class="el" href="#gga722e36c7b1f8b7bbd4d096e5f4976c7aa4e5df0d01790398c6162bbc1242c7c2b">API_DefaultsFolderID</a>
+, <a class="el" href="#gga722e36c7b1f8b7bbd4d096e5f4976c7aac5f2dd41f895b74ca0d20355fc890d59">API_WebObjectsFolderID</a>
+, <a class="el" href="#gga722e36c7b1f8b7bbd4d096e5f4976c7aabe70a83a6a4ffed9967b0a090d56406c">API_TemplatesFolderID</a>
+, <a class="el" href="#gga722e36c7b1f8b7bbd4d096e5f4976c7aae33a36537d94a3aec3412a680514be75">API_HelpFolderID</a>
 , <br />
-&#160;&#160;<b>API_EmbeddedProjectLibraryFolderID</b>
-, <b>API_EmbeddedProjectLibraryHotlinkFolderID</b>
+&#160;&#160;<a class="el" href="#gga722e36c7b1f8b7bbd4d096e5f4976c7aa546eb75905b7fa506674cf2d55481b00">API_EmbeddedProjectLibraryFolderID</a>
+, <a class="el" href="#gga722e36c7b1f8b7bbd4d096e5f4976c7aafb42fe42887b848fdafb7bbc796503e1">API_EmbeddedProjectLibraryHotlinkFolderID</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ga722e36c7b1f8b7bbd4d096e5f4976c7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The selector of special folders. <br /></td></tr>
+<tr class="memdesc:ga722e36c7b1f8b7bbd4d096e5f4976c7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The selector of special folders.  <a href="#ga722e36c7b1f8b7bbd4d096e5f4976c7a">More...</a><br /></td></tr>
 <tr class="separator:ga722e36c7b1f8b7bbd4d096e5f4976c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9c7fa6bd8c037e58c8654f083e8dd1c7" id="r_ga9c7fa6bd8c037e58c8654f083e8dd1c7"><td class="memItemLeft" align="right" valign="top"><a id="ga9c7fa6bd8c037e58c8654f083e8dd1c7" name="ga9c7fa6bd8c037e58c8654f083e8dd1c7"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9c7fa6bd8c037e58c8654f083e8dd1c7">API_3DCutSurfFills</a> { <b>API_3DDocumentVectorFilles</b> = 1
-, <b>API_3DDocumentUniformMaterial</b> = 2
-, <b>API_3DDocumentOwnMaterial</b> = 3
-, <b>API_3DDocumentOwnShadedMaterial</b> = 4
+<tr class="memitem:ga9c7fa6bd8c037e58c8654f083e8dd1c7" id="r_ga9c7fa6bd8c037e58c8654f083e8dd1c7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9c7fa6bd8c037e58c8654f083e8dd1c7">API_3DCutSurfFills</a> { <a class="el" href="#gga9c7fa6bd8c037e58c8654f083e8dd1c7a814b949a9df56e63f56ed6d85e1a4b10">API_3DDocumentVectorFilles</a> = 1
+, <a class="el" href="#gga9c7fa6bd8c037e58c8654f083e8dd1c7a15e3f2c0650334d3195d465a9d20ab78">API_3DDocumentUniformMaterial</a> = 2
+, <a class="el" href="#gga9c7fa6bd8c037e58c8654f083e8dd1c7abd05e832d51012fc6b2fe05ce117ffc3">API_3DDocumentOwnMaterial</a> = 3
+, <a class="el" href="#gga9c7fa6bd8c037e58c8654f083e8dd1c7a2626c284300c957bcfe505f4f631ace1">API_3DDocumentOwnShadedMaterial</a> = 4
  }</td></tr>
-<tr class="memdesc:ga9c7fa6bd8c037e58c8654f083e8dd1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">How to display the cut surfaces. <br /></td></tr>
+<tr class="memdesc:ga9c7fa6bd8c037e58c8654f083e8dd1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">How to display the cut surfaces.  <a href="#ga9c7fa6bd8c037e58c8654f083e8dd1c7">More...</a><br /></td></tr>
 <tr class="separator:ga9c7fa6bd8c037e58c8654f083e8dd1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1809e9e0b49d0ba2c687e8b6f3dbd548" id="r_ga1809e9e0b49d0ba2c687e8b6f3dbd548"><td class="memItemLeft" align="right" valign="top"><a id="ga1809e9e0b49d0ba2c687e8b6f3dbd548" name="ga1809e9e0b49d0ba2c687e8b6f3dbd548"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1809e9e0b49d0ba2c687e8b6f3dbd548">API_3DUncutSurfaceFillType</a> { <b>API_3DDocumentPenColor</b> = 1
-, <b>API_3DDocumentMaterialColorShaded</b> = 2
-, <b>API_3DDocumentMaterialColorNonShaded</b> = 3
+<tr class="memitem:ga1809e9e0b49d0ba2c687e8b6f3dbd548" id="r_ga1809e9e0b49d0ba2c687e8b6f3dbd548"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1809e9e0b49d0ba2c687e8b6f3dbd548">API_3DUncutSurfaceFillType</a> { <a class="el" href="#gga1809e9e0b49d0ba2c687e8b6f3dbd548a1b71c1986b684f9c64246d420654e85f">API_3DDocumentPenColor</a> = 1
+, <a class="el" href="#gga1809e9e0b49d0ba2c687e8b6f3dbd548ab2d2cc2b508ad9442e112fa534719459">API_3DDocumentMaterialColorShaded</a> = 2
+, <a class="el" href="#gga1809e9e0b49d0ba2c687e8b6f3dbd548adbd1936590cf2054f24fae4c33725234">API_3DDocumentMaterialColorNonShaded</a> = 3
  }</td></tr>
-<tr class="memdesc:ga1809e9e0b49d0ba2c687e8b6f3dbd548"><td class="mdescLeft">&#160;</td><td class="mdescRight">How to display the uncut surfaces. <br /></td></tr>
+<tr class="memdesc:ga1809e9e0b49d0ba2c687e8b6f3dbd548"><td class="mdescLeft">&#160;</td><td class="mdescRight">How to display the uncut surfaces.  <a href="#ga1809e9e0b49d0ba2c687e8b6f3dbd548">More...</a><br /></td></tr>
 <tr class="separator:ga1809e9e0b49d0ba2c687e8b6f3dbd548"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6c0b2e955b38169d112b06da9122e140" id="r_ga6c0b2e955b38169d112b06da9122e140"><td class="memItemLeft" align="right" valign="top"><a id="ga6c0b2e955b38169d112b06da9122e140" name="ga6c0b2e955b38169d112b06da9122e140"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6c0b2e955b38169d112b06da9122e140">API_3DHiddenEdgeVisibility</a> { <b>API_3DDocumentHideHiddenEdges</b>
-, <b>API_3DDocumentShowHiddenEdges</b>
+<tr class="memitem:ga6c0b2e955b38169d112b06da9122e140" id="r_ga6c0b2e955b38169d112b06da9122e140"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6c0b2e955b38169d112b06da9122e140">API_3DHiddenEdgeVisibility</a> { <a class="el" href="#gga6c0b2e955b38169d112b06da9122e140a4898e3f3eadd25897a0d068712b48325">API_3DDocumentHideHiddenEdges</a>
+, <a class="el" href="#gga6c0b2e955b38169d112b06da9122e140a145574ee67c56130c9e456e76affb34b">API_3DDocumentShowHiddenEdges</a>
  }</td></tr>
-<tr class="memdesc:ga6c0b2e955b38169d112b06da9122e140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show or hide hidden edges. <br /></td></tr>
+<tr class="memdesc:ga6c0b2e955b38169d112b06da9122e140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show or hide hidden edges.  <a href="#ga6c0b2e955b38169d112b06da9122e140">More...</a><br /></td></tr>
 <tr class="separator:ga6c0b2e955b38169d112b06da9122e140"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0b581aa84cc382370a508cb30c7039a1" id="r_ga0b581aa84cc382370a508cb30c7039a1"><td class="memItemLeft" align="right" valign="top"><a id="ga0b581aa84cc382370a508cb30c7039a1" name="ga0b581aa84cc382370a508cb30c7039a1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0b581aa84cc382370a508cb30c7039a1">API_3DOnCutPlaneVisibility</a> { <b>API_3DDocumentDontShowOnCutPlanes</b>
-, <b>API_3DDocumentShowOnCutPlanes</b>
+<tr class="memitem:ga0b581aa84cc382370a508cb30c7039a1" id="r_ga0b581aa84cc382370a508cb30c7039a1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0b581aa84cc382370a508cb30c7039a1">API_3DOnCutPlaneVisibility</a> { <a class="el" href="#gga0b581aa84cc382370a508cb30c7039a1a3632a7ace2e50ac0a4dbf190f40b0dfa">API_3DDocumentDontShowOnCutPlanes</a>
+, <a class="el" href="#gga0b581aa84cc382370a508cb30c7039a1abef6161606562d9ea8fbc9a3d7605954">API_3DDocumentShowOnCutPlanes</a>
  }</td></tr>
-<tr class="memdesc:ga0b581aa84cc382370a508cb30c7039a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show or hide hidden cut lines. <br /></td></tr>
+<tr class="memdesc:ga0b581aa84cc382370a508cb30c7039a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show or hide hidden cut lines.  <a href="#ga0b581aa84cc382370a508cb30c7039a1">More...</a><br /></td></tr>
 <tr class="separator:ga0b581aa84cc382370a508cb30c7039a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga03674898b293de2a24d5eeb57684a02e" id="r_ga03674898b293de2a24d5eeb57684a02e"><td class="memItemLeft" align="right" valign="top"><a id="ga03674898b293de2a24d5eeb57684a02e" name="ga03674898b293de2a24d5eeb57684a02e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga03674898b293de2a24d5eeb57684a02e">API_DocumentSourceID</a> { <b>API_DDD</b> = 1
-, <b>API_FloorPlan</b> = 2
+<tr class="memitem:ga03674898b293de2a24d5eeb57684a02e" id="r_ga03674898b293de2a24d5eeb57684a02e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga03674898b293de2a24d5eeb57684a02e">API_DocumentSourceID</a> { <a class="el" href="#gga03674898b293de2a24d5eeb57684a02ea8c5cc3cb9c48dd7b2275ad3347efa4fe">API_DDD</a> = 1
+, <a class="el" href="#gga03674898b293de2a24d5eeb57684a02ea9ec42d729bcdb518537c410766fdeda7">API_FloorPlan</a> = 2
  }</td></tr>
-<tr class="memdesc:ga03674898b293de2a24d5eeb57684a02e"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D Document source. <br /></td></tr>
+<tr class="memdesc:ga03674898b293de2a24d5eeb57684a02e"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D Document source.  <a href="#ga03674898b293de2a24d5eeb57684a02e">More...</a><br /></td></tr>
 <tr class="separator:ga03674898b293de2a24d5eeb57684a02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga970ca11ac90d452ec12352618676223a" id="r_ga970ca11ac90d452ec12352618676223a"><td class="memItemLeft" align="right" valign="top"><a id="ga970ca11ac90d452ec12352618676223a" name="ga970ca11ac90d452ec12352618676223a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga970ca11ac90d452ec12352618676223a">API_ViewSourceID</a> { <b>API_Top</b> = 1
-, <b>API_Bottom</b> = 2
+<tr class="memitem:ga970ca11ac90d452ec12352618676223a" id="r_ga970ca11ac90d452ec12352618676223a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga970ca11ac90d452ec12352618676223a">API_ViewSourceID</a> { <a class="el" href="#gga970ca11ac90d452ec12352618676223aaf229c7434af1150476319a4bf3427b0f">API_Top</a> = 1
+, <a class="el" href="#gga970ca11ac90d452ec12352618676223aaafbb9edf14944dac917373f95c29d528">API_Bottom</a> = 2
  }</td></tr>
-<tr class="memdesc:ga970ca11ac90d452ec12352618676223a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skeleton drawing 3D Document view source. <br /></td></tr>
+<tr class="memdesc:ga970ca11ac90d452ec12352618676223a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skeleton drawing 3D Document view source.  <a href="#ga970ca11ac90d452ec12352618676223a">More...</a><br /></td></tr>
 <tr class="separator:ga970ca11ac90d452ec12352618676223a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -340,10 +340,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga29d14c66da55dafa763d5ddeb6663fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches to the given navigator view.  <br /></td></tr>
 <tr class="separator:ga29d14c66da55dafa763d5ddeb6663fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacf56adb26c9c9607e8b170e8f7f4c7cc" id="r_gacf56adb26c9c9607e8b170e8f7f4c7cc"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacf56adb26c9c9607e8b170e8f7f4c7cc">ACAPI_View_CoordToPoint</a> (<a class="el" href="struct_a_p_i___coord.html">API_Coord</a> *coord, <a class="el" href="struct_a_p_i___point.html">API_Point</a> *point)</td></tr>
-<tr class="memdesc:gacf56adb26c9c9607e8b170e8f7f4c7cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a model coordinate to screen in the current database.  <br /></td></tr>
+<tr class="memdesc:gacf56adb26c9c9607e8b170e8f7f4c7cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a model coordinate to screen coordinate in the current database.  <br /></td></tr>
 <tr class="separator:gacf56adb26c9c9607e8b170e8f7f4c7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabe5a6a64d784b0aad34471ba3e72eccb" id="r_gabe5a6a64d784b0aad34471ba3e72eccb"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabe5a6a64d784b0aad34471ba3e72eccb">ACAPI_View_PointToCoord</a> (<a class="el" href="struct_a_p_i___point.html">API_Point</a> *point, <a class="el" href="struct_a_p_i___coord.html">API_Coord</a> *coord)</td></tr>
-<tr class="memdesc:gabe5a6a64d784b0aad34471ba3e72eccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a screen coordinate into model coordinate in the current database.  <br /></td></tr>
+<tr class="memdesc:gabe5a6a64d784b0aad34471ba3e72eccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a screen coordinate into a model coordinate in the current database.  <br /></td></tr>
 <tr class="separator:gabe5a6a64d784b0aad34471ba3e72eccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae2ecd185d42b113371c9650f612dada2" id="r_gae2ecd185d42b113371c9650f612dada2"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae2ecd185d42b113371c9650f612dada2">ACAPI_View_ModelToScreen</a> (const <a class="el" href="struct_a_p_i___coord3_d.html">API_Coord3D</a> &amp;coord3D, <a class="el" href="struct_a_p_i___coord.html">API_Coord</a> &amp;coord)</td></tr>
 <tr class="memdesc:gae2ecd185d42b113371c9650f612dada2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projects a model coordinate to screen in the current view.  <br /></td></tr>
@@ -358,8 +358,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:gafd676cb6ba219ced788d06b085666e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores the zoom parameters of the current database by a given number of steps.  <br /></td></tr>
 <tr class="separator:gafd676cb6ba219ced788d06b085666e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6f8fcfa3e1cef969f11a8fc286ba6621" id="r_ga6f8fcfa3e1cef969f11a8fc286ba6621"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6f8fcfa3e1cef969f11a8fc286ba6621">ACAPI_View_StoreViewSettings</a> (bool store)</td></tr>
-<tr class="memdesc:ga6f8fcfa3e1cef969f11a8fc286ba6621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores/restores the actual view settings.  <br /></td></tr>
+<tr class="memdesc:ga6f8fcfa3e1cef969f11a8fc286ba6621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores or restores the current view settings.  <br /></td></tr>
 <tr class="separator:ga6f8fcfa3e1cef969f11a8fc286ba6621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad421c05baa1d35d77a957dd4ef7a0314" id="r_gad421c05baa1d35d77a957dd4ef7a0314"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad421c05baa1d35d77a957dd4ef7a0314">ACAPI_View_GetCurrentImage</a> (NewDisplay::NativeImage &amp;nativeImage, const <a class="el" href="group___database.html#ga186c214f02e0692cfe003db0b74ba6f0">API_ImageSource</a> &amp;imageSource)</td></tr>
+<tr class="memdesc:gad421c05baa1d35d77a957dd4ef7a0314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an image of the current view (3D, or rendering).  <br /></td></tr>
+<tr class="separator:gad421c05baa1d35d77a957dd4ef7a0314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga337d1a603b7aa892e9b3f94398a07c36" id="r_ga337d1a603b7aa892e9b3f94398a07c36"><td class="memItemLeft" align="right" valign="top">GSErrCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga337d1a603b7aa892e9b3f94398a07c36">ACAPI_View_IsAutoGroupOn</a> (bool *autoGrp)</td></tr>
 <tr class="memdesc:ga337d1a603b7aa892e9b3f94398a07c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current state of the autogroup mode.  <br /></td></tr>
 <tr class="separator:ga337d1a603b7aa892e9b3f94398a07c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -457,6 +460,32 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions related to the View Settings, zoom and various other View-related functionality. </p>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga9c7fa6bd8c037e58c8654f083e8dd1c7" name="ga9c7fa6bd8c037e58c8654f083e8dd1c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9c7fa6bd8c037e58c8654f083e8dd1c7">&#9670;&#160;</a></span>API_3DCutSurfFills</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga9c7fa6bd8c037e58c8654f083e8dd1c7">API_3DCutSurfFills</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>How to display the cut surfaces. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga9c7fa6bd8c037e58c8654f083e8dd1c7a814b949a9df56e63f56ed6d85e1a4b10" name="gga9c7fa6bd8c037e58c8654f083e8dd1c7a814b949a9df56e63f56ed6d85e1a4b10"></a>API_3DDocumentVectorFilles&#160;</td><td class="fielddoc"><p>Display the cut surfaces with the cut fill from the building materials. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9c7fa6bd8c037e58c8654f083e8dd1c7a15e3f2c0650334d3195d465a9d20ab78" name="gga9c7fa6bd8c037e58c8654f083e8dd1c7a15e3f2c0650334d3195d465a9d20ab78"></a>API_3DDocumentUniformMaterial&#160;</td><td class="fielddoc"><p>Fill the cut surfaces with a custom color. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9c7fa6bd8c037e58c8654f083e8dd1c7abd05e832d51012fc6b2fe05ce117ffc3" name="gga9c7fa6bd8c037e58c8654f083e8dd1c7abd05e832d51012fc6b2fe05ce117ffc3"></a>API_3DDocumentOwnMaterial&#160;</td><td class="fielddoc"><p>Display the cut surfaces based on the cut element's surface settings. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9c7fa6bd8c037e58c8654f083e8dd1c7a2626c284300c957bcfe505f4f631ace1" name="gga9c7fa6bd8c037e58c8654f083e8dd1c7a2626c284300c957bcfe505f4f631ace1"></a>API_3DDocumentOwnShadedMaterial&#160;</td><td class="fielddoc"><p>Display the cut surfaces based on the cut element's surface settings, and shade. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="gad396f4d9c8461ca6fca1393977a38af8" name="gad396f4d9c8461ca6fca1393977a38af8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad396f4d9c8461ca6fca1393977a38af8">&#9670;&#160;</a></span>API_3DFilterModeID</h2>
 
@@ -471,6 +500,36 @@ Functions</h2></td></tr>
 
 <p>The enumeration of the available 3D filter modes. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>Use this enum in <a class="el" href="struct_a_p_i__3_d_filter_and_cut_settings.html">API_3DFilterAndCutSettings</a> structure. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad396f4d9c8461ca6fca1393977a38af8a884f55ed38afb68520ebf2ecfe0c8473" name="ggad396f4d9c8461ca6fca1393977a38af8a884f55ed38afb68520ebf2ecfe0c8473"></a>API_FilterByRules&#160;</td><td class="fielddoc"><p>Show All by the given rules in <a class="el" href="struct_a_p_i__3_d_filter_and_cut_settings.html">API_3DFilterAndCutSettings</a> structure. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad396f4d9c8461ca6fca1393977a38af8ad2590b199478dd7fc46956f6023f5ecb" name="ggad396f4d9c8461ca6fca1393977a38af8ad2590b199478dd7fc46956f6023f5ecb"></a>API_FilterBySelection&#160;</td><td class="fielddoc"><p>Show Selection only. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggad396f4d9c8461ca6fca1393977a38af8a431c60af7c41d345546e68f3f2828a77" name="ggad396f4d9c8461ca6fca1393977a38af8a431c60af7c41d345546e68f3f2828a77"></a>API_FilterByMarqueeAndRules&#160;</td><td class="fielddoc"><p>Show Marquee by the given rules in <a class="el" href="struct_a_p_i__3_d_filter_and_cut_settings.html">API_3DFilterAndCutSettings</a> structure. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga6c0b2e955b38169d112b06da9122e140" name="ga6c0b2e955b38169d112b06da9122e140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6c0b2e955b38169d112b06da9122e140">&#9670;&#160;</a></span>API_3DHiddenEdgeVisibility</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga6c0b2e955b38169d112b06da9122e140">API_3DHiddenEdgeVisibility</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Show or hide hidden edges. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga6c0b2e955b38169d112b06da9122e140a4898e3f3eadd25897a0d068712b48325" name="gga6c0b2e955b38169d112b06da9122e140a4898e3f3eadd25897a0d068712b48325"></a>API_3DDocumentHideHiddenEdges&#160;</td><td class="fielddoc"><p>Hide hidden edges. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6c0b2e955b38169d112b06da9122e140a145574ee67c56130c9e456e76affb34b" name="gga6c0b2e955b38169d112b06da9122e140a145574ee67c56130c9e456e76affb34b"></a>API_3DDocumentShowHiddenEdges&#160;</td><td class="fielddoc"><p>Show hidden edges. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -488,6 +547,84 @@ Functions</h2></td></tr>
 
 <p>Model image type in the 3D window. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>The <a class="el" href="#ga66805f1cd199a1f630f1f257ba70d124">API_3DModelTypeID</a> type is used in the <a class="el" href="struct_a_p_i__3_d_window_info.html">API_3DWindowInfo</a> structure. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga66805f1cd199a1f630f1f257ba70d124a95e0ffdf166048161ec7ffe100ef3aea" name="gga66805f1cd199a1f630f1f257ba70d124a95e0ffdf166048161ec7ffe100ef3aea"></a>API3DModel_Block&#160;</td><td class="fielddoc"><p>Block model </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga66805f1cd199a1f630f1f257ba70d124adfa5cbee6b945c3c0c9eda4d9ab311c5" name="gga66805f1cd199a1f630f1f257ba70d124adfa5cbee6b945c3c0c9eda4d9ab311c5"></a>API3DModel_WireFrame&#160;</td><td class="fielddoc"><p>Wireframe model </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga66805f1cd199a1f630f1f257ba70d124aa5591a8d4b5e7b718e9b9f6f96aab6b8" name="gga66805f1cd199a1f630f1f257ba70d124aa5591a8d4b5e7b718e9b9f6f96aab6b8"></a>API3DModel_Hiddenline&#160;</td><td class="fielddoc"><p>Hidden line model </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga66805f1cd199a1f630f1f257ba70d124a64e7964773985c1299915c82bfa0c6ce" name="gga66805f1cd199a1f630f1f257ba70d124a64e7964773985c1299915c82bfa0c6ce"></a>API3DModel_Shading&#160;</td><td class="fielddoc"><p>Shaded model </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga0b581aa84cc382370a508cb30c7039a1" name="ga0b581aa84cc382370a508cb30c7039a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b581aa84cc382370a508cb30c7039a1">&#9670;&#160;</a></span>API_3DOnCutPlaneVisibility</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga0b581aa84cc382370a508cb30c7039a1">API_3DOnCutPlaneVisibility</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Show or hide hidden cut lines. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga0b581aa84cc382370a508cb30c7039a1a3632a7ace2e50ac0a4dbf190f40b0dfa" name="gga0b581aa84cc382370a508cb30c7039a1a3632a7ace2e50ac0a4dbf190f40b0dfa"></a>API_3DDocumentDontShowOnCutPlanes&#160;</td><td class="fielddoc"><p>Hide hidden cut lines. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0b581aa84cc382370a508cb30c7039a1abef6161606562d9ea8fbc9a3d7605954" name="gga0b581aa84cc382370a508cb30c7039a1abef6161606562d9ea8fbc9a3d7605954"></a>API_3DDocumentShowOnCutPlanes&#160;</td><td class="fielddoc"><p>Show hidden cut lines. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga1809e9e0b49d0ba2c687e8b6f3dbd548" name="ga1809e9e0b49d0ba2c687e8b6f3dbd548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1809e9e0b49d0ba2c687e8b6f3dbd548">&#9670;&#160;</a></span>API_3DUncutSurfaceFillType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga1809e9e0b49d0ba2c687e8b6f3dbd548">API_3DUncutSurfaceFillType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>How to display the uncut surfaces. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1809e9e0b49d0ba2c687e8b6f3dbd548a1b71c1986b684f9c64246d420654e85f" name="gga1809e9e0b49d0ba2c687e8b6f3dbd548a1b71c1986b684f9c64246d420654e85f"></a>API_3DDocumentPenColor&#160;</td><td class="fielddoc"><p>Fill the uncut surfaces with a custom color. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1809e9e0b49d0ba2c687e8b6f3dbd548ab2d2cc2b508ad9442e112fa534719459" name="gga1809e9e0b49d0ba2c687e8b6f3dbd548ab2d2cc2b508ad9442e112fa534719459"></a>API_3DDocumentMaterialColorShaded&#160;</td><td class="fielddoc"><p>Display the uncut surfaces based on the element's surface settings. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1809e9e0b49d0ba2c687e8b6f3dbd548adbd1936590cf2054f24fae4c33725234" name="gga1809e9e0b49d0ba2c687e8b6f3dbd548adbd1936590cf2054f24fae4c33725234"></a>API_3DDocumentMaterialColorNonShaded&#160;</td><td class="fielddoc"><p>Display the uncut surfaces based on the element's surface settings, and shade. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga03674898b293de2a24d5eeb57684a02e" name="ga03674898b293de2a24d5eeb57684a02e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga03674898b293de2a24d5eeb57684a02e">&#9670;&#160;</a></span>API_DocumentSourceID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga03674898b293de2a24d5eeb57684a02e">API_DocumentSourceID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>3D Document source. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga03674898b293de2a24d5eeb57684a02ea8c5cc3cb9c48dd7b2275ad3347efa4fe" name="gga03674898b293de2a24d5eeb57684a02ea8c5cc3cb9c48dd7b2275ad3347efa4fe"></a>API_DDD&#160;</td><td class="fielddoc"><p>3D Document is created from 3D source. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga03674898b293de2a24d5eeb57684a02ea9ec42d729bcdb518537c410766fdeda7" name="gga03674898b293de2a24d5eeb57684a02ea9ec42d729bcdb518537c410766fdeda7"></a>API_FloorPlan&#160;</td><td class="fielddoc"><p>3D Document is created from floorplan. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -505,6 +642,90 @@ Functions</h2></td></tr>
 
 <p>Contour visibility options for shaded image mode in the 3D window. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>The <a class="el" href="#gaa6a7b6723827a0babddca16ee17b5a9e">API_ShadingContoursID</a> type is used in the <a class="el" href="struct_a_p_i__3_d_window_info.html">API_3DWindowInfo</a> structure. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa6a7b6723827a0babddca16ee17b5a9ea19cbdddf86e45eb33ea0930bd55e003b" name="ggaa6a7b6723827a0babddca16ee17b5a9ea19cbdddf86e45eb33ea0930bd55e003b"></a>APIShadContours_Draft&#160;</td><td class="fielddoc"><p>Rough contours are drawn in the shaded image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa6a7b6723827a0babddca16ee17b5a9ea1914d4c845ce5ffb97113fc45fa99202" name="ggaa6a7b6723827a0babddca16ee17b5a9ea1914d4c845ce5ffb97113fc45fa99202"></a>APIShadContours_Off&#160;</td><td class="fielddoc"><p>Contours are not visible in the shaded image </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa6a7b6723827a0babddca16ee17b5a9ea2895dc42faaeaccc3ebf4b88476e6ed2" name="ggaa6a7b6723827a0babddca16ee17b5a9ea2895dc42faaeaccc3ebf4b88476e6ed2"></a>APIShadContours_Best&#160;</td><td class="fielddoc"><p>Fine contours are drawn in the shaded image </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga15f3953f8cf8650eb244aeea51934d74" name="ga15f3953f8cf8650eb244aeea51934d74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga15f3953f8cf8650eb244aeea51934d74">&#9670;&#160;</a></span>API_ShowGhostType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga15f3953f8cf8650eb244aeea51934d74">API_ShowGhostType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Represents the way of the ghost to be shown. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga15f3953f8cf8650eb244aeea51934d74a5e99d4451a51dc535f170364e5b5af34" name="gga15f3953f8cf8650eb244aeea51934d74a5e99d4451a51dc535f170364e5b5af34"></a>APIGhost_NoFloor&#160;</td><td class="fielddoc"><p>No floor to be shown (eg. Section or Detail database). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga15f3953f8cf8650eb244aeea51934d74a330cce7d738a694f7fc2ec4026da46ba" name="gga15f3953f8cf8650eb244aeea51934d74a330cce7d738a694f7fc2ec4026da46ba"></a>APIGhost_ShowOneFloor&#160;</td><td class="fielddoc"><p>Show one floor scpecified in <a class="el" href="struct_a_p_i___ghost_record.html">API_GhostRecord</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga15f3953f8cf8650eb244aeea51934d74a121052656af32399adb2b6e47fd42077" name="gga15f3953f8cf8650eb244aeea51934d74a121052656af32399adb2b6e47fd42077"></a>APIGhost_ShowAboveFloor&#160;</td><td class="fielddoc"><p>Show above floor. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga15f3953f8cf8650eb244aeea51934d74ac55a4260dac4e0ca78e64fd6a4d15194" name="gga15f3953f8cf8650eb244aeea51934d74ac55a4260dac4e0ca78e64fd6a4d15194"></a>APIGhost_ShowBelowFloor&#160;</td><td class="fielddoc"><p>Show below floor. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga15f3953f8cf8650eb244aeea51934d74a639f3729bd088ee7550f4f10d2aa4c80" name="gga15f3953f8cf8650eb244aeea51934d74a639f3729bd088ee7550f4f10d2aa4c80"></a>APIGhost_ShowPreviousFloor&#160;</td><td class="fielddoc"><p>Show previous floor. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga15f3953f8cf8650eb244aeea51934d74a348f1f43d647897cfe70f47b74ead7ca" name="gga15f3953f8cf8650eb244aeea51934d74a348f1f43d647897cfe70f47b74ead7ca"></a>APIGhost_ShowAllStructure&#160;</td><td class="fielddoc"><p>Show all. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga722e36c7b1f8b7bbd4d096e5f4976c7a" name="ga722e36c7b1f8b7bbd4d096e5f4976c7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga722e36c7b1f8b7bbd4d096e5f4976c7a">&#9670;&#160;</a></span>API_SpecFolderID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga722e36c7b1f8b7bbd4d096e5f4976c7a">API_SpecFolderID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The selector of special folders. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga722e36c7b1f8b7bbd4d096e5f4976c7aa9fb3be3a99304a9dc7d76f3dec3f03ce" name="gga722e36c7b1f8b7bbd4d096e5f4976c7aa9fb3be3a99304a9dc7d76f3dec3f03ce"></a>API_ApplicationPrefsFolderID&#160;</td><td class="fielddoc"><p>The folder into which the application writes its preferences. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga722e36c7b1f8b7bbd4d096e5f4976c7aabce80c7b6a121104a81b047a06074a02" name="gga722e36c7b1f8b7bbd4d096e5f4976c7aabce80c7b6a121104a81b047a06074a02"></a>API_GraphisoftPrefsFolderID&#160;</td><td class="fielddoc"><p>The folder containing general preferences of Graphisoft applications. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga722e36c7b1f8b7bbd4d096e5f4976c7aa5ff88290871e0b25511f491b52b30402" name="gga722e36c7b1f8b7bbd4d096e5f4976c7aa5ff88290871e0b25511f491b52b30402"></a>API_GraphisoftHomeFolderID&#160;</td><td class="fielddoc"><p>The Graphisoft home folder. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga722e36c7b1f8b7bbd4d096e5f4976c7aab6c1367bcc7b5e3da5e74435ebd33a66" name="gga722e36c7b1f8b7bbd4d096e5f4976c7aab6c1367bcc7b5e3da5e74435ebd33a66"></a>API_CacheFolderID&#160;</td><td class="fielddoc"><p>The folder where the application may write data to speed up its operation. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga722e36c7b1f8b7bbd4d096e5f4976c7aa1a4209a4cd69de8a4529e9df04424583" name="gga722e36c7b1f8b7bbd4d096e5f4976c7aa1a4209a4cd69de8a4529e9df04424583"></a>API_DataFolderID&#160;</td><td class="fielddoc"><p>The location of the Data folder. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga722e36c7b1f8b7bbd4d096e5f4976c7aaf28ae5be847f8119a7128063b9d09ffd" name="gga722e36c7b1f8b7bbd4d096e5f4976c7aaf28ae5be847f8119a7128063b9d09ffd"></a>API_UserDocumentsFolderID&#160;</td><td class="fielddoc"><p>The folder where the application places the output files by default. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga722e36c7b1f8b7bbd4d096e5f4976c7aaa07852da31a4fed328a9154bc8356ae5" name="gga722e36c7b1f8b7bbd4d096e5f4976c7aaa07852da31a4fed328a9154bc8356ae5"></a>API_TemporaryFolderID&#160;</td><td class="fielddoc"><p>The folder where the application stores temporary data, and which will be emptied when you launch the application. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga722e36c7b1f8b7bbd4d096e5f4976c7aad71b7a392a0392eae2bca50ba8721cd5" name="gga722e36c7b1f8b7bbd4d096e5f4976c7aad71b7a392a0392eae2bca50ba8721cd5"></a>API_ApplicationFolderID&#160;</td><td class="fielddoc"><p>The folder containing the running application. It should be considered as read-only. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga722e36c7b1f8b7bbd4d096e5f4976c7aa4e5df0d01790398c6162bbc1242c7c2b" name="gga722e36c7b1f8b7bbd4d096e5f4976c7aa4e5df0d01790398c6162bbc1242c7c2b"></a>API_DefaultsFolderID&#160;</td><td class="fielddoc"><p>This folder contains the default preferences (e.g. default user profile settings, shortcuts, command layouts, etc.) that come with the program installation. Located in the application folder, and should be considered as read-only. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga722e36c7b1f8b7bbd4d096e5f4976c7aac5f2dd41f895b74ca0d20355fc890d59" name="gga722e36c7b1f8b7bbd4d096e5f4976c7aac5f2dd41f895b74ca0d20355fc890d59"></a>API_WebObjectsFolderID&#160;</td><td class="fielddoc"><p>This folder is the recommended place for storing objects and other files downloaded from the Web. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga722e36c7b1f8b7bbd4d096e5f4976c7aabe70a83a6a4ffed9967b0a090d56406c" name="gga722e36c7b1f8b7bbd4d096e5f4976c7aabe70a83a6a4ffed9967b0a090d56406c"></a>API_TemplatesFolderID&#160;</td><td class="fielddoc"><p>The default location of Archicad project templates. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga722e36c7b1f8b7bbd4d096e5f4976c7aae33a36537d94a3aec3412a680514be75" name="gga722e36c7b1f8b7bbd4d096e5f4976c7aae33a36537d94a3aec3412a680514be75"></a>API_HelpFolderID&#160;</td><td class="fielddoc"><p>The default location of the application's Help folder. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga722e36c7b1f8b7bbd4d096e5f4976c7aa546eb75905b7fa506674cf2d55481b00" name="gga722e36c7b1f8b7bbd4d096e5f4976c7aa546eb75905b7fa506674cf2d55481b00"></a>API_EmbeddedProjectLibraryFolderID&#160;</td><td class="fielddoc"><p>The location of the embedded project library. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga722e36c7b1f8b7bbd4d096e5f4976c7aafb42fe42887b848fdafb7bbc796503e1" name="gga722e36c7b1f8b7bbd4d096e5f4976c7aafb42fe42887b848fdafb7bbc796503e1"></a>API_EmbeddedProjectLibraryHotlinkFolderID&#160;</td><td class="fielddoc"><p>The location of the embedded project library of hotlinked modules. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -522,6 +743,24 @@ Functions</h2></td></tr>
 
 <p>Action codes for the story settings command. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>Refer to the <a class="el" href="struct_a_p_i___story_cmd_type.html">API_StoryCmdType</a> structure for further details on modifying the story structure of Archicad. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga573fffee384349f3628b29a607ef30ebaf88692d93d4ef5820d9f8af294f6a3a5" name="gga573fffee384349f3628b29a607ef30ebaf88692d93d4ef5820d9f8af294f6a3a5"></a>APIStory_GoTo&#160;</td><td class="fielddoc"><p>change the active story </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga573fffee384349f3628b29a607ef30eba05b65faa525e5a5558c06d0a76d136cb" name="gga573fffee384349f3628b29a607ef30eba05b65faa525e5a5558c06d0a76d136cb"></a>APIStory_Delete&#160;</td><td class="fielddoc"><p>delete a story </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga573fffee384349f3628b29a607ef30ebaa68d2517781f7cbf1fc5b19b5b580250" name="gga573fffee384349f3628b29a607ef30ebaa68d2517781f7cbf1fc5b19b5b580250"></a>APIStory_InsAbove&#160;</td><td class="fielddoc"><p>insert a new story above an existing one </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga573fffee384349f3628b29a607ef30eba54b4c1b4394d9ba12fbc27277214e267" name="gga573fffee384349f3628b29a607ef30eba54b4c1b4394d9ba12fbc27277214e267"></a>APIStory_InsBelow&#160;</td><td class="fielddoc"><p>insert a new story below an existing one </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga573fffee384349f3628b29a607ef30eba65c4ef7d53c1049b111b26dbf02e751a" name="gga573fffee384349f3628b29a607ef30eba65c4ef7d53c1049b111b26dbf02e751a"></a>APIStory_SetHeight&#160;</td><td class="fielddoc"><p>change the height of an existing story. It results that all of the above stories will have modified story level. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga573fffee384349f3628b29a607ef30eba4a9a71baca87975268df10d5e4220bf3" name="gga573fffee384349f3628b29a607ef30eba4a9a71baca87975268df10d5e4220bf3"></a>APIStory_Rename&#160;</td><td class="fielddoc"><p>change the name of an existing story </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga573fffee384349f3628b29a607ef30eba367aa598d1dc22e92dd421439c910bb4" name="gga573fffee384349f3628b29a607ef30eba367aa598d1dc22e92dd421439c910bb4"></a>APIStory_SetElevation&#160;</td><td class="fielddoc"><p>change the elevation of an existing story </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga573fffee384349f3628b29a607ef30eba70c78237faf4bb5553a86f5d41b2e14c" name="gga573fffee384349f3628b29a607ef30eba70c78237faf4bb5553a86f5d41b2e14c"></a>APIStory_SetDispOnSections&#160;</td><td class="fielddoc"><p>change the visibility of Story Level Lines in section window of an existing story </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -539,6 +778,40 @@ Functions</h2></td></tr>
 
 <p>Options for vectorial sun shadow generation in the 3D window. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>The <a class="el" href="#ga427cae8932af9393a5f6a1e53c8ad8ca">API_VectorShadowID</a> type is used in the <a class="el" href="struct_a_p_i__3_d_window_info.html">API_3DWindowInfo</a> structure. The elevation of the horizontal plane for shadow generaion on a single level is given in the shadowElevation field of <a class="el" href="struct_a_p_i__3_d_window_info.html">API_3DWindowInfo</a>. </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga427cae8932af9393a5f6a1e53c8ad8caaf0061922e6299c4802ffe5ab4bc4fc09" name="gga427cae8932af9393a5f6a1e53c8ad8caaf0061922e6299c4802ffe5ab4bc4fc09"></a>APIVectShad_Off&#160;</td><td class="fielddoc"><p>Sun shadows are not generated </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga427cae8932af9393a5f6a1e53c8ad8caa6a233dd334026c544237654d0b3ad2f3" name="gga427cae8932af9393a5f6a1e53c8ad8caa6a233dd334026c544237654d0b3ad2f3"></a>APIVectShad_ContOff_AllSurf&#160;</td><td class="fielddoc"><p>Sun shadows on all surfaces without contours </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga427cae8932af9393a5f6a1e53c8ad8caad3598dbd1ca69b42cfd95d95ea4c26f3" name="gga427cae8932af9393a5f6a1e53c8ad8caad3598dbd1ca69b42cfd95d95ea4c26f3"></a>APIVectShad_ContOn_AllSurf&#160;</td><td class="fielddoc"><p>Sun shadows on all surfaces with contours </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga427cae8932af9393a5f6a1e53c8ad8caa719e48004e797c20a57cfd7f5d365e4c" name="gga427cae8932af9393a5f6a1e53c8ad8caa719e48004e797c20a57cfd7f5d365e4c"></a>APIVectShad_ContOff_OneLevel&#160;</td><td class="fielddoc"><p>Sun shadows on a single level without contours </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga427cae8932af9393a5f6a1e53c8ad8caa3b1ae337a2d07ce6b8902d5dddf3dc5b" name="gga427cae8932af9393a5f6a1e53c8ad8caa3b1ae337a2d07ce6b8902d5dddf3dc5b"></a>APIVectShad_ContOn_OneLevel&#160;</td><td class="fielddoc"><p>Sun shadows on a single level without contours </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga970ca11ac90d452ec12352618676223a" name="ga970ca11ac90d452ec12352618676223a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga970ca11ac90d452ec12352618676223a">&#9670;&#160;</a></span>API_ViewSourceID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga970ca11ac90d452ec12352618676223a">API_ViewSourceID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Skeleton drawing 3D Document view source. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga970ca11ac90d452ec12352618676223aaf229c7434af1150476319a4bf3427b0f" name="gga970ca11ac90d452ec12352618676223aaf229c7434af1150476319a4bf3427b0f"></a>API_Top&#160;</td><td class="fielddoc"><p>Floorplan skeleton drawing viewed from top. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga970ca11ac90d452ec12352618676223aaafbb9edf14944dac917373f95c29d528" name="gga970ca11ac90d452ec12352618676223aaafbb9edf14944dac917373f95c29d528"></a>API_Bottom&#160;</td><td class="fielddoc"><p>Floorplan skeleton drawing viewed from bottom. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -1053,20 +1326,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Convert a model coordinate to screen in the current database. </p>
+<p>Converts a model coordinate to screen coordinate in the current database. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">coord</td><td>the coordinate to convert </td></tr>
-    <tr><td class="paramname">point</td><td>the associated screen coordinate </td></tr>
+    <tr><td class="paramname">coord</td><td>[in] The coordinate to convert. </td></tr>
+    <tr><td class="paramname">point</td><td>[out] The associated screen coordinate. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - any of the parameters are nullptr. </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - Any of the parameters are nullptr. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to determine the pixel of a real coordinate. It is the inverse function of <a class="el" href="#gabe5a6a64d784b0aad34471ba3e72eccb">ACAPI_View_PointToCoord</a> function. Note that different coordinates may be assigned to the same pixel. The conversion mainly depends on the window size, on the actual drawing scale and zoom settings (<a class="el" href="group___drawing.html#ga375a273183531689649cdf0038143ca4">ACAPI_Drawing_GetDrawingScale</a>, <a class="el" href="#gae1d956298de6ce0e822ddd11dd28540f">ACAPI_View_GetZoom</a>) which means the projection is database dependent. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function determines the pixel corresponding to a real coordinate. It is the inverse function of <a class="el" href="#gabe5a6a64d784b0aad34471ba3e72eccb">ACAPI_View_PointToCoord</a>. Note that different coordinates may be assigned to the same pixel. The conversion mainly depends on the window size, the actual drawing scale, and zoom settings (<a class="el" href="group___drawing.html#ga375a273183531689649cdf0038143ca4">ACAPI_Drawing_GetDrawingScale</a>, <a class="el" href="#gae1d956298de6ce0e822ddd11dd28540f">ACAPI_View_GetZoom</a>), which means the projection is database dependent. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___coord.html">API_Coord</a>   c;</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___point.html">API_Point</a>   p;</div>
 <div class="line"> </div>
@@ -1494,6 +1767,43 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gad421c05baa1d35d77a957dd4ef7a0314" name="gad421c05baa1d35d77a957dd4ef7a0314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad421c05baa1d35d77a957dd4ef7a0314">&#9670;&#160;</a></span>ACAPI_View_GetCurrentImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GSErrCode ACAPI_View_GetCurrentImage </td>
+          <td>(</td>
+          <td class="paramtype">NewDisplay::NativeImage &amp;</td>          <td class="paramname"><span class="paramname"><em>nativeImage</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group___database.html#ga186c214f02e0692cfe003db0b74ba6f0">API_ImageSource</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>imageSource</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets an image of the current view (3D, or rendering). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nativeImage</td><td>[in/out] contains the image data on output </td></tr>
+    <tr><td class="paramname">imageSource</td><td>[in] describes the source of the image: 3D window or rendering window </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NoError - The function has completed with success.</li>
+<li>APIERR_NOPLAN - No open project.</li>
+<li>APIERR_BADWINDOW - The current window is not valid for image export. </li>
+</ul>
+</dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function retrieves an image of the current view, supporting both 3D and rendering windows. </dd></dl>
+
+</div>
+</div>
 <a id="gaa18df99e0451414b90cd69ce905f553c" name="gaa18df99e0451414b90cd69ce905f553c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaa18df99e0451414b90cd69ce905f553c">&#9670;&#160;</a></span>ACAPI_View_GetDocumentFrom3DDefaults()</h2>
 
@@ -1681,18 +1991,18 @@ Functions</h2></td></tr>
 <p>Returns the actual zoom parameters of the current database. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">zoomBox</td><td>[out] The actual zoom parameters </td></tr>
+    <tr><td class="paramname">zoomBox</td><td>[out] The current zoom parameters. </td></tr>
     <tr><td class="paramname">tranmat</td><td>[out] Contains the floor plan grid rotation. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success</li>
-<li>APIERR_BADDATABASE - The current database is not 2D drawing type</li>
-<li>APIERR_BADPARS - zoomBox is nullptr </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADDATABASE - The current database is not a 2D drawing type.</li>
+<li>APIERR_BADPARS - zoomBox is nullptr. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to retrieve the zoom box of the window of the current database if it is 2D drawing type window. To change the actual zoom box refer to the <a class="el" href="#gae7b61321d04acf6780e1de07ba549f80">ACAPI_View_SetZoom</a> function. To restore one of the previous zooms use the <a class="el" href="#gafd676cb6ba219ced788d06b085666e80">ACAPI_View_ResetZoom</a> function. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function retrieves the zoom box of the window of the current database if it is a 2D drawing type window. To change the current zoom box, refer to the <a class="el" href="#gae7b61321d04acf6780e1de07ba549f80">ACAPI_View_SetZoom</a> function. To restore one of the previous zooms, use the <a class="el" href="#gafd676cb6ba219ced788d06b085666e80">ACAPI_View_ResetZoom</a> function. </dd></dl>
 
 </div>
 </div>
@@ -1719,7 +2029,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - the function has completed with success</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - viewGuidStr is nullptr, or not a valid GUID</li>
 <li>APIERR_BADID - no view found with the specified GUID</li>
 <li>APIERR_GENERAL - failed to generate the view </li>
@@ -1730,7 +2040,7 @@ Functions</h2></td></tr>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_struct" href="struct_a_p_i___drawing_link_info.html">API_DrawingLinkInfo</a> drwLinkInfo {};</div>
 <div class="line"> </div>
-<div class="line">    GSErrCode err = <a class="code hl_function" href="group___drawing.html#ga383f0d5418c2bf72547e8b336d2909b7">ACAPI_Drawing_GetDrawingLink</a> (&amp;drawingElem-&gt;<a class="code hl_variable" href="union_a_p_i___element.html#a5436bc0cca1dd10993bf4dc7602f2554">drawing</a>.<a class="code hl_variable" href="struct_a_p_i___drawing_type.html#a88392c1be62e187a9f3de360210ce1b4">drawingGuid</a>, &amp;drwLinkInfo);</div>
+<div class="line">    GSErrCode err = <a class="code hl_function" href="group___drawing.html#ga383f0d5418c2bf72547e8b336d2909b7">ACAPI_Drawing_GetDrawingLink</a> (&amp;drawingElem-&gt;<a class="code hl_variable" href="union_a_p_i___element.html#a5436bc0cca1dd10993bf4dc7602f2554">drawing</a>.<a class="code hl_variable" href="struct_a_p_i___drawing_type.html#add750fe76d3b0cbcd0f25be254d9801d">head</a>.<a class="code hl_variable" href="struct_a_p_i___elem___head.html#ae1c055907c06039af552a4e42a9a4e84">guid</a>, &amp;drwLinkInfo);</div>
 <div class="line">    <span class="keywordflow">if</span> (drwLinkInfo.linkPath != <span class="keyword">nullptr</span>)</div>
 <div class="line">        <span class="keyword">delete</span> drwLinkInfo.linkPath;</div>
 <div class="line">    <span class="keywordflow">if</span> (drwLinkInfo.viewPath != <span class="keyword">nullptr</span>)</div>
@@ -1868,7 +2178,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>NoError - The function has completed with success. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NoError - The function completed successfully. </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>In 3D, coordinate projection happens. In other views, the z value of the 3D coordinate is simply disregarded. </dd></dl>
 <dl class="section user"><dt>Example code snippets from Notification Manager / Show notification bubble at local origo</dt><dd><div class="fragment"><div class="line"> </div>
 <div class="line">    <a class="code hl_struct" href="struct_a_p_i___coord3_d.html">API_Coord3D</a> localOrigo3D;</div>
@@ -1918,20 +2228,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Convert a screen coordinate into model coordinate in the current database. </p>
+<p>Converts a screen coordinate into a model coordinate in the current database. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point</td><td>[in] the pixel screen coordinate to convert </td></tr>
-    <tr><td class="paramname">coord</td><td>[out] the associated model space coordinate </td></tr>
+    <tr><td class="paramname">point</td><td>[in] The pixel screen coordinate to convert. </td></tr>
+    <tr><td class="paramname">coord</td><td>[out] The associated model space coordinate. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
-<li>APIERR_BADPARS - any of the parameters are nullptr </li>
+<li>NoError - The function completed successfully.</li>
+<li>APIERR_BADPARS - Any of the parameters are nullptr. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to determine the real (model space) coordinate of a screen pixel coordinate. It is the inverse function of <a class="el" href="#gacf56adb26c9c9607e8b170e8f7f4c7cc">ACAPI_View_CoordToPoint</a> function. Note that different coordinates may be assigned to the same pixel. The conversion mainly depends on the window size, on the actual drawing scale and zoom settings (<a class="el" href="group___drawing.html#ga375a273183531689649cdf0038143ca4">ACAPI_Drawing_GetDrawingScale</a>, <a class="el" href="#gae1d956298de6ce0e822ddd11dd28540f">ACAPI_View_GetZoom</a>) which means the projection is database dependent. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function determines the real (model space) coordinate of a screen pixel coordinate. It is the inverse function of <a class="el" href="#gacf56adb26c9c9607e8b170e8f7f4c7cc">ACAPI_View_CoordToPoint</a>. Note that different coordinates may be assigned to the same pixel. The conversion mainly depends on the window size, the actual drawing scale, and zoom settings (<a class="el" href="group___drawing.html#ga375a273183531689649cdf0038143ca4">ACAPI_Drawing_GetDrawingScale</a>, <a class="el" href="#gae1d956298de6ce0e822ddd11dd28540f">ACAPI_View_GetZoom</a>), which means the projection is database dependent. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_a_p_i___coord.html">API_Coord</a>   c;</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___point.html">API_Point</a>   p;</div>
 <div class="line"> </div>
@@ -1966,7 +2276,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_NOPLAN - no open project</li>
 <li>APIERR_BADDATABASE - the current window and the active database don't match </li>
 </ul>
@@ -1997,9 +2307,9 @@ Functions</h2></td></tr>
 
 <p>Redraws the content of the current window. </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_NOPLAN - no open project</li>
-<li>APIERR_BADDATABASE - the current window and the active database are not in synchrony </li>
+<li>APIERR_BADDATABASE - the current window and the active database are not in sync </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This function is used to redraw the content of the current (front) window. </dd></dl>
@@ -2024,18 +2334,18 @@ Functions</h2></td></tr>
 <p>Restores the zoom parameters of the current database by a given number of steps. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">numOfStepsBack</td><td>[in] Number of steps to go back among the previous zoom boxes </td></tr>
+    <tr><td class="paramname">numOfStepsBack</td><td>[in] Number of steps to go back among the previous zoom boxes. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_NOPLAN - No open project.</li>
-<li>APIERR_BADDATABASE - The current database does not match to the current window. (This function works only in this case.)</li>
+<li>APIERR_BADDATABASE - The current database does not match the current window. (This function works only in this case.)</li>
 <li>APIERR_BADPARS - The step number is less than 1 or greater than the number of currently stored zooms. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function is used to restore one of the previous zooms. The database will not be rebuilt. If the numOfStepsBack parameter is nullptr, the initial zoom is restored, and all the other stored zooms will be erased. To get the actual zoom box refer to the <a class="el" href="#gae1d956298de6ce0e822ddd11dd28540f">ACAPI_View_GetZoom</a> function. To change the actual zoom box refer to the <a class="el" href="#gae7b61321d04acf6780e1de07ba549f80">ACAPI_View_SetZoom</a> and the <a class="el" href="#ga2554d6a801eceba6df45f1863265a19b">ACAPI_View_Zoom</a> functions. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This function restores one of the previous zooms. The database will not be rebuilt. If the numOfStepsBack parameter is nullptr, the initial zoom is restored, and all other stored zooms will be erased. To get the current zoom box, refer to the <a class="el" href="#gae1d956298de6ce0e822ddd11dd28540f">ACAPI_View_GetZoom</a> function. To change the current zoom box, refer to the <a class="el" href="#gae7b61321d04acf6780e1de07ba549f80">ACAPI_View_SetZoom</a> and the <a class="el" href="#ga2554d6a801eceba6df45f1863265a19b">ACAPI_View_Zoom</a> functions. </dd></dl>
 <dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line">GSErrCode       err;</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___box.html">API_Box</a>         zoomBox {};</div>
 <div class="line"><a class="code hl_struct" href="struct_a_p_i___print_pars.html">API_PrintPars</a>   printPars {};</div>
@@ -2142,7 +2452,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success</li>
+<li>NoError - The function completed successfully</li>
 <li>APIERR_NOPLAN - There is no any project opened</li>
 <li>APIERR_BADDATABASE - The current database is not 2D drawing type</li>
 <li>APIERR_BADPARS - The passed zoomBox is incorrect (empty box) </li>
@@ -2217,19 +2527,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Stores/restores the actual view settings. </p>
+<p>Stores or restores the current view settings. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">store</td><td>[in] stores the settings if not 0 , restore if 0 </td></tr>
+    <tr><td class="paramname">store</td><td>[in] Stores the settings if not 0, restores if 0. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success.</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_BADPARS - The function cannot be stacked. </li>
 </ul>
 </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>Stores general view settings for a view before longer operations (e.g. saving the contents of a drawing elment), and restores them afterwards. This function has to be called in pairs, and cannot be stacked. Use this sparingly; may cause a rebuild. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Stores general view settings for a view before longer operations (e.g., saving the contents of a drawing element), and restores them afterwards. This function must be called in pairs and cannot be stacked. Use this sparingly; it may cause a rebuild. </dd></dl>
 
 </div>
 </div>
@@ -2267,7 +2577,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success</li>
+<li>NoError - The function completed successfully.</li>
 <li>APIERR_NOPLAN - There is no open project</li>
 <li>APIERR_BADDATABASE - The active database is not the top window</li>
 <li>APIERR_BADPARS - The passed zoomBox is incorrect (empty box) or zoomRect is too small </li>
@@ -2303,7 +2613,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
 <li>APIERR_BADPARS - The elementsToZoom parameter is nullptr.</li>
-<li>NoError - The function has completed with success, or you passed an empty element array. </li>
+<li>NoError - The function completed successfully, or you passed an empty element array. </li>
 </ul>
 </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>The function works both in the 2D and 3D window. </dd></dl>
@@ -2327,7 +2637,7 @@ Functions</h2></td></tr>
 
 <p>Zooming to the actual selection. (Even in 3D.) </p>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>NoError - The function has completed with success. </li>
+<li>NoError - The function completed successfully. </li>
 </ul>
 </dd></dl>
 

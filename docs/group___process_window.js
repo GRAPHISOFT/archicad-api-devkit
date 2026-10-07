@@ -1,6 +1,9 @@
 var group___process_window =
 [
-    [ "API_ProcessControlTypeID", "group___process_window.html#ga9f45adbcad17ea00c99d8fff57ad4c8f", null ],
+    [ "API_ProcessControlTypeID", "group___process_window.html#ga9f45adbcad17ea00c99d8fff57ad4c8f", [
+      [ "API_MenuCommandEnabled", "group___process_window.html#gga9f45adbcad17ea00c99d8fff57ad4c8fa506bf8ddab4a886713cb8e3f8831887e", null ],
+      [ "API_MenuCommandDisabled", "group___process_window.html#gga9f45adbcad17ea00c99d8fff57ad4c8fa711fbb7b9b3cb96a38cdd829cede136f", null ]
+    ] ],
     [ "ACAPI_ProcessWindow_CloseProcessWindow", "group___process_window.html#gacb933ab1037071dd990470c2e426a423", null ],
     [ "ACAPI_ProcessWindow_GetProcessControl", "group___process_window.html#gaf366d47a70194f875d9b4a2c547cb922", null ],
     [ "ACAPI_ProcessWindow_GetProcessOnOffSwitch", "group___process_window.html#ga5708717d855d00cb96392f5fb3d53006", null ],
